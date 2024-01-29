@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.endeca.services.config.EndecaQRServiceConfig">
+  <OCD id="com.eaton.platform.integration.endeca.services.config.EndecaQRServiceConfig" name="EndecaQRServiceImpl" description="">
+    <AD id="max.cache.size" type="Integer" name="Max Cache Size" description="The maximum amount of Endeca responses to cache before invalidating the oldest entries." default="1000"/>
+    <AD id="max.cache.duration" type="Integer" name="Max Cache Duration" description="Seconds that a cached Endeca response will stay valid." default="60"/>
+    <AD id="max.connections" type="Integer" name="Max Connections" description="Defines the maximum number of connections allowed overall. This value only applies to the number of connections from a particular instance of HttpConnectionManager." default="1000"/>
+    <AD id="max.host.connections" type="Integer" name="Max Host Connections" description="Defines maximum number of connections allowed per host configuration. (Values only apply to the number of connections from a particular instance of HttpConnectionManager.)" default="1000"/>
+    <AD id="global.sku.page.path" type="String" name="Global SKU Page Path" description="Defines the global SKU page path. Redirect here if product is not sellable in current cookie language, or if language cookie not available and product is sold globally." default="/globalSku"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.endeca.services.impl.EndecaQRServiceImpl">
+    <Object ocdref="com.eaton.platform.integration.endeca.services.config.EndecaQRServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

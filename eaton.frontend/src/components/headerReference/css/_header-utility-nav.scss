@@ -1,0 +1,440 @@
+//-----------------------------------
+// Component M-3: Header: Utility Navigation
+//-----------------------------------
+
+$header-utility-nav-z-index: 201; /* Higher Stacking order than Primary Nav but Less than Search */
+
+.login-page {
+  @include media-mobile-only {
+
+    .header-utility-nav {
+      top: 0;
+      visibility: visible;
+      opacity: 1;
+      bottom: initial;
+
+      .header-utility-nav__toggle-selector {
+        background: transparent;
+      }
+    }
+
+    .eaton-image {
+      position: relative;
+      top: 9rem;
+    }
+  }
+}
+
+.header-utility-nav {
+  // TO DO: remove this once microsites brand tool has been implemented. Override should be handled in _variables-colors.scss
+  background: var(--utility-nav-background-color, $color__primary-blue);
+  bottom: 0;
+  font-size: rem($base__font-size * 1.4);
+  opacity: 0;
+  padding: 0;
+  position: fixed;
+  right: 0;
+  transition: opacity .5s ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: $header-utility-nav-z-index;
+
+  @include media-desktop-and-up {
+    bottom: auto;
+    opacity: 1;
+    padding: rem($spacing__sm * .333333) 0;
+    position: relative;
+    right: auto;
+    transition: none;
+    visibility: visible;
+    width: 100%;
+    color: #dcdcdd;
+  }
+
+  &__row {
+    align-items: center;
+    display: flex;
+    margin: 0;
+    // stylelint-disable declaration-no-important
+    @include media-desktop-and-up {
+      margin-left: rem($spacing__sm * -.5) !important;
+      margin-right: rem($spacing__sm * -.5) !important;
+      padding: 0 rem($spacing__sm * 0.6666667);
+    }
+  }
+
+  &__country {
+    @include font-family__secondary(--secondary-font);
+    font-weight: bold;
+    margin-right: rem($spacing__sm * .1666666667);
+    text-transform: uppercase;
+
+    [dir='rtl'] & {
+      margin-left: rem($spacing__sm * .1666666667);
+      margin-right: 0;
+    }
+  }
+
+  &__toggle-selector {
+    background: var(--navigation-mega-menu-title-background-color, $color__primary-gray1);
+    flex-grow: 1;
+    padding: rem($spacing__sm * .6666666) rem($spacing__sm);
+
+    @include media-desktop-and-up {
+      background: transparent;
+      flex: 1;
+      padding: 0;
+
+      .eaton-search--default {
+        padding: 0;
+        background: transparent;
+        display: block;
+
+        .form-group {
+          border: 1px solid #FFF;
+          background: #FFF;
+          border-radius: 5px;
+        }
+
+        textarea {
+          padding-top: 0px;
+            height: 24px ;
+        }
+
+        textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+          color: rgb(97, 96, 96);
+        }
+
+        &__form-input {
+          font-size: 1.6rem;
+          color: rgb(97, 96, 96);
+          height: 2.4rem;
+        }
+
+        &__form-submit {
+          color: var(--utility-nav-background-color, #005EB8);
+          padding: 0px .5rem;
+        }
+
+        .icon-search {
+          left: 3px;
+          font-size: 1.4rem;
+          margin-right: 5px;
+        }
+      }
+    }
+
+  }
+
+  &__label {
+    @include media-desktop-and-up {
+      display: inline;
+    }
+  }
+
+  &__language {
+    display: block;
+
+    @include media-desktop-and-up {
+      display: inline;
+    }
+  }
+
+  &__sign-in {
+    flex-basis: rem($spacing__md * 1.3333333333);
+    padding: 0 rem($spacing__sm);
+    text-align: center;
+    display: flex;
+
+
+    @include media-desktop-and-up {
+      flex-basis: auto;
+      padding: 0;
+      text-align: right;
+
+      &.signed-in {
+        display: inline-flex;
+        align-items: center;
+
+        .dropdown {
+          .btn {
+            background: transparent;
+            color: #fff;
+          }
+
+          .dropdown-menu {
+            min-width: 200px;
+            border-radius: 0;
+            left: -80%;
+            margin: 10px 0 0;
+            text-align: center;
+            /* stylelint-disable */
+            ul {
+              padding-left: 0;
+
+              li {
+                text-align: center;
+                list-style: none;
+                padding: 10px 20px 0px 20px;
+                /* stylelint-disable max-nesting-depth */
+                .dropdown-item {
+                  color: #333f48;
+                }
+                /* stylelint-enable max-nesting-depth */
+              }
+            }
+            /* stylelint-enable */
+            /* stylelint-disable max-nesting-depth */
+            .btn {
+              background: var(--utility-nav-background-color, $color__primary-blue);
+              padding: 3px 12px;
+              margin-top: 10px;
+            }
+            /* stylelint-enable max-nesting-depth */
+
+            /* stylelint-disable max-nesting-depth */
+            .help-link {
+              margin-top: 10px;
+            }
+            /* stylelint-enable max-nesting-depth */
+          }
+        }
+      }
+
+      &.log-out {
+        border-left: 1px solid #FFF;
+        padding-left: 1rem;
+
+        .dropdown {
+          float: left;
+          text-align: left;
+        }
+
+        img {
+          width: 20px;
+        }
+      }
+    }
+  }
+
+  &__signin {
+    display: inline;
+    background: none;
+    color: #FFF;
+    border: 0px;
+
+    @include media-desktop-and-up {
+      display: inline;
+
+      &.logged-in {
+        background-color: #005eb8;
+        opacity: 0.6;
+      }
+    }
+  }
+
+  .icon {
+    font-size: 2rem;
+    position: relative;
+    top: rem($spacing__sm * .06666666667);
+
+    &.icon-chevron-down {
+      display: none;
+
+      @include media-desktop-and-up {
+        display: inline;
+        font-size: rem($base__font-size * .9);
+        margin-left: rem($spacing__sm * .2);
+        margin-right: rem($spacing__sm * .1666666667);
+        top: 0;
+      }
+    }
+
+    &.icon-globe {
+      margin-left: rem($spacing__sm * 0.1);
+      margin-right: rem($spacing__sm * .2);
+
+      [dir='rtl'] & {
+        margin-left: rem($spacing__sm * .2);
+        margin-right: rem($spacing__sm * 0.1);
+      }
+    }
+
+    &.icon-user {
+      @include media-mobile-only {
+        font-size: 3.5rem;
+      }
+    }
+  }
+
+  .open-country-selector,
+  .open-sign-in {
+    color: $color__white;
+    text-decoration: none;
+  }
+
+  &__postLogin:not(:last-child) {
+    @include media-desktop-and-up {
+      .open-sign-in {
+        margin-right: rem($spacing__md * 0.2);
+        padding-right: rem($spacing__md * 0.1);
+        border-right: 1px solid $color__white;
+      }
+    }
+  }
+
+  .open-country-selector {
+    align-items: center;
+
+    @include media-desktop-and-up {
+      display: inline;
+    }
+  }
+
+  .open-sign-in:hover {
+    // EATON-465: Underline on hover (this is a stand-alone navigation link)
+    text-decoration: underline;
+  }
+
+  /* EAT-4933 Dashboard mobile view changes */
+
+  .icon-myeaton-mobile-only {
+    display: block;
+
+    @include media-desktop-and-up {
+      display: none;
+    }
+  }
+
+  .icon-signout-mobile-only {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    width: 8.5rem;
+
+    @include media-desktop-and-up {
+      display: none;
+      width: unset;
+    }
+  }
+
+  .icon-user-desktop-only {
+    display: none;
+
+    @include media-desktop-and-up {
+      display: inline-block;
+    }
+  }
+
+  .signed-in {
+    padding: 0;
+    @include media-mobile-only {
+      flex-direction: column;
+    }
+
+    @include media-desktop-and-up {
+      height: unset;
+    }
+
+    .header-utility-nav {
+      &__postLogin {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .icon-sign-out {
+      font-size: 1.8rem;
+    }
+
+  }
+
+  .myeaton-mobile-only {
+    border-right: 3px solid #fff;
+    width: 8.5rem;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+
+
+    @include media-desktop-and-up {
+      border-right: 1px solid #fff;
+      width: unset;
+    }
+  }
+
+
+  /* EAT-4933 Dashboard mobile view changes */
+
+  .container {
+    padding: 0;
+
+    @include media-tablet-and-up {
+      width: $grid__width-sm;
+    }
+
+    @include media-desktop-and-up {
+      padding-left: 5%;
+      padding-right: 5%;
+      width: $grid__width-md;
+    }
+
+    @include media-desktop-large {
+      width: $grid__width-lg;
+    }
+  }
+}
+
+.logout-popup {
+  .modal-body {
+    text-align: center;
+  }
+
+  .modal-footer {
+    text-align: left;
+    border-top: 2px solid #000;
+
+    button {
+      border: 0px;
+      background: none;
+    }
+   /* stylelint-disable */
+    #signOut {
+      float: right;
+    }
+  
+    #signOutMob {
+      float: right;
+    }
+     /* stylelint-enable */
+  }
+
+  .log-btn {
+    float: right;
+  }
+
+}
+
+.desktop-logout {
+  width: 20px;
+  float: left;
+  margin-left: 10px;
+  margin-top: 7px;
+  @include media-mobile-only {
+    width: 35px;
+    margin-top: 0px;
+  }
+}
+
+.custom-modal {
+  top: 40%;
+}
+
+.search__utility {
+  @include media-mobile-and-tablet {
+    display: none;
+  }
+}
+

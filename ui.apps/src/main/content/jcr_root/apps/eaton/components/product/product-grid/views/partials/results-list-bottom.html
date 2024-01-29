@@ -1,0 +1,71 @@
+<!--/* Results List - Disclaimer & Actions */-->
+<template data-sly-template.partial="${ @ data }">
+  <!--/* prateek - from where to get if disclaimer required */-->
+  
+    <div class="results-list__bottom">
+      <div data-sly-test="${ data.productCardSubcategoryBean.priceDisclaimer && data.pageType == 'product-family' && data.familyModuleBeanList && !properties.hidePriceDisc}"
+        class="results-list__disclaimer">${ data.productCardSubcategoryBean.priceDisclaimer }</div>
+  
+      <div class="results-list__actions text-center">
+  
+        <!--/* Render Button "Load More" results only if the property 'ajaxRequestUrl' is not empty */-->
+        <button
+          data-sly-test="${ data.loadMoreFlag == 'true' }"
+          class="b-button b-button__primary b-button__primary--light"
+          role="button"
+          data-load-more>${ data.productCardSubcategoryBean.loadMore }</button>
+      </div>
+    </div>
+  <div class="container main__comp-box hide">
+    <div class="comparision">
+      <div class="comparision__header">
+        <div class="comparision__header--product"><span class="compare__product min__close"><i class="icon comp__down icon-chevron-down"></i>${ data.productCardSubcategoryBean.compareProducts } (<span class="comp__count"></span>)</span></div>
+        <div class="comparision__header--clear"><a class="clear-selection">${ data.productCardSubcategoryBean.clearSelection }</a></div>
+      </div>
+      <div class="main__box">
+              <div class="comparision__box comp__closed">
+                  <p class="compare__font" id="1"></p>
+                  <i class="icon close comp__close"></i>
+              </div>
+              <div class="comparision__box comp__closed">
+                  <p class="compare__font" id="2"></p>
+                  <i class="icon close comp__close"></i>
+              </div>
+              <div class="comparision__box comp__closed">
+                  <p class="compare__font" id="3"></p>
+                  <i class="icon close comp__close"></i>
+              </div>
+              <div class="comparision__box comp__closed">
+                  <p class="compare__font" id="4"></p>
+                  <i class="icon close comp__close"></i>
+              </div>
+  
+              <div class="compare-basket">
+                  <!-- comparison item miniatures come here -->
+                  <a data-analytics-event="request quote" class="compare__button" title="Contact me about this product" target="_blank">
+                          ${ data.productCardSubcategoryBean.compareButton }</a>
+              </div>
+      </div>
+      </div>
+  </div>
+  
+  <div class="modal fade" id="myModalDT" role="dialog">
+    <div class="modal-dialog modal-center">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close close-popup" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <h4 class="modal-heading">${ data.productCardSubcategoryBean.maxErrorHeading }</h4>
+          <p class="modal-part">${ data.productCardSubcategoryBean.maxErrorDescription }</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="b-button b-button__tertiary b-button__tertiary--light" data-dismiss="modal">${ data.productCardSubcategoryBean.maxErrorOk }</button>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  </template>
+  

@@ -1,0 +1,71 @@
+//-----------------------------------
+// Link List: Horizontal View
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, etc...)
+@import "../../../global/css/_config/sass";
+
+.link-list-horizontal {
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__list-item {
+    // Empty Selector for future reference
+  }
+
+  &__list-link {
+    // Empty Selector for future reference
+  }
+
+
+  //-----------------------------------
+  // Media-Query: 0 to 991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__list-item {
+      line-height: ($base__line-height * (2 / 1.4));
+    }
+  }
+
+
+  //-----------------------------------
+  // Media-Query: 992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    &__list {
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    &__list-item {
+      position: relative;
+      margin: 0 rem($spacing__sm * .4) 0 0;
+      padding: 0 rem($spacing__sm * .4) 0 0;
+      line-height: ($base__line-height * (1.1666 / 1.4));
+
+      &::after {
+        content: '';
+        background-color: var(--section-navigation-divider-color, $color__primary-gray2);
+        height: 1em;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+      }
+
+      &:last-child {
+
+        // Hide Line Divider in the last link
+        &::after { display: none; }
+      }
+    }
+
+  }
+
+}

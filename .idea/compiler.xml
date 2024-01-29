@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eaton_platform_parent.ui.apps" />
+        <module name="eaton_platform_parent.core" />
+        <module name="eaton_platform_parent.it.launcher" />
+        <module name="eaton_platform_parent.it.tests" />
+        <module name="eaton_platform_parent.ui.content" />
+        <module name="eaton_platform_parent.repository-structure" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

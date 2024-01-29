@@ -1,0 +1,84 @@
+<!--/*
+  M-36 - Product Card: SKU Item
+
+  -
+  NOTE: If the HTML structure of this file changes, please also Update the file:
+  `/eaton.frontend/src/components/product-grid/js/product-grid.js`
+  Since that files contains a Javascript Template that is used when more results are loaded with AJAX
+
+*/-->
+<template data-sly-template.item="${ @ results, itemData }">
+
+  <div class="product-card-sku">
+
+    <!--/* Product Image */-->
+    <div class="product-card-sku__image-wrapper b-body-copy-small">
+      <a href="${ results.baseSKUPath }.${itemData.encodedCatalogNumber}.html" data-analytics-event="model-result"
+        class="product-card-sku__image-link"
+        target="_self"
+      >
+        <!-- Start: Rendition Image Component Case 1-->
+
+		<sly data-sly-test="${itemData.dsktopRendition}">
+		<div class="rendition">
+   					 <img
+    					  class="rendition__image img-responsive"
+    					  data-src="${ itemData.dsktopRendition}"
+     				      data-mobile-rendition="${ itemData.mobileRendition }"
+    					  data-tablet-rendition="${ itemData.dsktopRendition}"
+    					  data-desktop-rendition="${ itemData.dsktopRendition}"
+    					   />
+  				</div>
+        </sly>
+        <sly data-sly-test="${!itemData.dsktopRendition}">
+         <!-- Start: Rendition Image Component Case 2-->
+
+		 <sly data-sly-test="${results.siteResourceSlingModel}">
+			<div class="rendition">
+   					 <img
+    					  class="rendition__image img-responsive"
+    					  data-src="${results.siteResourceSlingModel.fallbackImage}"
+     				      data-mobile-rendition="${ results.siteResourceSlingModel.fallbackImage }"
+    					  data-tablet-rendition="${ results.siteResourceSlingModel.fallbackImage}"
+    					  data-desktop-rendition="${ results.siteResourceSlingModel.fallbackImage}"
+    					   />
+  				</div>
+        </sly>
+		</sly>
+        <!-- End: Rendition Image Component -->
+      </a>
+    </div>
+
+    <!--/* Product Header */-->
+    <div class="product-card-sku__header">
+
+      <div class="product-card-sku__title-wrapper">
+        <h3 class="product-card-sku__name">
+          <a href="${ results.baseSKUPath }.${itemData.encodedCatalogNumber}.html" data-analytics-event="model-result"
+            target="_self"
+            class="product-card-sku__url-link"><span class="name-label">${ itemData.catalogNumber }</span><i class="icon icon-chevron-right" aria-hidden="true"></i></a>
+        </h3>
+      </div>
+    </div>
+
+
+    <!--/* Card Content */-->
+    <div class="product-card-sku__content">
+      <!--<div class="product-card-sku__attrs-list"
+        data-sly-list.attribute="${ itemData.skuCardParameters }">
+        <div class="product-card-sku__attrs-list-item">
+          <div class="product-card-sku__attr-label b-eyebrow-small text-uppercase">${ attribute.label }</div>
+          <div class="product-card-sku__attr-value b-body-copy">${ attribute.skuCardValues }</div>
+        </div>
+      </div>-->
+
+     <sly data-sly-test="${results.siteResourceSlingModel.longDescriptionCheckbox}">
+      <div class="product-card-sku__description">${ itemData.longDesc }</div>
+     </sly>
+      
+
+    </div>
+
+  </div>
+
+</template>

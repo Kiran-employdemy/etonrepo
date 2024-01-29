@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.workflows.EmailLinkProcess" immediate="true" activate="activate">
+  <property name="service.description" type="String"> Eaton asset download email link process workflow
+ Eaton asset download email link process workflow</property>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="externalizer.domain" type="String" value="eaton"/>
+  <service>
+    <provide interface="com.adobe.granite.workflow.exec.WorkflowProcess"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="emailService" interface="com.adobe.acs.commons.email.EmailService" field="emailService"/>
+  <reference name="externalizer" interface="com.day.cq.commons.Externalizer" field="externalizer"/>
+  <implementation class="com.eaton.platform.core.workflows.EmailLinkProcess"/>
+</scr:component>

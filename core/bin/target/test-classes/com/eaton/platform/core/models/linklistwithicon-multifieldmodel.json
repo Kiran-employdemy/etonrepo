@@ -1,0 +1,8 @@
+{
+      "jcr:primaryType": "nt:unstructured",
+      "linkDesc": "Email Desc",
+      "linkIcon": "/content/dam/eaton/resources/icons/support-icons/support-email.png",
+      "linkPath": "mailto:test@email.com",
+      "linkOpenNewWindow": "true",
+      "linkTitle": "Email link"
+}

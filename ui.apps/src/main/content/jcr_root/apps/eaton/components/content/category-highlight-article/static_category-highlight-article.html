@@ -1,0 +1,111 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-info">Category Highlight Article: ${currentNode.name}</div>
+</sly>
+<sly data-sly-use.data="com.eaton.platform.core.models.categoryhighlightarticle.CategoryHighlightArticleModel">
+
+  <!--/* Container */-->
+ <div class="category-highlight-article__component">
+	<div class="container">
+	
+    <!--/* Featured Card */-->
+     <sly data-sly-test = "${data.enableFeaturedCard}">
+ 	 <div class="row">
+      <div class="col-xs-12">
+        <div class="featured-article-card">
+		
+          <a href="${data.singleFeatureCardModel.singleFeatureCard.pagePath}" 
+		    target="${data.singleFeatureCardModel.singleFeatureCard.newWindow}"
+		    class="featured-article-card__link u-absolute-fill"
+          >
+
+                <!--/* This Text is used by Screen Readers / For Accessibility */-->
+                <span class="sr-only">${ data.featuredArticleCard.title } ${ data.featuredArticleCard.text }</span>
+              </a>
+
+            <div class="featured-article-card__image">
+              <!-- Start: Rendition Image Component -->
+			<sly data-sly-use.tpl="eaton/components/shared/templates/rendition-background.html">
+                <sly data-sly-call="${ tpl.module @ data=data.singleFeatureCardModel.singleFeatureCard }"></sly>
+        	</sly>
+              <!-- End: Rendition Image Component -->
+
+            </div>
+
+            <div class="featured-article-card__content">
+              <div class="featured-article-card__eyebrow b-eyebrow-small">${data.singleFeatureCardModel.singleFeatureCard.eyebrow}</div>
+              <div class="featured-article-card__title b-heading-h5">${data.singleFeatureCardModel.singleFeatureCard.headline}</div>
+              <sly data-sly-test = "${data.enablePublicationDate}">
+              <div data-sly-test="${data.singleFeatureCardModel.singleFeatureCard.publicationDateDisplay}" class="featured-article-card__date b-body-copy-small"><em>${data.singleFeatureCardModel.singleFeatureCard.publicationDateDisplay}</em></div>
+              </sly>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+    </sly>
+
+
+
+      <!--/*
+        Related Items / Cards List
+      */-->
+    <div class="js-list-slider row" style="z-index: 2;">
+      <ul class="card-list__list js-list-slider__slides" 
+	    data-sly-list.slider="${data.listTypeArray}"
+	  >
+        <li class="card-list__item js-list-slider__slide-item col-sm-12 ${data.cards.length == 2 ? 'col-md-6' : 'col-md-4'}">
+		
+		<a href="${slider.pagePath}" 
+		  target="${slider.newWindow}" 
+		  class="card-list__link u-absolute-fill"
+		>
+              <!--/* This Text is used by Screen Readers / For Accessibility */-->
+              <span class="sr-only">${ slider.eyebrow } ${ slider.headline} }</span>
+            </a>
+
+            <div class="card-list__card">
+              <div class="card-list__image">
+                <!-- Start: Rendition Image Component -->
+             	<sly data-sly-use.tpl="eaton/components/shared/templates/rendition-background.html">
+                  <sly data-sly-call="${ tpl.module @ data=slider }"></sly>
+                </sly>
+                <!-- End: Rendition Image Component -->
+
+
+              </div>
+              <div class="card-list__content">
+                <p class="card-list__eyebrow b-eyebrow-small">${slider.eyebrow}</p>
+                <p class="card-list__heading b-heading-h5">${slider.headline}</p>
+                 <sly data-sly-test = "${data.enablePublicationDate}">
+                <p class="card-list__date"><em>${slider.publicationDateDisplay}</em></p>
+                </sly>
+              </div>
+            </div>
+        </li>
+      </ul>
+
+        <!--/* Carousel: Navigation Arrows */-->
+        <sly data-sly-test="${ data.eligibleForCarousel }">
+          <button class="js-list-slider__prev-arrow js-list-slider__arrows button--reset">
+            <span class="sr-only">${ 'Go to Previous Item' @ i18n }</span>
+            <i class="icon icon-chevron-left" aria-hidden="true"></i>
+          </button>
+          <button class="js-list-slider__next-arrow js-list-slider__arrows button--reset">
+            <span class="sr-only">${ 'Go to Next Item' @ i18n }</span>
+            <i class="icon icon-chevron-right" aria-hidden="true"></i>
+          </button>
+        </sly>
+    </div>
+
+
+    <!--/* Bottom CTA */-->
+    <div class="row">
+      <div class="category-highlight-article__cta col-xs-12 text-center">
+        <sly data-sly-resource="${'featured-article-ctabutton' @ resourceType='/apps/eaton/components/general/ctabutton'}"></sly>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+</sly>

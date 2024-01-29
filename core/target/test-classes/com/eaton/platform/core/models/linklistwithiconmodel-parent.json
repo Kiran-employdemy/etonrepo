@@ -1,0 +1,17 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Sep 12 2023 13:54:41 GMT-0500",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Test 1309",
+    "cq:template": "/conf/eaton/settings/wcm/templates/primary-page",
+    "page-type": "primary",
+    "jcr:lastModified": "Thu Oct 05 2017 15:35:12 GMT-0400",
+    "jcr:uuid": "ff2d6cbd-dd67-4471-96a9-cbc26eaa73bc",
+    "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+    "isRootPage": true,
+    "cq:lastModifiedBy": "admin"
+  }
+}

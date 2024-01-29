@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.AdminServiceImpl" immediate="true" activate="activate" deactivate="deactivate">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="service.description" type="String" value=" Admin Service"/>
+  <property name="process.label" type="String" value=" AdminServiceImpl"/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.AdminService"/>
+  </service>
+  <reference name="resolverFactory" policy="static" interface="org.apache.sling.api.resource.ResourceResolverFactory" field="resolverFactory"/>
+  <implementation class="com.eaton.platform.core.services.impl.AdminServiceImpl"/>
+</scr:component>

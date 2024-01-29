@@ -1,0 +1,33 @@
+// Flexbox Utilites
+//--------------
+.u-flex {
+  display: flex;
+}
+
+.u-flex-1 {
+  flex: 1;
+}
+
+.u-inline-flex {
+  display: inline-flex;
+}
+
+.u-flex-wrap {
+  flex-wrap: wrap;
+}
+
+.u-flex-column {
+  flex-direction: column;
+}
+
+.u-flex-row {
+  flex-direction: row;
+}
+
+.u-flex-align-center {
+  align-items: center;
+}
+
+.u-flex-justify-center {
+  justify-content: center;
+}

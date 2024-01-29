@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.search.find.replace.FindReplaceTextServlet" immediate="true">
+  <property name="sling.servlet.extensions" type="String" value="json"/>
+  <property name="sling.servlet.resourceTypes" type="String" value="eaton/components/search/find-replace"/>
+  <property name="sling.servlet.methods" type="String">GET
+POST</property>
+  <property name="sling.servlet.selectors" type="String" value="text"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="textFacade" interface="com.eaton.platform.core.services.search.find.replace.text.FindReplaceTextFacade" field="textFacade"/>
+  <reference name="textModificationRequestModel2BeanConverter" interface="com.eaton.platform.core.services.converter.search.find.replace.TextModificationRequestModel2BeanConverter" field="textModificationRequestModel2BeanConverter"/>
+  <reference name="textSearchRequestModel2BeanConverter" interface="com.eaton.platform.core.services.converter.search.find.replace.TextSearchRequestModel2BeanConverter" field="textSearchRequestModel2BeanConverter"/>
+  <implementation class="com.eaton.platform.core.servlets.search.find.replace.FindReplaceTextServlet"/>
+</scr:component>

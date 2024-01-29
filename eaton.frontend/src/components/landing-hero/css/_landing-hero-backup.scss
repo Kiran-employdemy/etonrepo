@@ -1,0 +1,80 @@
+//-----------------------------------
+// Module Landing Hero - Is Part of M-49 Category Highlight
+// ----
+// NOTE: This is a backup file for future refence
+// This backup was added due to EATON-724. The requirement was
+// to copy the HTML from "home-page-hero" component into this "landing-hero" component.
+// And these CSS file became obsolete after that update.
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.landing-hero {
+
+  &__component {
+    position: relative;
+  }
+
+  &--vertical-align {
+    display: flex;
+    align-items: center;
+  }
+
+  &__content {
+    position: relative;
+    padding: 15px 0;
+    width: 100%;
+  }
+
+  &__title,
+  &__text {
+    color: $color__white;
+  }
+
+  &__title {
+    margin-bottom: 0;
+  }
+
+  &__text {
+    margin-top: 18px; // Visually 30px Spacing between Headline and Text.
+  }
+
+
+  //-----------------------------------
+  // Media Query: 0 - 991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    &__component {
+      // Image Aspect Ratio Mobile
+      height: #{(628 / 750) * 100}vw;
+      min-height: 370px;
+      max-height: 500px;
+    }
+
+    &__text {
+      font-size: 1.4rem;
+      line-height: 2.2rem;
+    }
+  }
+
+
+  //-----------------------------------
+  // Media Query: > 992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    &__component {
+      // Aspect Ratio Desktop: 26:9
+      height: #{(9 / 26) * 100}vw;
+    }
+
+    &__text {
+      font-size: 2rem;
+      line-height: 3.2rem;
+      margin-top: 12px; // Visually 30px Spacing between Headline and Text.
+    }
+  }
+
+}

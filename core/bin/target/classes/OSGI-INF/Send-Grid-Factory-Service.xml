@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="Send Grid Factory Service" immediate="true">
+  <service>
+    <provide interface="com.eaton.platform.integration.sendgrid.factory.SendGridServiceFactory"/>
+  </service>
+  <reference name="sendGridServiceList" cardinality="0..n" policy="dynamic" interface="com.eaton.platform.integration.sendgrid.AbstractSendGridService" field="sendGridServiceList" field-collection-type="service"/>
+  <implementation class="com.eaton.platform.integration.sendgrid.factory.SendGridServiceFactory"/>
+</scr:component>

@@ -1,0 +1,51 @@
+<sly data-sly-use.catObj="com.eaton.platform.core.models.CategoryHeroModel">
+
+ <div data-sly-test="${catObj.imagePath}" class="category-hero__component dark-theme image-mask">
+
+    <div  class="category-hero__image">
+	<!--/* Start: Rendition Image Component */-->
+    <sly data-sly-test.useDynamicRendition="${ catObj.desktopDynamicRenditionUrl != null && catObj.mobileDynamicRenditionUrl != null }"/>
+    <sly data-sly-use.tpl="${ useDynamicRendition ? 'eaton/components/shared/templates/dynamic-rendition-background.html' : 'eaton/components/shared/templates/rendition-background.html'}">
+      <sly data-sly-call="${ tpl.module @ data=catObj }"></sly>
+    </sly>
+	<!--/* End: Rendition Image Component */-->
+      </div>
+
+    <div class="category-hero__content">
+      <div class="container">
+
+          <div class="row">
+              <div class="col-xs-12">
+                  <div class="category-hero__eyebrow b-eyebrow-small">
+                      <a class="category-hero__cta"
+                         target="${ catObj.newWindow }"
+                         href="${ catObj.eyebrowLinkURL }"
+                         aria-label="${ 'Go back to' } ${ catObj.eyebrowText }"
+                      ><i class="icon icon-chevron-left" aria-hidden="true"></i>${ catObj.eyebrowText }</a>
+                  </div>
+              </div>
+          </div>
+
+
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+
+            <h1 data-sly-test="${ catObj.categoryHeroHeaderType != 'h2' }" class="category-hero__title b-heading-h1">
+                ${ catObj.titleText ? catObj.titleText : catObj.currentPageTitle @ context='html'}
+            </h1>
+
+            <h2 data-sly-test="${ catObj.categoryHeroHeaderType == 'h2' }" class="category-hero__title b-heading-h2">
+                ${ catObj.titleText ? catObj.titleText : catObj.currentPageTitle @ context='html'}
+            </h2>
+
+          </div>
+
+          <div class="col-xs-12 col-md-6">
+            <div class="category-hero__text b-hero-description">${ catObj.description @context="html"}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</sly>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.msm.impl.RolloutConflictManagerImpl" configuration-policy="require" activate="activate" modified="activate">
+  <property name="sendEmailNotification" type="Boolean" value="false"/>
+  <property name="reportRecipientGroup" type="String" value=""/>
+  <property name="docLink" type="String" value=""/>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="emailReportTemplatePath" type="String" value="/etc/notification/email/txt/com.eaton.generic.email/rolloutConflictReport.txt"/>
+  <property name="detailedReport" type="Boolean" value="false"/>
+  <property name="process.label" type="String" value=" RolloutConflictManagerImpl"/>
+  <property name="emailNotificationTemplatePath" type="String" value="/etc/notification/email/txt/com.eaton.generic.email/rolloutConflictNotification.txt"/>
+  <property name="sendNotification" type="Boolean" value="false"/>
+  <property name="service.description" type="String" value=" Rollout Conflict Manager"/>
+  <property name="reportRootPath" type="String" value="/content/eaton"/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.msm.RolloutConflictManager"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="emailService" interface="com.adobe.acs.commons.email.EmailService" field="emailService"/>
+  <reference name="liveRelationshipManager" interface="com.day.cq.wcm.msm.api.LiveRelationshipManager" field="liveRelationshipManager"/>
+  <reference name="notificationService" interface="com.eaton.platform.core.services.notification.NotificationService" field="notificationService"/>
+  <reference name="rolloutConflictReportGenerator" interface="com.eaton.platform.core.services.msm.RolloutConflictReportGenerator" target="(type=csv)" field="rolloutConflictReportGenerator"/>
+  <reference name="rolloutConflictSearchSearvice" interface="com.eaton.platform.core.services.msm.RolloutConflictSearchSearvice" field="rolloutConflictSearchSearvice"/>
+  <implementation class="com.eaton.platform.core.services.msm.impl.RolloutConflictManagerImpl"/>
+</scr:component>

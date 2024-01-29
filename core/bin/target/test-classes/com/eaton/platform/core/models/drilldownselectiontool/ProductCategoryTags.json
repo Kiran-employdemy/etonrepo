@@ -1,0 +1,32 @@
+{
+  "furniture": {
+    "jcr:primaryType": "cq:Tag",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title": "Furniture",
+    "jcr:title.de_de": "Möbel"
+  },
+  "aerospace-control": {
+    "jcr:primaryType": "cq:Tag",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title": "Aerospace actuators and motion control",
+    "jcr:title.de_de": "Luft- und Raumfahrtaktoren und Bewegungssteuerung"
+  },
+  "clutches-and-brakes": {
+    "jcr:primaryType": "cq:Tag",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title": "Clutches and brakes",
+    "jcr:title.de_de": "Kupplungen und Bremsen"
+  },
+  "emobility": {
+    "jcr:primaryType": "cq:Tag",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title": "Electric vehicles and EV charging ",
+    "jcr:title.de_de": "eMobilität"
+  },
+  "golf-grips": {
+    "jcr:primaryType": "cq:Tag",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title": "Golf grips",
+    "jcr:title.de_de": "Golf-Griffe"
+  }
+}

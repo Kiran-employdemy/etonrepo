@@ -1,0 +1,30 @@
+.contact-list {
+
+  @include body-copy;
+
+  @include font-family__secondary(--secondary-font);
+  margin-bottom: rem($spacing__sm * 0.5); // stylelint-disable no-missing-end-of-source-newline
+  a {
+    text-decoration: underline;
+  }
+
+  &__heading {
+    font-weight: bold;
+  }
+
+  &__person {
+    margin-bottom: rem($spacing__sm * 0.5);
+  }
+}
+
+@include media-mobile-and-tablet { // stylelint-disable no-eol-whitespace block-opening-brace-newline-after
+  .contact-list {
+    line-height: $base__line-height * (0.93);
+    font-size: rem($base__font-size * 1.2);
+
+    &__heading {
+      line-height: $base__line-height * (0.93);
+      font-size: rem($base__font-size * 1.2);
+    }
+  }
+}

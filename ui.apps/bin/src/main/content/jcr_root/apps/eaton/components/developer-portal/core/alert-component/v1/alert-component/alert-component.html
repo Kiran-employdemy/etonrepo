@@ -1,0 +1,12 @@
+<sly data-sly-use.alertItems="com.eaton.platform.core.models.AlertComponent">
+    <div data-sly-test="${wcmmode.edit}" class="alert alert-warning">Alert-Component: ${currentNode.name}</div>
+    <div class="container alert-component">
+        <div class="alert-row">
+            <div class="icon-container"><i class="icon icon-info icon-alert-component"></i></div>
+            <div class="description-container">
+                <span class="heading-text">${alertItems.heading}</span>
+                ${alertItems.body}
+            </div>
+        </div>
+    </div>
+</sly>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.AssetDownloadServiceConfig">
+  <OCD id="com.eaton.platform.core.services.config.AssetDownloadServiceConfig" name="Eaton AssetDownloadService " description="">
+    <AD id="getMaxAllowedDownloadPackageSize" type="Long" name="Max Allowed Download Package Size before compression" description="Max Allowed Download Package Size before compression.Please use caution as you are changing the value for this field." default="104857600"/>
+    <AD id="getPrefix" type="String" name="Prefix to files in zip package" description="Add prefixes to files in zip.Eg: _,-" default="_"/>
+    <AD id="getMaxAllowedRedirects" type="Integer" name="Max Allowed Redirects" description="Max allowed redirects when generating a zip from a url. Default is a 1." default="1"/>
+    <AD id="getDownloadFileTimeout" type="Integer" name="Download File Timeout" description="Max time in seconds before the file download will timeout." default="60"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.impl.DefaultAssetDownloadService">
+    <Object ocdref="com.eaton.platform.core.services.config.AssetDownloadServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

@@ -1,0 +1,124 @@
+//-----------------------------------
+// Module M42: Topic Link with Icon
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+.eaton-topic-link {
+
+  overflow: hidden;
+  padding: rem($spacing__md * .75) 0;
+
+  @include media-desktop-and-up {
+    padding: rem($spacing__md) 0;
+  }
+
+  &__icon {
+    margin-bottom: rem($spacing__sm * .8333333);
+
+    @include media-desktop-and-up {
+      align-self: flex-start;
+      margin-bottom: 0;
+    }
+
+    img {
+      height: auto;
+      width: rem($spacing__md);
+
+      @include media-desktop-and-up {
+        height: auto;
+        max-width: 100%;
+      }
+    }
+  }
+
+  &__row {
+    @include media-desktop-and-up {
+      align-items: center;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+    }
+  }
+
+  &__header {
+    font-size: rem($base__font-size * 2.7);
+    line-height: $base__line-height * (1.5 / 1.4);
+    margin-bottom: rem($spacing__md * .5);
+
+    @include media-desktop-and-up {
+      font-size: rem($base__font-size * 3.6);
+      margin-bottom: 0;
+    }
+  }
+
+  &__description {
+    font-size: rem($base__font-size * 1.6);
+    line-height: $base__line-height * 1.0714285714;
+    margin-bottom: rem($spacing__md * .5);
+
+    @include media-desktop-and-up {
+      margin-bottom: 0;
+      margin-top: rem($spacing__sm * .333333);
+    }
+
+    .no-cta & {
+      margin-bottom: 0;
+    }
+  }
+
+  &__cta-wrapper {
+    text-align: center;
+
+    @include media-desktop-only {
+      padding-left: rem($spacing__sm);
+      text-align: right;
+      width: 30%;
+
+      .b-button__primary {
+        text-align: center;
+      }
+    }
+  }
+
+  &--grey {
+    background: $color__secondary-gray6;
+  }
+
+  &--primary-branding-color {
+    background: var(--primary-brand-color, $color__primary-blue);
+  }
+
+  &--primary-branding-color &__header,
+  &--primary-branding-color &__description {
+    color: $color__white;
+  }
+
+  //-----------------------------------
+  // Overrides when used within a "Grid-2-Column" Component
+  // Fixes EATON-733
+  //-----------------------------------
+  .eaton-grid-control & {
+    padding-top: 0;
+
+    .container {
+      width: auto;
+    }
+
+    &__text-wrapper {
+      display: block; // Override display-flex in order to render the content in a single column
+    }
+
+    &__text {
+      width: $ratio__1-1;
+    }
+
+    &__cta-wrapper {
+      margin-top: rem($spacing__sm * .666666);
+      text-align: left;
+      width: $ratio__1-1;
+    }
+  }
+}

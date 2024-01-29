@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    granite:class="region-dropdown"
+    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+    emptyText="Select a region from dropdown"
+    fieldLabel="Region"
+    name="./regionName">
+    <items jcr:primaryType="nt:unstructured" >
+        <africa
+            jcr:primaryType="nt:unstructured"
+            text="Africa"
+            value="Africa|africa "/>
+        <asia
+            jcr:primaryType="nt:unstructured"
+            text="Asia"
+            value="Asia|asia"/>
+        <central-america-and-aribbean
+            jcr:primaryType="nt:unstructured"
+            text="Central America and Caribbean"
+            value="Central America and Caribbean|central-america-and-caribbean"/>
+        <europe
+            jcr:primaryType="nt:unstructured"
+            text="Europe"
+            value="Europe|europe"/>
+        <middle-east
+            jcr:primaryType="nt:unstructured"
+            text="Middle East"
+            value="Middle East|middleeast"/>
+        <north-america
+            jcr:primaryType="nt:unstructured"
+            text="North America"
+            value="North America|northamerica"/>
+        <oceania
+            jcr:primaryType="nt:unstructured"
+            text="Oceania"
+            value="Oceania|oceania"/>
+        <south-america
+            jcr:primaryType="nt:unstructured"
+            text="South America"
+            value="South America|south-america"/>
+    </items>
+</jcr:root>

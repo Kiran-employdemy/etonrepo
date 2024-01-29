@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Section Navigation"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <parentPage
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                        fieldDescription="This field stores the value of parent page path."
+                        fieldLabel="Parent Page Path *"
+                        name="./sectionNavParentPagePath"
+                        required="{Boolean}true"/>
+                    <tags
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/common/tagspicker"
+                        fieldDescription="This field stores the value of the page tags field."
+                        fieldLabel="Tags"
+                        name="./tags"/>
+                    <tagsType
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldDescription="This field stores the value of tags type."
+                        fieldLabel="Tags Type"
+                        name="./tagsType">
+                        <items jcr:primaryType="nt:unstructured">
+                            <any
+                                jcr:primaryType="nt:unstructured"
+                                text="Any"
+                                value="any"/>
+                            <all
+                                jcr:primaryType="nt:unstructured"
+                                text="All"
+                                value="all"/>
+                        </items>
+                    </tagsType>
+                    <count
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                        fieldDescription="This field stores the value for&#xa;no of results field."
+                        fieldLabel="Maximum&#xa;number&#x9;of&#xa;links&#x9;to&#xa;Display&#x9;&#xa;"
+                        min="{Long}2"
+                        name="./countNavigation"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

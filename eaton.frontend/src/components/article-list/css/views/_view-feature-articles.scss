@@ -1,0 +1,99 @@
+//-----------------------------------
+// Article Items
+//-----------------------------------
+.article-list {
+
+  &__title {
+    font-size: rem($base__font-size * 3.2);
+    padding-bottom: rem($spacing__sm * .333333);
+
+    @include media-desktop-and-up {
+      font-size: rem($base__font-size * 3.6);
+    }
+  }
+
+  &__description {
+    font-size: rem($base__font-size * 1.6);
+    margin-bottom: rem($spacing__sm);
+
+    @include media-desktop-and-up {
+      font-size: rem($base__font-size * 1.8);
+    }
+  }
+
+
+  &__component { margin-top: rem($spacing__md * .833333); }
+
+  &__cta-container {
+    margin-top: rem($spacing__sm);
+
+    @include media-desktop-and-up {
+      margin-top: rem($spacing__md * .75);
+    }
+  }
+
+  &__item {
+    position: relative;
+    padding: 0;
+
+    @include media-tablet-and-up {
+      margin-bottom: rem($spacing__md * .75);
+    }
+
+    &::after {
+      content: '';
+      background-color: var(--primary-brand-color);
+      bottom: 0;
+      display: block;
+      height: rem($grid__xs * .008333333333);
+      position: absolute;
+      left: 0;
+      width: rem($grid__xs * .1666666667);
+    }
+
+    [dir='rtl'] & {
+      &::before {
+        right: 0;
+      }
+    }
+  }
+
+  &__heading {
+    color: var(--primary-brand-color);
+    font-size: rem($base__font-size * 2.4);
+    line-height: $base__line-height * (1.25 / 1.4);
+
+    @include media-desktop-and-up {
+      font-size: rem($base__font-size * 2.8);
+    }
+  }
+
+  &__date {
+    color: var(--color__lunar-40);
+    line-height: $base__line-height * (1 / 1.4);
+    margin-bottom: 0;
+    margin-top: rem($spacing__sm * .5);
+    padding-bottom: rem($spacing__sm * .6);
+
+    @include media-desktop-and-up {
+      padding-bottom: rem($spacing__sm * .8333333333);
+    }
+  }
+
+  &__articles {
+    margin-top: rem($spacing__sm);
+
+    @include media-tablet-and-up {
+      margin-top: 0;
+    }
+  }
+
+  &__eyebrow {
+    margin-bottom: rem($spacing__sm * .2666666667);  // Visually, 15px spacing
+
+    @include media-tablet-and-up {
+      margin-bottom: rem($spacing__sm * .666666);
+    }
+  }
+}
+

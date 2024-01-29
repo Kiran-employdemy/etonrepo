@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:showOnCreate="{Boolean}true"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Basic"
+    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+    <items jcr:primaryType="nt:unstructured">
+        <column jcr:primaryType="nt:unstructured" sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <title jcr:primaryType="nt:unstructured" jcr:title="Title and Tags" sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                        <title jcr:primaryType="nt:unstructured" fieldLabel="Title" name="./jcr:title" renderReadOnly="true" required="true" sling:resourceType="granite/ui/components/coral/foundation/form/textfield">
+                            <granite:data jcr:primaryType="nt:unstructured" cq-msm-lockable="jcr:title"/>
+                        </title>
+                        <pagename jcr:primaryType="nt:unstructured" cq:hideOnEdit="true" cq:showOnCreate="true" fieldLabel="Name" name="pageName" sling:resourceType="granite/ui/components/coral/foundation/form/textfield" validation="admin.pagename"/>
+                        <msmConfigEndpoint jcr:primaryType="nt:unstructured" granite:class="msm-config-endpoint" sling:resourceType="granite/ui/components/coral/foundation/form/hidden" value="${empty param.item ? requestPathInfo.suffix : param.item }"/>
+                        <tags jcr:primaryType="nt:unstructured" allowBulkEdit="true" autocreateTag="true" fieldLabel="Tags" multiple="true" name="./cq:tags" sling:resourceType="cq/gui/components/coral/common/form/tagfield">
+                            <granite:data jcr:primaryType="nt:unstructured" cq-msm-lockable="cq:tags"/>
+                        </tags>
+                        <tagsShowOnCreate jcr:primaryType="nt:unstructured" cq:hideOnEdit="true" cq:showOnCreate="true" fieldLabel="Tags" granite:comment="Handled by a custom POST servlet for the Create Page case" multiple="true" name="./cq:tags" sling:resourceType="cq/gui/components/coral/common/form/tagfield"/>
+                        <hideinnav jcr:primaryType="nt:unstructured" name="./hideInNav" renderReadOnly="true" sling:resourceType="granite/ui/components/coral/foundation/form/checkbox" text="Hide in Navigation" value="true">
+                            <granite:data jcr:primaryType="nt:unstructured" allowBulkEdit="true" cq-msm-lockable="hideInNav"/>
+                        </hideinnav>
+                        <charset jcr:primaryType="nt:unstructured" allowBulkEdit="true" ignoreData="true" name="_charset_" sling:resourceType="granite/ui/components/coral/foundation/form/hidden" value="utf-8"/>
+                    </items>
+                </title>
+                <moretitles jcr:primaryType="nt:unstructured" cq:showOnCreate="true" jcr:title="More Titles and Description" sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                        <pagetitle jcr:primaryType="nt:unstructured" cq:showOnCreate="true" fieldLabel="Page Title" name="./pageTitle" renderReadOnly="true" sling:resourceType="granite/ui/components/coral/foundation/form/textfield">
+                            <granite:data jcr:primaryType="nt:unstructured" allowBulkEdit="true" cq-msm-lockable="pageTitle"/>
+                        </pagetitle>
+                        <navigationtitle jcr:primaryType="nt:unstructured" allowBulkEdit="true" cq:showOnCreate="true" fieldLabel="Navigation Title" name="./navTitle" renderReadOnly="true" sling:resourceType="granite/ui/components/coral/foundation/form/textfield">
+                            <granite:data jcr:primaryType="nt:unstructured" allowBulkEdit="true" cq-msm-lockable="navTitle"/>
+                        </navigationtitle>
+                        <subtitle jcr:primaryType="nt:unstructured" fieldLabel="Subtitle" name="./subtitle" renderReadOnly="true" sling:resourceType="granite/ui/components/coral/foundation/form/textfield">
+                            <granite:data jcr:primaryType="nt:unstructured" allowBulkEdit="true" cq-msm-lockable="subtitle"/>
+                        </subtitle>
+                        <description jcr:primaryType="nt:unstructured" fieldLabel="Description" name="./jcr:description" renderReadOnly="true" sling:resourceType="granite/ui/components/coral/foundation/form/textarea">
+                            <granite:data jcr:primaryType="nt:unstructured" allowBulkEdit="true" cq-msm-lockable="jcr:description"/>
+                        </description>
+                    </items>
+                </moretitles>
+                <onofftime jcr:primaryType="nt:unstructured" cq:showOnCreate="false" jcr:title="On/Off Time" sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                        <ondate jcr:primaryType="nt:unstructured" displayTimezoneMessage="true" displayedFormat="MMMM DD, YYYY hh:mm a" fieldLabel="On Time" name="./onTime" renderReadOnly="true" sling:resourceType="granite/ui/components/coral/foundation/form/datepicker" type="datetime">
+                            <granite:data jcr:primaryType="nt:unstructured" allowBulkEdit="true" cq-msm-lockable="onTime"/>
+                        </ondate>
+                        <offdate jcr:primaryType="nt:unstructured" displayTimezoneMessage="true" displayedFormat="MMMM DD, YYYY hh:mm a" fieldLabel="Off Time" name="./offTime" renderReadOnly="true" sling:resourceType="granite/ui/components/coral/foundation/form/datepicker" type="datetime">
+                            <granite:data jcr:primaryType="nt:unstructured" allowBulkEdit="true" cq-msm-lockable="offTime"/>
+                        </offdate>
+                    </items>
+                </onofftime>
+            </items>
+        </column>
+    </items>
+</jcr:root>

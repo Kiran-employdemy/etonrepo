@@ -1,0 +1,4331 @@
+{
+  "componentDefinitions": [
+    {
+      "componentId": 647,
+      "componentPosition": 1,
+      "selectedValue": "S",
+      "relationComponents": [],
+      "partGroup": 9,
+      "showList": 1,
+      "componentTypeId": 85,
+      "componentDisplayName": "Configuration Angle",
+      "partBuildPosition": -1,
+      "useValueForPartNumberBuild": false,
+      "optionItems": [
+        {
+          "valueId": 12293,
+          "value": "S",
+          "valueDisplay": "Straight",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 122
+        },
+        {
+          "valueId": 12294,
+          "value": "R",
+          "valueDisplay": "90 Degree",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 121
+        },
+        {
+          "valueId": 12295,
+          "value": "A",
+          "valueDisplay": "45 Degree",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 120
+        }
+      ]
+    },
+    {
+      "componentId": 648,
+      "componentPosition": 2,
+      "relationComponents": [
+        647
+      ],
+      "partGroup": 0,
+      "showList": 1,
+      "componentTypeId": 2,
+      "componentDisplayName": "Shell Size",
+      "partBuildPosition": 3,
+      "useValueForPartNumberBuild": false,
+      "optionItems": [
+        {
+          "valueId": 12846,
+          "value": "3",
+          "valueDisplay": " 3",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12847,
+          "value": "8",
+          "valueDisplay": " 8",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12848,
+          "value": "10",
+          "valueDisplay": "10",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12849,
+          "value": "12",
+          "valueDisplay": "12",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12850,
+          "value": "14",
+          "valueDisplay": "14",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12851,
+          "value": "16",
+          "valueDisplay": "16",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12852,
+          "value": "18",
+          "valueDisplay": "18",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12853,
+          "value": "20",
+          "valueDisplay": "20",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12854,
+          "value": "22",
+          "valueDisplay": "22",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12855,
+          "value": "24",
+          "valueDisplay": "24",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12856,
+          "value": "28",
+          "valueDisplay": "28",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12857,
+          "value": "32",
+          "valueDisplay": "32",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12858,
+          "value": "36",
+          "valueDisplay": "36",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12859,
+          "value": "40",
+          "valueDisplay": "40",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12860,
+          "value": "44",
+          "valueDisplay": "44",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12861,
+          "value": "48",
+          "valueDisplay": "48",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 12862,
+          "value": "61",
+          "valueDisplay": "61",
+          "groupValue": [
+            "R",
+            "A"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15286,
+          "value": "3",
+          "valueDisplay": " 3",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15287,
+          "value": "8",
+          "valueDisplay": " 8",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15288,
+          "value": "10",
+          "valueDisplay": "10",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15289,
+          "value": "12",
+          "valueDisplay": "12",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15290,
+          "value": "14",
+          "valueDisplay": "14",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15291,
+          "value": "16",
+          "valueDisplay": "16",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15292,
+          "value": "18",
+          "valueDisplay": "18",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15293,
+          "value": "20",
+          "valueDisplay": "20",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15294,
+          "value": "22",
+          "valueDisplay": "22",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15295,
+          "value": "24",
+          "valueDisplay": "24",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15296,
+          "value": "28",
+          "valueDisplay": "28",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15297,
+          "value": "32",
+          "valueDisplay": "32",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15298,
+          "value": "36",
+          "valueDisplay": "36",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15299,
+          "value": "40",
+          "valueDisplay": "40",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15300,
+          "value": "44",
+          "valueDisplay": "44",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15301,
+          "value": "48",
+          "valueDisplay": "48",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 15302,
+          "value": "61",
+          "valueDisplay": "61",
+          "groupValue": [
+            "S"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        }
+      ]
+    },
+    {
+      "componentId": 649,
+      "componentPosition": 3,
+      "relationComponents": [
+        648,
+        647
+      ],
+      "partGroup": 0,
+      "showList": 1,
+      "componentTypeId": 95,
+      "componentDisplayName": "Entry Size MAX",
+      "partBuildPosition": 1,
+      "useValueForPartNumberBuild": true,
+      "optionItems": [
+        {
+          "valueId": 15303,
+          "value": "1",
+          "valueDisplay": ".250 (6.4)",
+          "groupValue": [
+            "3"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15304,
+          "value": "2",
+          "valueDisplay": ".437 (11.1)",
+          "groupValue": [
+            "3"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15305,
+          "value": "3",
+          "valueDisplay": ".250 (6.4)",
+          "groupValue": [
+            "8"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15306,
+          "value": "4",
+          "valueDisplay": ".312 (7.9)",
+          "groupValue": [
+            "10"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15307,
+          "value": "5",
+          "valueDisplay": ".375 (9.5)",
+          "groupValue": [
+            "10"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15308,
+          "value": "49",
+          "valueDisplay": ".437 (11.1)",
+          "groupValue": [
+            "10"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15309,
+          "value": "6",
+          "valueDisplay": ".312 (7.9)",
+          "groupValue": [
+            "12"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15310,
+          "value": "7",
+          "valueDisplay": ".437 (11.1)",
+          "groupValue": [
+            "12"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15311,
+          "value": "8",
+          "valueDisplay": ".500 (12.7)",
+          "groupValue": [
+            "12"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15312,
+          "value": "71",
+          "valueDisplay": ".625 (15.9)",
+          "groupValue": [
+            "12"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15313,
+          "value": "74",
+          "valueDisplay": ".312 (7.9)",
+          "groupValue": [
+            "14"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15314,
+          "value": "9",
+          "valueDisplay": ".437 (11.1)",
+          "groupValue": [
+            "14"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15315,
+          "value": "10",
+          "valueDisplay": ".575 (14.6)",
+          "groupValue": [
+            "14"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15316,
+          "value": "50",
+          "valueDisplay": ".750 (19.1)",
+          "groupValue": [
+            "14"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15317,
+          "value": "75",
+          "valueDisplay": ".312 (7.9)",
+          "groupValue": [
+            "16"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15318,
+          "value": "11",
+          "valueDisplay": ".437 (11.1)",
+          "groupValue": [
+            "16"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15319,
+          "value": "40",
+          "valueDisplay": ".625 (15.9)",
+          "groupValue": [
+            "16"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15320,
+          "value": "12",
+          "valueDisplay": ".700 (17.8)",
+          "groupValue": [
+            "16"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15321,
+          "value": "51",
+          "valueDisplay": ".937 (23.8)",
+          "groupValue": [
+            "16"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15322,
+          "value": "41",
+          "valueDisplay": ".312 (7.9)",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15323,
+          "value": "42",
+          "valueDisplay": ".437 (11.1)",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15324,
+          "value": "13",
+          "valueDisplay": ".625 (15.9)",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15325,
+          "value": "52",
+          "valueDisplay": ".750 (19.1)",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15326,
+          "value": "14",
+          "valueDisplay": ".779 (19.8)",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15327,
+          "value": "72",
+          "valueDisplay": ".937 (23.8)",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15328,
+          "value": "43",
+          "valueDisplay": ".437 (11.1)",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15329,
+          "value": "15",
+          "valueDisplay": ".625 (15.9)",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15330,
+          "value": "54",
+          "valueDisplay": ".750 (19.1)",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15331,
+          "value": "16",
+          "valueDisplay": ".904 (23.0)",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15332,
+          "value": "55",
+          "valueDisplay": "1.250 (31.8)",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15333,
+          "value": "44",
+          "valueDisplay": ".312 (7.9)",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15334,
+          "value": "45",
+          "valueDisplay": ".437 (11.1)",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15335,
+          "value": "56",
+          "valueDisplay": ".625 (15.9)",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15336,
+          "value": "17",
+          "valueDisplay": ".750 (19.1)",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15337,
+          "value": "57",
+          "valueDisplay": ".937 (23.8)",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15338,
+          "value": "18",
+          "valueDisplay": "1.029 (26.1)",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15339,
+          "value": "58",
+          "valueDisplay": "1.250 (31.8)",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15340,
+          "value": "46",
+          "valueDisplay": ".625 (15.9)",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15341,
+          "value": "19",
+          "valueDisplay": ".750 (19.1)",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15342,
+          "value": "59",
+          "valueDisplay": ".937 (23.8)",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15343,
+          "value": "20",
+          "valueDisplay": "1.144 (29.1)",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15344,
+          "value": "73",
+          "valueDisplay": "1.250 (31.8)",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15345,
+          "value": "60",
+          "valueDisplay": ".750 (19.1)",
+          "groupValue": [
+            "28"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15346,
+          "value": "21",
+          "valueDisplay": ".937 (23.8)",
+          "groupValue": [
+            "28"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15347,
+          "value": "61",
+          "valueDisplay": "1.250 (31.8)",
+          "groupValue": [
+            "28"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15348,
+          "value": "22",
+          "valueDisplay": "1.375 (34.9)",
+          "groupValue": [
+            "28"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15349,
+          "value": "23",
+          "valueDisplay": ".937 (23.8)",
+          "groupValue": [
+            "32"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15350,
+          "value": "24",
+          "valueDisplay": "1.250 (31.8)",
+          "groupValue": [
+            "32"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15351,
+          "value": "62",
+          "valueDisplay": "1.375 (34.9)",
+          "groupValue": [
+            "32"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15352,
+          "value": "25",
+          "valueDisplay": "1.625 (41.3)",
+          "groupValue": [
+            "32"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15353,
+          "value": "47",
+          "valueDisplay": ".750 (19.1)",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15354,
+          "value": "26",
+          "valueDisplay": ".937 (23.8)",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15355,
+          "value": "63",
+          "valueDisplay": "1.250 (31.8)",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15356,
+          "value": "27",
+          "valueDisplay": "1.375 (34.9)",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15357,
+          "value": "64",
+          "valueDisplay": "1.625 (41.3)",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15358,
+          "value": "28",
+          "valueDisplay": "1.840 (46.7)",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15359,
+          "value": "48",
+          "valueDisplay": ".750 (19.1)",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15360,
+          "value": "29",
+          "valueDisplay": ".937 (23.8)",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15361,
+          "value": "65",
+          "valueDisplay": "1.250 (31.8)",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15362,
+          "value": "30",
+          "valueDisplay": "1.375 (34.9)",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15363,
+          "value": "66",
+          "valueDisplay": "1.625 (41.3)",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15364,
+          "value": "31",
+          "valueDisplay": "1.875 (47.6)",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15365,
+          "value": "32",
+          "valueDisplay": ".937 (23.8)",
+          "groupValue": [
+            "44"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15366,
+          "value": "67",
+          "valueDisplay": "1.250 (31.8)",
+          "groupValue": [
+            "44"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15367,
+          "value": "33",
+          "valueDisplay": "1.375 (34.9)",
+          "groupValue": [
+            "44"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15368,
+          "value": "68",
+          "valueDisplay": "1.625 (41.3)",
+          "groupValue": [
+            "44"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15369,
+          "value": "34",
+          "valueDisplay": "1.875 (47.6)",
+          "groupValue": [
+            "44"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15370,
+          "value": "35",
+          "valueDisplay": ".937 (23.8)",
+          "groupValue": [
+            "48"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15371,
+          "value": "69",
+          "valueDisplay": "1.250 (31.8)",
+          "groupValue": [
+            "48"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15372,
+          "value": "36",
+          "valueDisplay": "1.375 (34.9)",
+          "groupValue": [
+            "48"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15373,
+          "value": "70",
+          "valueDisplay": "1.625 (41.3)",
+          "groupValue": [
+            "48"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15374,
+          "value": "37",
+          "valueDisplay": "1.875 (47.6)",
+          "groupValue": [
+            "48"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15375,
+          "value": "38",
+          "valueDisplay": ".750 (19.1)",
+          "groupValue": [
+            "61"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15376,
+          "value": "53",
+          "valueDisplay": ".937 (23.8)",
+          "groupValue": [
+            "61"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15377,
+          "value": "39",
+          "valueDisplay": "1.184 (30.1)",
+          "groupValue": [
+            "61"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15378,
+          "value": "01",
+          "valueDisplay": ".250 (6.4); Sleeve Length = 2.00",
+          "groupValue": [
+            "3"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15379,
+          "value": "02",
+          "valueDisplay": ".250 (6.4); Sleeve Length = 3.00",
+          "groupValue": [
+            "3"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15380,
+          "value": "03",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 2.75",
+          "groupValue": [
+            "3"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15381,
+          "value": "04",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 3.75",
+          "groupValue": [
+            "3"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15382,
+          "value": "05",
+          "valueDisplay": ".250 (6.4); Sleeve Length = 2.00",
+          "groupValue": [
+            "8"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15383,
+          "value": "06",
+          "valueDisplay": ".250 (6.4); Sleeve Length = 3.00",
+          "groupValue": [
+            "8"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15384,
+          "value": "07",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 2.75",
+          "groupValue": [
+            "8"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15385,
+          "value": "08",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 3.75",
+          "groupValue": [
+            "8"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15386,
+          "value": "09",
+          "valueDisplay": ".312 (7.9); Sleeve Length = 2.00",
+          "groupValue": [
+            "10"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15387,
+          "value": "10",
+          "valueDisplay": ".312 (7.9); Sleeve Length = 3.00",
+          "groupValue": [
+            "10"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15388,
+          "value": "136",
+          "valueDisplay": ".375 (9.5); Sleeve Length = 2.00",
+          "groupValue": [
+            "10"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15389,
+          "value": "137",
+          "valueDisplay": ".375 (9.5); Sleeve Length = 3.00",
+          "groupValue": [
+            "10"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15390,
+          "value": "11",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 2.75",
+          "groupValue": [
+            "10"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15391,
+          "value": "12",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 3.75",
+          "groupValue": [
+            "10"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15392,
+          "value": "114",
+          "valueDisplay": ".312 (7.9); Sleeve Length = 2.00",
+          "groupValue": [
+            "12"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15393,
+          "value": "115",
+          "valueDisplay": ".312 (7.9); Sleeve Length = 3.00",
+          "groupValue": [
+            "12"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15394,
+          "value": "13",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 2.00",
+          "groupValue": [
+            "12"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15395,
+          "value": "14",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 3.00",
+          "groupValue": [
+            "12"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15396,
+          "value": "111",
+          "valueDisplay": ".500 (12.7); Sleeve Length = 2.00",
+          "groupValue": [
+            "12"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15397,
+          "value": "138",
+          "valueDisplay": ".500 (12.7); Sleeve Length = 2.00",
+          "groupValue": [
+            "12"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15398,
+          "value": "139",
+          "valueDisplay": ".500 (12.7); Sleeve Length = 3.00",
+          "groupValue": [
+            "12"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15399,
+          "value": "15",
+          "valueDisplay": ".625 (15.9); Sleeve Length = 2.75",
+          "groupValue": [
+            "12"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15400,
+          "value": "16",
+          "valueDisplay": ".625 (15.9); Sleeve Length = 3.75",
+          "groupValue": [
+            "12"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15401,
+          "value": "150",
+          "valueDisplay": ".312 (7.9); Sleeve Length = 2.00",
+          "groupValue": [
+            "14"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15402,
+          "value": "151",
+          "valueDisplay": ".312 (7.9); Sleeve Length = 3.00",
+          "groupValue": [
+            "14"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15403,
+          "value": "116",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 2.00",
+          "groupValue": [
+            "14"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15404,
+          "value": "117",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 3.00",
+          "groupValue": [
+            "14"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15405,
+          "value": "17",
+          "valueDisplay": ".575 (14.6); Sleeve Length = 2.00",
+          "groupValue": [
+            "14"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15406,
+          "value": "18",
+          "valueDisplay": ".575 (14.6); Sleeve Length = 3.00",
+          "groupValue": [
+            "14"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15407,
+          "value": "19",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 2.75",
+          "groupValue": [
+            "14"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15408,
+          "value": "20",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 3.75",
+          "groupValue": [
+            "14"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15409,
+          "value": "152",
+          "valueDisplay": ".312 (7.9); Sleeve Length = 2.00",
+          "groupValue": [
+            "16"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15410,
+          "value": "153",
+          "valueDisplay": ".312 (7.9); Sleeve Length = 3.00",
+          "groupValue": [
+            "16"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15411,
+          "value": "112",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 2.00",
+          "groupValue": [
+            "16"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15412,
+          "value": "113",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 3.00",
+          "groupValue": [
+            "16"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15413,
+          "value": "118",
+          "valueDisplay": ".625 (15.9); Sleeve Length = 2.00",
+          "groupValue": [
+            "16"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15414,
+          "value": "119",
+          "valueDisplay": ".625 (15.9); Sleeve Length = 3.00",
+          "groupValue": [
+            "16"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15415,
+          "value": "21",
+          "valueDisplay": ".700 (17.8); Sleeve Length = 2.00",
+          "groupValue": [
+            "16"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15416,
+          "value": "22",
+          "valueDisplay": ".700 (17.8); Sleeve Length = 3.00",
+          "groupValue": [
+            "16"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15417,
+          "value": "23",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 2.75",
+          "groupValue": [
+            "16"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15418,
+          "value": "24",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 3.75",
+          "groupValue": [
+            "16"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15419,
+          "value": "120",
+          "valueDisplay": ".312 (7.9); Sleeve Length = 2.00",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15420,
+          "value": "121",
+          "valueDisplay": ".312 (7.9); Sleeve Length = 3.00",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15421,
+          "value": "122",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 2.00",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15422,
+          "value": "123",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 3.00",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15423,
+          "value": "25",
+          "valueDisplay": ".625 (15.9); Sleeve Length = 2.00",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15424,
+          "value": "26",
+          "valueDisplay": ".625 (15.9); Sleeve Length = 3.00",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15425,
+          "value": "27",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 2.00",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15426,
+          "value": "28",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 3.00",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15427,
+          "value": "29",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 2.75",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15428,
+          "value": "30",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 3.75",
+          "groupValue": [
+            "18"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15429,
+          "value": "124",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 3.00",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15430,
+          "value": "125",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 4.00",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15431,
+          "value": "31",
+          "valueDisplay": ".625 (15.9); Sleeve Length = 3.00",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15432,
+          "value": "32",
+          "valueDisplay": ".625 (15.9); Sleeve Length = 4.00",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15433,
+          "value": "33",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 3.00",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15434,
+          "value": "34",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 4.00",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15435,
+          "value": "140",
+          "valueDisplay": ".904 (23.0); Sleeve Length = 3.00",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15436,
+          "value": "141",
+          "valueDisplay": ".904 (23.0); Sleeve Length = 4.00",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15437,
+          "value": "35",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 3.75",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15438,
+          "value": "36",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 4.75",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15439,
+          "value": "37",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 3.75",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15440,
+          "value": "38",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 4.75",
+          "groupValue": [
+            "20"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15441,
+          "value": "126",
+          "valueDisplay": ".312 (7.9); Sleeve Length = 3.00",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15442,
+          "value": "127",
+          "valueDisplay": ".312 (7.9); Sleeve Length = 4.00",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15443,
+          "value": "128",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 3.00",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15444,
+          "value": "129",
+          "valueDisplay": ".437 (11.1); Sleeve Length = 4.00",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15445,
+          "value": "39",
+          "valueDisplay": ".625 (15.9); Sleeve Length = 3.00",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15446,
+          "value": "40",
+          "valueDisplay": ".625 (15.9); Sleeve Length = 4.00",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15447,
+          "value": "41",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 3.00",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15448,
+          "value": "42",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 4.00",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15449,
+          "value": "43",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 3.00",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15450,
+          "value": "44",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 4.00",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15451,
+          "value": "142",
+          "valueDisplay": "1.029 (26.1); Sleeve Length = 3.00",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15452,
+          "value": "143",
+          "valueDisplay": "1.029 (26.1); Sleeve Length = 4.00",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15453,
+          "value": "45",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 3.75",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15454,
+          "value": "46",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 4.75",
+          "groupValue": [
+            "22"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15455,
+          "value": "130",
+          "valueDisplay": ".625 (15.9); Sleeve Length = 3.00",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15456,
+          "value": "131",
+          "valueDisplay": ".625 (15.9); Sleeve Length = 4.00",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15457,
+          "value": "47",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 3.00",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15458,
+          "value": "48",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 4.00",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15459,
+          "value": "49",
+          "valueDisplay": ".812 (20.6); Sleeve Length = 3.00",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15460,
+          "value": "50",
+          "valueDisplay": ".812 (20.6); Sleeve Length = 4.00",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15461,
+          "value": "51",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 3.00",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15462,
+          "value": "52",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 4.00",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15463,
+          "value": "144",
+          "valueDisplay": "1.144 (29.1); Sleeve Length = 3.00",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15464,
+          "value": "145",
+          "valueDisplay": "1.144 (29.1); Sleeve Length = 4.00",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15465,
+          "value": "53",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 3.75",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15466,
+          "value": "54",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 4.75",
+          "groupValue": [
+            "24"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15467,
+          "value": "55",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 3.00",
+          "groupValue": [
+            "28"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15468,
+          "value": "56",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 4.00",
+          "groupValue": [
+            "28"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15469,
+          "value": "57",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 3.00",
+          "groupValue": [
+            "28"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15470,
+          "value": "58",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 4.00",
+          "groupValue": [
+            "28"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15471,
+          "value": "59",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 3.00",
+          "groupValue": [
+            "28"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15472,
+          "value": "60",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 4.00",
+          "groupValue": [
+            "28"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15473,
+          "value": "61",
+          "valueDisplay": "1.375 (34.9); Sleeve Length = 3.00",
+          "groupValue": [
+            "28"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15474,
+          "value": "62",
+          "valueDisplay": "1.375 (34.9); Sleeve Length = 4.00",
+          "groupValue": [
+            "28"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15475,
+          "value": "63",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 3.00",
+          "groupValue": [
+            "32"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15476,
+          "value": "64",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 4.00",
+          "groupValue": [
+            "32"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15477,
+          "value": "65",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 3.00",
+          "groupValue": [
+            "32"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15478,
+          "value": "66",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 4.00",
+          "groupValue": [
+            "32"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15479,
+          "value": "67",
+          "valueDisplay": "1.375 (34.9); Sleeve Length = 3.00",
+          "groupValue": [
+            "32"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15480,
+          "value": "68",
+          "valueDisplay": "1.375 (34.9); Sleeve Length = 4.00",
+          "groupValue": [
+            "32"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15481,
+          "value": "69",
+          "valueDisplay": "1.625 (41.3); Sleeve Length = 3.00",
+          "groupValue": [
+            "32"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15482,
+          "value": "70",
+          "valueDisplay": "1.625 (41.3); Sleeve Length = 4.00",
+          "groupValue": [
+            "32"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15483,
+          "value": "132",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 4.00",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15484,
+          "value": "133",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 5.00",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15485,
+          "value": "148",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 4.00",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15486,
+          "value": "149",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 5.00",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15487,
+          "value": "71",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 4.00",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15488,
+          "value": "72",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 5.00",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15489,
+          "value": "73",
+          "valueDisplay": "1.375 (34.9); Sleeve Length = 4.00",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15490,
+          "value": "74",
+          "valueDisplay": "1.375 (34.9); Sleeve Length = 5.00",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15491,
+          "value": "75",
+          "valueDisplay": "1.625 (41.3); Sleeve Length = 4.00",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15492,
+          "value": "76",
+          "valueDisplay": "1.625 (41.3); Sleeve Length = 5.00",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15493,
+          "value": "146",
+          "valueDisplay": "1.840 (46.7); Sleeve Length = 4.00",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15494,
+          "value": "147",
+          "valueDisplay": "1.840 (46.7); Sleeve Length = 5.00",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15495,
+          "value": "77",
+          "valueDisplay": "1.875 (47.6); Sleeve Length = 4.88",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15496,
+          "value": "78",
+          "valueDisplay": "1.875 (47.6); Sleeve Length = 5.88",
+          "groupValue": [
+            "36"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15497,
+          "value": "134",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 4.00",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15498,
+          "value": "135",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 5.00",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15499,
+          "value": "156",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 4.00",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15500,
+          "value": "157",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 5.00",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15501,
+          "value": "79",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 4.00",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15502,
+          "value": "80",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 5.00",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15503,
+          "value": "81",
+          "valueDisplay": "1.375 (34.9); Sleeve Length = 4.00",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15504,
+          "value": "82",
+          "valueDisplay": "1.375 (34.9); Sleeve Length = 5.00",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15505,
+          "value": "83",
+          "valueDisplay": "1.625 (41.3); Sleeve Length = 4.00",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15506,
+          "value": "84",
+          "valueDisplay": "1.625 (41.3); Sleeve Length = 5.00",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15507,
+          "value": "85",
+          "valueDisplay": "1.875 (47.6); Sleeve Length = 4.00",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15508,
+          "value": "86",
+          "valueDisplay": "1.875 (47.6); Sleeve Length = 5.00",
+          "groupValue": [
+            "40"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15509,
+          "value": "154",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 4.00",
+          "groupValue": [
+            "44"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15510,
+          "value": "155",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 5.00",
+          "groupValue": [
+            "44"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15511,
+          "value": "87",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 4.00",
+          "groupValue": [
+            "44"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15512,
+          "value": "88",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 5.00",
+          "groupValue": [
+            "44"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15513,
+          "value": "89",
+          "valueDisplay": "1.375 (34.9); Sleeve Length = 4.00",
+          "groupValue": [
+            "44"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15514,
+          "value": "90",
+          "valueDisplay": "1.375 (34.9); Sleeve Length = 5.00",
+          "groupValue": [
+            "44"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15515,
+          "value": "91",
+          "valueDisplay": "1.625 (41.3); Sleeve Length = 4.00",
+          "groupValue": [
+            "44"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15516,
+          "value": "92",
+          "valueDisplay": "1.625 (41.3); Sleeve Length = 5.00",
+          "groupValue": [
+            "44"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15517,
+          "value": "93",
+          "valueDisplay": "1.875 (47.6); Sleeve Length = 4.00",
+          "groupValue": [
+            "44"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15518,
+          "value": "94",
+          "valueDisplay": "1.875 (47.6); Sleeve Length = 5.00",
+          "groupValue": [
+            "44"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15519,
+          "value": "95",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 4.00",
+          "groupValue": [
+            "48"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15520,
+          "value": "96",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 5.00",
+          "groupValue": [
+            "48"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15521,
+          "value": "97",
+          "valueDisplay": "1.375 (34.9); Sleeve Length = 4.00",
+          "groupValue": [
+            "48"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15522,
+          "value": "98",
+          "valueDisplay": "1.375 (34.9); Sleeve Length = 5.00",
+          "groupValue": [
+            "48"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15523,
+          "value": "99",
+          "valueDisplay": "1.625 (41.3); Sleeve Length = 4.00",
+          "groupValue": [
+            "48"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15524,
+          "value": "100",
+          "valueDisplay": "1.625 (41.3); Sleeve Length = 5.00",
+          "groupValue": [
+            "48"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15525,
+          "value": "101",
+          "valueDisplay": "1.875 (47.6); Sleeve Length = 4.00",
+          "groupValue": [
+            "48"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15526,
+          "value": "102",
+          "valueDisplay": "1.875 (47.6); Sleeve Length = 5.00",
+          "groupValue": [
+            "48"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15527,
+          "value": "103",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 3.00",
+          "groupValue": [
+            "61"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15528,
+          "value": "104",
+          "valueDisplay": ".750 (19.1); Sleeve Length = 4.00",
+          "groupValue": [
+            "61"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15529,
+          "value": "105",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 3.00",
+          "groupValue": [
+            "61"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15530,
+          "value": "106",
+          "valueDisplay": ".937 (23.8); Sleeve Length = 4.00",
+          "groupValue": [
+            "61"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15531,
+          "value": "107",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 3.75",
+          "groupValue": [
+            "61"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15532,
+          "value": "108",
+          "valueDisplay": "1.250 (31.8); Sleeve Length = 4.75",
+          "groupValue": [
+            "61"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15533,
+          "value": "109",
+          "valueDisplay": "1.375 (34.9); Sleeve Length = 3.75",
+          "groupValue": [
+            "61"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 15534,
+          "value": "110",
+          "valueDisplay": "1.375 (34.9); Sleeve Length = 4.75",
+          "groupValue": [
+            "61"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        }
+      ]
+    },
+    {
+      "componentId": 650,
+      "componentPosition": 4,
+      "relationComponents": [],
+      "partGroup": 0,
+      "showList": 1,
+      "componentTypeId": 4,
+      "componentDisplayName": "Finish",
+      "partBuildPosition": 2,
+      "useValueForPartNumberBuild": true,
+      "optionItems": [
+        {
+          "valueId": 16326,
+          "value": "B",
+          "valueDisplay": "CRES/Black Cadmium",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 16327,
+          "value": "N",
+          "valueDisplay": "Aluminum/Electroless Nickel",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 16328,
+          "value": "W",
+          "valueDisplay": "Aluminum/Cadmium over Electroless Nickel",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 16329,
+          "value": "S",
+          "valueDisplay": "CRES/Passivated",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        }
+      ]
+    }
+  ],
+  "productRightHandMetadataDefinitions": [
+    {
+      "label": "Connector Interface Thread Size",
+      "componentId": 648,
+      "componentTypeId": 277,
+      "displayLevel": 1,
+      "isDimension": 1,
+      "metaDataValues": [
+        {
+          "dimensionValue": "3",
+          "value": ".562 - 24 UNEF"
+        },
+        {
+          "dimensionValue": "8",
+          "value": ".500 - 20 UNF"
+        },
+        {
+          "dimensionValue": "10",
+          "value": ".625 - 24 UNEF"
+        },
+        {
+          "dimensionValue": "12",
+          "value": ".750 - 20 UNEF"
+        },
+        {
+          "dimensionValue": "14",
+          "value": ".875 - 20 UNEF"
+        },
+        {
+          "dimensionValue": "16",
+          "value": "1.000 - 20 UNEF"
+        },
+        {
+          "dimensionValue": "18",
+          "value": "1.062 - 18 UNEF"
+        },
+        {
+          "dimensionValue": "20",
+          "value": "1.188 - 18 UNEF"
+        },
+        {
+          "dimensionValue": "22",
+          "value": "1.313 - 18 UNEF"
+        },
+        {
+          "dimensionValue": "24",
+          "value": "1.438 - 18 UNEF"
+        },
+        {
+          "dimensionValue": "28",
+          "value": "1.750 - 18 UNS"
+        },
+        {
+          "dimensionValue": "32",
+          "value": "2.000 - 18 UNS"
+        },
+        {
+          "dimensionValue": "36",
+          "value": "2.250 - 16 UN"
+        },
+        {
+          "dimensionValue": "40",
+          "value": "2.500 - 16 UN"
+        },
+        {
+          "dimensionValue": "44",
+          "value": "2.750 - 16 UN"
+        },
+        {
+          "dimensionValue": "48",
+          "value": "3.000 - 16 UN"
+        },
+        {
+          "dimensionValue": "61",
+          "value": "1.500 - 18 UNEF"
+        }
+      ]
+    },
+    {
+      "label": "CABLE RANGE",
+      "componentId": 649,
+      "componentTypeId": 225,
+      "displayLevel": 1,
+      "isDimension": 0,
+      "metaDataValues": []
+    },
+    {
+      "label": "MAX",
+      "componentId": 649,
+      "componentTypeId": 115,
+      "displayLevel": 2,
+      "isDimension": 1,
+      "metaDataValues": [
+        {
+          "dimensionValue": "01",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "02",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "03",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "04",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "05",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "06",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "07",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "08",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "09",
+          "value": ".312 (7.9)"
+        },
+        {
+          "dimensionValue": "10",
+          "value": ".312 (7.9)"
+        },
+        {
+          "dimensionValue": "11",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "12",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "13",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "14",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "15",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "16",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "17",
+          "value": ".575 (14.6)"
+        },
+        {
+          "dimensionValue": "18",
+          "value": ".575 (14.6)"
+        },
+        {
+          "dimensionValue": "19",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "20",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "21",
+          "value": ".700 (17.8)"
+        },
+        {
+          "dimensionValue": "22",
+          "value": ".700 (17.8)"
+        },
+        {
+          "dimensionValue": "23",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "24",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "25",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "26",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "27",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "28",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "29",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "30",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "31",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "32",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "33",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "34",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "35",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "36",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "37",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "38",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "39",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "40",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "41",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "42",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "43",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "44",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "45",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "46",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "47",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "48",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "49",
+          "value": ".812 (20.6)"
+        },
+        {
+          "dimensionValue": "50",
+          "value": ".812 (20.6)"
+        },
+        {
+          "dimensionValue": "51",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "52",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "53",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "54",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "55",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "56",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "57",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "58",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "59",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "60",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "61",
+          "value": "1.375 (34.9)"
+        },
+        {
+          "dimensionValue": "62",
+          "value": "1.375 (34.9)"
+        },
+        {
+          "dimensionValue": "63",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "64",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "65",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "66",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "67",
+          "value": "1.375 (34.9)"
+        },
+        {
+          "dimensionValue": "68",
+          "value": "1.375 (34.9)"
+        },
+        {
+          "dimensionValue": "69",
+          "value": "1.625 (41.3)"
+        },
+        {
+          "dimensionValue": "70",
+          "value": "1.625 (41.3)"
+        },
+        {
+          "dimensionValue": "71",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "72",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "73",
+          "value": "1.375 (34.9)"
+        },
+        {
+          "dimensionValue": "74",
+          "value": "1.375 (34.9)"
+        },
+        {
+          "dimensionValue": "75",
+          "value": "1.625 (41.3)"
+        },
+        {
+          "dimensionValue": "76",
+          "value": "1.625 (41.3)"
+        },
+        {
+          "dimensionValue": "77",
+          "value": "1.875 (47.6)"
+        },
+        {
+          "dimensionValue": "78",
+          "value": "1.875 (47.6)"
+        },
+        {
+          "dimensionValue": "79",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "80",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "81",
+          "value": "1.375 (34.9)"
+        },
+        {
+          "dimensionValue": "82",
+          "value": "1.375 (34.9)"
+        },
+        {
+          "dimensionValue": "83",
+          "value": "1.625 (41.3)"
+        },
+        {
+          "dimensionValue": "84",
+          "value": "1.625 (41.3)"
+        },
+        {
+          "dimensionValue": "85",
+          "value": "1.875 (47.6)"
+        },
+        {
+          "dimensionValue": "86",
+          "value": "1.875 (47.6)"
+        },
+        {
+          "dimensionValue": "87",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "88",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "89",
+          "value": "1.375 (34.9)"
+        },
+        {
+          "dimensionValue": "90",
+          "value": "1.375 (34.9)"
+        },
+        {
+          "dimensionValue": "91",
+          "value": "1.625 (41.3)"
+        },
+        {
+          "dimensionValue": "92",
+          "value": "1.625 (41.3)"
+        },
+        {
+          "dimensionValue": "93",
+          "value": "1.875 (47.6)"
+        },
+        {
+          "dimensionValue": "94",
+          "value": "1.875 (47.6)"
+        },
+        {
+          "dimensionValue": "95",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "96",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "97",
+          "value": "1.375 (34.9)"
+        },
+        {
+          "dimensionValue": "98",
+          "value": "1.375 (34.9)"
+        },
+        {
+          "dimensionValue": "99",
+          "value": "1.625 (41.3)"
+        },
+        {
+          "dimensionValue": "100",
+          "value": "1.625 (41.3)"
+        },
+        {
+          "dimensionValue": "101",
+          "value": "1.875 (47.6)"
+        },
+        {
+          "dimensionValue": "102",
+          "value": "1.875 (47.6)"
+        },
+        {
+          "dimensionValue": "103",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "104",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "105",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "106",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "107",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "108",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "109",
+          "value": "1.375 (34.9)"
+        },
+        {
+          "dimensionValue": "110",
+          "value": "1.375 (34.9)"
+        },
+        {
+          "dimensionValue": "111",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "112",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "113",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "114",
+          "value": ".312 (7.9)"
+        },
+        {
+          "dimensionValue": "115",
+          "value": ".312 (7.9)"
+        },
+        {
+          "dimensionValue": "116",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "117",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "118",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "119",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "120",
+          "value": ".312 (7.9)"
+        },
+        {
+          "dimensionValue": "121",
+          "value": ".312 (7.9)"
+        },
+        {
+          "dimensionValue": "122",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "123",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "124",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "125",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "126",
+          "value": ".312 (7.9)"
+        },
+        {
+          "dimensionValue": "127",
+          "value": ".312 (7.9)"
+        },
+        {
+          "dimensionValue": "128",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "129",
+          "value": ".437 (11.1)"
+        },
+        {
+          "dimensionValue": "130",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "131",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "132",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "133",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "134",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "135",
+          "value": ".750 (19.1)"
+        },
+        {
+          "dimensionValue": "136",
+          "value": ".375 (9.5)"
+        },
+        {
+          "dimensionValue": "137",
+          "value": ".375 (9.5)"
+        },
+        {
+          "dimensionValue": "138",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "139",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "140",
+          "value": ".904 (23.0)"
+        },
+        {
+          "dimensionValue": "141",
+          "value": ".904 (23.0)"
+        },
+        {
+          "dimensionValue": "142",
+          "value": "1.029 (26.1)"
+        },
+        {
+          "dimensionValue": "143",
+          "value": "1.029 (26.1)"
+        },
+        {
+          "dimensionValue": "144",
+          "value": "1.144 (29.1)"
+        },
+        {
+          "dimensionValue": "145",
+          "value": "1.144 (29.1)"
+        },
+        {
+          "dimensionValue": "146",
+          "value": "1.840 (46.7)"
+        },
+        {
+          "dimensionValue": "147",
+          "value": "1.840 (46.7)"
+        },
+        {
+          "dimensionValue": "148",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "149",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "150",
+          "value": ".312 (7.9)"
+        },
+        {
+          "dimensionValue": "151",
+          "value": ".312 (7.9)"
+        },
+        {
+          "dimensionValue": "152",
+          "value": ".312 (7.9)"
+        },
+        {
+          "dimensionValue": "153",
+          "value": ".312 (7.9)"
+        },
+        {
+          "dimensionValue": "154",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "155",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "156",
+          "value": ".937 (23.8)"
+        },
+        {
+          "dimensionValue": "157",
+          "value": ".937 (23.8)"
+        }
+      ]
+    },
+    {
+      "label": "MIN",
+      "componentId": 649,
+      "componentTypeId": 114,
+      "displayLevel": 2,
+      "isDimension": 1,
+      "metaDataValues": [
+        {
+          "dimensionValue": "01",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "02",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "03",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "04",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "05",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "06",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "07",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "08",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "09",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "10",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "11",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "12",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "13",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "14",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "15",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "16",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "17",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "18",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "19",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "20",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "21",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "22",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "23",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "24",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "25",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "26",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "27",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "28",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "29",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "30",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "31",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "32",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "33",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "34",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "35",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "36",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "37",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "38",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "39",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "40",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "41",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "42",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "43",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "44",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "45",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "46",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "47",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "48",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "49",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "50",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "51",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "52",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "53",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "54",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "55",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "56",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "57",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "58",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "59",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "60",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "61",
+          "value": "1.000 (25.4)"
+        },
+        {
+          "dimensionValue": "62",
+          "value": "1.000 (25.4)"
+        },
+        {
+          "dimensionValue": "63",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "64",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "65",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "66",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "67",
+          "value": "1.000 (25.4)"
+        },
+        {
+          "dimensionValue": "68",
+          "value": "1.000 (25.4)"
+        },
+        {
+          "dimensionValue": "69",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "70",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "71",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "72",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "73",
+          "value": "1.000 (25.4)"
+        },
+        {
+          "dimensionValue": "74",
+          "value": "1.000 (25.4)"
+        },
+        {
+          "dimensionValue": "75",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "76",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "77",
+          "value": "1.437 (36.5)"
+        },
+        {
+          "dimensionValue": "78",
+          "value": "1.437 (36.5)"
+        },
+        {
+          "dimensionValue": "79",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "80",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "81",
+          "value": "1.000 (25.4)"
+        },
+        {
+          "dimensionValue": "82",
+          "value": "1.000 (25.4)"
+        },
+        {
+          "dimensionValue": "83",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "84",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "85",
+          "value": "1.437 (36.5)"
+        },
+        {
+          "dimensionValue": "86",
+          "value": "1.437 (36.5)"
+        },
+        {
+          "dimensionValue": "87",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "88",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "89",
+          "value": "1.000 (25.4)"
+        },
+        {
+          "dimensionValue": "90",
+          "value": "1.000 (25.4)"
+        },
+        {
+          "dimensionValue": "91",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "92",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "93",
+          "value": "1.437 (36.5)"
+        },
+        {
+          "dimensionValue": "94",
+          "value": "1.437 (36.5)"
+        },
+        {
+          "dimensionValue": "95",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "96",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "97",
+          "value": "1.000 (25.4)"
+        },
+        {
+          "dimensionValue": "98",
+          "value": "1.000 (25.4)"
+        },
+        {
+          "dimensionValue": "99",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "100",
+          "value": "1.250 (31.8)"
+        },
+        {
+          "dimensionValue": "101",
+          "value": "1.437 (36.5)"
+        },
+        {
+          "dimensionValue": "102",
+          "value": "1.437 (36.5)"
+        },
+        {
+          "dimensionValue": "103",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "104",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "105",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "106",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "107",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "108",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "109",
+          "value": "1.000 (25.4)"
+        },
+        {
+          "dimensionValue": "110",
+          "value": "1.000 (25.4)"
+        },
+        {
+          "dimensionValue": "111",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "112",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "113",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "114",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "115",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "116",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "117",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "118",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "119",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "120",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "121",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "122",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "123",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "124",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "125",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "126",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "127",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "128",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "129",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "130",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "131",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "132",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "133",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "134",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "135",
+          "value": ".500 (12.7)"
+        },
+        {
+          "dimensionValue": "136",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "137",
+          "value": ".250 (6.4)"
+        },
+        {
+          "dimensionValue": "138",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "139",
+          "value": ".350 (8.9)"
+        },
+        {
+          "dimensionValue": "140",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "141",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "142",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "143",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "144",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "145",
+          "value": ".875 (22.2)"
+        },
+        {
+          "dimensionValue": "146",
+          "value": "1.437 (36.5)"
+        },
+        {
+          "dimensionValue": "147",
+          "value": "1.437 (36.5)"
+        },
+        {
+          "dimensionValue": "148",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "149",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "150",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "151",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "152",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "153",
+          "value": ".125 (3.2)"
+        },
+        {
+          "dimensionValue": "154",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "155",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "156",
+          "value": ".625 (15.9)"
+        },
+        {
+          "dimensionValue": "157",
+          "value": ".625 (15.9)"
+        }
+      ]
+    },
+    {
+      "label": "Plating",
+      "componentId": 650,
+      "componentTypeId": 40,
+      "displayLevel": 1,
+      "isDimension": 1,
+      "metaDataValues": [
+        {
+          "dimensionValue": "A",
+          "value": "Aluminum/Black Anodize"
+        },
+        {
+          "dimensionValue": "B",
+          "value": "CRES/Black Cadmium"
+        },
+        {
+          "dimensionValue": "W",
+          "value": "Aluminum/Cadmium over Electroless Nickel"
+        },
+        {
+          "dimensionValue": "N",
+          "value": "Aluminum/Electroless Nickel"
+        },
+        {
+          "dimensionValue": "S",
+          "value": "CRES/Passivated"
+        },
+        {
+          "dimensionValue": "P",
+          "value": "Aluminum/Cadmium over Electroless Nickel w/Polysulfide Sealant Strips"
+        }
+      ]
+    }
+  ],
+  "productLeftHandMetadataDefinitions": [
+    {
+      "componentTypeId": 26,
+      "label": "Dash Number",
+      "componentId": 649,
+      "suffixDescription": "",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 0,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": true,
+      "displayLevel": 1
+    },
+    {
+      "componentTypeId": 86,
+      "label": "Finish Code",
+      "componentId": 650,
+      "suffixDescription": "",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 0,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": false,
+      "displayLevel": 1
+    },
+    {
+      "componentTypeId": 2,
+      "label": "Shell Size",
+      "componentId": 648,
+      "suffixDescription": "",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 0,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": true,
+      "displayLevel": 1
+    },
+    {
+      "componentTypeId": 255,
+      "label": "Sleeve Length",
+      "componentId": 649,
+      "suffixDescription": "",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 0,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": true,
+      "displayLevel": 1
+    }
+  ],
+  "partNotes": [
+    {
+      "messageCode": 17,
+      "message": "Metric Dimensions are shown in ( ) parentheses for reference only."
+    }
+  ],
+  "errorConditions": [
+    {
+      "componentId": 649,
+      "relation_id_1": 649,
+      "relation_id_2": 0,
+      "relation_id_3": 0,
+      "error_compare": "=",
+      "config_component": 0,
+      "length_component": 0,
+      "min_length_value": 0,
+      "errorGroupId": 58,
+      "errorGroup": [
+        {
+          "componentId": 164,
+          "relationValue": "F4"
+        }
+      ],
+      "errorGroupValue": [
+        {
+          "componentId": 164,
+          "relationValue": "9",
+          "componentValue": "2"
+        },
+        {
+          "componentId": 164,
+          "relationValue": "11",
+          "componentValue": "3"
+        },
+        {
+          "componentId": 164,
+          "relationValue": "13",
+          "componentValue": "4"
+        },
+        {
+          "componentId": 164,
+          "relationValue": "15",
+          "componentValue": "5"
+        },
+        {
+          "componentId": 164,
+          "relationValue": "17",
+          "componentValue": "6"
+        },
+        {
+          "componentId": 164,
+          "relationValue": "19",
+          "componentValue": "7"
+        },
+        {
+          "componentId": 164,
+          "relationValue": "21",
+          "componentValue": "7"
+        },
+        {
+          "componentId": 164,
+          "relationValue": "23",
+          "componentValue": "8"
+        },
+        {
+          "componentId": 164,
+          "relationValue": "25",
+          "componentValue": "10"
+        }
+      ],
+      "exceptionsConfigS": "S",
+      "exceptionsReferenceId": "3",
+      "errorMessages": [
+        {
+          "errorMessageCode": 1,
+          "errorMessageText": "The part number displayed above is invalid. When a style 2-assembly is required to meet specific application requirements, the minimum order length is <$1> inches. Use code <$2> or larger for the length designator in the part number selection option to correct the displayed part number shown above"
+        },
+        {
+          "errorMessageCode": 2,
+          "errorMessageText": "The above selected part number entry size exceeds the connector insert diameter and therefore a type 2 adapter assembly will be supplied. Please refer to the individual drawing for dimensional data requirements."
+        },
+        {
+          "errorMessageCode": 3,
+          "errorMessageText": "The part number displayed above is invalid. The entry size exceeds the connector insert diameter, please select a smaller entry size in the part number selection option to correct the displayed part number shown above"
+        },
+        {
+          "errorMessageCode": 4,
+          "errorMessageText": "For this shell size and cable entry configuration a style 2 will be supplied"
+        },
+        {
+          "errorMessageCode": 5,
+          "errorMessageText": "The above selected part number entry size exceeds the connector insert diameter, therefore a type 2 assembly will be supplied. Please refer to the individual drawing for the type 2 dimensional data requirements. (envelope dimensions will not apply please consult factory)."
+        }
+      ]
+    }
+  ]
+}

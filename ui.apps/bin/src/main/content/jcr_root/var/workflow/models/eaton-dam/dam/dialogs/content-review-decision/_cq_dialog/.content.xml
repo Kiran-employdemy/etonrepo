@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Content Review Decision Dialog"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <columns
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <textChoice
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/text"
+                            disabled="{Boolean}false"
+                            fieldLabel=""
+                            text="The content of this asset is set to expire soon. Select &quot;Expire&quot; to expire this asset now, or select &quot;Renew&quot; to renew this asset."/>
+                    <choice
+                            jcr:primaryType="nt:unstructured"
+                            class="cq-dialog-dropdown-showhide"
+                            cq-dialog-dropdown-showhide-target=".text-date-hide-show"
+                            sling:resourceType="granite/ui/components/foundation/form/select"
+                            disabled="{Boolean}false"
+                            name="RENEW_DECISION">
+                        <datasource
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/apps/eaton/datasource/renewDecision"/>
+                    </choice>
+                    <well
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="renew"
+                            class="hide text-date-hide-show"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <textDatepicker
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/text"
+                                    disabled="{Boolean}false"
+                                    fieldLabel=""
+                                    text="Select a new expiration date. If the asset should not have a new expiration date, leave this field blank."/>
+                            <datepicker
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                    disabled="{Boolean}false"
+                                    displayedFormat="YYYY-MM-DD HH:mm"
+                                    name="NEW_EXPIRATION_DATE"
+                                    storedFormat="YYYY-MM-DD HH:mm"
+                                    title="New Expiration Date"
+                                    type="datetime"/>
+                        </items>
+                    </well>
+                </items>
+            </columns>
+        </items>
+    </content>
+</jcr:root>

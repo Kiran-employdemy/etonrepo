@@ -1,0 +1,85 @@
+@import "../../../global/css/_config/sass";
+
+.submittal-builder__modal--open {
+  @include media-mobile-and-tablet {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+
+    header,
+    .submittal-builder__floating-button__container {
+      display: none;
+    }
+  }
+}
+
+.submittal-builder {
+  &__modal {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+
+    @include media-tablet-and-up {
+      position: fixed;
+    }
+
+    &__inner-content {
+      background: $color__white;
+      height: 100%;
+      max-height: 100%;
+      max-width: rem($grid__sm-container * .9166);
+      overflow-y: auto;
+      padding: rem($spacing__sm);
+      position: fixed;
+      top: 0;
+      width: 100%;
+
+      @include media-tablet-and-up {
+        border: rem($base__font-size * 0.1) solid $color__primary-gray2;
+        height: auto;
+        position: relative;
+        top: auto;
+      }
+
+      .is-author-mode & {
+        margin: -(rem($spacing__sm * 0.66)) auto rem($spacing__sm * .66);
+        max-width: none;
+        position: relative;
+      }
+    }
+
+    &__header {
+      padding-right: rem($spacing__md);
+
+      @include media-tablet-and-up {
+        margin-bottom: rem($spacing__md * 0.66);
+      }
+    }
+
+    &__close {
+      font-size: rem($base__font-size * 3);
+      position: absolute;
+      right: rem($spacing__sm * 1.166);
+      top: rem($spacing__sm * .8333);
+
+      &:hover,
+      &:active {
+        color: $color__primary-blue;
+      }
+
+      [dir='rtl'] & {
+        left: rem($spacing__sm * 1.166);
+        right: auto;
+      }
+
+      .is-author-mode & {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,361 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:mixinTypes": [
+    "cq:ReplicationStatus",
+    "cq:Taggable"
+  ],
+  "jcr:title": "124206398",
+  "cq:lastReplicationAction": "Activate",
+  "identifier": "Champ VMVL LED Hazardous Area Light Fixtures",
+  "productName": "Champ VMVL LED Hazardous Area Light Fixtures",
+  "cq:lastReplicatedBy": "e9813191",
+  "primaryImage": "/content/dam/eaton/products/lighting-and-controls/crouse-hinds/images/champ-vmv-led.jpg",
+  "primaryCTAURL": "/content/eaton/us/en-us/forms/crouse-hinds/contact-me",
+  "seoTitleModelsTab": "Champ VMVL LED Lights | Class I and Class II | Eaton",
+  "inventoryID": "6417832",
+  "marketingDesc": "<p>The Crouse-Hinds series Champ VMVL LED is our flagship LED fixture for Class I and Class II hazardous area mid bay and high bay downlighting.  It is available in nine models ranging from 3,000 lumens to 25,000 lumens.  This offers a lighting solution for areas with mounting heights from 8’ all the way up to 60’.<br />\r\n<br />\r\nChamp VMVL LED light fixtures are engineered to provide maintenance-free operation, while delivering long life and high lumen performance.  The NEMA 4X fixture provides up to 127 lumens per watt, and custom Type I, III and V optics maximize light distribution and intensity.<br />\r\n<br />\r\nChamp VMVL LEDs are certified for use in NEC, CEC and IEC hazardous locations, providing a single solution for applications around the world.  These light fixtures are ideal for indoor and outdoor general area lighting in oil and gas refineries, drilling rigs, petrochemical plants, food and beverage facilities, and other industrial applications where flammable gases, vapors, dusts, fibers or flyings are present.</p>\r\n",
+  "jcr:created": "Tue Jan 30 2018 13:33:50 GMT-0500",
+  "cq:lastReplicated": "Wed Jun 09 2021 16:55:27 GMT-0400",
+  "productFamilyPage": "/content/eaton/language-masters/en-us/catalog/highbay-lowbay-industrials/champ-vmv-led-hazardous-area-light-fixtures",
+  "seoTitleOverviewTab": "Champ VMVL LED Lights | Class I and Class II | Eaton",
+  "cq:tags": [
+    "eaton:country/asia/id",
+    "eaton:country/europe/tr",
+    "eaton:country/europe/de",
+    "eaton:country/oceania/ws",
+    "eaton:country/asia/in",
+    "eaton:country/europe/cz",
+    "eaton:country/north-america/us",
+    "eaton:country/europe/ua",
+    "eaton:language/hu-hu",
+    "eaton:country/oceania/fm",
+    "eaton:country/oceania/nu",
+    "eaton:country/oceania/nz",
+    "eaton:country/oceania/wf",
+    "eaton:country/south-america/fk",
+    "eaton:product-attributes/product-type/highbay-midbay",
+    "eaton:country/asia/pk",
+    "eaton:product-attributes/eaton-product-series/crouse-hinds-series",
+    "eaton:language/nl-nl",
+    "eaton:country/oceania/pg",
+    "eaton:country/oceania/pn",
+    "eaton:country/south-america/gy",
+    "eaton:country/asia/hk",
+    "eaton:country/south-america/pe",
+    "eaton:product-attributes/light-source/led",
+    "eaton:language/en-gb",
+    "eaton:product-attributes/lumen-output/5001-7500",
+    "eaton:product-attributes/lumen-output/7501-10000",
+    "eaton:language/uk",
+    "eaton:country/oceania/gu",
+    "eaton:supermarkets/oil-gas-application/upstream",
+    "eaton:country/europe/ch",
+    "eaton:product-attributes/lumen-output/20001-30000",
+    "eaton:country/south-america/gf",
+    "eaton:country/oceania/pf",
+    "eaton:country/africa/ke",
+    "eaton:country/europe/ro",
+    "eaton:product-attributes/electrical-standard/iec-en-ce",
+    "eaton:language/pt-pt",
+    "eaton:language/ru-ru",
+    "eaton:language/pl-pl",
+    "eaton:country/europe/at",
+    "eaton:supermarkets/markets/oil-and-gas",
+    "eaton:language/tr-tr",
+    "eaton:country/south-america/py",
+    "eaton:country/oceania/pw",
+    "eaton:country/europe/se",
+    "eaton:country/europe/be",
+    "eaton:country/europe/ru",
+    "eaton:country/middle-east/ae",
+    "eaton:country/asia/ph",
+    "eaton:country/europe/ie",
+    "eaton:product-attributes/lumen-output/4001-5000",
+    "eaton:country/asia/np",
+    "eaton:country/south-america/ar",
+    "eaton:supermarkets/oil-gas-application/downstream",
+    "eaton:integrations/nanorep/crouse-hinds-nanorep",
+    "eaton:product-attributes/lumen-output/10001-20000",
+    "eaton:supermarkets/oil-gas-objective/enhance-safety-to-protect-people-profit",
+    "eaton:country/europe/it",
+    "eaton:eaton-brand/industry/CHD-lighting",
+    "eaton:product-attributes/electrical-standard/nec-nema-ansi-ul",
+    "eaton:supermarkets/oil-gas-application/midstream",
+    "eaton:country/oceania/as",
+    "eaton:country/oceania/au",
+    "eaton:country/europe/pl",
+    "eaton:language/cs-cz",
+    "eaton:country/asia/mm",
+    "eaton:country/oceania/ki",
+    "eaton:language/ro-ro",
+    "eaton:country/asia/mo",
+    "eaton:country/africa/ma",
+    "eaton:country/asia/mn",
+    "eaton:country/south-america/br",
+    "eaton:country/middle-east/sa",
+    "eaton:country/asia/mv",
+    "eaton:country/asia/my",
+    "eaton:country/europe/hu",
+    "eaton:language/ar",
+    "eaton:country/south-america/bo",
+    "eaton:language/es-mx",
+    "eaton:country/europe/pt",
+    "eaton:country/oceania/sb",
+    "eaton:country/asia/vn",
+    "eaton:country/latin-america/mx",
+    "eaton:product-attributes/compliance/dlc-available",
+    "eaton:language/es-es",
+    "eaton:country/europe/gb",
+    "eaton:country/oceania/tk",
+    "eaton:country/asia/lk",
+    "eaton:country/oceania/to",
+    "eaton:country/oceania/tv",
+    "eaton:country/asia/tw",
+    "eaton:product-attributes/application/hazardous-classified",
+    "eaton:country/europe/netherlands",
+    "eaton:product-attributes/material/aluminum",
+    "eaton:product-attributes/electrical-standard/canadian-code-csa",
+    "eaton:country/south-america/cl",
+    "eaton:country/oceania/ck",
+    "eaton:country/south-america/co",
+    "eaton:country/south-america/sr",
+    "eaton:language/zh-cn",
+    "eaton:supermarkets/oil-gas-objective/increase-operational-predictability",
+    "eaton:language/fr-ca",
+    "eaton:supermarkets/markets/food-and-beverage",
+    "eaton:product-attributes/lumen-output/3001-4000",
+    "eaton:language/it-it",
+    "eaton:country/asia/kh",
+    "eaton:country/south-america/ec",
+    "eaton:country/europe/no",
+    "eaton:country/oceania/mh",
+    "eaton:country/asia/kp",
+    "eaton:language/fr-fr",
+    "eaton:supermarkets/markets/mining,-metals-and-minerals",
+    "eaton:country/asia/kr",
+    "eaton:country/north-america/ca",
+    "eaton:country/oceania/mp",
+    "eaton:country/asia/cn",
+    "eaton:country/europe/fr",
+    "eaton:language/de-de",
+    "eaton:country/asia/th",
+    "eaton:country/asia/la",
+    "eaton:country/asia/tl",
+    "eaton:country/oceania/nf",
+    "eaton:country/asia/bd",
+    "eaton:country/asia/jp",
+    "eaton:country/oceania/vu",
+    "eaton:country/south-america/ve",
+    "eaton:country/oceania/fj",
+    "eaton:country/oceania/nr",
+    "eaton:country/asia/bn",
+    "eaton:country/europe/es",
+    "eaton:language/en-us",
+    "eaton:language/fr-ma",
+    "eaton:product-attributes/product-lines/champ",
+    "eaton:language/pt-br",
+    "eaton:country/asia/bt",
+    "eaton:country/asia/sg",
+    "eaton:product-taxonomy/lighting-and-controls/lighting/highbay-lowbay-industrials/champ-vmv-led-hazardous-area-light-fixtures",
+    "eaton:country/oceania/nc",
+    "eaton:country/south-america/uy",
+    "eaton:supermarkets/markets/water-and-wastewater",
+    "eaton:supermarkets/water-wastewater-objective/enhance-safety"
+  ],
+  "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+  "primaryCTANewWindow": "true",
+  "primaryCTALabel": "Contact me about this product",
+  "sling:resourceType": "commerce/components/product",
+  "MiddleTabTitle": "Models",
+  "showLongDesc": "true",
+  "textIsRich": [
+    "true",
+    "true",
+    "true",
+    "true"
+  ],
+  "cq:commerceType": "product",
+  "seoDescOverviewTab": "The Crouse-Hinds series Champ VMVL LED is our flagship LED fixture for Class I and Class II hazardous area mid bay and high bay downlighting.  It is available in nine models ranging from 3,000 lumens to 25,000 lumens.  This offers a lighting solution for areas with mounting heights from 8’ all the way up to 60’.",
+  "seoTitleResourcesTab": "Champ VMVL LED Lights | Class I and Class II | Eaton",
+  "pdhRecordPath": "/var/commerce/pdh/product-family/en_us/eaton/crouse-hinds-series/none/6417832/124206398",
+  "howToBuy": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "howtoBuyDesc": "<p>Find an authorized distributor or sales rep near you</p>\r\n",
+      "howtoBuyLink": "/content/eaton/us/en-us/locate/crouse-hinds-series",
+      "howtoBuyNewWindow": "true",
+      "howtoBuyTitle": "Locate a channel partner",
+      "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "howtoBuyDesc": "<p>Email us using the link above, or call our Customer Support team at 1-866-764-5454</p>\r\n",
+      "howtoBuyLink": "mailto:CrouseCustomerCTR@Eaton.com",
+      "howtoBuyNewWindow": "true",
+      "howtoBuyTitle": "Questions before you buy",
+      "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400"
+    }
+  },
+  "secondaryLinks": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "secLinkNewWindow": "true",
+      "secLinkURL": "/content/dam/eaton/products/lighting-and-controls/crouse-hinds/literature/crouse-hinds-vmvl-led-3to11-brochure.pdf",
+      "secLinkText": "Download complete specs - 3,000 to 11,000 lumens",
+      "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400"
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "secLinkNewWindow": "true",
+      "secLinkURL": "/content/dam/eaton/products/lighting-and-controls/crouse-hinds/literature/crouse-hinds-vmvl-led-13to25-brochure.pdf",
+      "secLinkText": "Download complete specs - 13,000 to 25,000 lumens",
+      "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400"
+    }
+  },
+  "taxonomyAttributes": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+    "item0": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+      "taxonomyAttributeGrpName": "Certifications and compliances",
+      "attributeList": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Area_Classification"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Standards_Type"
+        },
+        "item2": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "NEC_Hazardous_Rating"
+        },
+        "item3": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "IECEX_ATEX_Hazardous_Rating"
+        },
+        "item4": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Nema_Rating"
+        },
+        "item5": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Ingress_Protection_Ratings"
+        }
+      }
+    },
+    "item1": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+      "taxonomyAttributeGrpName": "Product specifications",
+      "attributeList": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+        "item0": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Lumens"
+        },
+        "item1": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Lumens_Per_Watt"
+        },
+        "item2": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "LightLens_Color"
+        },
+        "item3": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Color_Temperature"
+        },
+        "item4": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Mounting_Method"
+        },
+        "item5": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Trade_Size"
+        },
+        "item6": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Optical_Distribution"
+        },
+        "item7": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Guard_Type"
+        },
+        "item8": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Voltage_Rating"
+        },
+        "item9": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Frequency_Rating"
+        },
+        "item10": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Wattage"
+        },
+        "item11": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Dimming"
+        },
+        "item12": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Power_Factor"
+        },
+        "item13": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Equivalent_Luminaire"
+        },
+        "item14": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Material"
+        },
+        "item15": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Lens_Material"
+        },
+        "item16": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Special_Features"
+        },
+        "item17": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:lastModified": "Wed Jun 09 2021 16:54:46 GMT-0400",
+          "taxonomyAttribute": "Used_With"
+        }
+      }
+    }
+  }
+}

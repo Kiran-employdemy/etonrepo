@@ -1,0 +1,482 @@
+{
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Sun Sep 10 2023 23:24:13 GMT+0530",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": ["mix:versionable"],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Test Digital Product 32",
+      "cq:lastReplicationAction": "Activate",
+      "publication-date": "Fri Sep 01 2023 17:45:00 GMT+0530",
+      "jcr:versionHistory": "f369851c-81ce-4067-905d-fe42914818a2",
+      "cq:template": "/conf/eaton_ecommerce/settings/wcm/templates/ecommerce-general-template",
+      "cq:lastReplicatedBy": "c9000378",
+      "product-grid-description": "Eaton’s mission is to improve the quality of life and the environment through the use of power management technologies and services. We provide sustainable solutions that help our customers effectively manage electrical, hydraulic and mechanical power – more safely, more efficiently and more reliably",
+      "priority": "0.5",
+      "partner-badge": "true",
+      "jcr:predecessors": ["50f69d90-42f1-4c59-a743-38c45a83fc97"],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Sun Sep 10 2023 23:24:13 GMT+0530",
+      "excludeCountries": "false",
+      "cq:lastReplicated": "Sun Sep 10 2023 13:51:20 GMT-0400",
+      "cq:lastModified": "Wed Sep 06 2023 09:00:29 GMT-0400",
+      "view": "generic",
+      "hideInHtml": "false",
+      "meta-robot-tags": "index,follow",
+      "jcr:description": "Test Product 3\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "jcr:baseVersion": "50f69d90-42f1-4c59-a743-38c45a83fc97",
+      "jcr:isCheckedOut": true,
+      "primary-sub-category-tag": [
+        "eaton:product-taxonomy/digital-products/brightlayer",
+        "eaton:product-attributes/product-type/software"
+      ],
+      "buyPageReference": "/content/eaton/language-masters/en-us/digital/marketplace/ipm-op-sub3",
+      "hideInXml": "false",
+      "page-type": "learn-page",
+      "cq:tags": [
+        "eaton:product-taxonomy/digital-products/brightlayer",
+        "eaton:product-attributes/product-type/software"
+      ],
+      "jcr:uuid": "9d8e8772-af23-4b18-b1c9-c76948daeebb",
+      "teaser-title": "Test Digital Product 32",
+      "sling:resourceType": "eaton_ecommerce/components/structure/ecommerce-edit-template-page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "company-name": "ZXU Company",
+      "textIsRich": "true",
+      "cq:lastModifiedBy": "c9000378",
+      "changefrequency": "weekly",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "c3056816",
+          "jcr:lastModifiedBy": "c3056816",
+          "jcr:created": "Sun Sep 18 2022 13:20:42 GMT-0400",
+          "jcr:lastModified": "Sun Sep 18 2022 13:21:26 GMT-0400",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "hero_with_cta": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Jan 24 2023 10:57:53 GMT-0500",
+            "jcr:lastModified": "Tue Jan 24 2023 10:57:53 GMT-0500",
+            "sling:resourceType": "eaton/components/digital/hero-with-cta"
+            },
+          "link_list_with_icons": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Jan 24 2023 10:59:27 GMT-0500",
+            "jcr:lastModified": "Tue Jan 24 2023 10:59:27 GMT-0500",
+            "sling:resourceType": "eaton/components/content/link-list-with-icons"
+            },
+          "feature_block": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Jan 24 2023 11:00:57 GMT-0500",
+            "featureAlignmentMobile": "center-center",
+            "featureAlignmentDesktop": "center-center",
+            "jcr:lastModified": "Tue Jan 24 2023 11:00:57 GMT-0500",
+            "sling:resourceType": "eaton/components/content/feature-block"
+            },
+          "feature_block_137716499": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Jan 24 2023 11:01:13 GMT-0500",
+            "featureAlignmentMobile": "center-center",
+            "featureAlignmentDesktop": "center-center",
+            "jcr:lastModified": "Tue Jan 24 2023 11:01:13 GMT-0500",
+            "sling:resourceType": "eaton/components/content/feature-block"
+            },
+          "text": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Jan 24 2023 11:01:20 GMT-0500",
+            "view": "default",
+            "jcr:lastModified": "Tue Jan 24 2023 11:01:20 GMT-0500",
+            "sling:resourceType": "eaton/components/general/text"
+            },
+          "grid_3_column_contro": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Jan 24 2023 11:01:25 GMT-0500",
+            "jcr:lastModified": "Tue Jan 24 2023 11:01:25 GMT-0500",
+            "sling:resourceType": "eaton/components/layout/grid-3-column-control",
+            "col1-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:01:31 GMT-0500",
+                "jcr:lastModified": "Tue Jan 24 2023 11:01:31 GMT-0500",
+                "sling:resourceType": "eaton/components/general/image"
+                },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:01:39 GMT-0500",
+                "view": "default",
+                "jcr:lastModified": "Tue Jan 24 2023 11:01:39 GMT-0500",
+                "sling:resourceType": "eaton/components/general/text"
+                }
+              },
+            "col2-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:01:43 GMT-0500",
+                "jcr:lastModified": "Tue Jan 24 2023 11:01:43 GMT-0500",
+                "sling:resourceType": "eaton/components/general/image"
+                },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:01:47 GMT-0500",
+                "view": "default",
+                "jcr:lastModified": "Tue Jan 24 2023 11:01:47 GMT-0500",
+                "sling:resourceType": "eaton/components/general/text"
+                }
+              },
+            "col3-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:01:52 GMT-0500",
+                "jcr:lastModified": "Tue Jan 24 2023 11:01:52 GMT-0500",
+                "sling:resourceType": "eaton/components/general/image"
+                },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:01:58 GMT-0500",
+                "view": "default",
+                "jcr:lastModified": "Tue Jan 24 2023 11:01:58 GMT-0500",
+                "sling:resourceType": "eaton/components/general/text"
+                }
+              }
+            },
+          "feature_block_720247557": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Jan 24 2023 11:02:07 GMT-0500",
+            "featureAlignmentMobile": "center-center",
+            "featureAlignmentDesktop": "center-center",
+            "jcr:lastModified": "Tue Jan 24 2023 11:02:07 GMT-0500",
+            "sling:resourceType": "eaton/components/content/feature-block"
+            },
+          "grid_2_column_contro": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Jan 24 2023 11:02:13 GMT-0500",
+            "view": "is-half",
+            "jcr:lastModified": "Tue Jan 24 2023 11:02:13 GMT-0500",
+            "sling:resourceType": "eaton/components/layout/grid-2-column-control",
+            "col1-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:02:20 GMT-0500",
+                "jcr:lastModified": "Tue Jan 24 2023 11:02:20 GMT-0500",
+                "sling:resourceType": "eaton/components/general/image"
+                },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:02:26 GMT-0500",
+                "view": "default",
+                "jcr:lastModified": "Tue Jan 24 2023 11:02:26 GMT-0500",
+                "sling:resourceType": "eaton/components/general/text"
+                }
+              },
+            "col2-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:02:31 GMT-0500",
+                "jcr:lastModified": "Tue Jan 24 2023 11:02:31 GMT-0500",
+                "sling:resourceType": "eaton/components/general/image"
+                },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:02:35 GMT-0500",
+                "view": "default",
+                "jcr:lastModified": "Tue Jan 24 2023 11:02:35 GMT-0500",
+                "sling:resourceType": "eaton/components/general/text"
+                }
+              }
+            },
+          "grid_2_column_contro_1722730006": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Jan 24 2023 11:02:13 GMT-0500",
+            "view": "is-half",
+            "jcr:lastModified": "Tue Jan 24 2023 11:02:13 GMT-0500",
+            "sling:resourceType": "eaton/components/layout/grid-2-column-control",
+            "col1-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:02:20 GMT-0500",
+                "jcr:lastModified": "Tue Jan 24 2023 11:02:20 GMT-0500",
+                "sling:resourceType": "eaton/components/general/image"
+                },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:02:26 GMT-0500",
+                "view": "default",
+                "jcr:lastModified": "Tue Jan 24 2023 11:02:26 GMT-0500",
+                "sling:resourceType": "eaton/components/general/text"
+                }
+              },
+            "col2-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "image": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:02:31 GMT-0500",
+                "jcr:lastModified": "Tue Jan 24 2023 11:02:31 GMT-0500",
+                "sling:resourceType": "eaton/components/general/image"
+                },
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:02:35 GMT-0500",
+                "view": "default",
+                "jcr:lastModified": "Tue Jan 24 2023 11:02:35 GMT-0500",
+                "sling:resourceType": "eaton/components/general/text"
+                }
+              }
+            },
+          "text_25606546": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Jan 24 2023 11:03:00 GMT-0500",
+            "view": "default",
+            "jcr:lastModified": "Tue Jan 24 2023 11:03:00 GMT-0500",
+            "sling:resourceType": "eaton/components/general/text"
+            },
+          "feature_block_804462152": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Jan 24 2023 11:03:09 GMT-0500",
+            "featureAlignmentMobile": "center-center",
+            "featureAlignmentDesktop": "center-center",
+            "jcr:lastModified": "Tue Jan 24 2023 11:03:09 GMT-0500",
+            "sling:resourceType": "eaton/components/content/feature-block"
+            },
+          "grid_3_column_contro_1416086723": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Jan 24 2023 11:01:25 GMT-0500",
+            "jcr:lastModified": "Tue Jan 24 2023 11:01:25 GMT-0500",
+            "sling:resourceType": "eaton/components/layout/grid-3-column-control",
+            "col1-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:01:39 GMT-0500",
+                "view": "default",
+                "jcr:lastModified": "Tue Jan 24 2023 11:01:39 GMT-0500",
+                "sling:resourceType": "eaton/components/general/text"
+                }
+              },
+            "col2-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:01:47 GMT-0500",
+                "view": "default",
+                "jcr:lastModified": "Tue Jan 24 2023 11:01:47 GMT-0500",
+                "sling:resourceType": "eaton/components/general/text"
+                }
+              },
+            "col3-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:01:58 GMT-0500",
+                "view": "default",
+                "jcr:lastModified": "Tue Jan 24 2023 11:01:58 GMT-0500",
+                "sling:resourceType": "eaton/components/general/text"
+                }
+              }
+            },
+          "text_361826508": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Jan 24 2023 11:03:46 GMT-0500",
+            "view": "default",
+            "jcr:lastModified": "Tue Jan 24 2023 11:03:46 GMT-0500",
+            "sling:resourceType": "eaton/components/general/text"
+            },
+          "grid_2_column_contro_229285271": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Jan 24 2023 11:02:13 GMT-0500",
+            "view": "is-half",
+            "jcr:lastModified": "Tue Jan 24 2023 11:02:13 GMT-0500",
+            "sling:resourceType": "eaton/components/layout/grid-2-column-control",
+            "col1-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:02:26 GMT-0500",
+                "view": "default",
+                "jcr:lastModified": "Tue Jan 24 2023 11:02:26 GMT-0500",
+                "sling:resourceType": "eaton/components/general/text"
+                }
+              },
+            "col2-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "wcm/foundation/components/responsivegrid",
+              "text": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "admin",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:created": "Tue Jan 24 2023 11:02:35 GMT-0500",
+                "view": "default",
+                "jcr:lastModified": "Tue Jan 24 2023 11:02:35 GMT-0500",
+                "sling:resourceType": "eaton/components/general/text"
+                }
+              }
+            },
+          "resource_list": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "admin",
+            "jcr:lastModifiedBy": "admin",
+            "jcr:created": "Tue Jan 24 2023 11:05:09 GMT-0500",
+            "jcr:lastModified": "Tue Jan 24 2023 11:05:09 GMT-0500",
+            "sling:resourceType": "eaton/components/product/resource-list"
+            },
+          "grid_2_column_contro_1285653852": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "e0063964",
+            "jcr:lastModifiedBy": "e0063964",
+            "padding": "default",
+            "jcr:created": "Wed Oct 13 2021 13:54:13 GMT-0400",
+            "view": "is-half",
+            "color": "primary-branding-color",
+            "jcr:lastModified": "Wed Oct 13 2021 13:54:23 GMT-0400",
+            "sling:resourceType": "eaton/components/layout/grid-2-column-control",
+            "col1-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "wcm/foundation/components/parsys",
+              "content_tile_with_ct": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "e0063964",
+                "jcr:lastModifiedBy": "e0063964",
+                "jcr:created": "Wed Dec 01 2021 15:12:09 GMT-0500",
+                "jcr:lastModified": "Wed Dec 01 2021 15:12:09 GMT-0500",
+                "sling:resourceType": "eaton/components/digital/content-tile-with-cta"
+                }
+              },
+            "col2-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "wcm/foundation/components/parsys",
+              "content_tile_with_ct": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "e0063964",
+                "jcr:lastModifiedBy": "e0063964",
+                "jcr:created": "Wed Dec 01 2021 15:12:11 GMT-0500",
+                "jcr:lastModified": "Wed Dec 01 2021 15:12:11 GMT-0500",
+                "sling:resourceType": "eaton/components/digital/content-tile-with-cta"
+                }
+              }
+            },
+          "grid_2_column_contro_99465972": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "e0063964",
+            "jcr:lastModifiedBy": "e0063964",
+            "padding": "default",
+            "jcr:created": "Wed Oct 13 2021 13:56:36 GMT-0400",
+            "view": "is-three-two",
+            "color": "no-color",
+            "jcr:lastModified": "Wed Oct 13 2021 13:57:00 GMT-0400",
+            "sling:resourceType": "eaton/components/layout/grid-2-column-control",
+            "col1-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "text_1993801657": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "e0063964",
+                "jcr:lastModifiedBy": "e0063964",
+                "jcr:created": "Wed Oct 13 2021 13:55:04 GMT-0400",
+                "view": "default",
+                "jcr:lastModified": "Wed Oct 13 2021 13:56:53 GMT-0400",
+                "toggleInnerGrid": "false",
+                "sling:resourceType": "eaton/components/general/text",
+                "textIsRich": [
+                  "true",
+                  "true"
+                ]
+                }
+              },
+            "col2-par": {
+              "jcr:primaryType": "nt:unstructured",
+              "eloqua_form": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:createdBy": "e0063964",
+                "jcr:lastModifiedBy": "e0063964",
+                "jcr:created": "Wed Oct 13 2021 13:55:11 GMT-0400",
+                "jcr:lastModified": "Wed Oct 13 2021 13:55:11 GMT-0400",
+                "sling:resourceType": "eaton/components/content/eloqua-form"
+                }
+              }
+            }
+          }
+        }
+      }
+    }

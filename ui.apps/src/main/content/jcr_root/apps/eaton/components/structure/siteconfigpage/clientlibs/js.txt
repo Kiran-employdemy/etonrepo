@@ -1,0 +1,7 @@
+#base=js
+classic-ui-multi-field-siteconfig.js
+exercises.js
+CustomWidget.js
+CustomWidgetInternal.js
+customBrowseDialog.js
+customPathField.js

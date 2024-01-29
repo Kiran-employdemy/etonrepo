@@ -1,0 +1,220 @@
+<!--/*
+
+EATON Styleguide
+Component used to showcase different UI Elements
+
+*/-->
+
+<sly data-sly-use.data="${ 'data/styleguide-data.js' }">
+
+  <div class="eaton-styleguide">
+    <div class="container">
+
+      <h1 class="b-heading-h1">Eaton Styleguide</h1>
+      <hr class="sg-divider" />
+
+      <!--/* Table of Contents */-->
+      <div class="sg-section stlyeguide-toc b-body-copy-small">
+        <h2>Table of contents</h2>
+        <ol>
+          <li><a href="#sg-change-log">Change log</a></li>
+          <li><a href="#sg-colors">Color Palette</a></li>
+          <li><a href="#sg-fonts">Fonts</a></li>
+          <li><a href="#sg-typography">Typography</a></li>
+          <li><a href="#sg-buttons">Buttons</a></li>
+          <li><a href="#sg-scss-helpers">SCSS Helpers</a></li>
+          <li><a href="#sg-glyphicon-font">Glyphicon-Font</a></li>
+        </ol>
+      </div>
+
+      <div id="sg-change-log" class="sg-section styleguide-changelog b-body-copy-small">
+        <h2>Change log:</h2>
+        <ul class="styleguide-changelog__list">
+          <li>
+            <h3>Typography Updates - Style Guide CRUX Feedback 08.14</h3>
+            <ul>
+              <li>
+                <h4>Headings</h4>
+                <ul>
+                  <li><strong>H1 Hero Desktop: </strong> line-height: 6.3rem </li>
+                  <li><strong>H1 Desktop:</strong> size:  5.0rem   line-height: 6.0rem </li>
+                </ul>
+              </li>
+
+              <li>
+                <h4>Body Copy</h4>
+                <ul>
+                  <li><strong>Hero Description Desktop:</strong> line-height: 3.2rem </li>
+                  <li><strong>Eyebrow Large Desktop:</strong> line-height: 2.8rem </li>
+                  <li><strong>Eyebrow Small Desktop:</strong> line-height: 2.0rem </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <hr class="sg-divider" />
+
+      <!--/* Section: Colors */-->
+      <sly data-sly-use.tpl="partials/styleguide-colors.html">
+        <sly data-sly-call="${ tpl.section @ data=data.colors }"></sly>
+      </sly>
+
+      <!--/* Section: Fonts */-->
+      <sly data-sly-use.tpl="partials/styleguide-fonts.html">
+        <sly data-sly-call="${ tpl.section @ data=data.typography }"></sly>
+      </sly>
+
+      <!--/* Section: Typography */-->
+      <sly data-sly-use.tpl="partials/styleguide-typography.html">
+        <sly data-sly-call="${ tpl.section @ data=data.typography }"></sly>
+      </sly>
+
+      <!--/* Section: Buttons */-->
+      <sly data-sly-use.tpl="partials/styleguide-buttons.html">
+        <sly data-sly-call="${ tpl.section @ data=data.buttons }"></sly>
+      </sly>
+
+      <!--/* Section: SCSS Helpers */-->
+      <sly data-sly-use.tpl="partials/styleguide-scss-helpers.html">
+        <sly data-sly-call="${ tpl.section @ data=data.buttons }"></sly>
+      </sly>
+
+      <!--/* Section: Glyphicon-Font */-->
+      <sly data-sly-use.glyphicons="${ 'data/glyphicons-data.js' }">
+        <sly data-sly-use.tpl="partials/styleguide-glyphicon-font.html">
+          <sly data-sly-call="${ tpl.section @ data=glyphicons }"></sly>
+        </sly>
+      </sly>
+
+    </div>
+
+
+    <style>
+
+    .eaton-styleguide {
+      padding-top: 30px;
+    }
+
+    .sg-section {
+      padding: 8rem 0 2rem;
+    }
+
+    .sg-divider {
+      border: 3px solid #CCD2D7;
+      margin: 2rem 0 0;
+      width: 100%;
+    }
+
+    .sg-section table {
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    .sg-section thead td {
+      font-weight: bold;
+      background-color: #EEF0F2;
+    }
+
+    .sg-section tr {
+      border-top: 1px solid #DDD;
+    }
+
+    .sg-section td {
+      padding: 1rem;
+    }
+
+    .sg-list--no-bullets {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .sg-caption {
+      color: #98A4AE;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+
+
+    .styleguide-changelog__list {
+      background: #F2F2F2;
+      border: 1px solid #DDD;
+      padding: 20px;
+      list-style-type: none;
+    }
+
+    .styleguide-changelog__list h3 {
+      padding-bottom: .5rem;
+      margin-bottom: .5rem;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      font-size: 2.6rem;
+      color: #005EB8;
+      font-weight: normal;
+    }
+
+    .styleguide-changelog__list h4 {
+      font-size: 2rem;
+      margin-top: 20px;
+      margin-bottom: 0;
+    }
+
+    .sg-section .panel-heading {
+      background-color: #005EB8;
+      border: 0;
+      border-radius: 0;
+    }
+
+    .sg-section .panel-title a,
+    .sg-section .panel-title a small,
+    .sg-section .panel-title a:hover {
+      color: #FFF;
+    }
+
+
+    /*------------------------------------*
+    * Styleguide (SG) Responsive Tables
+    *-------------------------------------*/
+    @media only screen and (max-width: 991px) {
+
+      /* Force table to not be like tables anymore */
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      /*b Hide table headers (but not display: none;, for accessibility) */
+      .sg-section thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+
+      .sg-section tr {
+        border: 1px solid #DDD;
+        padding: 3rem 0;
+      }
+
+      .sg-section td {
+        /* Behave like a "row" */
+        border: 0;
+        position: relative;
+        padding: 0.5rem 2rem;
+        word-wrap: break-word;
+      }
+
+      .sg-section td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+      }
+    }
+
+    </style>
+
+  </div>
+</sly>

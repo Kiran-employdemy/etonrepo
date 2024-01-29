@@ -1,0 +1,154 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...
+@import "../../../global/css/_config/sass";
+@import "hero-with-cta--aspect-ratios";
+
+.hero-with-cta {
+  &__component {
+    position: relative;
+    margin-bottom: rem($spacing__md);
+  }
+
+  &__slide-list {
+    padding: 0;
+  }
+
+  &__slide-item,
+  &__content .container {
+    position: relative;
+  }
+
+  &__content {
+    color: $color__white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 39%;
+    transform: translateY(-50%);
+    z-index: 5;
+    @include media-mobile-and-tablet {
+      top: 44%;
+    }
+  }
+
+  &__cta {
+    margin-top: rem($spacing__sm);
+    margin-right: 1.4rem;
+    @include media-mobile-and-tablet {
+      margin-top: 2.1rem;
+    }
+  }
+
+  &__image {
+    @include absolute-fill();
+  }
+
+  // EATON-474: Category Hero, Landing Hero
+  // Semi-Transparent gradient should be applied on the whole image
+  //--------------
+  .image-mask & {
+    &__image::before {
+      @include image-mask-gradient();
+    }
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    margin-top: 2rem;
+
+    @include media-desktop-and-up {
+      display: block;
+      font-size: rem($base__font-size * 1.6);
+      margin-top: 2rem;
+    }
+
+    @include media-mobile-and-tablet {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    // TO DO: possibly remove this once microsites brand tool has been implemented.
+    // If global font overrides are desired once microsites brand tool is implement, it should be handled in _mixins-typography.scss
+    @include font-family__primary-medium(--header-font-medium);
+    font-size: 3.6rem;
+    margin-bottom: 0;
+    @include media-mobile-and-tablet {
+      font-size: 2.4rem;
+      width: 60%;
+    }
+  }
+
+  &__separator {
+    width: 5%;
+    height: 2px;
+    background: $color__white;
+
+    // EATON-516 Landing Hero - Article Page - Incorrect spacing between Headline, Horizontal Rule, and Description.
+    margin: rem($spacing__md * .8) auto rem($spacing__md * .868); // Visually, 60px Spacing above and below - extracted from PSD File
+  }
+
+  &__down-arrow {
+    color: $color__white;
+    font-size: rem($spacing__sm * .8);
+    position: absolute;
+    bottom: 30px; // EATON-807: Visually 30px spacing from the bottom of the component
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .slick-active button {
+    background-color: var(--primary-brand-color, $color__primary-blue);
+    border: 1px solid var(--primary-brand-color, $color__primary-blue);
+  }
+
+  //-----------------------------------
+  // MediaQuery: 0-991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    &__caption {
+      padding: 0;
+      text-align: left;
+    }
+
+    &__separator {
+      display: none;
+    }
+  }
+
+  //-----------------------------------
+  // MediaQuery: > 992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    &__caption {
+      padding: 0; // 40px offset is used to avoid the CTA overalping the pagination dots.
+      width: 75%;
+      margin-top: 7.2rem;
+      text-align: left;
+    }
+  }
+
+  @include media-mobile-only {
+    &__component {
+      margin-bottom: rem($spacing__md * .75);
+    }
+  }
+  //-----------------------------------
+  // MediaQuery: > 1200px and up
+  //-----------------------------------
+  @include media-desktop-large {
+    &:hover &__arrow {
+      display: block !important; // stylelint-disable-line declaration-no-important
+    }
+
+    &__slide-list {
+      &__cta {
+        margin-top: rem($spacing__md);
+      }
+    }
+  }
+
+}

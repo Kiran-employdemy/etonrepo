@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/default"
+        cq:lastModified="{Date}2014-10-14T09:49:26.092+02:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="GlobalLink Translation (Test)"
+        sling:resourceType="cq/workflow/components/pages/model">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <process
+                jcr:created="{Date}2014-10-13T17:59:08.943+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-10-14T09:49:26.089+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="GlobalLink Translation Configuration"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="/apps/workflow/scripts/globallink-adaptor/globallink-adaptor-test.ecma"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process>
+            <process_0
+                jcr:created="{Date}2014-10-14T08:52:25.089+02:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2014-10-14T08:52:49.178+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="GlobalLink Translation"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="org.gs4tr.globallink.adaptors.aem.bundle.workflow.impl.granite.CreateSingleSubmissionProcess"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process_0>
+        </flow>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,18 @@
+//-----------------------------------
+// Component Title
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+// Import SubViews
+@import 'views/view-default';
+@import 'views/view-map';
+@import 'views/view-witheyebrowbyline';
+
+.title + .grid-2-column-control {
+  .eaton-grid-control {
+    margin-top: 0px;
+  }
+}

@@ -1,0 +1,336 @@
+//-----------------------------------
+// LinkList Component: Primary Navigation
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, etc...)
+@import "../../../global/css/_config/sass";
+
+.primary-navigation {
+
+  &__items {
+
+    a {
+      text-decoration: none;
+
+      /* stylelint-disable declaration-no-important */
+      &:hover,
+      &:focus,
+      &:active {
+        outline: none !important;
+      }
+
+      /* stylelint-enable */
+    }
+  }
+
+  &__secureMenu::after {
+    /* stylelint-disable declaration-no-important */
+    background: $color__accent-orange !important;
+    /* stylelint-enable */
+  }
+
+  //-----------------------------
+  // Mobile-Tablet Breakpoint
+  // ----------------------------
+  @include media-mobile-and-tablet {
+    position: fixed;
+    top: 52px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(0, 0);
+    overflow: hidden;
+    background: var(--navigation-mega-menu-background-color, $color__primary-gray2);
+    color: $color__white;
+    margin-bottom: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.5s ease-in-out;
+
+    &__menu {
+      /* stylelint-disable declaration-property-value-blacklist  */
+      border-style: none;
+      /* stylelint-enable declaration-property-value-blacklist */
+      outline: 0px;
+    }
+
+    &__headline {
+      display: block;
+      // padding: $spacing__sm ($spacing__sm / 2);
+      padding: $spacing__sm 0;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      background: var(--navigation-mega-menu-title-background-color, $color__primary-gray1);
+      margin-bottom: 0;
+      @include font-family__primary-medium(--header-font-medium);
+    }
+
+    &__head {
+      background: var(--navigation-mega-menu-title-background-color, $color__primary-gray1);
+      display: block;
+    }
+
+    @media (orientation : landscape) {
+      &__container {
+        min-height: calc(100% + 92px);
+      }
+    }
+
+    &__items {
+      @include font-family__secondary(--primary-nav-font);
+      height: 100%;
+      margin-bottom: rem($spacing__sm);
+      padding: 0;
+      width: 100%;
+
+      a {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        color: $color__white;
+        cursor: pointer;
+        border-bottom: 1px solid var(--navigation-divider-color, rgba(red($color__secondary-gray5), green($color__secondary-gray5), blue($color__secondary-gray5), 0.5));
+        font-size: 2rem;
+        line-height: 2.6rem;
+        position: relative;
+
+        span {
+          flex: 1;
+        }
+
+        .icon {
+          display: flex;
+          font-size: 0.66667em;
+
+          @media screen and (-ms-high-contrast: none),
+            (-ms-high-contrast: active) {
+            font-size: rem($base__font-size * 1.333);
+          }
+        }
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    &--has-background {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+
+  //-----------------------------
+  // 991 Breakpoint
+  //-----------------------------
+  @include media-mobile-tablet-and-down {
+    position: fixed;
+    top: 52px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate(0, 0);
+    overflow: hidden;
+    background: var(--navigation-mega-menu-background-color, $color__primary-gray2);
+    color: $color__white;
+    margin-bottom: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.5s ease-in-out;
+
+    &__menu {
+      /* stylelint-disable declaration-property-value-blacklist  */
+      border-style: none;
+      /* stylelint-enable declaration-property-value-blacklist */
+      outline: 0px;
+    }
+
+    &__headline {
+      display: block;
+      // padding: $spacing__sm ($spacing__sm / 2);
+      padding: $spacing__sm 0;
+      font-size: 2rem;
+      line-height: 2.4rem;
+      background: var(--navigation-mega-menu-title-background-color, $color__primary-gray1);
+      margin-bottom: 0;
+      @include font-family__primary-medium(--header-font-medium);
+    }
+
+    &__head {
+      background: var(--navigation-mega-menu-title-background-color, $color__primary-gray1);
+      display: block;
+    }
+
+    @media (orientation : landscape) {
+      &__container {
+        min-height: calc(100% + 92px);
+      }
+    }
+
+    &__items {
+      @include font-family__secondary(--primary-nav-font);
+      height: 100%;
+      margin-bottom: rem($spacing__sm);
+      padding: 0;
+      width: 100%;
+
+      a {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+        color: $color__white;
+        cursor: pointer;
+        border-bottom: 1px solid var(--navigation-divider-color, rgba(red($color__secondary-gray5), green($color__secondary-gray5), blue($color__secondary-gray5), 0.5));
+        font-size: 2rem;
+        line-height: 2.6rem;
+        position: relative;
+
+        span {
+          flex: 1;
+        }
+
+        .icon {
+          display: flex;
+          font-size: 0.66667em;
+
+          @media screen and (-ms-high-contrast: none),
+            (-ms-high-contrast: active) {
+            font-size: rem($base__font-size * 1.333);
+          }
+        }
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    &--has-background {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
+  }
+
+
+
+  //-----------------------------
+  // Desktop Breakpoint
+  // ----------------------------
+  @include media-desktop-and-up {
+    position: relative;
+    height: 100%;
+
+    .eaton-header & {
+      margin-right: 15px;
+    }
+
+    // stylelint-disable declaration-no-important
+    &__container {
+      width: auto !important;
+      padding-right: 10px !important; // Reduce bootstrap's default spacing in order to have equal spacing between Links, the line-Divider and the Search-icon.
+    }
+
+    &__headline,
+    &__head {
+      display: none;
+    }
+
+    &__items {
+      display: flex;
+      height: 100px;
+      align-items: center;
+      justify-content: flex-end;
+      // TO DO: remove this once microsites brand tool has been implemented. Font overrides should be handled in _mixins-typography.scss
+      @include font-family__primary-medium(--header-font-medium);
+      // NOTE: Same transition time as the value used for the .eaton-logo__link element in "headerReference.scss"
+      transition: height 0.3s ease-out;
+
+
+      a {
+        margin: 0 8px;
+        padding-right: 0px;
+        padding-left: 0px;
+        color: var(--grey-primary-brand-color, $color__primary-gray1);
+        display: flex;
+        height: 100%;
+        align-items: center;
+        font-size: 2rem;
+        position: relative;
+
+        .microsite & {
+          margin: 0 rem($spacing__sm / 3);
+        }
+
+        &:last-child {
+          margin-right: rem($spacing__sm / 3);
+        }
+
+        .icon {
+          display: none;
+        }
+
+        &.active::after {
+          content: '';
+          position: absolute;
+          height: 4px;
+          bottom: 0;
+          left: 5px;
+          right: 5px;
+          width: 90%;
+          background: var(--navigation-active-border-color, $color__primary-blue);
+          z-index: 1;
+        }
+      }
+
+      .header-fixed & {
+        height: 80px;
+      }
+    }
+
+    &--has-background {
+      background: none !important;
+    }
+  }
+}
+
+.search__utility {
+  @include media-mobile-tablet-and-down {
+    display: none;
+  }
+}
+
+.landing-hero__component {
+
+  @include media-mobile-tablet-and-down {
+    height: 56.25vw;
+    margin-bottom: 6rem;
+  }
+
+  .home-page-hero__slide-item {
+    @include media-mobile-tablet-and-down {
+      height: 56.25vw;
+      margin-bottom: 6rem;
+    }
+
+  }
+
+}
+
+.header-primary-nav::after {
+  @include media-mobile-tablet-and-down {
+    display: none;
+  }
+}

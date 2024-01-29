@@ -1,0 +1,3 @@
+#base=js
+
+# a-demo-component.js

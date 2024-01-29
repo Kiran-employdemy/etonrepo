@@ -1,0 +1,228 @@
+<ATR_GRP_TYPE id="GLBL_ATRBS" Label="Global Attribute" SEQ="5">
+    <ATR_GRP id="XXPDH_VOLUME_RULES" Label="Volume Rules" SEQ="55">
+        <ATR_NM id="BYPASS_VOLUME_RULE" Label="Bypass volume rule" SEQ="10" Value="N" STNDR="" LOVSQ="565"><![CDATA[No]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_PRODUCT_FAMILY_ATG" Label="Product Family Item Details" SEQ="10">
+        <ATR_NM id="Product_Family_Description" Label="Product Family Description" SEQ="60" Value="4902174" STNDR="" LOVSQ=""><![CDATA[IS-VG-Eaton ELocker Differential]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_CATALOG_DETAILS_AG" Label="Product Identifiers" SEQ="1">
+        <ATR_NM id="Catalog_Number" Label="Catalog Number" SEQ="5" STNDR="" LOVSQ=""><![CDATA[14020-010]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_PROD_LONG_DESCRIPTION_AG" Label="Product Long Description" SEQ="3">
+        <ATR_NM id="Long_Description" Label="*Long Description" SEQ="5" STNDR="" LOVSQ=""><![CDATA[Eaton ELocker® Differential; Dana 60; 30 Spline; 4.10 And Down;]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_GLOBAL_CATALOG_AG" Label="Product Collision Details" SEQ="4">
+        <ATR_NM id="Collision_Status" Label="Collision Status" SEQ="5" Value="1" STNDR="" LOVSQ="30"><![CDATA[None]]></ATR_NM>
+        <ATR_NM id="GLOBAL_CATALOG" Label="Global Catalog" SEQ="10" STNDR="" LOVSQ=""><![CDATA[14020-010]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_SALES_MARKETING_INFO_AG" Label="Sales and Marketing Details" SEQ="10">
+        <ATR_NM id="Brand" Label="Brand" SEQ="5" Value="29178363" STNDR="" LOVSQ=""><![CDATA[Eaton]]></ATR_NM>
+        <ATR_NM id="Sub_Brand" Label="Sub Brand" SEQ="10" Value="29178364" STNDR="" LOVSQ=""><![CDATA[None]]></ATR_NM>
+        <ATR_NM id="Marketing_Description" Label="Marketing Description" SEQ="30" STNDR="" LOVSQ=""><![CDATA[The Eaton ELocker is an electronic, selectable differential designed for drivers that need traction on-demand. At the flip of a dash switch, drivers can go from open to 100-percent locked. A second flip of the switch deactivates the unit to resume normal driving. The ELocker is the most reliable on-demand differential, featuring selectable operation and net-forged gears for added strength.]]></ATR_NM>
+        <ATR_NM id="Product_Trade_Name" Label="Product Trade Name" SEQ="40" Value="45127439" STNDR="" LOVSQ=""><![CDATA[ELocker]]></ATR_NM>
+        <ATR_NM id="Product_Type" Label="Product Type" SEQ="50" Value="38084251" STNDR="" LOVSQ=""><![CDATA[Differential]]></ATR_NM>
+        <ATR_NM id="Product_Sub_Type" Label="Sub Type" SEQ="55" Value="29178403" STNDR="" LOVSQ=""><![CDATA[None]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_PROD_DESCRIPTION_AG" Label="Product Name Details" SEQ="20">
+        <ATR_NM id="Product_Name" Label="Product Name" SEQ="5" Value="38100536" STNDR="" LOVSQ=""><![CDATA[Eaton ELocker Differential]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_PRODUCT_FEATURE" Label="Product Feature" SEQ="30">
+        <ATR_MULTI_ROW SEQ="1" ROWID="159703082">
+            <ATR_NM id="Feature" Label="Feature" SEQ="10" Value="38100540" STNDR="" LOVSQ=""><![CDATA[Driver-selectable locking differential]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="2" ROWID="159703083">
+            <ATR_NM id="Feature" Label="Feature" SEQ="10" Value="38121752" STNDR="" LOVSQ=""><![CDATA[Performs open until needed]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="3" ROWID="159703084">
+            <ATR_NM id="Feature" Label="Feature" SEQ="10" Value="38121753" STNDR="" LOVSQ=""><![CDATA[Net-forged gears for added strength
+]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="4" ROWID="159703085">
+            <ATR_NM id="Feature" Label="Feature" SEQ="10" Value="159682220" STNDR="" LOVSQ=""><![CDATA[100% locking differential]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="5" ROWID="159703086">
+            <ATR_NM id="Feature" Label="Feature" SEQ="10" Value="159682221" STNDR="" LOVSQ=""><![CDATA[Push button traction]]></ATR_NM>
+        </ATR_MULTI_ROW >
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_PRODUCT_TECH_SUPPORT" Label="Technical Support Details" SEQ="40">
+        <ATR_MULTI_ROW SEQ="1" ROWID="159703087">
+            <ATR_NM id="Technical_Support_Contact" Label="Technical Support Contact" SEQ="10" Value="38100538" STNDR="" LOVSQ=""><![CDATA[Customer Service | +1 (800) 328-3850]]></ATR_NM>
+            <ATR_NM id="Technical_Support_Region" Label="Technical Support Region" SEQ="20" Value="38100538" STNDR="" LOVSQ=""><![CDATA[North America]]></ATR_NM>
+            <ATR_NM id="Technical_Support_Country" Label="Technical Support Country" SEQ="30" Value="38100538" STNDR="" LOVSQ=""><![CDATA[United States of America]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="2" ROWID="159703088">
+            <ATR_NM id="Technical_Support_Contact" Label="Technical Support Contact" SEQ="10" Value="38100539" STNDR="" LOVSQ=""><![CDATA[Customer Service | +1 (800) 328-3850]]></ATR_NM>
+            <ATR_NM id="Technical_Support_Region" Label="Technical Support Region" SEQ="20" Value="38100539" STNDR="" LOVSQ=""><![CDATA[North America]]></ATR_NM>
+            <ATR_NM id="Technical_Support_Country" Label="Technical Support Country" SEQ="30" Value="38100539" STNDR="" LOVSQ=""><![CDATA[Canada]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="3" ROWID="159703089">
+            <ATR_NM id="Technical_Support_Contact" Label="Technical Support Contact" SEQ="10" Value="111453451" STNDR="" LOVSQ=""><![CDATA[Eaton´s customer service center +55 19 3881 9787 ; out of Brazil +55 19 3881 9303 and +55 19 3881 9654]]></ATR_NM>
+            <ATR_NM id="Technical_Support_Region" Label="Technical Support Region" SEQ="20" Value="111453451" STNDR="" LOVSQ=""><![CDATA[South America]]></ATR_NM>
+            <ATR_NM id="Technical_Support_Country" Label="Technical Support Country" SEQ="30" Value="111453451" STNDR="" LOVSQ=""><![CDATA[Brazil]]></ATR_NM>
+        </ATR_MULTI_ROW >
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_BUSINESS_GROUPS" Label="Business Groups" SEQ="20">
+        <ATR_MULTI_ROW SEQ="1" ROWID="26243213">
+            <ATR_NM id="Business" Label="Business" SEQ="10" Value="19" STNDR="" LOVSQ="320"><![CDATA[Industrial - Global - Vehicle]]></ATR_NM>
+        </ATR_MULTI_ROW >
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_DIMENSION_DETAILS_AG" Label="Dimensional Details" SEQ="100">
+        <ATR_NM id="Package_Shape" Label="Package Shape" SEQ="5" STNDR="" LOVSQ=""><![CDATA[Rectangular]]></ATR_NM>
+        <ATR_NM id="Package_Height" Label="Package Height" SEQ="20" UOM="in" STNDR="" LOVSQ=""><![CDATA[11 in]]></ATR_NM>
+        <ATR_NM id="Package_Length" Label="Package Length" SEQ="40" UOM="in" STNDR="" LOVSQ=""><![CDATA[10.5 in]]></ATR_NM>
+        <ATR_NM id="Package_Width" Label="Package Width" SEQ="60" UOM="in" STNDR="" LOVSQ=""><![CDATA[10.5 in]]></ATR_NM>
+        <ATR_NM id="Package_Weight" Label="Package Weight" SEQ="80" UOM="lb" STNDR="" LOVSQ=""><![CDATA[44.5 lb]]></ATR_NM>
+        <ATR_NM id="Package_Volume" Label="Package Volume" SEQ="120" UOM="in³" STNDR="" LOVSQ=""><![CDATA[1212.75 in³]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_CLASSIFICATION_INFO_AG" Label="Product Classification and Trade Specifications" SEQ="130">
+        <ATR_NM id="Public_Consumption" Label="*Public Consumption" SEQ="5" Value="Y" STNDR="" LOVSQ="1175"><![CDATA[Yes]]></ATR_NM>
+        <ATR_NM id="Private_Branded" Label="*Private Branded" SEQ="6" Value="N" STNDR="" LOVSQ=""><![CDATA[No]]></ATR_NM>
+        <ATR_NM id="Serial_Num_Control" Label="*Serial Num Control" SEQ="7" Value="Y" STNDR="" LOVSQ="1175"><![CDATA[Yes]]></ATR_NM>
+        <ATR_NM id="Product_Risk_Classification" Label="*Product Risk Classification" SEQ="10" STNDR="" LOVSQ=""><![CDATA[Runner]]></ATR_NM>
+        <ATR_NM id="Release_For_Sale_Date" Label="*Release For Sale Date" SEQ="30" STNDR="" LOVSQ=""><![CDATA[2017-01-09 00:00:00]]></ATR_NM>
+        <ATR_NM id="Eshop_Enabled" Label="*eShop Enabled" SEQ="40" Value="Y" STNDR="" LOVSQ="1175"><![CDATA[Yes]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_AUTO_GENERATE_AG" Label="Auto Generated Details" SEQ="150">
+        <ATR_NM id="Enterprise_Code" Label="ECode" SEQ="5" STNDR="" LOVSQ=""><![CDATA[DLF1]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_ENDUSE_MARKETS_AG" Label="End Use Market Details" SEQ="190">
+        <ATR_MULTI_ROW SEQ="1" ROWID="27824532">
+            <ATR_NM id="Market_Segments" Label="End Use Market Segment - Market Sub Segment" SEQ="5" Value="EUM0300" STNDR="" LOVSQ="1010"><![CDATA[Transportation]]></ATR_NM>
+        </ATR_MULTI_ROW >
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_ENDUSE_APPLICATION_AG" Label="End Use Application Details" SEQ="200">
+        <ATR_MULTI_ROW SEQ="1" ROWID="27825555">
+            <ATR_NM id="Application_L0" Label="End Use Application - Application Sub segment" SEQ="5" Value="EUA1300" STNDR="" LOVSQ="2070"><![CDATA[Vehicles: On-Road]]></ATR_NM>
+        </ATR_MULTI_ROW >
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_PLATFORM_SPEC" Label="Platform Specifications" SEQ="250">
+        <ATR_MULTI_ROW SEQ="1" ROWID="44342075">
+            <ATR_NM id="Platform_Group" Label="Platform - Group" SEQ="5" Value="145" STNDR="" LOVSQ="630"><![CDATA[VG]]></ATR_NM>
+            <ATR_NM id="Platform_Name" Label="Platform - Name" SEQ="10" Value="2031" STNDR="" LOVSQ="3390"><![CDATA[Aftermarket]]></ATR_NM>
+        </ATR_MULTI_ROW >
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_SHORT_DESCRIPTION" Label="Short Invoice Description" SEQ="1">
+        <ATR_NM id="Short_Description" Label="Short Description" SEQ="10" STNDR="" LOVSQ=""><![CDATA[Eaton ELocker4]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_PUBLISH_SYSTEMS_INFO_AG" Label="Publish Systems Details" SEQ="1">
+        <ATR_MULTI_ROW SEQ="1" ROWID="44342337">
+            <ATR_NM id="System_Name" Label="System Name" SEQ="5" STNDR="" LOVSQ="390"><![CDATA[VEHICLE JDE - NA]]></ATR_NM>
+            <ATR_NM id="Manufacturing_Id" Label="Manufacturing Id" SEQ="10" STNDR="" LOVSQ=""><![CDATA[Q14020-010]]></ATR_NM>
+            <ATR_NM id="ERP_Status" Label="ERP Status" SEQ="12" STNDR="" LOVSQ=""><![CDATA[Active]]></ATR_NM>
+            <ATR_NM id="Publish_Mode" Label="Publish Mode" SEQ="15" STNDR="" LOVSQ=""><![CDATA[Real-Time]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="2" ROWID="44342385">
+            <ATR_NM id="System_Name" Label="System Name" SEQ="5" STNDR="" LOVSQ="510"><![CDATA[VEHICLE ORACLE - GLOBAL]]></ATR_NM>
+            <ATR_NM id="Manufacturing_Id" Label="Manufacturing Id" SEQ="10" STNDR="" LOVSQ=""><![CDATA[Q14020-010]]></ATR_NM>
+            <ATR_NM id="ERP_Status" Label="ERP Status" SEQ="12" STNDR="" LOVSQ=""><![CDATA[Active]]></ATR_NM>
+            <ATR_NM id="Publish_Mode" Label="Publish Mode" SEQ="15" STNDR="" LOVSQ=""><![CDATA[Real-Time]]></ATR_NM>
+        </ATR_MULTI_ROW >
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_PRODUCT_OWNER" Label="Product Owner Details" SEQ="10">
+        <ATR_NM id="Owner" Label="Owner" SEQ="10" STNDR="" LOVSQ=""><![CDATA[Industrial Vehicle AMER Electromagnetic (ELocker)]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_ITEM_LANG_AG" Label="Item Languages" SEQ="80">
+        <ATR_MULTI_ROW SEQ="1" ROWID="34884859">
+            <ATR_NM id="XXPDH_LANG_ENABLED" Label="Marketing Languages" SEQ="10" Value="en_US" STNDR="" LOVSQ=""><![CDATA[AMERICAN]]></ATR_NM>
+            <ATR_NM id="Language_Status" Label="Language Status" SEQ="15" Value="1" STNDR="" LOVSQ="10"><![CDATA[Active]]></ATR_NM>
+        </ATR_MULTI_ROW >
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_COUNTRIES_AG" Label="Marketable Countries" SEQ="10">
+        <ATR_MULTI_ROW SEQ="1" ROWID="44341922">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="CA" STNDR="" LOVSQ="390"><![CDATA[Canada]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="2" ROWID="44341942">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="US" STNDR="" LOVSQ="2310"><![CDATA[United States of America]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="3" ROWID="167062890">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="MX" STNDR="" LOVSQ="1500"><![CDATA[Mexico]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="4" ROWID="167062891">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="ZA" STNDR="" LOVSQ="2390"><![CDATA[South Africa]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="5" ROWID="167062892">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="DE" STNDR="" LOVSQ="790"><![CDATA[Germany]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="6" ROWID="167062893">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="DZ" STNDR="" LOVSQ="580"><![CDATA[Algeria]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="7" ROWID="167062894">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="AT" STNDR="" LOVSQ="140"><![CDATA[Austria]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="8" ROWID="167062895">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="FI" STNDR="" LOVSQ="720"><![CDATA[Finland]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="9" ROWID="167062896">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="HU" STNDR="" LOVSQ="950"><![CDATA[Hungary]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="10" ROWID="167062897">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="NO" STNDR="" LOVSQ="1600"><![CDATA[Norway]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="11" ROWID="167062898">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="BY" STNDR="" LOVSQ="340"><![CDATA[Belarus]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="12" ROWID="167062899">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="BE" STNDR="" LOVSQ="210"><![CDATA[Belgium]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="13" ROWID="167062900">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="HR" STNDR="" LOVSQ="930"><![CDATA[Croatia]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="14" ROWID="167062901">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="CZ" STNDR="" LOVSQ="550"><![CDATA[Czech Republic]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="15" ROWID="167062902">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="EG" STNDR="" LOVSQ="630"><![CDATA[Egypt]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="16" ROWID="167062903">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="EE" STNDR="" LOVSQ="670"><![CDATA[Estonia]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="17" ROWID="167062904">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="ET" STNDR="" LOVSQ="680"><![CDATA[Ethiopia]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="18" ROWID="167062905">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="FR" STNDR="" LOVSQ="730"><![CDATA[France]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="19" ROWID="167062906">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="IE" STNDR="" LOVSQ="1010"><![CDATA[Ireland]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="20" ROWID="167062907">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="IT" STNDR="" LOVSQ="1040"><![CDATA[Italy]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="21" ROWID="167062908">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="LU" STNDR="" LOVSQ="1270"><![CDATA[Luxembourg]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="22" ROWID="167062909">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="NL" STNDR="" LOVSQ="1590"><![CDATA[Netherlands]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="23" ROWID="167062910">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="OM" STNDR="" LOVSQ="1650"><![CDATA[Oman]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="24" ROWID="167062911">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="PL" STNDR="" LOVSQ="1720"><![CDATA[Poland]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="25" ROWID="167062912">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="PT" STNDR="" LOVSQ="1770"><![CDATA[Portugal]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="26" ROWID="167062913">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="RU" STNDR="" LOVSQ="1840"><![CDATA[Russian Federation]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="27" ROWID="167062914">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="SA" STNDR="" LOVSQ="1890"><![CDATA[Saudi Arabia]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="28" ROWID="167062915">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="SE" STNDR="" LOVSQ="2090"><![CDATA[Sweden]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="29" ROWID="167062916">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="CH" STNDR="" LOVSQ="2100"><![CDATA[Switzerland]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="30" ROWID="167062917">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="TR" STNDR="" LOVSQ="2210"><![CDATA[Turkey]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="31" ROWID="167062918">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="AE" STNDR="" LOVSQ="2270"><![CDATA[United Arab Emirates]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="32" ROWID="167062919">
+            <ATR_NM id="Countries" Label="Countries" SEQ="10" Value="GB" STNDR="" LOVSQ="2280"><![CDATA[United Kingdom of Great Britain and Northern Ireland]]></ATR_NM>
+        </ATR_MULTI_ROW >
+    </ATR_GRP>
+</ATR_GRP_TYPE>

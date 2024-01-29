@@ -1,0 +1,181 @@
+//-----------------------------------
+// Global Typography definition
+//-----------------------------------
+
+// Typography
+//--------------
+html {
+  font-size: $base__font-size;
+}
+
+body {
+  @include font-family__secondary(--secondary-font);
+  color: var(--body-copy-color, $color__primary-gray1);
+  font-size: rem(16px);
+  overflow-x: hidden;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+// NOTE: <i> tag is being used for Glyphicon-fonts elements
+i {
+  font-style: normal;
+}
+
+p {
+  line-height: $base__line-height;
+}
+
+a {
+  color: var(--link-brand-color);
+
+  &:visited,
+  &:active {
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--link-brand-color);
+    text-decoration: underline;
+  }
+}
+
+
+
+
+// Headings
+//----------------
+h1,
+.b-heading-h1 {
+  @include h1;
+  margin-top: 0;
+}
+
+h2,
+.b-heading-h2 {
+  @include h2;
+  margin-top: 0;
+}
+
+h3,
+.b-heading-h3 {
+  @include h3;
+  margin-top: 0;
+}
+
+h4,
+.b-heading-h4 {
+  @include h4;
+  margin-top: 0;
+}
+
+h5,
+.b-heading-h5 {
+  @include h5;
+  margin-top: 0;
+
+  a {
+    color: var(--link-brand-color);
+  }
+}
+
+.b-heading-h1-hero {
+  @include h1-hero;
+  margin-top: 0;
+}
+
+//links
+
+.b-h4-link {
+  font-size: 2.4rem;
+  @include font-family__secondary(--secondary-font);
+  color: var(--link-brand-color);
+  font-weight: bold;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: var(--link-brand-color);
+  }
+
+  @include media-desktop-and-up {
+    // TODO: Review this font size after CRUX Feedback
+    font-size: 2rem;
+  }
+}
+
+.b-h5-link {
+  font-size: rem(25px);
+  @include font-family__secondary(--secondary-font);
+  color: var(--link-brand-color);
+  font-weight: bold;
+
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: var(--link-brand-color);
+  }
+
+  @include media-desktop-and-up {
+    // TODO: Review this font size after CRUX Feedback
+    font-size: 1.625rem;
+  }
+}
+
+.b-small-link {
+  @include font-family__secondary(--secondary-font);
+  color: var(--link-brand-color);
+  // TODO: Review this font size after CRUX Feedback
+  font-size: 1.125em;
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: none;
+    color: var(--link-brand-color);
+  }
+}
+
+
+// BodyCopy
+//--------------
+.b-hero-description {
+  @include hero-description;
+}
+
+.b-body-copy {
+  @include body-copy;
+}
+
+.b-body-copy-small {
+  color: var(--grey-primary-brand-color, $color__primary-gray1);
+  @include body-copy-small;
+}
+
+.b-eyebrow-large {
+  color: $color__primary-gray1;
+  @include eyebrow-large;
+}
+
+.b-eyebrow-small {
+  color: var(--grey-primary-brand-color, $color__primary-gray1);
+  @include eyebrow-small;
+  padding-right: inherit;
+}
+
+.b-h5-link-bold {
+  @include h5-link-bold;
+}
+
+.b-h4-link-bold {
+  @include h4-link-bold;
+}

@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        jcr:mixinTypes="[sling:VanityPath]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="AEM Forms"
+        sling:resourceType="fd/fm/gui/components/admin/creationwizard/page"
+        sling:vanityPath="/aem/createaf"
+        consoleId="cq-forms-formsanddocuments-creationWizard">
+        <head jcr:primaryType="nt:unstructured">
+            <viewport
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/admin/page/viewport"/>
+            <meta
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/meta"
+                content="chrome=1"
+                name="X-UA-Compatible"/>
+            <favicon
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/page/favicon"/>
+            <clientlibs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/includeclientlibs"
+                categories="[coralui3,granite.ui.coral.foundation,granite.shared,formsmanager.gui.components.admin.createguide]"/>
+        </head>
+        <body
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/page/body">
+            <items jcr:primaryType="nt:unstructured">
+                <form
+                    granite:rel="cq-formsmanager-admin-createguide"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form"
+                    maximized="{Boolean}true"
+                    method="post"
+                    style="vertical">
+                    <items jcr:primaryType="nt:unstructured">
+                        <wizard
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Create Adaptive Form"
+                            sling:resourceType="granite/ui/components/coral/foundation/wizard">
+                            <items jcr:primaryType="nt:unstructured">
+                                <selecttemplate
+                                    granite:class="fm-class-select-template"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Select Template"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <content
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <fulltextsearch
+                                                    granite:class="fm-class-fulltext-wrapper"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <fulltext
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/fulltextpredicate"
+                                                            emptyText="Search Template"
+                                                            name="fulltext"/>
+                                                    </items>
+                                                </fulltextsearch>
+                                                <templates
+                                                    granite:class="fm-class-asset-listing"
+                                                    granite:rel="cq-formsmanager-admin-createguide-templates"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/advancedselect"
+                                                    foundation-validation-ui="none"
+                                                    name="template"
+                                                    required="{Boolean}true">
+                                                    <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/masonry"
+                                                        selectionCount="single"
+                                                        selectionMode="{Boolean}true"
+                                                        type="guide">
+                                                        <datasource
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="fd/fm/gui/components/admin/creationwizard/searchformdatasource"
+                                                            itemResourceType="fd/fm/gui/components/admin/createguide/templateoption"/>
+                                                        <emptyitem
+                                                            granite:class="no-children-banner center"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <text
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/text"
+                                                                    text="Your search did not match any available templates."/>
+                                                            </items>
+                                                        </emptyitem>
+                                                    </field>
+                                                    <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        foundation-validation-ui="none"/>
+                                                </templates>
+                                            </items>
+                                        </content>
+                                    </items>
+                                    <parentConfig jcr:primaryType="nt:unstructured">
+                                        <prev
+                                            granite:class="foundation-wizard-control fm-class-wizard-cancel-btn"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/anchorbutton"
+                                            href="${empty header.Referer ? granite:concat(&quot;/aem/forms.html&quot;, granite:encodeURIPath(requestPathInfo.suffix)) : header.Referer}"
+                                            text="Cancel">
+                                            <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                foundation-wizard-control-action="cancel"/>
+                                        </prev>
+                                        <next
+                                            granite:class="foundation-wizard-control"
+                                            granite:id="createguidewizardnextbutton"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/button"
+                                            text="Next"
+                                            variant="primary">
+                                            <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                foundation-wizard-control-action="next"/>
+                                        </next>
+                                    </parentConfig>
+                                </selecttemplate>
+                                <editproperties
+                                    granite:class="fm-class-edit-properties"
+                                    jcr:primaryType="nt:unstructured"
+                                    jcr:title="Add Properties"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <properties
+                                            granite:rel="cq-formsmanager-admin-createguide-properties"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                            margin="{Boolean}true">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <container
+                                                    granite:class="fm-class-wizard-thumbnailContainer"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <thumbnail
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="fd/fm/gui/components/admin/creationwizard/thumbnail"/>
+                                                    </items>
+                                                </container>
+                                                <tabs
+                                                    granite:class="fm-class-wizard-tabContainer"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                                                    orientation="horizontal">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <basic
+                                                            jcr:primaryType="nt:unstructured"
+                                                            jcr:title="Basic"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <col1
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/include"
+                                                                    path="fd/fm/gui/content/commonsCoralUI3/commoncreateproperties/col1"/>
+                                                                <col2
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/include"
+                                                                    path="fd/fm/gui/content/commonsCoralUI3/commoncreateproperties/col2"/>
+                                                                <col3
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <identifier
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                            ignoreData="true"
+                                                                            name="./jcr:content/guide"
+                                                                            value="1"/>
+                                                                        <generator
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                            ignoreData="true"
+                                                                            name="./jcr:content/metadata/xmp:CreatorTool"
+                                                                            value="AEM Forms Editor"/>
+                                                                        <resourceType
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                            ignoreData="{Boolean}true"
+                                                                            name="./jcr:content/sling:resourceType"
+                                                                            value="fd/fm/af/render"/>
+                                                                        <folderType
+                                                                            granite:id="fm-id-folderType"
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                            ignoreData="{Boolean}true"
+                                                                            value="sling:OrderedFolder"/>
+                                                                        <assettype
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                            name="./jcr:content/type"
+                                                                            value="guide"/>
+                                                                    </items>
+                                                                </col3>
+                                                            </items>
+                                                        </basic>
+                                                        <formmodel
+                                                            jcr:primaryType="nt:unstructured"
+                                                            jcr:title="Form Model"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <col1
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <selectformmodel
+                                                                            granite:id="fm-id-selectformmodel"
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                            fieldLabel="Select From:">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <formdatamodel
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="Form Data Model"
+                                                                                    value="formdatamodel"/>
+                                                                                <formtemplates
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="Form Templates"
+                                                                                    value="formtemplates"/>
+                                                                                <xmlschema
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    text="Schema"
+                                                                                    value="schema"/>
+                                                                                <none
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    selected="{Boolean}true"
+                                                                                    text="None"
+                                                                                    value="none"/>
+                                                                            </items>
+                                                                        </selectformmodel>
+                                                                        <formmodelcontainer
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                <selectfdmcontainer
+                                                                                    granite:class="fm-class-fdmcontainer"
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                                        <fdm
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                                                            variant="default">
+                                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                                <fdmitems
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    jcr:title="Select Form Data Model"
+                                                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                                                        <selectedfile
+                                                                                                            granite:class="fm-class-selectedfdmfile"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/container"/>
+                                                                                                        <schemarefmetadata
+                                                                                                            granite:id="fm-id-fdmschemarefmetadata"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"/>
+                                                                                                        <schemarefguidecontainer
+                                                                                                            granite:id="fm-id-fdmschemarefguidecontainer"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"/>
+                                                                                                        <fdm-search
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="fd/fm/gui/components/admin/creationwizard/searchfield"
+                                                                                                            searchUrl="fd/fm/gui/content/forms/guide/searchdata.html"
+                                                                                                            type="formdatamodel"/>
+                                                                                                    </items>
+                                                                                                </fdmitems>
+                                                                                            </items>
+                                                                                        </fdm>
+                                                                                    </items>
+                                                                                </selectfdmcontainer>
+                                                                                <selectschemafile
+                                                                                    granite:class="fm-class-schemacontainer"
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                                        <schema
+                                                                                            granite:id="fm-id-schema-view"
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion"
+                                                                                            variant="default">
+                                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                                <schemaitems
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    jcr:title="Select Schema"
+                                                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                                                        <selectedfile
+                                                                                                            granite:class="fm-class-selectedxsdfile"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/container"/>
+                                                                                                        <selectedschemafile
+                                                                                                            granite:class="fm-class-selectedschemafile"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/container"/>
+                                                                                                        <schematypeselector
+                                                                                                            granite:id="fm-id-schematypeselectorgroup"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                                                                                            ignoreData="{Boolean}true"
+                                                                                                            name="schematypeselector">
+                                                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                                                <diskupload
+                                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                                    checked="{Boolean}true"
+                                                                                                                    text="Upload from Disk"
+                                                                                                                    value="upload"/>
+                                                                                                                <resourcesearch
+                                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                                    text="&#xa;Enter Eloqua Id"
+                                                                                                                    value="search"/>
+                                                                                                            </items>
+                                                                                                        </schematypeselector>
+                                                                                                        <browse
+                                                                                                            granite:id="fm-id-uploadschemafile"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/fileupload"
+                                                                                                            async="{Boolean}true"
+                                                                                                            autoStart="{Boolean}false"
+                                                                                                            multiple="{Boolean}false"
+                                                                                                            text="Upload Schema Definition"
+                                                                                                            uploadUrl="/tmp/fd/fm/upload"/>
+                                                                                                        <schema-search
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="fd/fm/gui/components/admin/creationwizard/searchfield"
+                                                                                                            searchUrl="fd/fm/gui/content/forms/guide/searchdata.html"
+                                                                                                            type="schema"/>
+                                                                                                        <xsdrefguidecontainer
+                                                                                                            granite:id="fm-id-xsdrefguidecontainer"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                                                            name="/jcr:content/guideContainer/xsdRef"/>
+                                                                                                        <schemarefguidecontainer
+                                                                                                            granite:id="fm-id-schemarefguidecontainer"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"/>
+                                                                                                        <xsdrootguidecontainer
+                                                                                                            granite:id="fm-id-xsdrootguidecontainer"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                                                            name="/jcr:content/guideContainer/xsdRootElement"/>
+                                                                                                        <xsdrefmetadata
+                                                                                                            granite:id="fm-id-xsdrefmetadata"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                                                            name="./jcr:content/metadata/xsdRef"/>
+                                                                                                        <schemarefmetadata
+                                                                                                            granite:id="fm-id-schemarefmetadata"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"/>
+                                                                                                        <xsdcopy
+                                                                                                            granite:id="fm-id-xsdcopy"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                                                            name="/jcr:content/guideContainer/assets/xsdRef.xsd@CopyFrom"/>
+                                                                                                        <schemacopy
+                                                                                                            granite:id="fm-id-schemacopy"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"/>
+                                                                                                    </items>
+                                                                                                </schemaitems>
+                                                                                            </items>
+                                                                                        </schema>
+                                                                                        <dor
+                                                                                            granite:id="fm-id-dor-view"
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            jcr:title="Document of Record Template Configuration"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                                <doritems
+                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                    jcr:title="Document of Record Template Configuration"
+                                                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                                                        <dortypeselector
+                                                                                                            granite:class="fm-class-dortypeselector"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                                                                                            ignoreData="{Boolean}true"
+                                                                                                            name="dortypeselector"
+                                                                                                            vertical="{Boolean}true">
+                                                                                                            <items jcr:primaryType="nt:unstructured">
+                                                                                                                <none
+                                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                                    checked="{Boolean}true"
+                                                                                                                    text="None"
+                                                                                                                    value="none"/>
+                                                                                                                <selectdor
+                                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                                    text="Associate form template as the Document of Record template"
+                                                                                                                    value="select"/>
+                                                                                                                <generatedor
+                                                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                                                    text="Generate Document of Record"
+                                                                                                                    value="generate"/>
+                                                                                                            </items>
+                                                                                                        </dortypeselector>
+                                                                                                        <dorselectiontype
+                                                                                                            granite:id="fm-id-dorType"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                                                            name="./jcr:content/metadata/dorType"/>
+                                                                                                        <dorselectiontypeguidecontainer
+                                                                                                            granite:id="fm-id-dorTypeGuideContainer"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"/>
+                                                                                                        <selectedfile
+                                                                                                            granite:class="fm-class-selecteddorfile"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/container"/>
+                                                                                                        <dor-search
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="fd/fm/gui/components/admin/creationwizard/searchfield"
+                                                                                                            searchUrl="fd/fm/gui/content/forms/guide/searchdata.html"
+                                                                                                            type="dor"/>
+                                                                                                        <dorreference
+                                                                                                            granite:id="fm-id-dorref"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"/>
+                                                                                                        <dorrefmetadata
+                                                                                                            granite:id="fm-id-dorrefmetadata"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                                                            name="./jcr:content/metadata/dorTemplateRef"/>
+                                                                                                        <dor-default-template
+                                                                                                            granite:id="fm-id-dor-default-template"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                                                            value="/libs/fd/af/dor/templates/defaultTemplate.xdp"/>
+                                                                                                        <dor-creationTime
+                                                                                                            granite:id="fm-id-dor-creationTime"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                                                            value=""/>
+                                                                                                        <dor-lastModificationTime
+                                                                                                            granite:id="fm-id-dor-lastModificationTime"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                                                            value=""/>
+                                                                                                        <dor-sling-resourceType
+                                                                                                            granite:id="fm-id-dor-sling-resourceType"
+                                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                                                            value="fd/af/authoring/components/dor/dorProperties"/>
+                                                                                                    </items>
+                                                                                                </doritems>
+                                                                                            </items>
+                                                                                        </dor>
+                                                                                    </items>
+                                                                                </selectschemafile>
+                                                                                <selectxdpcontainer
+                                                                                    granite:class="fm-class-xdpcontainer"
+                                                                                    jcr:primaryType="nt:unstructured"
+                                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                                        <xdpreference
+                                                                                            granite:id="fm-id-xdpref"
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                                            name="/jcr:content/guideContainer/xdpRef"/>
+                                                                                        <selectedfile
+                                                                                            granite:class="fm-class-selectedxdpfile"
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/container"/>
+                                                                                        <xdprefmetadata
+                                                                                            granite:id="fm-id-xdprefmetadata"
+                                                                                            jcr:primaryType="nt:unstructured"
+                                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                                            name="./jcr:content/metadata/xdpRef"/>
+                                                                                    </items>
+                                                                                </selectxdpcontainer>
+                                                                            </items>
+                                                                        </formmodelcontainer>
+                                                                        <xdp-search
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="fd/fm/gui/components/admin/creationwizard/searchfield"
+                                                                            searchUrl="fd/fm/gui/content/forms/guide/searchdata.html"
+                                                                            type="xdp"/>
+                                                                        <discoverabilitytooltip
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="fd/fm/gui/components/admin/discoverabilitytooltip"
+                                                                            id="fm-id-discoverabilityTooltip"/>
+                                                                        <fragmentmodelrootguidecontainer
+                                                                            granite:id="fm-id-fragmentmodelrootguidecontainer"
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                            name="/jcr:content/guideContainer/fragmentModelRoot"/>
+                                                                        <fragmentmodelrootmetadata
+                                                                            granite:id="fm-id-fragmentmodelrootmetadata"
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                            name="./jcr:content/metadata/fragmentModelRoot"/>
+                                                                        <formmodel
+                                                                            granite:id="fm-id-formmodel"
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                            name="./jcr:content/metadata/formmodel"/>
+                                                                        <schematypeguidecontainer
+                                                                            granite:id="fm-id-schematypeguideContainer"
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"/>
+                                                                        <versionmetadata
+                                                                            granite:id="fm-id-versionmetadata"
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                            name="./jcr:content/metadata/fd:version"/>
+                                                                        <versionguidecontainer
+                                                                            granite:id="fm-id-versionguidecontainer"
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"/>
+                                                                    </items>
+                                                                </col1>
+                                                            </items>
+                                                        </formmodel>
+                                                        <advanced
+                                                            jcr:primaryType="nt:unstructured"
+                                                            jcr:title="Advanced"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <col1
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/include"
+                                                                    path="/libs/fd/fm/gui/content/commonsCoralUI3/commoncreateproperties/col3"/>
+                                                                <col2
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <availableInMobileAppCheckbox
+                                                                            granite:id="fm-id-availableInMobileApp"
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                            text="Sync with AEM Forms App"/>
+                                                                        <availableInMobileApp
+                                                                            granite:class="fm-class-availableInMobileApp"
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                            name="./jcr:content/metadata/availableInMobileApp"
+                                                                            value="{Boolean}false"/>
+                                                                        <availableInMobileApp-typehint
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                            name="./jcr:content/metadata/availableInMobileApp@TypeHint"
+                                                                            value="Boolean"/>
+                                                                        <allowedrenderformat
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                            name="./jcr:content/metadata/allowedRenderFormat"
+                                                                            value="HTML"/>
+                                                                    </items>
+                                                                </col2>
+                                                            </items>
+                                                        </advanced>
+                                                    </items>
+                                                </tabs>
+                                            </items>
+                                        </properties>
+                                        <modalhandler
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/include"
+                                            path="fd/fm/gui/content/commonsCoralUI3/shellFooterContainer/items/modaltemplate"/>
+                                    </items>
+                                    <parentConfig jcr:primaryType="nt:unstructured">
+                                        <prev
+                                            granite:class="foundation-wizard-control"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/button"
+                                            text="Back">
+                                            <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                foundation-wizard-control-action="prev"/>
+                                        </prev>
+                                        <next
+                                            granite:class="foundation-wizard-control"
+                                            granite:id="fm-id-createwizard-submit"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/button"
+                                            disabled="{Boolean}true"
+                                            text="Create"
+                                            trackingElement="Create Final Button"
+                                            trackingFeature="Adaptive Form"
+                                            variant="primary"/>
+                                    </parentConfig>
+                                </editproperties>
+                            </items>
+                        </wizard>
+                    </items>
+                </form>
+            </items>
+        </body>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.SiteMapGenerationServiceImpl" configuration-policy="optional" immediate="true" activate="activate" modified="activate">
+  <property name="priorityProperties" type="String">priority</property>
+  <property name="externalExcludeProperty" type="String" value="hideInXml"/>
+  <property name="internalExcludeProperty" type="String" value="hideInHtml"/>
+  <property name="slingServletResourceTypes" type="String">eaton/components/structure/eaton-edit-template-page
+/apps/eaton/components/structure/eaton-folder-page-component</property>
+  <property name="includeLastmod" type="Boolean" value="true"/>
+  <property name="includeInherit" type="Boolean" value="false"/>
+  <property name="changefreqProperties" type="String">changefrequency</property>
+  <property name="extensionlessUrls" type="Boolean" value="false"/>
+  <property name="removeSlash" type="Boolean" value="false"/>
+  <property name="characterEncoding" type="String" value="UTF-8"/>
+  <property name="damasssetsProperty" type="String" value=""/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.SiteMapGenerationService"/>
+  </service>
+  <implementation class="com.eaton.platform.core.services.impl.SiteMapGenerationServiceImpl"/>
+</scr:component>

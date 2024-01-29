@@ -1,0 +1,5 @@
+projectKey=Eaton
+serverUrl=http://localhost:9000
+dashboardUrl=http://localhost:9000/dashboard/index/Eaton
+ceTaskId=AV1Qcbyk09DIgZrqR5HZ
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AV1Qcbyk09DIgZrqR5HZ

@@ -1,0 +1,244 @@
+{
+  "productName": "Eaton 5P UPS",
+  "productFamilyAEMPath": "/content/eaton/us/en-us/catalog/backup-power-ups-surge-it-power-distribution/eaton-5p-ups",
+  "showLongDescription": true,
+  "secondaryLinksList": [
+    {
+      "text": "View Spiceworks reviews for the 5P tower",
+      "path": "https://community.spiceworks.com/products/49314-eaton-5p-ups",
+      "newWindow": "_blank",
+      "secLinkSkuOnly": false
+    },
+    {
+      "text": "View Spiceworks reviews for the 5P rackmount",
+      "path": "https://community.spiceworks.com/products/48906-eaton-5p-rackmount-ups",
+      "newWindow": "_blank",
+      "secLinkSkuOnly": false
+    },
+    {
+      "text": "Read StorageReview.com review",
+      "path": "https://www.storagereview.com/eaton_5p1500rc_5p_ups_review",
+      "newWindow": "_blank",
+      "secLinkSkuOnly": false
+    },
+    {
+      "text": "View the runtime graph",
+      "path": "http://eg.eaton.com/ups-battery-runtime/en-us/5P1000R",
+      "newWindow": "_blank",
+      "secLinkSkuOnly": true
+    }
+  ],
+  "topicLinkWithIconList": [
+    {
+      "title": "Locate a channel partner",
+      "icon": "/content/dam/eaton/resources/icons/topiclisticons/locator_orange_icon.png",
+      "link": "/content/eaton/us/en-us/locate/backup-power-UPS-surge-it-power-distribution-locator.html?productgrouping\u003d0-3kvaups",
+      "description": "Find a local channel partner based upon your zip code.",
+      "newWindow": "_blank"
+    },
+    {
+      "title": "Register your UPS",
+      "icon": "/content/dam/eaton/resources/icons/topiclisticons/Eaton_support.png",
+      "link": "https://content.eaton.com/product-registration",
+      "description": "Register your UPS with us.",
+      "newWindow": "_blank"
+    },
+    {
+      "title": "Technical support",
+      "icon": "/content/dam/eaton/resources/icons/topiclisticons/faq_orange_icon.png",
+      "link": "http://pqcustomersupport.eaton.com/",
+      "description": "Please call (800) 356-5737 or click the link above to use our online technical support knowledge base.",
+      "newWindow": "_blank"
+    }
+  ],
+  "howToBuyList": [
+    {
+      "title": "Contact me",
+      "dscription": "\u003cp\u003eTalk to a UPS expert.\u003c/p\u003e\r\n",
+      "icon": "/content/dam/eaton/resources/icons/topiclisticons/phone_orange_icon.png",
+      "link": "/content/eaton/us/en-us/support/backup-power-ups-surge-it-power-distribution/contact-me-pq.html?primaryProductTaxonomy\u003dbackup-power%2C-ups%2C-surge-%26-it-power-distribution%2Fbackup-power-%28ups%29",
+      "openInNewWindow": "_blank",
+      "dropdownIcon": "phone",
+      "hasClearfix": false,
+      "skuOnly": false,
+      "isSuffixEnabled": true,
+      "isModalEnabled": false,
+      "isSourceTrackingEnabled": false
+    },
+    {
+      "title": "Locate a channel partner",
+      "dscription": "\u003cp\u003eFind a local channel partner based upon your zip code.\u003cbr /\u003e\r\n\u003c/p\u003e\r\n",
+      "icon": "/content/dam/eaton/resources/icons/topiclisticons/locator_orange_icon.png",
+      "link": "/content/eaton/us/en-us/locate/backup-power-UPS-surge-it-power-distribution-locator.html?productgrouping\u003d0-3kvaups",
+      "openInNewWindow": "_blank",
+      "dropdownIcon": "marker",
+      "hasClearfix": false,
+      "skuOnly": false,
+      "isSuffixEnabled": false,
+      "isModalEnabled": false,
+      "isSourceTrackingEnabled": false
+    },
+    {
+      "title": "UPS and battery replacement selector",
+      "dscription": "\u003cp\u003eFind the right UPS, replacement batteries or the Eaton equivalent to competitive models.\u003cbr /\u003e\r\n\u003c/p\u003e\r\n",
+      "icon": "/content/dam/eaton/resources/icons/topiclisticons/calculator_orange_icon.png",
+      "link": "http://upsselector.eaton.com/?cx\u003d3",
+      "openInNewWindow": "_blank",
+      "dropdownIcon": "tiles",
+      "hasClearfix": false,
+      "skuOnly": false,
+      "isSuffixEnabled": false,
+      "isModalEnabled": false,
+      "isSourceTrackingEnabled": false
+    },
+    {
+      "title": "Questions before you buy",
+      "dscription": "\u003cp\u003eFill out the form (link above) or call us\u003c/p\u003e\r\n\u003cp\u003eToll free: 1-800-356-5794 option 2\u003c/p\u003e\r\n\u003cp\u003eMonday - Friday: 8:00 a.m. to 6:00 p.m. Eastern time\u003c/p\u003e\r\n",
+      "icon": "/content/dam/eaton/resources/icons/topiclisticons/conversation_bubbles_orange_icon.png",
+      "link": "/content/eaton/us/en-us/forms/backup-power-ups-surge-it-distribution/questions-before-you-buy.html",
+      "openInNewWindow": "_blank",
+      "dropdownIcon": "help",
+      "hasClearfix": false,
+      "skuOnly": false,
+      "isSuffixEnabled": true,
+      "isModalEnabled": false,
+      "isSourceTrackingEnabled": false
+    }
+  ],
+  "productSupportBean": {
+    "supportLabel": "Call us",
+    "supportInformation": "\u003cp\u003ePhone: \u003ca\u003e(800) 356-5737\u003c/a\u003e\u003cbr /\u003e\r\n\u003c/p\u003e\r\n\u003cp\u003e\u003ca href\u003d\"http://pqcustomersupport.eaton.com/\"\u003eOr visit our tech support knowledge base\u003c/a\u003e\u003c/p\u003e\r\n",
+    "country": "US"
+  },
+  "taxonomyAttributeGroupList": [
+    {
+      "groupName": "Battery",
+      "attributeList": [
+        "Runtime_Graph",
+        "Battery_Type",
+        "Batteries_Replacement",
+        "",
+        "Battery_Quantity",
+        "Battery_Management",
+        "Battery_Form_Factor",
+        "Battery_Rating",
+        "Extended_Battery_Capability"
+      ]
+    },
+    {
+      "groupName": "Electrical output",
+      "attributeList": [
+        "Voltage",
+        "Receptacle",
+        "Wattage",
+        "Output_Voltage_Range",
+        "Output_Frequency",
+        "Output_Nominal_Voltage",
+        "ETIM_MaxVolDistOput_LL",
+        "Max_Electric_Current",
+        "Topology"
+      ]
+    },
+    {
+      "groupName": "Electrical input",
+      "attributeList": [
+        "Input_Connection",
+        "Input_Nominal_Voltage",
+        "Nominal_Freq",
+        "Input_Power_Factor",
+        "Input_Cord_Length",
+        "Input_Voltage_Range",
+        "Input_Frequency_Range"
+      ]
+    },
+    {
+      "groupName": "Communications",
+      "attributeList": [
+        "Communication",
+        "Ethernet_Interface",
+        "Potential_Free_Switch_Contact",
+        "Expansion_Slots",
+        "",
+        "Software_Compatibility",
+        "ETIM_User_Interface"
+      ]
+    },
+    {
+      "groupName": "Environmental",
+      "attributeList": [
+        "Altitude",
+        "Noise_Level",
+        "Temperature_Range",
+        "BTU_Rating",
+        "Relative_Humidity"
+      ]
+    },
+    {
+      "groupName": "Additional specifications",
+      "attributeList": [
+        "Form_Factor",
+        "",
+        "Construction_Type",
+        "Enclosure",
+        "Package_Contents",
+        "",
+        "Phase_Output",
+        "Internal_Bypass",
+        "Auto_Shutdown_Function",
+        "Used_With",
+        "Rack_Size",
+        "Color",
+        "Rack_Mounting_Kit",
+        "Efficiency",
+        "Phase_Input",
+        "Hot_Swap_Power",
+        "Surge_Protection",
+        "Type_of_Accessory",
+        "Image_CID_Example",
+        "Document_CID_Example",
+        "Other_CID_Example",
+        "Multiple_CID_Example"
+      ]
+    },
+    {
+      "groupName": "Warranty and support",
+      "attributeList": [
+        "Standard_Factory_Warranty",
+        "Extended_Service_Plans"
+      ]
+    }
+  ],
+  "primaryCTALabel": "Contact me about this product",
+  "primaryCTAURL": "/content/eaton/us/en-us/support/backup-power-ups-surge-it-power-distribution/contact-me-pq.html",
+  "primaryCTANewWindow": "_blank",
+  "primaryCTAEnableSourceTracking": "false",
+  "pimTags": [
+    "/content/cq:tags/eaton/product-attributes/input-power/single-phase",
+    "/content/cq:tags/eaton/integrations/nanorep/power-quality-nanorep",
+    "/content/cq:tags/eaton/product-attributes/features/network-capable",
+    "/content/cq:tags/eaton/product-taxonomy/backup-power,-ups,-surge-\u0026-it-power-distribution/backup-power-(ups)",
+    "/content/cq:tags/eaton/product-attributes/power-rating/1-3-kva",
+    "/content/cq:tags/eaton/product-attributes/form-factor/wallmount",
+    "/content/cq:tags/eaton/product-attributes/topology/line-interactive",
+    "/content/cq:tags/eaton/integrations/chat/electrical-avery-creek",
+    "/content/cq:tags/eaton/product-attributes/form-factor/rackmount",
+    "/content/cq:tags/eaton/supermarkets/markets/data-centers",
+    "/content/cq:tags/eaton/product-taxonomy/backup-power,-ups,-surge-\u0026-it-power-distribution",
+    "/content/cq:tags/eaton/product-attributes/features/lithium-batteries",
+    "/content/cq:tags/eaton/supermarkets/markets/healthcare",
+    "/content/cq:tags/eaton/supermarkets/customer-objective/healthcare/always-on-power",
+    "/content/cq:tags/eaton/country/north-america/us",
+    "/content/cq:tags/eaton/product-attributes/application/network-closet-ups",
+    "/content/cq:tags/eaton/product-attributes/phase/single-phase",
+    "/content/cq:tags/eaton/product-attributes/application/server-room-ups",
+    "/content/cq:tags/eaton/eaton-brand/industry/PQD-1p-ups",
+    "/content/cq:tags/eaton/supermarkets/data-center-application/server-room",
+    "/content/cq:tags/eaton/supermarkets/data-center-application/network-closet",
+    "/content/cq:tags/eaton/product-attributes/form-factor/tower",
+    "/content/cq:tags/eaton/supermarkets/healthcare-application/healthcare-it",
+    "/content/cq:tags/eaton/product-attributes/features/generator-compatible"
+  ],
+  "isSuffixDisabled": "false",
+  "middleTabTitle": "Models",
+  "primaryProductTaxonomy": "eaton:product-taxonomy/backup-power,-ups,-surge-\u0026-it-power-distribution/backup-power-(ups)"
+}

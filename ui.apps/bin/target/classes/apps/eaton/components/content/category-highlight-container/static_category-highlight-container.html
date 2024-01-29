@@ -1,0 +1,14 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-info">Category Highlight Container: ${currentNode.name}</div>
+</sly>
+
+<div class="category-highlight-container__component">
+  <div class="category-highlight-container__top">
+    <sly data-sly-resource="${'landinghero' @ resourceType='eaton/components/content/landinghero'}"></sly>
+  </div>
+
+  <div class="category-highlight-container__bottom">
+    <sly data-sly-resource="${'category-highlight-article' @ resourceType='eaton/components/content/category-highlight-article'}"></sly>
+  </div>
+
+</div>

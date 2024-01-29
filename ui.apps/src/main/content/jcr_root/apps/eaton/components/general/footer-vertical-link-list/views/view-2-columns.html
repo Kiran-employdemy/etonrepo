@@ -1,0 +1,13 @@
+
+<sly data-sly-use.data="com.eaton.platform.core.models.verticallinklist.VerticalLinkListModel">
+	<div class="links-list-2-columns">
+
+		<div data-sly-list.link="${data.listTypeArray}" class="${data.enableInnerGrid ? 'container' : ''}">
+
+			<div class="col-xs-12 col-md-6 links-list-2-columns__link b-body-copy">
+				<a data-sly-test="${link.pagePath}" href="${link.pagePath}" title="${link.headline}" target="${link.newWindow ? '_blank' : '_self'}" rel="nofollow">${link.headline}</a>
+				<div data-sly-test=${!link.pagePath}>${link.headline}</div>
+			</div>
+		</div>
+	</div>
+</sly>

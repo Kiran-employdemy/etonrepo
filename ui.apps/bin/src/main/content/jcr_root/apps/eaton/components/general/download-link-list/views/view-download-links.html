@@ -1,0 +1,51 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.downloadlinklist.DownloadLinkListModel">
+    <div class="download-links__component download-links--has-desc ${ data.enableInnerGrid ? 'container' : 'download_list' }">
+
+      <sly data-sly-test="${data.listType == 'fixed-list'}">
+        <p data-sly-test="${data.downloadLinksheader}" class="download-links__headline b-eyebrow-small">${data.downloadLinksheader}</p></sly>
+      <!--/* List Links */-->
+       <ul data-sly-list="${data.listTypeArray}" class="download-links__links">
+        <li class="download-links__item" data-sly-test="${item.isAssetLink && item.downloadLinkTitle}">
+            <div class="download-links__document">
+            <a href="${item.downloadLinkPath}"
+             data-analytics-event="${item.analyticsEventDTM}" 
+             data-analytics-name="${item.assetFormatNameDTM}" 
+             data-analytics-assetId="${item.assetUUID}"
+             data-analytics-assetTitle="${item.assetTitleDTM}" 
+             class="download-links__title b-heading-h5 track_download" data-track-download="${item.trackDownload}" aria-label="Download ${item.type} for ${ item.downloadLinkTitle }" target="${ item.downloadLinkNewWindow ? '_blank' : '_self' }">
+             <i class="icon icon-download" aria-hidden="true"></i>
+             ${item.downloadLinkTitle}</a>
+            <div data-sly-test="${item.assetSize}" class="download-links__size">
+                <i data-sly-test="${item.isSecure}" class="icon icon-secure-lock" aria-hidden="true"></i>
+                (${item.assetSize})</div>
+            <div class="b-body-copy-small download-links__description">${item.downloadLinkDescription}</div>
+            <div class="b-body-copy-small download-links__SHA" data-sly-test="${item.SHA}"> ${'sha256' @ i18n} : ${item.SHA}</div>
+            <div class="b-body-copy-small download-links__warning">
+            <sly data-sly-test="${item.ECCN}">${'eccnWarning'@i18n} ${item.ECCN}</sly>
+            </div>
+            </div>
+        </li>
+      </ul>
+   </sly>
+   <sly data-sly-test="${data.listType != 'fixed-list'}">
+      <ul data-sly-list="${ data.listTypeArray }" class="download-list__download-links secondary-content-accordion__column">
+        <li class="download-list__download-item secondary-content-accordion__download-icon" data-sly-test="${item.assetLink && item.assetTitle}">
+            <i class="icon icon-download" aria-hidden="true"></i>
+            <div class="download-list__download-document">
+                <div class="download-list__title">
+                    <a href="${item.assetLink}" data-track-download="${item.trackDownload}" aria-label="Download ${item.assetFileType} for ${ item.assetTitle }" target="${ data.newWindow ? '_blank' : '_self' }" filename="${item.eatonFileName}" class="download-list__title-link b-heading-h5 track_download">${item.assetTitle}</a>
+                </div>
+                <div class="b-body-copy-small download-list__description">${item.assetDescription}</div>
+                <div class="b-body-copy-small download-list__download-size">
+                    <i data-sly-test="${item.isSecure}" class="icon icon-secure-lock" aria-hidden="true"></i>
+                    (${item.assetFileSize}, ${item.assetPublicationDate})</div>
+                <div class="b-body-copy-small download-links__SHA" data-sly-test="${item.SHA}"> ${'sha256' @ i18n} : ${item.SHA}</div>
+                <div class="b-body-copy-small download-links__warning">
+                    <sly data-sly-test="${item.ECCN}">${'eccnWarning'@i18n} ${item.ECCN}</sly>
+            </div>
+        </li>
+    </ul>
+   </sly>
+
+    </div>
+</sly>

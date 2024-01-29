@@ -1,0 +1,164 @@
+//-----------------------------------
+// Media Queries: Mobile
+//-----------------------------------
+
+// Mobile: 0px to 767px
+//--------------
+@mixin media-mobile-only {
+  @media screen and (max-width: $grid__xs-max ) {
+
+    @content;
+
+  }
+}
+
+
+// Mobile Portrait: 0px to 479px
+//--------------
+@mixin media-mobile-portrait {
+  @media screen and (max-width: $grid__xs ) {
+
+    @content;
+
+  }
+}
+
+
+// Mobile Landscape: 480px to 767px
+//--------------
+@mixin media-mobile-landscape {
+  @media screen and (min-width: $grid__xs ) and (max-width: $grid__xs-max ) {
+
+    @content;
+
+  }
+}
+
+// ipad breakpoint: 0px to 550px
+//--------------
+@mixin media-mobile-ipad {
+  @media screen and (max-width: $grid__mi ) {
+
+    @content;
+
+  }
+}
+
+// ipad-desktop breakpoint: >550px
+//--------------
+@mixin media-ipad-desktop {
+  @media screen and (min-width: $grid__id ) {
+
+    @content;
+
+  }
+}
+
+// Mobile Landscape and up:  > 480px
+//--------------
+@mixin media-mobile-landscape-and-up {
+  @media screen and (min-width: $grid__xs ) {
+
+    @content;
+
+  }
+}
+
+
+// Mobile and Tablet: 0 to 991px
+//--------------
+@mixin media-mobile-and-tablet {
+  @media screen and (max-width: $grid__sm-max ) {
+
+    @content;
+
+  }
+}
+
+//-----------------------------
+// 991 Breakpoint
+//-----------------------------
+@mixin media-mobile-tablet-and-down {
+  @media screen and (max-width: $grid__breakpoint ) {
+
+    @content;
+
+  }
+}
+
+//-----------------------------------
+// Media Queries: Tablet
+//-----------------------------------
+
+// Tablet and Desktop: > 768px
+//--------------
+@mixin media-tablet-and-up {
+  @media screen and (min-width: $grid__sm ) {
+
+    @content;
+
+  }
+}
+
+// Tablet: 768px to 991px
+//--------------
+@mixin media-tablet-only {
+  @media screen and (min-width: $grid__sm ) and (max-width: $grid__sm-max) {
+
+    @content;
+
+  }
+}
+
+
+// Tablet: Orientation Portrait (768px to 991px)
+//--------------
+@mixin media-tablet-portrait {
+  @media screen and (orientation:portrait) and (min-width: $grid__sm ) and (max-width: $grid__sm-max) {
+
+    @content;
+
+  }
+}
+
+
+//-----------------------------------
+// Media Queries: Desktop
+//-----------------------------------
+
+
+// Desktop Small and Desktop Large: > 992px
+//--------------
+@mixin media-desktop-and-up {
+  @media screen and (min-width: $grid__md ) {
+
+    @content;
+
+  }
+}
+
+// Desktop Small: 992px to 1199px
+//--------------
+@mixin media-desktop-only {
+  @media screen and (min-width: $grid__md ) and (max-width: $grid__md-max ) {
+
+    @content;
+
+  }
+}
+
+
+//-----------------------------------
+// Media Queries: Desktop Large
+//-----------------------------------
+
+// Desktop Large:  > 1200px
+//--------------
+@mixin media-desktop-large {
+  @media screen and (min-width: $grid__lg ) {
+
+    @content;
+
+  }
+}
+

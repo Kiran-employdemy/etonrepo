@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.DynamicRenditionDropDownServlet" immediate="true">
+  <property name="sling.servlet.resourceTypes" type="String" value="/ecom/content/dynamicRendition"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="smartCropConfigs" cardinality="0..n" policy="dynamic" interface="com.eaton.platform.core.services.SmartCropConfigService" field="smartCropConfigs" field-collection-type="service"/>
+  <implementation class="com.eaton.platform.core.servlets.DynamicRenditionDropDownServlet"/>
+</scr:component>

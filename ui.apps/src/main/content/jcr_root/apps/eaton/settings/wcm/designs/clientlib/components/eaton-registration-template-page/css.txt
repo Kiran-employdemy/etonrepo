@@ -1,0 +1,3 @@
+#base=css
+
+eaton-registration-template-page.css

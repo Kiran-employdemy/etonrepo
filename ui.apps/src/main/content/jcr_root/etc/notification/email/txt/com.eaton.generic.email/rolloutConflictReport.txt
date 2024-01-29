@@ -1,0 +1,10 @@
+Subject: ${subject}
+
+Please see attached rollout conflict report created on ${date}.
+
+-------------------------------------------------------------------------------------
+
+Documentation link: ${docLink}
+
+-------------------------------------------------------------------------------------
+This is an automatically generated message. Please do not reply.

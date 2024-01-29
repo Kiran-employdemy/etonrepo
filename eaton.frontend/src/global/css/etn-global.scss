@@ -1,0 +1,46 @@
+//-----------------------------------
+// Import Global Project Files
+//-----------------------------------
+
+// All SASS config files (Variables, Mixins, Functions, etc...)
+@import "base/fonts";
+@import "_config/sass";
+//All color varibale set in :root in variables-css-variables.
+@import "base/variables-css-variables";
+@import "vendors/bootstrap-overrides";
+@import "vendors/nice-select";
+@import "vendors/nice-select-overrides";
+
+// Import Base Styles in specific order
+// NOTE: Bootstrap 3 provides a 'normalize/reset' module.
+
+@import "base/eaton-glyphicon-font";
+@import "base/typography";
+
+// Import Utilites and base Elements
+@import "utils/**/*.scss";
+@import "base/elements/**/*.scss";
+
+
+// Generate Styles for Flags-Sprite
+//--------------
+@import "base/eaton-flags-sprite";
+
+.sprite-flags {
+  background-image: url($spritesheet-image);
+}
+
+@mixin sprites-flag($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+
+    .flag-#{$sprite-name} {
+      @include sprite($sprite);
+      // @include sprite-position($sprite);
+      // @include sprite-width($sprite);
+      // @include sprite-height($sprite);
+    }
+  }
+}
+
+@include sprites-flag($spritesheet-sprites);

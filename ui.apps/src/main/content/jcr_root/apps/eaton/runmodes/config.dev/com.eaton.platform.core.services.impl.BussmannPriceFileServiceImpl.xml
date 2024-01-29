@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+		  jcr:primaryType="sling:OsgiConfig"
+          bussmannUSfileURL = "/content/dam/eaton/secure/order-management/price-lists/Form_BP-CPDS_Mar_20_2023.xlsx"
+          bussmannEDIUSfileURL= "/content/dam/eaton/secure/order-management/price-lists/Form_EDPL_Effective_Mar_20_2023.xlsx"
+          bussmannCANfileURL = "/content/dam/eaton/secure/order-management/price-lists/Form_CBP-DS_Mar_20_2023.xlsx"
+          bussmannEDICANfileURL = "/content/dam/eaton/secure/order-management/price-lists/Edison_Canadian_Price_Sheet_Mar_20_2023.xlsx"/>

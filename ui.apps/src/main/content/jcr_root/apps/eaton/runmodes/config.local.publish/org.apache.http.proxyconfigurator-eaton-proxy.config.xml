@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          proxy.exceptions="[localhost,127.0.0.1,portalapps-dev2.tcc.etn.com]"
+        proxy.host="proxy.etn.com"
+        proxy.password=""
+        proxy.enabled="{Boolean}true"
+        proxy.port="{Long}8080"
+        proxy.user=""
+        />

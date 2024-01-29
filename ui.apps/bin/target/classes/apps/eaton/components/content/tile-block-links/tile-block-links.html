@@ -1,0 +1,12 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Tile Block Links: ${currentNode.name}</div>
+</sly>
+<!-- Integrated code goes here -->
+
+<sly data-sly-test="${properties.view == 'tile-with-icon'}">
+    <sly data-sly-include="views/view-tile-links.html"></sly>
+</sly>
+
+<sly data-sly-test="${properties.view == 'tile-with-image'}">
+    <sly data-sly-include="views/view-tile-links-image.html"></sly>
+</sly>

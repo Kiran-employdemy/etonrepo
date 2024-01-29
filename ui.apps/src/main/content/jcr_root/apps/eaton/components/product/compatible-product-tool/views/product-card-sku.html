@@ -1,0 +1,47 @@
+<!--/*
+  M-36 - Product Grid: SKU Results List
+*/-->
+<template data-sly-template.view="${ @ data, results }">
+
+  <!--/* Results Wrapper */-->
+  <!--/*
+    NOTE: data-i18n is a JSON object that contains a list i18n strings used in this View
+    - These strings are used by JavaScript templates (when the user clicks "Load More")
+  */-->
+  <div class="results-list" 
+   data-results-url="${ data.loadMoreAttrJsonString }"
+   data-results-next-page="0"
+   data-results-type="compatible-product-tool_${data.componentValue}"
+   data-component-view="${data.componentValue}"
+   data-component="compatible-product-tool"
+   data-i18n='{
+      "productSpecificationTitle": "${ data.specificationTabTitle }",
+      "productResourcesTitle": "${ data.resourceTabTitle }"
+     }'>
+
+    <!--/* Result Items - LED View */-->
+    <div data-sly-test="${ data.componentValue == 'ledView' }" class="results-list__content">
+      <sly data-sly-list="${ results.finalAttributeList }">
+        <sly data-sly-use.tpl="views/partials/product-card-sku-item-led.html">
+          <sly data-sly-call="${ tpl.item @ results=results, itemData=item }"></sly>
+        </sly>
+      </sly>
+    </div>
+
+    
+    <!--/* Result Items - Dimmer view */-->
+    <div data-sly-test="${ data.componentValue == 'dimmerView' }" class="results-list__content">
+      <sly data-sly-list="${ results.finalAttributeList }">
+        <sly data-sly-use.tpl="views/partials/product-card-sku-item-dimmer.html">
+          <sly data-sly-call="${ tpl.item @ results=results, itemData=item }"></sly>
+        </sly>
+      </sly>
+    </div>
+
+    <!--/* Results List - Disclaimer & Actions */-->
+    <sly data-sly-use.tpl="views/partials/results-list-bottom.html">
+      <sly data-sly-call="${ tpl.partial @ data=data }"></sly>
+    </sly>
+  </div>
+
+</template>

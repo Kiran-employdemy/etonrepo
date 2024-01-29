@@ -1,0 +1,21 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.verticallinklist.VerticalLinkListModel">
+  <!--/* Link Groups - Cols */-->
+<div class="mega-menu__col mega-menu-custom-col-2">
+  <!--/* Include: List - Links */ -->
+  <div class="mega-menu__category-item">
+    <div class="links-list" data-sly-list.columnList="${data.linkViewList}" >
+      <ul data-sly-list="${columnList}" class="links-list__col">
+        <li class="links-list__item">
+          <a href="${item.pagePath}"
+            aria-label="Go to ${ item.headline }"
+            class="links-list__link b-body-copy-small"
+            target="${ item.newWindow ? '_blank' : '_self'}"
+            rel="nofollow">
+            <span class="links-list__text"><bdi>${ item.headline }</bdi></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</sly>

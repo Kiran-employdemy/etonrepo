@@ -1,0 +1,19 @@
+//-----------------------------------
+// M-49 Category Highlight - Article Component
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.category-highlight-article {
+
+  &__cta {
+    margin-top: rem($spacing__sm);
+  }
+}
+
+.featured-article-card {
+  &__date {
+    color: var(--color__lunar-60);
+  }
+}

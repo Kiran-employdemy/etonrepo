@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Assets Admin Search Rail"
+        sling:resourceType="granite/ui/components/foundation/contsys"
+        maxGeneratedOrder="1000"
+        predicatesConfig="/mnt/overlay/settings/dam/search/facets/formbuilderconfig/predicatetypes">
+        <items jcr:primaryType="nt:unstructured">
+            <fulltext
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/fulltextpredicate"
+                emptyText="Enter Keyword(s)"
+                fieldLabel="Fulltext Predicate"
+                listOrder="0"
+                maxlength="255"
+                metaType="fulltext"
+                minlength="0"/>
+            <pathbrowser
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/pathbrowserpredicate"
+                emptyText="Select Search Directory"
+                fieldLabel="Path Browser"
+                listOrder="2"
+                metaType="pathbrowser"
+                rootPath="/content/dam"/>
+            <searchtype
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/searchtypepredicate"
+                listOrder="4"
+                fieldLabel="Show"
+                metaType="searchtype"/>
+            <eaton-language
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="10"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-language"
+                rootPath="/content/cq:tags/eaton/language"
+                fieldLabel="Language"
+                emptyText=""/>
+            <eaton-product-taxonomy
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="15"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-product-taxonomy"
+                rootPath="/content/cq:tags/eaton/product-taxonomy"
+                fieldLabel="Product Taxonomy"
+                emptyText=""/>
+            <eaton-services-taxonomy
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="16"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-services-taxonomy"
+                rootPath="/content/cq:tags/eaton/services"
+                fieldLabel="Services Taxonomy"
+                emptyText=""/>
+            <eaton-support-taxonomy
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="17"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-support-taxonomy"
+                rootPath="/content/cq:tags/eaton/support-taxonomy"
+                fieldLabel="Support Taxonomy"
+                emptyText=""/>
+            <eaton-myeaton-taxonomy
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="18"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-myeaton-taxonomy"
+                rootPath="/content/cq:tags/eaton/myeaton-taxonomy"
+                fieldLabel="MyEaton Taxonomy"
+                emptyText=""/>
+            <eaton-product-attribute
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="20"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-product-attributes"
+                rootPath="/content/cq:tags/eaton/product-attributes"
+                fieldLabel="Product Attribute"
+                emptyText=""/>
+            <eaton-content-type
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="25"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-content-type"
+                rootPath="/content/cq:tags/eaton/resources"
+                fieldLabel="Content Type"
+                emptyText=""/>
+            <eaton-content-status
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/checkedoptionspredicate"
+                listOrder="30"
+                metaType="listoptions"
+                name="jcr:content/metadata/@dam:status"
+                optionPaths="/apps/dam/options/predicates/status"
+                text="Content Status"
+                value="true"/>
+            <eaton-photo-orientaion
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/checkedoptionspredicate"
+                listOrder="37"
+                metaType="listoptions"
+                name="jcr:content/metadata/@xmp:eaton-photo-orientation"
+                optionPaths="/apps/dam/options/predicates/eaton-photo-orientation"
+                text="Photo Orientation"
+                value="true"/>
+            <eaton-secure
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                listOrder="40"
+                metaType="listoptions"
+                name="jcr:content/metadata/@secureAsset"
+                optionPaths="/apps/dam/options/predicates/secureAsset"
+                text="Secure"
+                value="true"/>
+            <product-category
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="43"
+                metaType="tags"
+                name="jcr:content/metadata/@productCategories"
+                rootPath="/content/cq:tags/eaton-secure/product-category"
+                fieldLabel="Product Category"
+                emptyText=""/>
+            <userType
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="50"
+                metaType="tags"
+                name="jcr:content/metadata/@accountType"
+                rootPath="/content/cq:tags/eaton-secure/accounttype"
+                fieldLabel="Account Type"
+                emptyText=""/>
+            <application-access
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="55"
+                metaType="tags"
+                name="jcr:content/metadata/@applicationAccess"
+                rootPath="/content/cq:tags/eaton-secure/application-access"
+                fieldLabel="Application Access"
+                emptyText=""/>
+            <eaton-secure-country
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="60"
+                metaType="tags"
+                name="jcr:content/metadata/@countries"
+                rootPath="/content/cq:tags/eaton/country"
+                fieldLabel="Country (Secure)"
+                emptyText=""/>
+            <eaton-partner-program-type
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="62"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-partner-program-type"
+                rootPath="/content/cq:tags/eaton-secure/partner-programme-type"
+                fieldLabel="Partner Program Type"
+                emptyText=""/>
+            <eaton-tier-level
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="63"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-tier-level"
+                rootPath="/content/cq:tags/eaton-secure/tier-level"
+                fieldLabel="Tier Level"
+                emptyText=""/>
+            <eaton-file-name
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/propertypredicate"
+                emptyText="File Name"
+                equalsIgnoreCase="{Boolean}true"
+                partialSearch="{Boolean}false"
+                fieldLabel="File Name"
+                listOrder="65"
+                metaType="property"
+                name="jcr:content/metadata/@xmp:eaton-file-name"
+                relPath="jcr:content/metadata/@xmp:eaton-file-name"
+                text="File Name"/>
+            <mimetype
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/omnisearchpredicates/filetypepredicate"
+                listOrder="70"
+                fieldLabel="File Type"
+                isSuggestable="{Boolean}true"
+                open="{Boolean}false"
+                metaType="filetypelist"
+                name="jcr:content/metadata/@dc:format"
+                optionPaths="/libs/dam/content/predicates/omnisearch/mimetypes"
+                text="File Type"
+                value="true"/>
+            <eaton-business-unit-function-division
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="75"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-business-unit-function-division"
+                rootPath="/content/cq:tags/eaton/eaton-business-unit-function-division"
+                fieldLabel="Business Unit, Function, Division"
+                emptyText=""/>
+            <eaton-sales-enablement
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                listOrder="77"
+                metaType="listoptions"
+                name="jcr:content/metadata/@xmp:eaton-sales-enablement"
+                optionPaths="/apps/dam/options/predicates/eaton-sales-enablement"
+                text="Sales Enablement"
+                value="true"/>
+            <eaton-percolate-asset-id
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/propertypredicate"
+                emptyText="Percolate Asset ID"
+                equalsIgnoreCase="{Boolean}false"
+                partialSearch="{Boolean}false"
+                fieldLabel="Percolate Asset ID"
+                listOrder="79"
+                metaType="property"
+                name="jcr:content/metadata/@xmp:eaton-percolate-asset-id"
+                relPath="jcr:content/metadata/@xmp:eaton-percolate-asset-id"
+                text="Percolate Asset ID"/>
+            <eaton-enovia-number
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/propertypredicate"
+                emptyText="Enovia Number"
+                equalsIgnoreCase="{Boolean}true"
+                partialSearch="{Boolean}false"
+                fieldLabel="Enovia Number"
+                listOrder="80"
+                metaType="property"
+                name="jcr:content/metadata/@xmp:eaton-enovia-number"
+                relPath="jcr:content/metadata/@xmp:eaton-enovia-number"
+                text="Enovia Number"/>
+            <eaton-global-country
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="85"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-country"
+                rootPath="/content/cq:tags/eaton/country"
+                fieldLabel="Country"
+                emptyText=""/>
+            <eaton-topic
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="90"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-topic"
+                rootPath="/content/cq:tags/eaton/news-releases/Topic"
+                fieldLabel="Topic"
+                emptyText=""/>
+            <eaton-persona
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="95"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-persona"
+                rootPath="/content/cq:tags/eaton/eaton-persona"
+                fieldLabel="Persona"
+                emptyText=""/>
+            <eaton-segment
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="100"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-segment"
+                rootPath="/content/cq:tags/eaton/supermarkets"
+                fieldLabel="Segment"
+                emptyText=""/>
+            <eaton-audience
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="105"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-audience"
+                rootPath="/content/cq:tags/eaton/eaton-audience"
+                fieldLabel="Audience"
+                emptyText=""/>
+            <eaton-image-rights
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/checkedoptionspredicate"
+                listOrder="110"
+                metaType="listoptions"
+                name="jcr:content/metadata/@xmp:eaton-image-rights"
+                optionPaths="/apps/dam/options/predicates/eaton-image-rights"
+                text="Image Rights"
+                value="true"/>
+            <eaton-rights-restricted
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                listOrder="115"
+                metaType="listoptions"
+                name="jcr:content/metadata/@xmp:eaton-rights-restricted"
+                optionPaths="/apps/dam/options/predicates/eaton-rights-restricted"
+                text="Rights Restricted"
+                value="true"/>
+            <eaton-itar-compliance
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                listOrder="120"
+                metaType="listoptions"
+                name="jcr:content/metadata/@xmp:eaton-itar-compliance"
+                optionPaths="/apps/dam/options/predicates/eaton-itar-compliance"
+                text="ITAR Compliance"
+                value="true"/>
+            <eaton-metadata-review
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                listOrder="125"
+                metaType="listoptions"
+                name="jcr:content/metadata/@xmp:eaton-metadata-review"
+                optionPaths="/apps/dam/options/predicates/eaton-metadata-review"
+                text="Metadata Review"
+                value="true"/>
+            <eaton-customer-journey-stage
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                listOrder="130"
+                metaType="tags"
+                name="jcr:content/metadata/@xmp:eaton-customer-journey-stage"
+                rootPath="/content/cq:tags/eaton/eaton-customer-journey-stage"
+                fieldLabel="Customer Journey Stage"
+                emptyText=""/>
+            <eaton-expiration-date
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/daterangepredicate"
+                listOrder="150"
+                metaType="daterange"
+                name="jcr:content/metadata/@prism:expirationDate"
+                fieldLabel="Expiration Date"
+                displayedFormat="D MMMM YYYY hh:mm a"
+                beforeLabel="Before Date"
+                afterLabel="After Date"/>
+            <eaton-file-size
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/filesizepredicate"
+                fieldLabel="File Size"
+                listOrder="170"
+                metaType="filesize"
+                name="jcr:content/metadata/@dam:size"
+                open="{Boolean}false"
+                optionPaths="[libs/dam/options/predicates/filesize]"
+                text="File Size"/>"
+            <eaton-image-height
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/rangepredicate"
+                listOrder="175"
+                metaType="range"
+                name="jcr:content/metadata/@tiff:ImageLength"
+                text="Image Height"
+                fieldLabel="Image Height"/>
+            <eaton-image-width
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/rangepredicate"
+                listOrder="180"
+                metaType="range"
+                name="jcr:content/metadata/@tiff:ImageWidth"
+                text="Image Width"
+                fieldLabel="Image Width"/>
+            <eaton-aspect-ratio
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                listOrder="185"
+                metaType="listoptions"
+                name="jcr:content/metadata/@xmp:eaton-aspect-ratio"
+                optionPaths="/apps/dam/options/predicates/eaton-aspect-ratio"
+                text="Aspect Ratio"
+                value="true"/>
+            <eaton-duration
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/durationrangepredicate"
+                metaType="range"
+                listOrder="190"
+                name="jcr:content/metadata/@dc:extent"
+                text="Duration"
+                fieldLabel="Duration"/>
+            <eaton-created-by
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/propertypredicate"
+                emptyText="Created By"
+                equalsIgnoreCase="{Boolean}true"
+                partialSearch="{Boolean}false"
+                fieldLabel="Created By"
+                listOrder="205"
+                metaType="property"
+                name="jcr:content/metadata/@dc:creator"
+                relPath="jcr:content/metadata/@dc:creator"
+                text="Created By"/>
+            <eaton-modified-date
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/daterangepredicate"
+                listOrder="210"
+                metaType="daterange"
+                name="jcr:content/@jcr:lastModified"
+                fieldLabel="Modified Date"
+                displayedFormat="D MMMM YYYY hh:mm a"
+                beforeLabel="Before Date"
+                afterLabel="After Date"/>
+            <eaton-modified-by
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/propertypredicate"
+                emptyText="Modified By"
+                equalsIgnoreCase="{Boolean}true"
+                partialSearch="{Boolean}false"
+                fieldLabel="Modified By"
+                listOrder="215"
+                metaType="property"
+                name="jcr:content/metadata/@xmp:eaton-modified-by"
+                relPath="jcr:content/metadata/@xmp:eaton-modified-by"
+                text="Modified By"/>
+            <eaton-uploaded-date
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/daterangepredicate"
+                listOrder="220"
+                metaType="daterange"
+                name="@jcr:created"
+                fieldLabel="Uploaded Date"
+                displayedFormat="D MMMM YYYY hh:mm a"
+                beforeLabel="Before Date"
+                afterLabel="After Date"/>
+            <eaton-uploaded-by
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/propertypredicate"
+                emptyText="Uploaded By"
+                equalsIgnoreCase="{Boolean}true"
+                partialSearch="{Boolean}false"
+                fieldLabel="Uploaded By"
+                listOrder="225"
+                metaType="property"
+                name="jcr:content/metadata/@xmp:eaton-imported-by"
+                relPath="jcr:content/metadata/@xmp:eaton-imported-by"
+                text="Uploaded By"/>
+            <eaton-last-replication-date
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/daterangepredicate"
+                listOrder="230"
+                metaType="daterange"
+                name="jcr:content/@cq:lastReplicated"
+                fieldLabel="Last Replication Date"
+                displayedFormat="D MMMM YYYY hh:mm a"
+                beforeLabel="Before Date"
+                afterLabel="After Date"/>
+            <eaton-last-replication-action
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                listOrder="235"
+                metaType="listoptions"
+                name="jcr:content/@cq:lastReplicationAction"
+                optionPaths="/apps/dam/options/predicates/lastReplicationAction"
+                text="Last Replication Action"
+                value="true"/>
+            <eaton-publish-status
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/publishpredicate"
+                listOrder="1001"
+                metaType="publish"
+                name="jcr:content/cq:lastReplicationAction"
+                optionPaths="/libs/dam/options/predicates/publish"
+                text="Publish Status"
+                value="true"/>
+            <!-- hidden elements -->
+            <mainasset
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                listOrder="980"
+                metaType="hidden"
+                name="mainasset"
+                value="true"/>
+            <memberof
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/memberofpredicate"
+                fieldLabel="Member of  Collection"
+                metaType="memberof"
+                name="memberOf"
+                text="Collection"/>
+            <hidden
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/hiddenpredicate"/>
+            <asset
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                metaType="hidden"
+                name="group.2_group.type"
+                value="dam:Asset"/>
+            <directory
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                metaType="hidden"
+                name="group.1_group.type"
+                value="nt:folder"/>
+            <typeor
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                metaType="hidden"
+                name="group.p.or"
+                value="true"/>
+            <excludepaths
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                metaType="hidden"
+                name="excludepaths"
+                value="(.*)?(jcr:content|rep:policy)(/.*)?"/>
+        </items>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="resource-list"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text &amp; Image - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <view
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        class="cq-dialog-dropdown-showhide"
+                        fieldLabel="View *"
+                        name="./view"
+                        required="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <view-tags
+                                jcr:primaryType="nt:unstructured"
+                                text="Tags"
+                                value="view-tags"/>
+                            <view-pdh
+                                jcr:primaryType="nt:unstructured"
+                                text="PDH"
+                                value="view-pdh"/>
+                        </items>
+                    </view>
+                    <damPath
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldDescription="Root path to dam folder"
+                        fieldLabel="DAM Path"
+                        name="./damPath"
+                        rootPath="/content/dam"
+                        showhidetargetvalue="view-tags"/>
+                    <enableBulkDownload
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                            fieldDescription="Select the checkbox to enable Bulk download"
+                            name="./enableBulkDownload"
+                            text="Bulk Download"
+                            value="true"
+                            uncheckedValue="false"
+                            checked="{Boolean}true"
+                            defaultChecked="{Boolean}true"
+                            showhidetargetvalue="view-tags"/>
+                    <externalresourcelinks
+                        granite:class="full-width"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="External Resource Links">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="productFamily"/>
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./externalResourceList">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <externalresourcelink
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                            fieldDescription="External Resource Link"
+                                            fieldLabel="Resource Link"
+                                            name="./resourceLink"
+                                            required="true"/>
+                                        <externalLinkName
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="External Link Text"
+                                            name="./externalLinkText"
+                                            required="true"/>
+                                        <attribute-value
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                            fieldLabel="Select Accordion"
+                                            id="eaton-pim-scaffolding-tax-dropdown"
+                                            name="./accordionName"
+                                            required="true">
+                                            <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/eaton/resource/list"
+                                                addNone="{Boolean}true"/>
+                                        </attribute-value>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </externalresourcelinks>
+                    <maxLimit
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                            value="300"
+                            fieldDescription="This field stores the value for max no of results to load"
+                            fieldLabel="Maximum Number of results to load"
+                            min="{Long}0"
+                            max="{Long}500"
+                            name="./maxLimit"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

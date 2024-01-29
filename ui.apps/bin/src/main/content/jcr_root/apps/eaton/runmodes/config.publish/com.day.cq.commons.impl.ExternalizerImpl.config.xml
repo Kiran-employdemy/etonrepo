@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          externalizer.contextpath="\0"
+          externalizer.domains="[local http://localhost:4502,author http://localhost:4502,publish http://http://localhost:4503,eaton http://www-local.eaton.com,login http://www-local.eaton.com]"
+          externalizer.encodedpath="{Boolean}false"
+          externalizer.host="\0"/>

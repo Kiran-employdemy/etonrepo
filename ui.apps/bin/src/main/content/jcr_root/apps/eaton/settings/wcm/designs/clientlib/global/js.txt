@@ -1,0 +1,44 @@
+#base=js
+
+##----- Load Vendor Libs
+vendors/lazysizes.min.js
+vendors/promise-polyfill.js
+vendors/startswith-polyfill.js
+vendors/closest-polyfill.js
+vendors/fetch.js
+vendors/nodelist-foreach-polyfill.js
+vendors/parentnode-append-prepend-polyfill.js
+vendors/childnode-remove-polyfill.js
+vendors/array-includes-polyfill.js
+# vendors/bootstrap-3.3.7.min.js
+vendors/bootstrap-3.4.1.min.js
+vendors/bootstrap-accessibility.min.js
+vendors/accessibility-focus-ring.js
+vendors/slick.min.js
+vendors/nice-select.min.js
+vendors/print.min.js
+# vendors/jquery.touch-swipe.min.js
+vendors/jquery.zoom.min.js
+vendors/autosize.js
+vendors/choices.min.js
+vendors/Sortable.js
+vendors/jquery.cookie.js
+vendors/mustache.min.js
+#vendors/table2excel.js
+vendors/sirvi.js
+#vendors/driver.min.js
+#vendors/jquery.dataTables.min.js
+#vendors/dataTables.responsive.min.js
+#vendors/dataTables.fixedHeader.min.js
+vendors/xlsx-parser.min.js
+
+##----- Load Custom Global Scripts
+etn-global.js
+etn-global-constants.js
+etn-global-utils.js
+etn-global-templates.js
+etn-scroll-to.js
+etn-form.js
+etn-global-tracking.js
+etn-new-global-constants.js
+external-call-wrapper.js

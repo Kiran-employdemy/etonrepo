@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          jcr:title="Branding Selector Tool - Brand Font Selection"
+          height="{Long}650"
+          warnIfModified="{Boolean}false"
+          width="{Long}900"
+          xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <brandColorSelectionConfig
+                    jcr:primaryType="cq:Panel"
+                    title="Brand Font Selection Configuration"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <fontImpactGuidelinesLink
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Branding Font Impact Guidelines Link"
+                            fieldDescription="Branding font impact guidelines documentation link"
+                            defaultValue="https://eatonbrand.frontify.com/document/34#/aem-authoring-intro/authoring/microsites-banding-font-impact"
+                            value="https://eatonbrand.frontify.com/document/34#/aem-authoring-intro/authoring/microsites-banding-font-impact"
+                            disabled="${Boolean}true"
+                            name="./fontImpactGuidelinesLink"
+                            xtype="textfield"/>
+                    <primaryBrandFont
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Primary Brand Font"
+                            fieldDescription="Primary branding fonts will appear mostly in titles and headings"
+                            cls="primary-brand-font-select"
+                            defaultValue="Eaton"
+                            type="select"
+                            name="./primaryBrandFont"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection"
+                                 path="/apps/eaton/components/structure/brandfontselection/fontoptions.infinity.json"
+                                 xtype="cqinclude"/>
+                    </primaryBrandFont>
+                    <primaryBrandFontFallbackFont
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Fallback font:"
+                            cls="primary-brand-font-select"
+                            defaultValue="Arial"
+                            type="select"
+                            name="./primaryBrandFontFallbackFont"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection"
+                                 path="/apps/eaton/components/structure/brandfontselection/fontoptions.infinity.json"
+                                 xtype="cqinclude"/>
+                    </primaryBrandFontFallbackFont>
+
+                    <primaryBrandFontMedium
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Primary Brand Font: Medium"
+                            cls="primary-brand-font-medium-select"
+                            defaultValue="EatonMedium"
+                            type="select"
+                            name="./primaryBrandFontMedium"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection"
+                                 path="/apps/eaton/components/structure/brandfontselection/fontoptions.infinity.json"
+                                 xtype="cqinclude"/>
+                    </primaryBrandFontMedium>
+
+                    <primaryBrandFontMediumFallbackFont
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Fallback font:"
+                            cls="primary-brand-font-medium-select"
+                            defaultValue="Arial"
+                            type="select"
+                            name="./primaryBrandFontMediumFallbackFont"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection"
+                                 path="/apps/eaton/components/structure/brandfontselection/fontoptions.infinity.json"
+                                 xtype="cqinclude"/>
+                    </primaryBrandFontMediumFallbackFont>
+
+                    <usePrimaryBrandFontCheckboxOne
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Use primary brand font"
+                            inputValue="true"
+                            cls="primary-brand-font-medium-select"
+                            name="./usePrimaryBrandFontCheckboxOne"
+                            type="checkbox"
+                            xtype="selection"/>
+
+                    <primaryBrandFontBold
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Primary Brand Font: Bold"
+                            cls="primary-brand-font-bold-select"
+                            defaultValue="EatonBold"
+                            type="select"
+                            name="./primaryBrandFontBold"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection"
+                                 path="/apps/eaton/components/structure/brandfontselection/fontoptions.infinity.json"
+                                 xtype="cqinclude"/>
+                    </primaryBrandFontBold>
+
+                    <primaryBrandFontBoldFallbackFont
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Fallback font:"
+                            cls="primary-brand-font-bold-select"
+                            defaultValue="Arial"
+                            type="select"
+                            name="./primaryBrandFontBoldFallbackFont"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection"
+                                 path="/apps/eaton/components/structure/brandfontselection/fontoptions.infinity.json"
+                                 xtype="cqinclude"/>
+                    </primaryBrandFontBoldFallbackFont>
+
+                    <usePrimaryBrandFontCheckboxTwo
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Use primary brand font"
+                            inputValue="true"
+                            cls="primary-brand-font-bold-select"
+                            name="./usePrimaryBrandFontCheckboxTwo"
+                            type="checkbox"
+                            xtype="selection"/>
+                    <bodyFont
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Body Font"
+                            cls="body-font-select"
+                            fieldDescription="Font will appear in body copy, links, buttons, eyebrows, etc."
+                            defaultValue="Arial"
+                            type="select"
+                            name="./bodyFont"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection"
+                                 path="/apps/eaton/components/structure/brandfontselection/fontoptions.infinity.json"
+                                 xtype="cqinclude"/>
+                    </bodyFont>
+
+                    <bodyFontFallbackFont
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Fallback font:"
+                            cls="body-font-select"
+                            defaultValue="Arial"
+                            type="select"
+                            name="./bodyFontFallbackFont"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection"
+                                 path="/apps/eaton/components/structure/brandfontselection/fontoptions.infinity.json"
+                                 xtype="cqinclude"/>
+                    </bodyFontFallbackFont>
+                </items>
+            </brandColorSelectionConfig>
+        </items>
+    </items>
+</jcr:root>

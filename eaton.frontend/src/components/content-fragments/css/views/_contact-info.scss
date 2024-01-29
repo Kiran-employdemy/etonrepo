@@ -1,0 +1,18 @@
+.contact-info {
+
+  @include body-copy;
+
+  @include font-family__secondary(--secondary-font);
+  margin-bottom: rem($spacing__sm * 0.5); // stylelint-disable no-missing-end-of-source-newline
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+@include media-mobile-and-tablet {
+  .contact-info {
+    line-height: $base__line-height * (0.93);
+    font-size: rem($base__font-size * 1.2);
+  }
+}

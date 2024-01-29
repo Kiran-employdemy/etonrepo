@@ -1,0 +1,206 @@
+{
+  "skuSearchRecords": [
+    {
+      "attributeGroups": [
+        {
+          "attributeGroupName": "General specifications",
+          "attributeList": [
+            {
+              "attributeLabel": "Product Name",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Eaton ELocker Differential"
+              }
+            },
+            {
+              "attributeLabel": "Catalog Number",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "14020-010"
+              }
+            },
+            {
+              "attributeLabel": "Product Weight",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "44.5 lb"
+              }
+            }
+          ]
+        },
+        {
+          "attributeGroupName": "defaultTaxonomyAttributeLabel",
+          "attributeList": [
+            {
+              "attributeLabel": "Ring gear ratio",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "4.10 \u0026 dn"
+              }
+            },
+            {
+              "attributeLabel": "Gear spline tooth count",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "30 EA"
+              }
+            },
+            {
+              "attributeLabel": "Axle shaft diameter",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "1.31 in"
+              }
+            },
+            {
+              "attributeLabel": "Ring gear size",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "9.75 in"
+              }
+            },
+            {
+              "attributeLabel": "Differential type",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Locking"
+              }
+            },
+            {
+              "attributeLabel": "Vehicle usage",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Off-Road: Rock Crawl \u003cbr\u003e On Road: Work Truck / Towing \u003cbr\u003e Off-Road: Work Truck / Towing \u003cbr\u003e Off-Road: Extreme Off-Road \u003cbr\u003e Off-Road: Light Trail / Sand Sports"
+              }
+            }
+          ]
+        }
+      ],
+      "attributeTables": [
+        {
+          "id": "XXPDH_VEHICLE_PRODUCT_SELECTOR",
+          "headline": "Differential Product Selector",
+          "headers": [
+            "Model year start",
+            "Model year end",
+            "Vehicle make",
+            "Vehicle type (model)",
+            "Axle location",
+            "Axle description",
+            "Gear ratio"
+          ],
+          "rows": [
+            {
+              "id": 46432644,
+              "cells": {
+                "Model year start": "1966",
+                "Model year end": "1972",
+                "Vehicle make": "Chrysler, Dodge, Plymouth",
+                "Vehicle type (model)": "Passenger Car",
+                "Axle location": "Rear",
+                "Axle description": "Dana 60",
+                "Gear ratio": "4.10 \u0026 dn"
+              }
+            },
+            {
+              "id": 46432645,
+              "cells": {
+                "Model year start": "1994",
+                "Model year end": "1999",
+                "Vehicle make": "Chrysler, Dodge, Plymouth",
+                "Vehicle type (model)": "Small, Half-Ton Truck, Wagon, Van",
+                "Axle location": "Front",
+                "Axle description": "Dana 60",
+                "Gear ratio": "4.10 \u0026 dn"
+              }
+            },
+            {
+              "id": 46432646,
+              "cells": {
+                "Model year start": "1972",
+                "Model year end": "2002",
+                "Vehicle make": "Chrysler, Dodge, Plymouth",
+                "Vehicle type (model)": "Small, Half-Ton Truck, Wagon, Van",
+                "Axle location": "Rear",
+                "Axle description": "Dana 60",
+                "Gear ratio": "4.10 \u0026 dn"
+              }
+            },
+            {
+              "id": 46432647,
+              "cells": {
+                "Model year start": "1975",
+                "Model year end": "2002",
+                "Vehicle make": "Chrysler, Dodge, Plymouth",
+                "Vehicle type (model)": "Three Quarter, One-Ton Truck, Wagon, Van, Cab and Chassis, Motor Home",
+                "Axle location": "Rear",
+                "Axle description": "Dana 60, 60 HD, 60M",
+                "Gear ratio": "4.10 \u0026 dn"
+              }
+            },
+            {
+              "id": 46432648,
+              "cells": {
+                "Model year start": "1975",
+                "Model year end": "1984",
+                "Vehicle make": "Ford",
+                "Vehicle type (model)": "Three Quarter-Ton Truck, Van, SUV",
+                "Axle location": "Rear",
+                "Axle description": "Dana 60-3",
+                "Gear ratio": "4.10 \u0026 dn"
+              }
+            },
+            {
+              "id": 46432649,
+              "cells": {
+                "Model year start": "1974",
+                "Model year end": "1987",
+                "Vehicle make": "Ford",
+                "Vehicle type (model)": "Three Quarter-Ton Truck, Van, SUV",
+                "Axle location": "Rear",
+                "Axle description": "Dana 61-1",
+                "Gear ratio": "4.10 \u0026 dn"
+              }
+            },
+            {
+              "id": 46432650,
+              "cells": {
+                "Model year start": "1978",
+                "Model year end": "1979",
+                "Vehicle make": "Ford",
+                "Vehicle type (model)": "One-Ton Truck, Van, Wagon, Cab and Chassis",
+                "Axle location": "Rear",
+                "Axle description": "Dana 60 Snowplow Package",
+                "Gear ratio": "4.10 \u0026 dn"
+              }
+            },
+            {
+              "id": 46432651,
+              "cells": {
+                "Model year start": "0000",
+                "Model year end": "1974",
+                "Vehicle make": "General Motors",
+                "Vehicle type (model)": "Three Quarter-Ton Truck",
+                "Axle location": "Rear",
+                "Axle description": "Dana 60",
+                "Gear ratio": "4.10 \u0026 dn"
+              }
+            },
+            {
+              "id": 46432652,
+              "cells": {
+                "Model year start": "1974",
+                "Model year end": "1987",
+                "Vehicle make": "Jeep",
+                "Vehicle type (model)": "Cherokee, Grand Cherokee, Liberty, Post Office Truck, Scrambler, Wagoneer, Wrangler",
+                "Axle location": "Rear",
+                "Axle description": "Dana M60-3R",
+                "Gear ratio": "4.10 \u0026 dn"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

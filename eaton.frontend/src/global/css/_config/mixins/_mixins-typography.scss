@@ -1,0 +1,490 @@
+//-----------------------------------
+// SASS: Typography Mixins
+// EATON - Styleguide
+//-----------------------------------
+
+/** Base font-stack
+* $customFonts are optional authored CSS variable font stacks
+* @if statement is used because  when $customFonts is undefined, `var($customFonts)` results in `var(),...`,
+* which throws off the font stack and will prevent the fallbacks from being applied.
+* When a CSS variable is passed in, Sass is unable to determine if it has a value or not, only if it exists.
+* For that reason, we define fallbacks in the var().
+*/
+//--------------
+
+@mixin font-family__primary ($customFonts: null) {
+  /* stylelint-disable block-closing-brace-newline-after */
+  @if $customFonts {
+    font-family: var($customFonts, --primary-custom-brand-font);
+
+    :lang(zh-cn) &,
+    :lang(zh-sg) & {
+      font-family: var($customFonts, --font-primary-v2);
+    }
+
+    :lang(zh-tw) &,
+    :lang(zh-hk) & {
+      font-family: var($customFonts, --font-primary-v3);
+    }
+
+    :lang(pl-pl) &,
+    :lang(cs-cz) & {
+      font-family: var(--font-secondary-as);
+    }
+  } @else {
+    font-family: var(--primary-custom-brand-font);
+
+    :lang(zh-cn) &,
+    :lang(zh-sg) & {
+      font-family: var(--font-primary-v2);
+    }
+
+    :lang(zh-tw) &,
+    :lang(zh-hk) & {
+      font-family: var(--font-primary-v3);
+    }
+
+    :lang(pl-pl) &,
+    :lang(cs-cz) & {
+      font-family: var(--secondary-font);
+    }
+  }
+  /* stylelint-enable block-closing-brace-newline-after */
+}
+
+@mixin font-family__primary-bold ($customFonts: null) {
+  /* stylelint-disable block-closing-brace-newline-after */
+  @if $customFonts {
+    font-family: var($customFonts, --font-primary-bold-v1);
+
+    :lang(zh-cn) &,
+    :lang(zh-sg) & {
+      font-family: var($customFonts, --font-primary-bold-v2);
+    }
+
+    :lang(zh-tw) &,
+    :lang(zh-hk) & {
+      font-family: var($customFonts, --font-primary-bold-v2);
+    }
+
+    :lang(pl-pl) &,
+    :lang(cs-cz) & {
+      font-family: var(--secondary-font);
+      font-weight: bold;
+    }
+  } @else {
+    font-family: var(--primary-custom-brand-font-bold);
+
+    :lang(zh-cn) &,
+    :lang(zh-sg) & {
+      font-family: var(--font-primary-bold-v2);
+    }
+
+    :lang(zh-tw) &,
+    :lang(zh-hk) & {
+      font-family: var(--font-primary-bold-v2);
+    }
+
+    :lang(pl-pl) &,
+    :lang(cs-cz) & {
+      font-family: var(--secondary-font);
+      font-weight: bold;
+    }
+  }
+  /* stylelint-enable block-closing-brace-newline-after */
+}
+
+@mixin font-family__primary-medium ($customFonts: null) {
+  /* stylelint-disable block-closing-brace-newline-after */
+  @if $customFonts {
+    font-family: var($customFonts, --font-primary-regular-v1);
+
+    :lang(zh-cn) &,
+    :lang(zh-sg) & {
+      font-family: var($customFonts, --font-primary-medium-v1);
+    }
+
+    :lang(zh-tw) &,
+    :lang(zh-hk) & {
+      font-family: var($customFonts, --font-primary-medium-v1);
+    }
+
+    :lang(pl-pl) &,
+    :lang(cs-cz) & {
+      font-family: var(--secondary-font);
+    }
+  } @else {
+    font-family: var(--primary-custom-brand-font-medium);
+
+    :lang(zh-cn) &,
+    :lang(zh-sg) & {
+      font-family: var(--font-primary-medium-v1);
+    }
+
+    :lang(zh-tw) &,
+    :lang(zh-hk) & {
+      font-family: var(--font-primary-medium-v1);
+    }
+
+    :lang(pl-pl) &,
+    :lang(cs-cz) & {
+      font-family: var(--secondary-font);
+    }
+  }
+  /* stylelint-enable block-closing-brace-newline-after */
+}
+
+@mixin font-family__secondary ($customFonts: null) {
+  /* stylelint-disable block-closing-brace-newline-after */
+  @if $customFonts {
+    font-family: var($customFonts,--secondary-font);
+
+    :lang(zh-cn) &,
+    :lang(zh-sg) & {
+      font-family: var($customFonts, --font-secondary-ahs);
+    }
+
+    :lang(zh-tw) &,
+    :lang(zh-hk) & {
+      font-family: var($customFonts, --font-secondary-ahs);
+    }
+
+    :lang(pl-pl) &,
+    :lang(cs-cz) & {
+      font-family: var(--secondary-font);
+    }
+  } @else {
+    font-family: var(--secondary-font);
+
+    :lang(zh-cn) &,
+    :lang(zh-sg) & {
+      font-family: var(--font-secondary-ahs);
+    }
+
+    :lang(zh-tw) &,
+    :lang(zh-hk) & {
+      font-family: var(--font-secondary-ahs);
+    }
+
+    :lang(pl-pl) &,
+    :lang(cs-cz) & {
+      font-family: var(--secondary-font);
+    }
+  }
+  /* stylelint-enable block-closing-brace-newline-after */
+}
+
+//-----------------------------------
+// NOTE: There are 3 Mixins for each heading tag since there are some use cases
+// where a Heading should look like an H4 in mobile but like an H5 in desktop breakpoints.
+// EG: M-36 Product Card SKU
+//-----------------------------------
+
+// H1 Heading
+//--------------
+@mixin h1-hero--mobile {
+  font-size: rem($base__font-size * 4.1);
+  line-height: $base__line-height * .8163;
+}
+
+@mixin h1-hero--desktop {
+  font-size: rem($base__font-size * 5.4);
+  line-height: $base__line-height * .906;
+}
+
+@mixin h1-hero {
+  @include font-family__primary-medium(--header-font-medium);
+
+  @include h1-hero--mobile;
+
+  @include media-desktop-and-up {
+    @include h1-hero--desktop;
+  }
+}
+
+
+// H1 Heading
+//--------------
+@mixin h1--mobile {
+  font-size: rem($base__font-size * 2.7);
+  font-weight: normal;
+  line-height: $base__line-height * .8225108225;
+}
+
+@mixin h1--desktop {
+  font-size: rem($base__font-size * 3.6);
+  font-weight: normal;
+  line-height: $base__line-height * .8514;
+}
+
+@mixin h1 {
+  @include font-family__primary-medium(--header-font-medium);
+
+  @include h1--mobile;
+
+  @include media-desktop-and-up {
+    @include h1--desktop;
+  }
+
+}
+
+
+// H2 Heading
+//--------------
+@mixin h2--mobile {
+  font-size: rem($base__font-size * 2.7);
+  line-height: $base__line-height * .8163265306;
+}
+
+@mixin h2--desktop {
+  font-size: rem($base__font-size * 3.6);
+  line-height: $base__line-height * .8928571429;
+}
+
+@mixin h2 {
+  @include font-family__primary-medium(--header-font-medium);
+
+  @include h2--mobile;
+
+  @include media-desktop-and-up {
+    @include h2--desktop;
+  }
+}
+
+
+
+// H3 Heading
+//--------------
+@mixin h3--mobile {
+  font-size: rem($base__font-size * 1.8);
+  line-height: $base__line-height * .8163265306;
+}
+
+@mixin h3--desktop {
+  font-size: rem($base__font-size * 2.4);
+  line-height: $base__line-height * .8928571429;
+}
+
+@mixin h3 {
+  @include font-family__primary-medium(--header-font-medium);
+
+  @include h3--mobile;
+
+  @include media-desktop-and-up {
+    @include h3--desktop;
+  }
+}
+
+
+
+// H4 Heading
+//--------------
+@mixin h4--mobile {
+  font-size: rem($base__font-size * 2);
+  font-weight: bold;
+  line-height: $base__line-height * .9415584416;
+}
+
+@mixin h4--desktop {
+  font-size: rem($base__font-size * 2.1);
+  font-weight: bold;
+  line-height: $base__line-height * .8928571429;
+}
+
+@mixin h4 {
+  @include font-family__secondary(--secondary-font);
+
+  @include h4--mobile;
+
+  @include media-desktop-and-up {
+    @include h4--desktop;
+  }
+}
+
+
+// H5 Heading
+//--------------
+@mixin h5--mobile {
+  font-size: rem($base__font-size * 1.8);
+  font-weight: bold;
+  line-height: $base__line-height * 1.0714285714;
+}
+
+@mixin h5--desktop {
+  font-size: rem($base__font-size * 1.8);
+  font-weight: bold;
+  line-height: $base__line-height * 1.0989010989;
+}
+
+@mixin h5 {
+  @include font-family__secondary(--secondary-font);
+
+  @include h5--mobile;
+
+  @include media-desktop-and-up {
+    @include h5--desktop;
+  }
+}
+
+// links bold
+@mixin h5-link-bold {
+  @include h5;
+  @include font-family__primary-bold(--header-font-bold);
+
+  @include media-desktop-and-up {
+    @include font-family__primary-bold(--header-font-bold);
+  }
+}
+
+@mixin h4-link-bold {
+  @include h4;
+  @include font-family__primary-bold(--header-font-bold);
+
+  @include media-desktop-and-up {
+    @include font-family__primary-bold(--header-font-bold);
+  }
+}
+
+
+// Body Copy - Hero Description
+//--------------
+@mixin hero-description--mobile {
+  font-size: rem($base__font-size * 1.2);
+  line-height: $base__line-height * 1.12;
+}
+
+
+@mixin hero-description--desktop {
+  font-size: rem($base__font-size * 1.6);
+  line-height: $base__line-height * 1.142;
+}
+
+
+@mixin hero-description {
+  @include font-family__secondary(--secondary-font);
+
+  @include hero-description--mobile;
+
+  @include media-desktop-and-up {
+    @include hero-description--desktop;
+  }
+}
+
+
+// Body Copy
+//--------------
+@mixin body-copy--mobile {
+  font-size: rem($base__font-size * 1.2);
+  font-weight: normal;
+  line-height: $base__line-height * 1.1111111111;
+}
+
+
+@mixin body-copy--desktop {
+  font-size: rem($base__font-size * 1.6);
+  font-weight: normal;
+  line-height: $base__line-height * 1.130952381;
+}
+
+
+
+@mixin body-copy {
+  @include font-family__secondary(--secondary-font);
+
+  @include body-copy--mobile;
+
+  a {
+    color: var(--link-brand-color, $color__primary-blue);
+  }
+
+  @include media-desktop-and-up {
+    @include body-copy--desktop;
+  }
+}
+
+
+// Body Copy Small
+//--------------
+@mixin body-copy-small--mobile {
+  font-size: rem($base__font-size * 1.2);
+  font-weight: normal;
+  line-height: $base__line-height * .9340659341;
+}
+
+@mixin body-copy-small--desktop {
+  font-size: rem($base__font-size * 1.2);
+  font-weight: normal;
+  line-height: $base__line-height * .9523809524;
+}
+
+@mixin body-copy-small {
+  @include font-family__secondary(--secondary-font);
+
+  @include body-copy-small--mobile;
+
+  a {
+    color: var(--link-brand-color, $color__primary-blue);
+  }
+
+  @include media-desktop-and-up {
+    @include body-copy-small--desktop;
+  }
+
+}
+
+
+// Eyebrow Large
+//--------------
+@mixin eyebrow-large--mobile {
+  font-size: rem($base__font-size * 1.8);
+  line-height: $base__line-height * .8403361345;
+  text-transform: uppercase;
+}
+
+@mixin eyebrow-large--desktop {
+  font-size: rem($base__font-size * 2.4);
+  line-height: $base__line-height * 1.130952381;
+  text-transform: uppercase;
+}
+
+@mixin eyebrow-large {
+  @include font-family__secondary(--secondary-font);
+
+  font-weight: bold;
+
+  @include eyebrow-large--mobile;
+
+  @include media-desktop-and-up {
+    @include eyebrow-large--desktop;
+  }
+}
+
+
+// Eyebrow Smal
+//--------------
+@mixin eyebrow-small--mobile {
+  font-size: rem($base__font-size * 1.8);
+  line-height: $base__line-height * .8673469388;
+  margin-bottom: $spacing__sm * .66;
+  text-transform: uppercase;
+}
+
+@mixin eyebrow-small--desktop {
+  font-size: rem($base__font-size * 1.8);
+  line-height: $base__line-height * .9523809524;
+  text-transform: uppercase;
+  margin-bottom: $spacing__sm * .66;
+}
+
+@mixin eyebrow-small {
+  @include font-family__secondary(--secondary-font);
+
+  font-weight: bold;
+
+  @include eyebrow-small--mobile;
+
+  @include media-desktop-and-up {
+    @include font-family__secondary(--secondary-font);
+    @include eyebrow-small--desktop;
+  }
+}

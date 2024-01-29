@@ -1,0 +1,21 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Footer Vertical Link List: ${currentNode.name}</div>
+</sly>
+
+<sly data-sly-use.data="com.eaton.platform.core.models.verticallinklist.VerticalLinkListModel" data-sly-test.notOverride="${!data.overrideFooter}">
+
+    <sly data-sly-test="${data.view == 'vertical'}">
+        <sly data-sly-include="views/view-list-vertical.html"></sly>
+    </sly>
+
+    <sly data-sly-test="${data.view == 'column'}">
+        <sly data-sly-include="views/view-2-columns.html"></sly>
+    </sly>
+
+    <sly data-sly-test="${data.view == 'links'}">
+        <sly data-sly-include="views/view-links.html"></sly>
+    </sly>
+</sly>
+<sly data-sly-test="${!notOverride}">
+    <div class="footer-top__link-list" data-sly-resource="${'footerFragment' @ resourceType='cq/experience-fragments/editor/components/experiencefragment'}"></div>
+</sly>

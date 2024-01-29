@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Hero with CTA"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Carousel">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <landing
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Hero with CTA Frame Properties"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <heroImage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                allowUpload="{Boolean}false"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldDescription="This field stores the image of the Hero with CTA component."
+                                fieldLabel="Image"
+                                fileNameParameter="./fileName"
+                                fileReferenceParameter="./heroImage"
+                                mimeTypes="[image]"
+                                multiple="{Boolean}false"
+                                name="./imageName"
+                                title="Upload Image Asset"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"
+                                required="true"/>
+                            <heroImageAltText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Image alt text."
+                                fieldLabel="Image Alt Text"
+                                name="./heroImageAltText"/>
+                            <alignmentDesktop
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="Options will align the image using the selected alignment."
+                                fieldLabel="Desktop Image Alignment"
+                                name="./alignmentDesktop">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <left-top
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Left Top"
+                                        value="left-top"/>
+                                    <left-center
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Left Center"
+                                        value="left-center"/>
+                                    <left-bottom
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Left Bottom"
+                                        value="left-bottom"/>
+                                    <center-top
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Center Top"
+                                        value="center-top"/>
+                                    <center-center
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Center Center"
+                                        value="center-center"/>
+                                    <center-bottom
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Center Bottom"
+                                        value="center-bottom"/>
+                                    <right-top
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Right Top"
+                                        value="right-top"/>
+                                    <right-center
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Right Center"
+                                        value="right-center"/>
+                                    <right-bottom
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Right Bottom"
+                                        value="right-bottom"/>
+                                </items>
+                            </alignmentDesktop>
+                            <alignmentMobile
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="Options will align the image using the selected alignment."
+                                fieldLabel="Mobile Image Alignment"
+                                name="./alignmentMobile">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <left-top
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Left Top"
+                                        value="left-top"/>
+                                    <left-center
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Left Center"
+                                        value="left-center"/>
+                                    <left-bottom
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Left Bottom"
+                                        value="left-bottom"/>
+                                    <center-top
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Center Top"
+                                        value="center-top"/>
+                                    <center-center
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Center Center"
+                                        value="center-center"/>
+                                    <center-bottom
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Center Bottom"
+                                        value="center-bottom"/>
+                                    <right-top
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Right Top"
+                                        value="right-top"/>
+                                    <right-center
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Right Center"
+                                        value="right-center"/>
+                                    <right-bottom
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Right Bottom"
+                                        value="right-bottom"/>
+                                </items>
+                            </alignmentMobile>
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                name="./textProperties">
+                                <layout
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <heroCTAHeader
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldDescription="Click Enter to create a new paragraph p, Click on MAJ+Ctrl+Enter to break the line "
+                                                    fieldLabel="Header "
+                                                    name="./heroHeader"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <uiSettings jcr:primaryType="nt:unstructured">
+                                                    <cui jcr:primaryType="nt:unstructured">
+                                                        <inline
+                                                                jcr:primaryType="nt:unstructured"
+                                                                toolbar="[format]">
+                                                        </inline>
+                                                        <dialogFullScreen
+                                                                jcr:primaryType="nt:unstructured"
+                                                                toolbar="[format]"/>
+                                                    </cui>
+                                                </uiSettings>
+                                            </heroCTAHeader>
+											<headerType
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Header Type"
+                                name="./heroCTAHeaderType">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="{Boolean}true"
+                                        text="H1"
+                                        value="h1"/>
+                                    <h2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="H2"
+                                        value="h2"/>
+                                </items>
+                            </headerType>
+                                            <heroCTADesc
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                                    fieldDescription="Description of the Hero CTA."
+                                                    fieldLabel="Description *"
+                                                    name="./heroDesc"
+                                                    required="true"/>
+                                            <CTALinks
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                class="validate-this-field"
+                                                fieldDescription="This field stores the various attributes of the CTA button"
+                                                fieldLabel="CTA Links">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    max-item="2"/>
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        name="./ctaLinks">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <CTALinkTitle
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                                        fieldDescription="This field stores the value for Title field."
+                                                                        fieldLabel="Link Title"
+                                                                        name="./ctaLinkTitle"/>
+                                                                <CTALinkPath
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                                                        fieldDescription="This field stores the value for Link Destination field."
+                                                                        fieldLabel="Link Path"
+                                                                        name="./ctaLinkPath"/>
+                                                                <newWindow
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                                        fieldDescription="Checks if the link should be opened in a new window   ."
+                                                                        name="./newWindow"
+                                                                        text="Open in new window"
+                                                                        uncheckedValue="false"
+                                                                        value="true"/>
+                                                                <enableSourceTracking
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                                        name="./enableSourceTracking"
+                                                                        text="Enable Source Tracking on above link"
+                                                                        uncheckedValue="false"
+                                                                        value="true"/>
+                                                                <applyNoFollowTag
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                                        fieldDescription="Check if asset does not want to be shown in google search results"
+                                                                        name="./applyNoFollowTag"
+                                                                        text="Apply No Follow Tag"
+                                                                        uncheckedValue="false"
+                                                                        value="true"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </CTALinks>
+                                        </items>
+                                    </column>
+                                </items>
+                            </field>
+                            <desktopconfiguration
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Desktop Image Transformation"
+                                name="./desktopTrans">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/ecom/content/imageTransform"
+                                    addNone="{Boolean}true"
+                                    selector="desktop"/>
+                            </desktopconfiguration>
+                            <mobileconfiguration
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Mobile Image Transformation"
+                                name="./mobileTrans">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/ecom/content/imageTransform"
+                                    addNone="{Boolean}true"
+                                    selector="mobile"/>
+                            </mobileconfiguration>
+                            <desktopDynam
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                    name="./desktopDynam"
+                                    value=":category-hero-desktop"/>
+                            <mobileDynam
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                    name="./mobileDynam"
+                                    value=":category-hero-mobile"/>
+                        </items>
+                    </column>
+                </items>
+            </landing>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,108 @@
+//-----------------------------------
+// M-59: Tabs
+//-----------------------------------
+
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+
+.module-tabs {
+  $module-class: ".module-tabs"; // CSS-BEM-Name
+
+  background-color: var(--color__lunar-10);
+
+  &__list {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-item {
+    border-right: 1px solid var(--color__white);
+    flex: 1 0 auto;
+
+    &:first-child {
+      border-left: 1px solid var(--color__white);
+    }
+
+    // EATON-431: (NOTE: Add Underline to links only and Not to Disabled Tabs)
+    //--------------
+    a {
+
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__list-link {
+    background-color: transparent;
+    display: block;
+    font-size: rem($base__font-size * 1.8);
+    padding: rem($spacing__sm * .66666) rem($spacing__md);
+    text-align: center;
+  }
+
+
+  // Active Tab
+  //--------------
+  &__list-item--active {
+    #{$module-class}__list-link {
+      background-color: var(--color__white);
+      color: var(--grey-primary-brand-color);
+    }
+  }
+
+}
+
+.submittal-builder {
+  &__tabs {
+    margin-bottom: rem($spacing__sm * .5);
+
+    @include media-tablet-and-up {
+      margin-bottom: rem($spacing__sm);
+    }
+
+    &__container {
+      padding-left: 0;
+      padding-right: 0;
+
+      @include media-tablet-and-up {
+        padding-left: $grid__outer-padding-width;
+        padding-right: $grid__outer-padding-width;
+      }
+    }
+
+    &__list {
+      &-item {
+        align-content: flex-start;
+        align-items: stretch;
+        display: flex;
+        flex-basis: 33%;
+        flex-direction: column;
+        overflow-x: hidden;
+      }
+
+      &-link {
+        height: 100%;
+        padding-left: rem($spacing__sm * .6666);
+        padding-right: rem($spacing__sm * .6666);
+
+        &:not(:disabled) {
+          color: var(--link-brand-color);
+
+          &:hover,
+          &:active,
+          &:focus {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

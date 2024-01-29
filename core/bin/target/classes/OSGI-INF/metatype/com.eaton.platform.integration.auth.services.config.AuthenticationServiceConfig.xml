@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.auth.services.config.AuthenticationServiceConfig">
+  <OCD id="com.eaton.platform.integration.auth.services.config.AuthenticationServiceConfig" name="AuthenticationService" description="">
+    <AD id="oktaEndpointRoot" type="String" name="Okta Endpoint URL Root" description="Root endpoint for Okta API Calls" default="https://eaton.oktapreview.com"/>
+    <AD id="oktaClientID" type="String" name="Okta Client ID" description="Okta Client ID for Okta API Calls" default="0oav6hov1qfjQhdpM0h7"/>
+    <AD id="oktaClientSecret" type="String" name="Okta Client Secret" description="Okta Client Secret for decrypt JWTToken" default="4H1gY7two8XMTO8KKKourCOLL2VKbC9wXyLWC49B"/>
+    <AD id="oktaRegistrationFlag" type="String" name="Okta Registration Flag" description="Okta Registration Flag for OKTA widget" default="false"/>
+    <AD id="oktaRedirectURI" type="String" name="Okta Redirect URL" description="Okta Redirect URL for OKTA widget" default="http://localhost:4502/eaton/authorization"/>
+    <AD id="oktaLoginURI" type="String" name="Okta Login URL" description="Okta Login URL for OKTA widget" default=""/>
+    <AD id="oktaWidgetLoginURI" type="String" name="Okta Widget Login URL" description="Okta Widget Login URL for OKTA widget" default=""/>
+    <AD id="devPortalOktaLoginURI" type="String" name="Dev Portal Okta Login URL" description="Used to redirect none authenticated user to Okta login if user attempt to access Developer Portal secure page" default=""/>
+    <AD id="oktaIssuer" type="String" name="Okta Issuer URL" description="URL used for JWT verification" default="https://id-qa.eaton.com/oauth2/auswm0hll1dz7SaUw0h7"/>
+    <AD id="oktaAudience" type="String" name="Okta Audience" description="Audience for JWT verification" default="api://default"/>
+    <AD id="oktaConnectionTimeout" type="Integer" name="Okta Connection Timeout" description="Connection timeout in seconds" default="30"/>
+    <AD id="oktaRetryAttempts" type="Integer" name="Okta Retry Attempts" description="Number of retries Okta will make" default="3"/>
+    <AD id="oktaPasswordLessAuthFlag" type="String" name="Okta passwordlessAuth Flag" description="Okta Password less Auth Flag for OKTA widget" default="true"/>
+    <AD id="oktaRememberMeFlag" type="String" name="Okta OktaRememberMeFlag" description="Okta OktaRememberMeFlag for OKTA widget" default=""/>
+    <AD id="oktaidpDiscoveryFlag" type="String" name="Okta idpDiscovery Flag" description="Okta idp Discovery Flag for OKTA widget" default="true"/>
+    <AD id="oktaidpDiscoveryValue" type="String" name="Okta idpDiscovery Value" description="Okta idp Discovery Value for OKTA widget" default=""/>
+    <AD id="oktaKeyURI" type="String" name="Okta Public Key URL" description="Okta Endpoint for retrieving public keys" default="https://eaton.oktapreview.com/oauth2/default/v1/keys"/>
+    <AD id="oktaJwtExpirationLeeway" type="Integer" name="Okta JWT Expiration Leeway" description="The length of leeway (in seconds) allowed when validating jwt expiration" default="180"/>
+    <AD id="defaultPostAuthRedirectURI" type="String" name="Default Post Authentication Redirect URL" description="Default Post Authentication Redirect URL" default="http://localhost:4502/content/eaton/us/en-us/secure/dashboard.html"/>
+    <AD id="defaultPostSignOutRedirectURI" type="String" name="Default Post SignOut Redirect URL" description="Default Post SingOut Redirect URL" default="http://localhost:4502/content/eaton/us/en-us.html"/>
+    <AD id="myeatonOktaSamlURI" type="String" name="Default MyEaton SAML SSO URL" description="Default MyEaton SAML SSO URL" default=""/>
+    <AD id="myeatonNsRole" type="String" name="MyEaton NsRole for SAML SSO " description="MyEaton NsRole for SAML SSO" default=""/>
+    <AD id="trackingLookupEndpoint" type="String" name="Track Download URL Part" description="Service URL part for user lookup" default="http://portalapps-dev2.tcc.etn.com:8888/portal-access-api/audit/v1/download/tracking"/>
+    <AD id="userLookupEndpoint" type="String" name="User Lookup URL Part" description="Service URL part for user lookup" default="http://portalapps-dev2.tcc.etn.com:8888/portal-access-api/user-management/v1/users"/>
+    <AD id="userLookupUsername" type="String" name="User Lookup API Username" description="Username for User Lookup API" default="PAA_D3V#128!"/>
+    <AD id="userLookupPassword" type="Password" name="User Lookup API  Password" description="Password for User Lookup API. Should be encrypted with crypto service" default="devRESTap1s836@portal"/>
+    <AD id="maxConnections" type="Integer" name="Max Connections" description="Defines the maximum number of connections allowed overall. This value only applies to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+    <AD id="maxHostConnections" type="Integer" name="Max Host Connections" description="Defines the maximum number of connections allowed per host configuration. These values only apply to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+    <AD id="maxCacheSize" type="Integer" name="Max Cache Size" description="Defines the maximum of the cached response before invalidating the oldest." default="1000"/>
+    <AD id="tokenEndpoint" type="String" name="Get Token URL Part" description="Service URL part for Get Token" default="https://id-qa.eaton.com/oauth2/auswm0hll1dz7SaUw0h7/v1/token"/>
+    <AD id="userProfileCacheTTL" type="Integer" name="User Profile Cache TTL" description="The length of time the user profile cache should exist (Seconds)" default="1800"/>
+    <AD id="securityCookieTTL" type="Integer" name="Security Cookie TTL" description="The length of time the security cookie should exist (Seconds)" default="1800"/>
+    <AD id="securityCookieId" type="String" name="SecurityCookie ID" description="The ID of the security cookie" default="etn-login"/>
+    <AD id="securityCookieDomain" type="String" name="SecurityCookie Domain" description="The Domain of the security cookie" default=""/>
+    <AD id="ssoCookieDomain" type="String" name="SSO Cookie Domain" description="The Domain of the legacy SSO cookie" default="etn.com"/>
+    <AD id="orderCenterSSOLink" type="String" name="Order Center Okta SSO" description="Order Center Okta SSO Link" default=""/>
+    <AD id="orderCenterAppRole" type="String" name="Order Center  LDAP App role" description="Order Center  LDAP App role" default=""/>
+    <AD id="bidManagerSSOLink" type="String" name="Bid Manager Okta SSO" description="Bid Manager Okta SSO Link" default=""/>
+    <AD id="bidManagerAppRole" type="String" name="Bid Manager LDAP App role" description="Bid Manager LDAP App role" default=""/>
+    <AD id="myEatonApplicationAttr" type="String" name="Eaton SSO Application Attribute" description="Eaton SSO Application Attribute value to determine if from my.eaton.com" default=""/>
+    <AD id="oktaWidgetVersion" type="String" name="Eaton Okta Widget Version" description="Eaton Okta Widget version, default to 5.1.5" default="5.1.5"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.auth.services.impl.AuthenticationServiceConfigurationImpl">
+    <Object ocdref="com.eaton.platform.integration.auth.services.config.AuthenticationServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:description="Template for Brand Font Selection Configuration"
+          jcr:primaryType="cq:Template"
+          jcr:title="Brand Font Selection Configuration"
+          allowedPaths="[/etc/cloudservices/brandfontselection(/.*)?]"
+          ranking="{Long}108">
+    <jcr:content
+            jcr:primaryType="cq:PageContent"
+            sling:resourceType="/apps/eaton/components/structure/brandfontselection"/>
+</jcr:root>

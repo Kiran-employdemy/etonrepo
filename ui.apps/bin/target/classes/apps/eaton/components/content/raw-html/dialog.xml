@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    height="400"
+    width="700"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:TabPanel"
+        title="Standard Copy Component">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <componentdetails
+                jcr:primaryType="cq:Panel"
+                title="Component Details">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Title"
+                        name="./title"
+                        width="250"
+                        xtype="textfield"/>
+                    <htmlsource
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="HTML Source"
+                        name="./htmlsource"
+                        rootPath="/etc/advanced-html"
+                        xtype="pathfield"/>
+                </items>
+            </componentdetails>
+            <anchorproperties
+                jcr:primaryType="cq:Panel"
+                title="Anchor Properties">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <anchorid
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Anchor ID"
+                        name="./anchorid"
+                        xtype="textfield"/>
+                </items>
+            </anchorproperties>
+        </items>
+    </items>
+</jcr:root>

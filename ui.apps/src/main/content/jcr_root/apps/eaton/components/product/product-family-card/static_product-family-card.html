@@ -1,0 +1,100 @@
+<!--/* EATON-109: Product Family Card */-->
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Product Family Card</div>
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientLib.css @ categories='etn-servspin'}" data-sly-unwrap/>
+<sly data-sly-use.data="com.eaton.platform.core.models.ProductFamilyCardModel">
+<sly data-sly-use.dataModel="com.eaton.platform.core.models.DataLayerModel"></sly>
+  <div class="product-family-card__component">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-xs-12 col-md-8">
+		  <sly data-sly-test="${data.productCardBean.status}">
+			<div class="module-product-detail-card__badge-discontinued">${data.productCardBean.status}</div>
+     	  </sly>
+		   <sly data-sly-test="${data.productCardBean.newBadgeVisible}">
+			<div class="module-product-detail-card__badge-new">${ 'ResourceList.NewBadge' @ i18n }</div>
+     	  </sly>
+          <h1 class="product-family-card__header b-heading-h1">${data.productCardBean.productFamilyName}</h1>
+          <div data-sly-test="${ data.productCardBean.marketingDesc }"  class="product-family-card__separator"></div>
+          <div class="product-family-card__description b-body-copy">${data.productCardBean.marketingDesc @context = 'html'}</div>
+        </div>
+        <div class="col-xs-12 col-md-4 product-family-card__image-wrapper">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			  <sly  data-sly-test="${data.productCardBean.primaryAndSecondaryImagesList.size > 1}">
+				  <!-- Indicators -->
+				  <ol class="carousel-indicators">
+					  <sly data-sly-list.imagePath="${data.productCardBean.primaryAndSecondaryImagesList}">
+					    <li data-target="#carousel-example-generic" data-slide-to="${imagePathList.index}" class="${imagePathList.first ? 'active': ''}"></li>
+					  </sly>
+				  </ol>
+			  </sly>
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			  	<sly data-sly-list.imagePath="${data.productCardBean.primaryAndSecondaryImagesList}">
+				    <div class="item ${imagePathList.first ? 'active': ''} spinnerorNonSpinner">
+				    	 <sly  data-sly-test.first="${imagePathList.first}">
+				    	 	<div class="Sirv spinnerimg" data-src="${imagePath}"></div>
+				      		<sly data-sly-test="${data.productCardBean.altPrimaryImage != ' '}">
+				      			<img class="staticPrimaryImg" src="${imagePath}" alt="${data.productCardBean.altPrimaryImage}">
+                            </sly>
+                            <sly data-sly-test="${data.productCardBean.altPrimaryImage == ' '}">
+				      			<img class="staticPrimaryImg" src="${imagePath}" alt="${dataModel.datalayerbean.productFamily}">
+                            </sly>
+				    	 </sly>
+						<!-- <sly data-sly-test="${data.productCardBean.primaryImageIsRepresentative}">
+							<p class="product-family-card__description">${ 'Photo is representative' @ i18n }</p>
+						</sly> -->
+				    	 <sly data-sly-test="${!first}">
+				      		<img src="${imagePath}">
+				      	 </sly>
+				    </div>
+				</sly>
+			  </div>
+			  <sly  data-sly-test="${data.productCardBean.primaryAndSecondaryImagesList.size > 1}">
+				  <!-- Controls -->
+				  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+				    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+				    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+			  </sly>
+			</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-12 col-md-8 product-family-card__link-wrapper">
+          <div class="row">
+
+
+			<div data-sly-test="${data.productCardBean.primaryCTAURL}"
+                 class="col-xs-12 col-md-6 product-family-card__cta padding-bottom-40">
+
+                <a href="${data.productCardBean.primaryCTAURL @context='html'}"
+                   data-analytics-event="request quote"
+				   data-source-tracking="${data.productCardBean.primaryCTAEnableSourceTracking}"
+				   data-page-path-tracking="${data.productCardBean.isSuffixDisabled ? 'false' : 'true' }"
+                   class="b-button b-button__tertiary b-button__tertiary--light"
+                   title="${data.productCardBean.primaryCTALabel}" target="${data.productCardBean.primaryCTANewWindow}">
+                    ${data.productCardBean.primaryCTALabel ? data.productCardBean.primaryCTALabel : 'contactMe' @i18n }</a>
+            </div>
+            <div class="col-xs-12 col-md-6 product-family-card__links" data-sly-list.link="${data.productCardBean.secondaryLinksList}">
+
+              <a href="${link.path}" title="${link.text}" target="${link.newWindow}"> <i class="icon icon-link-external" data-sly-test="${link.isExternal}" aria-hidden="true"></i> ${link.text}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</sly>

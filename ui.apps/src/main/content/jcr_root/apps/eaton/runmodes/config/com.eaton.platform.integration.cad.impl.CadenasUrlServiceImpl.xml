@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          cadQualifierUrl="https://www.partcommunity.com/cadqualifier.asp?firm=eaton_cad"
+          partCommunityUrl="https://webapi.partcommunity.com/cgi-bin/cgi2pview.exe"
+        />

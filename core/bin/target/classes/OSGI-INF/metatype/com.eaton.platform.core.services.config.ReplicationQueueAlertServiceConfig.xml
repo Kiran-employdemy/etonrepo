@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.ReplicationQueueAlertServiceConfig">
+  <OCD id="com.eaton.platform.core.services.config.ReplicationQueueAlertServiceConfig" name="Replication Queue Scheduler" description="Sling scheduler configuration">
+    <AD id="schdulerName" type="String" name="Replication Queue Scheduler" description="Replication Queue blocker Scheduler" default="Replication\ Queue\ Scheduler"/>
+    <AD id="agentIDs" type="String" cardinality="2147483647" name="agents" description="Please enter agent ID's" default=""/>
+    <AD id="emailDL" type="String" name="Email list" description="Email list for sending the alert" default=""/>
+    <AD id="enabled" type="Boolean" name="Enabled" description="True, if scheduler service is enabled" default="false"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.schedulers.ReplicationQueueAlerts">
+    <Object ocdref="com.eaton.platform.core.services.config.ReplicationQueueAlertServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

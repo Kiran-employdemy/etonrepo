@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.workflows.UpdateCreateDateProcess" immediate="true" activate="activate" modified="activate">
+  <property name="target.property" type="String" value=""/>
+  <property name="service.vendor" type="String" value="Freedom Marketing"/>
+  <property name="mime.mappings" type="String"></property>
+  <property name="service.description" type="String" value="Try to ensure the correct Create Date metadata is visible for every asset."/>
+  <property name="process.label" type="String" value="FM - Update Create Date Process"/>
+  <service>
+    <provide interface="com.adobe.granite.workflow.exec.WorkflowProcess"/>
+  </service>
+  <implementation class="com.eaton.platform.core.workflows.UpdateCreateDateProcess"/>
+</scr:component>

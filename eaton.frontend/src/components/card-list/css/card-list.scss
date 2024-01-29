@@ -1,0 +1,6 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+// Import SubViews
+@import "views/view-with-image";
+@import "views/view-no-image";

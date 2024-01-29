@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:rep="internal"
+    jcr:mixinTypes="[rep:AccessControllable,sling:Redirect]"
+    jcr:primaryType="sling:Folder"
+    jcr:title="Tags"
+    sling:resourceType="sling:redirect"
+    sling:target="/tagging"
+    hidden="{Boolean}true"
+    languages="[en,de,es,fr,it,pt_br,zh_cn,zh_tw,ja,ko_kr,cs_cz,es_es,et_ee,fi_fi,fr_fr,hu_hu,ja_jp,lt_lt,lv_lv,nl_nl,pl_pl,pt_pt,tr_tr,en_gb,ro_ro,ru_ru,fr_ca,es_la,it_it,de_de,no_no,sv_se,da_dk,he_il,iw_il,uk_ua,es_mx,sk_sk,th_th,vi,hr_hr,sr_rs,in_id,el_gr]"/>

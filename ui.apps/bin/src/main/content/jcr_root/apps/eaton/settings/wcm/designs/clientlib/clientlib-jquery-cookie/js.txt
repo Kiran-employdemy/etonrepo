@@ -1,0 +1,4 @@
+#base=../global/js
+
+vendors/jquery-3.5.1.js
+vendors/jquery.cookie.js

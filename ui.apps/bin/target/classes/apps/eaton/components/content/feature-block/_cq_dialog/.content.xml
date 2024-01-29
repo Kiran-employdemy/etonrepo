@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Feature Block"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientLibs="[cq.authoring.dialog]"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <section
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Feature Block"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <featureBlockColor
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Background Color"
+                                name="./featureBlockColor"
+                                required="true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <white
+                                        jcr:primaryType="nt:unstructured"
+                                        text="White"
+                                        value="theme-white"/>
+                                    <blue
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primary branding color"
+                                        value="primary-branding-color"/>
+                                    <Grey
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Grey"
+                                        value="theme-light-gray"/>
+                                </items>
+                            </featureBlockColor>
+                            <featureHeader
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Header"
+                                name="./featureHeader"
+                                required="true"/>
+                            <featureDesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                fieldLabel="Description"
+                                name="./featureDesc"
+                                required="true"/>
+                            <featureBlockLink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Feature Block Links">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./featureBlockLink">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <featureBlockLinkText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Link Text"
+                                                    name="./featureBlockLinkText"/>
+                                                <featureBlockLinkPath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                                    fieldLabel="Link Path"
+                                                    name="./featureBlockLinkPath"
+                                                    required="true"/>
+                                                <featureBlockLinkOpenNewWindow
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    name="./featureBlockLinkOpenNewWindow"
+                                                    text="Open in New Window"
+                                                    value="true"/>
+                                                <featureEnableSourceTracking
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    name="./featureEnableSourceTracking"
+                                                    text="Enable Source Tracking on above link"
+                                                    uncheckedValue="false"
+                                                    value="true"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </featureBlockLink>
+                            <featureImage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                allowUpload="{Boolean}false"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldLabel="Image"
+                                fileNameParameter="./image/fileName"
+                                fileReferenceParameter="./featureImage"
+                                mimeTypes="[image]"
+                                multiple="{Boolean}false"
+                                name="./imageName"
+                                required="true"
+                                title="Upload Image Asset"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
+                            <featureImageAltText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Image Alt Text"
+                                name="./featureImageAltText"/>
+                            <featureImageAlignment
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Image Alignment"
+                                name="./featureImageAlignment"
+                                required="true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <left
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Left"
+                                        value="left"/>
+                                    <right
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Right"
+                                        value="right"/>
+                                </items>
+                            </featureImageAlignment>
+                            <featureCTALink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                fieldLabel="CTA Link"
+                                name="./featureCTALink"/>
+                            <enableSourceTracking
+                                    granite:class="enableSourceTracking_toggle"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                name="./enableSourceTracking"
+                                text="Enable Source Tracking on above link"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <featureCTATitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="CTA Title"
+                                name="./featureCTATitle"/>
+                            <featureCTAOpenNewWindow
+                                granite:class="featureCTAOpenNewWindow_toggle"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                name="./featureCTAOpenNewWindow"
+                                text="CTA Open in new window"
+                                value="true"/>
+                            <modal
+                                granite:class="modal_toggle"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                name="./modal"
+                                text="Open as PathFactory Modal"
+                                value="true"/>
+                            <desktopDynam
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                name="./desktopDynam"
+                                value=":feature-block-desktop"/>
+                            <mobileDynam
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                name="./mobileDynam"
+                                value=":feature-block-mobile"/>
+                        </items>
+                    </column>
+                </items>
+            </section>
+        </items>
+    </content>
+</jcr:root>

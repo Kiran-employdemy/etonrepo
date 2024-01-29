@@ -1,0 +1,35 @@
+//-----------------------------------
+// Basic Properties shared across Sliders
+//-----------------------------------
+.eaton-slider {
+
+  &__dots {
+    padding-top: 10px;
+    padding-left: 0;
+
+    [dir='rtl'] {
+      direction: ltr;
+    }
+    @include media-tablet-and-up {
+      padding-top: 40px;
+    }
+
+    button {
+      background-color: var(--color__iron-30);
+      border-radius: 10px;
+      border: 10px;
+      color: transparent;
+      cursor: pointer;
+      display: inline;
+      height: 10px;
+      line-height: 0;
+      padding: 5px;
+      width: 10px;
+    }
+
+    // DOTS Pagination - Active Item
+    .slick-active button {
+      background-color: var(--primary-brand-color, --primary-brand-color);
+    }
+  }
+}

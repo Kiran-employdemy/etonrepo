@@ -1,0 +1,536 @@
+{
+	"jcr:primaryType": "cq:Tag",
+	"jcr:mixinTypes": [
+		"cq:ReplicationStatus"
+	],
+	"jcr:createdBy": "admin",
+	"jcr:title": "Eaton Secure",
+	"cq:lastReplicationAction": "Activate",
+	"cq:lastReplicatedBy": "e0063964",
+	"jcr:lastModifiedBy": "e0063964",
+	"jcr:created": "Wed Jun 28 2023 09:52:35 GMT+0200",
+	"cq:lastReplicated": "Wed Jul 28 2021 13:22:17 GMT-0400",
+	"jcr:description": "Eaton Secure",
+	"jcr:lastModified": "Wed Jul 28 2021 13:22:12 GMT-0400",
+	"sling:resourceType": "cq/tagging/components/tag",
+	"jcr:title.cs_cz": "Eaton Secure",
+	"partner-programme-type": {
+		"jcr:primaryType": "cq:Tag",
+		"jcr:mixinTypes": [
+			"cq:ReplicationStatus"
+		],
+		"jcr:createdBy": "admin",
+		"jcr:title": "Partner program type",
+		"cq:lastReplicationAction": "Activate",
+		"cq:lastReplicatedBy": "admin",
+		"jcr:lastModifiedBy": "e0063964",
+		"jcr:created": "Wed Jun 28 2023 09:52:35 GMT+0200",
+		"cq:lastReplicated": "Thu Apr 14 2022 23:41:11 GMT-0400",
+		"jcr:lastModified": "Thu Sep 09 2021 10:24:14 GMT-0400",
+		"sling:resourceType": "cq/tagging/components/tag",
+		"jcr:title.ko_kr": [
+			"",
+			""
+		],
+		"automation-solution-program": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Automation solution program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "c3056014",
+			"jcr:created": "Wed Jun 28 2023 09:52:35 GMT+0200",
+			"cq:lastReplicated": "Mon Mar 21 2022 11:01:47 GMT-0400",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag"
+		},
+		"channel-panel-builder-program": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Channel panel builder program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "c3056014",
+			"jcr:created": "Wed Jun 28 2023 09:52:35 GMT+0200",
+			"cq:lastReplicated": "Mon Mar 21 2022 11:01:47 GMT-0400",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag"
+		},
+		"control-panel-builder-program": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Control panel builder program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "c3056014",
+			"jcr:created": "Wed Jun 28 2023 09:52:35 GMT+0200",
+			"cq:lastReplicated": "Mon Mar 21 2022 11:01:47 GMT-0400",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag"
+		},
+		"drives-solution-program": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Drives solution program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "c3056014",
+			"jcr:created": "Wed Jun 28 2023 09:52:35 GMT+0200",
+			"cq:lastReplicated": "Mon Mar 21 2022 11:01:48 GMT-0400",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag"
+		},
+		"electrical-installer-programme": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Electrical installer program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "c3056014",
+			"jcr:lastModifiedBy": "e0063964",
+			"jcr:created": "Wed Jun 28 2023 09:52:35 GMT+0200",
+			"cq:lastReplicated": "Mon Mar 21 2022 11:01:48 GMT-0400",
+			"jcr:lastModified": "Thu Sep 09 2021 10:27:27 GMT-0400",
+			"sling:resourceType": "cq/tagging/components/tag",
+			"jcr:title.ko_kr": [
+				"",
+				""
+			],
+			"registered": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Registered",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Mon Apr 10 2023 15:04:22 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			},
+			"authorized": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Authorized",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Mon Apr 10 2023 15:04:22 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			}
+		},
+		"electrical-wholesaler-programme": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Electrical wholesaler program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "c3056014",
+			"jcr:lastModifiedBy": "e0063964",
+			"jcr:created": "Wed Jun 28 2023 09:52:35 GMT+0200",
+			"cq:lastReplicated": "Mon Mar 21 2022 11:01:48 GMT-0400",
+			"jcr:lastModified": "Thu Sep 09 2021 10:27:34 GMT-0400",
+			"sling:resourceType": "cq/tagging/components/tag",
+			"jcr:title.ko_kr": [
+				"",
+				""
+			],
+			"registered": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Registered",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Mon Apr 10 2023 15:04:31 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			},
+			"authorized": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Authorized",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Mon Apr 10 2023 15:04:31 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			},
+			"premium": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Premium",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Mon Apr 10 2023 15:04:32 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			}
+		},
+		"it-channel-program": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "IT channel program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "c3056014",
+			"jcr:created": "Wed Jun 28 2023 09:52:35 GMT+0200",
+			"cq:lastReplicated": "Mon Mar 21 2022 11:01:48 GMT-0400",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag",
+			"registered": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Registered",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Mon Apr 10 2023 15:04:40 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			},
+			"authorized": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Authorized",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Mon Apr 10 2023 15:04:40 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			},
+			"premium": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Premium",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Mon Apr 10 2023 15:04:41 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			}
+		},
+		"power-distribution-panel-builder-program": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Power distribution panel builder program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "c3056014",
+			"jcr:created": "Wed Jun 28 2023 09:52:35 GMT+0200",
+			"cq:lastReplicated": "Mon Mar 21 2022 11:01:49 GMT-0400",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag"
+		},
+		"system-integrator-program": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "System integrator program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "e9925079",
+			"jcr:created": "Wed Jun 28 2023 09:52:35 GMT+0200",
+			"cq:lastReplicated": "Wed May 18 2022 16:18:32 GMT-0400",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag"
+		},
+		"data-center-consultant-program": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Data center consultant program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "e9925079",
+			"jcr:created": "Wed Jun 28 2023 09:52:35 GMT+0200",
+			"cq:lastReplicated": "Wed May 18 2022 16:18:33 GMT-0400",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag",
+			"registered": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Registered",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Mon Apr 10 2023 15:04:47 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			},
+			"authorized": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Authorized",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Mon Apr 10 2023 15:04:47 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			}
+		},
+		"consultant-program": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Consultant program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "e9925079",
+			"jcr:created": "Wed Jun 28 2023 09:52:35 GMT+0200",
+			"cq:lastReplicated": "Wed May 18 2022 16:18:34 GMT-0400",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag",
+			"registered": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Registered",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Mon Apr 10 2023 15:04:54 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			},
+			"authorized": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Authorized",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Mon Apr 10 2023 15:04:54 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			}
+		},
+		"security-and-intruder-alarm-systems-program-security": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Security and intruder alarm systems program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "e0063964",
+			"jcr:created": "Wed Jun 28 2023 09:52:35 GMT+0200",
+			"cq:lastReplicated": "Fri Jul 22 2022 10:44:46 GMT-0400",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag"
+		},
+		"eccn-program": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "ECCN program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "e9925079",
+			"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+			"cq:lastReplicated": "Mon Aug 22 2022 10:21:35 GMT-0400",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag"
+		},
+		"value-added-reseller-program": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Value added reseller program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "e9925079",
+			"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+			"cq:lastReplicated": "Fri Nov 04 2022 10:21:46 GMT-0400",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag",
+			"registered": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Registered",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Mon Apr 10 2023 15:05:02 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			},
+			"authorized": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Authorized",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Mon Apr 10 2023 15:05:02 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			},
+			"premium": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Premium",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "admin",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Mon Apr 10 2023 15:05:02 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			}
+		},
+		"siemens-partner-program": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Siemens partner program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "e9925079",
+			"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+			"cq:lastReplicated": "Tue Mar 07 2023 11:22:42 GMT-0500",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag"
+		},
+		"panel-builder-program": {
+			"jcr:primaryType": "cq:Tag",
+			"jcr:mixinTypes": [
+				"cq:ReplicationStatus"
+			],
+			"jcr:createdBy": "admin",
+			"jcr:title": "Panel builder program",
+			"cq:lastReplicationAction": "Activate",
+			"cq:lastReplicatedBy": "e9925079",
+			"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+			"cq:lastReplicated": "Thu May 04 2023 15:59:07 GMT-0400",
+			"jcr:description": "",
+			"sling:resourceType": "cq/tagging/components/tag",
+			"registered": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Registered",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "e9925079",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Thu May 11 2023 10:15:01 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			},
+			"authorized": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Authorized",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "e9925079",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Thu May 11 2023 10:15:01 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			},
+			"licensed": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Licensed",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "e9925079",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Thu May 11 2023 10:15:01 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			},
+			"premium": {
+				"jcr:primaryType": "cq:Tag",
+				"jcr:mixinTypes": [
+					"cq:ReplicationStatus"
+				],
+				"jcr:createdBy": "admin",
+				"jcr:title": "Premium",
+				"cq:lastReplicationAction": "Activate",
+				"cq:lastReplicatedBy": "e9925079",
+				"jcr:created": "Fri Sep 08 2023 11:46:27 GMT+0200",
+				"cq:lastReplicated": "Thu May 11 2023 10:15:01 GMT-0400",
+				"jcr:description": "",
+				"sling:resourceType": "cq/tagging/components/tag"
+			}
+		}
+	}
+}

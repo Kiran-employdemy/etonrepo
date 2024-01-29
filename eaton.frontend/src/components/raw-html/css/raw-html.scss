@@ -1,0 +1,14 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+/* stylelint-disable declaration-no-important  */
+.html-fragment-content {
+  margin-left: 0px !important;
+}
+
+.secondary-headline {
+  margin-left: 0px !important;
+}
+
+
+/* stylelint-enable declaration-no-important  */

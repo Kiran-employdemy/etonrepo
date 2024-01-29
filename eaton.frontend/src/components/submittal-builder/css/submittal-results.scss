@@ -1,0 +1,956 @@
+@import "../../../global/css/_config/sass";
+
+$desktop-column-width: 15rem;
+$desktop-cell-padding: 1rem .5rem;
+$mobile-cell-padding: .75rem .5rem;
+$mobile-cell-heading-width: 12rem;
+$sticky-column-left-padding: rem($spacing__sm * .1666);
+$results-min-height: rem($grid__xs * .5);
+$row-actions-width: rem($spacing__sm);
+$sorting-column-width: $desktop-column-width / 2.5;
+$chevron-font-size: rem($base__font-size * 1.4);
+$animation-duration-short: 500ms;
+$text-animation-removed-from-package: item-deselected ($animation-duration-short * .5) linear forwards 1;
+$text-animation-added-to-package: item-selected $animation-duration-short ease-in;
+$row-animation-removed-from-package: height $animation-duration-short ease-in;
+$column-pagination-animation: transform $animation-duration-short ease-in-out;
+$results-row-added-to-package: 'submittal-builder__results__row--added-to-package';
+$results-row-removed-from-package: 'submittal-builder__results__row--removed-from-package';
+$results-row-removed-from-package-row-animation: 'submittal-builder__results__row--removed-from-package-row-animation';
+
+@keyframes item-selected {
+  0% { color: $color__green; }
+
+  100% { color: inherit; }
+}
+
+@keyframes item-deselected {
+  from { color: $color__red; }
+
+  to {
+    color: $color__red;
+    opacity: 0;
+  }
+}
+
+@keyframes item-removed-message {
+  from {
+    opacity: 0;
+    visibility: visible;
+  }
+
+  5% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  95% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  to {
+    opacity: 0;
+    visibility: visible;
+  }
+}
+
+.submittal-builder {
+  &__result {
+    &.#{$results-row-removed-from-package-row-animation} {
+      overflow-y: hidden;
+      transition: $row-animation-removed-from-package;
+    }
+
+    /**
+    * Note: the following two chunks of CSS are a bit redundant, but required in order for:
+    * 1. Zebra striping to work on every other row on desktop and extend the full width of the row instead of being constrained to the parent container's width
+    * 2. Prevent zebra striping on rows on mobile while applying it to columns when the accordions are expanded
+    */
+    .submittal-builder__results-cell {
+      &:nth-of-type(even) {
+        background-color: $color__secondary-gray6;
+
+        @include media-tablet-and-up {
+          background-color: transparent;
+        }
+      }
+    }
+
+    &:nth-of-type(even) {
+      .submittal-builder__results-cell {
+        @include media-tablet-and-up {
+          background-color: $color__secondary-gray6;
+        }
+      }
+
+      .submittal-builder__results__row-actions {
+        @include media-tablet-and-up {
+          background-color: $color__secondary-gray6;
+        }
+      }
+    }
+  }
+
+  &__results {
+    padding-left: 0;
+    padding-right: 0;
+
+    @include media-tablet-and-up {
+      padding-left: rem($grid__gutter-width * .5);
+      padding-right: 0;
+
+      [dir='rtl'] & {
+        float: right;
+        padding-left: 0;
+        padding-right: rem($grid__gutter-width * .5);
+      }
+    }
+
+    .submittal-builder__welcome-message--show & {
+      @include media-tablet-and-up {
+        display: none;
+      }
+    }
+
+    &-count__container--mobile {
+      @include media-tablet-and-up {
+        display: none;
+      }
+    }
+
+    &__panel {
+      background-color: transparent;
+      border-radius: 0px;
+      box-shadow: none;
+      margin-bottom: 0;
+      position: relative;
+
+      @include media-tablet-and-up {
+        border-bottom: 0px;
+        position: static;
+      }
+    }
+
+    &__accordion-container {
+      display: block;
+      font-family: $font-family__secondary;
+      font-size: rem($base__font-size * 1.5);
+
+      .collapse {
+        position: relative;
+      }
+    }
+
+    &__title {
+      color: $color__primary-gray3;
+      font-family: $font-family__secondary;
+      font-size: rem($base__font-size * 1.8);
+      font-weight: bold;
+      line-height: $base__line-height;
+
+      @include media-tablet-and-up {
+        line-height: $base__line-height * 1.2857;
+        margin-bottom: $spacing__lg;
+      }
+    }
+
+    /**
+    Note: explicit pixel values and colors are used to create the tooltip and arrow for simplicity's sake and
+    accessibility is not a concern
+    */
+
+    &__tooltip {
+      background: $color__white;
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+      display: none;
+      left: -1px;
+      padding: rem($spacing__sm) rem($spacing__sm * 2.5) rem($spacing__sm) rem($spacing__sm);
+      position: absolute;
+      top: -100%;
+      transform: translateY(-95%);
+      width: $mobile-cell-heading-width * 2.5;
+
+      &::after,
+      &::before {
+        border: solid transparent;
+        content: '';
+        height: 0;
+        left: 1px;
+        pointer-events: none;
+        position: absolute;
+        top: 100%;
+        width: 0;
+      }
+
+      &::after {
+        border-color: rgba(136, 183, 213, 0);
+        border-top: solid 24px  $color__white;
+        border-left: solid 13px transparent;
+        border-right: solid 13px transparent;
+        margin-left: -1px;
+      }
+
+      &::before {
+        border-color: rgba(189, 189, 189, 0);
+        border-top: solid 26px #BABABA;
+        border-left: solid 14px transparent;
+        border-right: solid 14px transparent;
+        margin-left: -2px;
+      }
+
+      @include media-tablet-and-up {
+        width: $desktop-column-width * 5;
+      }
+
+      &__message {
+        color: $color__red;
+        font-weight: bold;
+
+        @include media-tablet-and-up {
+          font-size: rem($base__font-size * 1.8);
+        }
+      }
+
+      &__close-button {
+        font-size: rem($base__font-size * 3);
+        position: absolute;
+        right: rem($spacing__sm * 1.166);
+        top: rem($spacing__sm * .8333);
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: $color__primary-blue;
+        }
+
+        [dir='rtl'] & {
+          left: rem($spacing__sm * 1.166);
+          right: auto;
+        }
+      }
+    }
+
+    &--package-only {
+      @include media-tablet-and-up {
+        float: right;
+        /* stylelint-disable declaration-no-important  */
+        width: 100% !important;
+        /* stylelint-enable declaration-no-important  */
+
+        [dir='rtl'] & {
+          float: left;
+        }
+      }
+
+      .submittal-builder__results__remove-from-package-button,
+      .submittal-builder__button--finish-edits-button,
+      .submittal-builder__results__add-all-button,
+      .submittal-builder__results__cellheading__button[disabled] .icon {
+        display: none;
+      }
+
+      &--edit-mode {
+        .submittal-builder__results__remove-from-package-button {
+          display: block;
+        }
+
+        .submittal-builder__results__remove-all-button {
+          display: inline-block;
+        }
+      }
+    }
+
+    &__container {
+      margin: 0 auto;
+      min-height: $results-min-height;
+      width: 100%;
+    }
+
+    &__desktop-filter {
+      padding-bottom: rem($spacing__sm * .5);
+      width: 100%;
+
+      &::after {
+        border-bottom: 1px solid $color__primary-gray3;
+        content: '';
+        display: block;
+        height: 0;
+        position: absolute;
+        left: $sticky-column-left-padding;
+        width: calc(100% - #{$grid__gutter-width * .5});
+        z-index: 10;
+
+        .submittal-builder__results--package-only & {
+          left: 0;
+        }
+      }
+
+      .submittal-builder__results__row--head {
+        color: $color__primary-gray2;
+        font-size: rem($base__font-size * 1.5);
+        font-weight: bold;
+        margin-bottom: rem($spacing__sm * .5);
+      }
+
+      .disabled-btn {
+        color: $color__primary-gray3;
+        pointer-events: none;
+      }
+    }
+
+    &__sort-options {
+      display: inline-block;
+      width: 50%;
+
+      [data-toggle='dropdown'] {
+        font-size: rem($base__font-size * 1.3);
+      }
+    }
+
+    &__add-all-button,
+    &__remove-all-button {
+      color: var(--link-brand-color, $color__primary-blue);
+      display: inline-block;
+      max-width: 50%;
+      font-size: rem($base__font-size * 1.3);
+      text-align: left;
+      text-decoration: underline;
+      white-space: normal;
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+
+    &__all-items-removed {
+      min-height: $results-min-height;
+      white-space: pre-line;
+
+      @include media-tablet-and-up {
+        padding-left: rem($grid__gutter-width);
+        padding-right: rem($grid__gutter-width);
+      }
+    }
+
+    &__item-removed-message {
+      // Note: writing this out in longhand for ease of reading
+      background: $color__red;
+      color: $color__white;
+      font-size: rem($base__font-size * 1.6);
+      padding: rem($spacing__sm * .1) rem($spacing__sm * .1666666667);
+      position: absolute;
+      left: 50%;
+      top: rem($spacing__sm);
+      transform: translateX(-50%);
+      visibility: hidden;
+      width: 75%;
+      z-index: 20;
+
+      @include media-tablet-and-up {
+        display: none;
+        left: calc(#{$sticky-column-left-padding} + #{$desktop-column-width});
+        margin-top: rem($spacing__sm * .5);
+        top: auto;
+        transform: none;
+        width: auto;
+      }
+
+      .#{$results-row-removed-from-package} & {
+        animation-name: item-removed-message;
+        animation-duration: $animation-duration-short;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        display: block;
+        left: calc(#{$sticky-column-left-padding} + #{$desktop-column-width} + #{$sorting-column-width});
+      }
+    }
+
+    &__remove-all-button {
+      color: $color__red;
+      padding-bottom: 1.5rem;
+      display: none;
+    }
+
+    &__pagination {
+      &__container {
+        align-content: space-between;
+        display: flex;
+        flex: 0 1 45%;
+        justify-content: space-between;
+        position: absolute;
+        right: rem($spacing__sm);
+        top: auto;
+
+        [dir='rtl'] & {
+          flex-direction: row-reverse;
+        }
+      }
+
+      &__button {
+        align-items: center;
+        border: 1px solid var(--link-brand-color, $color__primary-blue);
+        display: flex;
+        flex-direction: column;
+        height: rem($spacing__sm * .8);
+        padding: rem($spacing__sm * .125) rem($spacing__sm * .25);
+        text-align: center;
+        width: rem($spacing__sm * 1.16666667);
+
+        &:first-child {
+          margin-right: rem($spacing__sm * .33333);
+        }
+
+        &:last-child {
+          margin-left: rem($spacing__sm * .33333);
+        }
+
+        &[disabled] {
+          border-color: $color__primary-gray3;
+
+          .icon {
+            color: $color__primary-gray3;
+          }
+        }
+
+        .icon {
+          color: var(--link-brand-color, $color__primary-blue);
+          font-size: rem($base__font-size * 1.4);
+        }
+      }
+    }
+
+    &__row {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      width: 100%;
+
+      @include media-tablet-and-up {
+        border-bottom: 0;
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+
+      &-actions {
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+        border-top: rem($base__font-size * .1) solid $color__primary-gray3;
+        padding-left: 0;
+        padding-right: 0;
+        vertical-align: middle;
+        width: 100%;
+
+        @include media-tablet-and-up {
+          background: $color__white;
+          border-top: 0;
+          flex: 0 1 $desktop-column-width;
+          flex-direction: row;
+          max-width: $row-actions-width;
+          padding: $desktop-cell-padding;
+          width: auto;
+        }
+
+        // Prevent button from overlapping text in IE 11
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          min-width: $row-actions-width;
+        }
+      }
+    }
+
+    // sticky columns on desktop
+    @include media-tablet-and-up {
+      .submittal-builder__results__scroller {
+        margin-left: $desktop-column-width;
+        overflow-x: hidden;
+
+        &::before {
+          box-shadow: 1px 1px 3px 0 $color__primary-gray3;
+          content: '';
+          border-right: 2px solid var(--primary-brand-color, $color__primary-blue);
+          display: block;
+          height: 100%;
+          left: calc(#{$desktop-column-width});
+          position: absolute;
+          top: 0;
+          width: 0;
+          z-index: 15;
+        }
+      }
+
+      .submittal-builder__results__add-all-button,
+      .submittal-builder__results__remove-all-button {
+        left: rem($spacing__sm * .1666);
+        max-width: calc(#{$desktop-column-width} - #{$row-actions-width});
+        position: absolute;
+        top: auto;
+      }
+
+      .submittal-builder__results__row-actions {
+        left: $sticky-column-left-padding;
+        position: absolute;
+        top: auto;
+        z-index: 10;
+      }
+
+      .submittal-builder__results-cell--sticky {
+        left: calc(#{$row-actions-width} + #{$sticky-column-left-padding});
+        min-width: 0;
+        position: absolute;
+        top: auto;
+        width: calc(#{$desktop-column-width} - #{$row-actions-width});
+        z-index: 10;
+      }
+
+      .submittal-builder__results-cellheading--sticky {
+        left: $row-actions-width;
+        min-width: 0;
+        position: absolute;
+        top: auto;
+        width: calc(#{$desktop-column-width} - #{$row-actions-width});
+        z-index: 10;
+      }
+
+      .submittal-builder__results-cellheading--unsticky,
+      .submittal-builder__results-cell--unsticky {
+        padding-left: rem($spacing__sm * .333333);
+        width: calc(#{$desktop-column-width} + #{rem($spacing__sm * .333333)});
+        // This transition was causing issues when sorting and loading more. It should only happen when the paginatio button is clicked and not on page renders.
+        //transition: $column-pagination-animation;
+      }
+
+      // adjustments to accomodate a wider first column and sorting button in package view
+      &.submittal-builder__results--package-only {
+        .submittal-builder__results__scroller {
+          margin-left: calc(#{$desktop-column-width} + #{$sticky-column-left-padding} + #{$sorting-column-width});
+
+          &::before {
+            left: calc(#{$desktop-column-width} + #{$sorting-column-width});
+          }
+        }
+
+        .submittal-builder__results__row-actions {
+          left: $sorting-column-width;
+        }
+
+        .submittal-builder__results-cellheading--sticky,
+        .submittal-builder__results-cell--sticky {
+          left: calc(#{$row-actions-width} + #{$sorting-column-width});
+          width: calc(#{$desktop-column-width} - #{$row-actions-width});
+        }
+
+        .submittal-builder__results__remove-all-button {
+          left: $sorting-column-width;
+          max-width: $desktop-column-width;
+          padding-right: $sticky-column-left-padding;
+          width: auto;
+        }
+
+        // this element isn't necessary due to the fixed first column
+        .submittal-builder__results-cellheading--narrow {
+          display: none;
+        }
+
+        .submittal-builder__results-cell--narrow {
+          background: $color__white;
+          left: 0;
+          width: #{$sorting-column-width};
+        }
+
+        .submittal-builder__results-cellheading--unsticky,
+        .submittal-builder__results-cell--unsticky {
+          // This transition was causing issues when sorting and loading more. It should only happen when the paginatio button is clicked and not on page renders.
+          //transition: $column-pagination-animation;
+          width: calc(#{$desktop-column-width} + #{rem($spacing__sm * .333333)} + #{$sorting-column-width});
+        }
+      }
+    }
+
+    &-cellheading {
+      align-self: flex-end;
+      background: $color__white;
+      color: var(--link-brand-color, $color__primary-blue);
+      display: flex;
+      flex: 0 1 $desktop-column-width;
+      font-weight: normal;
+      min-width: $desktop-column-width;
+      padding-left: rem($spacing__sm * .1666);
+      padding-right: rem($spacing__sm * .1666);
+      position: relative;
+      text-align: left;
+      @include media-tablet-and-up {
+        // This transition was causing issues when sorting and loading more. It should only happen when the paginatio button is clicked and not on page renders.
+        //transition: $column-pagination-animation;
+      }
+
+      &--narrow {
+        @include media-tablet-and-up {
+          min-width: $sorting-column-width;
+        }
+      }
+
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        padding-right: 0;
+      }
+
+      [dir='rtl'] & {
+        text-align: right;
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          padding-left: 0;
+          padding-right: rem($spacing__sm * .1666);
+        }
+      }
+
+      .icon {
+        align-self: flex-end;
+        color: var(--link-brand-color, $color__primary-blue);
+        display: flex;
+        font-size: $chevron-font-size;
+        margin-left: rem($spacing__sm * .2);
+        padding-bottom: rem($base__font-size * .2);
+        position: relative;
+        top: rem($base__font-size * -.2);
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          margin-left: rem($base__font-size * .2);
+        }
+
+        [dir='rtl'] & {
+          margin-left: auto;
+          margin-right: rem($spacing__sm * .2);
+
+          @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            margin-left: auto;
+            margin-right: 0;
+          }
+        }
+      }
+
+      .submittal-builder-column-header__text {
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          hyphens: auto;
+          word-break: normal;
+        }
+      }
+    }
+
+    &-cell {
+      align-items: left;
+      display: flex;
+      flex-direction: column;
+      padding: $mobile-cell-padding;
+      width: 100%;
+
+      @include media-tablet-and-up {
+        flex: 0 1 $desktop-column-width;
+        flex-direction: row;
+        min-width: $desktop-column-width;
+        padding: $desktop-cell-padding;
+        // This transition was causing issues when sorting and loading more. It should only happen when the paginatio button is clicked and not on page renders.
+        //transition: $column-pagination-animation;
+      }
+
+      &--narrow {
+        @include media-tablet-and-up {
+          min-width: $sorting-column-width;
+        }
+      }
+
+      &--content {
+        color: $color__primary-gray3;
+        font-size: rem($base__font-size * 1.3);
+
+        @include media-tablet-and-up {
+          color: $color__primary-gray1;
+          font-size: rem($base__font-size * 1.5);
+        }
+
+        .#{$results-row-removed-from-package} & {
+          animation: $text-animation-removed-from-package;
+        }
+
+        .#{$results-row-added-to-package} & {
+          animation: $text-animation-added-to-package;
+        }
+      }
+
+      &__preview {
+        .submittal-builder__results-cell--heading {
+          display: none;
+        }
+
+        &__title {
+          display: block;
+          font-weight: bold;
+
+          @include media-tablet-and-up {
+            display: inline;
+            font-weight: normal;
+          }
+        }
+
+        &__file-size {
+          color: $color__primary-gray3;
+          display: block;
+
+          @include media-tablet-and-up {
+            color: var(--link-brand-color, $color__primary-blue);
+          }
+        }
+      }
+
+      &--heading {
+        font-size: rem($base__font-size * 1.3);
+
+        @include media-tablet-and-up {
+          display: none;
+        }
+      }
+    }
+
+    &__mobile_filter {
+      display: inline-block;
+      font-size: rem($base__font-size * 1.3);
+      vertical-align: middle;
+      width: 100%;
+
+      @include media-tablet-and-up {
+        display: none;
+      }
+
+      .disabled-btn {
+        color: $color__primary-gray3;
+        pointer-events: none;
+      }
+    }
+
+    &__button-wrapper {
+      display: inline-block;
+      position: relative;
+      top: rem($spacing__sm * .2666);
+      width: 10%;
+
+      @include media-tablet-and-up {
+        top: auto;
+        width: auto;
+      }
+    }
+
+    &__mobile-title {
+      display: inline-block;
+      font-weight: bold;
+      text-align: center;
+      vertical-align: middle;
+      width: 25%;
+
+      @include media-tablet-and-up {
+        display: none;
+      }
+
+      .#{$results-row-removed-from-package} & {
+        animation: $text-animation-removed-from-package;
+      }
+
+      .#{$results-row-added-to-package} & {
+        animation: $text-animation-added-to-package;
+      }
+    }
+
+    &__mobile-properties {
+      color: $color__primary-gray3;
+      display: inline-block;
+      font-size: rem($base__font-size * 1.3);
+      vertical-align: middle;
+      width: 50%;
+
+      @include media-tablet-and-up {
+        display: none;
+      }
+
+      .#{$results-row-removed-from-package} & {
+        animation: $text-animation-removed-from-package;
+      }
+
+      .#{$results-row-added-to-package} & {
+        animation: $text-animation-added-to-package;
+      }
+    }
+
+    &__accordion-control {
+      display: inline-block;
+      padding-left: 0;
+      vertical-align: middle;
+
+      @include media-tablet-and-up {
+        display: none;
+      }
+    }
+
+    &__wrapper {
+      margin: 0 auto;
+      width: 100%;
+
+      @include media-tablet-and-up {
+        &::after {
+          // using red/green/blue mixin to extract values from hex-based variable for use in rgba()
+          background: linear-gradient(to right, rgba(red($color__secondary-gray5), green($color__secondary-gray5), blue($color__secondary-gray5), 0) 0%, rgba(red($color__secondary-gray5), green($color__secondary-gray5), blue($color__secondary-gray5), 1) 100%);
+          content: '';
+          display: block;
+          height: 100%;
+          right: 0;
+          position: absolute;
+          top: 0;
+          width: rem($spacing__sm * .5);
+          z-index: 15;
+        }
+
+        &--no-right-border {
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      &--outer {
+        margin-bottom: rem($spacing__md * .75);
+
+        @include media-tablet-and-up {
+          margin-bottom: rem($spacing__md);
+          position: relative;
+        }
+      }
+    }
+
+    &__wrapper_mobile__accordion {
+      display: none;
+    }
+
+    &__add-to-package-button {
+      color: $color__green;
+
+      &--disabled {
+        color: $color__secondary-gray4;
+
+        &:active,
+        &:focus {
+          + .submittal-builder__results__tooltip {
+            display: block;
+          }
+        }
+      }
+    }
+
+    &__secondary-header {
+      display: none;
+
+      @include media-tablet-and-up {
+        display: block;
+        height: rem($spacing__sm);
+        position: static;
+      }
+    }
+
+    &__remove-from-package-button {
+      color: $color__red;
+    }
+
+    &__reorder-result-button {
+      color: $color__primary-gray3;
+      cursor: move;
+      margin-left: rem($spacing__sm * .3333);
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: $color__primary-blue;
+      }
+    }
+
+    &__panel-heading {
+      @include media-tablet-and-up {
+        display: none;
+      }
+    }
+
+    &__icon-sign-plus {
+      position: relative;
+      //top: rem($spacing__sm * -.3333);
+
+      &::before {
+        display: none;
+
+        .collapsed & {
+          display: inline-block;
+        }
+      }
+    }
+
+    &__icon-sign-minus {
+      &::before {
+        display: inline-block;
+
+        .collapsed & {
+          display: none;
+        }
+      }
+    }
+
+    &__modal {
+      &__button-group {
+        @include media-tablet-and-up {
+          display: flex;
+          justify-content: center;
+          margin-left: rem($grid__gutter-width * .5);
+          margin-right: rem($grid__gutter-width * .5);
+        }
+
+        .b-button {
+          margin-bottom: rem($grid__gutter-width);
+
+          @include media-tablet-and-up {
+            margin-right: rem($grid__gutter-width);
+          }
+        }
+      }
+
+      &__confirmation-text {
+        color: $color__primary-gray1;
+        font-size: rem($base__font-size * 1.4);
+        font-weight: bold;
+        margin-bottom: rem($spacing__sm * .66666);
+      }
+    }
+
+    @include media-mobile-only {
+
+      &-cell--heading {
+        color: $color__primary-gray1;
+        display: inline-block;
+        flex: 1;
+        font-weight: 700;
+        max-width: $mobile-cell-heading-width;
+        min-width: $mobile-cell-heading-width;
+      }
+
+      &__desktop-filter {
+        display: none;
+      }
+
+
+      &__wrapper_mobile__accordion {
+        color: $color__primary-gray1;
+        display: block;
+        padding: rem($spacing__sm * .5);
+
+      }
+
+      &__wrapper_desktop {
+        display: none;
+      }
+    }
+  }
+}

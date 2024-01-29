@@ -1,0 +1,10 @@
+<sly data-sly-use.dataModel="com.eaton.platform.core.models.DataLayerModel">
+    <script type="text/javascript">
+            window.dataLayer = window.dataLayer || [];
+                
+            let dataLayerJson = ${dataModel.dataLayerJson @ context='unsafe'};
+            for (let key of Object.keys(dataLayerJson)) {
+                window.dataLayer[key] = dataLayerJson[key];
+            }
+    </script>
+</sly>

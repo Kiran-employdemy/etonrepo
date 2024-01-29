@@ -1,0 +1,519 @@
+{
+  "componentDefinitions": [
+    {
+      "componentId": 334,
+      "componentPosition": 1,
+      "relationComponents": [],
+      "partGroup": 0,
+      "showList": 1,
+      "componentTypeId": 44,
+      "componentDisplayName": "Lanyard Type",
+      "partBuildPosition": 1,
+      "useValueForPartNumberBuild": true,
+      "optionItems": [
+        {
+          "valueId": 8354,
+          "value": "W",
+          "valueDisplay": "SST Wire Rope, Nylon Covered",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8355,
+          "value": "WT",
+          "valueDisplay": "SST Wire Rope, Teflon Covered",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8356,
+          "value": "WP",
+          "valueDisplay": "SST Wire Rope, PVC Covered",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        }
+      ]
+    },
+    {
+      "componentId": 380,
+      "componentPosition": 2,
+      "relationComponents": [],
+      "partGroup": 0,
+      "showList": 1,
+      "componentTypeId": 63,
+      "componentDisplayName": "Lanyard Length (in inches)",
+      "partBuildPosition": 2,
+      "useValueForPartNumberBuild": true,
+      "optionItems": [
+        {
+          "valueId": 8357,
+          "value": "6",
+          "valueDisplay": " 3.0",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8358,
+          "value": "7",
+          "valueDisplay": " 3.5",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8359,
+          "value": "8",
+          "valueDisplay": " 4.0",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8360,
+          "value": "9",
+          "valueDisplay": " 4.5",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8361,
+          "value": "10",
+          "valueDisplay": " 5.0",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8362,
+          "value": "11",
+          "valueDisplay": " 5.5",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8363,
+          "value": "12",
+          "valueDisplay": " 6.0",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8364,
+          "value": "13",
+          "valueDisplay": " 6.5",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8365,
+          "value": "14",
+          "valueDisplay": " 7.0",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8366,
+          "value": "15",
+          "valueDisplay": " 7.5",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8367,
+          "value": "16",
+          "valueDisplay": " 8.0",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8368,
+          "value": "17",
+          "valueDisplay": " 8.5",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8369,
+          "value": "18",
+          "valueDisplay": " 9.0",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8370,
+          "value": "19",
+          "valueDisplay": " 9.5",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8371,
+          "value": "20",
+          "valueDisplay": "10.0",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8372,
+          "value": "21",
+          "valueDisplay": "10.5",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8373,
+          "value": "22",
+          "valueDisplay": "11.0",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8374,
+          "value": "23",
+          "valueDisplay": "11.5",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8375,
+          "value": "24",
+          "valueDisplay": "12.0",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        }
+      ]
+    },
+    {
+      "componentId": 381,
+      "componentPosition": 3,
+      "relationComponents": [],
+      "partGroup": 0,
+      "showList": 1,
+      "componentTypeId": 64,
+      "componentDisplayName": "Jackscrew Type",
+      "partBuildPosition": 3,
+      "useValueForPartNumberBuild": true,
+      "optionItems": [
+        {
+          "valueId": 8376,
+          "value": "MH",
+          "valueDisplay": "Male Hex Jackscrew",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8377,
+          "value": "MF",
+          "valueDisplay": "Male Fillister Head Jackscrew",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        }
+      ]
+    },
+    {
+      "componentId": 382,
+      "componentPosition": 4,
+      "relationComponents": [],
+      "partGroup": 0,
+      "showList": 1,
+      "componentTypeId": 2,
+      "componentDisplayName": "Shell Size",
+      "partBuildPosition": 4,
+      "useValueForPartNumberBuild": true,
+      "optionItems": [
+        {
+          "valueId": 8378,
+          "value": "9",
+          "valueDisplay": "A / 9",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8379,
+          "value": "15",
+          "valueDisplay": "B / 15",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8380,
+          "value": "21",
+          "valueDisplay": "C / 21",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8381,
+          "value": "25",
+          "valueDisplay": "D / 25",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8382,
+          "value": "31",
+          "valueDisplay": "E / 31",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8383,
+          "value": "37",
+          "valueDisplay": "F / 37",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8384,
+          "value": "51",
+          "valueDisplay": "G / 51",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        }
+      ]
+    },
+    {
+      "componentId": 383,
+      "componentPosition": 5,
+      "relationComponents": [],
+      "partGroup": 0,
+      "showList": 1,
+      "componentTypeId": 41,
+      "componentDisplayName": "Plating Code",
+      "partBuildPosition": 5,
+      "useValueForPartNumberBuild": true,
+      "optionItems": [
+        {
+          "valueId": 8385,
+          "value": "04",
+          "valueDisplay": "Cadmium Plate,Olive Drab",
+          "groupValue": [],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 8386,
+          "value": "12",
+          "valueDisplay": "Electroless Nickel",
+          "groupValue": [],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 8387,
+          "value": "34",
+          "valueDisplay": "Cadmium Plate,Olive Drab,Over Electroless Nickel",
+          "groupValue": [],
+          "specialPrefix": "-",
+          "partId": 0
+        }
+      ]
+    }
+  ],
+  "productRightHandMetadataDefinitions": [
+    {
+      "label": "A &#177 .05 DIM",
+      "componentId": 382,
+      "componentTypeId": 187,
+      "displayLevel": 1,
+      "isDimension": 1,
+      "metaDataValues": [
+        {
+          "dimensionValue": "9",
+          "value": ".565"
+        },
+        {
+          "dimensionValue": "15",
+          "value": ".715"
+        },
+        {
+          "dimensionValue": "21",
+          "value": ".865"
+        },
+        {
+          "dimensionValue": "25",
+          "value": ".965"
+        },
+        {
+          "dimensionValue": "31",
+          "value": "1.115"
+        },
+        {
+          "dimensionValue": "37",
+          "value": "1.265"
+        },
+        {
+          "dimensionValue": "51",
+          "value": "1.215"
+        }
+      ]
+    },
+    {
+      "label": "Plating Code",
+      "componentId": 383,
+      "componentTypeId": 41,
+      "displayLevel": 1,
+      "isDimension": 1,
+      "metaDataValues": [
+        {
+          "dimensionValue": "04",
+          "value": "04"
+        },
+        {
+          "dimensionValue": "12",
+          "value": "12"
+        },
+        {
+          "dimensionValue": "34",
+          "value": "34"
+        }
+      ]
+    },
+    {
+      "label": "Finish",
+      "componentId": 383,
+      "componentTypeId": 4,
+      "displayLevel": 1,
+      "isDimension": 1,
+      "metaDataValues": [
+        {
+          "dimensionValue": "04",
+          "value": "Cadmium Plate, Olive Drab"
+        },
+        {
+          "dimensionValue": "12",
+          "value": "Electroless Nickel"
+        },
+        {
+          "dimensionValue": "34",
+          "value": "Cadmium Plate, Olive Drab, <BR>Over Electroless Nickel"
+        }
+      ]
+    }
+  ],
+  "productLeftHandMetadataDefinitions": [
+    {
+      "componentTypeId": 44,
+      "label": "Lanyard Type",
+      "componentId": 334,
+      "suffixDescription": "",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 0,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": false,
+      "displayLevel": 0
+    },
+    {
+      "componentTypeId": 63,
+      "label": "Lanyard Length (in inches)",
+      "componentId": 380,
+      "suffixDescription": "",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 0,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": false,
+      "displayLevel": 0
+    },
+    {
+      "componentTypeId": 64,
+      "label": "Jackscrew Type",
+      "componentId": 381,
+      "suffixDescription": "",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 0,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": false,
+      "displayLevel": 0
+    },
+    {
+      "componentTypeId": 2,
+      "label": "Shell Size",
+      "componentId": 382,
+      "suffixDescription": "",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 0,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": true,
+      "displayLevel": 1
+    },
+    {
+      "componentTypeId": 73,
+      "label": "Plating Value",
+      "componentId": 383,
+      "suffixDescription": "",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 0,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": false,
+      "displayLevel": 0
+    },
+    {
+      "componentTypeId": 44,
+      "label": "Lanyard Type",
+      "componentId": 334,
+      "suffixDescription": "",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 1,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": true,
+      "displayLevel": 1
+    },
+    {
+      "componentTypeId": 154,
+      "label": "Lanyard Length",
+      "componentId": 380,
+      "suffixDescription": "Inches",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 1,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": true,
+      "displayLevel": 1
+    },
+    {
+      "componentTypeId": 61,
+      "label": "Jackscrew Option",
+      "componentId": 381,
+      "suffixDescription": "",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 1,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": true,
+      "displayLevel": 1
+    }
+  ],
+  "partNotes": [
+    {
+      "messageCode": 1,
+      "message": "Assembly identified per MIL-STD-130."
+    }
+  ],
+  "errorConditions": []
+}

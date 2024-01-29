@@ -1,0 +1,184 @@
+{
+    "submittalintro1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittalintro"
+    },
+    "submittalintro2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittalintro",
+      "title": "",
+      "description": "",
+      "instructionsTitle": "",
+      "instructions": "",
+      "filtersButtonText": "",
+      "packageButtonText": "",
+      "downloadButtonText": "",
+      "viewSubmittalBuilderButtonText": "",
+      "editSubmittalBuilderButtonText": "",
+      "finishEditsButtonText": ""
+    },
+    "submittalintro3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittalintro",
+      "title": "Example",
+      "description": "Some stuff",
+      "instructionsTitle": "Another title",
+      "instructions": "A lot longer text than the other properties for testing purposes.",
+      "filtersButtonText": "Button A",
+      "packageButtonText": "Button B",
+      "downloadButtonText": "Button C",
+      "viewSubmittalBuilderButtonText": "View Button Text",
+      "editSubmittalBuilderButtonText": "Edit Button Text",
+      "finishEditsButtonText": "Finish Button Text"
+    },
+    "submittalintro4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittalintro",
+      "title": "Example",
+      "description": "",
+      "instructionsTitle": "",
+      "filtersButtonText": "Button A",
+      "downloadButtonText": "",
+      "viewSubmittalBuilderButtonText": "",
+      "editSubmittalBuilderButtonText": "",
+      "finishEditsButtonText": ""
+    },
+    "submittaldownload1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittaldownload"
+    },
+    "submittaldownload2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittaldownload",
+      "title": "",
+      "preferredOptionText": "",
+      "sendEmailText": "",
+      "expirationText": "",
+      "fileSizeLimitText": "",
+      "thankYouDownloadMessage": "",
+      "thankYouEmailMessage": "",
+      "invalidEmailMessage": "",
+      "eatonCommunicationsMessage": "",
+      "eatonCommunicationsPage": "",
+      "assetRequiredMessage": "",
+      "maxSizeExceededMessage": "",
+      "fileNamePrefix": "",
+      "emailSubject":"",
+      "emailTemplatePath":"",
+      "senderEmailAddress":"",
+      "senderName":"",
+      "emailErrorPage": "",
+      "emailNewsLetterLink": "",
+      "emailSubmittalBuilderToolLink": "",
+      "emailContactUsLink": "",
+      "emailWhereToBuyLink": ""
+    },
+    "submittaldownload3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittaldownload",
+      "title": "Example",
+      "preferredOptionText": "Test description.",
+      "sendEmailText": "Send Email",
+      "expirationText": "Link expires 24 hours after creation.",
+      "fileSizeLimitText": "100",
+      "thankYouDownloadMessage": "Thank you, your download has started.",
+      "thankYouEmailMessage": "Thank you, your email has been sent.",
+      "invalidEmailMessage": "Please enter a valid email.",
+      "eatonCommunicationsMessage": "Sample Communication Message",
+      "eatonCommunicationsPage": "Sample Communication Page",
+      "assetRequiredMessage": "Invalid number of assets. Minimum one valid asset is required.",
+      "maxSizeExceededMessage": "Max size exceeded.",
+      "fileNamePrefix": "SubmittalBuilder",
+      "emailSubject":"Eaton Asset Download",
+      "emailTemplatePath":"samplepath",
+      "senderEmailAddress":"xyz@sample.com",
+      "senderName":"Unknown",
+      "emailErrorPage": "/content/eaton/language-masters/en-us/404",
+      "emailNewsLetterLink": "http://www.google.com",
+      "emailSubmittalBuilderToolLink": "http://www.eaton.com",
+      "emailContactUsLink": "http://www.google.com",
+      "emailWhereToBuyLink": "http://www.google.com"
+    },
+    "submittaldownload4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittaldownload",
+      "title": "Example",
+      "preferredOptionText": "",
+      "fileSizeLimitText": "",
+      "eatonCommunicationsMessage": "",
+      "eatonCommunicationsPage": "",
+      "fileNamePrefix": "",
+      "emailErrorPage": "",
+      "emailNewsLetterLink": "",
+      "emailSubmittalBuilderToolLink": "",
+      "emailContactUsLink": "",
+      "emailWhereToBuyLink": ""
+    },
+    "submittalfilters1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittaldownload"
+    },
+    "submittalfilters2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittaldownload",
+      "title": "",
+      "mobileDialogTitle": ""
+    },
+    "submittalfilters3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittaldownload",
+      "title": "Example",
+      "mobileDialogTitle": "example mobile dialog title"
+    },
+    "submittalfilters4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittaldownload",
+      "title": "Example"
+    },
+    "submittalbuilder1": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittalbuilder"
+    },
+    "submittalbuilder2": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittalbuilder",
+      "title": "",
+      "description": "",
+      "submittalScope": {
+        "jcr:primaryType": "nt:unstructured"
+      }
+    },
+    "submittalbuilder3": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittalbuilder",
+      "title": "Example",
+      "description": "",
+      "submittalScope": {
+        "jcr:primaryType": "nt:unstructured",
+        "1": {
+          "jcr:primaryType": "nt:unstructured",
+          "cq:tags": ""
+        }
+      }
+    } ,
+    "submittalbuilder4": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "eaton/components/content/submittalbuilder",
+      "title": "Example",
+      "description": "",
+      "submittalScope": {
+        "jcr:primaryType": "nt:unstructured",
+        "1": {
+          "jcr:primaryType": "nt:unstructured",
+          "cq:tags": "/content/eaton/example/page"
+        },
+        "2": {
+          "jcr:primaryType": "nt:unstructured",
+          "cq:tags": ""
+        },
+        "3": {
+          "jcr:primaryType": "nt:unstructured"
+        }
+      }
+    }
+}

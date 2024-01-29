@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.search.find.replace.text.impl.FindReplaceBackupTextServiceImpl">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="service.description" type="String" value=" Find Replace Backup Text Service"/>
+  <property name="process.label" type="String" value=" FindReplaceBackupTextServiceImpl"/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.search.find.replace.text.FindReplaceBackupTextService"/>
+  </service>
+  <reference name="backupService" interface="com.eaton.platform.core.services.search.find.replace.FindReplaceBackupService" field="backupService"/>
+  <implementation class="com.eaton.platform.core.services.search.find.replace.text.impl.FindReplaceBackupTextServiceImpl"/>
+</scr:component>

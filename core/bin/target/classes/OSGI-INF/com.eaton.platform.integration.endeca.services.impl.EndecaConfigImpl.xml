@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.endeca.services.impl.EndecaConfigImpl" immediate="true" activate="activate" deactivate="deactivate" modified="activate">
+  <property name="eatoncontenthub.application.name" type="String" value=""/>
+  <property name="webservice.stub.dir" type="String" value=""/>
+  <property name="news.tab.id" type="String" value=""/>
+  <property name="process.label" type="String" value=" EndecaConfigImpl"/>
+  <property name="service.description" type="String" value=" Endeca Config"/>
+  <property name="crossreference.application.name" type="String" value=""/>
+  <property name="webservice.stub.enabled" type="Boolean" value="false"/>
+  <property name="productfamily.sitemap.application.name" type="String" value=""/>
+  <property name="subcategory.application.name" type="String" value=""/>
+  <property name="services.tab.id" type="String" value=""/>
+  <property name="resources.tab.id" type="String" value=""/>
+  <property name="endeca.url.pdh1andpdh2" type="String" value=""/>
+  <property name="clutchselector.application.name" type="String" value=""/>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="torqueselector.application.name" type="String" value=""/>
+  <property name="esp.service.url" type="String" value=""/>
+  <property name="productfamily.application.name" type="String" value=""/>
+  <property name="productfamily.activefacet.id" type="String" value=""/>
+  <property name="endecaUserAgentValue" type="String" value=""/>
+  <property name="sku.application.name" type="String" value=""/>
+  <property name="skusitemap.application.name" type="String" value=""/>
+  <property name="comparison.application.name" type="String" value=""/>
+  <property name="sitesearch.application.name" type="String" value=""/>
+  <property name="product.compatibility.app.name" type="String" value="eatonledinfos"/>
+  <property name="productfamily.sitemap.numberOfRecordsToReturn" type="String" value=""/>
+  <property name="facet.value.learnpage" type="String" value=""/>
+  <property name="skusitemap.numberOfRecordsToReturn" type="String" value=""/>
+  <property name="vgselector.endeca.url" type="String" value=""/>
+  <property name="esp.service.application.key" type="String" value=""/>
+  <property name="submitbuilder.application.name" type="String" value=""/>
+  <property name="products.tab.id" type="String" value=""/>
+  <service>
+    <provide interface="com.eaton.platform.integration.endeca.services.EndecaConfig"/>
+  </service>
+  <implementation class="com.eaton.platform.integration.endeca.services.impl.EndecaConfigImpl"/>
+</scr:component>

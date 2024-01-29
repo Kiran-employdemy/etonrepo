@@ -1,0 +1,51 @@
+<template data-sly-template.howTobuyRibbon>
+    <sly data-sly-use.data="com.eaton.platform.core.models.HowToBuyModel">
+        <sly data-sly-test="${data.howToBuyList}">
+            <div class="eaton-how-to-buy">
+                <div class="container row">
+                    <sly data-sly-list.listData="${data.howToBuyList}">
+
+                        <sly data-sly-test="${listData.hasClearfix == true}">
+                            <div class="clearfix" ></div>
+                        </sly>
+
+                        <div class="col-xs-12 col-md-4 eaton-how-to-buy__element"
+                            data-sly-test=${listData.icon}>
+                            <div class="eaton-how-to-buy__icon">
+                                <img data-src="${listData.icon}" class="lazyload">
+                            </div>
+
+                            <div class="eaton-how-to-buy__text-wrapper">
+                                <sly
+                                    data-sly-test.suffix="${data.externalMappedCurrentPagePath @context='uri',addSelectors=['SKUID',request.requestPathInfo.selectors[0]]}">
+                                </sly>
+                                <a data-sly-test="${!listData.isSuffixEnabled}" href="${listData.link @context='html'}"
+                                    class="b-h5-link-bold"
+                                    title="${listData.title}" target="${listData.openInNewWindow}">
+                                    ${listData.title}
+                                </a>
+                                <a data-sly-test="${listData.isSuffixEnabled && request.requestPathInfo.selectors[0]}"
+                                    href="${listData.link @appendSuffix=suffix,context='uri'}"
+                                    class="b-h5-link-bold"
+                                    title="${listData.title}" target="${listData.openInNewWindow}">
+                                    ${listData.title}
+                                </a>
+                                <a data-sly-test="${listData.isSuffixEnabled && !request.requestPathInfo.selectors[0]}"
+                                    href="${listData.link @appendSuffix=data.externalMappedCurrentPagePath,context='uri'}"
+                                    class="b-h5-link-bold"
+                                    title="${listData.title}" target="${listData.openInNewWindow}">
+                                    ${listData.title}
+                                </a>
+                                <div class="p-body-copy">${listData.dscription @ context='html'}</div>
+                            </div>
+                        </div>
+
+                        <div class="col-xs-12 col-md-4 eaton-how-to-buy__element" data-sly-test="${!listData.icon}">
+                            <div class="b-heading-h4">${listData.title}</div>
+                        </div>
+                    </sly>
+                </div>
+            </div>
+        </sly>
+    </sly>
+</template>

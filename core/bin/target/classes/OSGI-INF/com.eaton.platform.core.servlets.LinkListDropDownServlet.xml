@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.LinkListDropDownServlet" immediate="true">
+  <property name="sling.servlet.resourceTypes" type="String" value="/ecom/content/linklistDropdown"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="eatonConfigService" interface="com.eaton.platform.core.services.EatonConfigService" field="eatonConfigService"/>
+  <implementation class="com.eaton.platform.core.servlets.LinkListDropDownServlet"/>
+</scr:component>

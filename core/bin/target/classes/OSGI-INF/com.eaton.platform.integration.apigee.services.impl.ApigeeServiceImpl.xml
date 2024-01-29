@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.apigee.services.impl.ApigeeServiceImpl" immediate="true" activate="activate" modified="activate">
+  <property name="accessTokenCacheSize" type="Integer" value="5"/>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="maxHostConnections" type="Integer" value="200"/>
+  <property name="process.label" type="String" value=" ApigeeServiceImpl"/>
+  <property name="accessTokenCache" type="String" value=""/>
+  <property name="secret" type="String" value="{String}{a7d0d57b291d8ff9bca2800925480efc67e9b3d571e96451f43c0d78476b21a5b34404f749335c6af4553f28ef112b49}"/>
+  <property name="accessTokenCacheDuration" type="Integer" value="50"/>
+  <property name="responseCacheDuration" type="Integer" value="24"/>
+  <property name="service.description" type="String" value=" ApigeeServiceImpl"/>
+  <property name="freeSampleOrderKey" type="String" value="gVcmvpJHscMtTgQAPUMXNE7p3S410LVt"/>
+  <property name="baseUrl" type="String" value="https://api.eaton.com"/>
+  <property name="responseCacheSize" type="Integer" value="1000"/>
+  <property name="freeSampleOrderSecret" type="String" value="4ROGHVyosIdyJSVj"/>
+  <property name="key" type="String" value="Mz4zUbvcpGelQ3SVyJ3jWi8iTLewMR0w"/>
+  <property name="responseTimeout" type="Integer" value="30"/>
+  <property name="responseCache" type="String" value=""/>
+  <property name="maxConnections" type="Integer" value="200"/>
+  <service>
+    <provide interface="com.eaton.platform.integration.apigee.services.ApigeeService"/>
+  </service>
+  <reference name="cryptoSupport" interface="com.adobe.granite.crypto.CryptoSupport" field="cryptoSupport"/>
+  <reference name="httpFactory" interface="org.apache.http.osgi.services.HttpClientBuilderFactory" field="httpFactory"/>
+  <implementation class="com.eaton.platform.integration.apigee.services.impl.ApigeeServiceImpl"/>
+</scr:component>

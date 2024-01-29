@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    oauth.clientIds.allowed="[cc-europa-desktop_0_1,cc-europa-desktop_1_0,cc-europa-desktop_2_0,cc-europa-desktop_3_0,cc-europa-desktop_4_0,cc-europa-desktop_5_0,cc-europa-desktop_6_0,cc-europa-desktop_7_0,cc-europa-desktop_8_0,cc-europa-desktop_9_0,cc-europa-desktop_10_0,InDesignAem2]"
+    auth.bearer.sync.ims="{Boolean}true"
+    auth.tokenRequestParameter=""
+    oauth.bearer.configid="configid"
+    oauth.jwt.support="{Boolean}false"
+    path="/"
+    service.ranking="{Long}-10"/>

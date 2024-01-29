@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.bullseye.services.config.BullseyeServiceConfig">
+  <OCD id="com.eaton.platform.integration.bullseye.services.config.BullseyeServiceConfig" name="BullseyeServiceImpl" description="">
+    <AD id="doSearchURL" type="String" name="Do Search 2 URL" description="Service URL for Do search API" default=""/>
+    <AD id="doSearchCacheSize" type="Integer" name="Do Search Max Cache Size" description="The maximum amount of responses to cache before invalidating the oldest entries." default="1000"/>
+    <AD id="doSearchCacheDuration" type="Integer" name="Do Search Max Cache Duration" description="Seconds that a cached response will stay valid." default="60"/>
+    <AD id="categoryGroupURL" type="String" name="Category Group URL" description="Service URL for category group API" default=""/>
+    <AD id="categoryGroupCacheSize" type="Integer" name="Category Group Max Cache Size" description="The maximum amount of responses to cache before invalidating the oldest entries." default="1000"/>
+    <AD id="categoryGroupCacheDuration" type="Integer" name="Category Group Max Cache Duration" description="Seconds that a cached response will stay valid." default="60"/>
+    <AD id="categoryURL" type="String" name="Category URL" description="Service URL for category API" default=""/>
+    <AD id="categoryCacheSize" type="Integer" name="Category Max Cache Size" description="The maximum amount of responses to cache before invalidating the oldest entries." default="1000"/>
+    <AD id="categoryCacheDuration" type="Integer" name="Category Max Cache Duration" description="Seconds that a cached response will stay valid." default="60"/>
+    <AD id="countryListURL" type="String" name="Country List URL" description="Service URL for country list API" default=""/>
+    <AD id="countryListCacheSize" type="Integer" name="Country List Max Cache Size" description="The maximum amount of responses to cache before invalidating the oldest entries." default="1000"/>
+    <AD id="countryListCacheDuration" type="Integer" name="Country List Max Cache Duration" description="Seconds that a cached response will stay valid." default="60"/>
+    <AD id="googlePlaceURL" type="String" name="Google Place URL" description="Service URL for google place API" default=""/>
+    <AD id="googlePlaceCacheSize" type="Integer" name="Google Place Max Cache Size" description="The maximum amount of responses to cache before invalidating the oldest entries." default="1000"/>
+    <AD id="googlePlaceCacheDuration" type="Integer" name="Google Place Max Cache Duration" description="Seconds that a cached response will stay valid." default="60"/>
+    <AD id="mapBoxAPIURL" type="String" name="MapBox API URL" description="Service URL for MapBox API" default=""/>
+    <AD id="mapBoxAPICacheSize" type="Integer" name="MapBox API Max Cache Size" description="The maximum amount of responses to cache before invalidating the oldest entries." default="1000"/>
+    <AD id="mapBoxAPICacheDuration" type="Integer" name="MapBox API Max Cache Duration" description="Seconds that a cached response will stay valid." default="60"/>
+    <AD id="maxConnections" type="Integer" name="Max Connections" description="Defines the maximum number of connections allowed overall. This value only applies to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+    <AD id="maxHostConnections" type="Integer" name="Max Host Connections" description="Defines the maximum number of connections allowed per host configuration. These values only apply to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.bullseye.services.impl.BullseyeServiceImpl">
+    <Object ocdref="com.eaton.platform.integration.bullseye.services.config.BullseyeServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

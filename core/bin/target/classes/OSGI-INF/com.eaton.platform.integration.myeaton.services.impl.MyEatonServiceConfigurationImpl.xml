@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.myeaton.services.impl.MyEatonServiceConfigurationImpl" immediate="true" activate="activate" modified="activate">
+  <property name="metadataPath" type="String" value="/jcr:content/metadata"/>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="myEatonPassword" type="String" value="{fa771e1a37f7991485059fa6934ce8066e3c8aa7547c1b3aa998b3450d55435c}"/>
+  <property name="maxHostConnections" type="Integer" value="100"/>
+  <property name="fdmDefinitionsPath" type="String" value="/jcr:content/renditions/fdm-json/jcr:content/definitions"/>
+  <property name="myEatonUsername" type="String" value="user"/>
+  <property name="myEatonEndpointRoot" type="String" value="http://portalapps-dev2.tcc.etn.com:8888/portal-access-api"/>
+  <property name="process.label" type="String" value=" MyEatonServiceConfiguration"/>
+  <property name="service.description" type="String" value=" My Eaton - Service Configuration"/>
+  <property name="userRegistrationEndpoint" type="String" value="/user/self-registration"/>
+  <property name="supplierLookupEndpoint" type="String" value="/site-management/v1/sites"/>
+  <property name="updateUserEndpoint" type="String" value="/user-management/v1/users"/>
+  <property name="fieldsEndpoint" type="String" value="/user/self-registration/fields"/>
+  <property name="maxCacheSize" type="Integer" value="1000"/>
+  <property name="cacheDuration" type="Integer" value="60"/>
+  <property name="userLookupEndpoint" type="String" value="/user/username/lookup"/>
+  <property name="maxConnections" type="Integer" value="100"/>
+  <service>
+    <provide interface="com.eaton.platform.integration.myeaton.services.MyEatonServiceConfiguration"/>
+  </service>
+  <implementation class="com.eaton.platform.integration.myeaton.services.impl.MyEatonServiceConfigurationImpl"/>
+</scr:component>

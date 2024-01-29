@@ -1,0 +1,17 @@
+%font-family-glyphicon {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  display: inline-block;
+  font-family: "<%= fontName %>";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+}
+<% _.each(glyphs, function(glyph) { %>
+%icon-<%= glyph.name %> { content: "\<%= glyph.unicode[0].charCodeAt(0).toString(16).toUpperCase() %>"; }
+<% }); %>

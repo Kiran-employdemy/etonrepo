@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.FilePurgeConfigServiceConfig">
+  <OCD id="com.eaton.platform.core.services.config.FilePurgeConfigServiceConfig" name="File Purge Config Service Configuration" description="Configuration for File Purge Config Service">
+    <AD id="enabled" type="Boolean" name="Enabled" description="Config enabled." default="true"/>
+    <AD id="path" type="String" name="Path" description="CRX repository path." default=""/>
+    <AD id="maxAge" type="Integer" name="Max age" description="Max age value." default="0"/>
+    <AD id="unit" type="String" cardinality="4" name="Unit" description="Temporal unit." default="DAY">
+      <Option label="day" value="DAY"/>
+      <Option label="week" value="WEEK"/>
+      <Option label="month" value="MONTH"/>
+      <Option label="year" value="YEAR"/>
+    </AD>
+  </OCD>
+  <Designate factoryPid="com.eaton.platform.core.services.file.purge.impl.FilePurgeConfigServiceImpl">
+    <Object ocdref="com.eaton.platform.core.services.config.FilePurgeConfigServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

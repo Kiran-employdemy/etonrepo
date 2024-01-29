@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    jcr:title="Site Configuration"
+    height="{Long}650"
+    warnIfModified="{Boolean}false"
+    width="{Long}900"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Site_x0020_Configuration
+                jcr:primaryType="cq:Panel"
+                title="Site Configuration"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+					<disableExcelDatasheet
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Disable Excel Datasheets"
+                            inputValue="true"
+                            name="./disableDatasheet"
+                            type="checkbox"
+                            xtype="selection"/>
+                    <overridepdhdata
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Override PDH Data"
+                        inputValue="true"
+                        name="./overridePDHData"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <enableProductsTab
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enable Products Tab"
+                        inputValue="on"
+                        name="./enableProductsTab"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <enableNewsTab
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enable News Tab"
+                        inputValue="on"
+                        name="./enableNewsTab"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <enableResourcesTab
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enable Resources Tab"
+                        inputValue="on"
+                        name="./enableResourcesTab"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <enableServicesTab
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enable ServicesTab"
+                        inputValue="on"
+                        name="./enableServicesTab"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <unitedStatesDateFormat
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Enable US Date Format"
+                        fieldDescription="Default Date Format is International Standard Date (dd/MM/yyyy). When we enable US Date Format, then Date format will be (MM/dd/yyyy)."
+                        inputValue="true"
+                        name="./unitedStatesDateFormat"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <pagesize
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Page Size"
+                        name="./pageSize"
+                        xtype="numberfield"/>
+                    <facetcount
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Facet Count"
+                        name="./facetCount"
+                        xtype="numberfield"/>
+                    <noOfDays
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Number Of Days"
+                        name="./noOfDays"
+                        xtype="numberfield"/>
+                    <expandedfacetcount
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Expanded Facet Count"
+                        name="./expandedFacetCount"
+                        xtype="numberfield"/>
+                    <facetvaluecount
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Facet Value Count"
+                        name="./facetValueCount"
+                        xtype="numberfield"/>
+                    <dirType
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Site Language Direction"
+                            name="./dirType"
+                            type="select"
+                            value="ltr"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <ltr
+                                    jcr:primaryType="nt:unstructured"
+                                    text="ltr"
+                                    value="ltr"/>
+                            <rtl
+                                    jcr:primaryType="nt:unstructured"
+                                    text="rtl"
+                                    value="rtl"/>
+
+                            <auto
+                                    jcr:primaryType="nt:unstructured"
+                                    text="auto"
+                                    value="auto"/>
+                        </options>
+                    </dirType>
+
+                    <defaultsitesearchsortorder
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Default Site Search Sort Order"
+                        name="./defaultSiteSearchSortOrder"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <relevance
+                                jcr:primaryType="nt:unstructured"
+                                text="Relevance"
+                                value="relevance"/>
+                            <atoz
+                                jcr:primaryType="nt:unstructured"
+                                text="Ascending"
+                                value="asc"/>
+                            <ztoa
+                                jcr:primaryType="nt:unstructured"
+                                text="Descending"
+                                value="desc"/>
+                        </options>
+                    </defaultsitesearchsortorder>
+                    <defaultproductfamilysortorder
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Default Product Family Sort Order"
+                        name="./defaultProductFamilySortOrder"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <relevance
+                                jcr:primaryType="nt:unstructured"
+                                text="Relevance"
+                                value="rel"/>
+                            <atoz
+                                jcr:primaryType="nt:unstructured"
+                                text="Ascending"
+                                value="asc"/>
+                            <ztoa
+                                jcr:primaryType="nt:unstructured"
+                                text="Descending"
+                                value="desc"/>
+                        </options>
+                    </defaultproductfamilysortorder>
+                    <defaultcategorywithcardssortorder
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Default Category with Cards Sort Order"
+                        name="./defaultCategoryWithCardsSortOrder"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <relevance
+                                jcr:primaryType="nt:unstructured"
+                                text="Relevance"
+                                value="rel"/>
+                            <atoz
+                                jcr:primaryType="nt:unstructured"
+                                text="Ascending"
+                                value="asc"/>
+                            <ztoa
+                                jcr:primaryType="nt:unstructured"
+                                text="Descending"
+                                value="desc"/>
+                        </options>
+                    </defaultcategorywithcardssortorder>
+                    <globalattributegroupname
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Global Attribute Group Name"
+                        name="./globalAttributeGroupName"
+                        width="{Long}300"
+                        xtype="textfield"/>
+                    <globalattributevalues
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Global Attribute Values"
+                        name="./globalAttributeList"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <attributevalue
+                                    jcr:primaryType="cq:Widget"
+                                    dName="attributevalue"
+                                    fieldLabel="Attribute Value"
+                                    options="/eaton/content/GlobalAt.json"
+                                    optionsRoot="root"
+                                    type="select"
+                                    xtype="selection"/>
+                            </items>
+                        </fieldConfig>
+                    </globalattributevalues>
+                    <maxcountforupsell
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Max count for Up-Sell"
+                        name="./countUpSell"
+                        xtype="numberfield"/>
+                    <maxcountforimagesingallery
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Max count for Images in Gallery"
+                        name="./countImages"
+                        xtype="numberfield"/>
+                    <carouselmaximumnumberofitems
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Carousel Maximum Number of Items"
+                        name="./countCorouselItem"
+                        xtype="numberfield"/>
+                    <skufallbackimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="SKU Fallback Image"
+                        name="./skuFallBackImage"
+                        xtype="customPathField"/>
+                    <defaultlink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Default link for Primary CTA Button and How to Buy Option for Orphan SKUs"
+                        name="./defaultLinkCTA"
+                        xtype="pathfield"/>
+                    <defaultLinkHTB
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Default link for How to Buy Option for Orphan SKUs"
+                        name="./defaultLinkHTB"
+                        xtype="pathfield"/>
+                    <productfamilyseometa
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Product Family Pages SEO Meta"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <overviewdesc
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Description"
+                                    name="./pfOverviewDesc"
+                                    xtype="textfield"/>
+                            <overviewtitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Overview Title"
+                                name="./pfOverviewTitle"
+                                xtype="textfield"/>
+                            <modelstitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Models Title"
+                                name="./pfModelsTitle"
+                                xtype="textfield"/>
+                            <resourcestitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Resources Title"
+                                name="./pfResourcesTitle"
+                                xtype="textfield"/>
+                        </items>
+                    </productfamilyseometa>
+                    <skupageseometa
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="SKU Pages SEO Meta"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <overviewdesc
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Description"
+                                    name="./skuOverviewDesc"
+                                    xtype="textfield"/>
+                            <overviewtitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Overview Title"
+                                name="./skuOverviewTitle"
+                                xtype="textfield"/>
+                            <specificationstitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Specifications Title"
+                                name="./skuSpecificationsTitle"
+                                xtype="textfield"/>
+                            <resourcestitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Resources Title"
+                                name="./skuResourcesTitle"
+                                xtype="textfield"/>
+                        </items>
+                    </skupageseometa>
+                    <siteVerificationCodeList
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Site Verification Code List"
+                            name="./siteVerificationCodeList"
+                            xtype="multifield">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                border="{Boolean}true"
+                                hideLabel="{Boolean}true"
+                                layout="form"
+                                padding="10px"
+                                width="1000"
+                                xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <name
+                                        jcr:primaryType="cq:Widget"
+                                        dName="name"
+                                        fieldLabel="Meta Tag Name"
+                                        width="{Long}300"
+                                        xtype="textfield"/>
+                                <value
+                                        jcr:primaryType="cq:Widget"
+                                        dName="value"
+                                        fieldLabel="Site Verification Code"
+                                        width="{Long}300"
+                                        xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </siteVerificationCodeList>
+                    <supportcountrylist
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Support Info Country List"
+                        name="./suppCountryList"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <text
+                                    jcr:primaryType="cq:Widget"
+                                    dName="text"
+                                    fieldLabel="Country Name"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <value
+                                    jcr:primaryType="cq:Widget"
+                                    dName="value"
+                                    fieldLabel="Country Code"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </supportcountrylist>
+                    <howtoBuyTitleList
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="How to buy Values"
+                        name="./howtoBuyTitleList"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <title
+                                    jcr:primaryType="cq:Widget"
+                                    dName="text"
+                                    fieldDescription="How to Buy Label that populated in PIM drop down"
+                                    fieldLabel="How to Buy Label"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <value
+                                    jcr:primaryType="cq:Widget"
+                                    allowBlank="false"
+                                    dName="value"
+                                    fieldLabel="How to Buy Title"
+                                    required="{Boolean}true"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <how-to-buy-icon
+                                    jcr:primaryType="cq:Widget"
+                                    dName="howtoBuyIcon"
+                                    fieldLabel="Icon"
+                                    rootPath="/content/dam"
+                                    xtype="customPathField"/>
+                                <how-to-buy-dropdown-icon
+                                    jcr:primaryType="cq:Widget"
+                                    dName="howtoBuyDropdownIcon"
+                                    fieldLabel="Icon on Products Tab"
+                                    type="select"
+                                    xtype="selection">
+                                    <options jcr:primaryType="cq:WidgetCollection">
+                                        <default
+                                            jcr:primaryType="nt:unstructured"
+                                            text="(Please Select)"
+                                            value=""/>
+                                        <badge
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Badge"
+                                            value="badge"/>
+                                        <book
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Book"
+                                            value="book"/>
+                                        <bulb
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Bulb"
+                                            value="bulb"/>
+                                        <calendar
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Calendar"
+                                            value="calendar"/>
+                                        <checklist
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Checklist"
+                                            value="checklist"/>
+                                        <chevron-up
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Chevron Up"
+                                            value="chevron-up"/>
+                                        <chevron-down
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Chevron Down"
+                                            value="chevron-down"/>
+                                        <chevron-left
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Chevron Left"
+                                            value="chevron-left"/>
+                                        <chevron-right
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Chevron Left"
+                                            value="chevron-left"/>
+                                        <close
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Close"
+                                            value="close"/>
+                                        <doc-badge
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Doc Badge"
+                                            value="doc-badge"/>
+                                        <doc-download
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Doc Download"
+                                            value="doc-download"/>
+                                        <doc-text
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Doc Text"
+                                            value="doc-text"/>
+                                        <download
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Download"
+                                            value="download"/>
+                                        <globe
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Globe"
+                                            value="globe"/>
+                                        <hamburger
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Hamburger"
+                                            value="hamburger"/>
+                                        <headset
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Headset"
+                                            value="headset"/>
+                                        <help
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Help"
+                                            value="help"/>
+                                        <info
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Info"
+                                            value="info"/>
+                                        <link-external
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Info"
+                                            value="link-external"/>
+                                        <list-checkmark
+                                            jcr:primaryType="nt:unstructured"
+                                            text="List Checkmark"
+                                            value="list-checkmark"/>
+                                        <list-items
+                                            jcr:primaryType="nt:unstructured"
+                                            text="List Items"
+                                            value="list-items"/>
+                                        <livechat
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Livechat"
+                                            value="livechat"/>
+                                        <marker
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Marker"
+                                            value="marker"/>
+                                        <phone
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Phone"
+                                            value="phone"/>
+                                        <plane
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Plane"
+                                            value="plane"/>
+                                        <player-pause
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Player Pause"
+                                            value="player-pause"/>
+                                        <player-play
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Player Play"
+                                            value="player-play"/>
+                                        <quote-dark
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Quote Dark"
+                                            value="quote-dark"/>
+                                        <quote-light
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Quote Light"
+                                            value="quote-light"/>
+                                        <search-minus
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Search Minus"
+                                            value="search-minus"/>
+                                        <search-plus
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Search Plus"
+                                            value="search-plus"/>
+                                        <search
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Search"
+                                            value="search"/>
+                                        <share
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Share"
+                                            value="share"/>
+                                        <shopping-cart
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Shopping Cart"
+                                            value="shopping-cart"/>
+                                        <sign-minus
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Sign Minus"
+                                            value="sign-minus"/>
+                                        <sign-plus
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Sign Plus"
+                                            value="sign-plus"/>
+                                        <tiles
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Tiles"
+                                            value="tiles"/>
+                                        <tree
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Tree"
+                                            value="tree"/>
+                                        <user
+                                            jcr:primaryType="nt:unstructured"
+                                            text="User"
+                                            value="user"/>
+                                    </options>
+                                </how-to-buy-dropdown-icon>
+                            </items>
+                        </fieldConfig>
+                    </howtoBuyTitleList>
+                    <resourceGroup
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Resource List Configuration for SKU Page"
+                        hideLabel="{Boolean}false"
+                        name="./resourceGroup"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="nt:unstructured"
+                            xtype="devprofile"/>
+                    </resourceGroup>
+                    <searchResultsURL
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="URL for Search Results Page"
+                        name="./searchResultsURL"
+                        xtype="pathfield"/>
+                    <crossRefSearchResultsURL
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="URL for Cross Reference Search Results Page"
+                        name="./crossRefSearchResultsURL"
+                        xtype="pathfield"/>
+                    <skuPageURL
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="URL for SKU Page"
+                        name="./skuPageURL"
+                        xtype="pathfield"/>
+                    <cartUrl
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="URL for Shopping Cart"
+                            name="./cartUrl"
+                            rootPath="/content/eaton"
+                            xtype="pathfield"/>
+                    <siteSearchFacetGroup
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Site Search Facet Groups"
+                        name="./siteSearchFacetGroup"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <facetGroups
+									allowBlank="false"
+                                    jcr:primaryType="cq:Widget"
+                                    dName="siteSearchFacetGroups"
+                                    fieldLabel="Facet Groups"
+                                    type="select"
+                                    xtype="selection">
+                                    <options jcr:primaryType="cq:WidgetCollection">
+                                        <content-type
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Content_Type"
+                                            value="content-type"/>
+                                        <eaton-brand_product-name
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Sub_Brand"
+                                            value="eaton-brand_product-name"/>
+                                        <eaton-brand_product-name
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Category Name"
+                                            value="Category_Name"/>
+                                        <product-attributes_topology
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Topology"
+                                            value="product-attributes_topology"/>
+                                        <product-attributes_power-rating
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Power_Rating"
+                                            value="product-attributes_power-rating"/>
+                                        <product-attributes_application
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Application"
+                                            value="product-attributes_application"/>
+                                        <product-attributes_form-factor
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Form_Factor"
+                                            value="product-attributes_form-factor"/>
+                                        <product-attributes_features
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Features"
+                                            value="product-attributes_features"/>
+                                        <product-attributes_rackmount-function
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Rackmount Function"
+                                            value="product-attributes_rackmount-function"/>
+                                        <product-attributes_input-power
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Input Power"
+                                            value="product-attributes_input-power"/>
+                                        <product-attributes_input-connection
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Input Connection"
+                                            value="product-attributes_input-connection"/>
+                                        <product-attributes_floor-standing-monitoring
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Floor standing monitoring"
+                                            value="product-attributes_floor-standing-monitoring"/>
+                                        <resources_marketing-resources
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Marketing Resources"
+                                            value="resources_marketing-resources"/>
+                                        <resources_technical-resources
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Technical Resources"
+                                            value="resources_technical-resources"/>
+                                        <product-attributes_certifications
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Certifications"
+                                                value="product-attributes_certifications"/>
+                                        <eaton-secure_attributes
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Eaton Secure"
+                                                value="eaton-secure_attributes"/>
+                                    </options>
+                                </facetGroups>
+                                <showAsGrid
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Show as Grid"
+                                        inputValue="true"
+                                        dName="showAsGrid"
+                                        xtype="checkbox"/>
+                                <facetSearchEnabled
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Facet Search Enabled"
+                                        inputValue="true"
+                                        dName="facetSearchEnabled"
+                                        xtype="checkbox"/>
+                                <singleFacetEnabled
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Single Facet Enabled"
+                                        inputValue="true"
+                                        dName="singleFacetEnabled"
+                                        xtype="checkbox"/>
+                            </items>
+                        </fieldConfig>
+                    </siteSearchFacetGroup>
+                    <content-hub-default-icon-path
+                            jcr:primaryType="cq:Widget"
+                            name="./contenthubDefaultIcon"
+                            fieldLabel="Select Content Hub default icon path"
+                            rootPath="/content/dam"
+                            xtype="customPathField"/>
+					<favicon-icon
+							jcr:primaryType="cq:Widget"
+							name="./faviconIcon"
+							fieldLabel="Favicon icon Path"
+                            rootPath="/content/dam"
+							xtype="customPathField"/>
+                    <downloadmaxsizelimit
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Max Allowed Download Package Size"
+                            fieldDescription="Max Allowed Download zip file Size in bytes"
+                            name="./bulkDownloadPackageSize"
+                            xtype="numberfield"/>
+                    <cacheduration
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Bulk downloaded files- cache duration"
+                            fieldDescription="Seconds that a downloaded files will be cached"
+                            name="./bulkDownloadCacheDuration"
+                            xtype="numberfield"/>
+                    <companyname
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Company Name"
+                            fieldDescription="Used as a prefix for the bulkdownload zip file name "
+                            name="./companyName"
+                            xtype="textfield"/>
+                    <seoScriptPath
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="SEO Script Path"
+                            fieldDescription="Path to additional SEO script. No additional SEO script is added when left blank."
+                            name="./seoScriptPath"
+                            rootPath="/content/dam"
+                            xtype="customPathField"/>
+                    <whiteListForNsRoles
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Whitelist for nsRoles"
+                            name="./whiteListForNsRoles"
+                            tagsBasePath="/content/cq:tags/eaton-secure"
+                            xtype="tags"/>
+                </items>
+            </Site_x0020_Configuration>
+        </items>
+    </items>
+</jcr:root>

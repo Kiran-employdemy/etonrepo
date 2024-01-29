@@ -1,0 +1,29 @@
+<sly data-sly-use.results="com.eaton.platform.core.models.submittalbuilder.SubmittalResults">
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Submittal Results</div>
+</sly>
+
+<div class="submittal-builder__results ${ !wcmmode.edit ? 'col-md-9' : '' }"
+     data-zip-size-limit="${results.sizelimit}"
+     data-search-results-title="${results.searchResultsTitle}"
+     data-package-view-title="${results.packageViewTitle}"
+     data-description="${results.description}"
+     data-cannot-add-more-files-message="${results.cannotAddMoreFilesMessage}"
+     data-load-more-label="${results.loadMoreLabel}"
+     data-page-size="${results.pageSize}"
+     data-add-all-text="${results.addAllText}"
+     data-remove-all-text="${results.removeAllText}"
+     data-sort-by-text="${'Sort By' @ i18n}"
+     data-preview-text="${'Preview' @ i18n}"
+     data-file-size-text="${'File Size' @ i18n}"
+     data-is-edit-mode="${wcmmode.edit ? 'true' : ''}"
+     data-close-text="${'Close' @ i18n}"
+     data-all-items-removed-text="${results.allItemsRemovedText}"
+     data-item-has-been-removed-text="${results.itemHasBeenRemovedText}"
+     data-file-deletion-confirmation-title-text="${results.fileDeletionConfirmation}"
+     data-file-deletion-confirmation-text="${results.fileDeletionConfirmationText}"
+     data-yes-button-text="${'Yes' @ i18n}"
+     data-no-button-text="${'No' @ i18n}"
+     data-next-button-text="${'Next column' @i18n}"
+     data-previous-button-text="${'Previous column' @i18n}"></div>

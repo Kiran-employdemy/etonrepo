@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.PublishOnRolloutLiveActionFactory" immediate="true" activate="init" modified="init">
+  <property name="LIVE.COPY.LIST" type="String">/us/
+/br/
+/mx/
+/sg/
+/cn/
+/in/</property>
+  <property name="liveActionName" type="String" value="publishOnRolloutLiveAction"/>
+  <service>
+    <provide interface="com.day.cq.wcm.msm.api.LiveActionFactory"/>
+  </service>
+  <reference name="replicator" interface="com.day.cq.replication.Replicator" field="replicator"/>
+  <implementation class="com.eaton.platform.core.services.impl.PublishOnRolloutLiveActionFactory"/>
+</scr:component>

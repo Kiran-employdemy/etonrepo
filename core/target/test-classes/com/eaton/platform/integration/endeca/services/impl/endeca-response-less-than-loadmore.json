@@ -1,0 +1,607 @@
+{
+  "response" : {
+    "status" : "Success",
+    "statusDetails" : {
+      "messages" : [ "N=0 Nr=AND(OR(P_dc_format:application/vnd.openxmlformats-officedocument.wordprocessingml.document,P_dc_format:image/png,P_dc_format:image/jpeg,P_dc_format:image/gif,P_dc_format:image/tiff,P_dc_format:application/pdf,P_dc_format:application/vnd.ms-powerpoint,P_dc_format:application/vnd.ms-excel,P_dc_format:application/zip,P_dc_format:text/html,P_dc_format:application/postscript,P_dc_format:application/eps,P_dc_format:application/x-eps,P_dc_format:image/eps,P_dc_format:image/x-eps,P_dc_format:application/msword,P_dc_format:application/vnd.openxmlformats-officedocument.presentationml.presentation,P_dc_format:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,P_dc_format:application/vnd.openxmlformats-officedocument.wordprocessingml.document,P_dc_format:application/octet-stream,P_dc_format:application/vnd.ms-excel.sheet.macroenabled.12,P_dc_format:video/mp4,P_dc_format:application/x-7z-compressed,P_dc_format:image/vnd.dwg),NOT(OR(P_Page_Priority:Exclude from search,P_Page_Priority:exclude-from-search)))" ]
+    },
+    "didYouMean" : null,
+    "binning" : {
+      "binningSet" : [ {
+        "label" : "content-type",
+        "bsId" : "eaton:content-type",
+        "bin" : [ {
+          "label" : "product",
+          "ndocs" : 9,
+          "value" : "1316679294"
+        }, {
+          "label" : "resources",
+          "ndocs" : 36253,
+          "value" : "968989543"
+        }, {
+          "label" : "services",
+          "ndocs" : 6,
+          "value" : "850411755"
+        } ]
+      }, {
+        "label" : "eaton-secure_attributes",
+        "bsId" : "eaton:eaton-secure_attributes",
+        "bin" : [ {
+          "label" : "secure-only",
+          "ndocs" : 112,
+          "value" : "3160183509"
+        } ]
+      }, {
+        "label" : "resources_marketing-resources",
+        "bsId" : "eaton:resources_marketing-resources",
+        "bin" : [ {
+          "label" : "article",
+          "ndocs" : 0,
+          "value" : "3959354019"
+        }, {
+          "label" : "brochures",
+          "ndocs" : 4451,
+          "value" : "1691271030"
+        }, {
+          "label" : "catalogs",
+          "ndocs" : 3028,
+          "value" : "2320549560"
+        }, {
+          "label" : "competitive-comparisons",
+          "ndocs" : 4,
+          "value" : "3032244288"
+        }, {
+          "label" : "cross-references",
+          "ndocs" : 35,
+          "value" : "1484772919"
+        }, {
+          "label" : "digipacks",
+          "ndocs" : 1,
+          "value" : "1260392343"
+        }, {
+          "label" : "faqs",
+          "ndocs" : 65,
+          "value" : "192772024"
+        }, {
+          "label" : "images",
+          "ndocs" : 2,
+          "value" : "7662153"
+        }, {
+          "label" : "infographics-listicles",
+          "ndocs" : 108,
+          "value" : "3614998822"
+        }, {
+          "label" : "presentations",
+          "ndocs" : 53,
+          "value" : "438947172"
+        }, {
+          "label" : "price-lists",
+          "ndocs" : 29,
+          "value" : "2489080375"
+        }, {
+          "label" : "sales-notes",
+          "ndocs" : 194,
+          "value" : "905849954"
+        }, {
+          "label" : "selling-policy-and-t&amp;cs",
+          "ndocs" : 11,
+          "value" : "4289707947"
+        }, {
+          "label" : "success-stories",
+          "ndocs" : 746,
+          "value" : "1234994799"
+        }, {
+          "label" : "videos",
+          "ndocs" : 3,
+          "value" : "2626969717"
+        }, {
+          "label" : "white-papers",
+          "ndocs" : 411,
+          "value" : "1401044377"
+        } ]
+      }, {
+        "label" : "resources_technical-resources",
+        "bsId" : "eaton:resources_technical-resources",
+        "bin" : [ {
+          "label" : "3d-models",
+          "ndocs" : 422,
+          "value" : "2878507570"
+        }, {
+          "label" : "application-notes",
+          "ndocs" : 486,
+          "value" : "776779119"
+        }, {
+          "label" : "building-information-models",
+          "ndocs" : 121,
+          "value" : "155603299"
+        }, {
+          "label" : "calculator-&amp;-specification-tools",
+          "ndocs" : 68,
+          "value" : "867229388"
+        }, {
+          "label" : "certification-reports",
+          "ndocs" : 2757,
+          "value" : "1029189061"
+        }, {
+          "label" : "design-guides",
+          "ndocs" : 142,
+          "value" : "4263499008"
+        }, {
+          "label" : "drawings",
+          "ndocs" : 2203,
+          "value" : "2264560398"
+        }, {
+          "label" : "end-of-life-notifications",
+          "ndocs" : 135,
+          "value" : "2805475210"
+        }, {
+          "label" : "installation-instructions",
+          "ndocs" : 5956,
+          "value" : "4246550561"
+        }, {
+          "label" : "installation-videos",
+          "ndocs" : 4,
+          "value" : "1900597880"
+        }, {
+          "label" : "material-safety-data-sheet-(msds)",
+          "ndocs" : 803,
+          "value" : "1819655759"
+        }, {
+          "label" : "photometric-data-files",
+          "ndocs" : 392,
+          "value" : "215031922"
+        }, {
+          "label" : "product-specification-guides",
+          "ndocs" : 1006,
+          "value" : "227436940"
+        }, {
+          "label" : "service-&amp;-troubleshooting",
+          "ndocs" : 206,
+          "value" : "2767215410"
+        }, {
+          "label" : "software-firmware-applications",
+          "ndocs" : 202,
+          "value" : "4017091704"
+        }, {
+          "label" : "software-release-notes-schemes-security-updates",
+          "ndocs" : 59,
+          "value" : "3213985765"
+        }, {
+          "label" : "technical-data-sheets",
+          "ndocs" : 5870,
+          "value" : "926402268"
+        }, {
+          "label" : "technical-service-bulletins",
+          "ndocs" : 342,
+          "value" : "356020885"
+        }, {
+          "label" : "time-current-curves",
+          "ndocs" : 358,
+          "value" : "3443675743"
+        }, {
+          "label" : "user-guides",
+          "ndocs" : 1426,
+          "value" : "1715738723"
+        }, {
+          "label" : "warranty-guides",
+          "ndocs" : 84,
+          "value" : "2922406474"
+        }, {
+          "label" : "wiring-diagrams",
+          "ndocs" : 126,
+          "value" : "3408572048"
+        } ]
+      } ]
+    },
+    "searchResults" : {
+      "totalCount" : 80,
+      "document" : [ {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Instructions for ME replacement contact kit"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/mill-type-dc-contactors/instructions-me-replacement-contact-kit-il15-800-13.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "447936"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "4002527040000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/mill-type-dc-contactors/instructions-me-replacement-contact-kit-il15-800-13.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Instructions for ME replacement contact kit"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/mill-type-dc-contactors/instructions-me-replacement-contact-kit-il15-800-13.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "447936"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "4002527040000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/mill-type-dc-contactors/instructions-me-replacement-contact-kit-il15-800-13.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "yes"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Secure asset with no secure product tag"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/secure/test/secure%20asset%20with%20no%20secure%20product%20tag.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "436747"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1692870600000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/secure/test/secure asset with no secure product tag.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "FW02133N2AL1F"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/dsn/skuPage.FW02133N2AL1F.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "61093"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1686317700000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/dsn/skuPage.FW02133N2AL1F.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : "Multilingual"
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "K2067-57-M1"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/dsn/skuPage.K2066-57-M.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "37148"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1686317640000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/dsn/skuPage.K2066-57-M.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "yes"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "eaton-hdr48-es-energy-saver-rectifier-drawing-en-us"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/dc-power-solutions/secure/eaton-hdr48-es-energy-saver-rectifier-drawing-en-us.vssx"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "221192"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/zip"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/dc-power-solutions/secure/eaton-hdr48-es-energy-saver-rectifier-drawing-en-us.vssx/jcr:content/renditions/original"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/octet-stream"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "yes"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Eaton DIN rail industrial UPS quick start guide for AC models"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/dsn/secure/securepdf.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "2869314"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1685509411371"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/dsn/secure/securepdf.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      } ]
+    },
+    "request" : null
+  }
+}

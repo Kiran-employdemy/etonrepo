@@ -1,0 +1,65 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Agent Reports</div>
+</sly>
+
+<sly data-sly-use.agentReportsModel="com.eaton.platform.core.models.secure.AgentReportsModel">
+
+	<div class="container">
+		<div class="commission-report" data-resource="${resource.path}">
+			<div class="commission-report-form col-md-12">
+				<div class="col-md-5 col-xs-12">
+					<form class="form-horizontal">
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-3 control-label">${'agentLabel' @ i18n }</label>
+							<div class="col-sm-9">
+								<select name="" id="agent" class="form-control">
+									<option value="">${'selectAgentNumberLabel' @ i18n }</option>
+									<sly data-sly-list.key="${agentReportsModel.agentList}">
+										<option value="${agentReportsModel.agentList[key]}">${key}</option>
+									</sly>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="inputEmail3" class="col-sm-3 control-label">${'division' @ i18n }</label>
+							<div class="col-sm-9">
+								<select name="" id="division" class="form-control agent-report-division" data-select-your-division-label="${'selectDivisionLabel' @ i18n }">
+									<option value="">${'selectDivisionLabel' @ i18n }</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+
+							<div class="col-sm-12">
+								<button class="commission-report__button pull-right" id="reports" disabled = "disabled">${'submit' @ i18n }</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="commission-report-data col-md-12 col-xs-12">
+
+				<div class="table-responsive" id="reports-data" style="display:none;" >
+					<div class="loader loader-active agent-loader">
+						<div class="loader__loader-circle"></div>
+					</div>
+					<table class="table table-striped" id="agent-table">
+						<thead>
+							<tr>
+								<th id="sl" class="agent-heading">${'reportNameLabel' @ i18n } <span class="glyphicon glyphicon-menu-down"></span></th>
+								<th id="nm" class="agent-heading">${'dateLabel' @ i18n } <span class="glyphicon glyphicon-menu-down"></span></th>
+							</tr>
+						</thead>
+						<tbody class="fileDownload">
+
+						</tbody>
+					</table>
+					<div id="no-rows-alert" style="display: none">${'noResultFound' @ i18n }</div>
+				</div>
+			</div>
+			<div>
+				${agentReportsModel.description}
+			</div>
+		</div>
+	</div>
+</sly>

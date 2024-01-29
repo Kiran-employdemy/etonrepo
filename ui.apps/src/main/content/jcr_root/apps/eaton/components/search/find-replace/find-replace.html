@@ -1,0 +1,74 @@
+<link rel="shortcut icon" href="/libs/granite/core/content/login/favicon.ico">
+<title>Eaton | Find & Replace</title>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+   <sly data-sly-call="${clientLib.all @ categories='coralui3,coralui2,granite.ui.coral.foundation,granite.ui.shell,eaton.find-replace'}" data-sly-unwrap/>
+   <coral-shell>
+      <coral-shell-header class="coral-Shell-header">
+         <coral-shell-header-home data-globalnav-navigator-main-href="/mnt/overlay/granite/ui/content/shell/globalnav.html?consoleId=cq-projects" class="coral-Shell-header-home" role="heading" aria-level="2">
+            <a is="coral-shell-homeanchor" icon="adobeExperienceManagerColor" href="#" class="coral-Shell-homeAnchor" role="heading" aria-level="2">
+               <coral-icon class="coral-Icon coral-Icon--sizeM coral-Icon--adobeExperienceManagerColor" icon="adobeExperienceManagerColor" size="M" role="img" aria-label="adobe experience manager color"></coral-icon>
+               <coral-shell-homeanchor-label class="coral-Shell-homeAnchor-label">Adobe Experience Manager</coral-shell-homeanchor-label>
+            </a>
+         </coral-shell-header-home>
+         <coral-shell-header-actions class="coral-Shell-header-actions">
+            <coral-shell-menubar class="coral-Shell-menubar">
+               <coral-shell-menubar-item class="foundation-toggleable-control coral-Shell-menubar-item" title="Help" data-foundation-toggleable-control-src="/mnt/overlay/granite/ui/content/shell/help.html" icon="helpCircle">
+               </coral-shell-menubar-item>
+               <coral-shell-menubar-item class="foundation-toggleable-control coral-Shell-menubar-item" title="Solutions" data-foundation-toggleable-control-src="/mnt/overlay/granite/ui/content/shell/solutionswitcher.html" icon="apps">
+               </coral-shell-menubar-item>
+               <coral-shell-menubar-item title="Notifications" icon="bell" class="granite-shell-badge coral-Shell-menubar-item" data-granite-shell-badge-src="/mnt/overlay/granite/ui/content/shell/header/actions/pulse.data.json" data-granite-shell-badge-console="/notifications.html{?ref}">
+               </coral-shell-menubar-item>
+               <coral-shell-menubar-item class="foundation-toggleable-control coral-Shell-menubar-item" title="User" data-foundation-toggleable-control-src="/mnt/overlay/granite/ui/content/shell/userproperties.html" icon="user">
+               </coral-shell-menubar-item>
+            </coral-shell-menubar>
+         </coral-shell-header-actions>
+         <coral-shell-header-content class="coral-Shell-header-content"></coral-shell-header-content>
+      </coral-shell-header>
+      <coral-shell-content role="main" class="coral-Shell-content">
+         <coral-wizardview class="coral-WizardView" id="startProcessWizard">
+            <coral-panelstack class="coral-PanelStack" role="presentation">
+               <coral-panel class="coral-Well coral-Panel is-selected" selected="true">
+                  <coral-panel-content>
+                     <coral-shell-content role="main" id="processListing">
+                        <div id="granite-shell-content" class="foundation-layout-panel">
+                           <div class="foundation-layout-panel-bodywrapper">
+                              <div class="foundation-layout-panel-body">
+                                 <div class="foundation-layout-panel-content">
+                                    <div id="mcp-workspace">
+                                       <div class="find-replace-content-container">
+                                          <div class="find-replace-content">
+                                             <div class="find-replace-heading">
+                                                <h3 class="coral-Form-fieldset-legend" id="processName">Find &amp; Replace</h3>
+                                             </div>
+                                             <div class="find-replace-tab-wrapper">
+                                                <coral-tabview>
+                                                   <coral-tablist target="find-replace-tabs">
+                                                      <coral-tab>Text</coral-tab>
+                                                      <coral-tab>Tags</coral-tab>
+                                                   </coral-tablist>
+                                                   <coral-panelstack id="find-replace-tabs">
+                                                      <coral-panel class="find-replace-tab">
+                                                         <sly data-sly-include="parts/text-form.html"></sly>
+                                                      </coral-panel>
+                                                      <coral-panel class="find-replace-tab">
+                                                         <sly data-sly-include="parts/tags-form.html"></sly>
+                                                      </coral-panel>
+                                                   </coral-panelstack>
+                                                </coral-tabview>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </coral-shell-content>
+                  </coral-panel-content>
+               </coral-panel>
+            </coral-panelstack>
+         </coral-wizardview>
+      </coral-shell-content>
+      <sly data-sly-include="parts/confirmation-dialog-template.html"></sly>
+   </coral-shell>
+</sly>

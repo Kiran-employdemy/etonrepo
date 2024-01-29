@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.varnishsix.servlets.VarnishSixCacheClearServlet" immediate="true">
+  <property name="sling.servlet.paths" type="String" value="/eaton/clearVarnishSixCache"/>
+  <property name="sling.servlet.methods" type="String" value="POST"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="varnishSixCacheClearService" interface="com.eaton.platform.integration.varnishsix.services.VarnishSixCacheClearService" field="varnishSixCacheClearService"/>
+  <implementation class="com.eaton.platform.integration.varnishsix.servlets.VarnishSixCacheClearServlet"/>
+</scr:component>

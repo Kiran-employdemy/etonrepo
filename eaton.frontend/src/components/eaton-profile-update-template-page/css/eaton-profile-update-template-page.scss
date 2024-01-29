@@ -1,0 +1,177 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.profile-landing {
+
+  position: relative;
+
+  &__title {
+    font-size: 3.6rem;
+    font-weight: 700;
+    color: #333;
+    @include media-mobile-only {
+      font-size: 2.4rem;
+    }
+  }
+
+  &__category-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    margin-top: 2.5rem;
+    color: #333;
+    @include media-mobile-only {
+      font-size: 2rem;
+    }
+  }
+
+  &__sub-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #333;
+    margin: 1.5rem 0;
+    @include media-mobile-only {
+      font-size: 1.8rem;
+    }
+  }
+
+  .control-label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #333;
+  }
+
+  .form-group {
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .custom-label {
+    margin-bottom: 1.5rem;
+  }
+
+  button {
+    /* stylelint-disable declaration-no-important */
+    float: right;
+    background: $color__primary-blue !important;
+    border-color: $color__white !important;
+    color: $color__white !important;
+
+    &:enabled {
+      background: $color__primary-blue !important;
+      cursor: pointer !important;
+    }
+
+    &:disabled {
+      background: $color__primary-gray1 !important;
+      cursor: not-allowed !important;
+
+      &.loading {
+        cursor: progress !important;
+      }
+
+    }
+    /* stylelint-enable declaration-no-important */
+  }
+
+  .cta-default a {
+    background: $color__primary-blue;
+    border-color: $color__white;
+    color: $color__white;
+  }
+
+  &__list {
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 700;
+    list-style-type: none;
+    @include media-mobile-only {
+      padding-left: 0px;
+    }
+
+    li {
+      padding-top: 5px;
+    }
+
+    &-sub {
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 400;
+      color: $color__error-red;
+      list-style-type: none;
+      @include media-mobile-only {
+        padding-left: 10px;
+      }
+    }
+  }
+
+  .form-control:focus {
+    box-shadow: none;
+  }
+
+  .astreik {
+    color: $color__error-red;
+  }
+
+  .fd-row::before,
+  .fd-row::after {
+    content: inherit;
+    display: inherit;
+  }
+
+  .panel {
+    margin-bottom: 20px;
+    background-color: $color__white;
+    border: 0px solid transparent;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .__Profile_Failed_Message {
+    float: left;
+    padding-left: 10px;
+    opacity: 1;
+    color: $color__red;
+    padding-top: 21px;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .__Profile_Saved_Message {
+    float: left;
+    padding-left: 10px;
+    opacity: 1;
+    color: $color__green;
+    padding-top: 21px;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .guideFieldError {
+    padding-left: 10px;
+    padding-right: 5px;
+  }
+
+}
+
+.profile-align {
+  float: right;
+  cursor: pointer;
+}
+
+.fade.in {
+  /* stylelint-disable-next-line declaration-no-important */
+  display: block !important;
+}
+
+.condition-validated {
+  color: $color__green;
+}
+
+.icon.icon-green {
+  font-size: 10px;
+  line-height: 0;
+  margin-left: 6px;
+}

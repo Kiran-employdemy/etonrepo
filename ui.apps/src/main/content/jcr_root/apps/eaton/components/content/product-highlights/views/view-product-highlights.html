@@ -1,0 +1,24 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Product Highlights: ${currentNode.name}</div>
+</sly>
+
+<sly data-sly-use.data="com.eaton.platform.core.models.ProductHighlightsModel">
+
+  <div class="product-highlights__component">
+    <div class="container">
+      <div class="row">
+          <!--/* Icon List */-->
+          <div class="product-highlights__wrapper" data-sly-list.iconItem="${data.links}">
+            <div class="col-xs-12 ${data.toggleInnerGrid ? 'col-md-4' : 'col-md-12'} product-highlights__item">
+              <div class="product-highlights__content">
+                <!--/* Post integration - to be mapped with ${iconItem.text} */-->
+                <div class="product-highlights__title b-eyebrow-small">${iconItem.highlightsTitle @context = 'html'}</div>
+                <div class="product-highlights__text">${iconItem.highlightsDesc @context = 'html'}</div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</sly>
+

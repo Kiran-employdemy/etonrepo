@@ -1,0 +1,175 @@
+//-----------------------------------
+// M-25: Proof Points
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.proof-points {
+
+  &__wrapper {
+    align-items: flex-start;
+    margin: 0 auto;
+    max-width: rem($grid__xs * .8333333);
+  }
+
+  &__component {
+    margin: rem($spacing__lg * .5) 0;
+
+    @include media-desktop-and-up {
+      margin: rem($spacing__xl * .83333334) 0;
+    }
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem($spacing__sm * 1.333333);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__image {
+    align-items: center;
+    display: flex;
+    margin-left: 0;
+    max-width: rem($spacing__md * .916666667);
+    max-height: 100%;
+    width: 25%;
+
+    [dir='rtl'] & {
+      margin-right: 0;
+    }
+
+    img {
+      height: rem($spacing__md * .916666667);
+      width: rem($spacing__md * .916666667);
+    }
+
+    @include media-desktop-and-up {
+      max-width: rem($spacing__md);
+
+      img {
+        height: rem($spacing__md);
+        width: rem($spacing__md);
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: rem($spacing__sm * .333333);
+    padding-right: rem($spacing__sm * .333333);
+    align-items: center;
+    flex-direction: column;
+
+    @include media-desktop-and-up {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    [dir='rtl'] & {
+      @include media-desktop-only {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  &__text {
+    // TO DO: possibly remove this once microsites brand tool has been implemented.
+    // If global font overrides are desired once microsites brand tool is implement, it should be handled in _mixins-typography.scss
+    @include font-family__primary-bold(--header-font-bold);
+    color: var(--secondary-brand-color, $color__accent-aqua);
+    display: flex;
+    font-size: rem($base__font-size * 6);
+    line-height: $base__line-height * 0.7357142857;
+
+    [dir='rtl'] & {
+      direction: ltr;
+      text-align: right;
+      font-size: 3.9rem;
+    }
+  }
+
+  &__symbol {
+    font-size: rem($base__font-size * 4);
+    line-height: $base__line-height * 0.7142857143;
+    position: relative;
+    top: rem($spacing__sm * 0.4333333333);
+  }
+
+  &__title {
+    @include body-copy--mobile;
+    font-size: rem($base__font-size * 1.6);
+    margin-top: rem($spacing__sm * .333333);
+    position: relative;
+    text-align: center;
+    width: $ratio__1-1;
+    line-height: $base__line-height * .8928571428;
+  }
+
+  //-----------------------------------
+  // Media-Query: Desktop
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      max-width: none;
+
+      .eaton-grid-control & {
+        display: block;
+      }
+    }
+
+    &__item {
+      margin: 0 auto;
+      max-width: rem($grid__xs * .75);
+      width: $ratio__1-1;
+
+      .eaton-grid-control & {
+        flex-basis: $ratio__1-1;
+        margin-bottom: rem($spacing__sm * 1.333333);
+        margin-right: 0;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__text {
+      line-height: $base__line-height * 0.7142857143;
+    }
+
+    &__symbol {
+      font-size: rem($base__font-size * 6);
+      line-height: $base__line-height * 0.7142857143;
+      top: rem($spacing__sm * 0.2666666667);
+    }
+
+    &__title {
+      max-width: rem($grid__xs * 0.5625);
+      font-size: rem($base__font-size * 1.8);
+    }
+  }
+}
+
+//-----------------------------------
+// When nested inside the "2-colum-grid" component
+//-----------------------------------
+.eaton-grid-control__column {
+
+  .proof-points__component {
+    margin-top: 0;
+  }
+
+}
+
+

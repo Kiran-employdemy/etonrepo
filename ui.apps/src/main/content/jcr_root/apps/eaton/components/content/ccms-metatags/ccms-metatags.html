@@ -1,0 +1,25 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.MetaTagsModel" />
+    <sly data-sly-use.ccmsmeta="com.eaton.platform.core.models.CCMSMetaTagModel"/>
+
+<sly data-sly-test="${data.excludeCountryList}">
+    <meta name="secure-attrib-restricted-countries" content="${data.excludeCountryList}">
+</sly>
+<meta name="country" content="${data.metaTagGenericValuesModel.currentPageCountry}"/>
+<meta name="language" content="${data.metaTagGenericValuesModel.currentPageLanguage}"/>
+
+  <meta property="og:title" content="${data.metaTagGenericValuesModel.ogTitle}" data-sly-unwrap="${!data.metaTagGenericValuesModel.ogTitle}"/>
+  <meta property="twitter:title" content="${data.metaTagGenericValuesModel.twitterTitle}" data-sly-unwrap="${!data.metaTagGenericValuesModel.twitterTitle}"/>
+  <meta property="og:url" content="${data.metaTagGenericValuesModel.ogUrl}" data-sly-unwrap="${!data.metaTagGenericValuesModel.ogUrl}"/>
+  <meta property="twitter:url" content="${data.metaTagGenericValuesModel.twitterUrl}" data-sly-unwrap="${!data.metaTagGenericValuesModel.twitterUrl}"/>
+  <meta property="og:type" content="${data.metaTagGenericValuesModel.ogType}" data-sly-unwrap="${!data.metaTagGenericValuesModel.ogType}"/>
+  <meta property="og:locale"  content="${data.metaTagGenericValuesModel.currentPageLanguage}" data-sly-unwrap="${!data.metaTagGenericValuesModel.currentPageLanguage}"/>
+  <meta property="og:site_name" content="${data.metaTagGenericValuesModel.ogSitename}" data-sly-unwrap="${!data.metaTagGenericValuesModel.ogSitename}"/>
+  <meta property="twitter:site" content="${data.metaTagGenericValuesModel.twitterSitename}" data-sly-unwrap="${!data.metaTagGenericValuesModel.twitterSitename}"/>
+
+<sly data-sly-test="${ccmsmeta.categoryTag}">
+  <meta name="category-id" content="${ccmsmeta.categoryTag}"/>
+</sly>
+  <meta name="application-id" content="${data.metaTagGenericValuesModel.applicationId}"/>
+<sly data-sly-test="${data.metaTagGenericValuesModel.metaRobotTags}">
+   <meta name="robots" content="${data.metaTagGenericValuesModel.metaRobotTags}"/>
+ </sly>

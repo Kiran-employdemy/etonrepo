@@ -1,0 +1,3 @@
+#base=js
+vanity-services.js
+vanity-dashboard.js

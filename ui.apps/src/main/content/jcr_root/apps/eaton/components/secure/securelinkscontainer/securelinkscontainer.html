@@ -1,0 +1,10 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Secure Links Container</div>
+</sly>
+
+<div data-sly-test="${properties.isMegaMenu}"class="links-list">
+    <ul class="links-list__col">
+        <sly data-sly-resource="${ 'secure-par' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+    </ul>
+</div>
+<sly data-sly-test="${ !properties.isMegaMenu}" data-sly-resource="${ 'secure-par' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>

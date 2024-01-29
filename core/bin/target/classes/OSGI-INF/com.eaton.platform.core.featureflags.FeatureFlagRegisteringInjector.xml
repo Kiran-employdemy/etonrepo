@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.featureflags.FeatureFlagRegisteringInjector" immediate="true">
+  <property name="service.ranking" type="String" value="2147483647"/>
+  <service>
+    <provide interface="org.apache.sling.models.spi.Injector"/>
+  </service>
+  <reference name="featureFlagRegistryService" interface="com.eaton.platform.core.featureflags.FeatureFlagRegistryService" field="featureFlagRegistryService"/>
+  <implementation class="com.eaton.platform.core.featureflags.FeatureFlagRegisteringInjector"/>
+</scr:component>

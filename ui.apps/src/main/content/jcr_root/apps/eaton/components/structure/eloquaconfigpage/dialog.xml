@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    jcr:title="Eloqua Configuration"
+    height="{Long}600"
+    warnIfModified="{Boolean}false"
+    width="{Long}800"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <eloqua-account-details
+                jcr:primaryType="cq:Panel"
+                title="Eloqua Account Details"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <eloquaserverurl
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Eloqua Server URL"
+                        name="./eloquaserverurl"
+                        xtype="textfield"/>
+                    <eloquasubmiturl
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Eloqua Submit URL"
+                        name="./eloquaSubmitUrl"
+                        xtype="textfield"/>
+                    <eloquacompanyname
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Eloqua Company Name"
+                        name="./eloquaCompanyName"
+                        xtype="textfield"/>
+                    <eloquaendpointurl
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Eloqua EndPoint URL"
+                        name="./eloquaEndpointUrl"
+                        xtype="textfield"/>
+                    <eloquausername
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Eloqua Username"
+                        name="./eloquaUsername"
+                        xtype="textfield"/>
+                    <eloquapwd
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Eloqua Password"
+                        name="./eloquaPwd"
+                        xtype="password">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            change="function(comp) {CQ.cloudservices.getEditOk().disable();}"/>
+                    </eloquapwd>
+                    <eloquasiteid
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Eloqua Site Id"
+                        name="./eloquaSiteId"
+                        xtype="textfield"/>
+                    <lookupidvisitor
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Lookup ID Visitor"
+                        name="./lookupIdVisitor"
+                        xtype="textfield"/>
+                    <lookupidprimary
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Lookup ID Primary"
+                        name="./lookupIdPrimary"
+                        xtype="textfield"/>
+                    <visitoruniquefield
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Visitor Unique Field"
+                        name="./visitorUniqueField"
+                        xtype="textfield"/>
+                    <primaryuniquefield
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Primary Unique Field"
+                        name="./primaryUniqueField"
+                        xtype="textfield"/>
+                    <cookietrackingurl
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Cookie Tracking URL"
+                        name="./cookieTrackingUrl"
+                        xtype="textfield"/>
+                    <recaptchasitekey
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Google reCAPTCHA Sitekey"
+                        name="./recaptchasitekey"
+                        xtype="password">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            change="function(comp) {CQ.cloudservices.getEditOk().disable();}"/>
+                    </recaptchasitekey>
+                    <recaptchasecret
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Google reCAPTCHA Secret"
+                        name="./recaptchasecret"
+                        xtype="password">
+                        <listeners
+                            jcr:primaryType="nt:unstructured"
+                            change="function(comp) {CQ.cloudservices.getEditOk().disable();}"/>
+                    </recaptchasecret>
+                   	<view jcr:primaryType="cq:Widget" allowBlank="false"
+							defaultValue="Yes"
+							fieldLabel="Eloqua Server Running?" fieldSubLabel="" name="./eloquaServerStatus" type="select"
+							xtype="selection">
+							<options jcr:primaryType="cq:WidgetCollection">
+								<product-card-sku
+									jcr:primaryType="nt:unstructured" text="Yes"
+									value="true" />
+								<product-card-family
+									jcr:primaryType="nt:unstructured" text="No"
+									value="false" />
+							</options>
+						</view>
+                    <countrylov
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Country LOV"
+                        name="./countryLov"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <text
+                                    jcr:primaryType="cq:Widget"
+                                    dName="text"
+                                    fieldLabel="Text"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <value
+                                    jcr:primaryType="cq:Widget"
+                                    dName="value"
+                                    fieldLabel="Value"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </countrylov>
+                    <marketlov
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Market LOV"
+                        name="./marketLov"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <text
+                                    jcr:primaryType="cq:Widget"
+                                    dName="text"
+                                    fieldLabel="Text"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <value
+                                    jcr:primaryType="cq:Widget"
+                                    dName="value"
+                                    fieldLabel="Value"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </marketlov>
+                    <locationlov
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Location LOV"
+                        name="./locationLov"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <text
+                                    jcr:primaryType="cq:Widget"
+                                    dName="text"
+                                    fieldLabel="Text"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <value
+                                    jcr:primaryType="cq:Widget"
+                                    dName="value"
+                                    fieldLabel="Value"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </locationlov>
+                    <ctalov
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="CTA LOV"
+                        name="./ctaLov"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <text
+                                    jcr:primaryType="cq:Widget"
+                                    dName="text"
+                                    fieldLabel="Text"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <value
+                                    jcr:primaryType="cq:Widget"
+                                    dName="value"
+                                    fieldLabel="Value"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </ctalov>
+                    <stagelov
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Stage LOV"
+                        name="./stageLov"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <text
+                                    jcr:primaryType="cq:Widget"
+                                    dName="text"
+                                    fieldLabel="Text"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <value
+                                    jcr:primaryType="cq:Widget"
+                                    dName="value"
+                                    fieldLabel="Value"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </stagelov>
+                    <productlov
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Product LOV"
+                        name="./productLov"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <text
+                                    jcr:primaryType="cq:Widget"
+                                    dName="text"
+                                    fieldLabel="Text"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <value
+                                    jcr:primaryType="cq:Widget"
+                                    dName="value"
+                                    fieldLabel="Value"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </productlov>
+                    <businessgrplov
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Business Group LOV"
+                        name="./businessGrpLov"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <text
+                                    jcr:primaryType="cq:Widget"
+                                    dName="text"
+                                    fieldLabel="Text"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <value
+                                    jcr:primaryType="cq:Widget"
+                                    dName="value"
+                                    fieldLabel="Value"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </businessgrplov>
+                    <assetlov
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Asset LOV"
+                        name="./assetLov"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <text
+                                    jcr:primaryType="cq:Widget"
+                                    dName="text"
+                                    fieldLabel="Text"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <value
+                                    jcr:primaryType="cq:Widget"
+                                    dName="value"
+                                    fieldLabel="Value"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </assetlov>
+                </items>
+            </eloqua-account-details>
+        </items>
+    </items>
+</jcr:root>

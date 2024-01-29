@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+		  ttl="3600"
+		  cacheUrl="https://ws.bullseyelocations.com/restsearch.svc/GetCategories"
+		  cacheSize="500"
+		  maxConnections="250"
+		  maxHostConnections="250"/>

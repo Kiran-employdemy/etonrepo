@@ -1,0 +1,5 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.countryselector.Region"></sly>
+<sly data-sly-test="${ wcmmode.edit && !data.regionName}">
+    <div class="alert alert-warning">Region Country List</div>
+</sly>
+<sly data-sly-include="views/view-region-country.html" data-sly-unwrap></sly>

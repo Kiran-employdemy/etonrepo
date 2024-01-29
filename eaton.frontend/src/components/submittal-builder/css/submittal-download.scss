@@ -1,0 +1,165 @@
+@import "../../../global/css/_config/sass";
+
+.submittal-builder {
+  &__download {
+    &__preferred-option {
+      color: $color__primary-gray1;
+      font-size: rem($base__font-size * 1.4);
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    &__disclaimer {
+      font-size: rem($base__font-size * 1.2);
+    }
+
+    &__error {
+      color: $color__red;
+      font-size: rem($base__font-size * 2);
+      font-weight: bold;
+    }
+
+    &__file-info {
+      color: $color__red;
+      font-size: rem($base__font-size * 2);
+      font-weight: bold;
+      margin-bottom: 0;
+      word-wrap: break-word;
+
+      &__file-size {
+        color: $color__primary-blue;
+        display: block;
+        font-size: rem($base__font-size * 1.4);
+        font-weight: normal;
+
+        @include media-tablet-and-up {
+          display: inline-block;
+          padding-left: rem($spacing__sm * .5);
+          padding-right: rem($spacing__sm * .5);
+        }
+      }
+    }
+
+    &__download-button {
+      border: 0;
+      padding: rem($spacing__sm * .3) rem($spacing__sm * .5);
+      text-align: center;
+      width: auto;
+
+      &__icon {
+        font-size: rem($base__font-size * 3.6);
+      }
+
+      &--visible {
+        display: block;
+
+        .submittal-builder__download__file-info__container {
+          display: inline-block;
+          vertical-align: top;
+          width: 60%;
+        }
+      }
+    }
+
+    &__email-button {
+      width: 100%;
+
+      @include media-tablet-and-up {
+        margin-top: 0;
+        width: auto;
+      }
+    }
+
+    &__icon {
+      color: $color__green;
+      display: block;
+      font-size: rem($base__font-size * 8);
+      margin-bottom: rem($spacing__sm);
+    }
+
+    &__form {
+      @include media-tablet-and-up {
+        padding-left: rem($spacing__md);
+        padding-right: rem($spacing__md);
+      }
+
+      .submittal-builder__file-info {
+        margin-bottom: 0;
+      }
+    }
+
+    &__radio-button {
+      &__container {
+        border-bottom: 0;
+      }
+
+      &__list-item {
+        display: inline-block;
+        padding-right: rem($spacing__sm * 2);
+        max-width: 35vw;
+
+        [dir='rtl'] & {
+          padding-right: 0;
+          padding-left: rem($spacing__sm * 2);
+        }
+      }
+    }
+
+    &__email {
+      &__container {
+        margin-bottom: rem($spacing__sm);
+      }
+    }
+
+    &__thank-you {
+      text-align: center;
+
+      @include media-tablet-and-up {
+        padding-left: rem($spacing__md);
+        padding-right: rem($spacing__md);
+      }
+
+      &__message {
+        font-size: rem($base__font-size * 1.4);
+        font-weight: bold;
+      }
+
+      .submittal-builder__download__file-info {
+        margin-bottom: rem($spacing__sm * .5);
+      }
+    }
+
+    &__footer {
+      &__column {
+        @include media-tablet-and-up {
+          display: inline-block;
+          vertical-align: top;
+          width: 49%;
+        }
+      }
+    }
+
+    &__communications {
+      &__message {
+        font-size: rem($base__font-size * 1.4);
+        font-weight: bold;
+        text-align: left;
+      }
+
+      &__group {
+        display: flex;
+      }
+
+      &__button {
+        border-left-width: 0;
+        font-size: rem($base__font-size * 1.8);
+        flex-basis: 50%;
+        padding: rem($spacing__sm * .1333) rem($spacing__sm * .5);
+
+        &:first-child {
+          border-left-width: 3px;
+        }
+      }
+    }
+  }
+}

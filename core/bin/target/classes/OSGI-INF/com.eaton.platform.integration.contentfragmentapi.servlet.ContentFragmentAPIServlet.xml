@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.contentfragmentapi.servlet.ContentFragmentAPIServlet" immediate="true" activate="activate">
+  <property name="sling.servlet.extensions" type="String" value="json"/>
+  <property name="config.delimiter" type="String" value="="/>
+  <property name="service.description" type="String" value="Content Fragment API Service"/>
+  <property name="sling.servlet.paths" type="String" value="/eaton/api/contentfragment"/>
+  <property name="contentfragment.service.config" type="String">cfdam-golfpride-navigation=/content/dam/golfpride/
+cfmodel-golfpride-navigation=/conf/golfpride/settings/dam/cfm/models/navigation-api</property>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <implementation class="com.eaton.platform.integration.contentfragmentapi.servlet.ContentFragmentAPIServlet"/>
+</scr:component>

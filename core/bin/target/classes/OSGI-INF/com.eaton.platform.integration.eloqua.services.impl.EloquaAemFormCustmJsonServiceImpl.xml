@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.eloqua.services.impl.EloquaAemFormCustmJsonServiceImpl" immediate="true">
+  <service>
+    <provide interface="com.eaton.platform.integration.eloqua.services.EloquaAemFormCustmJsonService"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="configurationManagerFactory" interface="com.day.cq.wcm.webservicesupport.ConfigurationManagerFactory" field="configurationManagerFactory"/>
+  <reference name="eloquaFormConfigService" interface="com.eaton.platform.core.services.EloquaFormConfigService" field="eloquaFormConfigService"/>
+  <reference name="eloquaOptionListService" interface="com.eaton.platform.integration.eloqua.services.EloquaOptionListService" field="eloquaOptionListService"/>
+  <reference name="eloquaService" interface="com.eaton.platform.integration.eloqua.services.EloquaService" field="eloquaService"/>
+  <implementation class="com.eaton.platform.integration.eloqua.services.impl.EloquaAemFormCustmJsonServiceImpl"/>
+</scr:component>

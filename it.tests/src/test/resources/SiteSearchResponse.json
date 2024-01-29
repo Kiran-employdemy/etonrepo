@@ -1,0 +1,377 @@
+{
+  "response" : {
+    "status" : "Success",
+    "statusDetails" : {
+      "messages" : [ "Query= enePort=16500&Ntx=mode%2bmatchallpartial&Nr=AND%28OR%28Country%3aUS%2cCountry%3aGLOBAL%29%2cLanguage%3aen_US%29&Ntk=All&eneHost=endeca-dev.tcc.etn.com&N=0&Ntt=fuse" ]
+    },
+    "didYouMean" : null,
+    "binning" : {
+      "binningSet" : [ {
+        "label" : "content-type",
+        "bsId" : "content-type",
+        "bin" : [ {
+          "label" : "news-and-insights",
+          "ndocs" : 234,
+          "value" : "1152669088"
+        }, {
+          "label" : "product",
+          "ndocs" : 18895,
+          "value" : "582977914"
+        }, {
+          "label" : "resources",
+          "ndocs" : 13,
+          "value" : "3533723805"
+        } ]
+      }, {
+        "label" : "Form factor",
+        "bsId" : "product-attributes_form-factor",
+        "bin" : [ {
+          "label" : "Vertical",
+          "ndocs" : 1,
+          "value" : "3116225335"
+        } ]
+      }, {
+        "label" : "Input power",
+        "bsId" : "product-attributes_input-power",
+        "bin" : [ {
+          "label" : "Three phase",
+          "ndocs" : 0,
+          "value" : "57056011"
+        } ]
+      }, {
+        "label" : "Rackmount function",
+        "bsId" : "product-attributes_rackmount-function",
+        "bin" : [ {
+          "label" : "Metered Input",
+          "ndocs" : 0,
+          "value" : "3676072121"
+        } ]
+      }, {
+        "label" : "Sub Brand",
+        "bsId" : "eaton-brand_product-name",
+        "bin" : [ {
+          "label" : "Bussmann series",
+          "ndocs" : 0,
+          "value" : "3555317704"
+        }, {
+          "label" : "Crouse-Hinds series",
+          "ndocs" : 0,
+          "value" : "3277038923"
+        }, {
+          "label" : "Edison",
+          "ndocs" : 0,
+          "value" : "1142439868"
+        }, {
+          "label" : "None",
+          "ndocs" : 0,
+          "value" : "1067228396"
+        } ]
+      } ]
+    },
+    "searchResults" : {
+      "totalCount" : 19288,
+      "document" : [ {
+        "content" : [ {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Compact high speed fuses"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://www.cooperindustries.com/content/public/en/bussmann/electrical/products/high_speed_/compact-high-speed-fuse.html"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "text/html"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "86218"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Middle_Tab_Name",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Middle_Tab_URL",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition1",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition2",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Eaton’s New Bussmann Series Fuse Holder Enhances Safety in High-Voltage Solar Installations"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub01.tcc.etn.com:4503/us/en-us/company/news-insights/news-releases/2017/eaton_s-new-bussmann-series-fuse-holder-enhances-safety-in-high-.html"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "text/html"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "166242"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : "news-and-insights"
+        }, {
+          "name" : "Middle_Tab_Name",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Middle_Tab_URL",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition1",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition2",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Fuse blocks and holders"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://www.cooperindustries.com/content/public/en/bussmann/electrical/products/fuse_holders_andblocks.html"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "text/html"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "46163"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Middle_Tab_Name",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Middle_Tab_URL",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition1",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition2",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Fuses"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://www.cooperindustries.com/content/public/en/products/fuses.html"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "text/html"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "57349"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Middle_Tab_Name",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Middle_Tab_URL",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition1",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition2",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Fuse blocks & holders"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub01.tcc.etn.com:4503/us/en-us/products/electrical-circuit-protection/fuse-blocks---holders.html"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "text/html"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "160504"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Middle_Tab_Name",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Middle_Tab_URL",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition1",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition2",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        } ]
+      } ]
+    },
+    "request" : {
+      "searchApplication" : "eatonsitesearch",
+      "searchApplicationKey" : "abc123",
+      "function" : "search",
+      "searchTerms" : "fuse",
+      "language" : "en_US",
+      "startingRecordNumber" : 0,
+      "numberOfRecordsToReturn" : 5,
+      "filters" : [ {
+        "filterName" : "Country",
+        "filterValue" : [ "US" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "Facets",
+        "filterValue" : [ "" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "ReturnFacetsFor",
+        "filterValue" : [ "content-type", "eaton-brand_product-name", "product-attributes_topology", "product-attributes_power-rating", "product-attributes_application", "product-attributes_form-factor", "product-attributes_features", "product-attributes_rackmount-function", "product-attributes_input-power", "product-attributes_input-connection", "product-attributes_floor-standing-monitoring", "resources_marketing-resources", "resources_technical-resources", "Content_Type", "Application" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "SortBy",
+        "filterValue" : [ "asc " ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "autoCorrect",
+        "filterValue" : [ "true" ],
+        "preferenceValue" : null
+      } ],
+      "userName" : null
+    }
+  }
+}

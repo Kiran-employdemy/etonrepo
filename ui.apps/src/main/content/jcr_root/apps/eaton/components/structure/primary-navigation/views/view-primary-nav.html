@@ -1,0 +1,47 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.primarynav.NavigationModel" data-sly-use.headerModel="com.eaton.platform.core.models.HeaderModel">
+    <div class="primary-navigation 
+	 ${data.primaryNavBGImage ? 'primary-navigation--has-background' : ''} "
+        aria-label="${data.primaryNavBGImgAltText}">
+
+        <!--/* Eaton Headline: Visible only for Mobile Breakpoints */-->
+        <div data-sly-test="${!headerModel.isMicroSitePage && data.viewContentListModel.header}" class="primary-navigation__headline">
+            <div class="primary-navigation__container container">
+                ${data.viewContentListModel.header}
+            </div>
+        </div>
+        <!--/* Microsite CTA/Search: Visible only for Mobile Breakpoints */-->
+        <div class="primary-navigation__head" data-sly-test="${headerModel.isMicroSitePage && headerModel.microSiteHeaderOption != 'none' && headerModel.megaHeaderReferencePath}">
+            <div class="microsite__cta-mobile" data-sly-test="${headerModel.isMicroSitePage && headerModel.microSiteHeaderOption == 'cta'}">
+                <sly data-sly-resource="${headerModel.megaHeaderReferencePath @ appendPath='cta-button-comp',resourceType='/apps/eaton/components/general/ctabutton',  wcmmode='disabled'}"></sly>
+            </div>
+
+            <div class="microsite__search-mobile" data-sly-test="${headerModel.isMicroSitePage && (headerModel.isMicroSitePage && headerModel.microSiteHeaderOption == 'search')}">
+                <sly data-sly-resource="${headerModel.megaHeaderReferencePath @ appendPath='search-comp', resourceType='eaton/components/search/search-box', wcmmode='disabled'}"></sly>
+            </div>
+        </div>
+        <!--/* List Links */-->
+        <div class="primary-navigation__container container">
+        <div data-sly-test="${data.viewContentListModel.listType=='child-pages'}">
+            <nav data-sly-list.level1="${data.viewContentListModel.listTypeArray}" class="primary-navigation__child-list primary-navigation__items">
+                <a  href="#" data-link-value="${level1.pageLink}" data-menu-category="${level1.navName}" aria-expanded="false" class="primary-navigation__menu">
+                    <span>${ level1.linkTitle }</span>
+                    <i class="icon icon-chevron-right" aria-hidden="true"></i>
+                </a>
+                <sly data-sly-test="${level1List.last && properties.enableSecureMenu == 'true' }">
+                    <sly data-sly-resource="${'secure-menu' @ resourceType='eaton/components/secure/securemenu',  wcmmode=headerModel.editMode}"></sly>
+                </sly>
+            </nav>
+        </div>
+        <div data-sly-test="${data.viewContentListModel.listType=='manual-list'}">
+            <nav data-sly-list.level1="${data.viewContentListModel.listTypeArray}" class="primary-navigation__items">
+                <a  href="${level1.pageLink}">
+                    <span>${ level1.linkTitle }</span>
+                </a>
+                <sly data-sly-test="${level1List.last && properties.enableSecureMenu == 'true'}">
+                    <sly data-sly-resource="${'secure-menu' @ resourceType='eaton/components/secure/securemenu',  wcmmode=headerModel.editMode}"></sly>
+                </sly>
+            </nav>
+        </div>
+        </div>
+    </div>
+</sly>

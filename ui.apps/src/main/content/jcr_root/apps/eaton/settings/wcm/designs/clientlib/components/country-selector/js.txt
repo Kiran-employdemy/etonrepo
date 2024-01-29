@@ -1,0 +1,4 @@
+#base=js
+
+country-selector-redirect-constants.js
+country-selector-redirect.js

@@ -1,0 +1,28 @@
+<template data-sly-template.select="${@ id, name, label, placeholder, items, helpItemsJson, cssClasses}">
+  <div class="coral-Form-fieldwrapper">
+    <label data-sly-test="${label}" class="coral-Form-fieldlabel" data-sly-attribute.for="${id}">${label}</label>
+    <coral-select class="coral-Form-field coral3-Select find-replace-form-field ${cssClasses}" data-visibilitycascading="default"
+      data-choicescascading="default" data-requiredcascading="default" data-metatype="dropdown" placeholder="${placeholder}" name="${name}" data-sly-attribute.id="${id}">
+      <sly data-sly-list.item="${items}">
+            <coral-select-item data-sly-attribute="${item.attributes}" value="${item.value}" selected="${item.selected ? 'selected' : ''}">${item.title}</coral-select-item>
+      </sly>
+    </coral-select>
+    <sly data-sly-test="${helpItemsJson}">
+      <textarea class="find-replace-form-select-help-data">
+        ${helpItemsJson}
+      </textarea>
+      <button class="find-replace-form-select-help-btn" is="coral-button" type="button" disabled="disabled">
+        <coral-icon icon="helpCircle" size="S"></coral-icon>
+      </button>
+      <coral-popover class="find-replace-form-select-help" placement="right">
+        <coral-popover-content>
+          <coral-popover-header></coral-popover-header>
+          <div class="u-coral-margin">       
+            <h4>Supported types:</h4>
+            <div class="find-replace-form-select-help-types"></div>
+        </div>
+        </coral-popover-content>
+      </coral-popover>
+    </sly>
+  </div>
+</template>

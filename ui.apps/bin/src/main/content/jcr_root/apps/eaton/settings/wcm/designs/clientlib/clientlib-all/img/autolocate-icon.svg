@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="21px" viewBox="0 0 21 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="background: #333F48;">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>target icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="target-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#333F48" x="0" y="0" width="21" height="21"></rect>
+        <g id="Group" transform="translate(1.000000, 1.000000)">
+            <circle id="Oval" stroke="#FFFFFF" stroke-width="2" cx="9.5" cy="9.5" r="8.5"></circle>
+            <rect id="Rectangle" fill="#FFFFFF" x="12" y="9" width="6" height="1"></rect>
+            <rect id="Rectangle-Copy" fill="#FFFFFF" x="1" y="9" width="6" height="1"></rect>
+            <rect id="Rectangle-Copy" fill="#FFFFFF" transform="translate(9.500000, 4.000000) rotate(90.000000) translate(-9.500000, -4.000000) " x="6.5" y="3.5" width="6" height="1"></rect>
+            <rect id="Rectangle-Copy-2" fill="#FFFFFF" transform="translate(9.500000, 15.000000) rotate(90.000000) translate(-9.500000, -15.000000) " x="6.5" y="14.5" width="6" height="1"></rect>
+        </g>
+    </g>
+</svg>

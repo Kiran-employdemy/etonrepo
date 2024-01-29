@@ -1,0 +1,11 @@
+//-----------------------------------
+// M-27: Article List
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+// Import sub-modules
+@import "views/view-feature-articles";
+@import "views/view-feature-single";
+@import 'views/view-no-feature.scss';

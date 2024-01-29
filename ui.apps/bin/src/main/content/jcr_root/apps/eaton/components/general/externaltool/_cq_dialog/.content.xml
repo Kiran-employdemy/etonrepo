@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="External Tools"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                margin="{Boolean}false"
+                type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <toolName
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldDescription="This is the name of the Tool configured"
+                            fieldLabel="Tool Name"
+                            name="./toolName"/>
+                    <iframeurl
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                            fieldDescription="Provide the iFrame URL for the component to render the iFrame"
+                            fieldLabel="iFrame URL"
+                            name="./iframeUrl"/>
+                    <iframewidth
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldDescription="Enter the minimum device width required in pixels. Example width: 500. iFrame will automatically display at 100% width."
+                            fieldLabel="Minimum supported width"
+                            name="./iframeWidthSize"/>
+                    <iframeheight
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldDescription="Height of the iFrame. Example height: 1250."
+                            fieldLabel="iFrame height size"
+                            name="./iframeHeightSize"/>
+                    <isResponsive
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                            fieldDescription = "Devices narrower than the minimum device width defined above will see a message to rotate to landscape mode."
+                            text="This tool requires landscape mode on mobile devices"
+                            value="true"
+                            name="./isResponsive"/>
+                    <nonresponsiveimage
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                            fieldDescription="Image used for showing while the iFrame is not responsive."
+                            fieldLabel="Image for non responsive tool"
+                            name="./nonresponsiveimage"/>
+                    <nonresponsivemessage
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldDescription="Message displayed if device width is narrower than the minimum device width defined above"
+                            value="Please rotate device to view the"
+                            fieldLabel="Rotate to Landscape Mode message"
+                            name="./nonresponsivemessage"/>
+                    <isDisplayedMobile
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                            fieldDescription = "Check the checkbox if the iFrame can't be rendered on mobile"
+                            text="This tool cannot be used on mobile devices"
+                            value="true"
+                            name="./isDisplayedMobile"/>
+                    <isDisplayedMobilemessage
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldDescription="Message used for showing while the iFrame does not work in mobile."
+                            value="We regret that this tool is not available for mobile devices.
+                            Please view it in a desktop browser or a tablet to view a more complete experience"
+                            fieldLabel="Mobile Message"
+                            name="./isDisplayedMobilemessage"/>
+                    <istoggleInnerGrid
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        defaultChecked="true"
+                        name="./toggleInnerGrid"
+                        text="Include Margin"
+                        uncheckedValue="{Boolean}true"
+                        value="true"/>
+
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

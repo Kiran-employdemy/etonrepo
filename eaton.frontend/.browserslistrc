@@ -1,0 +1,12 @@
+#-----------------------------------------
+# Eaton - Supported Browsers
+# INFO: https://github.com/ai/browserslist
+#-----------------------------------------
+
+last 2 versions
+Firefox ESR
+Explorer >= 11
+## edge
+Safari >= 8
+Android >= 4.4
+iOS >= 9

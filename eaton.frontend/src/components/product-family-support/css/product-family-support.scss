@@ -1,0 +1,55 @@
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.product-family-support {
+
+  &__component {
+    padding: 60px 30px;
+
+    @include media-tablet-and-up {
+      padding: 60px 0;
+    }
+  }
+
+  &--left {
+
+    @include media-mobile-and-tablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__icon {
+    top: -10px;
+    position: absolute;
+    left: -60px;
+    font-size: 60px;
+    color: $color__accent-orange;
+
+    @include media-mobile-only {
+      left: 25px;
+      top: -80px;
+    }
+  }
+
+  &__info {
+
+    @include media-desktop-large {
+      margin-left: 50px;
+    }
+
+    &--title {
+      margin-bottom: 25px;
+    }
+
+    &--copy {
+      width: 50%;
+      float: left;
+
+      @include media-mobile-only {
+        width: 100%;
+      }
+    }
+  }
+
+
+}

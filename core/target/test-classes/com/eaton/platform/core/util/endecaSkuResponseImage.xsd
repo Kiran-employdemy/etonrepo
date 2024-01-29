@@ -1,0 +1,65 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ATR_GRP_TYPE">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ATR_GRP" maxOccurs="unbounded" minOccurs="0">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="ATR_NM" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute type="xs:string" name="id" use="optional"/>
+                                            <xs:attribute type="xs:string" name="Label" use="optional"/>
+                                            <xs:attribute type="xs:short" name="SEQ" use="optional"/>
+                                            <xs:attribute type="xs:string" name="STNDR" use="optional"/>
+                                            <xs:attribute type="xs:string" name="Value" use="optional"/>
+                                            <xs:attribute type="xs:long" name="CID" use="optional"/>
+                                            <xs:attribute type="xs:string" name="UOM" use="optional"/>
+                                            <xs:attribute type="xs:string" name="Display_Flag" use="optional"/>
+                                            <xs:attribute type="xs:string" name="Language" use="optional"/>
+                                            <xs:attribute type="xs:string" name="Country" use="optional"/>
+                                            <xs:attribute type="xs:string" name="REPFL" use="optional"/>
+                                            <xs:attribute type="xs:string" name="LOVSQ" use="optional"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="ATR_MULTI_ROW" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="ATR_NM" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                                        <xs:attribute type="xs:string" name="Label" use="optional"/>
+                                                        <xs:attribute type="xs:short" name="SEQ" use="optional"/>
+                                                        <xs:attribute type="xs:string" name="Value" use="optional"/>
+                                                        <xs:attribute type="xs:string" name="STNDR" use="optional"/>
+                                                        <xs:attribute type="xs:string" name="REPFL" use="optional"/>
+                                                        <xs:attribute type="xs:string" name="LOVSQ" use="optional"/>
+                                                        <xs:attribute type="xs:string" name="UOM" use="optional"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:short" name="SEQ" use="optional"/>
+                                    <xs:attribute type="xs:long" name="ROWID" use="optional"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                        <xs:attribute type="xs:string" name="Label" use="optional"/>
+                        <xs:attribute type="xs:short" name="SEQ" use="optional"/>
+                        <xs:attribute type="xs:string" name="SUBTYPE" use="optional"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="id" use="optional"/>
+            <xs:attribute type="xs:string" name="Label" use="optional"/>
+            <xs:attribute type="xs:short" name="SEQ" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

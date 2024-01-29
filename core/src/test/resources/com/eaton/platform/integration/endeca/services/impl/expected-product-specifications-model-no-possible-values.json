@@ -1,0 +1,401 @@
+{
+  "skuSearchRecords": [
+    {
+      "attributeGroups": [
+        {
+          "attributeGroupName": "General specifications",
+          "attributeList": [
+            {
+              "attributeLabel": "Product Name",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Eaton 9PX UPS"
+              }
+            },
+            {
+              "attributeLabel": "Catalog Number",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "9PX8KIPM"
+              }
+            },
+            {
+              "attributeLabel": "UPC",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "743172039361"
+              }
+            },
+            {
+              "attributeLabel": "Product Length/Depth",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "70 cm"
+              }
+            },
+            {
+              "attributeLabel": "Product Height",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "44 cm"
+              }
+            },
+            {
+              "attributeLabel": "Product Width",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "13 cm"
+              }
+            },
+            {
+              "attributeLabel": "Product Weight",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "19 kg"
+              }
+            },
+            {
+              "attributeLabel": "Compliances",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "CE Marked \u003cbr\u003e TUV \u003cbr\u003e cULus Listed \u003cbr\u003e CSA 22.2"
+              }
+            },
+            {
+              "attributeLabel": "Certifications",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "IEC/EN 62040-1 \u003cbr\u003e UL 1778 \u003cbr\u003e IEC/EN 62040-2 \u003cbr\u003e CE \u003cbr\u003e cULus Listed \u003cbr\u003e EAC"
+              }
+            }
+          ]
+        },
+        {
+          "attributeGroupName": "Battery",
+          "attributeList": [
+            {
+              "attributeLabel": "Runtime graph",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "View runtime graph"
+              }
+            },
+            {
+              "attributeLabel": "Battery replacement",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "No battery"
+              }
+            },
+            {
+              "attributeLabel": "Battery quantity",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "0"
+              }
+            },
+            {
+              "attributeLabel": "Battery management",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "\u003cul\u003e\u003cli\u003eABM \u0026 Temperature compensated charging method (user selectable)\u003c/li\u003e\u003cli\u003eAutomatic battery test\u003c/li\u003e\u003cli\u003eDeep discharge protection\u003c/li\u003e\u003cli\u003eAutomatic recognition of external battery units\u003c/li\u003e\u003c/ul\u003e"
+              }
+            },
+            {
+              "attributeLabel": "Extended battery capability",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Yes"
+              }
+            }
+          ]
+        },
+        {
+          "attributeGroupName": "Electrical output",
+          "attributeList": [
+            {
+              "attributeLabel": "Voltage",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "230V"
+              }
+            },
+            {
+              "attributeLabel": "Receptacle",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Hardwired"
+              }
+            },
+            {
+              "attributeLabel": "Wattage",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "7.2 kW"
+              }
+            },
+            {
+              "attributeLabel": "Output voltage range",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "200/208/220/230/240/250 V +/- 1%"
+              }
+            },
+            {
+              "attributeLabel": "Output frequency",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "50/60 Hz"
+              }
+            },
+            {
+              "attributeLabel": "Output nominal voltage",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "230V default (200/208/220/230/240/250V)"
+              }
+            },
+            {
+              "attributeLabel": "Voltage distortion output (linear load) - max",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "2"
+              }
+            },
+            {
+              "attributeLabel": "Topology",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Online/Double-conversion"
+              }
+            }
+          ]
+        },
+        {
+          "attributeGroupName": "Electrical input",
+          "attributeList": [
+            {
+              "attributeLabel": "Input connection",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Hardwired/fixed connection"
+              }
+            },
+            {
+              "attributeLabel": "Input nominal voltage",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "230V default (200/208/220/230/240/250V)"
+              }
+            },
+            {
+              "attributeLabel": "Nominal frequency",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "50/60 Hz"
+              }
+            },
+            {
+              "attributeLabel": "Input power factor",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "\u003e.99"
+              }
+            },
+            {
+              "attributeLabel": "Input voltage range",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "176-276 V (100-276 V with derating)"
+              }
+            },
+            {
+              "attributeLabel": "Input frequency range",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "40-70 Hz"
+              }
+            }
+          ]
+        },
+        {
+          "attributeGroupName": "Communications",
+          "attributeList": [
+            {
+              "attributeLabel": "Communication",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "\u003cul\u003e\u003cli\u003eUSB port (HID compliant)\u003c/li\u003e\u003cli\u003eSerial port (RS232)\u003c/li\u003e\u003cli\u003eMini terminal block for remote On/Off\u003c/li\u003e\u003cli\u003eMini-terminal block for remote power off\u003c/li\u003e\u003cli\u003eDry contacts (4 outputs, relay, DB9)\u003c/li\u003e\u003cli\u003eDB15 for parallel operation\u003c/li\u003e\u003c/ul\u003e"
+              }
+            },
+            {
+              "attributeLabel": "Ethernet interface",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "No"
+              }
+            },
+            {
+              "attributeLabel": "Potential free switch contact",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Yes"
+              }
+            },
+            {
+              "attributeLabel": "Expansion slots",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "One slot for optional communication card"
+              }
+            },
+            {
+              "attributeLabel": "Software compatibility",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Eaton Intelligent Power Manager, Eaton Intelligent Power Protector"
+              }
+            },
+            {
+              "attributeLabel": "Type of interface",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Other"
+              }
+            }
+          ]
+        },
+        {
+          "attributeGroupName": "Environmental",
+          "attributeList": [
+            {
+              "attributeLabel": "Altitude",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "3000 m"
+              }
+            },
+            {
+              "attributeLabel": "Noise level",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "\u003c48 dB at 1 meter"
+              }
+            },
+            {
+              "attributeLabel": "Temperature range",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "0° to 40°C (32° to 104°F)"
+              }
+            },
+            {
+              "attributeLabel": "BTU Rating",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Online: 1472"
+              }
+            },
+            {
+              "attributeLabel": "Relative humidity",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "0-95% non-condensing"
+              }
+            }
+          ]
+        },
+        {
+          "attributeGroupName": "Additional specifications",
+          "attributeList": [
+            {
+              "attributeLabel": "Form factor",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Rack/tower"
+              }
+            },
+            {
+              "attributeLabel": "Construction type",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Free standing model"
+              }
+            },
+            {
+              "attributeLabel": "Package contents",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "\u003cul\u003e\u003cli\u003ePower Module\u003c/li\u003e\u003cli\u003eUSB cable\u003c/li\u003e\u003cli\u003eSerial cable\u003c/li\u003e\u003cli\u003e(2) Supports for tower mounting\u003c/li\u003e\u003cli\u003eSafety instructions\u003c/li\u003e\u003cli\u003eQuickstart guide\u003c/li\u003e\u003c/ul\u003e"
+              }
+            },
+            {
+              "attributeLabel": "Phase (output)",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "1"
+              }
+            },
+            {
+              "attributeLabel": "Internal bypass",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Yes"
+              }
+            },
+            {
+              "attributeLabel": "Auto shutdown function",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Yes"
+              }
+            },
+            {
+              "attributeLabel": "Rack size",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "3U"
+              }
+            },
+            {
+              "attributeLabel": "Color",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Black/silver"
+              }
+            },
+            {
+              "attributeLabel": "Rack mounting kit",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "No"
+              }
+            },
+            {
+              "attributeLabel": "Efficiency",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "95"
+              }
+            },
+            {
+              "attributeLabel": "Phase (input)",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "1"
+              }
+            },
+            {
+              "attributeLabel": "Hot swap power",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "No"
+              }
+            }
+          ]
+        }
+      ],
+      "attributeTables": []
+    }
+  ]
+}

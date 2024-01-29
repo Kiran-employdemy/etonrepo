@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.search.find.replace.FindReplaceConfigServiceConfig">
+  <OCD id="com.eaton.platform.core.services.search.find.replace.FindReplaceConfigServiceConfig" name="Find Replace Config Service Configuration" description="Configuration for Find Replace Config Service">
+    <AD id="tags" type="String" cardinality="2147483647" name="Tags" description="List of tags mappings. Pattern: &lt;id&gt;|&lt;title (can contain unicode)&gt;|&lt;o (own property) or n (nested property)&gt;|&lt;m (multiple valued) or s (single  valued)&gt;|&lt;tag root&gt;. Tag root can be omitted." default=""/>
+    <AD id="assetsTagProperties" type="String" cardinality="2147483647" name="Assets tag properties" description="Assets tag properties mapping. Pattern: &lt;id&gt;|&lt;property name&gt;|&lt;m (multiple valued) or s (signle valued)&gt;." default=""/>
+    <AD id="componentsTagProperties" type="String" cardinality="2147483647" name="Components tag properties" description="Components tag properties mapping. Pattern: &lt;id&gt;|&lt;property name&gt;|&lt;m (multiple valued) or s (signle valued)&gt;." default=""/>
+    <AD id="pagesTagProperties" type="String" cardinality="2147483647" name="Pages tag properties" description="Pages tag properties mapping. Pattern: &lt;id&gt;|&lt;property name&gt;|&lt;m (multiple valued) or s (signle valued)&gt;." default=""/>
+    <AD id="resourceTypes" type="String" cardinality="2147483647" name="Resource types" description="Resource types mapping. Pattern: &lt;id&gt;|&lt;resource type&gt;|&lt;subtype (multifield property name)&gt;. Subtype is optional." default=""/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.search.find.replace.impl.FindReplaceConfigServiceImpl">
+    <Object ocdref="com.eaton.platform.core.services.search.find.replace.FindReplaceConfigServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

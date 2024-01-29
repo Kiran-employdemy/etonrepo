@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:oak="http://jackrabbit.apache.org/oak/ns/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="oak:Unstructured"
+    async="[async,nrt]"
+    compatVersion="{Long}2"
+    evaluatePathRestrictions="{Boolean}true"
+    reindex="{Boolean}false"
+    type="lucene">
+    <indexRules jcr:primaryType="oak:Unstructured">
+        <nt:unstructured jcr:primaryType="oak:Unstructured">
+            <properties jcr:primaryType="oak:Unstructured">
+                <text
+                    jcr:primaryType="oak:Unstructured"
+                    name="text"
+                    propertyIndex="{Boolean}true"
+                    type="String"/>
+                <topicLinkDesc
+                    jcr:primaryType="oak:Unstructured"
+                    name="topicLinkDesc"
+                    propertyIndex="{Boolean}true"
+                    type="String"/>
+                <transText
+                    jcr:primaryType="oak:Unstructured"
+                    name="transText"
+                    propertyIndex="{Boolean}true"
+                    type="String"/>
+            </properties>
+        </nt:unstructured>
+    </indexRules>
+</jcr:root>

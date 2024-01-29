@@ -1,0 +1,47 @@
+<sly data-sly-test="${wcmmode.edit}">
+    <div class="alert alert-warning">Hero with CTA</div>
+</sly>
+
+<sly data-sly-use.slide="com.eaton.platform.core.models.digital.v1.impl.HeroCTA">
+
+
+    <div data-sly-test="${ slide.heroHeader }" class="hero-with-cta__component ">
+        <ul class="hero-with-cta__slide-list">
+            <li class="hero-with-cta__slide-item image-mask">
+                <div class="hero-with-cta__image">
+                    <!-- Start: Rendition Image Component -->
+                    <sly
+                        data-sly-test.useDynamicRendition="${ slide.desktopDynamicRenditionUrl != null && slide.mobileDynamicRenditionUrl != null }" />
+                    <sly
+                        data-sly-use.tpl="${ useDynamicRendition ? 'eaton/components/shared/templates/dynamic-rendition-background.html' : 'eaton/components/shared/templates/rendition-background.html'}">
+                        <sly data-sly-call="${ tpl.module @ data=slide }"></sly>
+                    </sly>
+                    <div class="image-alt-text">${ slide.heroImageAltText }</div>
+                    <!-- End: Rendition Image Component -->
+                </div>
+                <div class="hero-with-cta__content">
+                    <div class="container">
+                        <div class="hero-with-cta__caption">
+                            <h1 data-sly-test="${ slide.heroCTAHeaderType != 'h2' }"
+                                class="b-heading-h1-hero hero-with-cta__title">${ slide.heroHeader @ context='html'}</h1>
+                            <h2 data-sly-test="${ slide.heroCTAHeaderType == 'h2' }"
+                                class="b-heading-h1-hero hero-with-cta__title">${ slide.heroHeader @ context='html'}</h2>
+
+                            <div data-sly-test="${ properties.showSeparator }" class="hero-with-cta__separator"></div>
+                            <div class="hero-with-cta__text b-hero-description">${ slide.heroDesc @ context = 'html'}
+                            </div>
+                            <div></div>
+                            <sly data-sly-list.card="${ slide.ctaLinks }">
+                                <a data-sly-test="${ card.ctaLinkPath }" class="hero-with-cta__cta b-button"
+                                    href="${ card.ctaLinkPath @context='text'}" target="${ card.newWindow }"
+                                   data-source-tracking="${card.enableSourceTracking}"
+                                    rel="${ card.rel }" role="button">${ card.ctaLinkTitle }</a>
+                            </sly>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+
+    </div>
+</sly>

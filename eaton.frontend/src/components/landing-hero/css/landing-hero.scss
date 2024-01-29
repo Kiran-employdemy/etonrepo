@@ -1,0 +1,87 @@
+//-----------------------------------
+// Module Landing Hero - Is Part of M-49 Category Highlight
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.landing-hero {
+
+  &__component {
+    position: relative;
+  }
+
+
+  //-----------------------------------
+  // Media Query: 0 - 479px
+  //-----------------------------------
+  @include media-mobile-portrait {
+
+    // Aspect Ratio Mobile Breakpoint
+    $aspect-ratio--mobile: 120vw;
+
+    // Override the Default height of the "home-page-hero" Component (EATON-808)
+    &__component,
+    &__component .home-page-hero__slide-item {
+      height: $aspect-ratio--mobile;
+      margin-bottom: rem($spacing__md * .75);
+    }
+
+  }
+
+
+  //-----------------------------------
+  // Media Query: 480 - 767px
+  //-----------------------------------
+  @include media-mobile-landscape {
+
+    // Aspect Ratio Mobile Breakpoint
+    $aspect-ratio--mobile: 75vw;
+
+    // Override the Default height of the "home-page-hero" Component (EATON-808)
+    &__component,
+    &__component .home-page-hero__slide-item {
+      height: $aspect-ratio--mobile;
+      margin-bottom: rem($spacing__md * .75);
+    }
+
+  }
+
+
+  //-----------------------------------
+  // Media Query: 768px - 991px
+  //-----------------------------------
+  @include media-tablet-only {
+
+    // Aspect Ratio Tablet Breakpoint: 16:9
+    $aspect-ratio--tablet: 56.25vw;
+
+    // Override the Default height of the "home-page-hero" Component (EATON-808)
+    &__component,
+    &__component .home-page-hero__slide-item {
+      height: $aspect-ratio--tablet;
+      margin-bottom: rem($spacing__md);
+    }
+
+  }
+
+
+
+
+  //-----------------------------------
+  // Media Query: > 992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    // Aspect Ratio Desktop Breakpoint
+    $aspect-ratio--desktop: 42vw;
+
+    &__component,
+    &__component .home-page-hero__slide-item {
+      height: $aspect-ratio--desktop;
+      margin-bottom: rem($spacing__md);
+      max-height: rem($grid__xs);
+    }
+  }
+
+}

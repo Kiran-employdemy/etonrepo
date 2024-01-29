@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:language="en-us"
+    jcr:mixinTypes="[mix:language]"
+    jcr:primaryType="sling:Folder">
+    <apply
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="apply"
+        sling:message="Apply"/>
+    <bussManPriceFIle
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Bussmann price list"
+        sling:message="Bussmann component "/>
+    <ascendingSort
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="ascendingSort"
+        sling:message="A-Z"/>
+    <bestSeller
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="bestSeller"
+        sling:message="Best Seller"/>
+    <clearFilters
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="clearFilters"
+        sling:message="Clear Filters"/>
+    <contentType
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="contentType"
+        sling:message="Content Type"/>
+    <copyright
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="copyright"
+        sling:message="Eaton. All Rights Reserved."/>
+    <CoreFeatures
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Core Features"
+        sling:message=""/>
+	<DefaultTaxonomyAttributeLabel
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="defaultTaxonomyAttributeLabel"
+        sling:message=""/>
+    <crossSellDescription
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Cross Sell Description"
+        sling:message="Discover other Eaton products and accesories built to enhance this product."/>
+    <CrossSellTitle
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Cross Sell Title"
+        sling:message="Designed to work together"/>
+    <descendingSort
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="descendingSort"
+        sling:message="Z-A"/>
+    <goTo
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="goTo"
+        sling:message="Go To"/>
+    <headline
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="headline"
+        sling:message="How to buy from Eaton"/>
+    <HowtoBuy
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="HowtoBuy"
+        sling:message="How to Buy"/>
+    <invalidEloquaFormIdErrMsg
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="invalidEloquaFormIdErrMsg"
+        sling:message="Invalid Form Id, please enter a valid value."/>
+    <ListPrice
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="ListPrice"
+        sling:message="LIST PRICE"/>
+    <UnAuthenticatedCTALabel
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="UnAuthenticatedCTALabel"
+        sling:message="Add a free sample to the cart"/>    
+    <AuthenticatedCTALabel
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="AuthenticatedCTALabel"
+        sling:message="Add a free sample to the cart"/>
+    <loadMore
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="loadMore"
+        sling:message="Load More"/>
+
+    <Models
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Models"
+        sling:message=""/>
+    <modules
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="modules"
+        sling:message=""/>
+    <More
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="More"
+        sling:message=""/>
+    <narrowResults
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="narrowResults"
+        sling:message="Narrow Results"/>
+    <newKeyword
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="newKeyword"
+        sling:message="New"/>
+    <newsAndSights
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="newsAndSights"
+        sling:message="News and Insights"/>
+     <noFiles
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="noFiles"
+        sling:message="No files are currently available"/> 
+    <Overview
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Overview"
+        sling:message="Overview"/>
+    <priceDisclaimer
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="priceDisclaimer"
+        sling:message="List Prices are not a reflection of the actual product Stree Price. Check with your Eaton reseller or partner to get actual pricing"/>
+    <products
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="products"
+        sling:message="Products"/>
+
+
+    <recaptchaErrMsg
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="recaptchaErrMsg"
+        sling:message="Please validate reCAPTCHA."/>
+    <relevance
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="relevance"
+        sling:message="Relevance"/>
+    <removeFilters
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="removeFilters"
+        sling:message="Remove Filters"/>
+    <resource
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="resource"
+        sling:message="Resource"/>
+    <Resources
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Resources"
+        sling:message="Resources"/>
+    <results
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="results"
+        sling:message="Results"/>
+    <services
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="services"
+        sling:message="Services"/>
+    <Services
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Services"
+        sling:message="Services"/>
+    <viewAdditionalResources
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="viewAdditionalResources"
+        sling:message="View Additional Resources"/>
+    <contactMe
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="contactMe"
+        sling:message="Contact Me"/>
+    <sort
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="sort"
+        sling:message="Sort"/>
+    <specification
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="specification"
+        sling:message="Specification"/>
+    <Specifications
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Specifications"
+        sling:message="Specifications"/>
+    <supportInfoDesc
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="supportInfoDesc"
+        sling:message="We are here to provide tips and helpful information when you need it most."/>
+    <supportInfoHeadline
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="supportInfoHeadline"
+        sling:message="Need product support?"/>
+    <Viewall
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="View all"
+        sling:message=""/>
+	<continueTo
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="continueto"
+        sling:message="Continue To"/>
+    <viewMore
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="viewMore"
+        sling:message="View More"/>
+	<eloquaDisclaimerErrMsg
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="eloquaDisclaimerErrMsg"
+        sling:message="Please select disclaimer checkbox"/>
+	<productType
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="productType"
+        sling:message="Product Type"/>
+    <postZeroSearchResultsMessage
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="postZeroSearchResultsMessage"
+        sling:message="found no results."/>
+    <preZeroSearchResultsMessage
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="preZeroSearchResultsMessage"
+        sling:message="Your search for"/>
+    <zeroSearchResultsTitle
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="zeroSearchResultsTitle"
+        sling:message="0 Search Results"/>
+    <externalToolName
+            jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="externalToolName"
+            sling:message="Test Tool Name"/>
+    <nonResponsiveMessage
+            jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="nonResponsiveMessage"
+            sling:message="Please rotate device to view the"/>
+
+    <isDisplayedMobileMessage
+            jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="isDisplayedMobileMessage"
+            sling:message="We regret that this tool is not available for mobile devices.
+                            Please view it in a desktop browser or a tablet to view a more complete experience"/>
+
+	<selectApplication
+			jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="selectApplication"
+            sling:message="Select Application :"/>
+    <or
+	  jcr:mixinTypes="[sling:Message]"
+      jcr:primaryType="nt:folder"
+      sling:key="or"
+      sling:message="Or"/>
+
+     <showingResultsFor
+            jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="showingResultsFor"
+            sling:message="Showing Results for"/>
+    <selectCountry
+            jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="selectCountry"
+            sling:message="Select a country"/>
+    <searchInsteadFor
+            jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="searchInsteadFor"
+            sling:message="Search instead for"/>
+    <trackingCapability
+			jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="trackingCapability"
+            sling:message="Tracking capabilities"/>
+	<downloadTracking
+			jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="downloadTracking"
+            sling:message="Download tracking capabilities"/>
+	<okayButton
+			jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="okayButton"
+            sling:message="Okay"/>
+	<cancelButton
+			jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="cancelButton"
+            sling:message="Cancel"/>
+    <readMore
+            jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="readMore"
+            sling:message="Read more"/>
+    <agentLabel
+            jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="agentLabel"
+            sling:message="Agent"/>
+    <selectAgentNumberLabel
+            jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="selectAgentNumber"
+            sling:message="Select an agent number"/>
+    <division
+            jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="division"
+            sling:message="Division"/>
+    <selectDivisionLabel
+            jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="selectDivisionLabel"
+            sling:message="Select a division"/>
+    <reportNameLabel
+            jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="reportNameLabel"
+            sling:message="Report name"/>
+    <dateLabel
+            jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="dateLabel"
+            sling:message="Date"/>
+	<dataSheets
+            jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="dataSheets"
+            sling:message="Datasheets"/>
+	<dataSheetXLS
+			jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="datasheetXLS"
+            sling:message="Datasheet (XLS)"/>
+    <comparisionGoBack
+		jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="comparisionGoBack"
+        sling:message="Comparison Go Back"/>
+	<productStatus
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="productStatus"
+        sling:message="Discontinued"/>
+    <globalSearch
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="globalSearch"
+        sling:message="Search"/>
+    <viewLessText
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="viewLessText"
+        sling:message="View less"/>
+    <viewMoreText
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="viewMoreText"
+        sling:message="View more"/>
+    <photoRepresentative
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="photoRepresentative"
+        sling:message="Photo is representative"/>
+    <downloadCad
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="downloadCad"
+        sling:message="Download Cad"/> 
+    <enterArticleNumbers
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="enterArticleNumbers"
+        sling:message="Enter article numbers"/>
+    <generateCADData
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="generateCADData"
+        sling:message="Generate CAD data"/>
+    <requestedCADModelsNotAvailable
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="requestedCADModelsNotAvailable"
+        sling:message="The requested CAD models have been generated and are available for download"/>
+    <cadArticleNo
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="cadArticleNo"
+        sling:message="Article no"/>
+    <cadName
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="cadName"
+        sling:message="Name"/>
+    <cadPartNo
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="cadPartNo"
+        sling:message="Part no"/>
+    <cadFileName
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="cadFileName"
+        sling:message="File name"/>
+    <selectFormatMsg
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="selectFormatMsg"
+        sling:message="Please select respective format!"/>
+    <enterArticleNoMsg
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="enterArticleNoMsg"
+        sling:message="Please enter article no!"/>
+    <articleAndFormatSelectionMsg
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="articleAndFormatSelectionMsg"
+        sling:message="Please select format and enter article no.!"/>
+    <cadDataNotFoundMsg
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="cadDataNotFoundMsg"
+        sling:message="Data not found! please try again!"/>
+    <cadDataNotFoundInResult
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="cadDataNotFoundInResult"
+        sling:message="The following article numbers were not found"/>
+    <cadLoaderModelTitle
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="cadLoaderModelTitle"
+        sling:message="The CAD models are being generated"/>
+    <cadLoaderModelBody
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="cadLoaderModelBody"
+        sling:message="The CAD models for the selected products are being generated. This may take some time depending on the number of products you selected"/>
+    <cadFormatSelection
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="cadFormatSelection"
+        sling:message="Format selection"/>
+    <advancedSearchLanguageGlobal
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="GLOBAL"
+        sling:message="Global"/>
+    <advancedSearchLanguageMultilingual
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="Multilingual"
+        sling:message="Multilingual"/>
+    <sha256
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="sha256"
+        sling:message="SHA 256"/>
+    <eccnWarning
+        jcr:mixinTypes="[sling:Message]"
+        jcr:primaryType="nt:folder"
+        sling:key="eccnWarning"
+        sling:message="WARNING: THE COMMODITIES, TECHNOLOGY, OR SOFTWARE PROVIDED TO YOU HEREWITH ARE SUBJECT TO THE UNITED STATES EXPORT ADMINISTRATION REGULATIONS (EAR). ANY EXPORT OR RE-EXPORT OF THIS TECHNOLOGY MUST COMPLY WITH THE EAR. DIVERSION CONTRARY TO U.S. LAW IS PROHIBITED. ECCN: "/>
+   <CreateNewCart
+			jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="CreateNewCart"
+            sling:message="Create a New Cart"/>
+    <KeepMycart
+			jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="KeepMycart"
+            sling:message="Keep My Cart"/>
+    <ProductsNotTitle
+			jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="ProductsNotTitle"
+            sling:message="Products cannot be sold together"/>
+    <ProductsNotDiscp
+			jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="ProductsNotDiscp"
+            sling:message="Products in your cart cannot be sold together in one transaction. Please choose to either keep your existing cart, or create a new cart with this product."/>
+    <PurchaseSept
+			jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="PurchaseSept"
+            sling:message="You can purchase your products in separate transactions."/>
+     <itemAdded
+			jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="itemAdded"
+            sling:message="Item is already in the cart."/>
+      <attributeId
+			jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="attributeId"
+            sling:message="Attribute Id Json Generator"/>      
+      <onlyXlsx
+			jcr:mixinTypes="[sling:Message]"
+            jcr:primaryType="nt:folder"
+            sling:key="onlyXlsx"
+            sling:message="Only Upload .xlsx and .xls File"/>
+</jcr:root>
+

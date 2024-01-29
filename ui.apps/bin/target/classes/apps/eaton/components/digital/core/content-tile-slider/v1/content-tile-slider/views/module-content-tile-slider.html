@@ -1,0 +1,54 @@
+<template data-sly-template.module="${ @ data }">
+  <div class="eaton-content-slider module-related-products">
+    <ul class="module-related-content__slides new-product" data-sly-list="${data.listTypeArray}">
+      <li data-sly-test="${item.desktopTransformedUrl}"
+        class="module-related-content__slide-item col-xs-12 ${!data.isEligibleForCarousel ? 'col-sm-4' : 'col-sm-3'}">
+        <div class="col-xs-12 module-related-products__card">
+          <!-- Start: Rendition Image Component -->
+          <sly
+            data-sly-test.useDynamicRendition="${ slide.desktopDynamicRenditionUrl != null && slide.mobileDynamicRenditionUrl != null }" />
+          <sly
+            data-sly-use.tpl="${ useDynamicRendition ? 'eaton/components/shared/templates/dynamic-rendition-background.html' : 'eaton/components/shared/templates/rendition-background.html'}" />
+          <sly data-sly-call="${ tpl.module @ data=item }"></sly>
+          <!-- End: Rendition Image Component -->
+        </div>
+        <div class="col-xs-12 module-related-products__info">
+          <div class="module-related-products__info-text">
+            <sly data-sly-test="${properties.listType == 'manual-list'}">
+              <p class="module-related-products__title b-eyebrow-small ">${item.linkEyebrow}</p>
+            </sly>
+            <sly data-sly-test="${properties.listType != 'manual-list'}">
+              <p class="module-related-products__title">${item.linkTitle}</p>
+              <sly data-sly-test="${item.eyebrowTitleLink}">
+				<p class="module-related-products__title b-eyebrow-small "><a href=${item.linkPath}>${item.eyebrowTitleLink}</a></p>
+			</sly>
+            </sly>
+            <div class="eaton-text-default">
+              <div class="module-related-products__subtitle">
+			  <div class="module-related-products__subtitle-list">${item.Description @ context = 'html'}</div>
+			  </div>
+            </div>
+          </div>
+          <div class="module-related-products__info-btns" data-sly-list.btn="${item.ctaButtons}">
+            <div data-sly-test="${btn.ctaLinkTitle}">
+              <a href="${btn.ctaLinkPath @context='text'}" target="${btn.newWindow }" rel="${ btn.rel }"
+                class="btn-block b-button content-tile-with-cta-wrapper__button-wrapper-tile_button b-button__tertiary ${btn.cssClass}"
+                data-source-tracking="${btn.enableSourceTracking}"
+                 role="button"> ${btn.ctaLinkTitle} </a>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <sly data-sly-test="${data.isEligibleForCarousel}">
+      <button class="module-related-products__prev-arrow module-related-products__arrows button--reset">
+        <span class="icon icon-chevron-left"></span>
+        <span class="sr-only">Go to Previous Item</span>
+      </button>
+      <button class="module-related-products__next-arrow module-related-products__arrows button--reset">
+        <span class="icon icon-chevron-right"></span>
+        <span class="sr-only">Go to Next Item</span>
+      </button>
+    </sly>
+  </div>
+</template>

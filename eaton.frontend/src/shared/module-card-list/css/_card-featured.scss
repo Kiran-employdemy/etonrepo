@@ -1,0 +1,61 @@
+//-----------------------------------
+// M-49 Category Highlight - Article Component
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+.featured-article-card {
+
+  &__image {
+    position: relative;
+    padding-top: $ratio__4-3;
+
+    .rendition-bg {
+      background-position: center center;
+      background-size: auto 100%;
+    }
+  }
+
+  &__content {
+    padding: rem($spacing__sm * .4) 0 rem($spacing__md * .7); // Visually 15px top spacing, 45px bottom spacing
+  }
+
+  &__eyebrow {
+    margin-bottom: rem($base__font-size * .5); // Visually 15px spacing
+  }
+
+  &__title {
+    color: var(--primary-brand-color);
+    margin-bottom: rem($base__font-size * .5); // Visually 15px bottom spacing.
+  }
+
+
+  //-----------------------------------
+  // 0-767px
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    &__image {
+      padding-top: $ratio__16-9;
+    }
+
+    &__content {
+      padding: rem($spacing__sm * .866666) 0 rem($spacing__md * .866666); // Visually 30px top spacing, 60px bottom spacing
+    }
+
+    &__eyebrow {
+      @include eyebrow-large--desktop;
+      margin-bottom: rem($spacing__sm * .66); // Visually 30px bottom spacing
+    }
+
+    &__title {
+      // Toolkit H5 Link deviation
+      font-size: rem($base__font-size * 2.3);
+      line-height: rem($base__font-size * 2.5);
+      margin-bottom: rem($spacing__sm * .66);
+    }
+  }
+
+}

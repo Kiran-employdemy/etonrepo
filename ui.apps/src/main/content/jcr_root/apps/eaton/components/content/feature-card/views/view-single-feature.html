@@ -1,0 +1,28 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.FeatureCardInfoModel">
+  <div class="card-single-feature__component">
+    <p data-sly-test="${data.cardHeader}" class="card-single-feature__headline b-eyebrow-small">${data.cardHeader}</p>
+    <div data-sly-test="${data.cardImage}" class="card-single-feature__image">
+	   <!-- Rendition Refractoring  -->
+	  	<sly data-sly-use.tpl="eaton/components/shared/templates/rendition-image.html">
+            <sly data-sly-call="${ tpl.module @ data=data }"></sly>
+        </sly> 
+    </div>
+    <div class="card-single-feature__content">
+      
+
+      <!--/* List Links */-->
+      <ul class="card-single-feature__links">
+        <li data-sly-test="${data.cardLinkTitle}" class="card-single-feature__links-item">
+          <a href="${ data.cardLinkPath }" 
+		  class="card-single-feature__item b-body-copy-small" 
+		  aria-label="Go to ${ data.cardLinkTitle }"
+		   target="${ data.cardLinkOpenNewWindow }">
+            <span>${ data.cardLinkTitle }</span>
+           
+          </a>
+        </li>
+      </ul>
+<div class="card-single-feature__description b-body-copy-small">${ data.cardLinkDesc }</div>
+    </div>
+  </div>
+</sly>

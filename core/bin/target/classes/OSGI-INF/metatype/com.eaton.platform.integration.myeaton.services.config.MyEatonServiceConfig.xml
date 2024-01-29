@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.myeaton.services.config.MyEatonServiceConfig">
+  <OCD id="com.eaton.platform.integration.myeaton.services.config.MyEatonServiceConfig" name="MyEatonService" description="">
+    <AD id="myEatonEndpointRoot" type="String" name="Endpoint URL Root" description="Service URL Root for the My Eaton API" default="http://portalapps-dev2.tcc.etn.com:8888/portal-access-api"/>
+    <AD id="userRegistrationEndpoint" type="String" name="User Registration URL Part" description="Service URL part for self registration" default="/user/self-registration"/>
+    <AD id="userLookupEndpoint" type="String" name="User Lookup URL Part" description="Service URL part for user lookup" default="/user/username/lookup"/>
+    <AD id="supplierLookupEndpoint" type="String" name="Supplier Lookup URL Part" description="Service URL part for Supplier lookup" default="/site-management/v1/sites"/>
+    <AD id="updateUserEndpoint" type="String" name="Update user information" description="Endpoint to update user profile information" default="/user-management/v1/users"/>
+    <AD id="fieldsEndpoint" type="String" name="Fields URL Part" description="Service URL part for Fields" default="/user/self-registration/fields"/>
+    <AD id="myEatonUsername" type="String" name="My Eaton Username" description="Service Username for Basic Authentication" default="user"/>
+    <AD id="myEatonPassword" type="Password" name="My Eaton Password" description="Service Password for Basic Authentication. Should be encrypted with crypto service" default="{fa771e1a37f7991485059fa6934ce8066e3c8aa7547c1b3aa998b3450d55435c}"/>
+    <AD id="maxConnections" type="Integer" name="Max Connections" description="Defines the maximum number of connections allowed overall. This value only applies to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+    <AD id="maxHostConnections" type="Integer" name="Max Host Connections" description="Defines the maximum number of connections allowed per host configuration. These values only apply to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+    <AD id="maxCacheSize" type="Integer" name="Max Cache Size" description="Defines the maximum of the cached response before invalidating the oldest." default="1000"/>
+    <AD id="cacheDuration" type="Integer" name="Cache Duration" description="Define (in seconds) the maximum time the cached response will stay valid." default="60"/>
+    <AD id="metadataPath" type="String" name="Metadata Path" description="Portion of path for AEM Asset Metadata." default="/jcr:content/metadata"/>
+    <AD id="fdmDefinitionsPath" type="String" name="FDM Definitions Path" description="Portion of path for FDM Definitions" default="/jcr:content/renditions/fdm-json/jcr:content/definitions"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.myeaton.services.impl.MyEatonServiceConfigurationImpl">
+    <Object ocdref="com.eaton.platform.integration.myeaton.services.config.MyEatonServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

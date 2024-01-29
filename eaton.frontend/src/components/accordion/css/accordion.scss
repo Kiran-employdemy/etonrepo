@@ -1,0 +1,118 @@
+//-----------------------------------
+// Accordion Component
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.accordion {
+  &__option {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-bottom: rem($spacing__sm); //30px
+
+    a {
+      text-decoration: none;
+    }
+
+    @include media-desktop-and-up {
+      margin-bottom: rem($spacing__sm * 0.666667); //20px
+    }
+
+    .toggle-accordion {
+      font-size: rem($spacing__sm * 0.6); //18px
+    }
+  }
+
+  .panel-group {
+    margin-bottom: 0;
+  }
+
+  // stylelint-disable declaration-property-value-blacklist
+  .panel {
+    border: 0 !important; // stylelint-disable declaration-no-important
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin-bottom: rem($spacing__sm); //30px
+    margin-top: 0 !important;
+
+    @include media-desktop-and-up {
+      margin-bottom: rem($spacing__sm * 1.33333); //40px
+    }
+
+    &__header {
+      background-color: var(--primary-brand-color);
+      color: var(--color__white);
+
+      &__title {
+        align-items: center;
+        color: var(--color__white);
+        display: flex;
+        flex-direction: row;
+        font-family: var(--font-family-eaton-primary);
+        font-size: rem($base__font-size * 2.8) !important;
+        font-weight: normal;
+        justify-content: space-between;
+        margin: 0;
+        padding: rem($spacing__sm * 0.1) rem($spacing__sm * 0.5) rem($spacing__sm * 0.1) rem($spacing__sm * 0.33333); //3px 15px 3px 10px
+        text-decoration: none;
+
+        @include media-desktop-and-up {
+          padding: rem($spacing__sm * 0.5) rem($spacing__sm * 0.83333) rem($spacing__sm * 0.5) rem($spacing__sm * 0.33333); //15px 25px 15px 10px
+        }
+
+        h2 {
+          font-size: inherit;
+          margin: 0;
+        }
+
+        &.collapsed {
+          .panel__header__icon::after {
+            content: "\EA22"; //plus
+            font-family: 'eaton-glyphicon';
+          }
+        }
+      }
+
+      a:hover,
+      a:focus,
+      a:active {
+        text-decoration: none !important;
+      }
+
+      &__icon {
+        color: var(--color__white);
+        font-size: rem($base__font-size * 2.2);
+
+        &::after {
+          content: "\EA21"; //minus
+          display: inline-block;
+          font-family: 'eaton-glyphicon';
+          font-style: normal;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+      }
+    }
+
+    &__body {
+      padding-top: rem($spacing__sm * 1.33333); //40px
+
+      .text {
+        p {
+          margin-bottom: rem($spacing__sm * 0.6); //40px to override bottom margin for text component p tag
+          margin-top: 0;
+        }
+      }
+
+      &__fix {
+        font-size: 0.1px;
+        margin: 0;
+        padding: 0;
+        visibility: hidden;
+      }
+    }
+  }
+}

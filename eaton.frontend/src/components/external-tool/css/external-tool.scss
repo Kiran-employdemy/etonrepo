@@ -1,0 +1,63 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.external-tool {
+  margin-top: $spacing__md;
+
+  &__iframe {
+    border: 0;
+    margin-bottom: $spacing__sm;
+    width: 100%;
+
+    &--no-mobile {
+      @include media-mobile-only {
+        display: none;
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    margin: $spacing__sm auto;
+
+    &__container {
+      background: $color__accent-darkblue;
+      margin-top: $spacing__sm * .5;
+    }
+  }
+
+  &__message {
+    padding-left: $spacing__sm;
+
+    &__container {
+      background: var(--primary-brand-color, $color__primary-blue);
+      color: $color__white;
+      display: none;
+      padding-bottom: $spacing__sm;
+      padding-top: $spacing__sm;
+    }
+
+    &__rotate {
+      min-height: 70vh;
+    }
+
+    &__no-mobile {
+      @include media-mobile-only {
+        display: block;
+        min-height: 70vh;
+      }
+    }
+  }
+
+  &__icon {
+    font-size: rem($base__font-size * 3.6);
+  }
+
+  &--is-author-mode {
+    .external-tool__message__rotate,
+    .external-tool__message__no-mobile {
+      display: block;
+      min-height: 0;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.workflows.timeout.AbsoluteTimeout" immediate="true">
+  <property name="service.vendor" type="String" value="Eaton"/>
+  <property name="service.description" type="String" value="Eaton - Absolute Timeout"/>
+  <property name="process.label" type="String" value="EATON - Absolute Timeout"/>
+  <service>
+    <provide interface="com.adobe.granite.workflow.exec.WorkflowProcess"/>
+  </service>
+  <implementation class="com.eaton.platform.core.workflows.timeout.AbsoluteTimeout"/>
+</scr:component>

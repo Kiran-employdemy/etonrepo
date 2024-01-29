@@ -1,0 +1,117 @@
+@import "../../../global/css/_config/sass";
+/** These are style overrides for active filters specifically in the Submittal Builder context */
+
+.faceted-navigation {
+  &__active-filters {
+    &__container {
+      display: none;
+      margin-top: rem($spacing__sm * 0.3333333);
+
+      @include media-tablet-and-up {
+        display: block;
+      }
+
+      &--mobile {
+        .submittal-builder__results-count,
+        .submittal-builder__hr {
+          display: none;
+        }
+      }
+    }
+
+    .faceted-navigation__filters & {
+      &__container {
+        display: block;
+        padding: 0;
+
+        @include media-tablet-and-up {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-header {
+    &__active-filters {
+      margin-top: rem($spacing__sm * 0.333333);
+      width: 100%;
+
+      @include media-tablet-and-up {
+        .submittal-builder__intro--package-only & {
+          display: none;
+        }
+      }
+
+      @include media-desktop-and-up {
+        display: inline-block;
+        margin-top: 0;
+        margin-bottom: rem($spacing__sm);
+        width: 72%;
+
+        .submittal-builder__intro--package-only & {
+          display: none;
+        }
+      }
+    }
+
+    &__filter-label {
+      margin-right: rem($spacing__sm * .27);
+    }
+
+    &__filter-link {
+      appearance: none;
+      background-color: transparent;
+      border: 2px solid var(--link-brand-color, --primary-brand-color);
+      color: var(--link-brand-color);
+      display: inline-block;
+      font-size: rem($base__font-size * 1.6);
+      margin-bottom: rem($spacing__sm * .1666666667);
+      margin-right: rem($spacing__sm * .1666666667);
+      padding: rem($spacing__sm * 0.4) rem($spacing__sm * .3333333335);
+      position: relative;
+
+      [dir='rtl'] & {
+        margin-left: rem($spacing__sm * .1666666667);
+        margin-right: 0;
+      }
+
+      @include media-tablet-and-up {
+        font-size: rem($base__font-size * 1.4);
+        margin-bottom: rem($spacing__sm * .3333334);
+        padding: rem($spacing__sm * .27) rem($spacing__sm * .24) rem($spacing__sm * .27) rem($spacing__sm * .17);
+      }
+
+      .icon {
+        font-size: rem($base__font-size);
+        margin-right: 2px;
+        margin-top: 5px;
+
+        [dir='rtl'] & {
+          margin-left: 2px;
+          margin-right: 0;
+        }
+      }
+    }
+
+    .faceted-navigation__action-link--clear-filters--desktop,
+    .faceted-navigation-header__action-link--clear-filters {
+      display: none;
+
+      @include media-desktop-and-up {
+        display: inline-block;
+      }
+    }
+
+    .faceted-navigation__action-link--clear-filters--mobile {
+      display: block;
+
+      @include media-desktop-and-up {
+        display: none;
+      }
+
+      .submittal-builder__intro--package-only & {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Full Page Drawer(User Info) - Only show unauthenticated experience</div>
+</sly>
+<sly data-sly-use.headerModel="com.eaton.platform.core.models.HeaderModel">
+<sly data-sly-use.data="com.eaton.platform.core.models.FullPageDrawerModel">
+  <!--/* Utility Navigation */-->
+  <div class="header-utility-nav">
+    <div class="container">
+      <div class="row header-utility-nav__row">
+        <div class="header-utility-nav__toggle-selector">
+          <a href="${data.countryPagePath}" class="open-country-selector"> 
+            <i class="icon icon-globe" aria-hidden="true"></i>
+            <div class="header-utility-nav__label">
+              <span class='header-utility-nav__country'>${ data.countryTitle }</span>
+              <span class='header-utility-nav__language'>${'selectCountry' @ i18n }</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="header-utility-nav__toggle-selector search__utility">
+         
+          <div class="eaton-search eaton-search--default"
+             data-predictive-search="${data.predectiveSearchInputJSONString}">
+            
+                <div class="row">
+                   <!--/* Search Form */-->
+                   <form id="site-search"
+                      class="col-xs-7 eaton-search__form eaton-search--default__form"
+                      autocomplete="off"
+                      target=""
+                      onSubmit="return formSubmit(event);">
+                      <div class="form-group">
+                         <label for="site-search-box" class="sr-only">${data.searchModel.transSearchHeader}</label>
+                         <button type="submit"
+                         class="button--reset eaton-search__submit eaton-search--default__form-submit">
+                      <span class="sr-only">${data.searchModel.submitLabel}</span> <i
+                         class="icon icon-search" aria-hidden="true"></i>
+                      </button>
+                          <sly data-sly-test="${data.isSearchTermPresent}">
+                            
+                         <textarea rows="1" name="search-term" id="site-search-box"
+                            class="form-control eaton-search--default__form-input"
+                            placeholder="Search"
+                            required="required">${data.searchTerm}</textarea>
+                          </sly>
+                         
+                         <sly data-sly-test="${!data.isSearchTermPresent}">   
+                         <textarea rows="1" name="search-term" id="site-search-box"
+                            class="form-control eaton-search--default__form-input"
+                            placeholder="${'globalSearch' @ i18n }"
+                            required="required">${data.searchTerm}</textarea>
+                         </sly>
+       
+                         <div
+                            class="eaton-search--default__form-mobile-label u-visible-mobile">
+                            <span> ${data.isSearchTermPresent == true ? data.searchTerm : data.searchModel.transFieldAid}</span>
+                         </div>
+                         <div data-sly-test="false"
+                            class="eaton-search--default__form-external">
+                            <span class="sr-only">Submit form in new Tab</span> <i
+                               class="icon icon-link-external" aria-hidden="true"></i>
+                         </div>
+                        
+                      </div>
+                      <div class="eaton-search--default__results">
+                         <ul class="eaton-search--default__result-list">
+                            <!--/* Result Links will be populated here via AJAX Request /* -->
+                         </ul>
+                      </div>
+                   </form>
+                </div>
+            
+             
+          </div>
+         
+      
+   
+      </div>
+       
+        <sly data-sly-test ="${!data.loggedInstate}">
+          <div class="header-utility-nav__sign-in"  data-sly-list="${ data.links }">
+            <a href="${item.linkPath}" class='open-sign-in' target="_self">
+              <i class="${item.icons}" aria-hidden="true"></i>
+              <span class='header-utility-nav__signin'>${item.transLinkTitle}</span>
+            </a>
+          </div>
+            <div data-sly-test="${data.enableShoppingCart && wcmmode.edit}" class="header-utility-nav__sign-in shopping_cart">
+                <sly data-sly-resource="${'carticon' @ resourceType='eaton_ecommerce/components/core/carticon/v1/carticon' , wcmmode=headerModel.editMode}"></sly>
+            </div>
+        </sly>
+
+        <sly data-sly-test ="${data.loggedInstate}">
+          <div class="header-utility-nav__sign-in signed-in"  data-sly-list="${ data.links }">
+            <span class="header-utility-nav__postLogin">
+              <a  href=${data.userProfilelink} class='open-sign-in icon-signout-mobile-only' target="_self">
+                <i class="${item.icons} "  aria-hidden="true"></i>
+              </a>
+            </span>
+
+            <a href=${data.userProfilelink}   class='open-sign-in' target="_self">
+              <i class="${item.icons} icon-user-desktop-only" aria-hidden="true"></i>
+            </a>
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle header-utility-nav__signin" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="location.href='${data.userProfilelink @context='uri'}'">
+               ${data.userName}
+              </button>
+            </div>
+          </div>
+
+          <div class="header-utility-nav__sign-in signed-in log-out" >
+            <span class="header-utility-nav__postLogin">
+              <div data-toggle="modal" data-target="#myModalMob">
+              <a href="#" class="open-sign-in icon-signout-mobile-only "  target="_self">
+              <img src="/content/dam/eaton/resources/logout-icon.png" class="desktop-logout"  alt="">
+              
+              </a>
+            </div>
+            </span>
+            <div data-toggle="modal" data-target="#myModal">
+            <a href="#" id="dropdownMenuButton" class="open-sign-in" target="_self">
+             <img src="/content/dam/eaton/resources/logout-icon.png" class="icon-user-desktop-only desktop-logout" alt="">
+            </a>
+            <div class="dropdown open">
+              <button class="btn btn-secondary dropdown-toggle header-utility-nav__signin" type="button"  aria-expanded="true" id="signoutLabel"  data-value=" ${'eatonBasePage.SignOutLinkLabel' @ i18n }">
+                ${'eatonBasePage.SignOutLinkLabel' @ i18n }
+              </button>
+            </div>
+          </div>
+          </div>
+            <div data-sly-test="${data.enableShoppingCart}" class="header-utility-nav__sign-in shopping_cart">
+                <sly data-sly-resource="${'carticon' @ resourceType='eaton_ecommerce/components/core/carticon/v1/carticon' , wcmmode=headerModel.editMode}"></sly>
+            </div>
+        </sly>
+      </div>
+    </div>
+  </div>
+</sly>
+</sly>

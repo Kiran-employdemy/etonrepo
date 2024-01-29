@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.akamai.services.AkamaiContentBuilder" immediate="true">
+  <property name="name" type="String" value="akamai"/>
+  <property name="value" type="String" value="akamai"/>
+  <service>
+    <provide interface="com.day.cq.replication.ContentBuilder"/>
+  </service>
+  <reference name="resolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" field="resolverFactory"/>
+  <implementation class="com.eaton.platform.integration.akamai.services.AkamaiContentBuilder"/>
+</scr:component>

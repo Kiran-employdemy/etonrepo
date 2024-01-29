@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Interactive Room  Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Commontab
+                jcr:primaryType="cq:Panel"
+                title="CommonTab">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <hostURL
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="http://dhryeahy6gbej.cloudfront.net/"
+                        fieldDescription="Host URL where videos are hosted [Current : http://dhryeahy6gbej.cloudfront.net/]"
+                        fieldLabel="Host Url for Videos"
+                        name="./hostURL"
+                        xtype="textfield"/>
+                    <videoExtension
+                        jcr:primaryType="cq:Widget"
+                        defaultValue=".mp4"
+                        fieldDescription="Extension for Video [e.g : .mp4]"
+                        fieldLabel="Video Extension"
+                        name="./videoExtension"
+                        xtype="textfield"/>
+                    <room
+                        jcr:primaryType="cq:Widget"
+                        defaultValue="livingroom"
+                        fieldLabel="Interactive Room"
+                        name="./room"
+                        type="select"
+                        value="livingroom"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <livingroom
+                                jcr:primaryType="nt:unstructured"
+                                text="Living Room"
+                                value="livingroom"/>
+                            <bedroom
+                                jcr:primaryType="nt:unstructured"
+                                text="Bedroom"
+                                value="bedroom"/>
+                            <garage
+                                jcr:primaryType="nt:unstructured"
+                                text="Garage"
+                                value="garage"/>
+                        </options>
+                    </room>
+                    <carouselPrev
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="(e.g. Previous Arrows)."
+                        fieldLabel="Label of Carousel Prev"
+                        name="./carouselPrev"
+                        xtype="textfield"/>
+                    <carouselNext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="(e.g. Next Arrows)."
+                        fieldLabel="Label of Carousel Next"
+                        name="./carouselNext"
+                        xtype="textfield"/>
+                    <quitLabel
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="(e.g. On / Off)"
+                        fieldLabel="Label of Carousel Quit"
+                        name="./quitLabel"
+                        xtype="textfield"/>
+                    <Modaltext
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="(e.g. Lorem Ipsum is simply dummy text of the printing and typesetting industry )"
+                        fieldLabel="Modal Text"
+                        name="./Modaltext"
+                        xtype="richtext">
+                        <uiSettings jcr:primaryType="nt:unstructured">
+                            <cui jcr:primaryType="nt:unstructured">
+                                <inline
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[#format,#justify,#lists,links#modifylink,links#unlink,links#anchor,tracklinks#modifylinktracking,-,fullscreen#start,-,control#close,control#save]">
+                                    <popovers jcr:primaryType="nt:unstructured">
+                                        <format
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript]"
+                                            ref="format"/>
+                                        <justify
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                            ref="justify"/>
+                                        <lists
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                            ref="lists"/>
+                                        <styles
+                                            jcr:primaryType="nt:unstructured"
+                                            items="styles:getStyles:styles-pulldown"
+                                            ref="styles"/>
+                                        <paraformat
+                                            jcr:primaryType="nt:unstructured"
+                                            items="paraformat:getFormats:paraformat-pulldown"
+                                            ref="paraformat"/>
+                                    </popovers>
+                                </inline>
+                                <fullscreen
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript,-,links#modifylink,links#unlink,links#anchor,links#anchor,tracklinks#modify,-,justify#justifyleft,justify#justifycenter,justify#justifyright,-,lists#unordered,lists#ordered,lists#outdent,lists#indent,-,fullscreen#finish]">
+                                    <popovers jcr:primaryType="nt:unstructured">
+                                        <styles
+                                            jcr:primaryType="nt:unstructured"
+                                            items="styles:getStyles:styles-pulldown"
+                                            ref="styles"/>
+                                        <paraformat
+                                            jcr:primaryType="nt:unstructured"
+                                            items="paraformat:getFormats:paraformat-pulldown"
+                                            ref="paraformat"/>
+                                    </popovers>
+                                </fullscreen>
+                            </cui>
+                        </uiSettings>
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </Modaltext>
+                    <redirectlink
+                        jcr:primaryType="cq:Widget"
+                        dName="redirectlink"
+                        fieldLabel="Redirect Link"
+                        name="./redirectlink"
+                        width="180"
+                        xtype="pathfield"/>
+                </items>
+            </Commontab>
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Tab 1">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Title"
+                        name="./title1"
+                        xtype="textfield"/>
+                    <intro
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Intro"
+                        name="./intro1"
+                        xtype="richtext">
+                        <uiSettings jcr:primaryType="nt:unstructured">
+                            <cui jcr:primaryType="nt:unstructured">
+                                <inline
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[#format,#justify,#lists,links#modifylink,links#unlink,links#anchor,tracklinks#modifylinktracking,-,fullscreen#start,-,control#close,control#save]">
+                                    <popovers jcr:primaryType="nt:unstructured">
+                                        <format
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript]"
+                                            ref="format"/>
+                                        <justify
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                            ref="justify"/>
+                                        <lists
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                            ref="lists"/>
+                                        <styles
+                                            jcr:primaryType="nt:unstructured"
+                                            items="styles:getStyles:styles-pulldown"
+                                            ref="styles"/>
+                                        <paraformat
+                                            jcr:primaryType="nt:unstructured"
+                                            items="paraformat:getFormats:paraformat-pulldown"
+                                            ref="paraformat"/>
+                                    </popovers>
+                                </inline>
+                                <fullscreen
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript,-,links#modifylink,links#unlink,links#anchor,links#anchor,tracklinks#modify,-,justify#justifyleft,justify#justifycenter,justify#justifyright,-,lists#unordered,lists#ordered,lists#outdent,lists#indent,-,fullscreen#finish]">
+                                    <popovers jcr:primaryType="nt:unstructured">
+                                        <styles
+                                            jcr:primaryType="nt:unstructured"
+                                            items="styles:getStyles:styles-pulldown"
+                                            ref="styles"/>
+                                        <paraformat
+                                            jcr:primaryType="nt:unstructured"
+                                            items="paraformat:getFormats:paraformat-pulldown"
+                                            ref="paraformat"/>
+                                    </popovers>
+                                </fullscreen>
+                            </cui>
+                        </uiSettings>
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </intro>
+                    <buttontext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="CTA Button Text"
+                        name="./buttontext1"
+                        xtype="textfield"/>
+                    <buttonlink
+                        jcr:primaryType="cq:Widget"
+                        dName="buttonlink"
+                        fieldLabel="CTA Button Link"
+                        name="./buttonlink1"
+                        width="180"
+                        xtype="pathfield"/>
+                </items>
+            </tab1>
+            <tab2
+                jcr:primaryType="cq:Panel"
+                title="Tab 2">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Title"
+                        name="./title2"
+                        xtype="textfield"/>
+                    <intro
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Intro"
+                        name="./intro2"
+                        xtype="richtext">
+                        <uiSettings jcr:primaryType="nt:unstructured">
+                            <cui jcr:primaryType="nt:unstructured">
+                                <inline
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[#format,#justify,#lists,links#modifylink,links#unlink,links#anchor,tracklinks#modifylinktracking,-,fullscreen#start,-,control#close,control#save]">
+                                    <popovers jcr:primaryType="nt:unstructured">
+                                        <format
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript]"
+                                            ref="format"/>
+                                        <justify
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                            ref="justify"/>
+                                        <lists
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                            ref="lists"/>
+                                        <styles
+                                            jcr:primaryType="nt:unstructured"
+                                            items="styles:getStyles:styles-pulldown"
+                                            ref="styles"/>
+                                        <paraformat
+                                            jcr:primaryType="nt:unstructured"
+                                            items="paraformat:getFormats:paraformat-pulldown"
+                                            ref="paraformat"/>
+                                    </popovers>
+                                </inline>
+                                <fullscreen
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript,-,links#modifylink,links#unlink,links#anchor,links#anchor,tracklinks#modify,-,justify#justifyleft,justify#justifycenter,justify#justifyright,-,lists#unordered,lists#ordered,lists#outdent,lists#indent,-,fullscreen#finish]">
+                                    <popovers jcr:primaryType="nt:unstructured">
+                                        <styles
+                                            jcr:primaryType="nt:unstructured"
+                                            items="styles:getStyles:styles-pulldown"
+                                            ref="styles"/>
+                                        <paraformat
+                                            jcr:primaryType="nt:unstructured"
+                                            items="paraformat:getFormats:paraformat-pulldown"
+                                            ref="paraformat"/>
+                                    </popovers>
+                                </fullscreen>
+                            </cui>
+                        </uiSettings>
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </intro>
+                    <buttontext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="CTA Button Text"
+                        name="./buttontext2"
+                        xtype="textfield"/>
+                    <buttonlink
+                        jcr:primaryType="cq:Widget"
+                        dName="buttonlink"
+                        fieldLabel="CTA Button Link"
+                        name="./buttonlink2"
+                        width="180"
+                        xtype="pathfield"/>
+                </items>
+            </tab2>
+            <tab3
+                jcr:primaryType="cq:Panel"
+                title="Tab 3">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Title"
+                        name="./title3"
+                        xtype="textfield"/>
+                    <intro
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Intro"
+                        name="./intro3"
+                        xtype="richtext">
+                        <uiSettings jcr:primaryType="nt:unstructured">
+                            <cui jcr:primaryType="nt:unstructured">
+                                <inline
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[#format,#justify,#lists,links#modifylink,links#unlink,links#anchor,tracklinks#modifylinktracking,-,fullscreen#start,-,control#close,control#save]">
+                                    <popovers jcr:primaryType="nt:unstructured">
+                                        <format
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript]"
+                                            ref="format"/>
+                                        <justify
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                            ref="justify"/>
+                                        <lists
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                            ref="lists"/>
+                                        <styles
+                                            jcr:primaryType="nt:unstructured"
+                                            items="styles:getStyles:styles-pulldown"
+                                            ref="styles"/>
+                                        <paraformat
+                                            jcr:primaryType="nt:unstructured"
+                                            items="paraformat:getFormats:paraformat-pulldown"
+                                            ref="paraformat"/>
+                                    </popovers>
+                                </inline>
+                                <fullscreen
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript,-,links#modifylink,links#unlink,links#anchor,links#anchor,tracklinks#modify,-,justify#justifyleft,justify#justifycenter,justify#justifyright,-,lists#unordered,lists#ordered,lists#outdent,lists#indent,-,fullscreen#finish]">
+                                    <popovers jcr:primaryType="nt:unstructured">
+                                        <styles
+                                            jcr:primaryType="nt:unstructured"
+                                            items="styles:getStyles:styles-pulldown"
+                                            ref="styles"/>
+                                        <paraformat
+                                            jcr:primaryType="nt:unstructured"
+                                            items="paraformat:getFormats:paraformat-pulldown"
+                                            ref="paraformat"/>
+                                    </popovers>
+                                </fullscreen>
+                            </cui>
+                        </uiSettings>
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </intro>
+                    <buttontext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="CTA Button Text"
+                        name="./buttontext3"
+                        xtype="textfield"/>
+                    <buttonlink
+                        jcr:primaryType="cq:Widget"
+                        dName="buttonlink"
+                        fieldLabel="CTA Button Link"
+                        name="./buttonlink3"
+                        width="180"
+                        xtype="pathfield"/>
+                </items>
+            </tab3>
+            <tab4
+                jcr:primaryType="cq:Panel"
+                title="Tab 4">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Title"
+                        name="./title4"
+                        xtype="textfield"/>
+                    <intro
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Intro"
+                        name="./intro4"
+                        xtype="richtext">
+                        <uiSettings jcr:primaryType="nt:unstructured">
+                            <cui jcr:primaryType="nt:unstructured">
+                                <inline
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[#format,#justify,#lists,links#modifylink,links#unlink,links#anchor,tracklinks#modifylinktracking,-,fullscreen#start,-,control#close,control#save]">
+                                    <popovers jcr:primaryType="nt:unstructured">
+                                        <format
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript]"
+                                            ref="format"/>
+                                        <justify
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                            ref="justify"/>
+                                        <lists
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                            ref="lists"/>
+                                        <styles
+                                            jcr:primaryType="nt:unstructured"
+                                            items="styles:getStyles:styles-pulldown"
+                                            ref="styles"/>
+                                        <paraformat
+                                            jcr:primaryType="nt:unstructured"
+                                            items="paraformat:getFormats:paraformat-pulldown"
+                                            ref="paraformat"/>
+                                    </popovers>
+                                </inline>
+                                <fullscreen
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript,-,links#modifylink,links#unlink,links#anchor,links#anchor,tracklinks#modify,-,justify#justifyleft,justify#justifycenter,justify#justifyright,-,lists#unordered,lists#ordered,lists#outdent,lists#indent,-,fullscreen#finish]">
+                                    <popovers jcr:primaryType="nt:unstructured">
+                                        <styles
+                                            jcr:primaryType="nt:unstructured"
+                                            items="styles:getStyles:styles-pulldown"
+                                            ref="styles"/>
+                                        <paraformat
+                                            jcr:primaryType="nt:unstructured"
+                                            items="paraformat:getFormats:paraformat-pulldown"
+                                            ref="paraformat"/>
+                                    </popovers>
+                                </fullscreen>
+                            </cui>
+                        </uiSettings>
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </intro>
+                    <buttontext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="CTA Button Text"
+                        name="./buttontext4"
+                        xtype="textfield"/>
+                    <buttonlink
+                        jcr:primaryType="cq:Widget"
+                        dName="buttonlink"
+                        fieldLabel="CTA Button Link"
+                        name="./buttonlink4"
+                        width="180"
+                        xtype="pathfield"/>
+                </items>
+            </tab4>
+            <tab5
+                jcr:primaryType="cq:Panel"
+                title="Tab 5">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Title"
+                        name="./title5"
+                        xtype="textfield"/>
+                    <intro
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Intro"
+                        name="./intro5"
+                        xtype="richtext">
+                        <uiSettings jcr:primaryType="nt:unstructured">
+                            <cui jcr:primaryType="nt:unstructured">
+                                <inline
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[#format,#justify,#lists,links#modifylink,links#unlink,links#anchor,tracklinks#modifylinktracking,-,fullscreen#start,-,control#close,control#save]">
+                                    <popovers jcr:primaryType="nt:unstructured">
+                                        <format
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript]"
+                                            ref="format"/>
+                                        <justify
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                            ref="justify"/>
+                                        <lists
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                            ref="lists"/>
+                                        <styles
+                                            jcr:primaryType="nt:unstructured"
+                                            items="styles:getStyles:styles-pulldown"
+                                            ref="styles"/>
+                                        <paraformat
+                                            jcr:primaryType="nt:unstructured"
+                                            items="paraformat:getFormats:paraformat-pulldown"
+                                            ref="paraformat"/>
+                                    </popovers>
+                                </inline>
+                                <fullscreen
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript,-,links#modifylink,links#unlink,links#anchor,links#anchor,tracklinks#modify,-,justify#justifyleft,justify#justifycenter,justify#justifyright,-,lists#unordered,lists#ordered,lists#outdent,lists#indent,-,fullscreen#finish]">
+                                    <popovers jcr:primaryType="nt:unstructured">
+                                        <styles
+                                            jcr:primaryType="nt:unstructured"
+                                            items="styles:getStyles:styles-pulldown"
+                                            ref="styles"/>
+                                        <paraformat
+                                            jcr:primaryType="nt:unstructured"
+                                            items="paraformat:getFormats:paraformat-pulldown"
+                                            ref="paraformat"/>
+                                    </popovers>
+                                </fullscreen>
+                            </cui>
+                        </uiSettings>
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </intro>
+                    <buttontext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="CTA Button Text"
+                        name="./buttontext5"
+                        xtype="textfield"/>
+                    <buttonlink
+                        jcr:primaryType="cq:Widget"
+                        dName="buttonlink"
+                        fieldLabel="CTA Button Link"
+                        name="./buttonlink5"
+                        width="180"
+                        xtype="pathfield"/>
+                </items>
+            </tab5>
+            <tab6
+                jcr:primaryType="cq:Panel"
+                title="Tab 6">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Title"
+                        name="./title6"
+                        xtype="textfield"/>
+                    <intro
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Intro"
+                        name="./intro6"
+                        xtype="richtext">
+                        <uiSettings jcr:primaryType="nt:unstructured">
+                            <cui jcr:primaryType="nt:unstructured">
+                                <inline
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[#format,#justify,#lists,links#modifylink,links#unlink,links#anchor,tracklinks#modifylinktracking,-,fullscreen#start,-,control#close,control#save]">
+                                    <popovers jcr:primaryType="nt:unstructured">
+                                        <format
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript]"
+                                            ref="format"/>
+                                        <justify
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                            ref="justify"/>
+                                        <lists
+                                            jcr:primaryType="nt:unstructured"
+                                            items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                            ref="lists"/>
+                                        <styles
+                                            jcr:primaryType="nt:unstructured"
+                                            items="styles:getStyles:styles-pulldown"
+                                            ref="styles"/>
+                                        <paraformat
+                                            jcr:primaryType="nt:unstructured"
+                                            items="paraformat:getFormats:paraformat-pulldown"
+                                            ref="paraformat"/>
+                                    </popovers>
+                                </inline>
+                                <fullscreen
+                                    jcr:primaryType="nt:unstructured"
+                                    toolbar="[format#bold,format#italic,format#underline,subsuperscript#subscript,subsuperscript#superscript,-,links#modifylink,links#unlink,links#anchor,links#anchor,tracklinks#modify,-,justify#justifyleft,justify#justifycenter,justify#justifyright,-,lists#unordered,lists#ordered,lists#outdent,lists#indent,-,fullscreen#finish]">
+                                    <popovers jcr:primaryType="nt:unstructured">
+                                        <styles
+                                            jcr:primaryType="nt:unstructured"
+                                            items="styles:getStyles:styles-pulldown"
+                                            ref="styles"/>
+                                        <paraformat
+                                            jcr:primaryType="nt:unstructured"
+                                            items="paraformat:getFormats:paraformat-pulldown"
+                                            ref="paraformat"/>
+                                    </popovers>
+                                </fullscreen>
+                            </cui>
+                        </uiSettings>
+                        <rtePlugins jcr:primaryType="nt:unstructured">
+                            <edit
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <image
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <table
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <lists
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <paraformat
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                            <misctools
+                                jcr:primaryType="nt:unstructured"
+                                features="*"/>
+                        </rtePlugins>
+                    </intro>
+                    <buttontext
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="CTA Button Text"
+                        name="./buttontext6"
+                        xtype="textfield"/>
+                    <buttonlink
+                        jcr:primaryType="cq:Widget"
+                        dName="buttonlink"
+                        fieldLabel="CTA Button Link"
+                        name="./buttonlink6"
+                        width="180"
+                        xtype="pathfield"/>
+                </items>
+            </tab6>
+        </items>
+    </items>
+</jcr:root>

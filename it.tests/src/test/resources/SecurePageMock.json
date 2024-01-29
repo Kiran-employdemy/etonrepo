@@ -1,0 +1,59 @@
+{
+  "jcr:primaryType": "nt:folder",
+  "en-us": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "siteRoot": "false"
+    },
+    "securePage": {
+      "jcr:primaryType": "cq:Page",
+      "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": ["mix:versionable"],
+        "jcr:createdBy": "admin",
+        "jcr:title": "secure-page-test",
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "a3a3faf6-aafa-4a99-bb3f-3cfee0aaeb2c",
+        "cq:template": "/conf/eaton/settings/wcm/templates/secure-generic-page",
+        "cq:lastReplicatedBy": "superadmin",
+        "jcr:lastModifiedBy": "admin",
+        "priority": "0.5",
+        "applicationAccess": [
+          "eaton-secure:application-access/bid-manager"
+        ],
+        "jcr:predecessors": ["e5038fcc-9ccd-4ebd-a00c-3f86c7a60685"],
+        "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+        "jcr:created": "Mon Feb 08 2021 14:51:45 GMT+0530",
+        "cq:lastReplicated": "Tue Feb 02 2021 01:37:19 GMT-0500",
+        "accountType": [
+          "eaton-secure:accounttype/contractor"
+        ],
+        "cq:lastModified": "Thu Feb 11 2021 17:27:20 GMT+0530",
+        "view": "generic",
+        "meta-robot-tags": "index,follow",
+        "jcr:baseVersion": "e5038fcc-9ccd-4ebd-a00c-3f86c7a60685",
+        "businessGroup": [
+          "eaton-secure:business-group/electrical-amer"
+        ],
+        "productCategories": [
+          "eaton-secure:product-category/aerospace"
+        ],
+        "jcr:isCheckedOut": true,
+        "page-type": "generic-page",
+        "company": ["eaton-secure:business-group/electrical-apac"],
+        "jcr:lastModified": "Mon Oct 23 2017 19:29:19 GMT-0400",
+        "jcr:uuid": "02b79b07-d13c-494a-91db-cc13956e9085",
+        "sling:resourceType": "eaton/components/structure/eaton-secure-template-page",
+        "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+        "cq:allowedTemplates": [
+          "/conf/eaton/settings/wcm/templates/secure-generic-page",
+          "/conf/eaton/settings/wcm/templates/article-page"
+        ],
+        "securePage": "true",
+        "cq:lastModifiedBy": "admin",
+        "changefrequency": "weekly"
+      }
+    }
+  }
+}

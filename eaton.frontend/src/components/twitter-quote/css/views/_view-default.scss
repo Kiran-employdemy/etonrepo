@@ -1,0 +1,83 @@
+//-----------------------------------
+// Component: Twitter Quote
+// View: 	  Default
+//-----------------------------------
+.eaton-twitter-quote-default {
+
+  &__container {
+    @include media-desktop-and-up {
+      margin: 20px;
+      padding: 0;
+    }
+    @include media-mobile-only {
+      margin: 10px;
+    }
+    @media screen and (max-width: 991px) {
+      margin: 15px;
+    }
+  }
+
+  &__component {
+    padding: 10px;
+    border: 2px solid $color__secondary-gray4;
+    border-radius: 3px;
+  }
+
+  &__text {
+    color: $color__black;
+    @include font-family__secondary(--secondary-font);
+    word-wrap: break-word;
+    display: inline-block;
+    padding: 10px;
+
+    @include media-mobile-only {
+      font-size: 1.4rem;
+    }
+
+    @include media-tablet-only {
+      font-size: 1.6rem;
+    }
+
+    @include media-desktop-and-up {
+      font-size: 1.9rem;
+    }
+  }
+
+  &__btn {
+    float: right;
+    margin: 0px 10px;
+  }
+
+  &__link {
+    color: $color__primary-gray2;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 7px 1px 5px 0;
+    padding: 0px;
+
+    @include media-desktop-and-up {
+      font-size: 1.1rem;
+    }
+  }
+
+  &__image {
+    height: 25px;
+    width: 25px;
+
+    @include media-desktop-and-up {
+      height: 30px;
+      width: 30px;
+    }
+  }
+
+  .eaton-grid-control.dark-theme & {
+
+    &__link,
+    &__text {
+      color: $color__white;
+    }
+  }
+}

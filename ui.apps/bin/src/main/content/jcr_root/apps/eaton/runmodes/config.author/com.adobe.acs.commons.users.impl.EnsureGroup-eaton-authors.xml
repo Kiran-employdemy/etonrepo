@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          principalName="eaton-authors"
+          operation="add"
+          member-of="[everyone,inverse-danfoss-hyd-authors]"
+          ensure-immediately="{Boolean}true"
+          aces="[type=allow;privileges=jcr:read;path=/apps,type=allow;privileges=jcr:read;path=/conf,type=allow;privileges=jcr:read;path=/content,type=allow;privileges=jcr:read\,rep:write\,jcr:versionManagement\,jcr:lockManagement\,crx:replicate;path=/content/eaton,type=allow;privileges=jcr:read\,rep:write\,jcr:versionManagement\,jcr:lockManagement\,crx:replicate;path=/content/dam/eaton,type=allow;privileges=jcr:read\,rep:write\,jcr:versionManagement\,jcr:lockManagement;path=/content/usergenerated,type=allow;privileges=jcr:read;path=/etc,type=allow;privileges=jcr:read\,rep:write\,jcr:versionManagement\,jcr:lockManagement;path=/etc/workflow,type=allow;privileges=jcr:read;path=/conf/global/settings/workflow/models,type=allow;privileges=jcr:read;path=/var,type=allow;privileges=jcr:read;path=/libs,type=allow;privileges=jcr:read;path=/tmp,type=allow;privileges=jcr:read;path=/var/dam/share,type=deny;privileges=jcr:read;path=/var/acs-commons,type=deny;privileges=jcr:read;path=/apps/cq/core/content/nav/tools/acs-commons]"/>

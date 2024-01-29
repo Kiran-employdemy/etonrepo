@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Sitemap"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Title - Sightly">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <sitemapconfig
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Site map Config"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                        margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <sitemapRootPath
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                    fieldLabel="Sitemap Root Path"
+                                    name="./sitemapRootPath"/>
+                            <sitemapLinkLevels
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                    fieldLabel="Sitemap Link Levels"
+                                    name="./sitemapLinkLevels">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <six
+                                            jcr:primaryType="nt:unstructured"
+                                            text="6"
+                                            value="6"/>
+                                    <one
+                                            jcr:primaryType="nt:unstructured"
+                                            text="1"
+                                            value="1"/>
+                                    <two
+                                            jcr:primaryType="nt:unstructured"
+                                            text="2"
+                                            value="2"/>
+                                    <three
+                                            jcr:primaryType="nt:unstructured"
+                                            text="3"
+                                            value="3"/>
+                                    <four
+                                            jcr:primaryType="nt:unstructured"
+                                            text="4"
+                                            value="4"/>
+                                    <five
+                                            jcr:primaryType="nt:unstructured"
+                                            text="5"
+                                            value="5"/>
+                                </items>
+                            </sitemapLinkLevels>
+                        </items>
+                    </column>
+                </items>
+            </sitemapconfig>
+            <productfamilysitemap
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Sitemap Index Config"
+                    sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                        margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <pageNameMatchRegex
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldLabel="pageName match Regex Text"
+                                    fieldDescription="This Regex using to match the page name Ex: sitemap-full"
+                                    defaultValue="[sitemapfull-]+"
+                                    name="./pageNameMatchRegex"/>
+                            <productfamilysitemapPages
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                    fieldLabel="Product Family pages">
+                                <field
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        rootPath="/content"
+                                        name="./productFamilyPages" />
+                            </productfamilysitemapPages>
+
+                        </items>
+                    </column>
+                </items>
+            </productfamilysitemap>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,23 @@
+//-----------------------------------
+// AEM Author Mode Styles
+// Handles Style overrides when the page is loaded in Preview/Edit Mode
+//-----------------------------------
+
+// stylelint-disable selector-class-pattern
+.aem-AuthorLayer-Preview,
+.aem-AuthorLayer-Edit,
+.cq-wcm-edit {
+
+  @include media-mobile-and-tablet {
+
+    .zoom-overlay {
+
+      &__close {
+        top: 7rem;
+      }
+
+    }
+
+  }
+
+}

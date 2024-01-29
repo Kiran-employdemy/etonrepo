@@ -1,0 +1,80 @@
+{
+	"jcr:primaryType": "cq:PageContent",
+	"jcr:mixinTypes": ["mix:versionable"],
+	"jcr:createdBy": "admin",
+	"jcr:title": "Hello New Software Random Download",
+	"cq:lastReplicationAction": "Activate",
+	"jcr:versionHistory": "46914cdc-7d7d-46b8-9132-882be4673c49",
+	"cq:template": "/conf/eaton_ecommerce/settings/wcm/templates/ecommerce-general-template",
+	"cq:lastReplicatedBy": "admin",
+	"priority": "0.5",
+	"jcr:predecessors": ["73138938-7273-43eb-9caa-60b1feecb794"],
+	"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+	"jcr:created": "Wed Jul 05 2023 12:19:34 GMT+0530",
+	"excludeCountries": "false",
+	"cq:lastReplicated": "Wed Aug 16 2023 12:41:45 GMT+0530",
+	"cq:lastModified": "Wed Jul 26 2023 12:34:47 GMT+0530",
+	"view": "generic",
+	"hideInHtml": "false",
+	"meta-robot-tags": "index,follow",
+	"jcr:description": "Hello New. This is Software Download.",
+	"jcr:baseVersion": "73138938-7273-43eb-9caa-60b1feecb794",
+	"jcr:isCheckedOut": true,
+	"hideInXml": "false",
+	"page-type": "learn-page",
+	"pageTitle": "hahaha",
+	"jcr:uuid": "cdadbefd-609a-4bc0-a1c9-8c7a26da87bf",
+	"sling:resourceType": "eaton_ecommerce/components/structure/ecommerce-edit-template-page",
+	"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+	"textIsRich": "true",
+	"cq:lastModifiedBy": "admin",
+	"changefrequency": "weekly",
+	"root": {
+		"jcr:primaryType": "nt:unstructured",
+		"sling:resourceType": "wcm/foundation/components/responsivegrid",
+		"responsivegrid": {
+			"jcr:primaryType": "nt:unstructured",
+			"sling:resourceType": "wcm/foundation/components/responsivegrid",
+			"software_download": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:createdBy": "admin",
+				"jcr:lastModifiedBy": "admin",
+				"jcr:created": "Wed Jul 05 2023 17:25:46 GMT+0530",
+				"jcr:lastModified": "Wed Jul 05 2023 17:25:46 GMT+0530",
+				"sling:resourceType": "software_delivery/components/software-download"
+			},
+			"text": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:createdBy": "admin",
+				"jcr:lastModifiedBy": "admin",
+				"jcr:created": "Tue Jul 18 2023 11:33:06 GMT+0530",
+				"text": "<p>Hello New Text Random</p>",
+				"jcr:lastModified": "Tue Jul 18 2023 11:33:17 GMT+0530",
+				"sling:resourceType": "foundation/components/text",
+				"textIsRich": "true"
+			},
+			"text_75640672": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:createdBy": "admin",
+				"jcr:lastModifiedBy": "admin",
+				"jcr:created": "Tue Jul 18 2023 11:45:58 GMT+0530",
+				"view": "default",
+				"jcr:lastModified": "Tue Jul 18 2023 11:46:17 GMT+0530",
+				"transText": "Hello New Eaton General Random Text",
+				"toggleInnerGrid": "true",
+				"sling:resourceType": "eaton/components/general/text",
+				"textIsRich": ["true", "true"]
+			},
+			"generic_text": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:createdBy": "admin",
+				"jcr:lastModifiedBy": "admin",
+				"jcr:created": "Thu Jul 20 2023 21:55:42 GMT+0530",
+				"text": "<p>This is Hello New Random Text</p>\n",
+				"jcr:lastModified": "Thu Jul 20 2023 21:55:57 GMT+0530",
+				"sling:resourceType": "acs-commons/components/content/generic-text",
+				"textIsRich": "true"
+			}
+		}
+	}
+}

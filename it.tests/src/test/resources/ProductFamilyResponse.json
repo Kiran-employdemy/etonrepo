@@ -1,0 +1,311 @@
+{
+  "response" : {
+    "status" : "Success",
+    "statusDetails" : {
+      "messages" : [ "Query=enePort=16300&amp;Nr=AND%28INVENTORY_ITEM_ID%3a3394623%2cOR%28Country%3aUS%2cCountry%3aGLOBAL%29%2cP_Product_Type%3aUPS%2cOR%28Status%3aActive%2cStatus%3aRetirement%29%29&amp;Ns=Catalog_number%7c1%7c%7cEndeca.stratify%28collection%28%29%2frecord%5bLanguage%3d%22en_US%22%5d%2c*%29&amp;Nu=SKU_INVENTORY_ITEM_ID&amp;eneHost=endeca-dev.tcc.etn.com&amp;N=0" ]
+    },
+    "didYouMean" : null,
+    "binning" : {
+      "binningSet" : [ {
+        "label" : "Brand",
+        "bsId" : "Brand",
+        "bin" : [ {
+          "label" : "Eaton",
+          "ndocs" : 6,
+          "value" : "934877291"
+        } ]
+      } ]
+    },
+    "searchResults" : {
+      "totalCount" : 6,
+      "document" : [ {
+        "content" : [ {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "5S700LCD"
+        }, {
+          "name" : "Family_Name",
+          "type" : "text",
+          "value" : "Eaton 5S UPS"
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "Eaton 5S UPS, 700 VA, 420 W, 5-15P input, LCD"
+        }, {
+          "name" : "Primary_Image",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012315/5S700LCD_L/43x43_96dpi"
+        }, {
+          "name" : "Mktg_Desc",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition1",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012315/5S700LCD_L/220x220_96dpi"
+        }, {
+          "name" : "Rendition2",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012315/5S700LCD_L/500x500_72dpi"
+        }, {
+          "name" : "Interrupt_Rating",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Trip_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Amperage_Rating",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "5S700G"
+        }, {
+          "name" : "Family_Name",
+          "type" : "text",
+          "value" : "Eaton 5S UPS"
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "Eaton 5S UPS, 700 VA, 420 W, C14 input"
+        }, {
+          "name" : "Primary_Image",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012316/5S700_BK/43x43_96dpi"
+        }, {
+          "name" : "Mktg_Desc",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition1",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012316/5S700_BK/220x220_96dpi"
+        }, {
+          "name" : "Rendition2",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012316/5S700_BK/500x500_72dpi"
+        }, {
+          "name" : "Interrupt_Rating",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Trip_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Amperage_Rating",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "5S700"
+        }, {
+          "name" : "Family_Name",
+          "type" : "text",
+          "value" : "Eaton 5S UPS"
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "Eaton 5S UPS, 700 VA, 420 W, 5-15P input"
+        }, {
+          "name" : "Primary_Image",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012316/5S700_BK/43x43_96dpi"
+        }, {
+          "name" : "Mktg_Desc",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition1",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012316/5S700_BK/220x220_96dpi"
+        }, {
+          "name" : "Rendition2",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012316/5S700_BK/500x500_72dpi"
+        }, {
+          "name" : "Interrupt_Rating",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Trip_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Amperage_Rating",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "5S550"
+        }, {
+          "name" : "Family_Name",
+          "type" : "text",
+          "value" : "Eaton 5S UPS"
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "Eaton 5S UPS, 550 VA, 330 W, 5-15P input"
+        }, {
+          "name" : "Primary_Image",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012312/5S550_C/43x43_96dpi"
+        }, {
+          "name" : "Mktg_Desc",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition1",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012312/5S550_C/220x220_96dpi"
+        }, {
+          "name" : "Rendition2",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012312/5S550_C/500x500_72dpi"
+        }, {
+          "name" : "Interrupt_Rating",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Trip_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Amperage_Rating",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "5S1500LCD"
+        }, {
+          "name" : "Family_Name",
+          "type" : "text",
+          "value" : "Eaton 5S UPS"
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "Eaton 5S UPS, 1500 VA, 900 W, 5-15P input"
+        }, {
+          "name" : "Primary_Image",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012315/5S700LCD_L/43x43_96dpi"
+        }, {
+          "name" : "Mktg_Desc",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition1",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012315/5S700LCD_L/220x220_96dpi"
+        }, {
+          "name" : "Rendition2",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012315/5S700LCD_L/500x500_72dpi"
+        }, {
+          "name" : "Interrupt_Rating",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Trip_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Amperage_Rating",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "5S1000LCD"
+        }, {
+          "name" : "Family_Name",
+          "type" : "text",
+          "value" : "Eaton 5S UPS"
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "Eaton 5S UPS, 1000 VA, 600 W, 5-15P input"
+        }, {
+          "name" : "Primary_Image",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012315/5S700LCD_L/43x43_96dpi"
+        }, {
+          "name" : "Mktg_Desc",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Rendition1",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012315/5S700LCD_L/220x220_96dpi"
+        }, {
+          "name" : "Rendition2",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM012315/5S700LCD_L/500x500_72dpi"
+        }, {
+          "name" : "Interrupt_Rating",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Trip_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Amperage_Rating",
+          "type" : "text",
+          "value" : ""
+        } ]
+      } ]
+    },
+    "request" : {
+      "searchApplication" : "eatonpdh2",
+      "searchApplicationKey" : "abc123",
+      "function" : "search",
+      "searchTerms" : "3394623",
+      "language" : "en_US",
+      "startingRecordNumber" : 0,
+      "numberOfRecordsToReturn" : 10,
+      "filters" : [ {
+        "filterName" : "SortBy",
+        "filterValue" : [ "desc" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "Facets",
+        "filterValue" : [ "" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "SKUCardParameters",
+        "filterValue" : [ "Interrupt_Rating", "Trip_Type", "Amperage_Rating" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "ReturnFacetsFor",
+        "filterValue" : [ "Brand", "Feed_Type", "Circuit_Breaker_Type", "Mounting", "Application_L0" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "Country",
+        "filterValue" : [ "US" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "Product_Type",
+        "filterValue" : [ "UPS" ],
+        "preferenceValue" : null
+      } ],
+      "userName" : null
+    }
+  }
+}

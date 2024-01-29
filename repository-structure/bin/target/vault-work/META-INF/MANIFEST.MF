@@ -1,0 +1,44 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven
+Built-By: Employdemy Solutions
+Build-Jdk: 17.0.7
+Implementation-Title: eaton_platform_parent - Repository Structure Packa
+ ge
+Implementation-Version: 2.107.0-SNAPSHOT
+Implementation-Vendor-Id: com.eaton.platform
+Implementation-URL: http://www.eaton.com/eaton_platform_parent.repositor
+ y-structure
+Content-Package-Roots: /apps,/apps/commerce/gui,/apps/cq/core/content/na
+ v/tools,/apps/cq/tagging/gui,/apps/cq/workflow/components/model,/apps/d
+ am,/apps/dam/content/predicates,/apps/dam/gui/components/admin/renderco
+ nditions,/apps/dam/gui/content,/apps/dam/gui/coral/components/admin,/ap
+ ps/dam/gui/coral/components/admin/clientlibs,/apps/dam/gui/coral/compon
+ ents/admin/contentrenderer/card,/apps/dam/gui/coral/components/admin/co
+ ntentrenderer/row,/apps/dam/gui/coral/components/admin/customsearch/omn
+ isearchpredicates,/apps/dam/gui/coral/components/admin/customsearch/sea
+ rchpredicates,/apps/dam/gui/coral/components/admin/customsearch/searchp
+ redicates/checkedoptionspredicate,/apps/dam/gui/coral/components/admin/
+ customsearch/searchpredicates/durationrangepredicate,/apps/dam/options/
+ predicates,/apps/eaton,/apps/eaton/clientlibs,/apps/eaton/datasource,/a
+ pps/eaton/settings/wcm,/apps/fd/af/components/actions,/apps/fd/af/layou
+ ts/panel,/apps/fd/fm/af,/apps/fd/fm/gui/components/admin/creationwizard
+ ,/apps/fd/fm/gui/content,/apps/granite,/apps/granite/core/components,/a
+ pps/granite/ui/components/coral/foundation/form,/apps/granite/ui/compon
+ ents/shell/omnisearch,/apps/granite/ui/references/components/coral,/app
+ s/msm,/apps/sling,/apps/sling/servlet/errorhandler,/apps/tools,/apps/wc
+ m,/apps/wcm/core/content,/apps/wcm/core/resources,/apps/workflow/script
+ s,/conf/eaton-cummins/settings/wcm,/conf/eaton/settings/dam/cfm/models,
+ /conf/eaton/settings/wcm,/conf/global/settings/workflow,/conf/global/se
+ ttings/workflow/models,/etc/clientlibs/fd/themes/themeLibrary,/etc/desi
+ gns,/etc/groovyconsole/scripts,/etc/importers,/etc/notification,/etc/re
+ ports,/var/acs-commons/reports,/var/dxml/folderprofiles,/var/workflow/m
+ odels,/var/workflow/models/eaton-dam
+Content-Package-Description: Empty package that defines the structure of
+  the Adobe Experience Manager repository the Code packages in this proj
+ ect deploy into.
+        Any roots in the Code packages of this project
+  should have their parent enumerated in the Filters list below.
+Content-Package-Id: com.eaton.platform:eaton_platform_parent.repository-
+ structure:2.107.0-SNAPSHOT
+Content-Package-Type: mixed
+

@@ -1,0 +1,23 @@
+<sly data-sly-use.TwitterQuoteModel="com.eaton.platform.core.models.TwitterQuoteModel"
+     data-sly-use.CommonConstants="com.eaton.platform.core.constants.CommonConstants">
+
+    <div class="${TwitterQuoteModel.toggleInnerGrid ? 'eaton-twitter-quote-default__container' : ''} eaton-twitter-quote-default__component"
+         data-sly-test="${TwitterQuoteModel.quoteText}">
+        <div class="row">
+            <div class="eaton-twitter-quote-default__text"
+                 data-sly-text="${TwitterQuoteModel.quoteText}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="eaton-twitter-quote-default__btn" data-sly-test="${TwitterQuoteModel.buttonLink}">
+                <a class="eaton-twitter-quote-default__link"
+                   href="${TwitterQuoteModel.buttonLink}" target="${CommonConstants.TARGET_BLANK}"
+                   data-sly-text="${TwitterQuoteModel.buttonText}">
+                </a>
+                <img class="eaton-twitter-quote-default__image"
+                     src="${TwitterQuoteModel.buttonImage}" alt="${TwitterQuoteModel.buttonImageAlt}"/>
+            </div>
+        </div>
+    </div>
+
+</sly>

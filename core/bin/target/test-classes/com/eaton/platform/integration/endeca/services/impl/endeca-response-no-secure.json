@@ -1,0 +1,3669 @@
+{
+  "response" : {
+    "status" : "Success",
+    "statusDetails" : {
+      "messages" : [ "N=0 Nr=AND(OR(P_dc_format:application/vnd.openxmlformats-officedocument.wordprocessingml.document,P_dc_format:image/png,P_dc_format:image/jpeg,P_dc_format:image/gif,P_dc_format:image/tiff,P_dc_format:application/pdf,P_dc_format:application/vnd.ms-powerpoint,P_dc_format:application/vnd.ms-excel,P_dc_format:application/zip,P_dc_format:text/html,P_dc_format:application/postscript,P_dc_format:application/eps,P_dc_format:application/x-eps,P_dc_format:image/eps,P_dc_format:image/x-eps,P_dc_format:application/msword,P_dc_format:application/vnd.openxmlformats-officedocument.presentationml.presentation,P_dc_format:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,P_dc_format:application/vnd.openxmlformats-officedocument.wordprocessingml.document,P_dc_format:application/octet-stream,P_dc_format:application/vnd.ms-excel.sheet.macroenabled.12,P_dc_format:video/mp4,P_dc_format:application/x-7z-compressed,P_dc_format:image/vnd.dwg),NOT(OR(P_Page_Priority:Exclude from search,P_Page_Priority:exclude-from-search)))" ]
+    },
+    "didYouMean" : null,
+    "binning" : {
+      "binningSet" : [ {
+        "label" : "content-type",
+        "bsId" : "eaton:content-type",
+        "bin" : [ {
+          "label" : "product",
+          "ndocs" : 9,
+          "value" : "1316679294"
+        }, {
+          "label" : "resources",
+          "ndocs" : 36142,
+          "value" : "968989543"
+        }, {
+          "label" : "services",
+          "ndocs" : 6,
+          "value" : "850411755"
+        } ]
+      }, {
+        "label" : "resources_marketing-resources",
+        "bsId" : "eaton:resources_marketing-resources",
+        "bin" : [ {
+          "label" : "article",
+          "ndocs" : 1,
+          "value" : "3959354019"
+        }, {
+          "label" : "brochures",
+          "ndocs" : 4391,
+          "value" : "1691271030"
+        }, {
+          "label" : "catalogs",
+          "ndocs" : 3024,
+          "value" : "2320549560"
+        }, {
+          "label" : "competitive-comparisons",
+          "ndocs" : 4,
+          "value" : "3032244288"
+        }, {
+          "label" : "cross-references",
+          "ndocs" : 35,
+          "value" : "1484772919"
+        }, {
+          "label" : "faqs",
+          "ndocs" : 65,
+          "value" : "192772024"
+        }, {
+          "label" : "images",
+          "ndocs" : 1,
+          "value" : "7662153"
+        }, {
+          "label" : "infographics-listicles",
+          "ndocs" : 108,
+          "value" : "3614998822"
+        }, {
+          "label" : "presentations",
+          "ndocs" : 53,
+          "value" : "438947172"
+        }, {
+          "label" : "price-lists",
+          "ndocs" : 29,
+          "value" : "2489080375"
+        }, {
+          "label" : "sales-notes",
+          "ndocs" : 194,
+          "value" : "905849954"
+        }, {
+          "label" : "selling-policy-and-t&amp;cs",
+          "ndocs" : 11,
+          "value" : "4289707947"
+        }, {
+          "label" : "success-stories",
+          "ndocs" : 741,
+          "value" : "1234994799"
+        }, {
+          "label" : "videos",
+          "ndocs" : 3,
+          "value" : "2626969717"
+        }, {
+          "label" : "white-papers",
+          "ndocs" : 408,
+          "value" : "1401044377"
+        } ]
+      }, {
+        "label" : "resources_technical-resources",
+        "bsId" : "eaton:resources_technical-resources",
+        "bin" : [ {
+          "label" : "3d-models",
+          "ndocs" : 417,
+          "value" : "2878507570"
+        }, {
+          "label" : "application-notes",
+          "ndocs" : 486,
+          "value" : "776779119"
+        }, {
+          "label" : "building-information-models",
+          "ndocs" : 121,
+          "value" : "155603299"
+        }, {
+          "label" : "calculator-&amp;-specification-tools",
+          "ndocs" : 68,
+          "value" : "867229388"
+        }, {
+          "label" : "certification-reports",
+          "ndocs" : 2756,
+          "value" : "1029189061"
+        }, {
+          "label" : "design-guides",
+          "ndocs" : 142,
+          "value" : "4263499008"
+        }, {
+          "label" : "drawings",
+          "ndocs" : 2198,
+          "value" : "2264560398"
+        }, {
+          "label" : "end-of-life-notifications",
+          "ndocs" : 135,
+          "value" : "2805475210"
+        }, {
+          "label" : "installation-instructions",
+          "ndocs" : 5955,
+          "value" : "4246550561"
+        }, {
+          "label" : "installation-videos",
+          "ndocs" : 5,
+          "value" : "1900597880"
+        }, {
+          "label" : "material-safety-data-sheet-(msds)",
+          "ndocs" : 803,
+          "value" : "1819655759"
+        }, {
+          "label" : "photometric-data-files",
+          "ndocs" : 392,
+          "value" : "215031922"
+        }, {
+          "label" : "product-specification-guides",
+          "ndocs" : 1006,
+          "value" : "227436940"
+        }, {
+          "label" : "service-&amp;-troubleshooting",
+          "ndocs" : 206,
+          "value" : "2767215410"
+        }, {
+          "label" : "software-firmware-applications",
+          "ndocs" : 201,
+          "value" : "4017091704"
+        }, {
+          "label" : "software-release-notes-schemes-security-updates",
+          "ndocs" : 59,
+          "value" : "3213985765"
+        }, {
+          "label" : "technical-data-sheets",
+          "ndocs" : 5870,
+          "value" : "926402268"
+        }, {
+          "label" : "technical-service-bulletins",
+          "ndocs" : 342,
+          "value" : "356020885"
+        }, {
+          "label" : "time-current-curves",
+          "ndocs" : 358,
+          "value" : "3443675743"
+        }, {
+          "label" : "user-guides",
+          "ndocs" : 1425,
+          "value" : "1715738723"
+        }, {
+          "label" : "warranty-guides",
+          "ndocs" : 84,
+          "value" : "2922406474"
+        }, {
+          "label" : "wiring-diagrams",
+          "ndocs" : 126,
+          "value" : "3408572048"
+        } ]
+      } ]
+    },
+    "searchResults" : {
+      "totalCount" : 36142,
+      "document" : [ {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Instructions for ME replacement contact kit"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/mill-type-dc-contactors/instructions-me-replacement-contact-kit-il15-800-13.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "447936"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1692882240000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/mill-type-dc-contactors/instructions-me-replacement-contact-kit-il15-800-13.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : "multilingual"
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Instructions for ME replacement contact kit"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/mill-type-dc-contactors/instructions-me-replacement-contact-kit-il15-800-13.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "447936"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1692882240000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/mill-type-dc-contactors/instructions-me-replacement-contact-kit-il15-800-13.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : "en-us"
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Présentation PowerPoint"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/test/pdfForAsset7.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "520662"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1692870600000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/pdfForAsset7.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : "global"
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Présentation PowerPoint"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/pdfForAsset7.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "520662"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1692870600000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/pdfForAsset7.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : "fr-fr"
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "FW02133N2AL1F"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/dsn/skuPage.FW02133N2AL1F.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "61093"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1686317700000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/dsn/skuPage.FW02133N2AL1F.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : "de-de"
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "K2067-57-M1"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/dsn/skuPage.K2066-57-M.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "37148"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1686317640000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/dsn/skuPage.K2066-57-M.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "5E1100IUSB"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/test-25may/skuPage.5E1100IUSB.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "40787"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1685453700000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test-25may/skuPage.5E1100IUSB.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "5E1100IUSB"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test-25may/skuPage.5E1100IUSB.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "40787"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1685453700000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test-25may/skuPage.5E1100IUSB.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "asset uploaded on 23 may 23"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/test/asset%20uploaded%20on%20230523.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "477726"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1684847368445"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/asset uploaded on 230523.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "asset uploaded on 23 may 23"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/asset%20uploaded%20on%20230523.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "477726"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1684847368445"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/asset uploaded on 230523.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Arrow Hart Temporary power solutions brochure"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/resources/poweredge-tools/arrow-hart-temporary-power-solutions-brochure-br620024en.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "1420083"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1681416600000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/resources/poweredge-tools/arrow-hart-temporary-power-solutions-brochure-br620024en.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Arrow Hart Temporary power solutions brochure"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/resources/poweredge-tools/arrow-hart-temporary-power-solutions-brochure-br620024en.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "1420083"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1681416600000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/resources/poweredge-tools/arrow-hart-temporary-power-solutions-brochure-br620024en.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Sp15 Test1 Mitali"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/sp15%20test1.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "509377"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1678874315095"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/sp15 test1.pdf/jcr:content/renditions/original"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "asset test5"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/test/pdfForAsset5.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "436747"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1678701000000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/pdfForAsset5.pdf/jcr:content/renditions/original"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "asset test5"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/pdfForAsset5.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "436747"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1678701000000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/pdfForAsset5.pdf/jcr:content/renditions/original"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "asset test6"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/test/pdfForAsset6.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "477726"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1678009800000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/pdfForAsset6.pdf/jcr:content/renditions/original"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "asset test6"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/pdfForAsset6.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "477726"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1678009800000"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/pdfForAsset6.pdf/jcr:content/renditions/original"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : "false"
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "TestXLS"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/TestXLS.xls"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "31879168"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1677490450999"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/vnd.ms-excel"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/TestXLS.xls/jcr:content/renditions/original"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/vnd.ms-excel"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "TestDoc"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/TestDoc.doc"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "316778"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1677490408119"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/zip"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/TestDoc.doc/jcr:content/renditions/original"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/msword"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Power Quality Sales Support Tools "
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/TestPPT.ppt"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "15113216"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1677490385296"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/vnd.ms-powerpoint"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/TestPPT.ppt.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/vnd.ms-powerpoint"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "CustomWF"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/CustomWF.drawio.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "167608"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1673642748475"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/test/CustomWF.drawio.pdf/jcr:content/renditions/original"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "TVSA Transient voltage ESD suppressors"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/electronic-components/resources/product-aid/eaton-tvsa-diode-product-aid.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "459036"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1670584877730"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/electronic-components/resources/product-aid/eaton-tvsa-diode-product-aid.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "TVSA Transient voltage ESD suppressors"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/electronic-components/resources/product-aid/eaton-tvsa-diode-product-aid.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "459036"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1670584877730"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/electronic-components/resources/product-aid/eaton-tvsa-diode-product-aid.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "EOEM 电路保护和控制事业部 客户应用一览表"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/general-documents/eaton-circuit-protection-and-control-eoem-customer-list-zh-cn.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "1221499"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669869421782"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/general-documents/eaton-circuit-protection-and-control-eoem-customer-list-zh-cn.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "EOEM 电路保护和控制事业部 客户应用一览表"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/general-documents/eaton-circuit-protection-and-control-eoem-customer-list-zh-cn.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "1221499"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669869421782"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/general-documents/eaton-circuit-protection-and-control-eoem-customer-list-zh-cn.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "MOEM 电路保护和控制事业部 客户应用一览表"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/general-documents/eaton-circuit-protection-and-control-moem-customer-list-zh-cn.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "3359762"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669869421455"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/general-documents/eaton-circuit-protection-and-control-moem-customer-list-zh-cn.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "MOEM 电路保护和控制事业部 客户应用一览表"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/general-documents/eaton-circuit-protection-and-control-moem-customer-list-zh-cn.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "3359762"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669869421455"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/general-documents/eaton-circuit-protection-and-control-moem-customer-list-zh-cn.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "xpole pl7-dc - Leitungsschutzschalter"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/electrical-circuit-protection/circuit-breakers/pl7-6-4/eaton-xpole-pl7-dc-mcb-catalog-ca019070de-de-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "403673"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669863095200"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/electrical-circuit-protection/circuit-breakers/pl7-6-4/eaton-xpole-pl7-dc-mcb-catalog-ca019070de-de-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "xpole pl7-dc - Leitungsschutzschalter"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/electrical-circuit-protection/circuit-breakers/pl7-6-4/eaton-xpole-pl7-dc-mcb-catalog-ca019070de-de-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "403673"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669863095200"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/electrical-circuit-protection/circuit-breakers/pl7-6-4/eaton-xpole-pl7-dc-mcb-catalog-ca019070de-de-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Kühlwasserfiltration ist kein heißes Eisen für Eaton-Filter (DE)"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/markets/success-stories/filtration/industrial-processing/Eaton-CSS-XINXING-Iron-Steel-Production-DE.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "254963"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669843974760"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/markets/success-stories/filtration/industrial-processing/Eaton-CSS-XINXING-Iron-Steel-Production-DE.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Kühlwasserfiltration ist kein heißes Eisen für Eaton-Filter (DE)"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/markets/success-stories/filtration/industrial-processing/Eaton-CSS-XINXING-Iron-Steel-Production-DE.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "254963"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669843974760"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/markets/success-stories/filtration/industrial-processing/Eaton-CSS-XINXING-Iron-Steel-Production-DE.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Operation under high pressure - Specially adapted automatic basket strainer for pressures up to 1,160 psi (EN)"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/markets/success-stories/filtration/industrial-processing/Eaton-CSS-hydroelectric-power-station-EN.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "943058"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669843945021"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/markets/success-stories/filtration/industrial-processing/Eaton-CSS-hydroelectric-power-station-EN.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Operation under high pressure - Specially adapted automatic basket strainer for pressures up to 1,160 psi (EN)"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/markets/success-stories/filtration/industrial-processing/Eaton-CSS-hydroelectric-power-station-EN.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "943058"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669843945021"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/markets/success-stories/filtration/industrial-processing/Eaton-CSS-hydroelectric-power-station-EN.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Kit d'Eclairage - Notice "
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/safety-security-emergency-communications/emergency-lighting/self-contained/std-2-8/french/eaton-eclairage-securite-baes-std-2-8-kit-eclairage-notice.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "426721"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669840455297"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/safety-security-emergency-communications/emergency-lighting/self-contained/std-2-8/french/eaton-eclairage-securite-baes-std-2-8-kit-eclairage-notice.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Kit d'Eclairage - Notice "
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/safety-security-emergency-communications/emergency-lighting/self-contained/std-2-8/french/eaton-eclairage-securite-baes-std-2-8-kit-eclairage-notice.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "426721"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669840455297"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/safety-security-emergency-communications/emergency-lighting/self-contained/std-2-8/french/eaton-eclairage-securite-baes-std-2-8-kit-eclairage-notice.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Cadre d'Encastrement Blanc - Notice "
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/safety-security-emergency-communications/emergency-lighting/self-contained/ultraled-jour-2/french/eaton-eclairage-securite-baes-ultraled-jour-cadre-encastrement-blanc-notice.PDF"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "227204"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669840240298"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/safety-security-emergency-communications/emergency-lighting/self-contained/ultraled-jour-2/french/eaton-eclairage-securite-baes-ultraled-jour-cadre-encastrement-blanc-notice.PDF.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Cadre d'Encastrement Blanc - Notice "
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/safety-security-emergency-communications/emergency-lighting/self-contained/ultraled-jour-2/french/eaton-eclairage-securite-baes-ultraled-jour-cadre-encastrement-blanc-notice.PDF"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "227204"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669840240298"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/safety-security-emergency-communications/emergency-lighting/self-contained/ultraled-jour-2/french/eaton-eclairage-securite-baes-ultraled-jour-cadre-encastrement-blanc-notice.PDF.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Détecteur de Fumée interconnectable NF - Datasheet"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/safety-security-emergency-communications/fire/nugelec/détecteurs-de-fumée/eaton-gamme-habitation-ei605tyc-datasheet.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "234070"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669839178763"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/safety-security-emergency-communications/fire/nugelec/détecteurs-de-fumée/eaton-gamme-habitation-ei605tyc-datasheet.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Détecteur de Fumée interconnectable NF - Datasheet"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/safety-security-emergency-communications/fire/nugelec/détecteurs-de-fumée/eaton-gamme-habitation-ei605tyc-datasheet.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "234070"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669839178763"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/safety-security-emergency-communications/fire/nugelec/détecteurs-de-fumée/eaton-gamme-habitation-ei605tyc-datasheet.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Eaton W-SLC Brochure "
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-primary-switchgear/power-xpert-ux/eaton_w-slc_brochure_2016-3-23-150dpi_en.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "1947123"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669837822871"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-primary-switchgear/power-xpert-ux/eaton_w-slc_brochure_2016-3-23-150dpi_en.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Eaton W-SLC Brochure "
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-primary-switchgear/power-xpert-ux/eaton_w-slc_brochure_2016-3-23-150dpi_en.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "1947123"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669837822871"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-primary-switchgear/power-xpert-ux/eaton_w-slc_brochure_2016-3-23-150dpi_en.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Xiria standards and regulations"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-secondary-rmu/xiria-emea/eaton-xiria-one-pager-standards-and-regulations-en-gb.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "40067"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669837810238"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-secondary-rmu/xiria-emea/eaton-xiria-one-pager-standards-and-regulations-en-gb.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Xiria standards and regulations"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-secondary-rmu/xiria-emea/eaton-xiria-one-pager-standards-and-regulations-en-gb.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "40067"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669837810238"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/medium-voltage-power-distribution-control-systems/mv-secondary-rmu/xiria-emea/eaton-xiria-one-pager-standards-and-regulations-en-gb.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "D line contactors and starters"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/variable-frequency-drives/china/dilm-dilh-power-contactors/eaton-d-line-contactors-and-starters-brochure-en-cn.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "3838276"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669833826993"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/variable-frequency-drives/china/dilm-dilh-power-contactors/eaton-d-line-contactors-and-starters-brochure-en-cn.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Technisches Datenblatt VINIFLORA CH35"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/malolactic-bacteria/viniflora-ch-35/technical-data-sheets/eaton-viniflora-ch35-technicaldatasheet-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "312159"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832633371"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/malolactic-bacteria/viniflora-ch-35/technical-data-sheets/eaton-viniflora-ch35-technicaldatasheet-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Technisches Datenblatt VINIFLORA CH35"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/filtration-solutions/malolactic-bacteria/viniflora-ch-35/technical-data-sheets/eaton-viniflora-ch35-technicaldatasheet-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "312159"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832633371"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/malolactic-bacteria/viniflora-ch-35/technical-data-sheets/eaton-viniflora-ch35-technicaldatasheet-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Technisches Datenblatt LALVIN GoFerm Protect Evolution"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/filtration-solutions/yeast-nutrients/lalvin-goferm-protect-evolution/technical-datasheets/eaton-lalvin-goferm-protect-evolution-technical-datasheet-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "344711"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832607555"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeast-nutrients/lalvin-goferm-protect-evolution/technical-datasheets/eaton-lalvin-goferm-protect-evolution-technical-datasheet-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Technisches Datenblatt LALVIN GoFerm Protect Evolution"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeast-nutrients/lalvin-goferm-protect-evolution/technical-datasheets/eaton-lalvin-goferm-protect-evolution-technical-datasheet-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "344711"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832607555"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeast-nutrients/lalvin-goferm-protect-evolution/technical-datasheets/eaton-lalvin-goferm-protect-evolution-technical-datasheet-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Eaton Lalvin GoFerm Technical Data Sheet EN"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/filtration-solutions/yeast-nutrients/lalvin-goferm/technical-datasheets/eaton-lalvin-goferm-technical-datasheet-en.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "336019"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832574958"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeast-nutrients/lalvin-goferm/technical-datasheets/eaton-lalvin-goferm-technical-datasheet-en.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Eaton Lalvin GoFerm Technical Data Sheet EN"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeast-nutrients/lalvin-goferm/technical-datasheets/eaton-lalvin-goferm-technical-datasheet-en.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "336019"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832574958"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeast-nutrients/lalvin-goferm/technical-datasheets/eaton-lalvin-goferm-technical-datasheet-en.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Eaton Lalvin GoFerm Technical Data Sheet DE"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeast-nutrients/lalvin-goferm/technical-datasheets/eaton-lalvin-goferm-technical-datasheet-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "339703"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832574605"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeast-nutrients/lalvin-goferm/technical-datasheets/eaton-lalvin-goferm-technical-datasheet-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Eaton Lalvin GoFerm Technical Data Sheet DE"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/filtration-solutions/yeast-nutrients/lalvin-goferm/technical-datasheets/eaton-lalvin-goferm-technical-datasheet-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "339703"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832574605"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeast-nutrients/lalvin-goferm/technical-datasheets/eaton-lalvin-goferm-technical-datasheet-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Technisches Datenblatt SIHA PROFERM H+2"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeast-nutrients/siha-profermtm-h2/technical-datasheets/eaton-siha-proferm-h2-technical-data-sheet-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "389426"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832570273"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeast-nutrients/siha-profermtm-h2/technical-datasheets/eaton-siha-proferm-h2-technical-data-sheet-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Technisches Datenblatt SIHA PROFERM H+2"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/filtration-solutions/yeast-nutrients/siha-profermtm-h2/technical-datasheets/eaton-siha-proferm-h2-technical-data-sheet-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "389426"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832570273"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeast-nutrients/siha-profermtm-h2/technical-datasheets/eaton-siha-proferm-h2-technical-data-sheet-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Technisches Datenblatt SIHA PROFERM Plus"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeast-nutrients/siha-proferm-plus/technical-datasheets/eaton-siha-proferm-plus-technical-data-sheet-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "322683"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832561982"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeast-nutrients/siha-proferm-plus/technical-datasheets/eaton-siha-proferm-plus-technical-data-sheet-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Technisches Datenblatt SIHA PROFERM Plus"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/filtration-solutions/yeast-nutrients/siha-proferm-plus/technical-datasheets/eaton-siha-proferm-plus-technical-data-sheet-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "322683"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832561982"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeast-nutrients/siha-proferm-plus/technical-datasheets/eaton-siha-proferm-plus-technical-data-sheet-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Eaton LALVIN BM 4x4 Technical Data Sheet DE"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeasts/lalvin-bm-4x4/technical-data-sheets/eaton-lalvin-bm-4x4-technical-data-sheet-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "261732"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832258915"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeasts/lalvin-bm-4x4/technical-data-sheets/eaton-lalvin-bm-4x4-technical-data-sheet-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Eaton LALVIN BM 4x4 Technical Data Sheet DE"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/filtration-solutions/yeasts/lalvin-bm-4x4/technical-data-sheets/eaton-lalvin-bm-4x4-technical-data-sheet-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "261732"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832258915"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeasts/lalvin-bm-4x4/technical-data-sheets/eaton-lalvin-bm-4x4-technical-data-sheet-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Eaton LALVIN CLOS YSEO Technical Data Sheet DE"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeasts/lalvin-clos-yseo/technical-data-sheets/eaton-lalvin-clos-yseo-technical-data-sheet-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "233017"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832258468"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeasts/lalvin-clos-yseo/technical-data-sheets/eaton-lalvin-clos-yseo-technical-data-sheet-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "Secure",
+          "type" : "text",
+          "value" : "no"
+        }, {
+          "name" : "Title",
+          "type" : "text",
+          "value" : "Eaton LALVIN CLOS YSEO Technical Data Sheet DE"
+        }, {
+          "name" : "Publish_Date",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/filtration-solutions/yeasts/lalvin-clos-yseo/technical-data-sheets/eaton-lalvin-clos-yseo-technical-data-sheet-de.pdf"
+        }, {
+          "name" : "File_Size",
+          "type" : "text",
+          "value" : "233017"
+        }, {
+          "name" : "Content_Type",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Status",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "EpochPubDate",
+          "type" : "text",
+          "value" : "1669832258468"
+        }, {
+          "name" : "File_Type",
+          "type" : "text",
+          "value" : "application/pdf"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/filtration-solutions/yeasts/lalvin-clos-yseo/technical-data-sheets/eaton-lalvin-clos-yseo-technical-data-sheet-de.pdf.thumb.1280.1280.png"
+        }, {
+          "name" : "trackDownload",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Language",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "dc_format",
+          "type" : "text",
+          "value" : "application/pdf"
+        } ]
+      } ]
+    },
+    "request" : null
+  }
+}

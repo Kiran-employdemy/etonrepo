@@ -1,0 +1,60 @@
+<sly data-sly-use.tagsModel="com.eaton.platform.core.models.search.find.replace.ui.FindReplaceTagsModel"
+data-sly-use.pathfield="parts/fields/pathfield.html" data-sly-use.tagfield="parts/fields/tagfield.html"
+data-sly-use.select="parts/fields/select.html"></sly>
+<form class="coral-Form coral-Form--aligned u-columnLarge find-replace-form" id="findReplaceTagsForm" resource-path="${resource.path}">
+	<div class="find-replace-form-container">
+		<fieldset class="find-replace-form-fieldset">
+			<div class="find-replace-form-row">
+				<div class="find-replace-form-column">
+					<sly data-sly-call="${pathfield.pathfield @ id='destPath', name='destPath', label='Start in', placeholder='Enter a path, e.g. /content/eaton'}"></sly>
+				</div>
+				<div class="find-replace-form-column">
+					<sly data-sly-call="${select.select @ id='mode', name='mode', label='Mode', placeholder='Select mode', items=tagsModel.modeSelectItems}"></sly>
+				</div>
+			</div>
+			<div class="find-replace-form-row find-replace-form-row-multi">
+				<div class="find-replace-form-column">
+					<coral-multifield class="find-replace-tags-multifield" id="findTagsMulti">
+						<label class="coral-Form-fieldlabel">Tags to find</label>
+						<coral-multifield-item>		
+							<sly data-sly-call="${select.select @ name='tagsField', placeholder='Select field', items=tagsModel.tagSelectItems, helpItemsJson=tagsModel.tagHelpItemsJson}"></sly>
+							<sly data-sly-call="${tagfield.tagfield @ name='tags', placeholder='Select tag', path=tagsModel.defaultTagsPath, disabled='disabled', cssClasses='full'}"></sly>
+						</coral-multifield-item>
+						<button coral-multifield-add type="button" is="coral-button">Add a field</button>
+						<template coral-multifield-template>
+							<sly data-sly-call="${select.select @ name='tagsField', placeholder='Select field', items=tagsModel.tagSelectItems, helpItemsJson=tagsModel.tagHelpItemsJson}"></sly>
+							<sly data-sly-call="${tagfield.tagfield @ name='tags', placeholder='Select tag', path=tagsModel.defaultTagsPath, disabled='disabled', cssClasses='full'}"></sly>
+						</template>
+					</coral-multifield>
+				</div>
+				<div class="find-replace-form-column">
+					<coral-multifield class="find-replace-tags-multifield" id="newTagsMulti">
+						<label class="coral-Form-fieldlabel">New tags</label>
+						<coral-multifield-item>					
+							<sly data-sly-call="${select.select @ name='tagsField', placeholder='Select field', items=tagsModel.tagSelectItems, helpItemsJson=tagsModel.tagHelpItemsJson}"></sly>
+							<sly data-sly-call="${tagfield.tagfield @ name='tags', placeholder='Select tag', path=tagsModel.defaultTagsPath, disabled='disabled', cssClasses='full'}"></sly>
+						</coral-multifield-item>
+						<button coral-multifield-add type="button" is="coral-button">Add a field</button>
+						<template coral-multifield-template>				
+							<sly data-sly-call="${select.select @ name='tagsField', placeholder='Select field', items=tagsModel.tagSelectItems, helpItemsJson=tagsModel.tagHelpItemsJson}"></sly>
+							<sly data-sly-call="${tagfield.tagfield @ name='tags', placeholder='Select tag', path=tagsModel.defaultTagsPath, disabled='disabled', cssClasses='full'}"></sly>
+						</template>
+					</coral-multifield>
+				</div>			
+			</div>
+		</fieldset>
+	</div>
+	<sly data-sly-include="parts/results-table.html"></sly>
+	<div class="foundation-layout-util-vmargin">
+		<button id="btnPreview" type="button" autocomplete="off" is="coral-button" trackingfeature=""
+			trackingelement="preview" tracking="ON" class="coral3-Button coral3-Button--secondary" size="M"
+			variant="secondary">
+			<coral-button-label>Preview</coral-button-label>
+		</button>
+		<button id="btnReplace" type="submit" autocomplete="off" is="coral-button" trackingfeature=""
+			trackingelement="replace" tracking="ON" class="coral3-Button coral3-Button--secondary" size="M"
+			variant="secondary">
+			<coral-button-label>Submit</coral-button-label>
+		</button>
+	</div>
+</form>

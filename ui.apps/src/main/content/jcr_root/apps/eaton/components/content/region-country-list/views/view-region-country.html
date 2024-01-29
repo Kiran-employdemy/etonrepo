@@ -1,0 +1,29 @@
+<sly data-sly-use.regionObj="com.eaton.platform.core.models.countryselector.Region"/>
+
+<div class="region-item panel-group secondary-content-accordion">
+	<div class="panel">
+        <div class="panel-heading" role="tab">
+            <a href="#selector-country-${regionObj.regionName.hashCode}" aria-expanded="true" aria-controls="country-selector" class="country-selector__accordian" data-toggle="collapse" data-parent="secondary-content-accordion">
+                <h3 class="b-heading-h3 ${regionObj.regionName ? 'country-selector__region-label' : ''}">${regionObj.regionName} <i class="icon country-selector__icons icon-sign-plus"></i></h3>
+            </a>
+        </div>
+	</div>
+    <div class="country-block" id="selector-country-${regionObj.regionName.hashCode}">
+        <div class="country-block__list">
+            <ul class="country-list" data-sly-list.countryObj="${regionObj.countryList}">
+                 <li class="country-list__country-item">
+                    <div class="country-list__language-block">
+                        <i class="country-selector__item-country-flag flag-${countryObj.countryId}" aria-hidden="true"></i>
+                        <span class="country-selector__language-list" data-sly-list.languageObj="${countryObj.languageList}">
+                            <div class="country-selector__item-language">
+                                <a class="country_selector-country" href="${languageObj.languagePath}" target="_self" data-regionid="${regionObj.regionId}" data-countryid="${countryObj.countryId}" data-languageid="${languageObj.languageName}" data-langcountryid="${languageObj.languageCountryCode}"  data-langcodeid="${languageObj.languageCode}"  data-countrycodeid="${languageObj.countryCode}">
+                                    ${languageObj.countryName}
+                                 </a>
+                            </div>
+                        </span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

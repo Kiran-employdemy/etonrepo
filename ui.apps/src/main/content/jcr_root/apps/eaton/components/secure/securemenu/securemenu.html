@@ -1,0 +1,11 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Secure Menu</div>
+</sly>
+<sly data-sly-use.data="com.eaton.platform.core.models.secure.SecureMenuModel">
+    <sly data-sly-list.link="${data.childPageList}" >
+        <a  href="#" data-menu-category="${link.navName}" aria-expanded="false" class="primary-navigation__menu primary-navigation__secureMenu">
+            <span><i class="icon icon-secure-lock" aria-hidden="true"></i>${ link.linkTitle }</span>
+            <i class="icon icon-chevron-right" aria-hidden="true"></i>
+        </a>
+    </sly>
+</sly>

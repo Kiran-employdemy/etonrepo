@@ -1,0 +1,40 @@
+<sly data-sly-use.tileBlockLinkModel="com.eaton.platform.core.models.tileblocklinks.TileBlockLinksModel">
+
+  <div class="tile-links__component tile-links--with-bg-image container">
+    <div class="tile-links__content">
+      <!--/* With BG Image */-->
+     <div class="row">
+      <div class="col-sm-12 tile-links__title">
+
+
+        <div class="tile-links__title__heading">${properties.imageTileTitle}</div>
+        <p class="tile-links__title__description">${properties.imageTileDescription}
+        </p>
+      </div>
+      </div>
+      <div
+        data-sly-list.tile="${tileBlockLinkModel.tileLinks}"
+        class="tile-links__row row"
+      >
+        <div class="col-xs-12 col-md-3 tile-links__element tile-links__element--with-image-bg">
+          <a class="tile-links__link u-absolute-fill"
+            href="${ tile.tileBlockLinkPath }"
+            target="${ tile.tileBlockLinkOpenNewWindow }">
+            <span class="sr-only">${ tile.tileBlockLinkTitle }</span>
+          </a>
+
+          <div class="tile-links__image u-absolute-fill">
+            <!-- Start: Rendition Image Component -->
+            <sly data-sly-use.tpl="eaton/components/shared/templates/rendition-background.html">
+              <sly data-sly-call="${ tpl.module @ data=tile }"></sly>
+            </sly>
+            <!-- End: Rendition Image Component -->
+          </div>
+
+            <h2 class="tile-links__text"><bdi>${ tile.tileBlockLinkTitle }</bdi></h2>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</sly>

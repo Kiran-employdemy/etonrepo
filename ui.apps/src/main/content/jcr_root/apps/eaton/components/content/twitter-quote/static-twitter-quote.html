@@ -1,0 +1,10 @@
+<sly data-sly-test="${ wcmmode.edit }">
+<div class="alert alert-warning">Twitter Quote: ${currentNode.name}</div>
+</sly>
+
+<sly data-sly-use.TwitterQuoteModel="com.eaton.platform.core.models.TwitterQuoteModel"
+	 data-sly-use.CommonConstants = "com.eaton.platform.core.constants.CommonConstants"></sly>
+
+<sly data-sly-test="${ TwitterQuoteModel.quoteView == CommonConstants.DEFAULT }">
+	<sly data-sly-include="views/view-default.html"></sly>
+</sly>

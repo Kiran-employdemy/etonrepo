@@ -1,0 +1,46 @@
+//-----------------------------------
+// Component: Divider
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+%divider {
+  height: rem($spacing__sm * 0.2);
+  margin-top: rem($spacing__sm * 0.333333);
+  margin-bottom: rem($spacing__sm * 0.333333);
+
+
+  //-----------------------------------
+  // Media-Query: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+    height: rem($spacing__md * 0.2 / 3);
+    margin-top: rem($spacing__sm * 0.666666);
+    margin-bottom: rem($spacing__sm * 0.666666);
+  }
+
+  //------------------------------------
+  // fix for EATON-648
+  //------------------------------------
+  .eaton-grid-control .col-md-4 & {
+    margin-top: rem($spacing__sm * 0.833333);
+  }
+
+}
+
+.eaton-divider {
+  @extend %divider;
+  background-color: $color__secondary-gray5;
+}
+
+.eaton-blue-divider {
+  @extend %divider;
+  background-color: $color__primary-blue;
+}
+
+.eaton-spacer {
+  @extend %divider;
+  background-color: transparent;
+}
+

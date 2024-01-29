@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    jcr:title="Social Share Configuration"
+    height="{Long}600"
+    warnIfModified="{Boolean}false"
+    width="{Long}800"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <socialshare
+                jcr:primaryType="cq:Panel"
+                title="Social Share"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <pubid
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Publish ID from AddThis registration"
+                        fieldLabel="AddThis Publish ID"
+                        name="./pubID"
+                        xtype="textfield"/>
+                    <allowedtemplates
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Allowed Templates"
+                        name="./allowedTemplates"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="nt:unstructured"
+                            allowBlank="{Boolean}false"
+                            type="select"
+                            xtype="selection">
+                            <options jcr:primaryType="cq:WidgetCollection">
+                                <home-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Home Page"
+                                    value="home-page"/>
+                                <generic-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Generic Page"
+                                    value="generic-page"/>
+                                <article-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Article Page"
+                                    value="article-page"/>
+                                <press-release
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Press Release"
+                                    value="press-release"/>    
+                                <sitemap-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Sitemap Page"
+                                    value="sitemap-page"/>
+                                <product-family-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Product family Page"
+                                    value="product-family"/>
+                                <sku-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="SKU Page"
+                                    value="product-sku"/>
+                            </options>
+                        </fieldConfig>
+                    </allowedtemplates>
+                </items>
+            </socialshare>
+        </items>
+    </items>
+</jcr:root>

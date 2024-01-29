@@ -1,0 +1,38 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven
+Built-By: Employdemy Solutions
+Build-Jdk: 17.0.7
+Implementation-Title: eaton_platform_parent - UI content
+Implementation-Version: 2.107.0-SNAPSHOT
+Implementation-Vendor-Id: com.eaton.platform
+Implementation-URL: http://www.eaton.com/eaton_platform_parent.ui.conten
+ t
+Content-Package-Roots: /conf/eaton,/conf/eaton-cummins/settings/wcm/temp
+ late-types,/conf/eaton/settings/dam/cfm/models/person,/conf/eaton/setti
+ ngs/wcm/template-types,/conf/eaton/settings/wcm/template-types/contentb
+ ase,/conf/eaton/settings/wcm/template-types/landingbase,/conf/eaton/set
+ tings/wcm/templates/eaton-ccms-dita-page,/conf/eaton/settings/wcm/templ
+ ates/eaton-dita-landing-page,/conf/eaton/settings/wcm/templates/softwar
+ e-delivery,/conf/global/settings/dam/adminui-extension/metadataprofile,
+ /conf/global/settings/dam/adminui-extension/metadataschema,/conf/global
+ /settings/dam/search,/conf/global/settings/workflow/launcher,/conf/glob
+ al/settings/workflow/launcher/config/dm_encode_video_create,/conf/globa
+ l/settings/workflow/launcher/config/dm_encode_video_create_(post-6.3),/
+ conf/global/settings/workflow/launcher/config/dm_encode_video_mod,/conf
+ /global/settings/workflow/launcher/config/dm_encode_video_mod_(post-6.3
+ ),/conf/global/settings/workflow/launcher/config/dm_encode_video_mod_re
+ upload,/conf/global/settings/workflow/launcher/config/eaton_update_meta
+ data,/conf/global/settings/workflow/launcher/config/update_asset_create
+ ,/conf/global/settings/workflow/launcher/config/update_asset_create_wit
+ hout_DM,/conf/global/settings/workflow/launcher/config/update_asset_mod
+ ,/conf/global/settings/workflow/launcher/config/update_asset_mod_withou
+ t_DM,/conf/global/settings/workflow/models/eaton-ccms-page-metadata-upd
+ ate,/conf/global/settings/workflow/models/eaton-ccms-update-pdf-metadat
+ a,/conf/global/settings/workflow/models/eaton-dam,/conf/global/settings
+ /workflow/models/eaton-workflows,/content
+Content-Package-Description: UI content package for eaton_platform_paren
+ t
+Content-Package-Id: com.eaton.platform:eaton_platform_parent.ui.content:
+ 2.107.0-SNAPSHOT
+Content-Package-Type: content
+

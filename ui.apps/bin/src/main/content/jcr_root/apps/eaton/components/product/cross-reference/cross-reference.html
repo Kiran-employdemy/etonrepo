@@ -1,0 +1,153 @@
+<div data-sly-test="${ wcmmode.edit }" class="alert alert-warning">Cross Reference</div>
+<sly data-sly-use.crossReference="com.eaton.platform.core.models.CrossReferenceModel"></sly>
+<sly data-sly-use.resultTemplate="./views/xref-result.html"></sly>
+<sly data-sly-use.tpl="eaton/components/shared/templates/data-layer-search-count.html">
+  <sly data-sly-call="${ tpl.module @ data=crossReference }"></sly>
+</sly>
+
+<div id="cross-reference" class="container ${crossReference.hasResults ? '' : 'hidden'}"
+     data-servlet-url="${crossReference.servletUrl}"
+     data-eaton-text="${ 'Eaton' @ i18n }"
+     data-base-sku-path="${crossReference.baseSKUPath}">
+  <!-- Cross Reference Facets/Filters Header -->
+  <div class="row">
+    <div class="col-xs-12">
+      <div class="faceted-navigation-header">
+        <div class="faceted-navigation-header__header-top" data-sortable="true">
+
+          <div class="faceted-navigation-header__results-count"  data-results-text="${'CrossReference.Results' @ i18n}" data-clear-filters-text="${'Filters.ClearFilters' @ i18n}">
+            ${crossReference.resultsCount} ${'CrossReference.Results' @ i18n}
+          </div>
+          <a href="#"
+             role="button"
+             class="xref__clear-all-filters faceted-navigation-header__action-link faceted-navigation-header__action-link--clear-filters faceted-navigation-header__action-link--clear-filters--desktop hidden-xs hidden-sm" style="display: none;">
+            ${'Filters.ClearFilters' @ i18n}
+          </a>
+          <div class="faceted-navigation-header__title">${ 'ProductGrid.sortBy' @ i18n} </div>
+          <div class="faceted-navigation-header__sort-options">
+            <div class="dropdown">
+              <button id="dSortFacets"
+                      class=""
+                      type="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false" >
+                <div class="faceted-navigation-header__default">
+                  <span class="cross-reference-sort faceted-navigation-header__default--option" id="default--option" data-default-sorting-title-text="${ crossReference.selectedSortBy @ i18n}" data-default-sorting-title="${crossReference.selectedSortBy}"
+                        data-default-fallback="${ 'ProductGrid.sortBy' @ i18n}">${ crossReference.selectedSortBy @ i18n}</span>
+                  <i class="icon icon-chevron-down" aria-hidden="true"></i>
+                </div>
+              </button>
+              <ul data-sly-list="${ crossReference.sortByOptionsValue}"
+                  class="dropdown-menu"
+                  aria-labelledby="dSortFacets" >
+                <li>
+                  <a class="faceted-navigation-header__sort-link sortByItems ${ item.value == crossReference.selectedSortBy ? 'faceted-navigation-header__sort-options--selected' : ''}"
+                     rel="nofollow"
+                     href="javascript:void(0)"
+                     target=""
+                     data-sortByOption="${item.value}"
+                     data-sortByOptionText="${item.label @ i18n}"
+                     aria-label="${item.value}" >
+                    ${item.label @ i18n}
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="cross-reference__active-filters"
+             class="cross-reference-active-filter visible-lg"
+             data-active-filter-values="${crossReference.activeFacetJson}"
+             data-clear-filters-text="${'Filters.ClearFilters' @ i18n}"></div>
+        <div class="hidden-lg hidden-md visible-xs visible-sm">
+          <a rel="nofollow" target="_self" data-toggle-modal-facet class="open-facets-cross-reference-mobile b-button b-button__primary b-button__primary--light" role="button">
+            ${'Filters.Title' @ i18n}
+            <span class="cross-reference__mobile-filters-count">
+              <sly data-sly-test="${crossReference.activeFacetCount > 0}">(${crossReference.activeFacetCount})</sly>
+            </span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cross Reference Facets/Filters -->
+  <div class="row">
+    <div class="col-xs-12 col-md-3">
+      <div id="cross-reference__filters"
+           data-filter-list="${crossReference.facetGroupListJson}"
+           data-property-list="${crossReference.facetGroupOrderingJson}"
+		   data-facet-value-count="${crossReference.facetValueCount}"
+           data-prevent-scroll-top="true"
+           data-facet-search-disabled="${crossReference.hideGlobalFacetSearch ? 'true' : 'false'}"
+           data-is-edit-mode="${wcmmode.edit ? 'true' : ''}"
+           data-title="${'Filters.Title' @ i18n}"
+           data-mobile-dialog-title="${'Filters.Title' @ i18n}"
+           data-close-text="${'Filters.Close' @ i18n}"
+           data-clear-all-filters-text="${'Filters.ClearAllFilters' @ i18n}"
+           data-clear-filters-text="${'Filters.ClearFilters' @ i18n}"
+           data-clear-selection-text="${'Filters.ClearSelection' @ i18n}"
+           data-view-more-text="${'Filters.ViewMore' @ i18n}"
+           data-view-less-text="${'Filters.ViewLess' @ i18n}"
+           data-results-plural-text="${'Search.Results' @ i18n}"
+           data-results-singular-text="${'Search.Result' @ i18n}"
+           data-facet-search-label="${'GlobalFacetSearch.SearchLabel' @i18n}"
+           data-facet-search-placeholder="${'GlobalFacetSearch.Placeholder' @i18n}"
+           data-no-suggestions-text="${'GlobalFacetSearch.NoSugestions' @i18n}"
+           data-in-text="${'GlobalFacetSearch.In' @i18n}"
+           data-of-text="${'Global.Of' @ i18n}"
+           data-facet-group-search-label="${'GroupFacetSearch.Label' @i18n}"
+           data-facet-group-search-placeholder="${'GroupFacetSearch.Placeholder' @i18n}"
+           data-facet-group-search-no-suggestions-text="${'GroupFacetSearch.NoSuggestionsText' @i18n}">
+        </div>
+    </div>
+    <!-- Cross Reference Result Section / Accordions -->
+    <div class="col-xs-12 col-md-9">
+      <div class="cross-reference__accordion-toggle">
+        <a href="javascript:void(0)" class="cross-reference__accordion-toggle__link"
+        data-active-text="${'CrossReference.ExpandAllLabel' @ i18n}"
+        data-inactive-text="${'CrossReference.CollapseAllLabel' @ i18n}">${'CrossReference.ExpandAllLabel' @ i18n}</a>
+      </div>
+
+      <div class="cross-reference__results---group" data-default-closed="${accordionItems.defaultAccordionClosed}">
+        <div class="cross-reference__results-header--parent ${! crossReference.bestMatches ? 'hidden' : ''}" id="best_matchHeader">
+            <span>${'CrossReference.BestMatch' @ i18n}</span>  <span id="best_matchSearch" class="cross-reference__results-header--parent__search-term">${crossReference.searchTerm}</span>
+        </div>
+        <div class="cross-reference__results--best cross-reference__results--all ${! crossReference.bestMatches ? 'hidden' : ''}">
+          <sly data-sly-list.result="${crossReference.bestMatches}">
+            <sly data-sly-call="${ resultTemplate.xrefResult @ result=result, crossReference=crossReference, index=resultList.index}"></sly>
+          </sly>
+        </div>
+
+        <div class="cross-reference__results-header--parent ${! crossReference.partialMatches ? 'hidden' : ''}" id="partial_matchHeader">
+          <span>${'CrossReference.PartialMatch' @ i18n}</span> <span id="partial_matchSearch" class="cross-reference__results-header--parent__search-term">${crossReference.searchTerm}</span>
+        </div>
+        <div class="cross-reference__results--partial cross-reference__results--all ${! crossReference.partialMatches ? 'hidden' : ''}">
+          <sly data-sly-list.result="${crossReference.partialMatches}">
+            <sly data-sly-call="${ resultTemplate.xrefResult @ result=result, crossReference=crossReference, index=resultList.index}"></sly>
+          </sly>
+        </div>
+      </div>
+
+      <div id="cross-reference-template" class="hidden">
+        <sly data-sly-call="${ resultTemplate.xrefResult }"></sly>
+      </div>
+
+      <div class="text-center">
+        <button class="b-button b-button__primary b-button__primary--light cross-reference-load-more ${ crossReference.showLoadMore ? '' : 'hidden' }"
+                role="button" data-load-more-url="${crossReference.loadMoreUrl}">
+          ${'CrossReference.LoadMore' @ i18n}
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div data-sly-test="${ wcmmode.edit }" class="alert alert-warning">No Results Parsys</div>
+  <div class="cross-reference__no-results-message ${wcmmode.edit || (! crossReference.hasResults && crossReference.hasSearchTerm) ? '' : 'hidden'}" data-sly-resource="${ @ path='no-results-par', resourceType='wcm/foundation/components/responsivegrid'}"></div>
+
+  <div data-sly-test="${ wcmmode.edit }" class="alert alert-warning">Landing Message Parsys</div>
+  <div class="cross-reference__landing-message ${wcmmode.edit || (! crossReference.hasResults && ! crossReference.hasSearchTerm) ? '' : 'hidden'}" data-sly-resource="${ @ path='landing-message-par', resourceType='wcm/foundation/components/responsivegrid'}"></div>
+</div>

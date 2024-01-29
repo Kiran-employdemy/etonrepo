@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.converter.search.find.replace.impl.TagsModificationRequestModel2BeanConverterImpl">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="service.description" type="String" value=" Tags Modification Request Model To Bean Converter"/>
+  <property name="process.label" type="String" value=" TagsModificationRequestModel2BeanConverterImpl"/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.converter.search.find.replace.TagsModificationRequestModel2BeanConverter"/>
+  </service>
+  <reference name="tagsSearchRequestModel2BeanConverter" interface="com.eaton.platform.core.services.converter.search.find.replace.TagsSearchRequestModel2BeanConverter" field="tagsSearchRequestModel2BeanConverter"/>
+  <implementation class="com.eaton.platform.core.services.converter.search.find.replace.impl.TagsModificationRequestModel2BeanConverterImpl"/>
+</scr:component>

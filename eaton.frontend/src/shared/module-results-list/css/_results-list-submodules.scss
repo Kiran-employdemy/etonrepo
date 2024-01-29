@@ -1,0 +1,221 @@
+//-----------------------------------
+// M-60.1: Results List Sub-Modules
+//-----------------------------------
+.results-list-submodule {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: rem($spacing__md * .5);
+
+  @include media-desktop-and-up {
+    flex-direction: row;
+    margin-bottom: rem($spacing__sm * 1.5); // Visually 60px Bottom Margin
+  }
+
+  &__image-link {
+    display: inline-block;
+  }
+
+  .rendition__image {
+    background: var(--color__lunar-10);
+    border: 1px solid var(--color__white);
+    padding: .1rem;
+
+    @include media-desktop-and-up {
+      max-width: rem($spacing__sm * 4.7); //14rem
+    }
+  }
+
+  &__date {
+    color: var(--color__lunar-40);
+    font-style: italic;
+    font-size: rem($base__font-size * 1.6);
+    margin-bottom: rem($spacing__sm * .4);
+    margin-top: $spacing__sm * .1666667;
+    line-height: $base__line-height / 1.4;
+  }
+
+  &__document {
+    margin-bottom: rem($spacing__sm * .1333333333);
+  }
+
+  &__secondary-links {
+    display: flex;
+  }
+
+  &__badge-discontinued {
+    background: var(--grey-secondary-brand-color);
+    color: var(--color__white);
+    display: inline-block;
+    font-family: var(--secondary-font);
+    font-size: rem($base__font-size * 1.4);
+    font-weight: bold;
+    height: rem($spacing__sm); //30px
+    line-height: 1;
+    margin-bottom: rem($spacing__sm * 0.166667); //5px
+    padding: rem($spacing__sm * 0.266667); //8px
+  }
+
+  &__badge-new {
+    background: var(--primary-brand-color);
+    color: var(--color__white);
+    display: inline-block;
+    font-family: var(--secondary-font);
+    font-size: rem($base__font-size * 1.4);
+    font-weight: bold;
+    height: rem($spacing__sm); //30px
+    line-height: 1;
+    margin-bottom: rem($spacing__sm * 0.166667); //5px
+    padding: rem($spacing__sm * 0.266667); //8px
+  }
+
+  &__name {
+    font-size: rem($base__font-size * 2.4);
+    line-height: $base__line-height * .9;
+    margin-bottom: 0; // Visually 15px Top Margin. Smaller margin value due to font Line-height
+
+    // External Link Icon
+    .icon {
+      margin-left: rem($spacing__sm * .333333333);
+      vertical-align: middle;
+    }
+  }
+
+  &__description {
+    font-size: rem($base__font-size * 1.6);
+    line-height: $base__line-height;
+    margin-bottom: rem($spacing__sm * 0.34);
+    margin-top: rem($spacing__sm * 0.34);
+  }
+
+  &__url {
+    font-size: rem($base__font-size * 1.6);
+    line-height: $base__line-height;
+    margin-bottom: 0;
+    word-wrap: break-word;
+  }
+
+  &-link {
+    display: flex;
+
+    // External Link Icon
+    .icon {
+      font-size: rem($base__font-size * 1.8);
+      margin-right: rem($spacing__sm * .333333333);
+      vertical-align: middle;
+    }
+
+    .icon-secure-lock {
+      color: var(--color__topaz-40);
+    }
+  }
+
+  &__link-list {
+    font-size: rem($base__font-size * 1.8);
+    margin-bottom: 0;
+    margin-top: rem($spacing__sm * .344444);
+
+    @include media-desktop-and-up {
+      margin-bottom: rem($spacing__sm * .1333333333); // Visually 15px Top Margin. Smaller margin value due to font Line-height
+    }
+  }
+
+  &__link-item {
+    border-right: 1px solid var(--color__iron-30);
+    margin-right: rem($spacing__sm * .5333333333);
+    padding-right: rem($spacing__sm * .5333333333);
+
+
+    // Remove Line / Reset Margins for last link in the list
+    &:last-child {
+      border-right: 0;
+      margin-right: 0;
+      padding-right: 0;
+    }
+
+    [dir='rtl'] & {
+      border-left: 1px solid var(--color__iron-30);
+      border-right: 0;
+      margin-left: rem($spacing__sm * .5333333333);
+      margin-right: 0;
+      padding-left: rem($spacing__sm * .5333333333);
+      padding-right: 0;
+
+      &:last-child {
+        border-left: 0;
+        margin-left: 0;
+        padding-left: 0;
+      }
+    }
+  }
+
+  // Force Image to be displayed Above the content
+  &--type-family,
+  &--type-sku {
+    flex-direction: column;
+
+    @include media-desktop-and-up {
+      flex-direction: row;
+    }
+  }
+
+  &__image-wrapper {
+    margin-bottom: rem($spacing__sm * .34);
+    margin-top: rem($spacing__sm * .1666666667);
+
+    @include media-desktop-and-up {
+      margin: 0 rem($spacing__sm) 0 0;
+      min-width: $grid__column-width * 2;
+
+      [dir='rtl'] & {
+        margin-left: rem($spacing__sm);
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__icon-wrapper {
+    margin-bottom: rem($spacing__sm * .333335);
+    margin-top: rem($spacing__sm * .2);
+
+    .icon {
+      font-size: rem($base__font-size * 4);
+    }
+
+    @include media-desktop-and-up {
+
+      margin-bottom: 0;
+      margin-right: rem($spacing__sm * .6667);
+      margin-top: 0;
+
+      [dir='rtl'] & {
+        margin-left: rem($spacing__sm * .6667);
+        margin-right: 0;
+      }
+
+      // NOTE: "flex-basis" was replaced with "width" due to issues in old versions of Android & iOS
+      width: rem($base__font-size * 3);
+
+      .icon {
+        font-size: rem($base__font-size * 3);
+      }
+    }
+  }
+
+  &__content-wrapper {
+    @include media-desktop-and-up {
+      width: 100%;
+    }
+  }
+
+  &--type-resource {
+    @include media-desktop-and-up {
+      margin-bottom: rem($spacing__md * .7333333333);
+
+      .icon {
+        color: var(--primary-brand-color);
+        font-size: rem($base__font-size * 4.8);
+      }
+    }
+  }
+
+}

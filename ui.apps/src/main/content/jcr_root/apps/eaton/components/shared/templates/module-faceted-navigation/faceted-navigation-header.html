@@ -1,0 +1,76 @@
+<template data-sly-template.module="${ @ data }">
+
+  <div class="faceted-navigation-header"
+    data-redirect-link="${ data.facetURLBean.contentPath }${data.facetURLBean.facetEndURL}"
+    data-active-facet-count="${data.activeFacetsList ? data.activeFacetsList.size : 0}">
+    <div class="faceted-navigation-header__header-top faceted-navigation-header__mobile-view" data-sortable="true">
+      <div class="faceted-navigation-header__results-count">
+        ${ '{0} {1}' @ i18n, format=[data.facetedHeaderNavigationResultBean.totalCount,
+        data.facetedHeaderNavigationResultBean.results ] }
+      </div>
+      <a data-sly-test="${data.activeFacetsList && data.activeFacetsList.size > 0}"
+        href="${ data.facetURLBean.contentPath }${data.facetURLBean.facetEndURL}" rel="nofollow" target="_self"
+        role="button" data-redirect-link="${ data.facetURLBean.contentPath }${data.facetURLBean.facetEndURL}"
+        class="faceted-navigation-header__action-link faceted-navigation-header__action-link--clear-filters faceted-navigation-header__action-link--clear-filters--desktop">
+        ${ data.facetedHeaderNavigationResultBean.clearFilters }
+      </a>
+      <div class="faceted-navigation-header__title doc-sort-title-mobile-view ">${ 'ProductGrid.sortBy' @ i18n} </div>
+      <div class="faceted-navigation-header__sort-options">
+        <div class="dropdown">
+          <button id="dSortFacets" class="" type="button" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            <div class="faceted-navigation-header__default">
+              <span class="faceted-navigation-header__default--option"
+                data-default-sorting-title="${data.defaultSortingOption}"
+                data-default-fallback="${ 'ProductGrid.sortBy' @ i18n}"></span>
+              <i class="icon icon-chevron-down" aria-hidden="true"></i>
+            </div>
+          </button>
+          <ul data-sly-list="${ data.facetedHeaderNavigationResultBean.sortList }" class="dropdown-menu "
+            aria-labelledby="dSortFacets">
+            <li>
+              <a class="faceted-navigation-header__sort-link" rel="nofollow"
+                href="${ data.facetURLBean.contentPath }${data.facetURLBean.sortStartURL}$${item.value}${data.facetURLBean.sortEndURL}"
+                target="" aria-label="${data.facetedHeaderNavigationResultBean.goTo} ${item.label}">
+                ${item.label}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="faceted-navigation__active-filters faceted-navigation-filters"
+      data-sly-test="${data.activeFacetsList.size != null && data.activeFacetsList.size > 0}"
+      data-active-filter-values='${data.activeFacetsListJson}'
+      data-clear-filters-text="${'ActiveFilters.ClearFiltersText' @ i18n}"></div>
+
+    <sly data-sly-test="${data.activeFacetsList.size != null}">
+
+      <sly data-sly-test="${data.activeFacetsList.size > 0}">
+
+        <div class="faceted-navigation-header__container">
+          <a rel="nofollow" target="_self" data-toggle-modal-facet
+            class="open-facets-mobile b-button b-button__primary b-button__primary--light" role="button">
+            ${ '{0} ({1})' @ i18n, format=[ data.facetedHeaderNavigationResultBean.filters, data.activeFacetsList.size ]
+            }&lrm;
+          </a>
+        </div>
+
+      </sly>
+
+      <sly data-sly-test="${data.activeFacetsList.size == 0}">
+
+        <div class="faceted-navigation-header__container">
+          <a rel="nofollow" target="_self" data-toggle-modal-facet
+            class="open-facets-mobile b-button b-button__primary b-button__primary--light" role="button">
+            ${ '{0}' @ i18n, format=[ data.facetedHeaderNavigationResultBean.filters ] }
+          </a>
+        </div>
+
+      </sly>
+    </sly>
+
+
+  </div>
+</template>

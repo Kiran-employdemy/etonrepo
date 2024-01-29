@@ -1,0 +1,34 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.featuredstory.FeatureStoryListModel">
+  <div class="featured-story__component">
+
+    <div data-sly-list.component="${ data.links }">
+      <div data-sly-test="${component.featureStoryImage}" class="row featured-story__row">
+        <div class="col-xs-12 col-lg-11
+          ${componentList.odd ? 'col-lg-pull-0 featured-story__row--right' : 'col-lg-offset-1 featured-story__row--left'}">
+
+		 <div class="featured-story__image">
+          <!-- Start: Rendition Image Component -->
+          <sly data-sly-use.tpl="eaton/components/shared/templates/rendition-background.html">
+            <sly data-sly-call="${ tpl.module @ data=component }"></sly>
+          </sly>
+          <!-- End: Rendition Image Component -->
+		</div>
+
+          <div class="col-xs-12 col-sm-5  featured-story__blue ${
+            componentList.odd ? 'featured-story__blue--right' : 'featured-story__blue--left'
+          }">
+            <div class="featured-story__content">
+              <div data-sly-test="${component.featureStoryEyebrow}" class="featured-story__eyebrow b-eyebrow-large">${ component.featureStoryEyebrow }</div>
+              <h2 data-sly-test="${component.featureStoryLinkTitle}" class="featured-story__text">
+                <a class="featured-story__link"
+                  href="${component.featureStoryLinkPath}"
+                  target="${component.featureStoryLinkOpenNewWindow}"
+                ><bdi>${ component.featureStoryLinkTitle }</bdi></a>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</sly>

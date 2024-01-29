@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Component Properties - Classic UI"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <view
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="is-half"
+                        fieldDescription="Determine which variation of component to view"
+                        fieldLabel="View"
+                        fieldSubLabel=""
+                        name="./view"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <colEqualWidth
+                                jcr:primaryType="nt:unstructured"
+                                text="Column Default (6/6)"
+                                value="is-half"/>
+                            <colSevenFive
+                                jcr:primaryType="nt:unstructured"
+                                text="Column (7/5)"
+                                value="is-7"/>
+                            <colTwoThird
+                                jcr:primaryType="nt:unstructured"
+                                text="Column (8/4)"
+                                value="is-two-third"/>
+                        </options>
+                    </view>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

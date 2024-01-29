@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    eaton.com.data.store.filename="eaton.com.json"
+    eatoncummins.data.store.filename="eaton-cummins.com.json"
+    enable.vanity.flow="{Boolean}false"
+    greenswitching.data.store.filename="greenswitching.com.json"
+    intermediate.page.name="/page-not-found-on-custom-url"
+    phoenixtecpower.data.store.filename="phoenixtecpower.com.json"
+    top.level.domain.config="[eaton.fr|/content/eaton/fr/en-gb,eaton.in|/content/eaton/in/en-us]"
+    vanity.data.store.location.path="/content/dam/eaton/resources/vanity"/>

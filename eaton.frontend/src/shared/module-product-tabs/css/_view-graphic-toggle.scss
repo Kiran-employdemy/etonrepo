@@ -1,0 +1,85 @@
+//-----------------------------------
+// Component M-40: Product Tabs Module
+// VIEW: Graphic Toggle
+//-----------------------------------
+.product-tabs {
+
+  $light-theme__default-bg: var(--color__lunar-10);
+  $light-theme__active-bg: var(--color__lunar-10);
+
+  $dark-theme__default-bg: var(--grey-primary-brand-color);
+  $dark-theme__active-bg: var(--grey-secondary-brand-color);
+
+
+  &--view-toggle &__tab-panel {
+    display: none;
+  }
+
+  &--view-toggle &__tab-title {
+    cursor: pointer;
+    font-weight: normal; // Override Bootstrap's Appearance
+    margin-bottom: 0; // Override Bootstrap's Appearance
+  }
+
+  &--view-toggle {
+
+    // Hide all radio-inputs
+    > input[type="radio"] {
+      display: none;
+    }
+
+    // Handle Tabs Behavior
+    //--------------
+    // Total Tabs = 3 (0 index based)
+    @for $i from 0 through 2 {
+      #product-tab-#{$i} {
+        // &:target,
+        &:checked {
+
+          // Show the content for the selected radio-input (tab#)
+          ~ .product-tabs__pannels [data-tab-name="product-tab-#{$i}"] { display: block; }
+
+          // Highligt the selected tab - Light Theme
+          ~ .product-tabs__inner [for="product-tab-#{$i}"] {
+            background-color: $light-theme__active-bg;
+          }
+
+          // Highligt the selected tab - Dark Theme
+          ~ .product-tabs__inner.dark-theme [for="product-tab-#{$i}"] {
+            background-color: $dark-theme__active-bg;
+          }
+        }
+      }
+    }
+
+  }
+
+
+
+  //-----------------------------------
+  // 0 to 991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__pannels {
+      padding: 0 30px;
+    }
+  }
+
+}
+
+
+
+/**
+* AEM Author Mode - Overrides
+*/
+// stylelint-disable selector-class-pattern
+// stylelint-disable declaration-no-important
+.aem-AuthorLayer-Edit,
+.cq-wcm-edit {
+
+  // Make all tabs visible
+  .product-tabs--view-toggle .product-tabs__tab-panel {
+    display: block !important;
+  }
+
+}

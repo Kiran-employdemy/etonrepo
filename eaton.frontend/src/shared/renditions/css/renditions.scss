@@ -1,0 +1,32 @@
+//-----------------------------------
+// EATON-81: Rendition Images
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+
+// Import SubModules
+@import "rendition-image";
+@import "rendition-background";
+
+
+
+// Responsive Images
+//-------------
+// NOTE: These values are used as helpers in JavaScript to determine the current Breakpoint
+// [data-mobile-rendition] {
+//
+//   // Default Value Mobile
+//   min-width: 2px;
+//
+//   // If Tablet ( Between 768px and 991px )
+//   @media all and (min-width: $grid__sm) and (max-width: $grid__sm-max) {
+//     min-width: 1px;
+//   }
+//
+//   // If Desktop & Desktop Large ( Greater than 992px )
+//   @media all and (min-width: $grid__md) {
+//     min-width: 0;
+//   }
+// }

@@ -1,0 +1,173 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "jcr:mixinTypes": [
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:versionHistory": "2f50aadc-9de5-44e1-b5b5-111b42f05dba",
+  "jcr:predecessors": [
+    "889874d5-b6f5-4093-84b0-003cb6eb094e"
+  ],
+  "jcr:created": "Wed Mar 01 2023 07:59:28 GMT-0500",
+  "jcr:baseVersion": "889874d5-b6f5-4093-84b0-003cb6eb094e",
+  "jcr:isCheckedOut": true,
+  "jcr:uuid": "4bdf7725-0c19-4bb0-bc67-8ff3d7287dd9",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "workflow-process-service",
+    "jcr:lastModifiedBy": "admin",
+    "cq:lastReplicated": "Fri Mar 17 2023 10:37:52 GMT-0400",
+    "dam:assetState": "processed",
+    "cq:name": "Foreseer Test File.pdf",
+    "jcr:lastModified": "Fri Mar 17 2023 10:37:53 GMT-0400",
+    "cq:parentPath": "/content/dam/eaton/secure/communications",
+    "renditions": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Wed Mar 01 2023 07:59:28 GMT-0500",
+      "cq5dam.thumbnail.48.48.png": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "workflow-process-service",
+        "jcr:created": "Wed Mar 01 2023 08:09:46 GMT-0500",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Wed Mar 01 2023 08:09:46 GMT-0500",
+          ":jcr:data": 177
+        }
+      },
+      "cq5dam.thumbnail.140.100.png": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "workflow-process-service",
+        "jcr:created": "Wed Mar 01 2023 08:09:46 GMT-0500",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Wed Mar 01 2023 08:09:46 GMT-0500",
+          ":jcr:data": 372
+        }
+      },
+      "cq5dam.web.1280.1280.jpeg": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "workflow-process-service",
+        "jcr:created": "Wed Mar 01 2023 08:09:46 GMT-0500",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/jpeg",
+          "jcr:lastModified": "Wed Mar 01 2023 08:09:46 GMT-0500",
+          ":jcr:data": 9277
+        }
+      },
+      "original": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Mar 01 2023 07:59:28 GMT-0500",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:mimeType": "application/pdf",
+          "jcr:lastModified": "Fri Mar 17 2023 10:37:53 GMT-0400",
+          ":jcr:data": 16558
+        }
+      },
+      "cq5dam.thumbnail.319.319.png": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "workflow-process-service",
+        "jcr:created": "Wed Mar 01 2023 08:09:46 GMT-0500",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Wed Mar 01 2023 08:09:46 GMT-0500",
+          ":jcr:data": 1458
+        }
+      }
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ],
+      "jcr:title": "Microsoft Word - Document1",
+      "dc:creator": [
+        "E9817641"
+      ],
+      "xmp:eaton-file-name": "Foreseer Test File.pdf",
+      "dam:Physicalheightininches": "11.0",
+      "dam:Physicalwidthininches": "8.5",
+      "dam:numPages": 1,
+      "assetPublicationDate": "Tue Aug 16 2022 12:34:00 GMT-0400",
+      "xmp:eaton-partner-program-and-tier-level": [
+        "eaton-secure:partner-programme-type/electrical-installer-programme/authorized"
+      ],
+      "xmp:eaton-rights-restricted": "no",
+      "trackDownload": "true",
+      "jcr:lastModifiedBy": "admin",
+      "xmp:CreatorTool": "PScript5.dll Version 5.2.2",
+      "dam:extracted": "Wed Mar 01 2023 08:09:46 GMT-0500",
+      "dc:format": "application/pdf",
+      "applicationAccess": [
+        "eaton-secure:application-access/foreseer"
+      ],
+      "xmp:eaton-content-type": [
+        "eaton:resources/technical-resources/software-firmware-applications"
+      ],
+      "dam:Producer": "GPL Ghostscript 8.15",
+      "excludeCountries": "true",
+      "dam:scene7FileStatus": "MimeTypeNotEnabled",
+      "cq:tags_xmpArrayType": "rdf:Bag",
+      "dc:modified": "Mon Feb 28 2022 12:34:26 GMT-0500",
+      "businessGroup": [
+        "eaton-secure:business-group/industrial-fil"
+      ],
+      "productCategories": [
+        "eaton-secure:product-category/vehicle"
+      ],
+      "xmp:eaton-imported-by": "e9817641",
+      "xmp:MetadataDate": "Wed Mar 01 2023 08:02:39 GMT-0500",
+      "accountType": [
+        "eaton-secure:accounttype/consultant",
+        "eaton-secure:accounttype/contractor"
+      ],
+      "cq:tags": [
+        "eaton-secure:application-access/foreseer",
+        "eaton:resources/technical-resources/software-firmware-applications",
+        "eaton-secure:accounttype/consultant",
+        "eaton-secure:accounttype/contractor",
+        "eaton-secure:business-group/industrial-fil",
+        "eaton-secure:product-category/vehicle"
+      ],
+      "jcr:lastModified": "Fri Mar 17 2023 10:37:52 GMT-0400",
+      "pdf:Producer": "GPL Ghostscript 8.15",
+      "xmp:ModifyDate": "Wed Mar 01 2023 08:02:39 GMT-0500",
+      "dam:Author": "E9817641",
+      "xmp:CreateDate": "Mon Feb 28 2022 06:33:36 GMT-0500",
+      "countries": [
+        "eaton:country/europe/fr",
+        "eaton:country/europe/it"
+      ],
+      "secureAsset": "YES",
+      "xmp:eaton-content-type_xmpArrayType": "rdf:Bag",
+      "dam:sha1": "2b5eceaeb30fa214ecf0e6568df17f950b22f773",
+      "dam:size": 16451,
+      "xmp:eaton-metadata-review": "pending",
+      "dc:creator_xmpArrayType": "rdf:Seq",
+      "dc:title": "Microsoft Word - Document1",
+      "xmp:eaton-modified-by": "admin",
+      "Iptc4xmpCore:CreatorContactInfo": {
+        "jcr:primaryType": "nt:unstructured"
+      }
+    }
+  }
+}

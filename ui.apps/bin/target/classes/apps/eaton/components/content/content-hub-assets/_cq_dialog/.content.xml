@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Content Hub Component (Assets)"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[product.grid.dialog]"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        granite:class="product-grid-dialog"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <contenthub
+                granite:rel="cq-siteadmin-admin-properties-tabs"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Component Properties - Touch UI"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <eyebrowTag
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                    fieldDescription="This field stores the value of eyebrow tag field."
+                                    fieldLabel="Eyebrow tag"
+                                    multiple="{Boolean}true"
+                                    required="false"
+                                    name="./eyebrowTag"/>
+                            <tags
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                fieldDescription="This field stores the value of tags field."
+                                fieldLabel="Tags"
+                                multiple="{Boolean}true"
+								required="true"
+                                name="./tags"/>
+							<showFilters
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="This field stores the value for show filter field."
+                                name="./showFilters"
+                                text="Show as filters"
+                                value="true"/>
+							<taxonomy
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                fieldDescription="This field stores the value of taxonomy field."
+                                fieldLabel="Taxonomy"
+                                multiple="{Boolean}true"
+                                name="./taxonomy"/>
+							<showFiltersTaxonomy
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="This field stores the value for show filter field."
+                                name="./showFiltersTaxonomy"
+                                text="Show as filters"
+                                value="true"/>
+                            <initialNumberOfResults
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                defaultValue="6"
+                                fieldDescription="This field stores the value for no of results to load initially. "
+                                fieldLabel="Number of results to load initially"
+                                min="{Long}0"
+                                name="./initialNumberOfResults"/>							
+							<enablePublicationDate
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                defaultChecked="true"
+                                fieldDescription="Display published date"
+                                name="./enablePublicationDate"
+                                text="Display published date"
+                                uncheckedValue="{Boolean}false"
+                                value="true"/>
+                            <sortBy
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldDescription="This field stores the value of sort field. There are two options: Publication Date, Title."
+                                fieldLabel="Sort By"
+                                name="./sortBy"
+                                required="false">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <publication-date
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Publication Date"
+                                        value="pub-date"/>
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Title"
+                                        value="title"/>
+                                </items>
+                            </sortBy>
+                            <country
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                cq-msm-lockable="countries"
+                                fieldDescription="This field stores the value of country field"
+                                fieldLabel="Countries"
+                                multiple="{Boolean}true"
+                                name="./countries"
+                                rootPath="/eaton/country">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="countries"/>
+                            </country>
+                            <language
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                cq-msm-lockable="languages"
+                                fieldDescription="This field stores the value of language field"
+                                fieldLabel="Language"
+                                multiple="{Boolean}true"
+                                name="./languages"
+                                rootPath="/eaton/language">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="languages"/>
+                            </language>	
+                        </items>
+                    </column>
+                </items>
+            </contenthub>
+        </items>
+    </content>
+</jcr:root>

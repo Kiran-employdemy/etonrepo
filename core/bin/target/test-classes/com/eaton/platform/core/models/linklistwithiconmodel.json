@@ -1,0 +1,33 @@
+{
+  "jcr:created": "Thu Dec 07 2023 15:37:11 GMT-0600",
+  "jcr:createdBy": "admin",
+  "jcr:lastModified": "Thu Dec 07 2023 22:11:51 GMT-0600",
+  "jcr:lastModifiedBy": "admin",
+  "jcr:primaryType": "nt:unstructured",
+  "linkList": {
+    "item0": {
+      "isSuffixEnabled": "true",
+      "jcr:primaryType": "nt:unstructured",
+      "linkIcon": "/content/dam/eaton/homepage/Capture.JPG",
+      "linkOpenNewWindow": "true",
+      "linkPath": "/content/eaton/us/en-us/company/company-overview",
+      "linkTitle": "Company Overview"
+    },
+    "item1": {
+      "isSuffixEnabled": "false",
+      "jcr:primaryType": "nt:unstructured",
+      "linkIcon": "/content/dam/eaton/homepage/Winter-02.jpg",
+      "linkOpenNewWindow": "true",
+      "linkPath": "mailto:test@email.com",
+      "linkTitle": "Winter"
+    },
+    "item2": {
+      "jcr:primaryType": "nt:unstructured",
+      "linkIcon": "/content/dam/eaton/global/eaton-logo-400x300res.png",
+      "linkPath": "https://videos.eaton.com/detail/video/6216704196001/what-is-a-var-or-kvar---reactive-or-imaginary-power-explained?autoStart=true&q=beer",
+      "linkTitle": "Video"
+    },
+    "jcr:primaryType": "nt:unstructured"
+  },
+  "sling:resourceType": "eaton/components/content/link-list-with-icons"
+}

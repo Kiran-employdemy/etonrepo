@@ -1,0 +1,69 @@
+<template data-sly-template.xrefResult="${ @ result, crossReference, index }">
+	<div class="cross-reference__results-accordion accordion md-accordion"
+	     id="accordionEx${result.resultID}${index}" role="tablist" aria-multiselectable="true">
+		<div class="cross-reference__results-header--wrapper card-header" role="tab" id="heading${result.resultID}${index}">
+			<div class="cross-reference__results-header--section">
+				<div class="cross-reference__compare--wrapper">
+					<!-- Competitor Col -->
+					<div class="cross-reference__compare--competitor">
+						<p class="cross-reference__compare--competitor__brand">${ result.crossedPartSubBrand && result.crossedPartSubBrand != 'None' ? result.crossedPartSubBrand : result.crossedPartBrand }</p>
+						<p class="cross-reference__compare--competitor__number">${result.crossedPartNumber}</p>
+					</div>
+					<!-- Compare Icon Col -->
+					<div class="cross-reference__compare--icon">
+						<img data-src="/apps/eaton/settings/wcm/designs/clientlib/clientlib-all/img/cross-reference.svg" class="cross-reference__compare--icon__icon lazyload"/>
+					</div>
+					<!-- Eaton Col -->
+					<div class="cross-reference__compare--eaton">
+						<a class="cross-reference__compare--eaton__link" href="${crossReference.baseSKUPath}.${result.encodedPartNumber}.html">
+							<p class="cross-reference__compare--eaton__brand--wrapper" data-sly-test.hasSubBrand="${ result.subBrand && result.subBrand != 'None' }">
+								<span class="cross-reference__compare--eaton__brand">${ result.subBrand }</span><span class="cross-reference__compare--eaton__number">${result.partNumber}</span>
+							</p>
+							<p class="cross-reference__compare--eaton__brand--wrapper" data-sly-test="${ ! hasSubBrand }">
+								<span class="cross-reference__compare--eaton__brand">${ 'Eaton' @ i18n }</span><span class="cross-reference__compare--eaton__number">${result.partNumber}</span>
+							</p>
+						</a>
+					</div>
+					<!-- Product Type Col -->
+					<div class="cross-reference__type">${ result.partType }</div>
+				</div>
+				<!-- Collapse Icon Col -->
+				<div class="cross-reference__collapse-icon collapsed" data-toggle="collapse"
+				     data-parent="#accordion${result.resultID}${index}"
+				     href="#collapse${result.resultID}${index}"
+						aria-expanded="false" aria-controls="collapse${result.resultID}${index}">
+					<i class="cross-reference__collapse-icon__icon icon" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+		<!-- Result Detail Card -->
+		<div id="collapse${result.resultID}${index}" class="${ result.resultID ? 'card-collapse' : '' } collapse" role="tabpanel" aria-labelledby="heading${result.resultID}${index}"
+				data-parent="#accordion${result.resultID}${index}">
+			<div class="cross-reference__card card-body">
+				<!-- image -->
+				<div class="cross-reference__card__image">
+					<img class="cross-reference__card__image__img" src="${result.image}">
+				</div>
+				<div class="cross-reference__card__text">
+					<!-- Discontinued badge -->
+					<p class="cross-reference__compare--competitor__discontinued ${result.status == 'Discontinued' ? '' : 'hidden'}">${ 'Discontinued' @ i18n }</p>
+					<!-- card sku link/number -->
+					<a href="${crossReference.baseSKUPath}.${result.encodedPartNumber}.html" class="cross-reference__card__text__sku--link">
+						<p class="cross-reference__card__text__sku--number">${result.partNumber}</p>
+					</a>
+					<!-- card description text -->
+					<p class="cross-reference__card__text__description">${result.description}</p>
+					<!-- card description brand comment text -->
+					<div class="cross-reference__card__text__comment ${ result.comments ? '' : 'hidden' }">
+          				<span class="cross-reference__card__text__comment__sub-copy">${ 'XRef.Comments' @ i18n }</span>
+						<span class="cross-reference__card__text__comment__copy">${ result.comments }</span>
+					</div>
+					<!-- card alternative link -->
+					<div class="cross-reference__card__text__alternative ${ result.upsellSkus || result.replPartNumbers ? '' : 'hidden' }">
+						<a href="${crossReference.baseSKUPath}.${result.encodedPartNumber}.html#upsell-products">${ 'XRef.AltProductsAvailable' @ i18n }</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.search.find.replace.impl.FindReplaceConfigServiceImpl" configuration-policy="require" activate="activate" modified="activate">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="service.description" type="String" value=" Find Replace Config Service"/>
+  <property name="process.label" type="String" value=" FindReplaceConfigServiceImpl"/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.search.find.replace.FindReplaceConfigService"/>
+  </service>
+  <implementation class="com.eaton.platform.core.services.search.find.replace.impl.FindReplaceConfigServiceImpl"/>
+</scr:component>

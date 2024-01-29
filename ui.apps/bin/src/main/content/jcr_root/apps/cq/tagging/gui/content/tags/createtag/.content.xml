@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content jcr:primaryType="nt:unstructured">
+        <body jcr:primaryType="nt:unstructured">
+            <items jcr:primaryType="nt:unstructured">
+                <form jcr:primaryType="nt:unstructured">
+                    <items jcr:primaryType="nt:unstructured">
+                        <wizard jcr:primaryType="nt:unstructured">
+                            <items jcr:primaryType="nt:unstructured">
+                                <createStep jcr:primaryType="nt:unstructured">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <fixedColumns jcr:primaryType="nt:unstructured">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <fixedColumn1 jcr:primaryType="nt:unstructured">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <namefield
+                                                            granite:class="block"
+                                                            granite:id="newTagName"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/autocomplete"
+                                                            fieldLabel="Name"
+                                                            name="tag"
+                                                            options=""
+                                                            required="{Boolean}true"
+                                                            validation="foundation.jcr.autoname">
+                                                            <datasource
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="/apps/dam/cfm/admin/components/datasources/optionrenderer"/>
+                                                            <options
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/form/autocomplete/list"/>
+                                                        </namefield>
+                                                    </items>
+                                                </fixedColumn1>
+                                            </items>
+                                        </fixedColumns>
+                                    </items>
+                                </createStep>
+                            </items>
+                        </wizard>
+                    </items>
+                </form>
+            </items>
+        </body>
+    </jcr:content>
+</jcr:root>

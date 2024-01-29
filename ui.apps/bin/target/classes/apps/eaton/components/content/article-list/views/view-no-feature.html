@@ -1,0 +1,59 @@
+<!--/*
+  Module M-26 - Article List: No Feature
+*/-->
+<sly data-sly-use.articleListModel="com.eaton.platform.core.models.articlelist.ArticleListModel">
+
+  <div class="text-only-2-column">
+    <div class="container">
+
+      <!--/* Component header */-->
+      <div data-sly-test="${ articleListModel.cardsHeader || articleListModel.cardsDescription }" class="row">
+        <div class="col-xs-12">
+          <h2 data-sly-test="${ articleListModel.cardsHeader }"
+            class="text-only-2-column_title b-heading-h2">
+            ${ articleListModel.cardsHeader }
+          </h2>
+
+          <p data-sly-test="${ articleListModel.cardsDescription }"
+            class="text-only-2-column__description b-body-copy"
+          >${ articleListModel.cardsDescription }</p>
+        </div>
+      </div>
+
+      <!--/* Component Content */-->
+      <div class="row">
+        <div data-sly-list.card="${ articleListModel.listTypeArray }"
+          class="text-only-2-column__card">
+          <div class="col-xs-12 col-md-6">
+            <div class="text-only-2-column__article-copy">
+
+              <div class="text-only-2-column__eyebrow b-eyebrow-small" data-sly-test="${ card.linkEyebrow }">${ card.linkEyebrow }</div>
+
+              <h3 class="text-only-2-column__heading b-heading-h4">
+                <a href="${ card.linkPath }"
+                  target="${ card.newWindow }"
+                  class="text-only-2-column__cta"
+                >${ card.linkTitle }</a>
+              </h3>
+
+              <div data-sly-test="${ card.publicationDateDisplay }" class="text-only-2-column__date">
+                ${ card.publicationDateDisplay }
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--/* Bottom CTA */-->
+      <div class="row">
+        <div class="text-only-2-column__cta-container col-xs-12 text-center">
+          <sly data-sly-resource="${'featured-article-ctabutton' @ resourceType='/apps/eaton/components/general/ctabutton'}"></sly>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</sly>

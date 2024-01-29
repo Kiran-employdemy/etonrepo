@@ -1,0 +1,31 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "jcr:mixinTypes": [
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:versionHistory": "0ea55ecc-05db-4779-8313-5a54dca8c915",
+  "jcr:predecessors": [
+    "8005fbcf-3b07-40e2-8382-ba1074bac737"
+  ],
+  "jcr:created": "Thu May 02 2019 05:43:25 GMT-0400",
+  "jcr:baseVersion": "8005fbcf-3b07-40e2-8382-ba1074bac737",
+  "jcr:isCheckedOut": true,
+  "jcr:uuid": "2ab4a736-cee0-4923-a559-efc66c2f6c51",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "c3060043",
+    "jcr:lastModifiedBy": "c3060043",
+    "cq:lastReplicated": "Thu Dec 01 2022 05:00:04 GMT-0500",
+    "dam:assetState": "processed",
+    "cq:name": "home-automation-hub-faq",
+    "jcr:lastModified": "Fri May 10 2019 00:48:59 GMT-0400",
+    "cq:parentPath": "/content/dam/eaton/products/wiring-devices-and-connectivity/wiring-devices/home-automation-hub",
+    "dam:relativePath": "eaton/products/wiring-devices-and-connectivity/wiring-devices/home-automation-hub/home-automation-hub-faq.pdf"
+  }
+}

@@ -1,0 +1,106 @@
+//-----------------------------------
+// Conduit Size Calculator Component
+//-----------------------------------
+
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+.conduit-size-calculator {
+
+  .w-table {
+    display: block;
+    overflow: auto;
+  }
+
+  table {
+    table-layout: fixed;
+
+    thead tr {
+      background: $color__primary-blue;
+      color: $color__white;
+    }
+
+    tr th {
+      padding: 8px 20px;
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    tbody {
+      input {
+        min-width: 128px;
+        border: 0;
+        border-bottom: 1px solid $color__secondary-gray9;
+        padding-bottom: 15px;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      input:focus {
+        border: 0;
+        border-bottom: 1px solid $color__secondary-gray9;
+        outline: 0;
+      }
+
+      td {
+        padding: 17px 20px 18px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        vertical-align: top;
+      }
+    }
+
+    .size,
+    .number {
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+}
+
+.calculator-wrapper {
+  margin-top: rem($spacing__sm);
+
+  .nice-select {
+    width: 90px;
+    font-size: 14px;
+    color: #12181C;
+    display: block;
+  }
+
+  .form-block {
+    margin: rem($spacing__sm) 0;
+  }
+
+  .description {
+    margin-top: rem(8px);
+    display: block;
+    font-size: 12px;
+    color: #12181C;
+  }
+}
+
+.calculator-disclaimer {
+  margin: rem($spacing__sm) 0 rem($spacing__md) 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color__black;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media (min-width: $grid__sm) {
+    width: 750px;
+  }
+
+  @media (min-width: $grid__md) {
+    width: 970px;
+  }
+
+  @media (min-width: $grid__lg) {
+    width: 1170px;
+  }
+}

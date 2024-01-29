@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.itext.services.config.ItextPdfServiceConfig">
+  <OCD id="com.eaton.platform.integration.itext.services.config.ItextPdfServiceConfig" name="ItextPdf Service Configuration" description="Service Configuration">
+    <AD id="enablePdfGeneration" type="Boolean" name="Enable PDF Generation" description="Check the checkbox to enable PDF generation for sku pages when accessing with extension as .pdf" default="true"/>
+    <AD id="debugLog" type="Boolean" name="Debug Log" description="ItextPdf API Debug Log" default="false"/>
+    <AD id="fallbackLogoLink" type="String" name="Fallback Logo Link" description="The fallback link for logo icons" default="https://www.eaton.com"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.itext.services.impl.ItextPdfServiceImpl">
+    <Object ocdref="com.eaton.platform.integration.itext.services.config.ItextPdfServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

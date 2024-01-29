@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.qr.services.config.AESServiceConfig">
+  <OCD id="com.eaton.platform.integration.qr.services.config.AESServiceConfig" name="Eaton QR AES Service Config" description="">
+    <AD id="algorithm" type="String" name="Algorithm Ex: AES" default=""/>
+    <AD id="key" type="String" name="key" default=""/>
+    <AD id="algo.padding" type="String" name="Algorithm with padding Ex: AES/CBC/PKCS5Padding" default=""/>
+    <AD id="iv.parameter" type="String" name="iv_parameter Ex: 12345678901234567890123456789012" default=""/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.qr.services.impl.AESServiceImpl">
+    <Object ocdref="com.eaton.platform.integration.qr.services.config.AESServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

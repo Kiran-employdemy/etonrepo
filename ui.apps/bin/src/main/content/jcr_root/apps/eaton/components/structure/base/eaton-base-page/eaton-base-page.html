@@ -1,0 +1,113 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2016 Adobe Systems Incorporated
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/--><!DOCTYPE html><sly data-sly-use.eatonConfig="com.eaton.platform.core.models.eatonsiteconfig.EatonSiteConfigModel">
+<html dir="${eatonConfig.siteConfig.dirType}" lang="${eatonConfig.currentLanguage}">
+    <head>
+        <sly data-sly-include="head.html"/>
+        <sly data-sly-include="head-libs.html"/>
+
+        <style type="text/css" data-sly-use.brandColorSelectionData="com.eaton.platform.core.models.brandingselectortool.BrandColorSelectionConfigModel" data-sly-test="${brandColorSelectionData.isBrandColorSelectionConfigPresent}">
+           :root {
+            --primary-brand-color: #${brandColorSelectionData.primaryBrandingColor @context='styleToken'};
+            --utility-nav-background-color: #${brandColorSelectionData.primaryBrandingColor @context='styleToken'};
+            --feature-overlay-color: #${brandColorSelectionData.primaryBrandingColor @context='styleToken'};
+            --navigation-active-border-color: #${brandColorSelectionData.primaryBrandingColor @context='styleToken'};
+            --secondary-brand-color: #${brandColorSelectionData.accentColorOne @context='styleToken'};
+            --grey-secondary-brand-color: #${brandColorSelectionData.accentColorTwo @context='styleToken'};
+            --navigation-search-icon-color: #${brandColorSelectionData.linkColor @context='styleToken'};
+            --link-brand-color: #${brandColorSelectionData.linkColor @context='styleToken'};
+            }
+        </style>
+        <style type="text/css" data-sly-use.brandFontSelectionData="com.eaton.platform.core.models.brandingselectortool.BrandFontSelectionModel" data-sly-test="${brandFontSelectionData.isBrandFontSelectionConfigPresent}">
+
+           :root {
+             --primary-custom-brand-font: '${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFont @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontFallbackFont @context='styleString'}', sans-serif;
+             --primary-custom-brand-font-medium: '${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontMedium @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontMediumFallbackFont @context='styleString'}', sans-serif;
+             --primary-custom-brand-font-bold: '${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontBold @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontBoldFallbackFont @context='styleString'}', sans-serif;
+             --header-font: '${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFont @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontFallbackFont @context='styleString'}', sans-serif;
+             --header-font-medium: '${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontMedium @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontMediumFallbackFont @context='styleString'}', sans-serif;
+             --header-font-bold: '${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontBold @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontBoldFallbackFont @context='styleString'}', sans-serif;
+             --sitemap-font: '${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFont @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontFallbackFont @context='styleString'}', sans-serif;
+             --primary-nav-font: '${brandFontSelectionData.brandFontSelectionConfigObj.bodyFont @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.bodyFontFallbackFont @context='styleString'}', sans-serif;
+             --secondary-font: '${brandFontSelectionData.brandFontSelectionConfigObj.bodyFont @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.bodyFontFallbackFont @context='styleString'}', sans-serif;
+            }
+        </style>
+
+        <!--/* overlay */-->
+        <link rel="stylesheet" href="https://app.cdn.lookbookhq.com/libraries/overlay/overlay.css" type="text/css">
+        <script type="text/javascript" src="https://app.cdn.lookbookhq.com/libraries/overlay/overlay.js"></script>
+
+    </head>
+    <body class="page ${currentPage.template.name}">
+    <sly data-sly-include="body.html"/>
+    <sly data-sly-include="foot-libs.html"/>
+
+<div class="modal fade logout-popup custom-modal" id="myModal"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+      ${'eatonBasePage.AreYouSure' @ i18n }
+      </div>
+      <div class="modal-footer">
+        <button data-dismiss="modal">${'eatonBasePage.Cancel' @ i18n }</button>
+        <button id="signOut">${'eatonBasePage.SignOutLinkLabel' @ i18n } </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade logout-popup custom-modal " id="myModalMob"  tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-body">
+      ${'eatonBasePage.AreYouSure' @ i18n }
+      </div>
+      <div class="modal-footer">
+        <button  data-dismiss="modal">${'eatonBasePage.Cancel' @ i18n }</button>
+        <button id="signOutMob">${'eatonBasePage.SignOutLinkLabel' @ i18n }  </button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---Modal for file-upload error--->
+<div class="modal fade" id="myModalSubmit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body file--upload-close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="onSubmitMsg"></p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="myModalFileRestriction" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body file--upload-close">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="fileRestriction"></p>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</body>
+</html>
+</sly>

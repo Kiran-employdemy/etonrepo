@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Terms &amp; Conditions"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html?lang=en">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <tcType
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            name="./type"
+                            fieldLabel="Terms and Conditions Type"
+                            fieldDescription="Terms and Conditions Type for this container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <generic
+                                    jcr:primaryType="nt:unstructured"
+                                    text="My Eaton Type"
+                                    value="myeaton"/>
+                            <homePage
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Order Center"
+                                    value="order"/>
+                        </items>
+                    </tcType>
+                    <tcDate
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            name="./tcDate"
+                            fieldLabel="T&amp;C updated date"
+                            fieldDescription="Term and condition updated date. Update this date if you need to re-evaluate end user acceptance on term and condition"
+                    />
+                    <tcVersion
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            name="./tcVersion"
+                            fieldLabel="T&amp;C version"
+                            fieldDescription="Term and condition version. Used to evaluate term and condition version"
+                            />
+                    <appName
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                            name="./appName"
+                            cq-msm-lockable="appName"
+                            multiple="{Boolean}true"
+                            fieldLabel="Application Name"
+                            fieldDescription="Application name used to evaluate term and condition"
+                            rootPath="/content/cq:tags/eaton-secure/application-access">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="appName"/>
+                    </appName>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

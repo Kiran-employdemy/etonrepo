@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.akamai.config.AkamaiNetStorageConfig">
+  <OCD id="com.eaton.platform.integration.akamai.config.AkamaiNetStorageConfig" name="Akamai Authorization Configuration" description="Provide Authorization information to Akamai Net-Storage">
+    <AD id="isShortLiveUrl" type="Boolean" name="Enable Short-Live URL" description="Check to enable a short-live download url. This is achieve by appending a unique token value at end of the download url" default="false"/>
+    <AD id="id" type="String" name="ID" description="An unique identification that define this configuration" default=""/>
+    <AD id="domain" type="String" name="Net Storage Domain" description="Domain value for Akamai Net Storage" default=""/>
+    <AD id="account" type="String" name="Net Storage Account" description="Account value for this Net Storage" default=""/>
+    <AD id="accessKey" type="String" name="HTTP API Access key" description="HTTP API Access key" default=""/>
+    <AD id="version" type="String" name="Net Storage action version" description="Version for this Net Storage" default="1"/>
+    <AD id="signVersion" type="Integer" name="Auth Sign Version" description="Auth Sign Version" default="5"/>
+    <AD id="cpCode" type="String" name="CP Code" description="Identification of storage group" default=""/>
+    <AD id="downloadDomain" type="String" name="Software Delivery Download domain / Akamai Download Delivery Domain" description="Software Delivery Download domain / Akamai Download Delivery Domain" default=""/>
+    <AD id="storageGroup" type="String" name="Storage Group" description="Group identifier for this storage" default=""/>
+    <AD id="shortLiveTokenTTL" type="Long" name="Short-Live Token TTL" description="Define duration of the short-live token" default="300"/>
+    <AD id="shortLiveTokenEncryptionKey" type="String" name="Short-Live Token Encryption Key" description="Used to encrypted short-live url ACL, and EXP" default=""/>
+  </OCD>
+  <Designate factoryPid="com.eaton.platform.integration.akamai.services.impl.AkamaiNetStorageServiceImpl">
+    <Object ocdref="com.eaton.platform.integration.akamai.config.AkamaiNetStorageConfig"/>
+  </Designate>
+</metatype:MetaData>

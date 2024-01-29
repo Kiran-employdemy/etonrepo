@@ -1,0 +1,21 @@
+.path-browser-preview-text {
+    padding: 0 8rem;
+}
+
+img {
+    border: 0;
+     max-width: 100%;
+    max-height: 100%;
+}
+
+.path-browser-preview-image{
+ width: 220px;
+    height: 220px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 3px;
+}
+
+.mt-48 {
+	margin-top :-48px;
+}

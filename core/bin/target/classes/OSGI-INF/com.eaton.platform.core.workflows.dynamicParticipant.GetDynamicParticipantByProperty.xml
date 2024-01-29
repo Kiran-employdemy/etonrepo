@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.workflows.dynamicParticipant.GetDynamicParticipantByProperty" immediate="true">
+  <property name="chooser.label" type="String" value="FM - Get Dynamic Participant by Property"/>
+  <property name="service.description" type="String" value="Retrieves user or group given a property."/>
+  <service>
+    <provide interface="com.adobe.granite.workflow.exec.ParticipantStepChooser"/>
+  </service>
+  <reference name="factory" interface="org.apache.sling.api.resource.ResourceResolverFactory" field="factory"/>
+  <implementation class="com.eaton.platform.core.workflows.dynamicParticipant.GetDynamicParticipantByProperty"/>
+</scr:component>

@@ -1,0 +1,61 @@
+Manifest-Version: 1.0
+Created-By: Apache Maven
+Built-By: Employdemy Solutions
+Build-Jdk: 11.0.15.1
+Implementation-Title: eaton_platform_parent - UI apps
+Implementation-Version: 2.107.0-SNAPSHOT
+Implementation-Vendor-Id: com.eaton.platform
+Implementation-URL: http://www.eaton.com/eaton_platform_parent.ui.apps
+Content-Package-Roots: /apps/commerce/gui/components,/apps/commerce/gui/
+ content,/apps/cq/core/content/nav/tools/eaton-tools,/apps/cq/tagging/gu
+ i/components,/apps/cq/tagging/gui/content,/apps/cq/workflow/components/
+ model/step,/apps/dam/cfm,/apps/dam/gui/components/admin/rendercondition
+ s/scene7,/apps/dam/gui/content/assets,/apps/dam/gui/coral/components/ad
+ min/clientlibs/actions,/apps/dam/gui/coral/components/admin/contentrend
+ erer/card/asset,/apps/dam/gui/coral/components/admin/contentrenderer/ca
+ rd/common,/apps/dam/gui/coral/components/admin/contentrenderer/row/comm
+ on,/apps/dam/gui/coral/components/admin/customsearch/searchpredicates/c
+ heckedoptionspredicate,/apps/dam/gui/coral/components/admin/customsearc
+ h/searchpredicates/durationrangepredicate,/apps/dam/options/predicates/
+ eaton-aspect-ratio,/apps/dam/options/predicates/eaton-image-rights,/app
+ s/dam/options/predicates/eaton-itar-compliance,/apps/dam/options/predic
+ ates/eaton-metadata-review,/apps/dam/options/predicates/eaton-photo-ori
+ entation,/apps/dam/options/predicates/eaton-rights-restricted,/apps/dam
+ /options/predicates/eaton-sales-enablement,/apps/dam/options/predicates
+ /lastReplicationAction,/apps/dam/options/predicates/secureAsset,/apps/d
+ am/options/predicates/status,/apps/eaton/authoring,/apps/eaton/clientli
+ bs,/apps/eaton/clientlibs/metadataeditor,/apps/eaton/clientlibs/showHid
+ eDialog,/apps/eaton/components,/apps/eaton/components/web-tools,/apps/e
+ aton/datasource/renewDecision,/apps/eaton/install,/apps/eaton/oak-index
+ ,/apps/eaton/pimcontent,/apps/eaton/runmodes,/apps/eaton/settings/wcm/d
+ esigns,/apps/eaton/settings/wcm/designs/email_template/assetDownloadEma
+ ilTemplate.html,/apps/eaton/templates,/apps/eaton/widgets,/apps/eatonSc
+ affolding,/apps/eaton_ccms,/apps/eaton_ccms/runmodes,/apps/fd/af/compon
+ ents/actions/eatonguidebutton,/apps/fd/af/layouts/panel/eatonwizard,/ap
+ ps/fd/fm/af/components,/apps/fd/fm/gui/components/admin/creationwizard/
+ searchdata,/apps/fd/fm/gui/content/forms,/apps/fmdita,/apps/granite,/ap
+ ps/granite/core/components/login,/apps/granite/omnisearch,/apps/granite
+ /ui/components/coral/foundation/form/durationfield,/apps/granite/ui/com
+ ponents/coral/foundation/form/filesizefield,/apps/granite/ui/components
+ /coral/foundation/form/multifield,/apps/granite/ui/components/shell/omn
+ isearch/searchresults,/apps/granite/ui/references/components/coral/refe
+ rences,/apps/install,/apps/msm/eaton,/apps/sling/servlet/errorhandler/4
+ 04.jsp,/apps/sling/servlet/errorhandler/default.jsp,/apps/tools/compone
+ nts,/apps/wcm/core,/apps/wcm/core/content/editor,/apps/wcm/core/content
+ /sites,/apps/wcm/core/resources,/apps/wcm/msm,/apps/workflow/scripts/ea
+ tonscripts,/etc/clientlibs/fd/themes/themeLibrary/basicTheme,/etc/desig
+ ns/ace,/etc/designs/eaton,/etc/designs/eaton-cummins,/etc/groovyconsole
+ /scripts/eaton,/etc/importers/product-importer,/etc/map.dev.publish,/et
+ c/map.prod.publish,/etc/map.qa.publish,/etc/map.sit.publish,/etc/notifi
+ cation,/etc/reports/assetreferenced-pagereport,/etc/reports/catalog-rep
+ ort,/etc/reports/find-and-replace,/etc/vanity,/var/acs-commons/reports/
+ countries-list-report,/var/acs-commons/reports/published-pages-report,/
+ var/acs-commons/reports/reference-by-keyword-or-path-report,/var/dxml/f
+ olderprofiles/76b07b1f-721a-70d8-6749-d9cdac049bf7,/var/workflow/models
+ /eaton-ccms-page-metadata-update,/var/workflow/models/eaton-ccms-update
+ -pdf-metadata,/var/workflow/models/eaton-dam/dam
+Content-Package-Description: UI apps package for eaton_platform_parent
+Content-Package-Id: com.eaton.platform:eaton_platform_parent.ui.apps:2.1
+ 07.0-SNAPSHOT
+Content-Package-Type: application
+

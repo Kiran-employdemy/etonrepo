@@ -1,0 +1,11 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Product tabs family</div>
+</sly>
+
+<sly data-sly-use.viewData="com.eaton.platform.core.models.producttab.ProductTabsModel">
+
+    <sly data-sly-use.tpl="eaton/components/shared/templates/module-product-tab-v2.html">
+      <sly data-sly-call="${ tpl.data @ data=viewData.productDetailsTabsBean }"></sly>
+    </sly>
+
+</sly>

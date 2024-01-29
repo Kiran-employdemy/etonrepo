@@ -1,0 +1,89 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "item0": {
+    "jcr:primaryType": "nt:unstructured",
+    "taxonomyAttributeGrpName": "Certifications and compliances",
+    "attributeList": {
+      "jcr:primaryType": "nt:unstructured",
+      "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Area_Classification"
+      },
+      "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Standards_Type"
+      }
+    }
+  },
+  "item1": {
+    "jcr:primaryType": "nt:unstructured",
+    "taxonomyAttributeGrpName": "Product specifications",
+    "attributeList": {
+      "jcr:primaryType": "nt:unstructured",
+      "item0": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Lumens"
+      },
+      "item1": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Lumens_Per_Watt"
+      },
+      "item2": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Color_Temperature"
+      },
+      "item3": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Mounting_Method"
+      },
+      "item4": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Trade_Size"
+      },
+      "item5": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Optical_Distribution"
+      },
+      "item6": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Dimming"
+      },
+      "item7": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Voltage_Rating"
+      },
+      "item8": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Frequency_Rating"
+      },
+      "item9": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Material"
+      },
+      "item10": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Lens_Material"
+      },
+      "item11": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Wattage"
+      },
+      "item12": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Equivalent_Luminaire"
+      },
+      "item13": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Power_Factor"
+      },
+      "item14": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Special_Features"
+      },
+      "item15": {
+        "jcr:primaryType": "nt:unstructured",
+        "taxonomyAttribute": "Type"
+      }
+    }
+  }
+}

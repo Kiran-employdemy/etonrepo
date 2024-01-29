@@ -1,0 +1,660 @@
+{
+  "productsId": "1316679294",
+  "resourcesCount": 36253,
+  "servicesId": "850411755",
+  "facetsViewMoreOffset": 7,
+  "totalCount": 80,
+  "facets": {
+    "facetGroupList": [
+      {
+        "facetGroupId": "eaton-secure_attributes",
+        "facetTempGroupId": "eaton:eaton-secure_attributes",
+        "sortOrder": 0,
+        "gridFacet": "",
+        "facetValueList": [
+          {
+            "facetValueId": "3160183509",
+            "facetValueLabel": "Secure only",
+            "facetValueDocs": 112
+          }
+        ],
+        "facetGroupLabel": "My Eaton",
+        "singleFacetEnabled": "checkbox",
+        "secure": false,
+        "facetSearchEnabled": "hide"
+      },
+      {
+        "facetGroupId": "content-type",
+        "facetTempGroupId": "eaton:content-type",
+        "sortOrder": 0,
+        "gridFacet": "",
+        "facetValueList": [
+          {
+            "facetValueId": "1316679294",
+            "facetValueLabel": "Product",
+            "facetValueDocs": 9
+          },
+          {
+            "facetValueId": "968989543",
+            "facetValueLabel": "Resources",
+            "facetValueDocs": 36253
+          },
+          {
+            "facetValueId": "850411755",
+            "facetValueLabel": "Services",
+            "facetValueDocs": 6
+          }
+        ],
+        "facetGroupLabel": "Content type",
+        "singleFacetEnabled": "checkbox",
+        "secure": false,
+        "facetSearchEnabled": "hide"
+      },
+      {
+        "facetGroupId": "resources_marketing-resources",
+        "facetTempGroupId": "eaton:resources_marketing-resources",
+        "sortOrder": 0,
+        "gridFacet": "faceted-navigation__facet-group--grid",
+        "facetValueList": [
+          {
+            "facetValueId": "3959354019",
+            "facetValueLabel": "Articles",
+            "facetValueDocs": 0,
+            "facetSelected": "checked"
+          },
+          {
+            "facetValueId": "1691271030",
+            "facetValueLabel": "Brochures",
+            "facetValueDocs": 4451
+          },
+          {
+            "facetValueId": "2320549560",
+            "facetValueLabel": "Catalogs",
+            "facetValueDocs": 3028
+          },
+          {
+            "facetValueId": "3032244288",
+            "facetValueLabel": "Competitive comparisons",
+            "facetValueDocs": 4
+          },
+          {
+            "facetValueId": "1484772919",
+            "facetValueLabel": "Cross references",
+            "facetValueDocs": 35
+          },
+          {
+            "facetValueId": "1260392343",
+            "facetValueLabel": "DigiPacks",
+            "facetValueDocs": 1
+          },
+          {
+            "facetValueId": "192772024",
+            "facetValueLabel": "FAQs",
+            "facetValueDocs": 65
+          },
+          {
+            "facetValueId": "7662153",
+            "facetValueLabel": "Images",
+            "facetValueDocs": 2
+          },
+          {
+            "facetValueId": "3614998822",
+            "facetValueLabel": "Infographics and listicles",
+            "facetValueDocs": 108
+          },
+          {
+            "facetValueId": "438947172",
+            "facetValueLabel": "Presentations",
+            "facetValueDocs": 53
+          },
+          {
+            "facetValueId": "2489080375",
+            "facetValueLabel": "Price lists",
+            "facetValueDocs": 29
+          },
+          {
+            "facetValueId": "905849954",
+            "facetValueLabel": "Sales notes",
+            "facetValueDocs": 194
+          },
+          {
+            "facetValueId": "4289707947",
+            "facetValueLabel": "Selling policy and T&Cs",
+            "facetValueDocs": 11
+          },
+          {
+            "facetValueId": "1234994799",
+            "facetValueLabel": "Success stories",
+            "facetValueDocs": 746
+          },
+          {
+            "facetValueId": "2626969717",
+            "facetValueLabel": "Videos and animations",
+            "facetValueDocs": 3
+          },
+          {
+            "facetValueId": "1401044377",
+            "facetValueLabel": "White papers",
+            "facetValueDocs": 411
+          }
+        ],
+        "facetGroupLabel": "Marketing resources",
+        "singleFacetEnabled": "checkbox",
+        "secure": false,
+        "facetSearchEnabled": "show"
+      },
+      {
+        "facetGroupId": "resources_technical-resources",
+        "facetTempGroupId": "eaton:resources_technical-resources",
+        "sortOrder": 0,
+        "gridFacet": "",
+        "facetValueList": [
+          {
+            "facetValueId": "2878507570",
+            "facetValueLabel": "3D models",
+            "facetValueDocs": 422
+          },
+          {
+            "facetValueId": "776779119",
+            "facetValueLabel": "Application notes",
+            "facetValueDocs": 486
+          },
+          {
+            "facetValueId": "155603299",
+            "facetValueLabel": "Building Information Models",
+            "facetValueDocs": 121
+          },
+          {
+            "facetValueId": "867229388",
+            "facetValueLabel": "Calculators and specification tools",
+            "facetValueDocs": 68
+          },
+          {
+            "facetValueId": "1029189061",
+            "facetValueLabel": "Certification reports",
+            "facetValueDocs": 2757
+          },
+          {
+            "facetValueId": "4263499008",
+            "facetValueLabel": "Design guides",
+            "facetValueDocs": 142
+          },
+          {
+            "facetValueId": "2264560398",
+            "facetValueLabel": "Drawings",
+            "facetValueDocs": 2203
+          },
+          {
+            "facetValueId": "2805475210",
+            "facetValueLabel": "Product notifications",
+            "facetValueDocs": 135
+          },
+          {
+            "facetValueId": "4246550561",
+            "facetValueLabel": "Installation instructions",
+            "facetValueDocs": 5956
+          },
+          {
+            "facetValueId": "1900597880",
+            "facetValueLabel": "Installation videos",
+            "facetValueDocs": 4
+          },
+          {
+            "facetValueId": "1819655759",
+            "facetValueLabel": "Material safety data sheet (MSDS)",
+            "facetValueDocs": 803
+          },
+          {
+            "facetValueId": "215031922",
+            "facetValueLabel": "IES photometric files",
+            "facetValueDocs": 392
+          },
+          {
+            "facetValueId": "227436940",
+            "facetValueLabel": "Product specification guides",
+            "facetValueDocs": 1006
+          },
+          {
+            "facetValueId": "2767215410",
+            "facetValueLabel": "Service and troubleshooting",
+            "facetValueDocs": 206
+          },
+          {
+            "facetValueId": "4017091704",
+            "facetValueLabel": "Software, firmware, and applications",
+            "facetValueDocs": 202
+          },
+          {
+            "facetValueId": "3213985765",
+            "facetValueLabel": "Software release notes, schemes, and security updates",
+            "facetValueDocs": 59
+          },
+          {
+            "facetValueId": "926402268",
+            "facetValueLabel": "Technical data sheets",
+            "facetValueDocs": 5870
+          },
+          {
+            "facetValueId": "356020885",
+            "facetValueLabel": "Technical service bulletins",
+            "facetValueDocs": 342
+          },
+          {
+            "facetValueId": "3443675743",
+            "facetValueLabel": "Time current curves",
+            "facetValueDocs": 358
+          },
+          {
+            "facetValueId": "1715738723",
+            "facetValueLabel": "Manuals and user guides",
+            "facetValueDocs": 1426
+          },
+          {
+            "facetValueId": "2922406474",
+            "facetValueLabel": "Warranty guides",
+            "facetValueDocs": 84
+          },
+          {
+            "facetValueId": "3408572048",
+            "facetValueLabel": "Wiring diagrams",
+            "facetValueDocs": 126
+          }
+        ],
+        "facetGroupLabel": "Technical resources",
+        "singleFacetEnabled": "radio",
+        "secure": false,
+        "facetSearchEnabled": "hide"
+      }
+    ]
+  },
+  "servicesCount": 6,
+  "newsId": "842808312",
+  "resourcesId": "968989543",
+  "siteSearchResults": [
+    {
+      "image": "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/mill-type-dc-contactors/instructions-me-replacement-contact-kit-il15-800-13.pdf.thumb.1280.1280.png",
+      "downloadEnabled": true,
+      "publishDate": "10/31/2096",
+      "description": "",
+      "newBadgeVisible": false,
+      "language": "",
+      "trackDownload": "",
+      "secure": false,
+      "title": "Instructions for ME replacement contact kit",
+      "url": "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/mill-type-dc-contactors/instructions-me-replacement-contact-kit-il15-800-13.pdf",
+      "badge": {
+        "name": "updated",
+        "label": "Updated"
+      },
+      "Language": "",
+      "dcFormat": "application/pdf",
+      "fileSize": "447936",
+      "id": "d3d49e28",
+      "contentType": "",
+      "fileType": "application/pdf",
+      "fileTypeAndSize": "PDF 447KB",
+      "epochPublishDate": "4002527040000",
+      "status": "",
+      "fileName": "instructions-me-replacement-contact-kit-il15-800-13.pdf"
+    },
+    {
+      "image": "/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/mill-type-dc-contactors/instructions-me-replacement-contact-kit-il15-800-13.pdf.thumb.1280.1280.png",
+      "downloadEnabled": true,
+      "publishDate": "10/31/2096",
+      "description": "",
+      "newBadgeVisible": false,
+      "language": "",
+      "trackDownload": "",
+      "secure": false,
+      "title": "Instructions for ME replacement contact kit",
+      "url": "http://aem-sit-pub02.tcc.etn.com:4503/content/dam/eaton/products/industrialcontrols-drives-automation-sensors/mill-type-dc-contactors/instructions-me-replacement-contact-kit-il15-800-13.pdf",
+      "badge": {
+        "name": "updated",
+        "label": "Updated"
+      },
+      "Language": "",
+      "dcFormat": "application/pdf",
+      "fileSize": "447936",
+      "id": "a0e41e93",
+      "contentType": "",
+      "fileType": "application/pdf",
+      "fileTypeAndSize": "PDF 447KB",
+      "epochPublishDate": "4002527040000",
+      "status": "",
+      "fileName": "instructions-me-replacement-contact-kit-il15-800-13.pdf"
+    },
+    {
+      "image": "/content/dam/eaton/secure/test/secure asset with no secure product tag.pdf.thumb.1280.1280.png",
+      "downloadEnabled": true,
+      "publishDate": "08/24/2023",
+      "description": "",
+      "newBadgeVisible": false,
+      "language": "",
+      "trackDownload": "false",
+      "secure": true,
+      "title": "Secure asset with no secure product tag",
+      "url": "/content/dam/eaton/secure/test/secure%20asset%20with%20no%20secure%20product%20tag.pdf",
+      "badge": {
+        "name": "new",
+        "label": "New"
+      },
+      "dcFormat": "application/pdf",
+      "fileSize": "436747",
+      "id": "70fe42ad",
+      "contentType": "",
+      "fileType": "application/pdf",
+      "fileTypeAndSize": "PDF 436KB",
+      "epochPublishDate": "1692870600000",
+      "status": "",
+      "fileName": "secure%20asset%20with%20no%20secure%20product%20tag.pdf"
+    },
+    {
+      "image": "/content/dam/eaton/test/dsn/skuPage.FW02133N2AL1F.pdf.thumb.1280.1280.png",
+      "downloadEnabled": true,
+      "publishDate": "06/09/2023",
+      "description": "",
+      "newBadgeVisible": false,
+      "language": "Multilingual",
+      "trackDownload": "false",
+      "secure": false,
+      "title": "FW02133N2AL1F",
+      "url": "/content/dam/eaton/test/dsn/skuPage.FW02133N2AL1F.pdf",
+      "Language": "",
+      "dcFormat": "application/pdf",
+      "fileSize": "61093",
+      "id": "df2bf313",
+      "contentType": "",
+      "fileType": "application/pdf",
+      "fileTypeAndSize": "PDF 61KB",
+      "epochPublishDate": "1686317700000",
+      "status": "",
+      "fileName": "skuPage.FW02133N2AL1F.pdf"
+    },
+    {
+      "image": "/content/dam/eaton/test/dsn/skuPage.K2066-57-M.pdf.thumb.1280.1280.png",
+      "downloadEnabled": true,
+      "publishDate": "06/09/2023",
+      "description": "",
+      "newBadgeVisible": false,
+      "language": "",
+      "trackDownload": "false",
+      "secure": false,
+      "title": "K2067-57-M1",
+      "url": "/content/dam/eaton/test/dsn/skuPage.K2066-57-M.pdf",
+      "Language": "",
+      "dcFormat": "application/pdf",
+      "fileSize": "37148",
+      "id": "ca17911a",
+      "contentType": "",
+      "fileType": "application/pdf",
+      "fileTypeAndSize": "PDF 37KB",
+      "epochPublishDate": "1686317640000",
+      "status": "",
+      "fileName": "skuPage.K2066-57-M.pdf"
+    },
+    {
+      "image": "/content/dam/eaton/resources/advanced-search/bin-thumbnail.png",
+      "downloadEnabled": true,
+      "publishDate": "",
+      "description": "",
+      "newBadgeVisible": false,
+      "language": "",
+      "trackDownload": "false",
+      "secure": true,
+      "title": "eaton-hdr48-es-energy-saver-rectifier-drawing-en-us",
+      "url": "/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/dc-power-solutions/secure/eaton-hdr48-es-energy-saver-rectifier-drawing-en-us.vssx",
+      "Language": "",
+      "dcFormat": "application/octet-stream",
+      "fileSize": "221192",
+      "id": "76c81ef4",
+      "contentType": "",
+      "fileType": "application/bin",
+      "fileTypeAndSize": "BIN 221KB",
+      "epochPublishDate": "",
+      "status": "",
+      "fileName": "eaton-hdr48-es-energy-saver-rectifier-drawing-en-us.vssx"
+    },
+    {
+      "image": "/content/dam/eaton/test/dsn/secure/securepdf.pdf.thumb.1280.1280.png",
+      "downloadEnabled": true,
+      "publishDate": "05/31/2023",
+      "description": "",
+      "newBadgeVisible": false,
+      "language": "",
+      "trackDownload": "false",
+      "secure": true,
+      "title": "Eaton DIN rail industrial UPS quick start guide for AC models",
+      "url": "/content/dam/eaton/test/dsn/secure/securepdf.pdf",
+      "Language": "",
+      "dcFormat": "application/pdf",
+      "fileSize": "2869314",
+      "id": "ad86c4e1",
+      "contentType": "",
+      "fileType": "application/pdf",
+      "fileTypeAndSize": "PDF 2MB",
+      "epochPublishDate": "1685509411371",
+      "status": "",
+      "fileName": "securepdf.pdf"
+    }
+  ],
+  "newsCount": 0,
+  "statusDetails": {
+    "messages": [
+      "N=0 Nr=AND(OR(P_dc_format:application/vnd.openxmlformats-officedocument.wordprocessingml.document,P_dc_format:image/png,P_dc_format:image/jpeg,P_dc_format:image/gif,P_dc_format:image/tiff,P_dc_format:application/pdf,P_dc_format:application/vnd.ms-powerpoint,P_dc_format:application/vnd.ms-excel,P_dc_format:application/zip,P_dc_format:text/html,P_dc_format:application/postscript,P_dc_format:application/eps,P_dc_format:application/x-eps,P_dc_format:image/eps,P_dc_format:image/x-eps,P_dc_format:application/msword,P_dc_format:application/vnd.openxmlformats-officedocument.presentationml.presentation,P_dc_format:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,P_dc_format:application/vnd.openxmlformats-officedocument.wordprocessingml.document,P_dc_format:application/octet-stream,P_dc_format:application/vnd.ms-excel.sheet.macroenabled.12,P_dc_format:video/mp4,P_dc_format:application/x-7z-compressed,P_dc_format:image/vnd.dwg),NOT(OR(P_Page_Priority:Exclude from search,P_Page_Priority:exclude-from-search)))"
+    ]
+  },
+  "facetValueMap": {
+    "4263499008": {
+      "facetValueId": "4263499008",
+      "facetValueLabel": "Design guides",
+      "facetValueDocs": 142
+    },
+    "2626969717": {
+      "facetValueId": "2626969717",
+      "facetValueLabel": "Videos and animations",
+      "facetValueDocs": 3
+    },
+    "2878507570": {
+      "facetValueId": "2878507570",
+      "facetValueLabel": "3D models",
+      "facetValueDocs": 422
+    },
+    "2805475210": {
+      "facetValueId": "2805475210",
+      "facetValueLabel": "Product notifications",
+      "facetValueDocs": 135
+    },
+    "926402268": {
+      "facetValueId": "926402268",
+      "facetValueLabel": "Technical data sheets",
+      "facetValueDocs": 5870
+    },
+    "3160183509": {
+      "facetValueId": "3160183509",
+      "facetValueLabel": "secure-only",
+      "facetValueDocs": 112
+    },
+    "192772024": {
+      "facetValueId": "192772024",
+      "facetValueLabel": "FAQs",
+      "facetValueDocs": 65
+    },
+    "227436940": {
+      "facetValueId": "227436940",
+      "facetValueLabel": "Product specification guides",
+      "facetValueDocs": 1006
+    },
+    "1234994799": {
+      "facetValueId": "1234994799",
+      "facetValueLabel": "Success stories",
+      "facetValueDocs": 746
+    },
+    "155603299": {
+      "facetValueId": "155603299",
+      "facetValueLabel": "Building Information Models",
+      "facetValueDocs": 121
+    },
+    "356020885": {
+      "facetValueId": "356020885",
+      "facetValueLabel": "Technical service bulletins",
+      "facetValueDocs": 342
+    },
+    "867229388": {
+      "facetValueId": "867229388",
+      "facetValueLabel": "Calculators and specification tools",
+      "facetValueDocs": 68
+    },
+    "850411755": {
+      "facetValueId": "850411755",
+      "facetValueLabel": "services",
+      "facetValueDocs": 6
+    },
+    "3614998822": {
+      "facetValueId": "3614998822",
+      "facetValueLabel": "Infographics and listicles",
+      "facetValueDocs": 108
+    },
+    "776779119": {
+      "facetValueId": "776779119",
+      "facetValueLabel": "Application notes",
+      "facetValueDocs": 486
+    },
+    "1260392343": {
+      "facetValueId": "1260392343",
+      "facetValueLabel": "DigiPacks",
+      "facetValueDocs": 1
+    },
+    "1819655759": {
+      "facetValueId": "1819655759",
+      "facetValueLabel": "Material safety data sheet (MSDS)",
+      "facetValueDocs": 803
+    },
+    "3959354019": {
+      "facetValueId": "3959354019",
+      "facetValueLabel": "Articles",
+      "facetValueDocs": 2
+    },
+    "1484772919": {
+      "facetValueId": "1484772919",
+      "facetValueLabel": "Cross references",
+      "facetValueDocs": 35
+    },
+    "4289707947": {
+      "facetValueId": "4289707947",
+      "facetValueLabel": "Selling policy and T&Cs",
+      "facetValueDocs": 11
+    },
+    "1401044377": {
+      "facetValueId": "1401044377",
+      "facetValueLabel": "White papers",
+      "facetValueDocs": 411
+    },
+    "1691271030": {
+      "facetValueId": "1691271030",
+      "facetValueLabel": "Brochures",
+      "facetValueDocs": 4451
+    },
+    "2767215410": {
+      "facetValueId": "2767215410",
+      "facetValueLabel": "Service and troubleshooting",
+      "facetValueDocs": 206
+    },
+    "1316679294": {
+      "facetValueId": "1316679294",
+      "facetValueLabel": "product",
+      "facetValueDocs": 9
+    },
+    "2922406474": {
+      "facetValueId": "2922406474",
+      "facetValueLabel": "Warranty guides",
+      "facetValueDocs": 84
+    },
+    "905849954": {
+      "facetValueId": "905849954",
+      "facetValueLabel": "Sales notes",
+      "facetValueDocs": 194
+    },
+    "3408572048": {
+      "facetValueId": "3408572048",
+      "facetValueLabel": "Wiring diagrams",
+      "facetValueDocs": 126
+    },
+    "4017091704": {
+      "facetValueId": "4017091704",
+      "facetValueLabel": "Software, firmware, and applications",
+      "facetValueDocs": 202
+    },
+    "4246550561": {
+      "facetValueId": "4246550561",
+      "facetValueLabel": "Installation instructions",
+      "facetValueDocs": 5956
+    },
+    "3213985765": {
+      "facetValueId": "3213985765",
+      "facetValueLabel": "Software release notes, schemes, and security updates",
+      "facetValueDocs": 59
+    },
+    "3443675743": {
+      "facetValueId": "3443675743",
+      "facetValueLabel": "Time current curves",
+      "facetValueDocs": 358
+    },
+    "3032244288": {
+      "facetValueId": "3032244288",
+      "facetValueLabel": "Competitive comparisons",
+      "facetValueDocs": 4
+    },
+    "215031922": {
+      "facetValueId": "215031922",
+      "facetValueLabel": "IES photometric files",
+      "facetValueDocs": 392
+    },
+    "1715738723": {
+      "facetValueId": "1715738723",
+      "facetValueLabel": "Manuals and user guides",
+      "facetValueDocs": 1426
+    },
+    "1029189061": {
+      "facetValueId": "1029189061",
+      "facetValueLabel": "Certification reports",
+      "facetValueDocs": 2757
+    },
+    "438947172": {
+      "facetValueId": "438947172",
+      "facetValueLabel": "Presentations",
+      "facetValueDocs": 53
+    },
+    "2489080375": {
+      "facetValueId": "2489080375",
+      "facetValueLabel": "Price lists",
+      "facetValueDocs": 29
+    },
+    "968989543": {
+      "facetValueId": "968989543",
+      "facetValueLabel": "resources",
+      "facetValueDocs": 36253
+    },
+    "7662153": {
+      "facetValueId": "7662153",
+      "facetValueLabel": "Images",
+      "facetValueDocs": 2
+    },
+    "2264560398": {
+      "facetValueId": "2264560398",
+      "facetValueLabel": "Drawings",
+      "facetValueDocs": 2203
+    },
+    "1900597880": {
+      "facetValueId": "1900597880",
+      "facetValueLabel": "Installation videos",
+      "facetValueDocs": 4
+    },
+    "2320549560": {
+      "facetValueId": "2320549560",
+      "facetValueLabel": "Catalogs",
+      "facetValueDocs": 3028
+    }
+  },
+  "productsCount": 9,
+  "status": "Success"
+}

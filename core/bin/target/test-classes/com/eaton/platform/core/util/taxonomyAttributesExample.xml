@@ -1,0 +1,112 @@
+<ATR_GRP_TYPE id="TXNMY_ATRBS" Label="Taxonomy Attribute" SEQ="10">
+    <ATR_GRP id="XXPDH_DIFFERENTIALS_PROD_SPEC" Label="Differentials Prod Spec" SEQ="10">
+        <ATR_NM id="Ring_Gear_Ratio" Label="Ring gear ratio" SEQ="2" STNDR="" LOVSQ=""><![CDATA[4.10 & dn]]></ATR_NM>
+        <ATR_NM id="Gear_Spline_Tooth_Count" Label="Gear spline tooth count" SEQ="4" UOM="EA" STNDR="" LOVSQ=""><![CDATA[30 EA]]></ATR_NM>
+        <ATR_NM id="Axle_Shaft_Diameter" Label="Axle shaft diameter" SEQ="16" UOM="in" STNDR="" LOVSQ=""><![CDATA[1.31 in]]></ATR_NM>
+        <ATR_NM id="Ring_Gear_Size" Label="Ring gear size" SEQ="20" UOM="in" STNDR="" LOVSQ=""><![CDATA[9.75 in]]></ATR_NM>
+        <ATR_NM id="Differential_Type" Label="Differential type" SEQ="50" Value="4" STNDR="" LOVSQ="40"><![CDATA[Locking]]></ATR_NM>
+        <ATR_NM id="Package_Contents" Label="Package contents" SEQ="110" STNDR="" LOVSQ=""><![CDATA[Test123[]!@#$%^&*|Test123[]!@#$%^&*|Test123[]!@#$%^&*|Test123[]!@#$%^&*]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_VEHICLE_USAGE" Label="Vehicle Usage" SEQ="11">
+        <ATR_MULTI_ROW SEQ="1" ROWID="44339710">
+            <ATR_NM id="Vehicle_Usage_Attr" Label="Vehicle usage" SEQ="1" Value="V3" STNDR="" LOVSQ="30"><![CDATA[Off-Road: Rock Crawl]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="2" ROWID="44340096">
+            <ATR_NM id="Vehicle_Usage_Attr" Label="Vehicle usage" SEQ="1" Value="V9" STNDR="" LOVSQ="90"><![CDATA[On Road: Work Truck / Towing]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="3" ROWID="44340450">
+            <ATR_NM id="Vehicle_Usage_Attr" Label="Vehicle usage" SEQ="1" Value="V4" STNDR="" LOVSQ="40"><![CDATA[Off-Road: Work Truck / Towing]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="4" ROWID="44340608">
+            <ATR_NM id="Vehicle_Usage_Attr" Label="Vehicle usage" SEQ="1" Value="V1" STNDR="" LOVSQ="10"><![CDATA[Off-Road: Extreme Off-Road]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="5" ROWID="44341128">
+            <ATR_NM id="Vehicle_Usage_Attr" Label="Vehicle usage" SEQ="1" Value="V2" STNDR="" LOVSQ="20"><![CDATA[Off-Road: Light Trail / Sand Sports]]></ATR_NM>
+        </ATR_MULTI_ROW >
+    </ATR_GRP>
+    <ATR_GRP id="XXPDH_VEHICLE_PRODUCT_SELECTOR" Label="Differential Product Selector" SEQ="12">
+        <ATR_MULTI_ROW SEQ="1" ROWID="46432644">
+            <ATR_NM id="Model_Year_Start" Label="Model year start" SEQ="10" Value="M7" STNDR="" LOVSQ="70"><![CDATA[1966]]></ATR_NM>
+            <ATR_NM id="Model_Year_End" Label="Model year end" SEQ="20" Value="M4" STNDR="" LOVSQ="40"><![CDATA[1972]]></ATR_NM>
+            <ATR_NM id="Model_Make" Label="Vehicle make" SEQ="30" Value="M1" STNDR="" LOVSQ="10"><![CDATA[Chrysler, Dodge, Plymouth]]></ATR_NM>
+            <ATR_NM id="Model_Vehicle_Type" Label="Vehicle type (model)" SEQ="40" Value="M16" STNDR="" LOVSQ="170"><![CDATA[Passenger Car]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Location" Label="Axle location" SEQ="50" Value="M2" STNDR="" LOVSQ="20"><![CDATA[Rear]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Description" Label="Axle description" SEQ="60" STNDR="" LOVSQ=""><![CDATA[Dana 60]]></ATR_NM>
+            <ATR_NM id="Model_Gear_Ratio" Label="Gear ratio" SEQ="70" Value="M24" STNDR="" LOVSQ="250"><![CDATA[4.10 & dn]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="2" ROWID="46432645">
+            <ATR_NM id="Model_Year_Start" Label="Model year start" SEQ="10" Value="M33" STNDR="" LOVSQ="330"><![CDATA[1994]]></ATR_NM>
+            <ATR_NM id="Model_Year_End" Label="Model year end" SEQ="20" Value="M24" STNDR="" LOVSQ="240"><![CDATA[1999]]></ATR_NM>
+            <ATR_NM id="Model_Make" Label="Vehicle make" SEQ="30" Value="M1" STNDR="" LOVSQ="10"><![CDATA[Chrysler, Dodge, Plymouth]]></ATR_NM>
+            <ATR_NM id="Model_Vehicle_Type" Label="Vehicle type (model)" SEQ="40" Value="M20" STNDR="" LOVSQ="220"><![CDATA[Small, Half-Ton Truck, Wagon, Van]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Location" Label="Axle location" SEQ="50" Value="M1" STNDR="" LOVSQ="10"><![CDATA[Front]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Description" Label="Axle description" SEQ="60" STNDR="" LOVSQ=""><![CDATA[Dana 60]]></ATR_NM>
+            <ATR_NM id="Model_Gear_Ratio" Label="Gear ratio" SEQ="70" Value="M24" STNDR="" LOVSQ="250"><![CDATA[4.10 & dn]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="3" ROWID="46432646">
+            <ATR_NM id="Model_Year_Start" Label="Model year start" SEQ="10" Value="M12" STNDR="" LOVSQ="120"><![CDATA[1972]]></ATR_NM>
+            <ATR_NM id="Model_Year_End" Label="Model year end" SEQ="20" Value="M27" STNDR="" LOVSQ="270"><![CDATA[2002]]></ATR_NM>
+            <ATR_NM id="Model_Make" Label="Vehicle make" SEQ="30" Value="M1" STNDR="" LOVSQ="10"><![CDATA[Chrysler, Dodge, Plymouth]]></ATR_NM>
+            <ATR_NM id="Model_Vehicle_Type" Label="Vehicle type (model)" SEQ="40" Value="M20" STNDR="" LOVSQ="220"><![CDATA[Small, Half-Ton Truck, Wagon, Van]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Location" Label="Axle location" SEQ="50" Value="M2" STNDR="" LOVSQ="20"><![CDATA[Rear]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Description" Label="Axle description" SEQ="60" STNDR="" LOVSQ=""><![CDATA[Dana 60]]></ATR_NM>
+            <ATR_NM id="Model_Gear_Ratio" Label="Gear ratio" SEQ="70" Value="M24" STNDR="" LOVSQ="250"><![CDATA[4.10 & dn]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="4" ROWID="46432647">
+            <ATR_NM id="Model_Year_Start" Label="Model year start" SEQ="10" Value="M15" STNDR="" LOVSQ="150"><![CDATA[1975]]></ATR_NM>
+            <ATR_NM id="Model_Year_End" Label="Model year end" SEQ="20" Value="M27" STNDR="" LOVSQ="270"><![CDATA[2002]]></ATR_NM>
+            <ATR_NM id="Model_Make" Label="Vehicle make" SEQ="30" Value="M1" STNDR="" LOVSQ="10"><![CDATA[Chrysler, Dodge, Plymouth]]></ATR_NM>
+            <ATR_NM id="Model_Vehicle_Type" Label="Vehicle type (model)" SEQ="40" Value="M22" STNDR="" LOVSQ="250"><![CDATA[Three Quarter, One-Ton Truck, Wagon, Van, Cab and Chassis, Motor Home]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Location" Label="Axle location" SEQ="50" Value="M2" STNDR="" LOVSQ="20"><![CDATA[Rear]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Description" Label="Axle description" SEQ="60" STNDR="" LOVSQ=""><![CDATA[Dana 60, 60 HD, 60M]]></ATR_NM>
+            <ATR_NM id="Model_Gear_Ratio" Label="Gear ratio" SEQ="70" Value="M24" STNDR="" LOVSQ="250"><![CDATA[4.10 & dn]]></ATR_NM>
+            <ATR_NM id="Model_Product_Notes" Label="Model product notes" SEQ="90" STNDR="" LOVSQ=""><![CDATA[For use of non-thick ring gears]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="5" ROWID="46432648">
+            <ATR_NM id="Model_Year_Start" Label="Model year start" SEQ="10" Value="M15" STNDR="" LOVSQ="150"><![CDATA[1975]]></ATR_NM>
+            <ATR_NM id="Model_Year_End" Label="Model year end" SEQ="20" Value="M11" STNDR="" LOVSQ="110"><![CDATA[1984]]></ATR_NM>
+            <ATR_NM id="Model_Make" Label="Vehicle make" SEQ="30" Value="M6" STNDR="" LOVSQ="60"><![CDATA[Ford]]></ATR_NM>
+            <ATR_NM id="Model_Vehicle_Type" Label="Vehicle type (model)" SEQ="40" Value="M24" STNDR="" LOVSQ="270"><![CDATA[Three Quarter-Ton Truck, Van, SUV]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Location" Label="Axle location" SEQ="50" Value="M2" STNDR="" LOVSQ="20"><![CDATA[Rear]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Description" Label="Axle description" SEQ="60" STNDR="" LOVSQ=""><![CDATA[Dana 60-3]]></ATR_NM>
+            <ATR_NM id="Model_Gear_Ratio" Label="Gear ratio" SEQ="70" Value="M24" STNDR="" LOVSQ="250"><![CDATA[4.10 & dn]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="6" ROWID="46432649">
+            <ATR_NM id="Model_Year_Start" Label="Model year start" SEQ="10" Value="M14" STNDR="" LOVSQ="140"><![CDATA[1974]]></ATR_NM>
+            <ATR_NM id="Model_Year_End" Label="Model year end" SEQ="20" Value="M14" STNDR="" LOVSQ="140"><![CDATA[1987]]></ATR_NM>
+            <ATR_NM id="Model_Make" Label="Vehicle make" SEQ="30" Value="M6" STNDR="" LOVSQ="60"><![CDATA[Ford]]></ATR_NM>
+            <ATR_NM id="Model_Vehicle_Type" Label="Vehicle type (model)" SEQ="40" Value="M24" STNDR="" LOVSQ="270"><![CDATA[Three Quarter-Ton Truck, Van, SUV]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Location" Label="Axle location" SEQ="50" Value="M2" STNDR="" LOVSQ="20"><![CDATA[Rear]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Description" Label="Axle description" SEQ="60" STNDR="" LOVSQ=""><![CDATA[Dana 61-1]]></ATR_NM>
+            <ATR_NM id="Model_Gear_Ratio" Label="Gear ratio" SEQ="70" Value="M24" STNDR="" LOVSQ="250"><![CDATA[4.10 & dn]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="7" ROWID="46432650">
+            <ATR_NM id="Model_Year_Start" Label="Model year start" SEQ="10" Value="M18" STNDR="" LOVSQ="180"><![CDATA[1978]]></ATR_NM>
+            <ATR_NM id="Model_Year_End" Label="Model year end" SEQ="20" Value="M8" STNDR="" LOVSQ="80"><![CDATA[1979]]></ATR_NM>
+            <ATR_NM id="Model_Make" Label="Vehicle make" SEQ="30" Value="M6" STNDR="" LOVSQ="60"><![CDATA[Ford]]></ATR_NM>
+            <ATR_NM id="Model_Vehicle_Type" Label="Vehicle type (model)" SEQ="40" Value="M15" STNDR="" LOVSQ="160"><![CDATA[One-Ton Truck, Van, Wagon, Cab and Chassis]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Location" Label="Axle location" SEQ="50" Value="M2" STNDR="" LOVSQ="20"><![CDATA[Rear]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Description" Label="Axle description" SEQ="60" STNDR="" LOVSQ=""><![CDATA[Dana 60 Snowplow Package]]></ATR_NM>
+            <ATR_NM id="Model_Gear_Ratio" Label="Gear ratio" SEQ="70" Value="M24" STNDR="" LOVSQ="250"><![CDATA[4.10 & dn]]></ATR_NM>
+            <ATR_NM id="Model_Special_Application" Label="Model special application" SEQ="80" Value="M2" STNDR="" LOVSQ="20"><![CDATA[Performance]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="8" ROWID="46432651">
+            <ATR_NM id="Model_Year_Start" Label="Model year start" SEQ="10" Value="M1" STNDR="" LOVSQ="10"><![CDATA[0000]]></ATR_NM>
+            <ATR_NM id="Model_Year_End" Label="Model year end" SEQ="20" Value="M5" STNDR="" LOVSQ="50"><![CDATA[1974]]></ATR_NM>
+            <ATR_NM id="Model_Make" Label="Vehicle make" SEQ="30" Value="M8" STNDR="" LOVSQ="80"><![CDATA[General Motors]]></ATR_NM>
+            <ATR_NM id="Model_Vehicle_Type" Label="Vehicle type (model)" SEQ="40" Value="M23" STNDR="" LOVSQ="260"><![CDATA[Three Quarter-Ton Truck]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Location" Label="Axle location" SEQ="50" Value="M2" STNDR="" LOVSQ="20"><![CDATA[Rear]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Description" Label="Axle description" SEQ="60" STNDR="" LOVSQ=""><![CDATA[Dana 60]]></ATR_NM>
+            <ATR_NM id="Model_Gear_Ratio" Label="Gear ratio" SEQ="70" Value="M24" STNDR="" LOVSQ="250"><![CDATA[4.10 & dn]]></ATR_NM>
+        </ATR_MULTI_ROW >
+        <ATR_MULTI_ROW SEQ="9" ROWID="46432652">
+            <ATR_NM id="Model_Year_Start" Label="Model year start" SEQ="10" Value="M14" STNDR="" LOVSQ="140"><![CDATA[1974]]></ATR_NM>
+            <ATR_NM id="Model_Year_End" Label="Model year end" SEQ="20" Value="M14" STNDR="" LOVSQ="140"><![CDATA[1987]]></ATR_NM>
+            <ATR_NM id="Model_Make" Label="Vehicle make" SEQ="30" Value="M13" STNDR="" LOVSQ="130"><![CDATA[Jeep]]></ATR_NM>
+            <ATR_NM id="Model_Vehicle_Type" Label="Vehicle type (model)" SEQ="40" Value="M4" STNDR="" LOVSQ="50"><![CDATA[Cherokee, Grand Cherokee, Liberty, Post Office Truck, Scrambler, Wagoneer, Wrangler]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Location" Label="Axle location" SEQ="50" Value="M2" STNDR="" LOVSQ="20"><![CDATA[Rear]]></ATR_NM>
+            <ATR_NM id="Model_Axle_Description" Label="Axle description" SEQ="60" STNDR="" LOVSQ=""><![CDATA[Dana M60-3R]]></ATR_NM>
+            <ATR_NM id="Model_Gear_Ratio" Label="Gear ratio" SEQ="70" Value="M24" STNDR="" LOVSQ="250"><![CDATA[4.10 & dn]]></ATR_NM>
+        </ATR_MULTI_ROW >
+    </ATR_GRP>
+</ATR_GRP_TYPE>

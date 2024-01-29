@@ -1,0 +1,77 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Apr 06 2018 15:27:56 GMT+0530",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "parent_page",
+    "jcr:versionHistory": "fdb48c58-614c-46c0-a41f-01c2a2072e79",
+    "cq:template": "/conf/eaton/settings/wcm/templates/secure-generic-page",
+    "jcr:lastModifiedBy": "admin",
+    "priority": "0.5",
+    "applicationAccess": [
+      "eaton-secure:application-access/bid-manager",
+      "eaton-secure:application-access/order-center",
+      "eaton-secure:application-access/votw"
+    ],
+    "jcr:predecessors": [
+      "0bf2dbea-3560-45df-9713-52e168c5cd3f"
+    ],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Tue Nov 24 2020 13:16:30 GMT+0530",
+    "accountType": [
+      "eaton-secure:accounttype/contractor",
+      "eaton-secure:accounttype/dealer",
+      "eaton-secure:accounttype/distribution-panel-builder",
+      "eaton-secure:accounttype/drives-solution-partner",
+      "eaton-secure:accounttype/electrical-installer",
+      "eaton-secure:accounttype/electrical-wholesaler",
+      "eaton-secure:accounttype/employee",
+      "eaton-secure:accounttype/end-user-customer",
+      "eaton-secure:accounttype/fleet",
+      "eaton-secure:accounttype/government",
+      "eaton-secure:accounttype/it-distributor",
+      "eaton-secure:accounttype/it-reseller",
+      "eaton-secure:accounttype/oem",
+      "eaton-secure:accounttype/rail-specialized-distributor",
+      "eaton-secure:accounttype/retailer",
+      "eaton-secure:accounttype/supplier"
+    ],
+    "cq:lastModified": "Sun Nov 29 2020 22:52:21 GMT+0530",
+    "view": "generic",
+    "meta-robot-tags": "index,follow",
+    "jcr:baseVersion": "0bf2dbea-3560-45df-9713-52e168c5cd3f",
+    "productCategories": [
+      "eaton-secure:product-category/aerospace",
+      "eaton-secure:product-category/electrical",
+      "eaton-secure:product-category/filtration",
+      "eaton-secure:product-category/hydraulics",
+      "eaton-secure:product-category/vehicle"
+    ],
+    "jcr:isCheckedOut": true,
+    "page-type": "generic-page",
+    "company": [
+      "eaton-secure:business-group/electrical-amer",
+      "eaton-secure:business-group/electrical-apac",
+      "eaton-secure:business-group/electrical-emea",
+      "eaton-secure:business-group/industrial-aer",
+      "eaton-secure:business-group/industrial-fil",
+      "eaton-secure:business-group/industrial-hyd",
+      "eaton-secure:business-group/industrial-veh"
+    ],
+    "jcr:lastModified": "Mon Oct 23 2017 19:29:19 GMT-0400",
+    "jcr:uuid": "4615a14e-a5d4-4d65-8597-5aa0af589dfd",
+    "sling:resourceType": "eaton/components/structure/eaton-secure-template-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "cq:allowedTemplates": [
+      "/conf/eaton/settings/wcm/templates/secure-generic-page"
+    ],
+    "securePage": "true",
+    "cq:lastModifiedBy": "admin",
+    "changefrequency": "weekly"
+  }
+}

@@ -1,0 +1,28 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.FeatureListModel">
+    <div class="feature-list__component">
+
+      <!--/* If Header */-->
+      <div data-sly-test="${ data.featureListHeader }" class="feature-list__eyebrow b-eyebrow-small">${ data.featureListHeader }</div>
+
+      <!--/* List Items */-->
+      <div class="feature-list__cards" data-sly-list="${ data.featureLists }" >
+        <div class="feature-list__item">
+            <a href="${ item.featureListLinkPath }" aria-label="Go to ${ item.featureListLinkTitle }" class="feature-list__link">
+                <div class="feature-list__image">
+                  <sly data-sly-use.tpl="eaton/components/shared/templates/rendition-image.html">
+                    <sly data-sly-call="${ tpl.module @ data=item }"></sly>
+                  </sly>
+                </div>
+
+                <div class="feature-list__body">
+                  <div data-sly-test="${item.featureListLinkTitle}" class="feature-list__title b-body-copy-small">
+                    ${item.featureListLinkTitle}
+                    <i class="feature-list__icon icon icon-chevron-right" aria-hidden="true"></i>
+                  </div>
+                  <div data-sly-test="${item.featureListDescription}" class="feature-list__text b-body-copy-small">${item.featureListDescription}</div>
+                </div>
+            </a>
+        </div>
+      </div>
+    </div>
+</sly>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.auth.filters.AuthorizationFilter" immediate="true" activate="activate" modified="activate">
+  <property name="sling.filter.methods" type="String" value="GET"/>
+  <property name="sling.filter.pattern" type="String" value="(^/content/eaton/.*/secure/.*|^/content/dam/eaton/.*/secure/.*|^/content/dam/eaton/secure/.*|^/content/eaton/.*/digital/secure/.*)"/>
+  <property name="sling.filter.scope" type="String" value="REQUEST"/>
+  <property name="service.ranking" type="String" value="2147483647"/>
+  <service>
+    <provide interface="javax.servlet.Filter"/>
+  </service>
+  <reference name="authenticationService" interface="com.eaton.platform.integration.auth.services.AuthenticationService" field="authenticationService"/>
+  <reference name="authenticationServiceConfig" interface="com.eaton.platform.integration.auth.services.AuthenticationServiceConfiguration" field="authenticationServiceConfig"/>
+  <reference name="authorizationService" interface="com.eaton.platform.integration.auth.services.AuthorizationService" field="authorizationService"/>
+  <reference name="slingSettingsService" interface="org.apache.sling.settings.SlingSettingsService" field="slingSettingsService"/>
+  <reference name="termsAndConditionsService" interface="com.eaton.platform.core.services.TermsAndConditionsService" field="termsAndConditionsService"/>
+  <implementation class="com.eaton.platform.integration.auth.filters.AuthorizationFilter"/>
+</scr:component>

@@ -1,0 +1,137 @@
+@import "../../../global/css/_config/sass";
+
+$product-tabs-inactive-color: var(--color__lunar-40);
+$product-tabs-active-color: var(--color__lunar-10);
+$product-tabs-v2-inactive-color: var(--grey-secondary-brand-color);
+
+.product-tabs-v2 {
+
+  .eaton-product-tabs {
+    overflow: unset;
+    overflow-x: unset;
+
+    &__tab-panel {
+      display: none;
+    }
+
+    @for $i from 0 through 4 {
+      input[id="tab-#{$i}"] {
+        display: none;
+
+        &:checked {
+          ~ .container__sticky label[for="tab-#{$i}"] {
+            span {
+              text-transform: uppercase;
+              color: var(--primary-brand-color);
+
+			  @include media-desktop-and-up {
+		    	 font-size: 1.6rem;
+		       }
+            }
+
+            border-top: thick solid var(--primary-brand-color);
+            background-color: $product-tabs-active-color;
+            height: 4rem;
+            padding: 0 1rem;
+			font-weight: bold;
+
+			@include media-desktop-and-up {
+              height: 4.5rem;
+      		}
+          }
+
+          ~ .row .eaton-product-tabs__tab-panel[data-tab-name="tab-#{$i}"] {
+            padding-top: 5rem;
+            display: block;
+          }
+
+          ~ .container__sticky label:not([for="tab-#{$i}"]) {
+            span {
+              text-transform: uppercase;
+              color: var(--color__white);
+
+               @include media-desktop-and-up {
+		    	font-size: 1.6rem;
+		       }
+            }
+
+            border-top: thick solid $product-tabs-v2-inactive-color;
+            border-right: 2px solid $product-tabs-active-color;
+            background-color: $product-tabs-v2-inactive-color;
+            height: 4rem;
+            padding: 0 1rem;
+			font-weight: bold;
+
+			@include media-desktop-and-up {
+              height: 4.5rem;
+      		}
+
+            @include media-mobile-and-tablet {
+              border-right: unset;
+            }
+
+            :last-child {
+              border-right: none;
+            }
+
+            &:hover {
+              border-top: thick solid $product-tabs-v2-inactive-color;
+              background-color: $product-tabs-active-color;
+
+              span {
+                color: var(--primary-brand-color);
+              }
+            }
+
+          }
+
+        }
+      }
+    }
+
+    .eaton-product-tabs__buttons {
+      background-color: var(--color__white);
+      padding: 0 2rem;
+
+      @include media-mobile-and-tablet {
+        &__center {
+          border-top: unset;
+          padding: 0;
+        }
+      }
+
+      .tab-label {
+        background-color: var(--color__white);
+        width: auto;
+      }
+
+      &::before {
+        background-color: var(--color__white);
+      }
+	 }
+  }
+
+  .container__sticky {
+    width: 100%;
+    border-bottom: 0.2rem solid var(--color__lunar-40);
+    position: sticky;
+    top: 12.5rem;
+    z-index: 100;
+    padding-top: 2rem;
+    background: var(--color__white);
+
+    @include media-mobile-and-tablet {
+      width: 100%;
+      top: 0;
+      padding-top: 0;
+
+      .row {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
+}

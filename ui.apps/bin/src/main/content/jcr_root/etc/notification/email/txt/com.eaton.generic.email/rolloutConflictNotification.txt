@@ -1,0 +1,6 @@
+Subject: ${subject}
+
+${body}
+
+-------------------------------------------------------------------------------------
+This is an automatically generated message. Please do not reply.

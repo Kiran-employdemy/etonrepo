@@ -1,0 +1,345 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:mixinTypes": [
+    "rep:AccessControllable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Feb 28 2023 21:50:15 GMT-0500",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "cq:LiveRelationship",
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Hydraulic cylinder repair",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "3726b1e1-6f54-4a18-89f3-1acc713c0650",
+    "cq:template": "/conf/eaton/settings/wcm/templates/generic-page",
+    "cq:lastReplicatedBy": "e0499758",
+    "jcr:lastModifiedBy": "e0078808",
+    "priority": "0.0",
+    "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+    "jcr:predecessors": [
+      "03b1c626-4d96-4568-869f-f50d09b00e03"
+    ],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Tue Feb 28 2023 21:50:15 GMT-0500",
+    "primary-sub-category-tag@TypeHint": "String[]",
+    "cq:lastReplicated": "Thu Oct 15 2020 16:04:58 GMT-0400",
+    "cq:lastModified": "Thu Oct 15 2020 16:00:56 GMT-0400",
+    "view": "generic",
+    "jcr:baseVersion": "03b1c626-4d96-4568-869f-f50d09b00e03",
+    "jcr:isCheckedOut": true,
+    "page-type": "generic-page",
+    "pageTitle": "Hydraulic cylinder repair",
+    "cq:tags": [
+      "eaton:eaton-brand/industry/hydraulics"
+    ],
+    "jcr:lastModified": "Mon Oct 23 2017 19:29:19 GMT-0400",
+    "jcr:uuid": "d66571b8-cdf3-4533-a416-9d0c898a5bce",
+    "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "cq:allowedTemplates": [
+      "/conf/eaton/settings/wcm/templates/generic-page",
+      "/conf/eaton/settings/wcm/templates/article-page"
+    ],
+    "cq:lastRolledoutBy": "c3049643",
+    "cq:lastModifiedBy": "reference-adjustment-service",
+    "changefrequency": "always",
+    "navTitle": "Hydraulic cylinder repair",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:LiveRelationship"
+      ],
+      "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "cq:lastRolledoutBy": "c3049643",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:LiveRelationship"
+        ],
+        "jcr:createdBy": "e0078808",
+        "jcr:lastModifiedBy": "e0078808",
+        "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+        "jcr:created": "Thu Oct 05 2017 10:47:13 GMT-0400",
+        "jcr:lastModified": "Mon Nov 04 2019 13:37:37 GMT-0500",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "cq:lastRolledoutBy": "c3049643",
+        "cq:responsive": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+          "cq:lastRolledoutBy": "c3049643"
+        },
+        "landinghero": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship",
+            "cq:ReplicationStatus"
+          ],
+          "jcr:createdBy": "e0036947",
+          "landingHeroDesc": "Eaton is one of the largest industrial cylinder manufacturers in the world, based on unmatched quality, manufacturing capability and application experience. These core competencies are exactly why the cylinders we repair consistently deliver greater performance, reliability and increased lifetime, even in the world’s most demanding applications.",
+          "alignmentDesktop": "center-center",
+          "cq:lastReplicationAction": "Activate",
+          "mobileDynam": ":landing-hero-mobile",
+          "cq:lastReplicatedBy": "e0547414",
+          "jcr:lastModifiedBy": "e0456505",
+          "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+          "landingHeroImage": "/content/dam/eaton/hydraulics/cylinders/Cylinder-repair-image.PNG",
+          "alignmentMobile": "center-center",
+          "jcr:created": "Tue Jul 16 2019 15:13:54 GMT-0400",
+          "cq:lastReplicated": "Fri Jan 28 2022 08:58:12 GMT-0500",
+          "jcr:lastModified": "Mon Nov 04 2019 13:37:37 GMT-0500",
+          "desktopDynam": ":landing-hero-desktop",
+          "landingHeroHeader": "Hydraulic cylinder repair",
+          "sling:resourceType": "eaton/components/content/landinghero",
+          "cq:lastRolledoutBy": "c3049643"
+        },
+        "page_overview": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "jcr:createdBy": "e0456505",
+          "jcr:lastModifiedBy": "e0456505",
+          "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+          "jcr:created": "Wed Jul 17 2019 13:52:33 GMT-0400",
+          "pageOverviewHeaderType": "h2",
+          "jcr:lastModified": "Mon Nov 04 2019 13:37:37 GMT-0500",
+          "pageOverviewHeader": "Application and engineering expertise",
+          "sling:resourceType": "eaton/components/content/page-overview",
+          "textIsRich": "true",
+          "pageOverviewDesc": "We understand what it takes to do everything from standard, fast cylinder repairs to turnkey projects with maintenance downtimes. Eaton uses world-class simulation tools, comprehensive 3D drawing capabilities and finite element analysis expertise for failure mode determination, prediction of future failure analysis and recommendation of general product improvements for optimum performance and reliability. Decades of application experience coupled with these cutting edge tools translates to better recommendations and, ultimately, better cylinder repairs.<br>\r\n",
+          "cq:lastRolledoutBy": "c3049643"
+        },
+        "feature_block": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "jcr:createdBy": "e0456505",
+          "featureHeader": "Systems and processes",
+          "mobileTrans": "No Image Transformation - mobile",
+          "jcr:lastModifiedBy": "e0456505",
+          "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+          "featureDesc": "Quality is an area in which we excel, and it's demonstrated every day in the new hydraulic cylinders we manufacture. Besides the facility ISO certifications, we provide comprehensive quality reviews and customer reporting documentation. We’ve set the industry standard in detailed inspection reports, documentation logs and customer communication processes, saving you significant time and money. ",
+          "jcr:created": "Wed Jul 17 2019 13:47:33 GMT-0400",
+          "featureAlignmentMobile": "center-center",
+          "featureImageAltText": "Hydraulic cylinder repair",
+          "featureAlignmentDesktop": "center-center",
+          "featureImageAlignment": "left",
+          "jcr:lastModified": "Mon Nov 04 2019 13:37:37 GMT-0500",
+          "desktopTrans": "No Image Transformation - desktop",
+          "featureImage": "/content/dam/eaton/services/images/hydraulic-cylinder-repair.jpg",
+          "sling:resourceType": "eaton/components/content/feature-block",
+          "cq:lastRolledoutBy": "c3049643",
+          "featureBlockColor": "theme-light-gray"
+        },
+        "feature_block_937509669": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "jcr:createdBy": "e0456505",
+          "featureHeader": "Welding and machining specialists",
+          "mobileTrans": "No Image Transformation - mobile",
+          "jcr:lastModifiedBy": "e0456505",
+          "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+          "featureDesc": "The integration of cylinder repair and service capability with new product manufacturing translates to better repairs for your product. Eaton’s extensive capabilities allow us to not only repair your hydraulic cylinders quickly, but to recommend structural improvements and provide improved coating technology and access to the latest seal technology. Our industry-leading equipment and employees ensure that you receive top-notch results every time.",
+          "jcr:created": "Wed Jul 17 2019 13:48:52 GMT-0400",
+          "featureAlignmentMobile": "center-center",
+          "featureImageAltText": "eatonite",
+          "featureAlignmentDesktop": "center-center",
+          "featureImageAlignment": "right",
+          "jcr:lastModified": "Mon Nov 04 2019 13:37:37 GMT-0500",
+          "desktopTrans": "No Image Transformation - desktop",
+          "featureImage": "/content/dam/eaton/markets/oil-and-gas/eatonite.jpg",
+          "sling:resourceType": "eaton/components/content/feature-block",
+          "cq:lastRolledoutBy": "c3049643",
+          "featureBlockColor": "primary-branding-color"
+        },
+        "feature_block_1299358197": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "jcr:createdBy": "e0456505",
+          "featureHeader": "Global footprint, local service",
+          "mobileTrans": "No Image Transformation - mobile",
+          "jcr:lastModifiedBy": "e0456505",
+          "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+          "featureDesc": "Eaton’s cylinder repair expertise covers everything from standard tie-rod cylinders to mill duty cylinders to extra large custom cylinders that span to bore sizes of 60 in (1500 mm) and strokes of 72 ft (22 m). With decades of experience in cylinder repair, we understand the urgency in critical situations, so you always get the response you need, when you need it. Our experienced staff can offer on-site advice, or pick up your cylinders, repair them and quickly return them to you. Our global footprint ensures that service is quick, close and convenient regardless of your project's location.",
+          "jcr:created": "Wed Jul 17 2019 13:50:31 GMT-0400",
+          "featureAlignmentMobile": "center-center",
+          "featureImageAltText": "blue globe",
+          "featureAlignmentDesktop": "center-center",
+          "featureImageAlignment": "left",
+          "jcr:lastModified": "Mon Nov 04 2019 13:37:37 GMT-0500",
+          "desktopTrans": "No Image Transformation - desktop",
+          "featureImage": "/content/dam/eaton/products/electrical-circuit-protection/bussmann-iec-high-speed-semi-conductors-fuses/Eaton Bussmann globe earth_FB.jpg",
+          "sling:resourceType": "eaton/components/content/feature-block",
+          "cq:lastRolledoutBy": "c3049643",
+          "featureBlockColor": "theme-light-gray"
+        },
+        "grid_2_column_contro_1967758251": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "jcr:createdBy": "e0036947",
+          "jcr:lastModifiedBy": "e0456505",
+          "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+          "jcr:created": "Tue Jul 16 2019 16:53:23 GMT-0400",
+          "view": "is-three-two",
+          "color": "no-color",
+          "jcr:lastModified": "Mon Nov 04 2019 13:37:37 GMT-0500",
+          "sling:resourceType": "eaton/components/layout/grid-2-column-control",
+          "cq:lastRolledoutBy": "c3049643",
+          "col1-par": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:mixinTypes": [
+              "cq:LiveRelationship"
+            ],
+            "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+            "sling:resourceType": "wcm/foundation/components/parsys",
+            "cq:lastRolledoutBy": "c3049643",
+            "text": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "cq:LiveRelationship"
+              ],
+              "jcr:createdBy": "e0456505",
+              "jcr:lastModifiedBy": "e0456505",
+              "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+              "jcr:created": "Wed Jul 17 2019 13:56:22 GMT-0400",
+              "view": "default",
+              "jcr:lastModified": "Mon Nov 04 2019 13:37:37 GMT-0500",
+              "transText": "<h2>Learn more</h2>\r\n<p>Download the brochure for more details.</p>\r\n",
+              "toggleInnerGrid": "false",
+              "sling:resourceType": "eaton/components/general/text",
+              "textIsRich": [
+                "true",
+                "true"
+              ],
+              "cq:lastRolledoutBy": "c3049643"
+            },
+            "vertical_link_list": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "cq:LiveRelationship"
+              ],
+              "jcr:createdBy": "e0456505",
+              "maxLimitInEachCol": "10",
+              "jcr:lastModifiedBy": "e0456505",
+              "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+              "sortBy": "pub-date",
+              "tagsType": "any",
+              "jcr:created": "Wed Jul 17 2019 13:56:31 GMT-0400",
+              "view": "vertical",
+              "jcr:lastModified": "Mon Nov 04 2019 13:37:37 GMT-0500",
+              "linksAlignment": "left",
+              "sling:resourceType": "eaton/components/general/vertical-link-list",
+              "listType": "manual-list",
+              "maxLimitToDisplay": "40",
+              "cq:lastRolledoutBy": "c3049643",
+              "manualLinkList": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:mixinTypes": [
+                  "cq:LiveRelationship"
+                ],
+                "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+                "cq:lastRolledoutBy": "c3049643",
+                "item0": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "jcr:mixinTypes": [
+                    "cq:LiveRelationship"
+                  ],
+                  "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+                  "manualLinkPath": "/content/dam/eaton/hydraulics/cylinders/eaton-cylinder-repair-capabilities-success-flyer-e-cycm-ms004-e2-en-us.pdf",
+                  "cq:lastRolledoutBy": "c3049643",
+                  "manualLinkTitle": "Cylinder service and repair brochure"
+                }
+              }
+            }
+          },
+          "col2-par": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:mixinTypes": [
+              "cq:LiveRelationship"
+            ],
+            "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+            "cq:lastRolledoutBy": "c3049643",
+            "text": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "cq:LiveRelationship"
+              ],
+              "jcr:createdBy": "e0036947",
+              "jcr:lastModifiedBy": "e0456505",
+              "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+              "jcr:created": "Tue Jul 16 2019 16:37:07 GMT-0400",
+              "view": "default",
+              "jcr:lastModified": "Mon Nov 04 2019 13:37:37 GMT-0500",
+              "transText": "<h2>Contact us</h2>\r\n<p>Please use the form to submit your request, questions or comments. We look forward to hearing from you and an Eaton representative will contact you shortly.&nbsp;<br>\r\n<br>\r\nTo locate a local distributor, visit Eaton’s&nbsp;<a href=\"http://www.eatonpowersource.com/where-to-buy/?_ga=2.221048220.586194819.1563214824-296181667.1500324491\">Distributor Locator</a>.<br>\r\n<br>\r\nNOTE: Due to a backlog in our technical support department and our continuous effort to improve our customers’ experience, please refer to your nearest distributor with any technical questions. You can locate the nearest Eaton Hydraulics distributor by clicking on the link above. Thank you for your understanding.</p>\r\n",
+              "toggleInnerGrid": "false",
+              "sling:resourceType": "eaton/components/general/text",
+              "textIsRich": [
+                "true",
+                "true"
+              ],
+              "cq:lastRolledoutBy": "c3049643"
+            },
+            "eloqua_form": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "cq:LiveRelationship"
+              ],
+              "jcr:createdBy": "e0036947",
+              "addCaptcha": "true",
+              "prepopulate": "true",
+              "formId": "4510",
+              "jcr:lastModifiedBy": "e0036947",
+              "cq:lastRolledout": "Mon Nov 04 2019 13:37:37 GMT-0500",
+              "jcr:created": "Tue Jul 16 2019 16:30:44 GMT-0400",
+              "disclaimer": "By filling out and submitting the form, I agree that the personal data that I provide can be shared with Eaton Corporation plc in Ireland, Eaton Corporation in the United States of America and with Eaton’s channel partners, and I agree to be contacted via phone or email by Eaton’s channel partners and/or a third party agency that Eaton works with in order to help route and answer the questions asked in the form below. Any use of my personal data will take place in compliance with the relevant and applicable data privacy laws and the&nbsp;<a href=\"http://www.eaton.com/content/eaton/us/en-us/company/policies-and-statements/privacy-cookies-and-data-protection.html.html\">Eaton Privacy Policy</a><span style=\"font-weight: normal;\">.</span><br>\r\n",
+              "jcr:lastModified": "Mon Nov 04 2019 13:37:37 GMT-0500",
+              "sling:resourceType": "eaton/components/content/eloqua-form",
+              "textIsRich": "true",
+              "cq:lastRolledoutBy": "c3049643"
+            }
+          }
+        }
+      }
+    }
+  },
+  "rep:policy": {
+    "jcr:primaryType": "rep:ACL",
+    "allow": {
+      "jcr:primaryType": "rep:GrantACE",
+      "rep:principalName": "danfoss-hyd-author",
+      "rep:privileges": [
+        "jcr:versionManagement",
+        "jcr:read",
+        "rep:write",
+        "crx:replicate",
+        "jcr:lockManagement"
+      ]
+    },
+    "deny1": {
+      "jcr:primaryType": "rep:DenyACE",
+      "rep:principalName": "inverse-danfoss-hyd-authors",
+      "rep:privileges": [
+        "jcr:versionManagement",
+        "jcr:read",
+        "rep:write",
+        "crx:replicate",
+        "jcr:lockManagement"
+      ]
+    }
+  }
+}

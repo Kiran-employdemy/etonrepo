@@ -1,0 +1,57 @@
+<div class="bulk-download-fixed-drawer classDN">
+  <div class="fixed-drawer container">
+    <div class="fixed-drawer__header">
+      <div class="fixed-drawer__header-row bg-color__green">
+        <span class="fixed-drawer__header-row__title min__close">
+          <i class="icon fixed-drawer__down icon-chevron-down"></i>
+          ${'bdeDownloadDocument' @i18n} (<span class="fixed-drawer__count">0</span>) ${'bdeof' @i18n}
+          ${properties.bulkDownloadEmailMaxCount || 20}
+        </span>
+      </div>
+      <div class="fixed-drawer__header-clear"><a class="clear-selection">${'bdeClearSelection' @i18n}</a></div>
+    </div>
+    <div class="main__box u-flex-wrap viewmore" id="selected-files-drawer-box"
+      data-view-limit="${properties.bulkDownloadEmailViewCount || 5}" data-viewless="${'viewLessText' @i18n}"
+      data-download-file-count-limit="${properties.bulkDownloadEmailMaxCount || 20}"
+      data-viewmore="${'viewMoreText' @i18n}">
+
+    </div>
+    <div class="fixed-drawer__footer text-right">
+      <a data-analytics-event="request quote"
+        class="call-fd-model fixed-drawer__footer__buttons-div standard-reverse-style"
+        title="${'bdeSendEmail' @i18n}" target="_blank" id="bulkemail">
+        <img src="/content/dam/eaton/resources/icons/email.png" class="new-email-icon" alt="email" /> ${'bdeSendEmail' @i18n}
+      </a>
+      <a data-analytics-event="request quote" class="call-fd-model fixed-drawer__footer__buttons-div standard-style"
+        title="${'bdeDownloadSelection' @i18n}" target="_blank" id="idbulkdownload">
+        <i class="icon icon-download"></i>
+        <div class="load-spinner" hidden></div>
+        ${'bdeDownloadSelection' @i18n}
+      </a>
+    </div>
+  </div>
+
+  <div class="modal fd-model fade-in" id="bulkemail-model" role="dialog">
+    <div class="modal-dialog modal-center">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close fd-close-popup" data-dismiss="modal">×</button>
+        </div>
+        <div class="modal-body">
+          <h4 class="modal-heading">${'bdeSendEmail' @i18n}</h4>
+          <input type="text" id="bulkDownload-email-to" class="auto-search faceted-navigation__list__search__input show"
+            placeholder="Enter email address" data-valid-error="${'bdeInvalidEmail' @i18n}" data-email-error="${'bdeEmailNotSent' @i18n}" data-email-send="${'bdeEmailSent' @i18n}">
+            <div class="email-valid-msg-div"></div>
+          <a data-analytics-event="request quote" class="fixed-drawer__footer__buttons-div standard-reverse-style"
+            title="${'bdeSendEmail' @i18n}" target="_blank" id="bulkDownload-email-send-btn">
+            <img src="/content/dam/eaton/resources/icons/email.png" class="new-email-icon" alt="email" /> ${'bdeSend' @i18n}
+          </a>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

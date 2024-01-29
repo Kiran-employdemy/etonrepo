@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.endeca.services.config.EndecaConfigImplConfiguration">
+  <OCD id="com.eaton.platform.integration.endeca.services.config.EndecaConfigImplConfiguration" name="Endeca Config Properties " description="Endeca Config Properties">
+    <AD id="esp.service.url" type="String" name="ESP Service URL" description="Service URL for ESP service" default=""/>
+    <AD id="product.compatibility.app.name" type="String" name="Product compatibility app name" description="PC application name" default="eatonledinfos"/>
+    <AD id="sku.application.name" type="String" name="SKU Details Application Name" description="SKU Details Application Name" default=""/>
+    <AD id="esp.service.application.key" type="String" name="ESP Application Key" description="Application Key for ESP service" default=""/>
+    <AD id="endecaUserAgentValue" type="String" name="Endeca User Agent Value" description="Endeca User Agent Value" default=""/>
+    <AD id="webservice.stub.dir" type="String" name="Response Stub Directory" description="Response Stub Directory for ESP service" default=""/>
+    <AD id="webservice.stub.enabled" type="Boolean" name="Response Stub Enabled" description="Response Stub Enabled for ESP service" default="false"/>
+    <AD id="products.tab.id" type="String" name="Products Tab Id" description="Products Tab Id" default=""/>
+    <AD id="news.tab.id" type="String" name="News Tab Id" description="News Tab Id" default=""/>
+    <AD id="services.tab.id" type="String" name="Services Tab Id" description="Services Tab Id" default=""/>
+    <AD id="resources.tab.id" type="String" name="Resources Tab Id" description="Resources Tab Id" default=""/>
+    <AD id="productfamily.sitemap.application.name" type="String" name="Product Family SKU Sitemap List Application Name" description="Product Family SKU Sitemap List Application Name" default=""/>
+    <AD id="skusitemap.application.name" type="String" name="Orphan SKU Sitemap List Application Name" description="Orphan SKU Sitemap List Application Name" default=""/>
+    <AD id="productfamily.sitemap.numberOfRecordsToReturn" type="String" name="Product Family SKU Sitemap Number Of Records To Return" description="Product Family SKU Sitemap Number Of Records To Return" default=""/>
+    <AD id="skusitemap.numberOfRecordsToReturn" type="String" name="Orphan SKU Sitemap Number Of Records To Return" description="Orphan SKU Sitemap Number Of Records To Return" default=""/>
+    <AD id="productfamily.application.name" type="String" name="Product Family SKU List Application Name" description="Product Family SKU List Application Name" default=""/>
+    <AD id="subcategory.application.name" type="String" name="Sub-Category Application Name" description="Sub-Category Application Name" default=""/>
+    <AD id="sitesearch.application.name" type="String" name="Site-Search Application Name" description="Site-Search Application Name" default=""/>
+    <AD id="endeca.url.pdh1andpdh2" type="String" name="Endeca Service URL for PDH1 and PDH2 applications" description="Endeca Service URL for PDH1 and PDH2 applications" default=""/>
+    <AD id="vgselector.endeca.url" type="String" name="Endeca Path required for VG Product Selector" description="Endeca Path to be pointed by AEM" default=""/>
+    <AD id="clutchselector.application.name" type="String" name="Clutch Selector Application Name" description="Application Name for VG Clutch Selector" default=""/>
+    <AD id="torqueselector.application.name" type="String" name="Torque Selector Application Name" description="Application Name for VG Torque Selector" default=""/>
+    <AD id="submitbuilder.application.name" type="String" name="Submittal builder Application Name" description="Submittal builder Application Name" default=""/>
+    <AD id="eatoncontenthub.application.name" type="String" name="Eaton Content Hub Application Name" description=" Eaton Content Hub Application Name" default=""/>
+    <AD id="crossreference.application.name" type="String" name="Cross Reference Application Name" description=" Cross Reference Application Name" default=""/>
+    <AD id="file.types" type="String" cardinality="2147483647" name="File mime types" description="Enter the file mime types" default=""/>
+    <AD id="comparison.application.name" type="String" name="Comparison Details Application Name" description="Comparison Details Application Name" default=""/>
+    <AD id="facet.value.learnpage" type="String" name="Facet Value for Learn Page" description="Facet Value for Learn Page" default=""/>
+    <AD id="productfamily.activefacet.id" type="String" name="Product Family Active Facet ID" description="Active Facet ID for Product Family " default=""/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.endeca.services.impl.EndecaConfigImpl">
+    <Object ocdref="com.eaton.platform.integration.endeca.services.config.EndecaConfigImplConfiguration"/>
+  </Designate>
+</metatype:MetaData>

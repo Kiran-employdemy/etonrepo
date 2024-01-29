@@ -1,0 +1,25 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Product Detail Card </div>
+</sly>
+
+
+<sly data-sly-use.viewData="com.eaton.platform.core.models.ProductDetailsCardModel">
+
+  <div class="eaton-product-detail-card">
+
+
+    <!--/* M-35: Product Detail Card */-->
+    <sly data-sly-use.tpl="../../shared/templates/single-sku-module-product-detail-card.html">
+      <sly data-sly-call="${ tpl.module @ data=viewData.productDetailsCardBean }"></sly>
+    </sly>
+
+    <sly data-sly-include="../../shared/templates/free-sample-poup.html"></sly>
+
+    <!--/* M-48: Media Gallery */-->
+    <sly data-sly-use.tpl="../../shared/templates/single-sku-module-media-gallery-sku.html">
+      <sly data-sly-call="${ tpl.module @ data=viewData.productDetailsCardBean }"></sly>
+    </sly>
+
+  </div>
+
+</sly>

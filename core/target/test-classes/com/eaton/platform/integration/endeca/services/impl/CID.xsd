@@ -1,0 +1,45 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="ITM">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="ITM_ATRBT">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="CONTENT" maxOccurs="unbounded" minOccurs="0">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="IMG" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:anyURI">
+                                                        <xs:attribute type="xs:byte" name="priority" use="optional"/>
+                                                        <xs:attribute type="xs:string" name="SUBTYPE" use="optional"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="DOC" maxOccurs="unbounded" minOccurs="0">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:anyURI">
+                                                        <xs:attribute type="xs:string" name="id" use="optional"/>
+                                                        <xs:attribute type="xs:byte" name="Priority" use="optional"/>
+                                                        <xs:attribute type="xs:string" name="Type" use="optional"/>
+                                                        <xs:attribute type="xs:string" name="SUBTYPE"/>
+                                                        <xs:attribute type="xs:string" name="Language" use="optional"/>
+                                                        <xs:attribute type="xs:string" name="Country" use="optional"/>
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute type="xs:long" name="CID"/>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

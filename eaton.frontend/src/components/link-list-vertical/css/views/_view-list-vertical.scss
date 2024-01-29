@@ -1,0 +1,338 @@
+//-----------------------------------
+// Link List: Vertical View
+//-----------------------------------
+
+.link-list-vertical {
+
+  &__component {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    &.container {
+      margin-bottom: rem($spacing__sm * .735);
+      margin-top: rem($spacing__sm * 1.467); // Visually 60px spacing
+    }
+  }
+
+  &__eyebrow {
+    text-transform: uppercase;
+  }
+
+  &__alignment {
+
+    &--left {
+      align-items: flex-start;
+    }
+
+    &--center {
+      align-items: center;
+    }
+
+    &--right {
+      align-items: flex-end;
+    }
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  &__list-text {
+    display: inline;
+  }
+
+  &__list-link {
+    display: inline-block;
+    font-weight: bold;
+    padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
+
+    span {
+      &::after {
+        color: $color__white;
+        content: "\EA07";
+        display: none;
+        font-family: 'eaton-glyphicon';
+        font-size: 0.66667em;
+        padding-left: rem($spacing__sm / 6);
+        padding-right: 0;
+        position: relative;
+        text-decoration: none;
+        top: -0.5px;
+        vertical-align: middle;
+
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          font-size: rem($base__font-size * 1.2);
+        }
+      }
+    }
+
+    span.download {
+      display: table-row;
+      margin-right: rem($spacing__sm * .5);
+    }
+  }
+
+  &__list-icon {
+    font-size: rem($base__font-size * 2.8);
+    padding-left: rem($spacing__sm * .335);
+    padding-top: rem($spacing__sm * .168);
+  }
+
+  &__external-icon {
+    display: table-cell; // EATON-683
+    font-size: rem($base__font-size * 2.8);
+    margin-top: rem($spacing__sm * .267);
+
+    &::before {
+      margin-right: rem($spacing__sm * .5); // EATON-683
+    }
+
+    &.icon-link-external {
+      display: table-cell; // EATON-683
+      margin-top: 0;
+      position: relative;
+      top: 2px;
+    }
+  }
+
+  &__download-text {
+    font-size: rem($base__font-size * 1.8);
+    margin-left: rem($spacing__sm * 1.34);
+    margin-top: rem($spacing__sm * -0.333334); //-10px
+    width: 100%;
+
+    &--description {
+      @include font-family__secondary(--secondary-font);
+      color: $color__primary-gray3;
+    }
+
+    p {
+      margin: 0 0 rem($spacing__sm * .168);
+    }
+  }
+
+
+  // Override font-sizes for dark-theme & on header/footer
+  .eaton-footer &,
+  .eaton-header & {
+
+    &__component {
+      padding-bottom: 0;
+    }
+
+    .icon-chevron-right {
+      display: inline-block;
+    }
+
+    &__eyebrow {
+      @include eyebrow-small;
+    }
+
+    &__list-item {
+      @include body-copy-small;
+    }
+
+    &__list-link {
+      font-weight: normal;
+
+      // Caret Icon
+      span {
+
+        &::after {
+          display: inline;
+          white-space: nowrap;
+
+          @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            display: inline-block;
+            transform: rotate(0deg) !important; //stylelint-disable-line declaration-no-important
+          }
+        }
+
+        [dir='rtl'] & {
+
+          &::after {
+            content: '\EA06';
+            padding-left: 0;
+            padding-right: rem($spacing__sm / 6);
+          }
+        }
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none !important; // stylelint-disable-line declaration-no-important
+
+        bdi {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__list-icon {
+      font-size: rem($base__font-size * 1.4);
+    }
+
+    &__external-icon {
+      font-size: rem($base__font-size * 1.5);
+    }
+
+    &__download-text {
+      font-size: rem($base__font-size * 1.6);
+    }
+
+    &__eyebrow,
+    &__list-item a, // Override style added by the mixins
+    &__download-text {
+      color: $color__white;
+    }
+  }
+
+  // Over DARK-Background
+  //--------------
+  .dark-theme & {
+
+    &__component {
+      padding-bottom: 0;
+    }
+
+    &__eyebrow,
+    &__list-item a, // Override style added by the mixins
+    &__download-text {
+      color: $color__white;
+    }
+  }
+
+
+  //-----------------------------------
+  // Media Query: Mobile/Tablet
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__external-icon {
+      font-size: rem($base__font-size * 2);
+      margin-top: rem($spacing__sm * .1);
+    }
+
+    &__download-text {
+      margin-left: rem($spacing__sm);
+    }
+
+    &__eyebrow {
+      margin-bottom: rem($spacing__sm * .668);
+    }
+
+    .eaton-footer & {
+      &__heading {
+        font-size: rem($base__font-size * 1.6);
+        line-height: ($base__line-height * (3.2 / 1.4));
+        margin-bottom: rem($spacing__sm * .335);
+      }
+
+      &__list-item__content {
+        font-size: rem($base__font-size * 1.6);
+        line-height: ($base__line-height * (1.25 / 1.4));
+        margin-bottom: rem($spacing__sm * .335);
+      }
+    }
+
+    &__list-link {
+      span {
+        &::after {
+          font-size: 0.66667em;
+
+          @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            display: inline-block;
+            font-size: rem($base__font-size * 1.066);
+          }
+        }
+      }
+    }
+  }
+
+
+  //-----------------------------------
+  // Media Query: desktop and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    &__download-text {
+      width: auto;
+    }
+
+    .eaton-footer & {
+
+      &__heading {
+        font-size: rem($base__font-size * 2);
+        font-weight: bold;
+        line-height: ($base__line-height * (1.5 / 1.4));
+        margin-bottom: rem($spacing__sm / 2);
+      }
+
+      &__list-item__content {
+        font-size: rem($base__font-size * 1.8);
+        line-height: ($base__line-height * (1.222 / 1.4));
+      }
+    }
+
+  }
+}
+
+.eaton-header .link-list-vertical .icon.icon-chevron-right,
+.eaton-footer .link-list-vertical .icon.icon-chevron-right,
+.eaton-featured-topic .link-list-vertical .icon.icon-chevron-right,
+.eaton-featured-topic .link-list-vertical span::after,
+.eaton-grid-control .link-list-vertical span::after {
+  display: none;
+}
+
+
+
+//-----------------------------------
+// Overrides Mega Menu
+//-----------------------------------
+.mega-menu {
+
+  .link-list-vertical {
+
+    &__list-link {
+      padding: 0;
+    }
+
+    &__list-text {
+      display: inline-block;
+      padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
+
+      span {
+
+        &::after {
+          content: "\EA07";
+          color: $color__white;
+          display: inline;
+          font-family: 'eaton-glyphicon';
+          font-size: 0.66667em;
+          font-weight: normal;
+          padding-left: rem($spacing__sm / 6);
+          position: relative;
+          text-decoration: none;
+          top: -0.5px;
+          vertical-align: middle;
+          white-space: nowrap;
+
+          @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            display: inline-block;
+            font-size: rem($base__font-size * 1.066);
+          }
+        }
+
+        // GIT-Commit: be8909fc - NOTE: What is the purpose of having these styles ???
+        &:not(.eaton-featured-topic span.link-list-vertical__list-text::after) {
+          display: none;
+        }
+      }
+    }
+  }
+}

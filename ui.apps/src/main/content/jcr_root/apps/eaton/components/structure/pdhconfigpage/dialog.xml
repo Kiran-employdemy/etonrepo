@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    jcr:title="PDH Configuration"
+    height="{Long}650"
+    warnIfModified="{Boolean}false"
+    width="{Long}900"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Site_x0020_Configuration
+                jcr:primaryType="cq:Panel"
+                title="PDH Configuration"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <comboAttributes
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Combo Attribute"
+                        fieldDescription="The list of combination fields from PDH that AEM will split up into separate fields. This allows the author to select one of the two split fields, either 'Field 1' or 'Field 2'. This allows a single PDH taxonomy attribute to be treated as two seperate attributes in AEM."
+                        name="./comboAttributes"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <comboFieldName
+                                    jcr:primaryType="cq:Widget"
+                                    dName="comboFieldName"
+                                    fieldLabel="Combo Field Name"
+                                    xtype="textfield">
+                                </comboFieldName>
+                                <field1Name
+                                    jcr:primaryType="cq:Widget"
+                                    dName="field1Name"
+                                    fieldLabel="Field 1 Name"
+                                    xtype="textfield">
+                                </field1Name>
+                                <field1I18nKey
+                                    jcr:primaryType="cq:Widget"
+                                    dName="field1I18nKey"
+                                    fieldLabel="Field 1 I18n Key"
+                                    xtype="textfield">
+                                </field1I18nKey>
+                                <field2Name
+                                    jcr:primaryType="cq:Widget"
+                                    dName="field2Name"
+                                    fieldLabel="Field 2 Name"
+                                    xtype="textfield">
+                                </field2Name>
+                                <field2I18nKey
+                                    jcr:primaryType="cq:Widget"
+                                    dName="field2I18nKey"
+                                    fieldLabel="Field 2 I18n Key"
+                                    xtype="textfield">
+                                </field2I18nKey>
+                            </items>
+                        </fieldConfig>
+                    </comboAttributes>
+                </items>
+            </Site_x0020_Configuration>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,318 @@
+// NOTE: This does not seem to get included in the Sass compliation
+
+//-----------------------------------
+// Component M-40: Product Tabs Module
+//-----------------------------------
+
+@import "../../../global/css/_config/sass";
+
+@import "view-graphic-toggle";
+
+
+.product-tabs {
+
+  $light-theme__default-bg: var(--color__lunar-10);
+  $light-theme__active-bg: var(--color__lunar-10);
+
+  $dark-theme__default-bg: var(--grey-primary-brand-color);
+  $dark-theme__active-bg: var(--grey-secondary-brand-color);
+
+
+  &__main-links {
+
+    // Default Light Background Theme
+    background: $light-theme__default-bg;
+  }
+
+  &__col-1,
+  &__col-2,
+  &__col-3 {
+    display: flex;
+    align-items: center;
+  }
+
+  &__description {
+    padding: 15px 0 8px; // Equal top and bottom spacing.
+  }
+
+  &__page-title {
+    &,
+    &:active,
+    &:visited {
+      color: var(--link-brand-color);
+      font-weight: bold;
+    }
+
+    .icon {
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+  }
+
+  &__product-name {
+    padding-top: 6px;
+  }
+
+  &__tab-title {
+    color: var(--link-brand-color);
+    display: block;
+    height: 100%;
+    padding: 1.3rem 0;
+    text-align: center;
+    width: 33.3333%;
+
+    &:hover,
+    &.tab-active {
+      background-color: $light-theme__active-bg;
+    }
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:visited {
+      color: var(--link-brand-color);
+      text-decoration: none;
+    }
+  }
+
+  &__tab-icon,
+  &__tab-label {
+    display: block;
+  }
+
+  &__tab-icon {
+    color: var(--link-brand-color);
+    font-size: 2.4rem;
+  }
+
+  &__tab-label {
+    font-size: 1.2rem;
+    padding-top: 8px;
+  }
+
+  &__dropdown-wrapper {
+    flex: 1;
+    width: 100%;
+    position: relative;
+    text-align: center;
+  }
+
+
+  // How To Buy Button
+  //--------------
+  &__dropdown-btn {
+    background-color: var(--color__ivy-40);
+    border: 0;
+    color: var(--color__white);
+    display: inline-block;
+    @include font-family__secondary(--secondary-font);
+    font-size: 1.6rem;
+    height: 57px;
+    margin: 40px 0;
+    width: 100%;
+    position: relative;
+
+    // Caret Icon
+    .icon {
+      display: inline-block;
+      font-size: 1.4rem;
+      padding-left: 10px;
+      vertical-align: middle;
+    }
+  }
+
+  // List Wrapper | <ul>
+  //--------------
+  &__dropdown-content {
+    position: absolute;
+    background-color: var(--color__lunar-10);
+    list-style: none;
+    padding: $spacing__sm;
+    top: 77px;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 0;
+    width: 100%;
+    box-shadow: none;
+
+
+    // NOTE: Higher specificity used in order to override Bootstrap's styles.
+    //--------------
+    li {
+      padding: $spacing__sm 0 0 35px;
+      position: relative;
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      a {
+        color: var(--grey-secondary-brand-color);
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+        width: 100%;
+        white-space: normal; // FIX EATON-713 - How to Buy Dropdown on the Product Family and SKU Pages, the labels of the options in the dropdown should wrap when the text is longer than what can fit on single line
+
+        span {
+          font-size: 1.5rem;
+        }
+
+        .icon {
+          font-size: 2.5rem;
+          left: 0;
+          padding: 0 10px 0 0;
+          position: absolute;
+        }
+      }
+    }
+  }
+
+
+  //-----------------------------------
+  // Dark Theme - Overrides
+  //-----------------------------------
+  .dark-theme &__main-links {
+    background-color: $dark-theme__default-bg;
+  }
+
+  .dark-theme &__tab-title:hover,
+  .dark-theme &__tab-title.tab-active {
+    background-color: $dark-theme__active-bg;
+  }
+
+  .dark-theme &__page-title,
+  .dark-theme &__product-name,
+  .dark-theme &__tab-title,
+  .dark-theme &__tab-label,
+  .dark-theme &__tab-icon {
+    color: var(--color__white);
+  }
+
+
+  //-----------------------------------
+  // 0-991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    &__description {
+      padding: 10px 15px;
+    }
+
+    &__component .container {
+      padding: 0;
+      width: 100%;
+    }
+
+    &__col-2 {
+      border-top: 2px solid $light-theme__active-bg;
+    }
+
+    &__col-3 {
+      background-color: var(--color__white);
+      padding: 0 15px;
+    }
+
+
+    &__dropdown-btn {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    &__utility-links .row {
+      margin: 0;
+    }
+
+    // Dark Theme overrides
+    //--------------
+    .dark-theme &__col-2 {
+      border-top: 2px solid var(--grey-secondary-brand-color);
+    }
+
+
+    //-----------------------------------
+    // Sticky Behavior
+    //-----------------------------------
+    &--fixed &__col-2 {
+      background: $light-theme__default-bg;
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 99;
+    }
+
+    &--fixed &__col-3 {
+      margin-top: 78px; // Add spacing equals to the height of the ".product-tabs__col_1"
+    }
+
+    &--fixed .dark-theme &__col-2 {
+      background: $dark-theme__default-bg;
+    }
+
+  }
+
+
+
+
+  //-----------------------------------
+  // > 992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    &__main-links .container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    &__col-1 {
+      padding-right: 15px;
+      width: 33.3333%; // 3 Columns - Bootstrap grid
+    }
+
+    &__col-2 {
+      padding: 0;
+      width: 41.6667%; // 5 Columns - Bootstrap grid
+    }
+
+    &__col-3 {
+      padding-left: 15px;
+      width: 25%; // 4 Columns - Bootstrap grid
+    }
+
+    &__page-title {
+      .icon {
+        font-size: 1.4rem;
+        font-weight: bold;
+      }
+    }
+
+    &__tab-title {
+      padding: 4rem 0;
+    }
+
+    &__tab-label {
+      font-size: 1.4rem;
+    }
+
+    &__tab-icon {
+      font-size: 4rem;
+    }
+
+    &__dropdown-btn {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    &__dropdown-content {
+      top: 98px;
+    }
+
+    &__utility-links {
+      padding-bottom: 15px;
+    }
+  }
+}
+

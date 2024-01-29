@@ -1,0 +1,52 @@
+/** NOTE: !important is used to override beacon CSS without going overboard on class specificity */
+.interactive-room-component {
+  position: relative;
+  z-index: 1;
+
+  .immersive-rooms-body {
+    height: 0;
+    overflow-y: hidden;
+    padding-top: 56.5%;
+    width: auto;
+  }
+
+  .overlay {
+    /* stylelint-disable declaration-no-important */
+    &--image,
+    &--message-container,
+    &--message-border {
+      position: absolute !important;
+    }
+    /* stylelint-enable */
+  }
+
+  .video-navigation-arrows {
+    /* stylelint-disable declaration-no-important */
+    .next-arrow,
+    .prev-arrow {
+      top: 50% !important;
+      transform: translateY(-50%) !important;
+    }
+
+    .next-arrow {
+      right: 10px !important;
+    }
+
+    .prev-arrow {
+      left: 10px !important;
+    }
+    /* stylelint-enable */
+  }
+
+  .video-wrapper {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: -320px;
+    transform: none;
+  }
+
+  .thermometer-scale {
+    vertical-align: top;
+  }
+}

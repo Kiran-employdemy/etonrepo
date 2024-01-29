@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.secure.TrackDownloadServlet" immediate="true">
+  <property name="sling.servlet.extensions" type="String" value="sling.servlet.extensions=json"/>
+  <property name="sling.servlet.paths" type="String" value="/eaton/secure/track-download"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <property name="sling.servlet.selectors" type="String" value="{nocache}"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="authorizationService" interface="com.eaton.platform.integration.auth.services.AuthorizationService" field="authorizationService"/>
+  <reference name="profileService" interface="com.eaton.platform.integration.auth.services.UserProfileService" field="profileService"/>
+  <implementation class="com.eaton.platform.core.servlets.secure.TrackDownloadServlet"/>
+</scr:component>

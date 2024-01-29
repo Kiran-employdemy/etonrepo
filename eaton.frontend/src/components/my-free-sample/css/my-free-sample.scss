@@ -1,0 +1,136 @@
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+/* order details */
+.free-sample {
+  float: left;
+  width: 100%;
+  border: 1px solid #ccd2d7;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 50px 0;
+
+  h4 {
+    background: #f8f8f8;
+    padding: 10px;
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+}
+
+.sample-table {
+  th {
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 32px;
+    color: $color__primary-blue;
+    text-align: center;
+    padding: 10px;
+
+    &:first-child {
+      text-align: left;
+    }
+  }
+
+  tr {
+    td {
+      &:first-child {
+        text-align: left;
+      }
+
+      &:nth-child(2) {
+        color: $color__primary-blue;
+      }
+    }
+  }
+
+  td {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .error-msg {
+    text-align: center;
+    padding-top: 28px;
+  }
+
+}
+
+.order-details {
+  float: left;
+  width: 100%;
+  margin-top: 50px;
+
+  h3 {
+    font-size: 20px;
+    color: $color__primary-blue;
+    line-height: 32px;
+  }
+}
+
+.order-more-details {
+  float: left;
+  width: 90%;
+  margin: 50px 5%;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: flex;
+      margin: 10px 0;
+      width: 50%;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+  }
+
+  li {
+    &:first-child {
+      span {
+        font-size: 18px;
+        font-weight: 700;
+        color: $color__primary-blue;
+      }
+
+      &:last-child {
+        font-size: 14px;
+        color: #000;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.oorder-more-details {
+  h2 {
+    font-size: 28px;
+    font-weight: 500;
+    color: #0F172A;
+  }
+}
+
+.details-table {
+  border: 1px solid #dee4e9;
+  margin: 50px 0;
+
+  th {
+    background: #F8F8F8;
+    font-size: 18px;
+    color: $color__primary-blue;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+
+  td {
+    text-align: center;
+  }
+
+}
+

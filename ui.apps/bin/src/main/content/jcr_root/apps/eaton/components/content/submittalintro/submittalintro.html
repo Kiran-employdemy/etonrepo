@@ -1,0 +1,23 @@
+<sly data-sly-use.intro="com.eaton.platform.core.models.submittalbuilder.SubmittalIntro">
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Submittal Intro</div>
+</sly>
+
+<div class="submittal-builder__intro"
+     data-title="${intro.title}"
+     data-description='${intro.description @context="attribute"}'
+     data-instructions-title="${intro.instructionsTitle}"
+     data-instructions='${intro.instructions @context="attribute"}'
+     data-filters-button-text="${intro.filtersButtonText}"
+     data-package-button-text="${intro.packageButtonText}"
+     data-download-button-text="${intro.downloadButtonText}"
+     data-finish-edits-button-text="${intro.finishEditsButtonText}"
+     data-view-submittal-builder-button-text="${intro.viewSubmittalBuilderButtonText}"
+     data-edit-submittal-builder-button-text="${intro.editSubmittalBuilderButtonText}"
+     data-clear-all-filters-text="${'SubmittalBuilder.ClearAllFilters' @ i18n}"
+     data-of-text="${'of' @ i18n}"
+     data-all-results-text="${'All Results' @ i18n}"
+     data-submittal-builder-help-link-text="${intro.submittalBuilderHelpLinkText}"
+     data-submittal-builder-help-link="${intro.submittalBuilderHelpLink}"></div>
+</sly>

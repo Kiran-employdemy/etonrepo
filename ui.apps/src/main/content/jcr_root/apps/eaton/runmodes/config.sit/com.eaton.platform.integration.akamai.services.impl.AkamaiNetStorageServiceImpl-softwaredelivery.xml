@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          id="software-delivery"
+          domain="https://nseatonqa-nsu.akamaihd.net"
+          account="softwares-qa"
+          accessKey="{String}{4394f276fa9f9ed77fbd6e2bed576f159f52d550a21f35a87c5b088e2ef2f80cd3db2a7090d43ed7d2d7f20730fdf22299b3245abdbb3c37baa6bd716596603c}"
+          version="1"
+          signVersion="5"
+          cpCode="712280"
+          isShortLiveUrl="{Boolean}true"
+          storageGroup="eatonqa"
+          downloadDomain="https://software-qa.eaton.com"
+          shortLiveTokenTTL="{Long}300"
+          shortLiveTokenEncryptionKey="{String}{3311f270fefa302aacbca4d96f020cf6b1cc004a2743bc2fed6704d491b8a5cb714ae9754eefd4dba1a6205fc55b35428c45bb7265ddfa1110864bd541913384b3d0e8aa68052b461d9cd0d3d7e19e46e493f8dd9452ab349d872e933a8dc498}"
+/>

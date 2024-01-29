@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          externalizer.domains="[local\ http://localhost:4502,author\ http://localhost:4503,publish\ http://www-local.eaton.com,eaton\ http://www-local.eaton.com,eaton-cummins\ https://ecjv-dev.tcc.etn.com,phoenixtec\ https://phoenixtecpower-dev.tcc.etn.com,greenswitching\ http://www-local.eaton.com,login\ https://login-dev.tcc.etn.com,eaton-meta-cn\ https://www.eaton.com.cn,switchon\ https://switchon.eaton.com]"
+        externalizer.contextpath=""
+        externalizer.host=""
+        externalizer.encodedpath='{Boolean}false'/>

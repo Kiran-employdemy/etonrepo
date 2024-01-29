@@ -1,0 +1,40 @@
+//-----------------------------------
+// Component Overrides Specific to: Mega Menu
+//-----------------------------------
+
+.mega-menu {
+  .b-body-copy-small {
+    font-size: rem($base__font-size * 1.6);
+  }
+
+  .link-list-vertical {
+    &__external-icon {
+      padding-right: 0.4rem;
+      font-size: 1.2rem;
+    }
+  }
+
+  //-----------------------------------
+  // Media Query: Mobile/Tablet
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    .link-list-vertical {
+      &__eyebrow {
+        margin-bottom: ($spacing__sm / 2);
+      }
+    }
+  }
+
+  //-----------------------------
+  // 991 Breakpoint
+  //-----------------------------
+  @include media-mobile-tablet-and-down {
+    .link-list-vertical {
+      &__eyebrow {
+        margin-bottom: ($spacing__sm / 2);
+      }
+    }
+  }
+
+}
+

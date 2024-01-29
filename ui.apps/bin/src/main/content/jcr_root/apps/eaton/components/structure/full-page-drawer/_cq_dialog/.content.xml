@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Full Page Drawer(User info)"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                margin="{Boolean}false"
+                type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <linkList
+                                    granite:class="full-width"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                    composite="{Boolean}true"
+                                    fieldLabel="Link List (Unauthenticated experience)">
+                                <field
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        name="./linkList">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                class="multifield-border">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <icons
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldLabel="Icons *"
+                                                        name="./icons"
+                                                        required="true">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <signIn
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Sign In"
+                                                                value="icon icon-user"/>
+                                                    </items>
+                                                </icons>
+                                                <linkPath
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                                        fieldLabel="Link Path"
+                                                        name="./linkPath"/>
+                                                <transLinkTitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldLabel="Link Title"
+                                                        name="./transLinkTitle"/>
+                                                <newWindow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        name="./newWindow"
+                                                        text="Open in New Window"
+                                                        value="true"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </linkList>
+                            <secureList
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+
+									<linkPath
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                            fieldLabel="User Profile Link"
+                                            name="./userProfilelink"/>
+                                </items>
+                            </secureList>
+                            <enableShoppingCart
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                    text="Enable eCommerce Shopping Cart"
+                                    value="true"
+                                    uncheckedValue="false"
+                                    fieldDescription="Check to enable eCommerce Shopping Cart on Eaton's Header"
+                                    name="./enableShoppingCart"/>
+                        </items>
+                    </column>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

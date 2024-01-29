@@ -1,0 +1,24 @@
+<template data-sly-template.module="${ @ data }">
+<sly data-sly-use.dataModel="com.eaton.platform.core.models.DataLayerModel">
+  <!--/*
+    NOTE: data-i18n is a JSON object that contains a list i18n strings used in this Component
+    - These strings are used by Javascript Templates
+  */-->
+  <div class="col-xs-12 col-md-6 module-product-detail-card--image-container">
+          <sly data-sly-test="${data.status == 'Discontinued' || data.status == 'Inactive'}">
+            <div class="visible-sm visible-xs module-product-detail-card__badge-discontinued">${'Discontinued' @i18n}</div>
+          </sly>
+          <!-- Start: Rendition Image Component -->
+          <div class="Sirv skuSpinnerImage" data-src="${data.sirvImage}"></div>
+         <div class="rendition">
+        <img class="rendition__image img-responsive staticSkuImage" data-src="${data.imageDesktop}" data-desktop-rendition="${data.imageDesktop}" data-mobile-rendition="${data.imageDesktop}" data-tablet-rendition="${data.imageDesktop}" alt="${[dataModel.datalayerbean.productSku,dataModel.datalayerbean.productFamily] @ join = ' - '}"/>
+         </div>
+        <sly data-sly-test="${data.primaryImageIsRepresentative}">
+          <p>${ 'Photo is representative' @ i18n }</p>
+        </sly>
+          <!-- End: Rendition Image Component -->
+
+        </div>
+  
+</sly>  
+</template>

@@ -1,0 +1,65 @@
+/*-----------------------------------
+* Component 1.1: Interactive Media Component
+* Hotspot styling. Overrided from /libs/dam/components/scene7/interactivemedia
+*-----------------------------------*/
+
+/* Import All SASS config files (Variables, Mixins, Functions, etc...) */
+@import "../../../global/css/_config/sass";
+
+
+/* stylelint-disable selector-class-pattern */
+.ui-widget.quickview_dialog.ui-widget-content {
+  background: var(--color__white);
+  border-radius: 0;
+  padding: 0;
+  box-shadow: 0 0 5px var(--color__black-transparent-50);
+  border: 0 solid transparent;
+
+  .ui-dialog-titlebar.ui-widget-header {
+    background: var(--primary-brand-color);
+    border-radius: 0;
+    color: var(--color__white);
+
+    .ui-button.ui-dialog-titlebar-close {
+      background: transparent;
+      border: 0 solid transparent;
+
+      .ui-button-icon.ui-icon.ui-icon-closethick {
+        background-image: url("/content/dam/eaton/resources/icons/close-icon-ffffff.png");
+        width: 3.5rem;
+        height: 3.5rem;
+        display: block;
+        top: 0;
+        position: absolute;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        z-index: 99;
+        left: -0.5rem;
+
+        &:hover {
+          background-color: var(--color__black-transparent-10);
+        }
+      }
+    }
+
+  }
+
+  .ui-dialog-content {
+    padding: 1.5rem;
+  }
+
+  @include media-mobile-only {
+    width: 90%;
+    max-width: 90%;
+  }
+
+  iframe {
+    @include media-mobile-only {
+      width: 100%;
+    }
+  }
+
+}
+
+/* stylelint-enable selector-class-pattern */

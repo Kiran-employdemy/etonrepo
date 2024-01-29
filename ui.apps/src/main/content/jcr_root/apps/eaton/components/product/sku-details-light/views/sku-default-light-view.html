@@ -1,0 +1,146 @@
+<sly data-sly-use.skuModel="com.eaton.platform.core.models.products.lightsku.LightSkuModel">
+    <div class="eaton-product-tabs global-sku-product-tab" data-sly-test="${skuModel.skuDetails.skuId}">
+        <div class="">
+            <div class="container container-tabs sticky-tabs">
+                <div class="row eaton-product-tabs__buttons">
+
+                    <div class="col-md-4">
+                        <div class="eaton-product-tabs__description">
+                            <a data-sly-test="${ skuModel.skuDetails.productFamilyPIMDetails.productFamilyAEMPath }" href="${ skuModel.skuDetails.productFamilyPIMDetails.productFamilyAEMPath }.${ skuModel.skuDetails.productFamilyPIMDetails.middleTabTitle.toLowerCase}${skuModel.skuDetails.productFamilyPIMDetails.middleTabTitle ? '.html' : 'html'}" class="b-eyebrow-small b-eyebrow-small-link"
+                                aria-label=" ${skuModel.skuDetails.skuTitle} "><i class="icon icon-chevron-left"
+                                    aria-hidden="true"></i><bdi> ${skuModel.skuDetails.skuTitle}</bdi>
+                            </a>
+                            <span  data-sly-test="${ !skuModel.skuDetails.productFamilyPIMDetails.productFamilyAEMPath }" class="b-eyebrow-small" aria-label="Go to ${skuModel.skuDetails.skuTitle}">
+                                ${skuModel.skuDetails.skuTitle} 
+                            </span>
+                            <div class="b-heading-h5">
+                                ${skuModel.skuDetails.skuId}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 eaton-product-tabs__buttons__center">
+                        <div class="row">
+                            <!-- graphicToggle without <a> -->
+                            <label for="tab-0" class="tab-label tab-active" id="sku-details-tab-0">
+                                <a href="#${'Overview' @i18n}" aria-label="Go to ${'Overview' @i18n}">
+                                    <i class="icon icon-doc-text" aria-hidden="true"></i>
+                                    <span>${'Overview' @i18n}</span>
+                                </a>
+                            </label>
+                            <label for="tab-1" class="tab-label" id="sku-details-tab-1">
+                                <a href="#${'Specifications' @i18n}" aria-label="Go to ${'Specifications' @i18n}">
+                                    <i class="icon icon-doc-text" aria-hidden="true"></i>
+                                    <span>${'Specifications' @i18n}</span>
+                                </a>
+                            </label>                           
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-md-3 u-text-center eaton-product-tabs__dropdown-container" 
+                         data-sly-test="${skuModel.skuDetails.productFamilyPIMDetails.HowToBuyList.size && skuModel.skuDetails.productFamilyPIMDetails.HowToBuyList.size > 0}">
+
+                        <div class="dropdown">
+                            <sly
+                                data-sly-test.suffix="${skuModel.externalMappedCurrentPagePath @context='uri',addSelectors=['SKUID',request.requestPathInfo.selectors[0]]}">
+                            </sly>
+                            <sly data-sly-test="${ skuModel.skuDetails.productFamilyPIMDetails.HowToBuyList }">
+                                <button id="dHowtoBuy" class="eaton-product-tabs__dropdown button--reset" type="button"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    ${'HowtoBuy' @i18n}
+                                    <i class="icon icon-chevron-down" aria-hidden="true"></i>
+                                </button>
+
+                                <ul data-sly-list="${ skuModel.skuDetails.productFamilyPIMDetails.HowToBuyList }"
+                                    class="dropdown-menu eaton-product-tabs__dropdown__content" id="dHowtoBuyList"
+                                    aria-labelledby="dHowtoBuy">
+                                    <li>
+                                        <a data-sly-test="${!item.isModalEnabled}" href="${item.link @context='html'}"
+                                            target="${item.openInNewWindow}" aria-label="Go to ${item.title}"
+                                            data-page-path-tracking="${item.isSuffixEnabled ? 'true' : 'false'}"
+                                            data-source-tracking="${item.isSourceTrackingEnabled ? 'true' : 'false'}">
+                                            <i class="icon icon-${item.dropdownIcon}"
+                                                aria-hidden="true"></i><span>${item.title}</span>
+                                        </a>
+
+                                        <a data-sly-test="${item.isModalEnabled}" class="buy-now__modal__trigger"
+                                            id="buyNowTrigger" data-toggle="modal" data-target="#buyNowModal"
+                                            aria-label="Go to ${item.title}">
+                                            <i class="icon icon-${item.dropdownIcon}"
+                                                aria-hidden="true"></i><span>${item.title}</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </sly>
+                            <sly data-sly-test="${ !skuModel.skuDetails.productFamilyPIMDetails.HowToBuyList }">
+                                <a data-sly-test="${!item.isSuffixEnabled}"
+                                    href="${skuModel.skuDetails.productFamilyPIMDetails.howToBuyLink @context='html'}"
+                                    target="${skuModel.skuDetails.productFamilyPIMDetails.howToBuytarget}"
+                                    aria-label="Go to ${skuModel.skuDetails.productFamilyPIMDetails.howToBuyLabel}">
+                                    <button id="dHowtoBuy" class="eaton-product-tabs__dropdown button--reset"
+                                        type="button">
+                                        ${skuModel.skuDetails.productFamilyPIMDetails.howToBuyLabel}
+                                    </button>
+                                </a>
+                                <a data-sly-test="${item.isSuffixEnabled && request.requestPathInfo.selectors[0]}"
+                                    href="${skuModel.skuDetails.productFamilyPIMDetails.howToBuyLink @appendSuffix=suffix,context='uri'}"
+                                    target="${skuModel.skuDetails.productFamilyPIMDetails.howToBuytarget}"
+                                    aria-label="Go to ${skuModel.skuDetails.productFamilyPIMDetails.howToBuyLabel}">
+                                    <button id="dHowtoBuy" class="eaton-product-tabs__dropdown button--reset"
+                                        type="button">
+                                        ${skuModel.skuDetails.productFamilyPIMDetails.howToBuyLabel}
+                                    </button>
+                                </a>
+                                <a data-sly-test="${item.isSuffixEnabled && !request.requestPathInfo.selectors[0]}"
+                                    href="${skuModel.skuDetails.productFamilyPIMDetails.howToBuyLink @appendSuffix=skuModel.externalMappedCurrentPagePath,context='uri'}"
+                                    target="${skuModel.skuDetails.productFamilyPIMDetails.howToBuytarget}"
+                                    aria-label="Go to ${skuModel.skuDetails.productFamilyPIMDetails.howToBuyLabel}">
+                                    <button id="dHowtoBuy" class="eaton-product-tabs__dropdown button--reset"
+                                        type="button">
+                                        ${skuModel.skuDetails.productFamilyPIMDetails.howToBuyLabel}
+                                    </button>
+                                </a>
+                            </sly>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---Product detail container Start-->
+
+        <div id="${'Overview' @i18n}" class="sku-details-block sku-details-overview" data-sly-use.tpl="../../shared/templates/sku-basic-details.html">
+            <sly data-sly-call="${tpl.data @ data=skuModel}"></sly>
+        </div>
+        <!---Product detail container END-->
+
+        <!---Product specification container Start-->
+
+        <div id="${'Specifications' @i18n}" class="sku-details-block sku-details-specifications"
+            data-sly-resource="${ 'specfications' @ resourceType='/apps/eaton/components/product/product-specifications' }">
+        </div>
+        <!---Product specification container END-->
+
+        <!---Product How to buy container Start-->
+        <div  data-sly-test="${ !properties.hideHTBRibbon }" data-sly-use.HTBRibbon="../../shared/templates/how-to-buy-ribbon.html" class="how-to-buy-ribbon">
+            <div data-sly-call="${HTBRibbon.howTobuyRibbon}"></div>
+        </div>
+        <!---Product How to buy container Start-->
+
+    </div>
+
+    <div data-sly-test="${!skuModel.skuDetails.skuId}" class="light-sku-default-view-container__invalid-msg-block">
+        <div class="container ">
+            <div class="row gap-3">
+                <div class="col-sm-12 col-md-12">
+                    <h2>${properties.errorMessage @context='html'}</h2>                   
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>

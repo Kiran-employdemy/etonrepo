@@ -1,0 +1,244 @@
+//-----------------------------------
+// Backshell Component
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, etc...)
+@import "../../../global/css/_config/sass";
+
+.backshell-config {
+  .box {
+    padding: 40px 40px 20px;
+    margin: 0 0 20px;
+    border: 1px solid var(--color__ink-30);
+  }
+
+  .l-column {
+    @media (min-width: $grid__lg) {
+      padding: 0 50px 0 0;
+    }
+  }
+
+  .r-column {
+    @media (min-width: $grid__lg) {
+      padding: 0 0 0 50px;
+    }
+  }
+
+  .form-item {
+    font-family: var(--secondary-font);
+    font-style: normal;
+
+    &__b-margin {
+      margin-bottom: 20px;
+    }
+
+    &__hide {
+      display: none;
+    }
+
+    .form-item-label {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--color__ink-95);
+    }
+
+    .option {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .description-note {
+      color: var(--color__ink-95);
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+    }
+  }
+
+  .b-two-cols {
+    margin: 50px 0;
+  }
+
+  .mt {
+    margin-top: 60px;
+  }
+
+  .part-number-meta {
+    background-color: var(--color__lunar-10);
+    padding-bottom: 20px;
+    color: var(--color__ink-95);
+    font-size: 14px;
+
+    .meta-content {
+      padding-top: 20px;
+
+      @include media-mobile-only {
+        .right-meta-data {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .two-indent {
+      padding-left: 14px;
+    }
+
+    .three-indent {
+      padding-left: 26px;
+    }
+  }
+
+  .bs-tolerance {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--color__ink-95);
+  }
+
+  .notes-section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    background-color: var(--color__white);
+    color: var(--color__ink-95);
+    font-size: 14px;
+  }
+
+  .error-note {
+    margin-top: 40px;
+    background-color: var(--color__white);
+    color: var(--color__ruby-40);
+    font-size: 14px;
+  }
+
+  .contact-info {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color__white);
+  }
+
+  .warning-msg {
+    font-size: 14px;
+    margin-top: 30px;
+    text-align: center;
+    color: var(--color__ruby-40);
+  }
+
+  .part-image-drawing {
+    img {
+      max-width: 100%;
+      display: block;
+      margin: auto auto;
+      padding: 45px 0 45px 0;
+    }
+  }
+
+  .nice-select {
+    float: inherit;
+
+    .current {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .option {
+      white-space: initial;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .list {
+      max-height: 160px;
+      overflow-y: scroll;
+    }
+  }
+
+  .backshell-contact-btn {
+    margin-top: 50px;
+  }
+
+  .u-error {
+    .error-banner-backshell {
+      margin: 0 0 0 10px;
+    }
+  }
+
+  .backshell-product-card {
+    margin-top: 70px;
+
+    .bs-main-card {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      border: 0.5px solid var(--color__black);
+
+      .bs-product-image {
+        padding-left: 40px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+        //margin: auto auto;
+        height: 140px;
+        width: 150px;
+      }
+
+      .bs-product-detail {
+        padding-top: 45px;
+      }
+
+      .bs-title {
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 32px;
+        color: var(--primary-brand-color);
+      }
+
+      .bs-sub {
+        color: var(--color__black-transparent-50);
+        font-weight: 400;
+        font-size: 20px;
+      }
+
+      .bs-product-number {
+        color: var(--color__black-transparent-50);
+        font-weight: 400;
+        font-size: 20px;
+        padding-top: 37px;
+      }
+
+      @include media-mobile-only {
+        .bs-product-image {
+          order: 1;
+          width: 100%;
+        }
+
+        .bs-product-number {
+          order: 2;
+          padding-top: 0;
+          margin-left: auto;
+        }
+
+        .bs-product-detail {
+          order: 3;
+          padding: 0 20px 23px 20px;
+        }
+
+        .bs-sub {
+          padding-top: 3px;
+          padding-right: 20px;
+        }
+      }
+    }
+  }
+}

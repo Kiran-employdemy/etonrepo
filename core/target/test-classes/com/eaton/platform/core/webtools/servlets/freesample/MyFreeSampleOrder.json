@@ -1,0 +1,42 @@
+{
+    "orders": [
+        {
+            "orderId": "o154030145",
+            "erpOrderId": "SO1625",
+            "orderStatus": "COMPLETED",
+            "orderNotes": "Order shipped!",
+            "userName": "kurtis@beh.com",
+            "firstName": "Test",
+            "lastName": "QATest",
+            "orderTotal": "0.0",
+            "orderSubTotal": "0.0",
+            "currencyCode": "USD",
+            "orderSubmittedDate": "2023-02-07 14:16:01.268",
+            "orderLastModifiedDate": "2023-03-23 10:51:11.977",
+            "checkoutUrl": "https%3A%2F%2Fsouriau.test.supplier-direct.com%2FDefault.aspx%3FtabID%3D1000%26CartID%3D55766ac5-9e5e-4957-8b42-97bae86c5807",
+            "orderLineItems": [
+                {
+                    "lineItemId": "0",
+                    "erpSystem": "MFGSOR",
+                    "unitPrice": "0.0",
+                    "quantity": "1",
+                    "productId": "UTGX014D7P",
+                    "productIdQualifier": "CAT"
+                }
+            ],
+            "shippingAddress": {
+                "firstName": "Kurtis",
+                "lastName": "Kuntz",
+                "contactPhoneNumber": "2166505692",
+                "addressLine1": "3159 Wendover Dr",
+                "addressLine2": "Apt# 123",
+                "city": "Toledo",
+                "state": "OH",
+                "postalCode": "43606",
+                "country": "US"
+            },
+            "shippingFlag": true
+        }
+    ],
+    "totalResults": 1
+}

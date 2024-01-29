@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.akamai.config.AkamaiConfig">
+  <OCD id="com.eaton.platform.integration.akamai.config.AkamaiConfig" name="Eaton Akamai Service" description="">
+    <AD id="base.url" type="String" name="Base URL to send to Akamai" default="https://www.eaton.com"/>
+    <AD id="akamai.host" type="String" name="Akamai Host Url" default="akab-z2mvxb46gck35oic-rqldw3ivl32ff4jk.purge.akamaiapis.net"/>
+    <AD id="access.token" type="String" name="Akamai Access Token" default="akab-6xyajldthlukfru7-nqnpornelvonijew"/>
+    <AD id="client.token" type="String" name="Akamai Client Token" default="akab-ue3z7mcjpxh2xfq6-ollme4xqg3vq3433"/>
+    <AD id="client.secret" type="String" name="Akamai Client Secret" default="3WNnFNcXToxEDAfrq14cLBH7RqjEvvSZGGuPN0NTLGw="/>
+    <AD id="transport.delay" type="Integer" name="Akamai Transport Handler Delay (Seconds)" description="This is a delay in seconds after the request is received before the request is sent to Akamai in order to ensure it happens AFTER dispatcher and varnish requests." default="2"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.akamai.services.AkamaiTransportHandler">
+    <Object ocdref="com.eaton.platform.integration.akamai.config.AkamaiConfig"/>
+  </Designate>
+  <Designate pid="com.eaton.platform.integration.akamai.services.impl.AkamaiClearImpl">
+    <Object ocdref="com.eaton.platform.integration.akamai.config.AkamaiConfig"/>
+  </Designate>
+</metatype:MetaData>

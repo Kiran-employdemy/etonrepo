@@ -1,0 +1,89 @@
+//-----------------------------------
+// Component : Sitemap
+//-----------------------------------
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+.eaton-sitemap {
+  padding: rem($spacing__sm) 0;
+
+  a,
+  a:hover,
+  a:focus,
+  a:active {
+    color: $color__primary-blue;
+  }
+
+  &__levelone {
+    @include font-family__primary(--sitemap-font);
+    font-size: rem($base__font-size * 5);
+    margin-bottom: rem($spacing__sm);
+  }
+
+  &__leveltow {
+    @include font-family__primary(--sitemap-font);
+    display: block;
+    font-size: rem($base__font-size * 3.2);
+    margin-bottom: rem($spacing__sm * .5);
+  }
+
+  .separator {
+    background: #dcdcdc;
+    height: 1px;
+    margin-bottom: rem($spacing__sm * .83333);
+    width: 100%;
+  }
+
+  &__levelthree {
+    display: block;
+    font-size: rem($base__font-size * 1.9);
+    margin-bottom: rem($spacing__sm * .83333);
+  }
+
+  &__levelfour {
+    @include font-family__secondary(--secondary-font);
+    display: block;
+    font-size: rem($base__font-size * 1.4);
+    font-weight: bold;
+    margin-bottom: rem($spacing__sm * .66666);
+    width: 100%;
+  }
+
+  &__levelfive,
+  &__levelsix {
+    @include font-family__secondary(--secondary-font);
+    display: block;
+    font-size: rem($base__font-size * 1.4);
+    margin-bottom: rem($spacing__sm * .5);
+  }
+
+  .last-wrapper {
+    padding-left: rem($spacing__sm * .66666);
+  }
+
+  @include media-desktop-and-up {
+    &__levelone {
+      font-size: rem($base__font-size * 6.4);
+      margin-bottom: rem($spacing__md * .83333);
+    }
+
+    &__leveltow {
+      font-size: rem($base__font-size * 4);
+      margin-bottom: rem($spacing__sm * .83333);
+    }
+
+    &__levelthree {
+      font-size: rem($base__font-size * 2.6);
+      margin-bottom: rem($spacing__sm);
+    }
+
+    &__levelfour {
+      font-size: rem($base__font-size * 1.8);
+    }
+
+    &__levelfive {
+      font-size: rem($base__font-size * 1.8);
+    }
+  }
+}

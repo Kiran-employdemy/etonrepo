@@ -1,0 +1,376 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "jcr:mixinTypes": [
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:versionHistory": "a1004d3c-8872-44cc-a4d9-296b2ab95823",
+  "jcr:predecessors": [
+    "660acc2e-691b-4097-9fda-d736fb891a8f"
+  ],
+  "jcr:created": "Wed Mar 01 2023 08:22:10 GMT-0500",
+  "jcr:baseVersion": "660acc2e-691b-4097-9fda-d736fb891a8f",
+  "jcr:isCheckedOut": true,
+  "jcr:uuid": "ae6c79d0-f53b-4f50-a795-3e89a9af40ab",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "dam:lastS7SyncStatus": "success",
+    "dam:lastS7Synced": "Mon Oct 25 2021 04:15:31 GMT-0400",
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "workflow-process-service",
+    "jcr:lastModifiedBy": "admin",
+    "status": "Finished",
+    "ips-job-handle": [
+      "j|233796||CQ5_batch_upload_Eaton-Smart-Crops_1635149731619|419245751"
+    ],
+    "cq:lastReplicated": "Wed Mar 01 2023 10:05:01 GMT-0500",
+    "dam:imageServerAsset": true,
+    "dam:s7damType": "Image",
+    "dam:assetState": "processed",
+    "cq:name": "black.jpg",
+    "jcr:lastModified": "Wed Mar 01 2023 09:11:54 GMT-0500",
+    "cq:parentPath": "/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution",
+    "dam:relativePath": "eaton/products/backup-power-ups-surge-it-power-distribution/black.jpg",
+    "renditions": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Wed Mar 01 2023 08:22:10 GMT-0500",
+      "cq5dam.thumbnail.48.48.png": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Mar 01 2023 08:22:10 GMT-0500",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Wed Mar 01 2023 09:11:54 GMT-0500",
+          ":jcr:data": 5103
+        }
+      },
+      "cq5dam.thumbnail.140.100.png": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Mar 01 2023 08:22:10 GMT-0500",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Wed Mar 01 2023 09:11:54 GMT-0500",
+          ":jcr:data": 18145
+        }
+      },
+      "cq5dam.web.1280.1280.jpeg": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Mar 01 2023 08:22:10 GMT-0500",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/jpeg",
+          "jcr:lastModified": "Wed Mar 01 2023 09:11:54 GMT-0500",
+          ":jcr:data": 49265
+        }
+      },
+      "original": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Mar 01 2023 08:22:10 GMT-0500",
+        "jcr:content": {
+          "jcr:primaryType": "nt:resource",
+          "jcr:mixinTypes": [
+            "dam:Thumbnails"
+          ],
+          "jcr:lastModifiedBy": "admin",
+          "jcr:mimeType": "image/jpeg",
+          "jcr:lastModified": "Wed Mar 01 2023 08:22:33 GMT-0500",
+          ":jcr:data": 113982,
+          "jcr:uuid": "7934758e-adac-49c6-a23c-810b71a7b4e4",
+          "dam:thumbnails": {
+            "jcr:primaryType": "nt:folder",
+            "jcr:createdBy": "admin",
+            "jcr:created": "Wed Mar 01 2023 08:22:10 GMT-0500",
+            "dam:thumbnail_48.png": {
+              "jcr:primaryType": "nt:file",
+              "jcr:createdBy": "admin",
+              "jcr:created": "Wed Mar 01 2023 08:22:10 GMT-0500",
+              "jcr:content": {
+                "jcr:primaryType": "nt:resource",
+                "jcr:lastModifiedBy": "admin",
+                "jcr:mimeType": "image/png",
+                "jcr:lastModified": "Wed Mar 01 2023 08:22:10 GMT-0500",
+                ":jcr:data": 5087,
+                "jcr:uuid": "895a5f50-ab41-4937-b41d-7248b339f388"
+              }
+            }
+          }
+        }
+      },
+      "cq5dam.thumbnail.319.319.png": {
+        "jcr:primaryType": "nt:file",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Wed Mar 01 2023 08:22:10 GMT-0500",
+        "jcr:content": {
+          "jcr:primaryType": "oak:Resource",
+          "jcr:lastModifiedBy": "workflow-process-service",
+          "jcr:mimeType": "image/png",
+          "jcr:lastModified": "Wed Mar 01 2023 09:11:54 GMT-0500",
+          ":jcr:data": 150980
+        }
+      }
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ],
+      "dc:creator": [
+        "Photographer:Herv MARTIN"
+      ],
+      "xmp:eaton-file-name": "black.jpg",
+      "dam:Physicalheightininches": "-1.0",
+      "dam:Physicalwidthininches": "-1.0",
+      "dam:Fileformat": "JPEG",
+      "dam:Progressive": "no",
+      "xmp:eaton-rights-restricted": "no",
+      "tiff:ImageLength": 500,
+      "lastTransferredForTraining": "Sat Feb 12 2022 00:30:00 GMT-0500",
+      "jcr:lastModifiedBy": "admin",
+      "xmp:CreatorTool": "Adobe Photoshop CS6 (Windows)",
+      "simsearchVersion": "1.0.0",
+      "dam:scene7CompanyID": "c|233796",
+      "dam:scene7PublishedBy": "",
+      "dam:extracted": "Wed Mar 01 2023 09:11:53 GMT-0500",
+      "dc:format": "image/jpeg",
+      "imageMap": "[rect(181,173,328,273)\"https://www.eaton.com/gb/en-gb/company.html\"|\"\"|\"Company\"]",
+      "dam:Bitsperpixel": 24,
+      "dam:scene7ID": "a|1052637406",
+      "dc:rights": "Copyright: Herve MARTIN",
+      "xmpMM:DocumentID": "xmp.did:329BB640C09411E7A8EEEE2968C8AF82",
+      "dam:scene7CloudConfigPath": "/conf/global/settings/cloudconfigs/dmscene7",
+      "dam:MIMEtype": "image/jpeg",
+      "dam:Physicalwidthindpi": -1,
+      "dam:Physicalheightindpi": -1,
+      "dam:scene7FileStatus": "PublishComplete",
+      "xmpMM:OriginalDocumentID": "xmp.did:7DCA798B421FE011A84AD72E8EDC8546",
+      "dc:modified": "Tue Oct 10 2017 11:46:13 GMT-0400",
+      "dam:scene7File": "eatonqa/black",
+      "dam:scene7Name": "black",
+      "dam:scene7Type": "Image",
+      "dam:Numberofimages": 1,
+      "lastTransferredForTagging": "Mon Oct 25 2021 04:16:06 GMT-0400",
+      "xmp:eaton-imported-by": "admin",
+      "jcr:lastModified": "Wed Mar 01 2023 08:22:32 GMT-0500",
+      "dam:scene7UploadTimeStamp": "Wed Feb 09 2022 04:42:25 GMT-0500",
+      "dam:Numberoftextualcomments": 0,
+      "dam:scene7PublishTimeStamp": "Wed Feb 09 2022 04:42:25 GMT-0500",
+      "xmp:eaton-aspect-ratio": "square",
+      "dam:scene7JobStartDate": 1635962287548,
+      "xmpMM:InstanceID": "xmp.iid:329BB63FC09411E7A8EEEE2968C8AF82",
+      "xmp:CreateDate": "Thu May 02 2019 07:01:18 GMT-0400",
+      "tiff:ImageWidth": 500,
+      "dam:scene7Domain": "https://qa-dm.eaton.com/",
+      "dam:scene7Folder": "eatonqa/eaton/products/backup-power-ups-surge-it-power-distribution/",
+      "dam:sha1": "63230e934b67f1f50abe224f9f863d6e476dfbf1",
+      "dam:size": 113982,
+      "dam:scene7APIServer": "https://s7sps1apissl.scene7.com",
+      "dc:creator_xmpArrayType": "rdf:Seq",
+      "xmp:eaton-modified-by": "admin",
+      "dam:scene7LastModified": 1644399745246,
+      "xmpMM:DerivedFrom": {
+        "jcr:primaryType": "nt:unstructured",
+        "stRef:instanceID": "xmp.iid:329BB63DC09411E7A8EEEE2968C8AF82",
+        "xmpNodeType": "xmpStruct",
+        "stRef:documentID": "xmp.did:329BB63EC09411E7A8EEEE2968C8AF82"
+      },
+      "predictedTags": {
+        "jcr:primaryType": "nt:unstructured",
+        "phone": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "phone",
+          "confidence": 0.6974008679389954,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "technology": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "technology",
+          "confidence": 0.6814366579055786,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "vector": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "vector",
+          "confidence": 0.663906991481781,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "business": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "business",
+          "confidence": 0.6638526320457458,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "mobile": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "mobile",
+          "confidence": 0.660036027431488,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "computer": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "computer",
+          "confidence": 0.653576135635376,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "black": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "black",
+          "confidence": 0.6461892127990723,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "icon": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "icon",
+          "confidence": 0.6385647058486938,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "design": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "design",
+          "confidence": 0.6376308798789978,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "illustration": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "illustration",
+          "confidence": 0.6362892389297485,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "digital": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "digital",
+          "confidence": 0.6311277151107788,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "display": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "display",
+          "confidence": 0.6288301944732666,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "sign": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "sign",
+          "confidence": 0.6252799034118652,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "background": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "background",
+          "confidence": 0.6195393204689026,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "screen": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "screen",
+          "confidence": 0.6167322397232056,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "3d": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "3d",
+          "confidence": 0.6161600351333618,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "communication": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "communication",
+          "confidence": 0.6157376170158386,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "blue": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "blue",
+          "confidence": 0.610538899898529,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "concept": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "concept",
+          "confidence": 0.6061023473739624,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "pc": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "pc",
+          "confidence": 0.5976937413215637,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "internet": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "internet",
+          "confidence": 0.5857815146446228,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "telephone": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "telephone",
+          "confidence": 0.5801525115966797,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "modern": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "modern",
+          "confidence": 0.5756723284721375,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "cell": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "cell",
+          "confidence": 0.5748489499092102,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        },
+        "tablet": {
+          "jcr:primaryType": "nt:unstructured",
+          "isCustom": false,
+          "name": "tablet",
+          "confidence": 0.5734590291976929,
+          "jcr:lastModified": "Mon Oct 25 2021 04:16:06 GMT-0400"
+        }
+      },
+      "imageFeatures": {
+        "jcr:primaryType": "nt:unstructured",
+        ":haystack0": 8192
+      }
+    }
+  }
+}

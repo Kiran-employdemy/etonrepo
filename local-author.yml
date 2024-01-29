@@ -1,0 +1,22 @@
+version: '3'
+services:
+  author:
+    container_name: eaton_aem_author
+    image: artifactory-prod.tcc.etn.com/aem-docker-virtual/eaton-aem-author
+    deploy:
+      resources:
+        limits:
+          memory: 12G
+        reservations:
+          memory: 6G
+    ports:
+      - '4502:4502'
+      - '5005:5005'
+    volumes:
+      - ./logs:/opt/aem/crx-quickstart/logs
+    environment:
+      CQ_RUNMODE: 'author,local,dynamicmedia_scene7'
+      CQ_XMS: '1g'
+      CQ_XMX: '4g'
+      CQ_PORT: 4502
+      CQ_DEBUG_PORT: 5005

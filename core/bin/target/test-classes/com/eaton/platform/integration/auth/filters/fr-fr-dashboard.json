@@ -1,0 +1,61 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon Jul 10 2023 15:58:04 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable",
+      "cq:LiveRelationship"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Dashboard | MyEaton",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "b441588c-ba2f-4b94-845c-e5abf5cbcf0d",
+    "cq:translationStatus": "DRAFT",
+    "cq:translationProject": [
+      "/content/projects/multi_language/multi_language"
+    ],
+    "cq:template": "/conf/eaton/settings/wcm/templates/myeaton-l1-dashboard",
+    "cq:lastReplicatedBy": "admin",
+    "priority": "0.5",
+    "cq:lastRolledout": "Mon Jul 10 2023 15:58:29 GMT-0400",
+    "msmcomponent": "/content/eaton/fr/fr-fr/secure/dashboard/jcr:content/root/responsivegrid/grid_2_column_contro",
+    "percolate-content-id": "1399013378159944129",
+    "jcr:predecessors": [
+      "ed3012a0-9333-4116-b21a-99203afad97a"
+    ],
+    "cq:lastTranslationUpdate": "Tue Jun 20 2023 14:43:31 GMT-0400",
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Mon Jul 10 2023 15:58:04 GMT-0400",
+    "cq:lastReplicated": "Thu Oct 12 2023 11:08:57 GMT-0400",
+    "cq:lastModified": "Mon Jul 10 2023 15:58:29 GMT-0400",
+    "view": "generic",
+    "cq:translationSourcePath": "/content/eaton/language-masters/en-us/secure/dashboard",
+    "meta-robot-tags": "index,follow",
+    "jcr:baseVersion": "ed3012a0-9333-4116-b21a-99203afad97a",
+    "jcr:isCheckedOut": true,
+    "hideInNav": "true",
+    "page-type": "primary",
+    "pageTitle": "Dashboard",
+    "jcr:uuid": "e8c5a759-84cd-437e-96f9-f1a30b458606",
+    "sling:resourceType": "eaton/components/structure/eaton-secure-template-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "securePage": "true",
+    "cq:lastRolledoutBy": "admin",
+    "cq:lastModifiedBy": "admin",
+    "changefrequency": "weekly",
+    "navTitle": "Dashboard",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:LiveRelationship"
+      ],
+      "jcr:lastModifiedBy": "e9814292",
+      "cq:lastRolledout": "Mon Jul 10 2023 15:58:29 GMT-0400",
+      "jcr:lastModified": "Mon Jul 10 2023 15:58:29 GMT-0400",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "cq:lastRolledoutBy": "admin"
+    }
+  }
+}

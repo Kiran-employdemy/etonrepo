@@ -1,0 +1,211 @@
+//-----------------------------------
+// Module: Home Page Hero
+//-----------------------------------
+// NOTE: This file is being shared by these components:
+// - "home-page-hero" Component
+// - "landing-hero" Component
+//
+// Any modification in this file is going to affect both components,
+// However, each one of these components have a unique CSS class that can be used
+// to apply styles to one component without affecting the other component,
+// these classes are ".home-page-hero__component" and ".landing-hero__component".
+//
+// Examples:
+//--------------
+// - Update the title only in HOME-PAGE-HERO eg:
+//   .home-page-hero__component .home-page-hero__title { ... }
+//
+// - Update the title only in LANDING-HERO eg:
+//   .landing-hero__component .home-page-hero__title { ... }
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+@import "home-page-hero--aspect-ratios";
+
+
+.home-page-hero {
+
+  &__component {
+    position: relative;
+    margin-bottom: rem($spacing__md);
+  }
+
+  &__slide-list {
+    padding: 0;
+  }
+
+  &__slide-item,
+  &__content .container {
+    position: relative;
+  }
+
+  &__content {
+    color: $color__white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+  }
+
+  &__cta {
+    margin-top: rem($spacing__sm);
+  }
+
+  &__image {
+    @include absolute-fill();
+  }
+
+  // EATON-474: Category Hero, Landing Hero
+  // Semi-Transparent gradient should be applied on the whole image
+  //--------------
+  .image-mask & {
+    &__image::before {
+      @include image-mask-gradient();
+    }
+  }
+
+  &__text {
+    display: none;
+
+    @include media-desktop-and-up {
+      display: block;
+      font-size: rem($base__font-size * 1.8);
+      margin-top: 0;
+    }
+  }
+
+  &__title {
+    // TO DO: possibly remove this once microsites brand tool has been implemented.
+    // If global font overrides are desired once microsites brand tool is implement, it should be handled in _mixins-typography.scss
+    @include font-family__primary-medium(--header-font-medium);
+  }
+
+  &__separator {
+    width: 5%;
+    height: 2px;
+    background: $color__white;
+
+    // EATON-516 Landing Hero - Article Page - Incorrect spacing between Headline, Horizontal Rule, and Description.
+    margin: rem($spacing__md * .8) auto rem($spacing__md * .868); // Visually, 60px Spacing above and below - extracted from PSD File
+  }
+
+  &__arrow {
+    display: none !important; // stylelint-disable-line declaration-no-important
+    position: absolute;
+    top: 45%;
+
+    .icon {
+      font-size: rem($base__font-size * 2.4);
+      color: $color__secondary-gray4;
+    }
+
+    &--next {
+      right: 80px;
+    }
+
+    &--prev {
+      left: 80px;
+    }
+  }
+
+
+  &__dots {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+
+    @include media-tablet-and-up {
+      bottom: 65px; // EATON-807: Visually 30px spacing between the "down-arrow" and the dots/pagination.
+    }
+
+    &:only-child {
+      display: none;
+    }
+
+    button {
+      background-color: $color__secondary-gray5;
+      border-radius: 10px;
+      border: 10px;
+      color: transparent;
+      cursor: pointer;
+      display: inline;
+      height: 10px;
+      line-height: 0;
+      padding: rem($spacing__sm * .5);
+      width: 10px;
+    }
+  }
+
+  &__down-arrow {
+    color: $color__white;
+    font-size: rem($spacing__sm * .8);
+    position: absolute;
+    bottom: 30px; // EATON-807: Visually 30px spacing from the bottom of the component
+    text-align: center;
+    width: 100%;
+    z-index: 10;
+  }
+
+  .slick-active button {
+    background-color: var(--primary-brand-color, $color__primary-blue);
+    border: 1px solid var(--primary-brand-color, $color__primary-blue);
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: 0-991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    &__caption {
+      padding: 0;
+    }
+
+    &__separator {
+      display: none;
+    }
+  }
+
+  //-----------------------------------
+  // MediaQuery: > 992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    &__caption {
+      padding: 0 rem($spacing__xl * .834) rem($spacing__lg * .445); // 40px offset is used to avoid the CTA overalping the pagination dots.
+    }
+
+  }
+
+  @include media-mobile-only {
+    &__component {
+      margin-bottom: rem($spacing__md * .75);
+    }
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: > 1200px and up
+  //-----------------------------------
+  @include media-desktop-large {
+    &:hover &__arrow {
+      display: block !important; // stylelint-disable-line declaration-no-important
+    }
+
+    &__slide-list {
+      &__cta {
+        margin-top: rem($spacing__md);
+      }
+    }
+  }
+
+}
+

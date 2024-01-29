@@ -1,0 +1,13 @@
+<!--/* Results List - Load More  */-->
+<template data-sly-template.partial="${ @ data }">
+  <div class="results-list__bottom">
+    <div class="results-list__actions text-center">
+      <!--/* Render Button "Load More" results only if the property 'ajaxRequestUrl' is not empty */-->
+      <button
+        data-sly-test="${ data.loadMoreFlag == 'true' }"
+        class="b-button b-button__primary b-button__primary--light"
+        role="button"
+        data-load-more>${ data.loadMoreLabel }</button>
+    </div>
+  </div>
+</template>

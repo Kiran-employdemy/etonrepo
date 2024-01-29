@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.FeatureEnablementConfiguration">
+  <OCD id="com.eaton.platform.core.services.config.FeatureEnablementConfiguration" name="FunctionalityEnablementConfiguration" description="">
+    <AD id="isFreeSampleButtonEnabled" type="Boolean" name="free sample enable" default="false"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.impl.FeatureEnablementServiceImpl">
+    <Object ocdref="com.eaton.platform.core.services.config.FeatureEnablementConfiguration"/>
+  </Designate>
+</metatype:MetaData>

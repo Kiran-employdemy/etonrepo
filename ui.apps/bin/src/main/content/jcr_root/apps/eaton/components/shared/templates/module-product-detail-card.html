@@ -1,0 +1,113 @@
+<template data-sly-template.module="${ @ data }">
+<sly data-sly-use.viewData="com.eaton.platform.core.models.productdetailstabs.ProductDetailsTabsModel"></sly>
+<sly data-sly-use.qrCodeAuthorableDialog="com.eaton.platform.integration.qr.models.QRCodeManualFlowModel"></sly>
+<sly data-sly-use.dataModel="com.eaton.platform.core.models.DataLayerModel"></sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientLib.css @ categories='etn-servspin'}" data-sly-unwrap/>
+<script src="https://scripts.sirv.com/sirv.js"></script>
+
+  <div class="module-product-detail-card">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-md-6 module-product-detail-card--image-container">
+          <sly data-sly-test="${data.status == 'Discontinued' || data.status == 'Inactive'}">
+            <div class="visible-sm visible-xs module-product-detail-card__badge-discontinued">${'Discontinued' @i18n}</div>
+          </sly>
+          <!-- Start: Rendition Image Component -->
+          <div class="Sirv skuSpinnerImage" data-src="${data.sirvImage}"></div>
+         <div class="rendition">
+        <img class="rendition__image img-responsive staticSkuImage" data-src="${data.imageDesktop}" data-desktop-rendition="${data.imageDesktop}" data-mobile-rendition="${data.imageDesktop}" data-tablet-rendition="${data.imageDesktop}" alt="${[dataModel.datalayerbean.productSku,dataModel.datalayerbean.productFamily] @ join = ' - '}"/>
+         </div>
+        <sly data-sly-test="${data.sirvImageIsRepresentative || (data.primaryImageIsRepresentative && !data.hasSirvImage)}">
+          <p>${ 'photoRepresentative' @ i18n }</p>
+        </sly>
+          <!-- End: Rendition Image Component -->
+
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <sly data-sly-test="${data.status == 'Discontinued' || data.status == 'Inactive'}">
+          <div class="hidden-sm hidden-xs module-product-detail-card__badge-discontinued">${'Discontinued' @i18n}</div>
+          </sly>
+		 <sly data-sly-test="${ data.title }">
+          <h1 class="module-product-detail-card__title excel_class">
+            ${ data.title }
+          </h1>
+          </sly>
+		   <sly data-sly-test="${ viewData.productDetailsTabsBean.qrSerialNumber }">
+          <h2 class="module-product-detail-card__description b-body-copy excel_class">
+		  <sly data-sly-test="${viewData.productDetailsTabsBean.serialAuthFlagPresent == 'true' && viewData.productDetailsTabsBean.qrSerialNumber != null}">
+              <a href="${viewData.productDetailsTabsBean.qrSerialNumberLink}" ><span class="qr__serial__number_text"> ${ qrCodeAuthorableDialog.serialNumberText } </span>${ viewData.productDetailsTabsBean.qrSerialNumber } <i class="icon icon__right icon-chevron-right"></i></a>
+		  </sly>
+
+          <sly data-sly-test="${viewData.productDetailsTabsBean.serialAuthFlagPresent != 'true' && viewData.productDetailsTabsBean.qrSerialNumber != null}">
+              <span class="qr__serial__number_text">${ qrCodeAuthorableDialog.serialNumberText } </span>${ viewData.productDetailsTabsBean.qrSerialNumber }
+		  </sly>
+          </h2>
+          </sly>
+
+          <div class="module-product-detail-card__description b-body-copy excel_class">
+            ${ data.description @context='html'}
+          </div>
+
+          <div class="module-product-detail-card__price b-body-copy-small">
+            <sly data-sly-test="${data.price}">
+              <b>${ data.priceLabel}</b>
+              <span>${data.price}</span>
+              <div class="module-product-detail-card__price-disclaimer" data-sly-test="${data.priceDisclaimerEnabled}">
+                <span>${data.priceDisclaimer}</span>
+              </div>
+            </sly>
+          </div>
+
+          <div  class="module-product-detail-card__actions">
+            <div class="ps-widget" ps-sku="${request.requestPathInfo.selectors[0]}"></div>
+            <sly data-sly-test="${ data.primaryCTAURL }">
+			    <a href="${data.primaryCTAURL  @context='html'}"  
+                   data-analytics-event="request quote"
+                   aria-label="Go to ${ data.primaryCTALabel}"
+                   data-source-tracking="${data.primaryCTAEnableSourceTracking}"
+                   data-page-path-tracking="${data.isSuffixDisabled ? 'false' : 'true' }" 
+                 target="${ data.primaryCTANewWindow }"
+                 class="b-button b-button__tertiary b-button__tertiary--light">
+                ${ data.primaryCTALabel }
+              </a>
+            </sly>
+          </div>
+          <sly data-sly-test="${data.displayReplacementOptions}">
+            <div class="module-product-detail-card__replacement">
+            <sly data-sly-test="${data.replacementOptionText}">
+              <h2 class="module-product-detail-card__replacement--header"> ${data.replacementOptionText} </h2>
+			</sly>
+
+              <ul data-sly-list="${data.skuReplacementOptionList}">
+                <li>
+                  <a href="${item.link}" aria-label="Go to ${ item.catalog }" class="module-product-detail-card__replacement--link">${ item.catalog }</a>
+                </li>
+              </ul>
+
+            </div>
+          </sly>
+          <div class="module-product-detail-card__links">
+            <div>
+              <ul data-sly-list="${data.secondaryLinksList}">
+              <sly data-sly-test="${ item.text }">
+                <li>
+                  <a href="${item.path}"
+                    aria-label="Go to ${ item.text }"
+                  >
+                  <i data-sly-test="${item.newWindow == '_blank'}"
+                    class="icon icon-link-external"
+                    aria-hidden="true"></i>
+                    ${ item.text }
+                  </a>
+
+                </li>
+                </sly>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

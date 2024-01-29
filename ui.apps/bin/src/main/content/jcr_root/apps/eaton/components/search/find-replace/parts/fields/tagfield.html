@@ -1,0 +1,31 @@
+<template data-sly-template.tagfield="${@ id, name, label, placeholder, path, disabled, cssClasses}">
+	<div class="coral-Form-fieldwrapper">
+		<label data-sly-test="${label}" class="coral-Form-fieldlabel" for="${id}">${label}</label>
+		<foundation-autocomplete class="coral-Form-field cq-ui-tagfield find-replace-form-field ${cssClasses}" data-sly-attribute.id="${id}"
+			name="${name}" placeholder="${placeholder}" multiple="multiple" valuedisplaymode="block" data-sly-attribute.disabled="${disabled}"
+			pickersrc="/mnt/overlay/cq/gui/content/coral/common/form/tagfield/picker.html?root=${path}&amp;selectionCount=multiple">
+			<div class="foundation-autocomplete-inputgroupwrapper">
+				<div class="coral-InputGroup" role="presentation">
+					<input is="coral-textfield" class="coral3-Textfield coral-InputGroup-input" autocomplete="off"
+						role="combobox" aria-expanded="false">
+					<span class="coral-InputGroup-button">
+						<button is="coral-button" class="coral3-Button coral3-Button--secondary " size="M"
+							variant="secondary" title="Open Selection Dialog" type="button"
+							aria-label="Open Selection Dialog">
+							<coral-icon class="coral3-Icon coral3-Icon--sizeS coral3-Icon--select" icon="select"
+								size="S" autoarialabel="on" role="img" aria-label="select">
+							</coral-icon>
+						</button>
+					</span>
+				</div>
+			</div>
+			<coral-overlay foundation-autocomplete-suggestion="" class="foundation-picker-buttonlist coral3-Overlay"
+				data-foundation-picker-buttonlist-src="/mnt/overlay/cq/gui/content/coral/common/form/tagfield/suggestion{.offset,limit}.html?root=${path}{&amp;query}"
+				aria-hidden="true" style="display: none;">
+			</coral-overlay>
+			<coral-taglist foundation-autocomplete-value="" name="${name}" class="coral3-TagList" aria-disabled="false"
+				aria-live="off" aria-atomic="false" aria-relevant="additions" style="position: relative;">
+			</coral-taglist>
+		</foundation-autocomplete>
+	</div>
+</template>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+		  jcr:primaryType="sling:OsgiConfig"
+          sec.account.type.name="SEC-Account-Type"
+          sec.account.type.values="[distributor]"
+          sec.application.access.name="SEC-Application-Access"
+          sec.application.access.values="[order-center,bid-manager,eaton-s-learning-classrooms,eaton-university,eaton-distributor-advantage-program-edap,votw,new-myeaton]"
+          sec.company.name="SEC-Company"
+          sec.company.values="[electrical-amer]"
+          sec.product.categories.name="SEC-Product-Categories"
+          sec.product.categories.values="[circuit-breakers,electronics,metering-and-power-monitoring,cooper-power-series-solutions,b-line-series-support-systems,crouse-hinds-series-harsh-and-hazardous,bussmann-series-circuit-protection,life-safety-and-mass-notification,wiring-devices,backup-power-protection-ups-and-rack-infrastructure,engineering-services,residential,switchgear-and-power-assemblies,control-and-automation,control-assemblies,surge-protection-and-power-factor-correction,commercial-distribution-equipment,electrical-general]"
+          sec.country.name="SEC-country"
+          sec.country.values="[us,north-america]"
+          sec.tier.level.name="SEC-Tier-Level"
+          sec.tier.level.values="[]"
+          sec.partner.programme.type.name="SE-Partner-Programme-Type"
+          sec.partner.programme.type.values="[]"/>

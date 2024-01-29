@@ -1,0 +1,41 @@
+.eaton-footer{
+ z-index: 20 !important;
+ position: relative !important;
+}
+.breadcrumb
+{
+    opacity:1;
+}
+.eaton-breadcrumb{
+   z-index: 20 !important;
+   position: relative !important;
+   padding-top: 20px;
+   margin-top: 10px;
+   margin-bottom: -10px;
+}
+@media (min-width : 360px){
+    .eaton-breadcrumb{
+    width:109% !important;
+    }
+    }
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px){
+.eaton-breadcrumb {
+    width: 127vw !important;
+     left: calc(-54vw + 64%);
+}
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 800px){
+.eaton-breadcrumb {
+    width: 100vw !important;
+    left: calc(-62vw + 65%);
+}
+  }
+
+@media only screen and (min-device-width: 1080px) and (max-device-width: 1920px){
+.eaton-breadcrumb{
+width: 108vw !important;
+left: calc(-54vw + 100%);
+    }
+    }

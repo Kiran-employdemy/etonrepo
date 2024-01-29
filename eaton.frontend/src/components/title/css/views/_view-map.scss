@@ -1,0 +1,15 @@
+//-----------------------------------
+// Component: Title - View: Map
+//-----------------------------------
+/* stylelint-disable */
+.eaton-title--map {
+  .eaton-title__headline {
+    padding-top: rem($spacing__sm * .5); //15px
+    padding-bottom: rem($spacing__sm * .5); //15px
+
+    @include media-tablet-and-up {
+      padding-top: rem($spacing__sm * .833333); //25px
+      padding-bottom: rem($spacing__sm * .833333); //25px
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.workflows.UpdateCreateDateProcess$Config">
+  <OCD id="com.eaton.platform.core.workflows.UpdateCreateDateProcess$Config" name="FM - Update Create Date Process" description="Try to ensure the correct Create Date metadata is visible for every asset.">
+    <AD id="target.property" type="String" name="Target Property" description="Asset metadata property to contain the created date." default=""/>
+    <AD id="mime.mappings" type="String" cardinality="2147483647" name="MIME Mappings" description="Define mappings from a MIME type (dc:format) to a metadata property containing its created date. (i.e. - application/vnd.openxmlformats-officedocument.wordprocessingml.document=dam:created)" default=""/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.workflows.UpdateCreateDateProcess">
+    <Object ocdref="com.eaton.platform.core.workflows.UpdateCreateDateProcess$Config"/>
+  </Designate>
+</metatype:MetaData>

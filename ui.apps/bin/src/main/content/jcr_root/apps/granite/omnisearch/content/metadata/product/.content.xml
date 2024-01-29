@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:Folder"
+    jcr:title="Products"
+    cardPath="/libs/commerce/gui/components/admin/products/childcard"
+    defaultSearchPath="/var/commerce/products"
+    includeInSuggestions="{Boolean}true"
+    listItemPath="/libs/commerce/gui/components/admin/products/childrow"
+    listOrder="{Long}5"
+    nodeType="cq:Page"
+    predicatePath="/libs/settings/commerce/search/facets/products"
+    searchRailPath="/libs/commerce/gui/content/searchpanel/products"/>

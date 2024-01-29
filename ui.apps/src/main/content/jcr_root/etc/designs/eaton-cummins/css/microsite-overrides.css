@@ -1,0 +1,29 @@
+:root {
+    --primary-custom-brand-font: 'Arial', sans-serif;
+    --primary-custom-brand-font-medium: 'Arial Medium', 'Arial', sans-serif;
+    --primary-custom-brand-font-bold: ''Arial Bold', 'Arial', sans-serif';
+    --header-font: 'Arial', sans-serif;
+    --header-font-medium: 'Arial Medium', 'Arial', sans-serif;
+    --header-font-bold: ''Arial Bold', 'Arial', sans-serif';
+    --primary-nav-font: 'Arial', sans-serif;
+    --sitemap-font: 'Arial', sans-serif;
+    --primary-brand-color: #DA291C;
+    --secondary-brand-color: #005EB8;
+    --link-brand-color: #DA291C;
+    --grey-primary-brand-color: #5B6770;
+    --grey-secondary-brand-color: #A3B2A4;
+    --body-copy-color: #000000;
+    --search-box-background-color: #5B6770;
+    --section-navigation-background-color: #5B6770;
+    --section-navigation-divider-color: #98A4AE;
+    --utility-nav-background-color: #DA291C;
+    --navigation-active-border-color: #DA291C;
+    --navigation-divider-color: #DA291C;
+    --navigation-mega-menu-title-background-color: #333F48;
+    --navigation-mega-menu-background-color: #5B6770;
+    --navigation-search-icon-color: #DA291C;
+    --footer-top-background-color: #5B6770;
+    --footer-bottom-background-color: #333F48;
+    --quote-list-component: #5B6770;
+    --feature-overlay-color: #5B6770;
+}

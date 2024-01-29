@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          jcr:title="Price Spider Configuration"
+          height="{Long}650"
+          warnIfModified="{Boolean}false"
+          width="{Long}900"
+          xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Site_x0020_Configuration
+                    jcr:primaryType="cq:Panel"
+                    title="Price Spider Configuration"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <jsonLocation
+                            jcr:primaryType="cq:Widget"
+                            name="./jsonLocation"
+                            fieldLabel="JSON File Location"
+                            xtype="pathfield">
+                    </jsonLocation>
+                    <universalScriptPath
+                            jcr:primaryType="cq:Widget"
+                            name="./universalScriptPath"
+                            fieldLabel="Universal Script Path"
+                            fieldDescription="The path for the JS script that appears on every page"
+                            xtype="textfield">
+                    </universalScriptPath>
+                    <productScriptPath
+                            jcr:primaryType="cq:Widget"
+                            name="./productScriptPath"
+                            fieldLabel="Product Script Path"
+                            fieldDescription="The path for the JS script that is only included on participating products"
+                            xtype="textfield">
+                    </productScriptPath>
+                </items>
+            </Site_x0020_Configuration>
+        </items>
+    </items>
+</jcr:root>

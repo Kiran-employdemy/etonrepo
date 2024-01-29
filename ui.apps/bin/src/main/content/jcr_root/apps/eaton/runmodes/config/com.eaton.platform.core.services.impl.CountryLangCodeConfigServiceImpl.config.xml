@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+		  MAX.CACHE.SIZE="1000"
+		  MAX.CACHE.DURATION="10"
+		  exclude.country.code.list="[IR,SY,CU,SD,KP]"
+		  X.DEFAULT.HREF.LANG.CODE="[/content/eaton|us/en-us,/content/login|us/en-us,/content/eaton-cummins|us/en-us,/content/greenswitching|gb/en-gb,/content/phoenixtec|us/en-us]"/>

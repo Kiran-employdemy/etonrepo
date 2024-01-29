@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.bullseye.services.impl.SearchCacheImpl" immediate="true" activate="activate">
+  <property name="cacheSize" type="Integer" value="1000"/>
+  <property name="maxHostConnections" type="Integer" value="250"/>
+  <property name="cacheUrl" type="String" value=""/>
+  <property name="ttl" type="Integer" value="3600"/>
+  <property name="maxConnections" type="Integer" value="250"/>
+  <service>
+    <provide interface="com.eaton.platform.integration.bullseye.services.BullseyeCache"/>
+  </service>
+  <reference name="CloudConfigService" interface="com.eaton.platform.core.services.CloudConfigService" bind="setCloudConfigService"/>
+  <reference name="HttpClientBuilderFactory" interface="org.apache.http.osgi.services.HttpClientBuilderFactory" bind="setHttpClientBuilderFactory"/>
+  <implementation class="com.eaton.platform.integration.bullseye.services.impl.SearchCacheImpl"/>
+</scr:component>

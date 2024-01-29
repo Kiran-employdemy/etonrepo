@@ -1,0 +1,35 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ ADOBE CONFIDENTIAL
+  ~ ___________________
+  ~ Copyright 2015 Adobe Systems Incorporated
+  ~ All Rights Reserved.
+  ~
+  ~ NOTICE:  All information contained herein is, and remains
+  ~ the property of Adobe Systems Incorporated and its suppliers,
+  ~ if any.  The intellectual and technical concepts contained
+  ~ herein are proprietary to Adobe Systems Incorporated and its
+  ~ suppliers and are protected by all applicable intellectual property
+  ~ laws, including trade secret and copyright laws.
+  ~ Dissemination of this information or reproduction of this material
+  ~ is strictly forbidden unless prior written permission is obtained
+  ~ from Adobe Systems Incorporated.
+  */-->
+<sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"/>
+<sly data-sly-use.form="com.adobe.aemds.guide.common.AEMForm"/>
+<sly data-sly-use.productForm="com.eaton.platform.core.models.ProductSelectorFormModel"/>
+<sly data-sly-test.af="${form.isAdaptiveForm}">
+    <sly data-sly-use.form="com.adobe.aemds.guide.common.AdaptiveForm"/>
+</sly>
+<div class="aemformcontainer no-form-selected" data-sly-test="${!form.isFormSelected}">
+    ${'You need to select a Form from the Dialog' @ i18n, locale=request.locale}
+</div>
+<div class="aemformcontainer"
+     data-sly-test.af="${form.isAdaptiveForm}"
+     data-product-url="${productForm.productUrl}"
+     data-facet-selector="${productForm.facetSelector}"
+     data-form-page-path="${form.formEditPagePath}"
+     data-sly-use.adaptiveform="com.adobe.aemds.guide.common.AdaptiveForm">
+    <sly data-sly-call="${clientLib.css @ categories=['guide.theme2.common']}"/>
+    <sly data-sly-call="${clientLib.css @ categories=[adaptiveform.formThemeName]}"/>
+    <div data-sly-resource="${ @ path=adaptiveform.formPagePath, wcmmode='disabled'}" />
+</div>

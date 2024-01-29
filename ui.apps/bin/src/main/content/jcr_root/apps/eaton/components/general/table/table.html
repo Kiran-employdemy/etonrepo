@@ -1,0 +1,16 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.TableModel">
+
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Table: ${currentNode.name}</div>
+</sly>
+<div class="table-flex">
+    <div data-sly-unwrap="${ !data.toggleInnerGrid }" class="container">
+        <div class="${data.tableDivClass}">
+            <h3 data-sly-test="${data.title}"
+                class="module-table__head b-eyebrow-large">${data.title}</h3>
+            ${data.tableData @context='html'}
+        </div>
+    </div>
+</div>
+
+</sly>

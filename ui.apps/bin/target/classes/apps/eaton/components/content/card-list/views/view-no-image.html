@@ -1,0 +1,47 @@
+<!--/*
+  Module M-32 - Related Items - Text Only
+*/-->
+
+<sly data-sly-use.data="com.eaton.platform.core.models.cardlist.CardListModel">
+<div class="text-only-3-column">
+    <div class="container">
+
+      <!--/* Component Header */-->
+	<div data-sly-test="${ data.cardsHeader }" class="row">
+		<div class="col-xs-12">
+			<h2 class="text-only-3-column__heading b-heading-h2">${data.cardsHeader}</h2>
+		</div>
+	</div>
+      <!--/* Component Content */-->
+    <div class="row">
+
+        <ul class="text-only-3-column__slides" data-sly-list.card="${data.listTypeArray}">
+            <li class="slides text-only-3-column__card">
+			<div class="text-only-3-column__article-copy">
+              <div class="text-only-3-column__eyebrow b-eyebrow-small">${ card.eyebrow }</div>
+              <h3 class="text-only-3-column__title b-heading-h5">
+                <a href="${card.pagePath}"
+                  target="${card.newWindow}"
+                  class="text-only-3-column__cta">
+                  ${ card.headline }</a>
+              </h3>
+              <div data-sly-test="${ card.publicationDateDisplay }" class="text-only-3-column__date">
+                <em>${ card.publicationDateDisplay }</em>
+              </div>
+            </div>
+            </li>
+        </ul>
+
+        <button class="text-only-3-column__prev-arrow upsell-products__arrows button--reset">
+            <i class="icon icon-chevron-left"></i>
+            <span class="sr-only">Go to Previous Item</span>
+        </button>
+        <button class="text-only-3-column__next-arrow upsell-products__arrows button--reset">
+            <i class="icon icon-chevron-right"></i>
+            <span class="sr-only">Go to Next Item</span>
+        </button>
+
+    </div>
+    </div>
+</div>
+</sly>

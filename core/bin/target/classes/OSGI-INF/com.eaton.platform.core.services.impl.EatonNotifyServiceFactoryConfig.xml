@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.EatonNotifyServiceFactoryConfig" configuration-policy="require" immediate="true" activate="activate">
+  <property name="publishEmailNotificationGroup" type="String" value=""/>
+  <property name="languageWithCountry" type="String" value=""/>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="emailTemplateRollout" type="String" value="/apps/eaton/settings/wcm/designs/email_template/en/autoContentRolloutEmailNotificationTemplate.html"/>
+  <property name="emailTemplatePublish" type="String" value="/apps/eaton/settings/wcm/designs/email_template/en/autoContentPublishEmailNotificationTemplate.html"/>
+  <property name="process.label" type="String" value=" EatonNotifyServiceFactoryConfig"/>
+  <property name="service.description" type="String" value=" EatonNotifyServiceFactoryConfig"/>
+  <property name="rolloutEmailNotificationGroup" type="String" value=""/>
+  <service>
+    <provide interface="java.lang.Runnable"/>
+  </service>
+  <implementation class="com.eaton.platform.core.services.impl.EatonNotifyServiceFactoryConfig"/>
+</scr:component>

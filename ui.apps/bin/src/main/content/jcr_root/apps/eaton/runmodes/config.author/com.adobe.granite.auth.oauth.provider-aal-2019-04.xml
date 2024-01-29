@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    oauth.userid.property="email"
+    oauth.config.siblings.allow="{Boolean}false"
+    force.strict.username.matching="{Boolean}false"
+    oauth.client.id=""
+    oauth.redirect.request.params="{Boolean}false"
+    oauth.access.token.persist.cookie="{Boolean}false"
+    oauth.csrf.state.protection="{Boolean}true"
+    oauth.hash.userids="{Boolean}false"
+    oauth.callBackUrl=""
+    oauth.config.id="ims"
+    oauth.encode.userids="{Boolean}false"
+    oauth.access.token.persist="{Boolean}false"
+    oauth.create.users="{Boolean}true"
+    oauth.config.provider.id="ims"
+    oauth.scope="[AdobeID,openid,read_organizations]"/>

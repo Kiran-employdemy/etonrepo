@@ -1,0 +1,92 @@
+//-----------------------------------
+// Module - M-45: Table
+//
+// NOTE: This module is being used by these AEM-Components:
+//  - Product Specifications (PDH) Component
+//-----------------------------------
+
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+
+.module-table {
+
+  &__head {
+    margin-top: 0;
+  }
+
+  &__row {
+
+    &:nth-child(odd) {
+      background-color: var(--color__lunar-10);
+    }
+  }
+
+  &__col {
+    width: 100%;
+    margin-bottom: 0;
+    line-height: 2rem; // Override Stylguide's Line height in order to aling Tablet header, and table Content vertically
+    padding-right: 11px;
+
+    &:first-child {
+      align-self: flex-start;
+    }
+
+    ul {
+      padding-left: 1.7rem;
+    }
+
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: Mobile & Tablet Only
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    $padding_left: 15px;
+    margin-bottom: 46px; // Visually 50px Spacing
+
+    &:last-child { margin-bottom: 0; }
+
+    &__row {
+      padding: 12px $padding_left;
+    }
+
+    &__head {
+      padding-left: $padding_left;
+      margin-bottom: 10px; // Visually, 15px spacing between the table-head and the table-body
+    }
+
+  }
+
+
+
+  //-----------------------------------
+  // Media Query Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    margin-bottom: 86px; // EATON-630: Visually 90 between each "module-table"
+
+    &:last-child { margin-bottom: 0; }
+
+    &__head {
+      margin-bottom: 24px; // EATON-630: Visually 30px spacing between the table-head and the table-body
+      padding-left: 20px;
+    }
+
+    &__row {
+      align-items: center;
+      display: flex;
+      padding: 26px 20px;
+    }
+
+    &__col {
+      width: 50%;
+    }
+
+  }
+
+}

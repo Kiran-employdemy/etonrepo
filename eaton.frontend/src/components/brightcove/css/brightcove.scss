@@ -1,0 +1,34 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-grid-control__column .brightcoveplayer .container.brightcovecontainer {
+  width: auto;
+  padding: 0;
+}
+
+
+.eaton-brightcove {
+
+  &-header {
+    margin-bottom: rem($spacing__sm * 0.166666);
+    padding-bottom: rem($spacing__sm * 0.5);
+  }
+
+  &-description {
+    margin: 0 0 rem($spacing__sm * 0.333333);
+  }
+
+}
+
+[dir='rtl'] .video-js {
+
+  .vjs-dock-text {
+    padding: rem($spacing__sm * 0.466666) rem($spacing__sm * 0.466666) rem($spacing__sm * 0.933333) 5%;
+  }
+
+  .vjs-dock-shelf {
+    left: 0;
+    right: unset;
+  }
+
+}

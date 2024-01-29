@@ -1,0 +1,37 @@
+.links-list-2-columns {
+  overflow: hidden;
+
+  > div {
+
+    .col-xs-12 {
+      padding: 0;
+    }
+  }
+
+  &__link {
+    font-size: rem($base__font-size * 1.8);
+    line-height: ($base__line-height * (1.2 / 1.4));
+    margin-bottom: rem($spacing__sm * .5);
+
+    a {
+      display: inline-block;
+      margin-bottom: rem($spacing__sm * .5);
+    }
+  }
+
+  @include media-desktop-and-up {
+
+    > div {
+
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+
+    &__link {
+      font-size: rem($base__font-size * 2);
+      line-height: ($base__line-height * (1.2 / 1.4));
+      margin-bottom: rem($spacing__sm * .668);
+    }
+  }
+}

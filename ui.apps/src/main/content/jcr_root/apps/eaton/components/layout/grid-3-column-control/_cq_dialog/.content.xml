@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="3 Column Control"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <twocolumn
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Component Properties - Touch UI"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <color
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="Determine which variation of component color"
+                                fieldLabel="Color"
+                                name="./color">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <nocolor
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No Color"
+                                        value="no-color"/>
+                                    <blue
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Primary branding color"
+                                        value="primary-branding-color"/>
+									<grey
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Grey"
+                                        value="grey"/>
+                                </items>
+                            </color>
+							<padding
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="Determine which padding for component"
+                                fieldLabel="Padding"
+                                name="./padding">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Default"
+                                        value="default"/>
+                                    <nopadding
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No padding"
+                                        value="No padding"/>
+                                </items>
+                            </padding>
+							<dividers
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="Determine with dividers or without dividers"
+                                fieldLabel="Dividers"
+                                name="./dividers">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <yes
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Yes"
+                                        value="yes"/>
+                                    <no
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No"
+                                        value="no"/>
+                                </items>
+                            </dividers>
+                        </items>
+                    </column>
+                </items>
+            </twocolumn>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.auth.servlets.AuthorizationServlet" immediate="true">
+  <property name="sling.servlet.paths" type="String" value="/eaton/authorization"/>
+  <property name="service.description" type="String" value=" Eaton Authorization Servlet"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="authenticationService" interface="com.eaton.platform.integration.auth.services.AuthenticationService" field="authenticationService"/>
+  <reference name="authenticationServiceConfiguration" interface="com.eaton.platform.integration.auth.services.AuthenticationServiceConfiguration" field="authenticationServiceConfiguration"/>
+  <reference name="eatonVirtualAssistantConfiguration" interface="com.eaton.platform.integration.auth.services.EatonVirtualAssistantConfiguration" field="eatonVirtualAssistantConfiguration"/>
+  <reference name="externalizer" interface="com.day.cq.commons.Externalizer" field="externalizer"/>
+  <reference name="localeMappingService" interface="com.eaton.platform.core.services.vanity.LocaleMappingService" field="localeMappingService"/>
+  <reference name="profileService" interface="com.eaton.platform.integration.auth.services.UserProfileService" field="profileService"/>
+  <reference name="termsAndConditionsService" interface="com.eaton.platform.core.services.TermsAndConditionsService" field="termsAndConditionsService"/>
+  <implementation class="com.eaton.platform.integration.auth.servlets.AuthorizationServlet"/>
+</scr:component>

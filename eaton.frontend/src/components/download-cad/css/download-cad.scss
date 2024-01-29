@@ -1,0 +1,160 @@
+// Import All SASS config files (Variables, Mixins, functions... etc) 
+@import "../../../global/css/_config/sass";
+
+.download-cad-container {
+  position: relative;
+
+  textarea.cad-download-textarea {
+    min-height: 15rem;
+  }
+
+  .download-cad-filter-wrapper {
+    margin-top: 3rem;
+    position: relative;
+
+    .zip-link {
+      padding: 1.5rem;
+      background: #f8f8f8;
+      margin-top: 3rem;
+      word-break: break-word;
+      hyphens: auto;
+    }
+
+    .position-r {
+      position: relative;
+    }
+
+    .more-less-link {
+      margin-bottom: 1.5rem;
+      color: #005EB8;
+      cursor: pointer;
+      font-weight: bold;
+      display: block;
+      padding: 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    input[type="checkbox"].cad-filter-checkbox {
+      width: 1.5rem;
+      max-height: 1.5rem;
+      background: #fff;
+      box-shadow: none;
+      color: #005EB8;
+      border: 1px solid #005EB8;
+
+      &::after {
+        font-size: 1.2rem;
+      }
+
+      &:checked {
+        background-color: #005EB8;
+      }
+    }
+
+    input[type="checkbox"] {
+      + {
+        .inner {
+          padding-left: 1rem;
+          top: 0.1rem;
+          position: relative;
+        }
+      }
+    }
+
+    .faceted-navigation__list-item {
+      padding: 0.6rem;
+      text-align: left;
+      background: #f8f8f8;
+      transition: all 0.5s ease;
+      cursor: pointer;
+
+      &:hover {
+        background: #eef0f2;
+      }
+    }
+
+    .faceted-navigation__header {
+      margin: 0.5rem 0;
+    }
+  }
+
+  .loader-model {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #959595b8;
+    z-index: 9;
+  }
+
+  .loader-model__popup {
+    background: #fff;
+    padding: 4.5rem;
+    width: 35%;
+    margin: auto;
+    top: 27%;
+    position: relative;
+  }
+
+  .generate-cad-btn {
+    vertical-align: bottom;
+    display: inline-block;
+    position: relative;
+    top: 9.7rem;
+    padding: 2rem 3rem;
+  }
+
+  .result-table-tag {
+    th {
+      word-break: break-all;
+      width: 100px;
+    }
+
+    th:last-child {
+      word-break: break-all;
+      width: 200px;
+    }
+
+    td {
+      word-break: break-all;
+      width: 100px;
+    }
+
+    td:last-child {
+      word-break: break-all;
+      width: 200px;
+    }
+
+  }
+
+}
+
+.d-none {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+.cad-error-message {
+  color: #f00;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 991px) {
+  .download-cad-container {
+    .generate-cad-btn {
+      display: inline-block;
+      position: relative;
+      top: 1rem;
+    }
+
+    .loader-model {
+      z-index: 9;
+    }
+
+    .loader-model__popup {
+      width: 60%;
+    }
+
+  }
+}

@@ -1,0 +1,69 @@
+//-----------------------------------
+// Component: Logo
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-logo {
+  padding: 0;
+
+  &__link {
+    display: block;
+    cursor: pointer;
+  }
+
+  &__image {
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  //-----------------------------
+  // Mobile-Tablet Breakpoint
+  // ----------------------------
+  @include media-mobile-and-tablet {
+
+    // Default Size
+    &__link {
+      max-width: 200px;
+      height: auto;
+    }
+
+    .eaton-header &__link {
+      width: 200px;
+      height: 65px;
+    }
+
+    .eaton-footer &__link {
+      max-width: 200px;
+      height: auto;
+    }
+  }
+
+  //-----------------------------
+  // Desktop Breakpoint
+  // ----------------------------
+  @include media-desktop-and-up {
+
+    // Default Size
+    &__link {
+      max-width: 180px;
+      height: auto;
+    }
+
+    .eaton-header &__link {
+      width: 181px;
+      height: 57px;
+    }
+
+    .eaton-footer &__link {
+      max-width: 180px;
+      height: auto;
+    }
+  }
+}
+
+.secondary__logo {
+  width: 120%;
+}

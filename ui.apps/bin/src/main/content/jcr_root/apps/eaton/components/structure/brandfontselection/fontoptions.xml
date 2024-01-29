@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:WidgetCollection">
+    <eatonRegular
+            jcr:primaryType="nt:unstructured"
+            text="Eaton Regular"
+            value="Eaton"/>
+    <eatonMedium
+            jcr:primaryType="nt:unstructured"
+            text="Eaton Medium"
+            value="EatonMedium"/>
+    <eatonBold
+            jcr:primaryType="nt:unstructured"
+            text="Eaton Bold"
+            value="EatonBold"/>
+    <arial
+            jcr:primaryType="nt:unstructured"
+            text="Arial"
+            value="Arial"/>
+    <arialItalic
+            jcr:primaryType="nt:unstructured"
+            text="Arial Italic"
+            value="Arial Italic"/>
+    <arialBold
+            jcr:primaryType="nt:unstructured"
+            text="Arial Bold"
+            value="Arial Bold"/>
+    <arialBoldItalic
+            jcr:primaryType="nt:unstructured"
+            text="Arial Bold Italic"
+            value="Arial Bold Italic"/>
+    <myriadPro
+            jcr:primaryType="nt:unstructured"
+            text="Myriad Pro"
+            value="Myriad Pro"/>
+    <arialUnicodeMS
+            jcr:primaryType="nt:unstructured"
+            text="Arial Unicode MS"
+            value="Arial Unicode MS"/>
+    <heiSASC
+            jcr:primaryType="nt:unstructured"
+            text="HeiS ASC"
+            value="HeiS ASC"/>
+    <heitASC
+            jcr:primaryType="nt:unstructured"
+            text="Heit ASC"
+            value="Heit ASC"/>
+    <latha
+            jcr:primaryType="nt:unstructured"
+            text="Latha"
+            value="Latha"/>
+    <kozukaGothicPro
+            jcr:primaryType="nt:unstructured"
+            text="Kozuka Gothic Pro"
+            value="Kozuka Gothic Pro"/>
+    <headlineA
+            jcr:primaryType="nt:unstructured"
+            text="HeadlineA"
+            value="HeadlineA"/>
+    <appleGothicReg
+            jcr:primaryType="nt:unstructured"
+            text="Apple Gothic Reg"
+            value="Apple Gothic Reg"/>
+    <krutiDev016
+            jcr:primaryType="nt:unstructured"
+            text="Kruti Dev 016"
+            value="Kruti Dev 016"/>
+    <krutiDev718
+            jcr:primaryType="nt:unstructured"
+            text="Kruti Dev 718"
+            value="Kruti Dev 718"/>
+    <mangal
+            jcr:primaryType="nt:unstructured"
+            text="Mangal"
+            value="Mangal"/>
+    <codiaDSE
+            jcr:primaryType="nt:unstructured"
+            text="Codia DSE"
+            value="Codia DSE"/>
+</jcr:root>

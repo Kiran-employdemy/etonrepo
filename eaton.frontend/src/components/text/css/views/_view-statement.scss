@@ -1,0 +1,50 @@
+//-----------------------------------
+// Component: Text - View: Statement
+//-----------------------------------
+.eaton-text-statement {
+
+  &__content {
+    padding: 15px 0 15px 30px;
+    border-left: 10px solid var(--primary-brand-color, $color__primary-blue);
+    @include font-family__secondary(--secondary-font);
+    font-style: italic;
+    color: $color__primary-gray3;
+    margin: 0;
+  }
+
+  //-----------------------------------
+  // Media-Query: 0-991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__content {
+      font-size: 2.3rem;
+      line-height: 3rem;
+    }
+  }
+
+
+  //-----------------------------------
+  // Media-Query: >992 px
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__content {
+      font-size: 3.4rem;
+      line-height: 6rem;
+
+      // EATON-566: Fix - Text - Statement and Image list too close to each other when placed in two column grid.
+      max-width: 420px;
+    }
+  }
+
+
+  //-----------------------------------
+  // Media-Query: > 1200px and up
+  //-----------------------------------
+  @include media-desktop-large {
+    &__content {
+
+      // EATON-566: Fix - Text - Statement and Image list too close to each other when placed in two column grid.
+      max-width: 460px;
+    }
+  }
+}

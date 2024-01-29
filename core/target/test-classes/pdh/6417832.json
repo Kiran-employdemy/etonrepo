@@ -1,0 +1,922 @@
+{
+  "jcr:primaryType": "sling:OsgiConfig",
+  "LAST_UPDATE_DATE": "07/31/2021 09:32:24",
+  "jcr:createdBy": "admin",
+  "jcr:title": "ES-CHD-Champ VMVL LED Hazardous Area Light Fixtures",
+  "STATUS": "Active",
+  "ITEMSTATUS": "Active",
+  "jcr:created": "Thu Sep 09 2021 16:11:56 GMT+0000",
+  "name": "6417832",
+  "DESCRIPTION": "ES-CHD-Champ VMVL LED Hazardous Area Light Fixtures",
+  "UOMCODE": "Each",
+  "INSTANCE_NAME": "Eaton",
+  "glbl_atrbs": {
+    "jcr:primaryType": "sling:OsgiConfig",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+    "LABEL": "Global Attribute",
+    "xxpdh_product_owner": {
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Product Owner Details",
+      "owner": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "ValueCQDATA": "Electrical AMER Product Family Details",
+        "LABEL": "Owner"
+      }
+    },
+    "xxpdh_publish_systems_info_ag": {
+      "124204180": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "Sequence": 1,
+        "erp_status": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "Active",
+          "LABEL": "ERP Status"
+        },
+        "system_name": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "PRODUCT FAMILY",
+          "LABEL": "System Name"
+        },
+        "publish_mode": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "Real-Time",
+          "LABEL": "Publish Mode"
+        }
+      },
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Publish Systems Details"
+    },
+    "xxpdh_item_lang_ag": {
+      "124206693": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "Sequence": 1,
+        "xxpdh_lang_enabled": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "AMERICAN",
+          "LABEL": "Marketing Languages",
+          "Value": "en_US"
+        },
+        "language_status": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "Active",
+          "LABEL": "Language Status",
+          "Value": "1"
+        }
+      },
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Item Languages"
+    }
+  },
+  "txnmy_atrbs": {
+    "jcr:primaryType": "sling:OsgiConfig",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+    "LABEL": "Taxonomy Attribute",
+    "xxpdh_prd_fm_mar_ag": {
+      "124206400": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "Sequence": 1,
+        "product_marketing_description": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "The Crouse-Hinds series Champ VMVL LED is our flagship LED fixture for Class I and Class II hazardous area mid bay and high bay downlighting.  It is available in 9 models ranging from 3,000 lumens to 25,000 lumens.  This offers a lighting solution for areas with mounting heights from 8’ all the way up to 60’.  Champ VMVL LED light fixtures are engineered to provide maintenance-free operation, while delivering long life and high lumen performance. The NEMA 4X fixture provides up to 127 lumens per watt, and custom Type I, III and V optics maximize light distribution and intensity.  Champ VMVL LEDs are certified for use in NEC, CEC and IEC hazardous locations, providing a single solution for applications around the world.  These light fixtures are ideal for indoor and outdoor general area lighting in oil and gas refineries, drilling rigs, petrochemical plants, food and beverage facilities, and other industrial applications where flammable gases, vapors, dusts, fibers or flyings are present.",
+          "LABEL": "Marketing Description"
+        }
+      },
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Product Family Marketing Details"
+    },
+    "xxpdh_prd_fm_feature_ag": {
+      "124206403": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "Sequence": 1,
+        "product_feature": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "Globally certified for use in classified, hazardous areas",
+          "LABEL": "Feature"
+        }
+      },
+      "124206404": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "Sequence": 2,
+        "product_feature": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "Die cast aluminum heat sink increases surface areas and improves airflow, optimizing both LED and driver life; the VMVL LED has a rated life of 60,000 hours at 55°C ambient, and its economic life ranges from 7 to 20 years",
+          "LABEL": "Feature"
+        }
+      },
+      "124206405": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "Sequence": 3,
+        "product_feature": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "Energy-efficient technology – up to 77% energy savings over HID fixtures",
+          "LABEL": "Feature"
+        }
+      },
+      "124206406": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "Sequence": 4,
+        "product_feature": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "Shock- and vibration-resistant solid state luminaires have no filaments or glass components that could break – greatly reduces the risk of premature failure",
+          "LABEL": "Feature"
+        }
+      },
+      "124206407": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "Sequence": 5,
+        "product_feature": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "Custom Type V, Type III and Type I optics distribute the light where it is needed most and can help reduce the number of fixtures required for certain lighting applications",
+          "LABEL": "Feature"
+        }
+      },
+      "124206688": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "Sequence": 6,
+        "product_feature": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "Contractor-friendly VMVL LED utilizes the same mounting modules as our legacy HID luminaires, simplifying installation and reducing costs in retrofit projects",
+          "LABEL": "Feature"
+        }
+      },
+      "124206689": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "Sequence": 7,
+        "product_feature": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "Cool white standard (5000K, 70 CRI); warm white (3000K, 80 CRI) and neutral white (4000K, 70 CRI) optional",
+          "LABEL": "Feature"
+        }
+      },
+      "124206690": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "Sequence": 8,
+        "product_feature": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "Instant illumination",
+          "LABEL": "Feature"
+        }
+      },
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Product Family Feature"
+    },
+    "xxpdh_product_family_desc_ag": {
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Product Family Description",
+      "product_family_details": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "ValueCQDATA": "Champ VMVL LED Hazardous Area Light Fixtures",
+        "LABEL": "Product family details"
+      },
+      "product_family_sector": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "ValueCQDATA": "ES",
+        "LABEL": "Product family sector"
+      },
+      "product_family_division": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "ValueCQDATA": "CHD",
+        "LABEL": "Product family division"
+      }
+    },
+    "xxpdh_prd_fm_tech_support": {
+      "124206401": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "Sequence": 1,
+        "technical_support_contact": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "Phone: +1 866-764-5454",
+          "LABEL": "Technical Support Contact",
+          "Value": "112124690"
+        },
+        "technical_support_region": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "AMER",
+          "LABEL": "Technical Support Region"
+        },
+        "technical_support_country": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "United States of America",
+          "LABEL": "Technical Support Country",
+          "Value": "US"
+        }
+      },
+      "124206402": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "Sequence": 2,
+        "technical_support_contact": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "Email: CrouseCustomerCTR@Eaton.com",
+          "LABEL": "Technical Support Contact",
+          "Value": "112124691"
+        },
+        "technical_support_region": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "AMER",
+          "LABEL": "Technical Support Region"
+        },
+        "technical_support_country": {
+          "jcr:primaryType": "sling:OsgiConfig",
+          "jcr:createdBy": "admin",
+          "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+          "ValueCQDATA": "United States of America",
+          "LABEL": "Technical Support Country",
+          "Value": "US"
+        }
+      },
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Product Family Technical Support Details"
+    }
+  },
+  "imgs": {
+    "jcr:primaryType": "sling:OsgiConfig",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+    "LABEL": "Images",
+    "image_primary": {
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "SUBTYPE": "PHOTOGRAPHY",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Image Primary",
+      "image_primary_96x96_72dpi": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "Global",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/mdmfiles/PDM19358274/VMV7L2A-UNV1_C/96x96_72dpi",
+        "LABEL": "Image Primary 96x96 72dpi",
+        "REPFL": "Y",
+        "COUNTRY": "Global"
+      },
+      "image_primary_580x580_72dpi": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "Global",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/mdmfiles/PDM19358274/VMV7L2A-UNV1_C/580x580_72dpi",
+        "LABEL": "Image Primary 580x580 72dpi",
+        "REPFL": "Y",
+        "COUNTRY": "Global"
+      },
+      "image_primary_43x43_96dpi": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "Global",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/mdmfiles/PDM19358274/VMV7L2A-UNV1_C/43x43_96dpi",
+        "LABEL": "Image Primary 43x43 96dpi",
+        "REPFL": "Y",
+        "COUNTRY": "Global"
+      },
+      "image_primary_90x90_96dpi": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "Global",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/mdmfiles/PDM19358274/VMV7L2A-UNV1_C/90x90_96dpi",
+        "LABEL": "Image Primary 90x90 96dpi",
+        "REPFL": "Y",
+        "COUNTRY": "Global"
+      },
+      "image_primary_80x80_96dpi": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "Global",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/mdmfiles/PDM19358274/VMV7L2A-UNV1_C/80x80_96dpi",
+        "LABEL": "Image Primary 80x80 96dpi",
+        "REPFL": "Y",
+        "COUNTRY": "Global"
+      },
+      "image_primary_500x500_72dpi": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "Global",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/mdmfiles/PDM19358274/VMV7L2A-UNV1_C/500x500_72dpi",
+        "LABEL": "Image Primary 500x500 72dpi",
+        "REPFL": "Y",
+        "COUNTRY": "Global"
+      },
+      "image_primary_native%20file": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "Global",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/mdmfiles/PDM19358274/VMV7L2A-UNV1_C/Native%20File",
+        "LABEL": "Image Primary Native%20File",
+        "REPFL": "Y",
+        "COUNTRY": "Global"
+      },
+      "image_primary_110x110_96dpi": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "Global",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/mdmfiles/PDM19358274/VMV7L2A-UNV1_C/110x110_96dpi",
+        "LABEL": "Image Primary 110x110 96dpi",
+        "REPFL": "Y",
+        "COUNTRY": "Global"
+      },
+      "image_primary_300x300_300dpi": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "Global",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/mdmfiles/PDM19358274/VMV7L2A-UNV1_C/300x300_300dpi",
+        "LABEL": "Image Primary 300x300 300dpi",
+        "REPFL": "Y",
+        "COUNTRY": "Global"
+      },
+      "image_primary_600x600_96dpi": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "Global",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/mdmfiles/PDM19358274/VMV7L2A-UNV1_C/600x600_96dpi",
+        "LABEL": "Image Primary 600x600 96dpi",
+        "REPFL": "Y",
+        "COUNTRY": "Global"
+      },
+      "image_primary_25x25_72dpi": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "Global",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/mdmfiles/PDM19358274/VMV7L2A-UNV1_C/25x25_72dpi",
+        "LABEL": "Image Primary 25x25 72dpi",
+        "REPFL": "Y",
+        "COUNTRY": "Global"
+      },
+      "image_primary_60x60_72dpi": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "Global",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/mdmfiles/PDM19358274/VMV7L2A-UNV1_C/60x60_72dpi",
+        "LABEL": "Image Primary 60x60 72dpi",
+        "REPFL": "Y",
+        "COUNTRY": "Global"
+      },
+      "image_primary_258x258_96dpi": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "Global",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/mdmfiles/PDM19358274/VMV7L2A-UNV1_C/258x258_96dpi",
+        "LABEL": "Image Primary 258x258 96dpi",
+        "REPFL": "Y",
+        "COUNTRY": "Global"
+      },
+      "image_primary_220x220_96dpi": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "Global",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/mdmfiles/PDM19358274/VMV7L2A-UNV1_C/220x220_96dpi",
+        "LABEL": "Image Primary 220x220 96dpi",
+        "REPFL": "Y",
+        "COUNTRY": "Global"
+      },
+      "image_primary_1000x1000_300dpi": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "Global",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/mdmfiles/PDM19358274/VMV7L2A-UNV1_C/1000x1000_300dpi",
+        "LABEL": "Image Primary 1000x1000 300dpi",
+        "REPFL": "Y",
+        "COUNTRY": "Global"
+      }
+    }
+  },
+  "dcmnts": {
+    "jcr:primaryType": "sling:OsgiConfig",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+    "LABEL": "Documents",
+    "catalog_primary": {
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Catalog",
+      "doc_link_331665_p": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/catalog-pages/crouse-hinds-chmm-mounting-adapters-catalog-page.pdf",
+        "LABEL": "Crouse-Hinds series CHMM Mounting Adapters catalog page",
+        "COUNTRY": "CA,US"
+      }
+    },
+    "catalog": {
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Catalog",
+      "doc_link_241706": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/catalog-pages/crouse-hinds-champ-vmv-led-catalog-page.pdf",
+        "LABEL": "Crouse-Hinds series Champ VMV LED catalog page",
+        "COUNTRY": "US"
+      },
+      "doc_link_331665": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/catalog-pages/crouse-hinds-chmm-mounting-adapters-catalog-page.pdf",
+        "LABEL": "Crouse-Hinds series CHMM Mounting Adapters catalog page",
+        "COUNTRY": "CA,US"
+      }
+    },
+    "specification": {
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Specification",
+      "doc_link_336624": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/spec-guide-forms/crouse-hinds-champ-vmv-led-spec-guide-form.doc",
+        "LABEL": "Champ VMV LED Hazardous Area",
+        "COUNTRY": "CA,US"
+      },
+      "doc_link_336626": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/spec-guide-forms/champ-vmv-led-hilumen-specguideform.doc",
+        "LABEL": "Champ VMV LED High Lumen Hazardous Area",
+        "COUNTRY": "CA,US"
+      }
+    },
+    "audio_visual": {
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Audio visual",
+      "doc_link_339671": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "http://videos.eaton.com/detail/video/3594815228001/champ-vmv-led-hose-test?autoStart=true&q=vmv",
+        "LABEL": "Champ VMV LED Hose Test",
+        "COUNTRY": "US"
+      },
+      "doc_link_339674": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "http://videos.eaton.com/detail/video/3594815226001/champ-vmv-led-vibration-test?autoStart=true&q=vmv",
+        "LABEL": "Champ VMV LED Vibration Test",
+        "COUNTRY": "US"
+      },
+      "doc_link_339672": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "http://videos.eaton.com/detail/video/3595708474001/champ-vmv-led-impact-test?autoStart=true&q=vmv",
+        "LABEL": "Champ VMV LED Impact Test",
+        "COUNTRY": "US"
+      },
+      "doc_link_339673": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "http://videos.eaton.com/detail/video/3594815227001/champ-vmv-led-rain-test?autoStart=true&q=vmv",
+        "LABEL": "Champ VMV LED Rain Test",
+        "COUNTRY": "US"
+      },
+      "doc_link_339670": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "http://videos.eaton.com/detail/video/3594815229001/champ-vmv-led-dust-test?autoStart=true&q=vmv",
+        "LABEL": "Champ VMV LED Dust Test",
+        "COUNTRY": "US"
+      },
+      "doc_link_339668": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "http://videos.eaton.com/detail/video/3595708475001/champ-vmv-led-cold-start-test?autoStart=true&q=vmv",
+        "LABEL": "Champ VMV LED Cold Start Test",
+        "COUNTRY": "US"
+      }
+    },
+    "specification_primary": {
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Specification",
+      "doc_link_336624_p": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/spec-guide-forms/crouse-hinds-champ-vmv-led-spec-guide-form.doc",
+        "LABEL": "Champ VMV LED Hazardous Area",
+        "COUNTRY": "CA,US"
+      }
+    },
+    "brochure": {
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Brochure",
+      "doc_link_339443": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/literature/crouse-hinds-vmvl-led-3to11-brochure.pdf",
+        "LABEL": "Crouse-Hinds series Champ VMVL LED luminaires - 3,000 to 11,000 lumens",
+        "COUNTRY": "CA,US"
+      },
+      "doc_link_336722": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/literature/crouse-hinds-led-family-brochure.pdf",
+        "LABEL": "Crouse-Hinds series Global LED Portfolio Catalog",
+        "COUNTRY": "Global"
+      },
+      "doc_link_337044": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/literature/crouse-hinds-chmm-mounting-adapters-brochure.pdf",
+        "LABEL": "Mounting adapters for VMV and VMVL",
+        "COUNTRY": "CA,US"
+      },
+      "doc_link_336672": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/literature/crouse-hinds-champ-vmvl-led-brochure.pdf",
+        "LABEL": "Crouse-Hinds series Champ VMVL LED brochure",
+        "COUNTRY": "US"
+      },
+      "doc_link_339442": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/literature/crouse-hinds-vmvl-led-13to25-brochure.pdf",
+        "LABEL": "Crouse-Hinds series Champ VMVL LED luminaires - 13,000 to 25,000 lumens",
+        "COUNTRY": "CA,US"
+      },
+      "doc_link_336669": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/literature/crouse-hinds-champ-vmv-led-brochure.pdf",
+        "LABEL": "Crouse-Hinds series Champ VMV LED brochure",
+        "COUNTRY": "US"
+      },
+      "doc_link_332269": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/literature/crouse-hinds-dlc-approved-lighting-products-flyer.pdf",
+        "LABEL": "Crouse-Hinds series DLC approved lighting products",
+        "COUNTRY": "CA,US"
+      }
+    },
+    "inst_leaflet_primary": {
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Instruction/Installation Leaflet",
+      "doc_link_336811_p": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/instruction-sheets/crouse-hinds-if1651.pdf",
+        "LABEL": "IF 1651 - Champ LED Trunnion Arm Mount",
+        "COUNTRY": "CA,US"
+      }
+    },
+    "audio_visual_primary": {
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Audio visual",
+      "doc_link_339668_p": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "http://videos.eaton.com/detail/video/3595708475001/champ-vmv-led-cold-start-test?autoStart=true&q=vmv",
+        "LABEL": "Champ VMV LED Cold Start Test",
+        "COUNTRY": "US"
+      }
+    },
+    "brochure_primary": {
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Brochure",
+      "doc_link_339442_p": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/literature/crouse-hinds-vmvl-led-13to25-brochure.pdf",
+        "LABEL": "Crouse-Hinds series Champ VMVL LED luminaires - 13,000 to 25,000 lumens",
+        "COUNTRY": "CA,US"
+      }
+    },
+    "inst_leaflet": {
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Instruction/Installation Leaflet",
+      "doc_link_332516": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/instruction-sheets/crouse-hinds-if1917-instruction-sheet.pdf",
+        "LABEL": "IF 1917 - CHMM3 Top Hat Adapter",
+        "COUNTRY": "CA,US"
+      },
+      "doc_link_336818": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/instruction-sheets/crouse-hinds-if1701.pdf",
+        "LABEL": "IF 1701 - Champ VMV LED High Lumen Models (13L-25L)",
+        "COUNTRY": "CA,US"
+      },
+      "doc_link_336872": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/instruction-sheets/crouse-hinds-if1855.pdf",
+        "LABEL": "IF 1855 - Champ VMV LED (3L-11L) - 2019 models",
+        "COUNTRY": "CA,US"
+      },
+      "doc_link_332514": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/instruction-sheets/crouse-hinds-if1912-instruction-sheet.pdf",
+        "LABEL": "IF 1912 - Champ VMVL and PVML high lumen LED luminaires",
+        "COUNTRY": "CA,US"
+      },
+      "doc_link_332444": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/instruction-sheets/crouse-hinds-if1667.pdf",
+        "LABEL": "IF 1667 - Transformer Kit for Champ VMV and PVM LED",
+        "COUNTRY": "CA,US"
+      },
+      "doc_link_339460": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/instruction-sheets/crouse-hinds-if1922-instruction-sheet.pdf",
+        "LABEL": "IF 1922 - CHMM4 Top Hat Adapter",
+        "COUNTRY": "CA,US"
+      },
+      "doc_link_332509": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/instruction-sheets/crouse-hinds-if1882-instruction-sheet.pdf",
+        "LABEL": "IF 1882 - Champ VMVL and PVML LED luminaires",
+        "COUNTRY": "CA,US"
+      },
+      "doc_link_332515": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/instruction-sheets/crouse-hinds-if1915-instruction-sheet.pdf",
+        "LABEL": "IF 1915 - CHMM2 Top Hat Adapter",
+        "COUNTRY": "CA,US"
+      },
+      "doc_link_336837": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/instruction-sheets/crouse-hinds-if1743.pdf",
+        "LABEL": "IF 1743 - Champ VMV LED (3L-11L) - 2014-2018 models",
+        "COUNTRY": "CA,US"
+      },
+      "doc_link_336814": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/instruction-sheets/crouse-hinds-if1682.pdf",
+        "LABEL": "IF 1682 - CHMM1 Top Hat Adapter",
+        "COUNTRY": "CA,US"
+      },
+      "doc_link_336811": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/instruction-sheets/crouse-hinds-if1651.pdf",
+        "LABEL": "IF 1651 - Champ LED Trunnion Arm Mount",
+        "COUNTRY": "CA,US"
+      },
+      "doc_link_332511": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "LANGUAGE": "en_US",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "DISPLAY_FLAG": "Y",
+        "ValueCQDATA": "https://www.eaton.com/content/dam/eaton/products/lighting-and-controls/crouse-hinds/instruction-sheets/crouse-hinds-if1888-instruction-sheet.pdf",
+        "LABEL": "IF 1888 - Champ VMVL and PVML Driver Replacement",
+        "COUNTRY": "CA,US"
+      }
+    }
+  },
+  "hrchy": {
+    "jcr:primaryType": "sling:OsgiConfig",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+    "LABEL": "Hierarchies",
+    "taxonomy_hierarchy": {
+      "jcr:primaryType": "sling:OsgiConfig",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+      "LABEL": "Taxonomy Hierarchy",
+      "taxonomy_hierarchy": {
+        "jcr:primaryType": "sling:OsgiConfig",
+        "jcr:createdBy": "admin",
+        "jcr:created": "Thu Sep 09 2021 16:11:57 GMT+0000",
+        "ValueCQDATA": "Product Family Details",
+        "LABEL": "Taxonomy Hierarchy"
+      }
+    }
+  }
+}

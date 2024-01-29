@@ -1,0 +1,199 @@
+//-----------------------------------
+// Module M-9: Category Hero
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, etc...)
+@import "../../../global/css/_config/sass";
+
+.category-hero {
+
+  .col-md-6 {
+    [dir='rtl'] & {
+      float: right;
+    }
+  }
+
+  &__component {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    z-index: 1;
+    @include absolute-fill();
+  }
+
+  &__content {
+    position: relative;
+    padding: 15px 0;
+    width: 100%;
+    z-index: 5;
+  }
+
+  &__eyebrow {
+    [dir='rtl'] & {
+      padding-right: 0;
+    }
+  }
+
+  &__cta {
+    position: relative;
+
+    &:hover,
+    &:visited {
+      text-decoration: underline;
+    }
+
+    [dir='rtl'] & {
+      span {
+        float: right;
+        margin-left: rem(5px);
+      }
+    }
+
+    .icon {
+      font-size: 0.66667em;
+      margin-left: 0;
+      margin-right: rem($spacing__sm / 6);
+      position: relative;
+      vertical-align: middle;
+
+      [dir='rtl'] & {
+        margin-left: rem($spacing__sm / 6);
+        margin-right: 0;
+
+        &::before {
+          transform: rotate(180deg);
+        }
+      }
+
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        display: inline-block;
+        font-size: rem($base__font-size * 1.2);
+        top: rem($spacing__sm * -0.0666667);
+      }
+    }
+  }
+
+  &__title {
+    // TO DO: possibly remove this once microsites brand tool has been implemented.
+    // If global font overrides are desired once microsites brand tool is implement, it should be handled in _mixins-typography.scss
+    @include font-family__primary-medium(--header-font-medium);
+    margin: 0;
+    position: relative;
+
+    &.b-heading-h2 {
+      font-size: rem($base__font-size * 2.7);
+    }
+
+    &::after {
+      background: var(--color__white);
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: .5rem;
+      width: 6rem;
+
+      [dir='rtl'] & {
+        right: 0;
+      }
+    }
+  }
+
+  // EATON-474: Category Hero, Landing Hero - Semi-Transparent gradient should be applied on the whole image
+  //--------------
+  .image-mask & {
+    &__image::before {
+      @include image-mask-gradient();
+    }
+  }
+
+
+  //-----------------------------------
+  // Add Support For DarkTheme (White Text Over Dark Background)
+  //-----------------------------------
+  .dark-theme & {
+    &__title,
+    &__text {
+      color: var(--color__white);
+    }
+
+    &__cta {
+      &,
+      &:hover,
+      &:visited {
+        color: var(--color__white);
+      }
+    }
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: >0 to 991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    &__component {
+      min-height: 60vw; // Mobile and Tablet Aspect Ratio
+    }
+
+    &__eyebrow {
+      margin-bottom: 1.2rem;
+    }
+
+    &__title {
+      padding-bottom: 2.4rem;
+    }
+
+    &__text {
+      margin-top: 1.5rem;
+    }
+
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: >992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    &__component {
+      min-height: 15vw; // Desktop Aspect Ratio
+    }
+
+    &__content {
+      padding: 30px 0;
+    }
+
+    &__eyebrow {
+      margin-bottom: 1.2rem;
+    }
+
+    &__title {
+      padding-bottom: 3.2rem;
+    }
+  }
+
+
+  //-----------------------------------
+  // IE11 Styles - http://browserhacks.com/
+  //-----------------------------------
+  // It fixes vertical alignment issues in IE11 due to flexbox elements inside a container with "min-height"
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    &__component {
+      /* IE11 and Up */
+      height: 60vw;
+    }
+  }
+
+  @media all and (-ms-high-contrast: none) and (min-width: $grid__md), (-ms-high-contrast: active) {
+    &__component {
+      /* IE11 and Up */
+      height: 15vw;
+    }
+  }
+
+
+}

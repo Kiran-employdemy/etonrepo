@@ -1,0 +1,241 @@
+//-----------------------------------
+// Styleguide - Buttons
+//-----------------------------------
+
+.button--reset {
+  border: 0;
+  border-radius: 0;
+  background: none;
+  padding: 0;
+  appearance: none;
+}
+
+.b-button {
+  background: none;
+  text-shadow: none;
+  border-radius: 0;
+  border-style: solid;
+  display: inline-block;
+  font-weight: bold;
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+
+
+  // Primary Button
+  //--------------
+  &__primary {
+    border-width: 3px;
+    font-size: 1.9rem; // Mobile Size
+    padding: 20px 40px;
+
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__primary--light {
+      border-color: var(--primary-brand-color);
+      color: var(--primary-brand-color);
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: var(--color__white);
+        background: var(--primary-brand-color);
+        text-decoration: none;
+      }
+    }
+
+    &.b-button__primary--primary-branding-color {
+      border-color: var(--primary-brand-color);
+      color: var(--primary-brand-color);
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: var(--color__white);
+        background: var(--primary-brand-color);
+        text-decoration: none;
+      }
+    }
+
+
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__primary--dark {
+      border-color: var(--color__white);
+      color: var(--color__white);
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: var(--primary-brand-color);
+        background: var(--color__white);
+        text-decoration: none;
+      }
+    }
+
+    @include media-desktop-and-up {
+      font-size: 2rem; // Desktop size
+    }
+
+    // Reverse the cta button color to blue
+    &--primary-branding-color-reversed {
+      background: var(--color__primary-blue);
+      border-color: var(--color__white);
+      color: var(--color__white);
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: var(--color__white);
+        border-color: var(--color__primary-blue);
+        color: var(--color__primary-blue);
+        text-decoration: none;
+      }
+    }
+
+    &--primary-disabled {
+      background-color: var(--color__ocean-20);
+      color: var(--color__ocean-30);
+
+      &:hover,
+
+      &:active,
+
+      &:focus {
+        background-color: var(--color__ocean-20);
+        color: var(--color__ocean-30);
+        border: 0;
+        text-decoration: none;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  // Secondary Button
+  //--------------
+  &__secondary {
+    border-width: 3px;
+    font-size: 1.6rem; // Mobile Size
+    padding: 20px;
+
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__secondary--light {
+      border-color: var(--primary-brand-color);
+      color: var(--primary-brand-color);
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: var(--color__white);
+        background: var(--primary-brand-color);
+        text-decoration: none;
+      }
+    }
+
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__secondary--dark {
+      border-color: var(--color__white);
+      color: var(--color__white);
+
+      &:hover,
+      &:active,
+      &:focus {
+        color: var(--primary-brand-color);
+        background: var(--color__white);
+        text-decoration: none;
+      }
+    }
+
+
+    @include media-desktop-and-up {
+      font-size: 1.4rem; // Desktop size
+    }
+  }
+
+
+  // Tertiary Button
+  //--------------
+  &__tertiary {
+    border-width: 3px;
+    font-size: 1.9rem; // Mobile Size
+    padding: 20px 40px;
+
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__tertiary--light {
+      border-color: var(--primary-brand-color);
+      background-color: var(--primary-brand-color);
+      color: var(--color__white);
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: var(--color__white);
+        color: var(--primary-brand-color);
+        text-decoration: none;
+      }
+    }
+
+    // Use chained selectors in order to override default <a> tag styles
+    &.b-button__tertiary--dark {
+      border: 0;
+      background-color: var(--primary-brand-color);
+      color: var(--color__white);
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: var(--color__white);
+        color: var(--primary-brand-color);
+        text-decoration: none;
+      }
+    }
+
+    @include media-desktop-and-up {
+      font-size: 2rem; // Desktop size
+    }
+
+  }
+
+  @include media-desktop-and-up {
+    width: auto;
+  }
+
+  &.b-button--red {
+    border-color: var(--color__berry-40);
+    color: var(--color__berry-40);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--color__berry-40);
+      color: var(--color__white);
+      text-decoration: none;
+    }
+  }
+}
+
+@include media-mobile-only {
+
+  .b-button {
+    width: 100%;
+
+    &__secondary {
+      font-size: 1em;
+    }
+  }
+
+}
+
+@include media-desktop-large {
+
+  .cta-align {
+
+    &__right {
+      text-align: right;
+    }
+
+    &__left {
+      text-align: left;
+    }
+
+  }
+
+}

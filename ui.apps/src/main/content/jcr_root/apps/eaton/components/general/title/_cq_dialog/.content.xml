@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Title"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Title - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+            margin="{Boolean}false"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                            fieldDescription="Click Enter to create a new paragraph p, Click on MAJ+Ctrl+Enter to break the line "
+                            fieldLabel="Title "
+                            name="./jcr:title"
+                            useFixedInlineToolbar="{Boolean}true">
+                        <uiSettings jcr:primaryType="nt:unstructured">
+                            <cui jcr:primaryType="nt:unstructured">
+                                <inline
+                                        jcr:primaryType="nt:unstructured"
+                                        toolbar="[format]">
+                                </inline>
+                                <dialogFullScreen
+                                        jcr:primaryType="nt:unstructured"
+                                        toolbar="[format]"/>
+                            </cui>
+                        </uiSettings>
+                    </title>
+                    <view
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        granite:class="cq-dialog-dropdown-showhide"
+                        cq-dialog-dropdown-showhide-target=".title-hide-show"
+                        fieldLabel="View"
+                        name="./view"
+                        required="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                text="Default View"
+                                value="default"/>
+                            <witheyebrowandbyline
+                                jcr:primaryType="nt:unstructured"
+                                text="With Eyebrow and Byline View"
+                                value="witheyebrowandbyline"/>
+                            <map
+                                jcr:primaryType="nt:unstructured"
+                                text="Map View"
+                                value="map"/>
+                            <witheyebrow
+                                    jcr:primaryType="nt:unstructured"
+                                    text="With Eyebrow"
+                                    value="witheyebrow"/>
+
+                        </items>
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-dialog-dropdown-showhide-target=".title-hide-show"/>
+                    </view>
+                    <eyebrowLabel
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        granite:class="hide title-hide-show"
+                        fieldLabel="Eyebrow Label"
+                        name="./eyebrowLabel"
+                        required="{Boolean}true">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="witheyebrow"/>
+                    </eyebrowLabel>
+                    <eyebrowLink
+                            granite:class="hide title-hide-show"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                            fieldLabel="Eyebrow Link"
+                            name="./eyebrowLink"
+                            required="{Boolean}true">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="witheyebrow"/>
+                    </eyebrowLink>
+
+                    <catLabel
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        granite:class="hide title-hide-show"
+                        fieldLabel="Category Label"
+                        name="./catLabel"
+                        required="{Boolean}true">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="witheyebrowandbyline"/>
+                    </catLabel>
+                    <catLink
+                        granite:class="hide title-hide-show"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                        fieldLabel="Category Link"
+                        name="./catLink"
+                        required="{Boolean}true">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="witheyebrowandbyline"/>
+                    </catLink>
+                    <type
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Header Type"
+                        name="./type">
+                        <items jcr:primaryType="nt:unstructured">
+                            <h1
+                                jcr:primaryType="nt:unstructured"
+                                selected="{Boolean}true"
+                                text="H1"
+                                value="h1"/>
+                            <h2
+                                jcr:primaryType="nt:unstructured"
+                                text="H2"
+                                value="h2"/>
+                            <h3
+                                jcr:primaryType="nt:unstructured"
+                                text="H3"
+                                value="h3"/>
+                            <h4
+                                jcr:primaryType="nt:unstructured"
+                                text="H4"
+                                value="h4"/>
+                            <h5
+                                jcr:primaryType="nt:unstructured"
+                                text="H5"
+                                value="h5"/>
+                            <h6
+                                jcr:primaryType="nt:unstructured"
+                                text="H6"
+                                value="h6"/>
+                        </items>
+                    </type>
+                    <byLineText
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        granite:class="hide title-hide-show"
+                        fieldLabel="By Line Text"
+                        name="./byLineText"
+                        required="{Boolean}true">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="witheyebrowandbyline"/>
+                    </byLineText>
+                    <byLineDate
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                        granite:class="hide title-hide-show date-readonly"
+                        displayedFormat="MMMM DD, YYYY hh:mm a"
+                        displayTimezoneMessage="{Boolean}false"
+                        fieldLabel="By Line Date"
+                        name="./byLineDate"
+                        type="datetime"
+                        required="{Boolean}false">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="witheyebrowandbyline"/>
+                    </byLineDate>
+                    <toggleInnerGrid
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        defaultChecked="true"
+                        name="./toggleInnerGrid"
+                        text="Include Margin"
+                        uncheckedValue="{Boolean}false"
+                        value="true"/>
+                    <toggleBottomDivider
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        granite:class="hide title-hide-show"
+                        defaultChecked="false"
+                        name="./toggleBottomDivider"
+                        text="Include Bottom Divider"
+                        uncheckedValue="{Boolean}false"
+                        value="true">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="default"/>
+                    </toggleBottomDivider>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

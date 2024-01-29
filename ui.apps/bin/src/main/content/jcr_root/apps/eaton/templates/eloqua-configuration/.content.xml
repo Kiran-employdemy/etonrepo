@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Configuration Page Template to maintain Eloqua account details"
+    jcr:primaryType="cq:Template"
+    jcr:title="Eloqua Configuration Page Template"
+    allowedPaths="[/etc/cloudservices/eloquaconfig(/.*)?]"
+    ranking="{Long}105">
+    <jcr:content
+		cq:cloudservicename="eloquaconfig"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="/apps/eaton/components/structure/eloquaconfigpage"/>
+</jcr:root>

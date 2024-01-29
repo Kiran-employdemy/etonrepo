@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.assets.AssetZipDownloadServlet" immediate="true">
+  <property name="sling.servlet.extensions" type="String" value="zip"/>
+  <property name="sling.servlet.paths" type="String" value="/eaton/content/assetzipdownload"/>
+  <property name="service.description" type="String" value="Asset Zip Download"/>
+  <property name="sling.servlet.methods" type="String" value="POST"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="assetDownloadService" interface="com.day.cq.dam.api.jobs.AssetDownloadService" field="assetDownloadService"/>
+  <implementation class="com.eaton.platform.core.servlets.assets.AssetZipDownloadServlet"/>
+</scr:component>

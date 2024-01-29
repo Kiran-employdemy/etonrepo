@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    sendNotification="{Boolean}true"
+	sendEmailNotification="{Boolean}true"
+	emailNotificationTemplatePath="/etc/notification/email/txt/com.eaton.generic.email/rolloutConflictNotification.txt"
+	emailReportTemplatePath="/etc/notification/email/txt/com.eaton.generic.email/rolloutConflictReport.txt"
+	reportRootPath="/content/eaton"
+	detailedReport="{Boolean}false"
+	reportRecipients="[jaroslavrassadin@eaton.com,palepuvsatyanand@eaton.com,jivansawalakhe@eaton.com,mitalikshah@eaton.com]"
+	docLink="https://confluence-prod.tcc.etn.com/display/EC/Rollout+conflicts" />

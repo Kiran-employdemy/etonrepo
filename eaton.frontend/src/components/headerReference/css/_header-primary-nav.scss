@@ -1,0 +1,289 @@
+//------------------------------------------
+// Component M-1: Header: Primary Navigation
+//------------------------------------------
+$links-offset: $spacing__sm * -.5;
+$header-primary-nav-z-index: 112;
+$open-search-z-index: 1;
+$links-z-index: 1;
+
+.header-primary-nav {
+  position: relative;
+  background: $color__white;
+  z-index: $header-primary-nav-z-index;
+
+  &__container {
+    display: flex;
+    width: 100%;
+  }
+
+  &::after {
+    background: $color__secondary-gray5;
+    bottom: 0;
+    content: '';
+    height: rem($spacing__sm * .1333333333);
+    position: absolute;
+    width: 100%;
+  }
+
+  .container {
+    padding-left: 5%;
+    padding-right: 5%;
+
+    @include media-tablet-and-up {
+      width: $grid__width-sm;
+    }
+
+    @include media-desktop-and-up {
+      width: $grid__width-md;
+    }
+
+    @include media-desktop-large {
+      width: $grid__width-lg;
+    }
+  }
+
+  .row {
+    align-items: center;
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px;
+    position: relative;
+
+    @include media-desktop-and-up {
+      align-items: stretch;
+    }
+  }
+
+  &__logo_container {
+    display: flex;
+    padding: rem($spacing__sm * .333333) 0;
+
+    @include media-desktop-and-up {
+      padding: rem($spacing__sm * .6666666) 0;
+    }
+  }
+
+  &__links {
+    bottom: rem($spacing__sm * -.2);
+    position: absolute;
+    right: 0;
+
+    [dir='rtl'] & {
+      left: 0;
+      right: auto;
+    }
+    @include media-desktop-and-up {
+      display: none;
+      bottom: auto;
+      position: relative;
+      right: rem($links-offset * .9333333333); // 1 less pixel vs The Menu wrapper. When the search is open, this 1px makes the icon to cover the divider/line.
+      transition: right .3s ease-in-out, width .3s ease-in-out;
+      width: rem($spacing__md * 1.3);
+      z-index: $links-z-index;
+
+      [dir='rtl'] & {
+        left: rem($links-offset * .9333333333);
+        right: auto;
+      }
+    }
+
+    .icon {
+      color: var(--navigation-search-icon-color, $color__primary-blue);
+      font-size: rem($base__font-size * 2);
+      position: relative;
+    }
+  }
+// stylelint-disable
+  &__open-search,
+  &__toggle-mobile-menu {
+    display: inline-block;
+    padding: rem($spacing__sm * .5666666667) !important;
+    position: relative;
+    z-index: $open-search-z-index;
+
+    @include media-desktop-and-up {
+      bottom: 0;
+      display: flex;
+      height: rem($spacing__lg);
+      padding: rem($spacing__sm) !important; // Equidistant Spacing between menu & search icon
+//stylelint-enable
+      /* NOTE: Make the icon to be position absolute / bottom aligned.
+      * this is used to avoid an issue where the icon shifts its position
+      * when there search is open and the header switches from default to sticky/fixed.
+      */
+      position: absolute;
+      right: 0;
+      transition: height .3s ease-in-out, padding .3s ease-in-out;
+      border: 0px;
+    }
+  }
+
+  .icon-close {
+    color: $color__white;
+    display: none;
+  }
+
+  // desktop specific styles
+  @include media-desktop-and-up {
+    &__menu {
+      flex-grow: 1;
+      position: relative;
+      right: rem($links-offset); // EATON-711 Align the search icon to the right side of the grid and reduce de spacing between the links, the divider and the search icon
+      transition: right .3s ease-in-out;
+
+      /*&::after {
+        background: $color__primary-gray3;
+        content: '';
+        height: rem($spacing__sm);
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translate(0, -50%);
+        transition: right .3s ease-in-out;
+        width: rem($base__font-size * .1);
+
+        [dir='rtl'] & {
+          left: 0;
+          right: auto;
+        }
+      }*/
+
+      .header-fixed & {
+        right: rem($links-offset * .3333333333); // Smaller offset when the header is sticky
+
+        &::after {
+          right: rem($spacing__sm * .1666666667);
+
+          [dir='rtl'] & {
+            right: auto;
+          }
+        }
+      }
+    }
+
+    &__links {
+      .header-fixed & {
+        right: rem($links-offset * .2666666667); // Smaller offset when the header is sticky
+        width: rem($spacing__md * .9666666667);
+      }
+
+      i {
+        top: rem($spacing__sm * -.1666666667);
+      }
+    }
+
+    &__open-search {
+      @include media-desktop-and-up {
+        &::before {
+          background: $color__primary-gray3;
+          content: '';
+          height: rem($spacing__sm);
+          position: absolute;
+          left: 0;
+          top: 45%;
+          transform: translate(0, -50%);
+          transition: right .3s ease-in-out;
+          width: rem($base__font-size * .1);
+
+          [dir='rtl'] & {
+            right: 0;
+            left: auto;
+          }
+        }
+      }
+
+      .header-fixed & {
+        height: rem($spacing__md * 1.1666666667);
+        padding: rem($spacing__sm * .66666);
+      }
+    }
+
+    &__toggle-mobile-menu {
+      display: none;
+    }
+  }
+}
+
+.microsite {
+
+  &__links {
+    bottom: 0;
+    width: auto;
+
+    .header-fixed & {
+      height: rem($spacing__md * 1.3333334);
+      width: auto;
+    }
+  }
+
+  .header-primary-nav {
+    @include media-mobile-and-tablet {
+
+      &__links {
+        bottom: 0;
+      }
+
+      &__toggle-mobile-menu {
+        display: flex;
+      }
+    }
+  }
+
+  &__toggle-mobile-menu {
+
+    .nav-open & {
+      background: var(--navigation-mega-menu-background-color, $color__primary-gray2) !important; // stylelint-disable-line declaration-no-important
+    }
+  }
+
+  &__cta {
+    display: none;
+
+    @include media-desktop-and-up {
+      align-items: center;
+      display: flex;
+      margin-left: rem($spacing__sm / 2);
+      margin-right: rem($spacing__sm / 3);
+      white-space: nowrap;
+
+      [dir='rtl'] & {
+        margin-left: rem($spacing__sm / 3);
+        margin-right: rem($spacing__sm / 2);
+      }
+
+      a {
+        font-size: rem($base__font-size * 1.4);
+      }
+    }
+
+    &-mobile {
+      padding: rem($spacing__sm * 0.6666667) 5%;
+
+      .b-button__primary {
+        border-color: $color__white;
+        color: $color__white;
+
+        &:hover {
+          background-color: $color__white;
+          color: var(--navigation-mega-menu-title-background-color, $color__primary-gray1);
+        }
+      }
+    }
+  }
+
+  &__search {
+    display: none;
+
+    @include media-desktop-and-up {
+      display: flex;
+    }
+
+    &-mobile {
+      .eaton-search {
+        background: var(--navigation-mega-menu-title-background-color, $color__primary-gray1);
+        padding: rem($spacing__sm / 3) 0 rem($spacing__sm * 0.8333334);
+      }
+    }
+  }
+}
+

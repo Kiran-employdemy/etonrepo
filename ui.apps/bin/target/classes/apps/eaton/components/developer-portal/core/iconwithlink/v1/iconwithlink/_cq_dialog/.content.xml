@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Icon With Link"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <iconwithlink
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Icon With Link Component Properties"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <icon
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
+                                fieldDescription="Select Icon image"
+                                fieldLabel="Icon"
+                                name="./icon"
+                                required="true"
+                                rootPath="/content/dam/eaton"/>
+                            <heading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter Heading"
+                                fieldLabel="Heading"
+                                required="true"
+                                name="./heading"/>
+                            <subheading
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter Subheading"
+                                fieldLabel="Sub Heading"
+                                required="true"
+                                name="./subheading"/>
+                            <linktext
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter Link Text"
+                                fieldLabel="Link Text"
+                                required="true"
+                                name="./linktext"/>
+                            <linkurl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                fieldDescription="This field stores the value for Link URL field. "
+                                fieldLabel="Link URL"
+                                required="true"
+                                name="./linkurl"/>
+                            <newWindow
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="This field stores the value for newWindow field."
+                                name="./newWindow"
+                                text="Open in existing tab"
+                                value="true"/>
+                        </items>
+                    </column>
+                </items>
+            </iconwithlink>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OrderedFolder"
+    globalDefaultConfigs="\[{&quot;type&quot;:&quot;XML_EDITOR_UI_CONFIG&quot;,&quot;path&quot;:&quot;&quot;},{&quot;type&quot;:&quot;XML_EDITOR_CSS_CONFIG&quot;, &quot;path&quot;:&quot;&quot;},{&quot;type&quot;:&quot;XML_EDITOR_Snippets&quot;, &quot;path&quot;:&quot;&quot;},{&quot;type&quot;:&quot;XML_EDITOR_LABELS_CONFIG&quot;, &quot;path&quot;:&quot;&quot;},{&quot;type&quot;:&quot;XML_EDITOR_ROOT_MAP&quot;,&quot;rootMap&quot;:&quot;&quot;}]"
+    profileConfigs="\[{&quot;type&quot;:&quot;XML_EDITOR_UI_CONFIG&quot;,&quot;path&quot;:&quot;&quot;},{&quot;type&quot;:&quot;XML_EDITOR_CSS_CONFIG&quot;, &quot;path&quot;:&quot;&quot;},{&quot;type&quot;:&quot;XML_EDITOR_Snippets&quot;, &quot;path&quot;:&quot;&quot;},{&quot;type&quot;:&quot;XML_EDITOR_LABELS_CONFIG&quot;, &quot;path&quot;:&quot;&quot;},{&quot;type&quot;:&quot;XML_EDITOR_ROOT_MAP&quot;,&quot;rootMap&quot;:&quot;&quot;}]">
+    <config/>
+    <global-profile/>
+    <_x0037_6b07b1f-721a-70d8-6749-d9cdac049bf7/>
+</jcr:root>

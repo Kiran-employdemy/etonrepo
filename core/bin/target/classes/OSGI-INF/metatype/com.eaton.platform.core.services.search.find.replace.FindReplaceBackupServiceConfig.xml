@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.search.find.replace.FindReplaceBackupServiceConfig">
+  <OCD id="com.eaton.platform.core.services.search.find.replace.FindReplaceBackupServiceConfig" name="Find Replace Backup Service Configuration" description="Configuration for Find Replace Backup Service">
+    <AD id="group" type="String" name="Group name" description="Group name for backup package." default="com.eaton.find.replace.backup"/>
+    <AD id="namePrefix" type="String" name="Name prefix" description="Package name prefix." default="find_replace_backup"/>
+    <AD id="maxNodes" type="Integer" name="Max nodes" description="Maximum number of nodes allowed in backup." default="0"/>
+    <AD id="pathPatterns" type="String" cardinality="2147483647" name="Path patterns" description="Repository path patterns for checking minimum path depth of the resource. Can contain * wildcard. E.g. /content/dam/*." default=""/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.search.find.replace.impl.FindReplaceBackupServiceImpl">
+    <Object ocdref="com.eaton.platform.core.services.search.find.replace.FindReplaceBackupServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

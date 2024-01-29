@@ -1,0 +1,12 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Feature Card: ${currentNode.name}</div>
+</sly>
+
+
+<sly data-sly-test="${properties.view == 'card'}">
+    <sly data-sly-include="views/view-card.html"></sly>
+</sly>
+
+<sly data-sly-test="${properties.view == 'single-feature'}">
+    <sly data-sly-include="views/view-single-feature.html"></sly>
+</sly>

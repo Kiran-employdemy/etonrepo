@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.EloquaSandBoxPathConfig">
+  <OCD id="com.eaton.platform.core.services.config.EloquaSandBoxPathConfig" name="EatonEloquaSandBoxPathConfig" description="">
+    <AD id="eloqua.sandbox.cloud.service.path" type="String" name="Enter cloud service Eloqua SandBox Path" default=""/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.impl.EloquaFormConfigImpl">
+    <Object ocdref="com.eaton.platform.core.services.config.EloquaSandBoxPathConfig"/>
+  </Designate>
+</metatype:MetaData>

@@ -1,0 +1,322 @@
+{
+	"jcr:primaryType": "cq:Page",
+	"jcr:createdBy": "admin",
+	"jcr:created": "Thu Jul 20 2023 13:00:45 GMT+0200",
+	"jcr:content": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:mixinTypes": [
+			"cq:LiveRelationship",
+			"mix:versionable"
+		],
+		"jcr:createdBy": "admin",
+		"jcr:title": "Diode based battery isolators | Single, multiple battery isolators | Eaton",
+		"cq:lastReplicationAction": "Deactivate",
+		"jcr:versionHistory": "5883e7c3-506c-499e-99b0-9f44b9632a2d",
+		"pimPagePath": "/var/commerce/products/eaton/en_us/aem20200126234236",
+		"cq:template": "/conf/eaton/settings/wcm/templates/product-family-page",
+		"cq:lastReplicatedBy": "e0063964",
+		"jcr:lastModifiedBy": "c3037550",
+		"priority": "0.0",
+		"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+		"primarySubCategory": "/content/eaton/language-masters/de-de/products/emobility/low-voltage-power-management",
+		"jcr:predecessors": [
+			"2355d2cd-da31-438e-a50b-5ffafd88fecb"
+		],
+		"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+		"jcr:created": "Thu Jul 20 2023 13:00:45 GMT+0200",
+		"excludeCountries": "false",
+		"cq:lastReplicated": "Fri Jun 09 2023 10:06:29 GMT-0400",
+		"cq:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+		"view": "generic",
+		"meta-robot-tags": "index,follow",
+		"jcr:description": "Eaton Battery Isolators are diode based products that prevent current from flowing between batteries in a battery isolator-like configuration or between charging sources in a combiner-like configuration.",
+		"jcr:baseVersion": "2355d2cd-da31-438e-a50b-5ffafd88fecb",
+		"jcr:isCheckedOut": true,
+		"primary-sub-category-tag": [
+			"eaton:product-taxonomy/emobility/low-voltage-power-management/battery-isolators"
+		],
+		"page-type": "product-family",
+		"cq:tags": [
+			"eaton:search-tabs/page-type/product-family",
+			"eaton:search-tabs/content-type/product"
+		],
+		"jcr:lastModified": "Tue Oct 24 2017 12:59:35 GMT-0400",
+		"jcr:uuid": "fd8ee088-e172-474a-a61e-58da30364611",
+		"sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+		"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+		"textIsRich": "true",
+		"cq:lastRolledoutBy": "e0677841",
+		"cq:lastModifiedBy": "e0677841",
+		"changefrequency": "always",
+		"root": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:mixinTypes": [
+				"cq:LiveRelationship"
+			],
+			"jcr:lastModifiedBy": "e0063964",
+			"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+			"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+			"sling:resourceType": "wcm/foundation/components/responsivegrid",
+			"cq:lastRolledoutBy": "e0677841",
+			"header": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:mixinTypes": [
+					"cq:LiveRelationship"
+				],
+				"jcr:createdBy": "c3037550",
+				"jcr:lastModifiedBy": "c3037550",
+				"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+				"jcr:created": "Thu Oct 05 2017 10:36:06 GMT-0400",
+				"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+				"sling:resourceType": "eaton/components/structure/header",
+				"cq:lastRolledoutBy": "e0677841"
+			},
+			"responsivegrid": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:mixinTypes": [
+					"cq:LiveRelationship"
+				],
+				"jcr:createdBy": "e0063964",
+				"jcr:lastModifiedBy": "e0063964",
+				"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+				"jcr:created": "Thu Oct 05 2017 12:44:25 GMT-0400",
+				"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+				"sling:resourceType": "wcm/foundation/components/responsivegrid",
+				"cq:lastRolledoutBy": "e0677841",
+				"cq:responsive": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": [
+						"cq:LiveRelationship"
+					],
+					"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+					"cq:lastRolledoutBy": "e0677841"
+				},
+				"product_tabs": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": [
+						"cq:LiveRelationship"
+					],
+					"jcr:createdBy": "c3037550",
+					"jcr:lastModifiedBy": "c3037550",
+					"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+					"jcr:created": "Thu Oct 05 2017 13:59:59 GMT-0400",
+					"view": "links-navigation",
+					"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+					"sling:resourceType": "eaton/components/product/product-tabs",
+					"cq:lastRolledoutBy": "e0677841",
+					"content-tab-1": {
+						"jcr:primaryType": "nt:unstructured",
+						"jcr:mixinTypes": [
+							"cq:LiveRelationship"
+						],
+						"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+						"sling:resourceType": "wcm/foundation/components/parsys",
+						"cq:lastRolledoutBy": "e0677841",
+						"product_family_card": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:mixinTypes": [
+								"cq:LiveRelationship"
+							],
+							"jcr:createdBy": "c3037550",
+							"jcr:lastModifiedBy": "c3037550",
+							"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"jcr:created": "Thu Oct 05 2017 14:00:32 GMT-0400",
+							"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"sling:resourceType": "eaton/components/product/product-family-card",
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"divider_copy_copy_co": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:mixinTypes": [
+								"cq:LiveRelationship"
+							],
+							"jcr:createdBy": "e5253857",
+							"jcr:lastModifiedBy": "e5253857",
+							"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"jcr:created": "Thu Jan 16 2020 11:30:42 GMT-0500",
+							"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"sling:resourceType": "eaton/components/general/divider",
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"product_features": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:mixinTypes": [
+								"cq:LiveRelationship"
+							],
+							"jcr:createdBy": "c3037550",
+							"jcr:lastModifiedBy": "c3037550",
+							"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"jcr:created": "Thu Oct 05 2017 14:03:23 GMT-0400",
+							"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"sling:resourceType": "eaton/components/product/product-features",
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"divider_copy_copy_co_743783733": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:mixinTypes": [
+								"cq:LiveRelationship"
+							],
+							"jcr:createdBy": "e5253857",
+							"jcr:lastModifiedBy": "e5253857",
+							"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"jcr:created": "Thu Jan 16 2020 11:30:42 GMT-0500",
+							"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"sling:resourceType": "eaton/components/general/divider",
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"text_copy_copy_copy_": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:mixinTypes": [
+								"cq:LiveRelationship"
+							],
+							"jcr:createdBy": "e5253857",
+							"jcr:lastModifiedBy": "e5253857",
+							"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"jcr:created": "Thu Jan 16 2020 11:15:59 GMT-0500",
+							"view": "default",
+							"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"transText": "<h2>Options</h2>\r\n<ul>\r\n<li>Eaton’s Battery Isolator options include single and dual inputs and single, dual and triple output configurations. Specific configuration options for numerous OEM (Ford, Chrysler, Toyota, Honda, etc) applications.</li>\r\n</ul>\r\n",
+							"toggleInnerGrid": "true",
+							"sling:resourceType": "eaton/components/general/text",
+							"textIsRich": [
+								"true",
+								"true"
+							],
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"family_inherited_par": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:mixinTypes": [
+								"cq:LiveRelationship"
+							],
+							"jcr:createdBy": "e0087282",
+							"jcr:lastModifiedBy": "e0087282",
+							"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"jcr:created": "Fri Feb 02 2018 21:07:38 GMT-0500",
+							"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"sling:resourceType": "eaton/components/product/family-inherited-parsys",
+							"cq:lastRolledoutBy": "e0677841"
+						}
+					},
+					"content-tab-2": {
+						"jcr:primaryType": "nt:unstructured",
+						"jcr:mixinTypes": [
+							"cq:LiveRelationship"
+						],
+						"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+						"sling:resourceType": "wcm/foundation/components/parsys",
+						"cq:lastRolledoutBy": "e0677841",
+						"table": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:mixinTypes": [
+								"cq:LiveRelationship"
+							],
+							"jcr:createdBy": "e5253857",
+							"tableData": "<table cellpadding=\"2\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr><td><b>Model</b></td>\n<td><b>Current (A)</b></td>\n<td><b>Input</b></td>\n<td><b>Output</b></td>\n</tr><tr><td>122</td>\n<td>25</td>\n<td>1</td>\n<td>2</td>\n</tr><tr><td>702</td>\n<td>70</td>\n<td>1</td>\n<td>2</td>\n</tr><tr><td>703</td>\n<td>70</td>\n<td>1</td>\n<td>3</td>\n</tr><tr><td>704</td>\n<td>70</td>\n<td>1</td>\n<td>4</td>\n</tr><tr><td>2702</td>\n<td>70</td>\n<td>2</td>\n<td>2</td>\n</tr><tr><td>2703</td>\n<td>70</td>\n<td>2</td>\n<td>3</td>\n</tr><tr><td>952</td>\n<td>95</td>\n<td>1</td>\n<td>2</td>\n</tr><tr><td>1202</td>\n<td>120</td>\n<td>1</td>\n<td>2</td>\n</tr><tr><td>1203</td>\n<td>120</td>\n<td>1</td>\n<td>3</td>\n</tr><tr><td>3202</td>\n<td>120</td>\n<td>2</td>\n<td>2</td>\n</tr><tr><td>3203</td>\n<td>120</td>\n<td>2</td>\n<td>3</td>\n</tr><tr><td>1302</td>\n<td>130</td>\n<td>1</td>\n<td>2</td>\n</tr><tr><td>1602</td>\n<td>160</td>\n<td>1</td>\n<td>2</td>\n</tr><tr><td>1603</td>\n<td>160</td>\n<td>1</td>\n<td>3</td>\n</tr><tr><td>2003</td>\n<td>200</td>\n<td>1</td>\n<td>2</td>\n</tr><tr><td>2402</td>\n<td>240</td>\n<td>1</td>\n<td>2</td>\n</tr><tr><td>2403</td>\n<td>240</td>\n<td>1</td>\n<td>3</td>\n</tr><tr><td>3002</td>\n<td>300</td>\n<td>1</td>\n<td>2</td>\n</tr><tr><td>3003</td>\n<td>300</td>\n<td>1</td>\n<td>3</td>\n</tr><tr><td>3303</td>\n<td>95 / 160</td>\n<td>2</td>\n<td>3</td>\n</tr><tr><td>3603</td>\n<td>120 / 160</td>\n<td>2</td>\n<td>3</td>\n</tr><tr><td>31822</td>\n<td>160</td>\n<td>1</td>\n<td>2</td>\n</tr><tr><td>31922</td>\n<td>240</td>\n<td>1</td>\n<td>2</td>\n</tr></tbody></table>\n",
+							"jcr:lastModifiedBy": "e5253857",
+							"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"jcr:created": "Thu Feb 13 2020 04:57:23 GMT-0500",
+							"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"sling:resourceType": "eaton/components/general/table",
+							"textIsRich": "true",
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"product_grid": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:mixinTypes": [
+								"cq:LiveRelationship"
+							],
+							"jcr:createdBy": "c3037550",
+							"hidePriceDisc": "true",
+							"jcr:lastModifiedBy": "e0067621",
+							"defaultSortingDirection": "asc",
+							"subCategoryHideShow": "false",
+							"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"jcr:created": "Thu Oct 05 2017 14:03:50 GMT-0400",
+							"view": "productFamily",
+							"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"sling:resourceType": "eaton/components/product/product-grid",
+							"cq:lastRolledoutBy": "e0677841"
+						}
+					},
+					"content-tab-3": {
+						"jcr:primaryType": "nt:unstructured",
+						"jcr:mixinTypes": [
+							"cq:LiveRelationship"
+						],
+						"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+						"sling:resourceType": "wcm/foundation/components/parsys",
+						"cq:lastRolledoutBy": "e0677841",
+						"topic_link_with_icon": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:mixinTypes": [
+								"cq:LiveRelationship"
+							],
+							"jcr:createdBy": "e0063964",
+							"jcr:lastModifiedBy": "e0063964",
+							"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"jcr:created": "Tue Oct 24 2017 14:44:50 GMT-0400",
+							"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"sling:resourceType": "eaton/components/product/topic-link-with-icon-pdh",
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"resource_list": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:mixinTypes": [
+								"cq:LiveRelationship"
+							],
+							"jcr:createdBy": "c3037550",
+							"jcr:lastModifiedBy": "e0063964",
+							"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"jcr:created": "Thu Oct 05 2017 14:04:46 GMT-0400",
+							"view": "view-tags",
+							"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"sling:resourceType": "eaton/components/product/resource-list",
+							"damPath": "/content/dam/eaton",
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"product_support": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:mixinTypes": [
+								"cq:LiveRelationship"
+							],
+							"jcr:createdBy": "c3037550",
+							"jcr:lastModifiedBy": "c3037550",
+							"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"jcr:created": "Thu Oct 05 2017 14:04:57 GMT-0400",
+							"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+							"sling:resourceType": "eaton/components/product/product-support",
+							"cq:lastRolledoutBy": "e0677841"
+						}
+					}
+				},
+				"how_to_buy": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:mixinTypes": [
+						"cq:LiveRelationship"
+					],
+					"jcr:createdBy": "e0063964",
+					"jcr:lastModifiedBy": "e0063964",
+					"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+					"jcr:created": "Thu Oct 05 2017 13:17:49 GMT-0400",
+					"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+					"sling:resourceType": "eaton/components/product/how-to-buy",
+					"cq:lastRolledoutBy": "e0677841"
+				}
+			},
+			"footer": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:mixinTypes": [
+					"cq:LiveRelationship"
+				],
+				"jcr:createdBy": "c3037550",
+				"jcr:lastModifiedBy": "c3037550",
+				"cq:lastRolledout": "Mon Jun 05 2023 10:30:24 GMT-0400",
+				"jcr:created": "Thu Oct 05 2017 10:36:20 GMT-0400",
+				"jcr:lastModified": "Mon Jun 05 2023 10:30:24 GMT-0400",
+				"sling:resourceType": "eaton/components/structure/footer",
+				"cq:lastRolledoutBy": "e0677841"
+			}
+		}
+	}
+}

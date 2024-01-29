@@ -1,0 +1,78 @@
+<!--/*
+  M-36 - Product Card: SKU Item
+
+  -
+  NOTE: If the HTML structure of this file changes, please also Update the file:
+  `/eaton.frontend/src/components/product-grid/js/product-grid.js`
+  Since that files contains a Javascript Template that is used when more results are loaded with AJAX
+
+*/-->
+<template data-sly-template.item="${ @ results, itemData }">
+
+  <div class="product-card-sku">
+
+    <!--/* Product Image */-->
+    <div class="product-card-sku__image-wrapper b-body-copy-small">
+        <div class="rendition">
+            <img class="rendition__image img-responsive" data-src="${itemData.LEDImageURL}"
+                 data-mobile-rendition="${ itemData.LEDImageURL }" data-tablet-rendition="${ itemData.LEDImageURL}"
+                 data-desktop-rendition="${ itemData.LEDImageURL}" />
+        </div>
+      <!-- End: Rendition Image Component -->
+
+    </div>
+
+    <!--/* Product Header */-->
+    <div class="product-card-sku__header">
+
+      <div class="product-card-sku__title-wrapper">
+        <!--<h3 class="product-card-sku__name">
+          ${itemData.getDimmerCatalogNumber}
+        </h3>-->
+        <sly data-sly-use.gridData="com.eaton.platform.core.models.productcompatibilitytool.ProductCompatibilityModel"></sly>
+        <div class="product-card-sku__price__product-header b-body-copy">
+          <p class="product-card-sku__price-list__model-number" >${gridData.lampModelNumber}: ${itemData.extModelNumber}</p>
+          <p class="product-card-sku__price-list__lamp-manufacturer" >${gridData.lampManufacturerLabel}: ${itemData.extLampManufacturer}</p>
+        </div>
+
+        
+      </div>
+    </div>
+
+
+    <!--/* Card Content */-->
+    <div class="product-card-sku__specs-content">
+        <ul class="product-card-sku__specs-column">
+           <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.mktgDescLabel && itemData.mktgDesc}">${itemData.mktgDescLabel}: ${itemData.mktgDesc}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.countryLabel && itemData.country}">${itemData.countryLabel}: ${itemData.country}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.extTypeLabel && itemData.extType}">${itemData.extTypeLabel}: ${itemData.extType}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.controlFamilyLabel && itemData.controlFamily}">${itemData.controlFamilyLabel}: ${itemData.controlFamily}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.familyIDLabel && itemData.familyID}">${itemData.familyIDLabel}: ${itemData.familyID}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.lowesItemNumberLabel && itemData.lowesItemNumber}">${itemData.lowesItemNumberLabel}: ${itemData.lowesItemNumber}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.lowesModelNumberLabel && itemData.lowesModelNumber}">${itemData.lowesModelNumberLabel}: ${itemData.lowesModelNumber}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.ledRatingLabel && itemData.ledRating}">${itemData.ledRatingLabel}: ${itemData.ledRating}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.maxofloadsLabel && itemData.maxofloads}">${itemData.maxofloadsLabel}: ${itemData.maxofloads}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.extLampModelNumberLabel && itemData.extLampModelNumber}">${itemData.extLampModelNumberLabel}: ${itemData.extLampModelNumber}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.extLampVoltageLabel && itemData.extLampVoltage}">${itemData.extLampVoltageLabel}: ${itemData.extLampVoltage}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.extColorTemperatureLabel && itemData.extColorTemperature}">${itemData.extColorTemperatureLabel}: ${itemData.extColorTemperature}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.ledCompatibleScoreLabel && itemData.ledCompatibleScore}">${itemData.ledCompatibleScoreLabel}: ${itemData.ledCompatibleScore}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.extBaseLabel && itemData.extBase}">${itemData.extBaseLabel}: ${itemData.extBase}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.extDateCodeLabel && itemData.extDateCode}">${itemData.extDateCodeLabel}: ${itemData.extDateCode}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.extLampLumenOutputLabel && itemData.extLampLumenOutput}">${itemData.extLampLumenOutputLabel}: ${itemData.extLampLumenOutput}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.flickerLabel && itemData.flicker}">${itemData.flickerLabel}: ${itemData.flicker}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.lowEndTrimLabel && itemData.lowEndTrim}">${itemData.lowEndTrimLabel}: ${itemData.lowEndTrim}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.lowEndLabel && itemData.lowEnd}">${itemData.lowEndLabel}: ${itemData.lowEnd}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.relativeLowEndLabel && itemData.relativeLowEnd}">${itemData.relativeLowEndLabel}: ${itemData.relativeLowEnd}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.perceivedDimmingrangeLabel && itemData.perceivedDimmingrange}">${itemData.perceivedDimmingrangeLabel}: ${itemData.perceivedDimmingrange}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.perceivedLowendLabel && itemData.perceivedLowend}">${itemData.perceivedLowendLabel}: ${itemData.perceivedLowend}</li>
+          <li class="product-card-sku__specs-column-list"  data-sly-test="${itemData.testNotesLabel && itemData.testNotes}">${itemData.testNotesLabel}: ${itemData.testNotes}</li>
+        
+
+          
+        </ul>
+
+    </div>
+
+  </div>
+
+</template>

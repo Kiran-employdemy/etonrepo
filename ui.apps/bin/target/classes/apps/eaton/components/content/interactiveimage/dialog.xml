@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="xComfort Home Page Hero Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <textConfig
+                jcr:primaryType="cq:Panel"
+                title="Text Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <title
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Title"
+                        name="./title"
+                        xtype="textfield"/>
+                    <secondTitle
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Second Title"
+                        name="./title1"
+                        xtype="textfield"/>
+                    <description
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Description"
+                        name="./desc"
+                        xtype="textfield"/>
+                    <radioButtonText1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="First Button Label"
+                        name="./radioButtonText1"
+                        xtype="textfield"/>
+                    <radioButtonText2
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Second Button Label"
+                        name="./radioButtonText2"
+                        xtype="textfield"/>
+                    <radioButtonText3
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Third Button Label"
+                        name="./radioButtonText3"
+                        xtype="textfield"/>
+                    <rightImage
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Image on the Right Side"
+                        name="./imageOnright"
+                        rootPath="/content/dam/beacon"
+                        xtype="pathfield"/>
+                    <leftImage
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Image on the Left Side"
+                        name="./imageOnleft"
+                        rootPath="/content/dam/beacon"
+                        xtype="pathfield"/>
+                    <redirectLink
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Redirect Link"
+                        name="./redirectLink"
+                        rootPath="/content/content-beacon"
+                        xtype="pathfield"/>
+                </items>
+            </textConfig>
+            <variationOneImageConfig
+                jcr:primaryType="cq:Panel"
+                title="Variation One Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <imagepath
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="First Image Path"
+                        name="./image/file2"
+                        rootPath="/content/dam/beacon"
+                        xtype="pathfield"/>
+                    <imagepath1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Second Image Path"
+                        name="./image1/file2"
+                        rootPath="/content/dam/beacon"
+                        xtype="pathfield"/>
+                    <imagepathMob
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Mobile First Image Path"
+                        name="./imagemob/file2"
+                        rootPath="/content/dam/beacon"
+                        xtype="pathfield"/>
+                    <imagepathMob1
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Mobile Second Image Path"
+                        name="./image1mob/file2"
+                        rootPath="/content/dam/beacon"
+                        xtype="pathfield"/>
+                </items>
+            </variationOneImageConfig>
+            <variationTwoImageConfig
+                jcr:primaryType="cq:Panel"
+                title="Variation Two Configuration">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <imagepath2
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="First Image Path"
+                        name="./image2/file2"
+                        rootPath="/content/dam/beacon"
+                        xtype="pathfield"/>
+                    <imagepath3
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Second Image Path"
+                        name="./image3/file2"
+                        rootPath="/content/dam/beacon"
+                        xtype="pathfield"/>
+                    <imagepathMob2
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}false"
+                        fieldLabel="Mobile First Image Path"
+                        name="./image2mob/file2"
+                        rootPath="/content/dam/beacon"
+                        xtype="pathfield"/>
+                    <imagepathMob3
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Mobile Second Image Path"
+                        name="./image3mob/file2"
+                        rootPath="/content/dam/beacon"
+                        xtype="pathfield"/>
+                </items>
+            </variationTwoImageConfig>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,115 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.JibeSearchModel">
+<div class="eaton-search eaton-search--default eaton-search__career"
+	data-predictive-search="${data.searchUrl}">
+	<div class="container">
+		<div class="row">
+			<!--/* Search Form */-->
+			<form
+				class="eaton-search__form eaton-search--default__form eaton-search__career-form jibe-unique-${data.jibeSearchBoxName}"
+				id="${data.transSearchKey}_${data.jibeSearchBoxName}" autocomplete="off"
+				target="${data.isExternal ? '_blank' : '_self'}" >
+				<div class="row form-group">
+					<div class="col-xs-12 eaton-search__career-field">
+					<label for="primary-menu-search--keyword_${data.jibeSearchBoxName}" class="sr-only">${data.transSearchKey}_${data.jibeSearchBoxName}</label>
+					<textarea
+					    data-analytics-event="careers-search"
+					    rows="1" name="${data.transSearchKey}_${data.jibeSearchBoxName}"
+						id="primary-menu-search--keyword_${data.jibeSearchBoxName}"
+						class="form-control eaton-search--default__form-input"
+						placeholder="${data.transFieldAid}"
+						></textarea>
+					<!--<div
+						class="eaton-search--default__form-mobile-label u-visible-mobile
+                     ${ data.searchModel.isExternal ? ' with-external ' : '' }">
+						<span> ${data.searchModel.transFieldAid}</span>
+					</div>-->
+						<div class="eaton-search--default__results">
+							<ul class="eaton-search--default__result-list">
+								<!-- Result Links will be populated here via AJAX Request  -->
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 eaton-search__career-field">
+						<label for="primary-menu-search--location_${data.jibeSearchBoxName}" class="sr-only">${data.transLocationSearchHeader}</label>
+						<textarea
+								data-analytics-event="careers-search"
+								rows="1" name="${data.transSearchKey}_${data.jibeSearchBoxName}"
+								id="primary-menu-search--location_${data.jibeSearchBoxName}"
+								class="form-control eaton-search--default__form-input"
+								placeholder="${data.transLocationFieldAid}"
+						></textarea>
+						<div class="eaton-search--default__results">
+							<ul class="eaton-search--default__result-list">
+								<!-- Result Links will be populated here via AJAX Request  -->
+							</ul>
+						</div>
+					</div>
+					<div data-sly-test="${data.isExternal}"
+						class="eaton-search--default__form-external hidden-xs hidden-sm">
+						<span class="sr-only">Submit form in new Tab</span> <i
+							class="icon icon-link-external" aria-hidden="true"></i>
+					</div>
+					<button type="submit"
+							class="button--reset eaton-search__submit eaton-search--default__form-submit">
+						<span class="sr-only">${data.submitLabel}</span> <i
+							class="icon icon-search hidden-xs hidden-sm" aria-hidden="true"></i><span class="b-button b-button__primary">${'SearchModel.submitButtonName' @i18n}</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" defer="defer">
+var vibeJs = function() {
+	/* var id = ${data.searchModel.transSearchKey @ context="scriptString"} ;
+	var searchPath = ${data.searchModel.searchResutlsPath @ context="scriptString"} ; */
+	$('#${data.searchModel.transSearchKey @ context="scriptString"}_${data.jibeSearchBoxName @ context="scriptString"},.jibe-unique-${data.jibeSearchBoxName @ context="scriptString"}').submit(function(event) {
+				var keywords = $(event.target).find('#primary-menu-search--keyword_${data.jibeSearchBoxName @ context="scriptString"}');
+                var locations = $(event.target).find('#primary-menu-search--location_${data.jibeSearchBoxName @ context="scriptString"}');
+			if ($(keywords).val() == $(keywords).placeholder) {
+				$(keywords).val("");
+			}
+			if ($(locations).val() == $(locations).placeholder) {
+				$(locations).val("");
+			}
+
+			keywords = encodeURIComponent($(keywords).val().replace(/&/g, '-').replace(/"/g, '').replace(/'/g, ''));
+			locations = encodeURIComponent($(locations).val().replace(/&/g, '-').replace(/"/g, '').replace(/'/g, ''));
+
+			if (keywords == "" && locations == "") {
+			  var nw = window.open("", "window");
+             if('${data.searchResutlsPath @ context="scriptString"}'.indexOf('?') > 0){
+                 if ('${data.searchResutlsPath @ context="scriptString"}'.indexOf('page') > 0){
+                   nw.location.href = '${data.searchResutlsPath @ context="scriptString"}';
+                 } else {
+                   nw.location.href = '${data.searchResutlsPath @ context="scriptString"}&page=1';
+                 }
+
+			   } else {
+			     nw.location.href = '${data.searchResutlsPath @ context="scriptString"}?page=1';
+			   }
+			} else {
+				if('${data.searchResutlsPath @ context="scriptString"}'.indexOf('?') > 0){
+                      var url = '${data.searchResutlsPath @ context="scriptString"}&${data.transSearchKey @ context="scriptString"}=' + keywords + '&location='+locations;
+                 } else {
+                      var url = '${data.searchResutlsPath @ context="scriptString"}?${data.transSearchKey @ context="scriptString"}=' + keywords + '&location='+locations;
+                 }
+				var nw = window.open("", "window");
+				nw.location.href = url;
+
+			}
+			event.preventDefault();
+				/* DTM variable set - Starts */
+				_satellite.setVar('careerSearchQuery',keywords);
+				_satellite.track('careerSearch');
+				/* DTM variable set - Ends */
+
+		});
+	}
+
+	if (document.readyState === 'loading') {
+		document.addEventListener('DOMContentLoaded', vibeJs);
+	} else {
+		vibeJs();
+	}
+</script> </sly>

@@ -1,0 +1,232 @@
+//-----------------------------------
+// LinkList Component: Primary Navigation
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-product-detail-card {
+  margin-bottom: 60px;
+}
+
+.product-detail-card__related-products {
+  margin: 60px 0;
+
+  &-header {
+    padding-left: 15px;
+    margin-bottom: 25px;
+  }
+
+  &-title {
+    margin-bottom: 0;
+  }
+
+  &-description {
+    /* stylelint-disable no-missing-end-of-source-newline */
+    margin-top: 5px;
+
+  }
+}
+
+/* stylelint-disable selector-class-pattern */
+
+.qr__serial__number_text {
+  font-weight: bold;
+}
+
+.icon__right {
+  font-size: 13px;
+}
+
+.b-eyebrow-small {
+  word-break: break-word;
+}
+
+/* ---------- slider thumbline -------------------- */
+/* -------------- specification -------------- */
+/* ------- font and space ------------- */
+.single_sku_page {
+  .slider-prod-disc {
+    display: flex;
+
+    .module-media-gallery {
+      float: left;
+      width: 40%;
+      margin-top: 0;
+    }
+
+    .container {
+      width: 100%;
+      padding: 0;
+    }
+
+    .module-media-gallery__slide-item {
+      .embed-responsive-16by9 {
+        height: 330px;
+        margin: 0 0 30px 0;
+      }
+    }
+
+    .module-media-gallery__slide-arrows-container {
+      height: 450px;
+    }
+
+    .module-media-gallery__thumbnail-item {
+      margin: 0 20px;
+      width: 50px;
+    }
+
+    .product-disc {
+      float: right;
+      width: 50%;
+      margin-left: 10%;
+      margin-top: 35px;
+    }
+
+    .free-btn {
+      margin-bottom: 20px;
+      background: $color__green;
+      color: $color__white;
+      border: 1px solid $color__green;
+    }
+
+  }
+
+  .module-media-gallery__thumbnail-list {
+    .slick-slide {
+      img {
+        height: auto;
+      }
+    }
+
+    .module-media-gallery__thumbnail-item {
+      margin: 0 5px;
+
+      button {
+        height: 60px;
+      }
+    }
+  }
+
+  .module-product-detail-card--image-container {
+    display: none;
+  }
+
+  .module-table {
+    transition: 0.5s ease-in-out;
+
+    &:nth-child(1) {
+      display: block;
+    }
+
+    &:nth-child(2) {
+      display: block;
+    }
+
+    &:nth-child(3) {
+      display: block;
+    }
+
+    &:last-child {
+      .module-table__row {
+        &:last-child {
+          border-bottom: 1px solid #dee4e9;
+        }
+      }
+    }
+  }
+
+  .module-anchor-links {
+    margin-top: 38px;
+  }
+
+  .module-product-detail-card {
+    padding-bottom: 0;
+  }
+
+  .product-specifications {
+    margin-top: 0;
+  }
+
+  .module-table__head {
+    margin-bottom: 10px;
+  }
+
+  .b-eyebrow-large {
+    font-size: 1.8rem;
+    color: #5b6770;
+  }
+
+  .module-table__row {
+    padding: 10px 20px;
+    border-top: 1px solid #dee4e9;
+  }
+
+  .b-eyebrow-small {
+    font-size: 1.4rem;
+  }
+
+  .eaton-product-detail-card {
+    margin-bottom: 20px;
+  }
+
+  .product-detail-card__related-products {
+    margin: 10px 0;
+  }
+}
+
+.prod-sold {
+  .bell-icon {
+    text-align: center;
+
+    span {
+      background: #EDF5FD;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      line-height: 50px;
+    }
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: bold;
+  }
+
+  .modal-footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 15px;
+  }
+}
+
+@include media-mobile-and-tablet {
+  .single_sku_page {
+    .slider-prod-disc {
+      flex-direction: column;
+
+      .module-media-gallery {
+        width: 96%;
+        margin: 10px 2%;
+      }
+
+      .product-disc {
+        width: 100%;
+        margin: 0;
+
+        .ps-widget {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+
+    }
+
+  }
+
+}

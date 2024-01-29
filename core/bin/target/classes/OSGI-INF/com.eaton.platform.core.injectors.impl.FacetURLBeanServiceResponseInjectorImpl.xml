@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.injectors.impl.FacetURLBeanServiceResponseInjectorImpl" immediate="true">
+  <property name="service.ranking" type="String" value="5001"/>
+  <service>
+    <provide interface="org.apache.sling.models.spi.Injector"/>
+    <provide interface="org.apache.sling.models.spi.injectorspecific.StaticInjectAnnotationProcessorFactory"/>
+  </service>
+  <reference name="facetURLBeanService" interface="com.eaton.platform.core.services.FacetURLBeanService" field="facetURLBeanService"/>
+  <implementation class="com.eaton.platform.core.injectors.impl.FacetURLBeanServiceResponseInjectorImpl"/>
+</scr:component>

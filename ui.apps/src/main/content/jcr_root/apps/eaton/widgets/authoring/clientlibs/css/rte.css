@@ -1,0 +1,16 @@
+
+.rte-ui .rte-toolbar.is-active {
+    display: none !important;
+}
+
+.rte-ui .rte-toolbar.is-active.show-toolbar {
+    display: block !important;
+}
+
+.cq-RichText-editable.coral-RichText-editable {
+    background-color: #fff;
+}
+
+.cq-dialog:not(.cq-dialog-fullscreen) .richtext-container .coral-RichText.is-edited,.cq-dialog:not(.cq-dialog-fullscreen) .richtext-container .coral-RichText-sourceEditor { 
+    background-color: #fff !important; 
+}

@@ -1,0 +1,54 @@
+
+<sly data-sly-test="${ wcmmode.edit }">
+        <div class="alert alert-warning">External Tool</div>
+    </sly>
+
+    <div class="external-tool ${ wcmmode.edit ? 'external-tool--is-author-mode': ''}"
+        data-min-width="${properties.iframeWidthSize}"
+        data-requires-landscape-mode="${properties.isResponsive}"
+        data-hidden-on-mobile="${properties.isDisplayedMobile ? 'true': ''}"
+        data-toggleInnerGrid = ${properties.istoggleInnerGrid}>
+        <div class="${properties.toggleInnerGrid ? 'container' : ''}">
+            <h1>${properties.toolName}</h1>
+            <iframe class="external-tool__iframe ${properties.isDisplayedMobile ? 'external-tool__iframe--no-mobile' : ''} ${(properties.isResponsive && !properties.isDisplayedMobile) ? 'external-tool__iframe--rotate' : ''}"
+                height="${properties.iframeHeightSize}"
+                src="${properties.iframeUrl}">
+            </iframe>
+        </div>
+
+        <div data-sly-test="${(properties.isResponsive && !properties.isDisplayedMobile) || wcmmode.edit}"
+            class="external-tool__message__container external-tool__message__rotate">
+            <div class="container">
+                <div class="u-flex">
+                    <div class="u-flex-column">
+                        <i class="icon icon-info external-tool__icon"></i>
+                    </div>
+                    <div class="u-flex-column">
+                        <p class="external-tool__message">${properties.nonresponsivemessage}</p>
+                    </div>
+                </div>
+            </div>
+            <div data-sly-test="${properties.nonresponsiveimage}"
+                class="external-tool__img__container">
+                <div class="container">
+                    <img class="external-tool__img lazyload"
+                        data-src="${properties.nonresponsiveimage}">
+                </div>
+            </div>
+        </div>
+
+        <div data-sly-test="${properties.isDisplayedMobile || wcmmode.edit}"
+            class="external-tool__message__container external-tool__message__no-mobile">
+            <div class="container">
+                <div class="u-flex">
+                    <div class="u-flex-column">
+                        <i class="icon icon-info external-tool__icon"></i>
+                    </div>
+                    <div class="u-flex-column">
+                        <p class="external-tool__message">${properties.isDisplayedMobilemessage}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>

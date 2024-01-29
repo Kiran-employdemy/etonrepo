@@ -1,0 +1,15 @@
+<sly data-sly-test="${wcmmode.edit}">
+	<div class="alert alert-warning">Icon With Link</div>
+</sly>
+
+<sly data-sly-use.iconWithLinkModel="com.eaton.platform.core.models.developerportal.v1.IconWithLinkModel">
+	<div class="icon-with-link-container">
+		<sly data-sly-test="${iconWithLinkModel.icon}"><img alt="image" class="icon-with-link-image" src="${iconWithLinkModel.icon}"></img></sly>
+		<div class="b-heading-h2 heading">${iconWithLinkModel.heading}</div>
+		<div class="sub-heading">${iconWithLinkModel.subheading}</div>
+		<div class="link-text"><a href="${iconWithLinkModel.linkurl}"
+				target="${iconWithLinkModel.newWindow=='true' ? '_self' : '_blank'}">${iconWithLinkModel.linktext}</a>
+			<i class="icon icon-chevron-right icon-with-link"></i>
+		</div>
+	</div>
+</sly>

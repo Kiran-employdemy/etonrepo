@@ -1,0 +1,4 @@
+#base=js
+
+product-detail-card.js
+product-stock-availability.js

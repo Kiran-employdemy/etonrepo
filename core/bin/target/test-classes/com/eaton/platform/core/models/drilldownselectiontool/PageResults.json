@@ -1,0 +1,92 @@
+{
+  "test-page-1": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+      "jcr:title": "Test page 1",
+      "cq:template": "/conf/eaton/settings/wcm/templates/secure",
+      "securePage": "true",
+      "teaser-image-path": "/content/dam/eaton/test-image-1",
+      "product-grid-description": "<p>Test page 1 product grid description</p>",
+      "cq:tags": [
+        "eaton:support-taxonomy/category/technical-support",
+        "eaton:services/product-category/furniture"
+      ]
+    }
+  },
+  "test-page-2": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+      "jcr:title": "Test page 2",
+      "cq:template": "/conf/eaton/settings/wcm/templates/secure",
+      "securePage": "true",
+      "teaser-image-path": "/content/dam/eaton/test-image-2",
+      "product-grid-description": "<p>Test page 2 product grid description</p>",
+      "cq:tags": [
+        "eaton:support-taxonomy/category/technical-support",
+        "eaton:services/product-category/aerospace-control"
+      ]
+    }
+  },
+  "test-page-3": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+      "jcr:title": "Test page 3",
+      "cq:template": "/conf/eaton/settings/wcm/templates/secure",
+      "securePage": "true",
+      "teaser-image-path": "/content/dam/eaton/test-image-3",
+      "product-grid-description": "<p>Test page 3 product grid description</p>",
+      "cq:tags": [
+        "eaton:support-taxonomy/category/technical-support",
+        "eaton:services/product-category/furniture"
+      ]
+    }
+  },
+  "test-page-4": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+      "jcr:title": "Test page 4",
+      "teaser-image-path": "/content/dam/eaton/test-image-4",
+      "product-grid-description": "<p>Test page 4 product grid description</p>",
+      "cq:tags": [
+        "eaton:support-taxonomy/category/training-education",
+        "eaton:services/product-category/furniture"
+      ]
+    }
+  },
+  "test-page-5": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+      "jcr:title": "Test page 5",
+      "teaser-image-path": "/content/dam/eaton/test-image-5",
+      "product-grid-description": "<p>Test page 5 product grid description</p>",
+      "cq:tags": [
+        "eaton:support-taxonomy/category/tools",
+        "eaton:services/product-category/furniture"
+      ]
+    }
+  },
+  "test-page-6": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+      "jcr:title": "Test page 6",
+      "teaser-image-path": "/content/dam/eaton/test-image-6",
+      "product-grid-description": "<p>Test page 6 product grid description</p>",
+      "cq:tags": [
+        "eaton:support-taxonomy/category/tools",
+        "eaton:services/product-category/emobility"
+      ]
+    }
+  }
+}

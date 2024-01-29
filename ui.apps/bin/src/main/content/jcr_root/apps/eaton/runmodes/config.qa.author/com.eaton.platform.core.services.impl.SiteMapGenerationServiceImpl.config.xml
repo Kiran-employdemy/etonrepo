@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+		  slingServletResourceTypes="[eaton/components/structure/eaton-edit-template-page,/apps/eaton/components/structure/eaton-folder-page-component]"
+		  includeLastmod="{Boolean}true"
+		  includeInherit="{Boolean}false"
+		  changefreqProperties="[changefrequency]"
+		  priorityProperties="[priority]"
+		  damasssetsProperty=""
+		  damassetTypes="[]"
+		  externalExcludeProperty="hideInXml"
+		  internalExcludeProperty="hideInHtml"
+		  extensionlessUrls="{Boolean}false"
+		  removeSlash="{Boolean}false"
+		  characterEncoding="UTF-8"/>

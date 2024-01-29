@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+  jcr:primaryType="nt:unstructured"
+  extraClientlibs="[af.authoring.dialog]"
+  jcr:title=""
+  sling:resourceType="cq/gui/components/authoring/dialog"
+  >
+    <content
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <accordion
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                <items jcr:primaryType="nt:unstructured">
+                    <basic
+                      jcr:primaryType="nt:unstructured"
+                      jcr:title="Basic"
+                      sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <name
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldLabel="Select Field Name"
+                                    fieldDescription="Select a field attribute and the corresponding values will be pulled from current user profile."
+                                    name="./name"
+                                    sling:hideChildren="granite:data"
+                                    required="{Boolean}false">
+                                <datasource
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/eaton/content/secureProfileFieldsDropdown"
+                                        addNone="{Boolean}true"/>
+                            </name>
+                            <title
+                              jcr:primaryType="nt:unstructured"
+                              sling:orderBefore="guideGlobalLazyField"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                              fieldLabel="Title"
+                              name="./jcr:title"/>
+
+                            <multiSelect
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                    name="./multiValued">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <multiCommaSeperated
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Multi Valued (Comma Separated)"
+                                            value="commaseparated"/>
+                                    <multiList
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Multi Valued (List)"
+                                            value="list"/>
+                                </items>
+                            </multiSelect>
+                        </items>
+                    </basic>
+                </items>
+            </accordion>
+        </items>
+    </content>
+</jcr:root>

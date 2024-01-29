@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          excel.file.archive.path="/content/dam/eaton/resources/price/excel/archive/"
+          excel.file.path="/content/dam/eaton/resources/price/excel/"
+          icon.list.symbol="[$,%]"
+          iconlist.proofpoint.symbols="[%,@]"
+          json.file.archive.path="/content/dam/eaton/resources/price/json/archive/"
+          json.file.path="/content/dam/eaton/resources/price/json/"
+          json.root.element="Catagory"
+          json.file.name="skuPriceList"
+          linklist.dropdown.option="[Default (Vertical)||vertical,Primary Navigation||primary-navigation,Section Navigation||section-navigation,2 Column||column,Horizontal||horizontal,Download List||download-list,Download List with Description||download-list-desc]"
+          middle.tab.config="[Accessories,Configure,Design,Models,Options,Services,Specifications,Technical,Use_cases]"
+          number.of.days.publish="5"
+          priceList.folder.path="/content/dam/eaton/resources/price/json/"
+          skupagename="/skuPage"
+          resource.listing.drawings.file.extensions.list="application/postscript,image/bmp,image/vnd.adobe.photoshop,image/png,image/jpeg,image/svg+xml,image/gif"/>

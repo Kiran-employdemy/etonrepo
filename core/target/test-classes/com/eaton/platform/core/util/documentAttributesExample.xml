@@ -1,0 +1,38 @@
+<ATR_GRP_TYPE id="DCMNTS" Label="Documents" SEQ="20">
+    <ATR_GRP id="BROCHURE" Label="Brochure" SEQ="6">
+        <ATR_NM id="DOC_LINK_233723" Label="Eaton ELocker4 brochure" SEQ="6" STNDR="" Display_Flag="Y" Language="en_US" Country="US"><![CDATA[https://www.eaton.com/content/dam/eaton/products/differentials-traction-control/elocker/Eaton_ELocker4_Direct_Acting_Dana_60-70.pdf]]></ATR_NM>
+        <ATR_NM id="DOC_LINK_233684" Label="Eaton Performance brochure" SEQ="5" STNDR="" Display_Flag="Y" Language="en_US" Country="US"><![CDATA[https://www.eaton.com/content/dam/eaton/products/differentials-traction-control/Eaton-Performance-Brochure-Web.pdf]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="BROCHURE_PRIMARY" Label="Brochure" SEQ="5">
+        <ATR_NM id="DOC_LINK_233684_P" Label="Eaton Performance brochure" SEQ="5" STNDR="" Display_Flag="Y" Language="en_US" Country="US"><![CDATA[https://www.eaton.com/content/dam/eaton/products/differentials-traction-control/Eaton-Performance-Brochure-Web.pdf]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="CATALOG" Label="Catalog" SEQ="4">
+        <ATR_NM id="DOC_LINK_233685" Label="Eaton Performance differential application guide" SEQ="4" STNDR="" Display_Flag="Y" Language="en_US" Country="US"><![CDATA[https://www.eaton.com/content/dam/eaton/products/differentials-traction-control/eaton-performance-differential-application-guide-en.pdf]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="CATALOG_PRIMARY" Label="Catalog" SEQ="4">
+        <ATR_NM id="DOC_LINK_233685_P" Label="Eaton Performance differential application guide" SEQ="4" STNDR="" Display_Flag="Y" Language="en_US" Country="US"><![CDATA[https://www.eaton.com/content/dam/eaton/products/differentials-traction-control/eaton-performance-differential-application-guide-en.pdf]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="SERVICE" Label="Service" SEQ="1">
+        <ATR_NM id="DOC_LINK_233683" Label="Eaton ELocker service kits" SEQ="1" STNDR="" Display_Flag="Y" Language="en_US" Country="US"><![CDATA[https://www.eaton.com/content/dam/eaton/products/differentials-traction-control/elocker/Eaton_ELocker_Service_Kits.pdf]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="SERVICE_PRIMARY" Label="Service" SEQ="1">
+        <ATR_NM id="DOC_LINK_233683_P" Label="Eaton ELocker service kits" SEQ="1" STNDR="" Display_Flag="Y" Language="en_US" Country="US"><![CDATA[https://www.eaton.com/content/dam/eaton/products/differentials-traction-control/elocker/Eaton_ELocker_Service_Kits.pdf]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="USER_GUIDES" Label="User guides" SEQ="2">
+        <ATR_NM id="DOC_LINK_233686" Label="Eaton Performance differentials owners manual" SEQ="2" STNDR="" Display_Flag="Y" Language="en_US" Country="US"><![CDATA[https://www.eaton.com/content/dam/eaton/products/differentials-traction-control/Eaton_Differentials_Owners_Manual.pdf]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="USER_GUIDES_PRIMARY" Label="User guides" SEQ="2">
+        <ATR_NM id="DOC_LINK_233686_P" Label="Eaton Performance differentials owners manual" SEQ="2" STNDR="" Display_Flag="Y" Language="en_US" Country="US"><![CDATA[https://www.eaton.com/content/dam/eaton/products/differentials-traction-control/Eaton_Differentials_Owners_Manual.pdf]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="WARR_GUIDES" Label="Warranty guides" SEQ="3">
+        <ATR_NM id="DOC_LINK_233681" Label="Differential Limited Warranty and Limitations Statement" SEQ="3" STNDR="" Display_Flag="Y" Language="en_US" Country="US"><![CDATA[https://www.eaton.com/content/dam/eaton/products/differentials-traction-control/eaton-differential-warranty-en.pdf]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="WARR_GUIDES_PRIMARY" Label="Warranty guides" SEQ="3">
+        <ATR_NM id="DOC_LINK_233681_P" Label="Differential Limited Warranty and Limitations Statement" SEQ="3" STNDR="" Display_Flag="Y" Language="en_US" Country="US"><![CDATA[https://www.eaton.com/content/dam/eaton/products/differentials-traction-control/eaton-differential-warranty-en.pdf]]></ATR_NM>
+    </ATR_GRP>
+    <ATR_GRP id="WIRING_DIAGRAM" Label="Wiring Diagram" SEQ="7">
+        <ATR_NM id="DOC_LINK_233682" Label="Eaton ELocker Rocker Switch wiring instructions" SEQ="7" STNDR="" Display_Flag="Y" Language="en_US" Country="Global"><![CDATA[https://www.eaton.com/content/dam/eaton/products/differentials-traction-control/elocker/ELocker_Rocker_Switch_Wiring_Instructions.pdf]]></ATR_NM>
+        <ATR_NM id="DOC_LINK_233722" Label="Eaton ELocker wiring schematic" SEQ="9" STNDR="" Display_Flag="Y" Language="en_US" Country="Global"><![CDATA[https://www.eaton.com/content/dam/eaton/products/differentials-traction-control/elocker/Eaton-ELocker-wiring-schematic.pdf]]></ATR_NM>
+        <ATR_NM id="DOC_LINK_233721" Label="Eaton ELocker Wiring harness labeled" SEQ="8" STNDR="" Display_Flag="Y" Language="en_US" Country="Global"><![CDATA[https://www.eaton.com/content/dam/eaton/products/differentials-traction-control/elocker/Eaton-ELocker-Wiring-Harness-Labeled.pdf]]></ATR_NM>
+    </ATR_GRP>
+</ATR_GRP_TYPE>

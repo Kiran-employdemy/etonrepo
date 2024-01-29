@@ -1,0 +1,140 @@
+//-----------------------------------
+// Component M-42: Topic Link with Icon
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.link-list-with-icon {
+
+  &__component {
+    margin-top: rem($spacing__md * .5);
+    overflow: hidden;
+
+    .container {
+      @include media-desktop-and-up {
+        margin: 0 auto;
+      }
+    }
+
+    .row {
+      @include media-desktop-and-up {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .col-md-4 {
+        display: flex;
+
+        @include media-desktop-and-up {
+          flex: 0 0 33%;
+        }
+      }
+    }
+  }
+
+  &__element {
+    margin-bottom: rem($spacing__sm);
+
+    @include media-desktop-and-up {
+      margin-bottom: rem($spacing__md);
+    }
+  }
+
+  &__icon {
+    color: $color__accent-orange;
+    display: inline-block;
+    max-width: rem($spacing__md);
+
+    @include media-desktop-and-up {
+      max-width: rem($spacing__md * 1.1666666);
+    }
+
+    img {
+      height: rem($spacing__md);
+      width: rem($spacing__md);
+
+      @include media-desktop-and-up {
+        height: rem($spacing__md * 1.1666666);
+        width: rem($spacing__md * 1.1666666);
+      }
+    }
+  }
+
+  &__text-wrapper {
+    margin-left: rem($spacing__sm);
+
+    [dir='rtl'] & {
+      margin-left: 0;
+      margin-right: rem($spacing__sm * .5);
+    }
+
+    @include media-desktop-and-up {
+      margin-bottom: rem($spacing__sm * .666666);
+    }
+  }
+
+  &__item-title {
+    // TO DO: possibly remove this once microsites brand tool has been implemented.
+    // If global font overrides are desired once microsites brand tool is implement, it should be handled in _mixins-typography.scss
+    @include font-family__primary-bold(--header-font-bold);
+    font-size: rem($base__font-size * 2.4);
+    line-height: $base__line-height * 1.0714285714;
+  }
+
+  &__text {
+    font-size: rem($base__font-size * 1.6);
+    line-height: $base__line-height * 1.0714285714;
+
+    @include media-desktop-and-up {
+      font-size: rem($base__font-size * 1.8);
+      line-height: $base__line-height * 1.0714285714;
+    }
+  }
+
+  .eaton-grid-control & {
+
+    &__component {
+      margin-top: 0;
+    }
+
+    &__component .container {
+      width: $ratio__1-1;
+
+      .col-md-4 {
+        flex: 0 0 $ratio__1-1;
+      }
+    }
+  }
+
+  .eaton-grid-control.dark-theme & {
+
+    &__link,
+    &__text-wrapper {
+      color: $color__white;
+    }
+  }
+}
+
+
+//-----------------------------------
+// IE11 Adjustments
+//-----------------------------------
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .link-list-with-icon__component {
+    .row {
+      .col-md-4 {
+        flex: 0 0 30%;
+      }
+    }
+
+    .eaton-grid-control & {
+      .row {
+        .col-md-4 {
+          flex: 0 0 $ratio__1-1;
+        }
+      }
+    }
+  }
+}

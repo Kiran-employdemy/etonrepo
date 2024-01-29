@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.SitemapFamilyProductServlet" immediate="true" activate="activate">
+  <property name="family.product.path" type="String" value="/var/commerce/products/eaton"/>
+  <property name="xml.file.path" type="String" value="/content/dam/eaton/resources/xml/"/>
+  <property name="sling.servlet.paths" type="String" value="/eaton/extensionids"/>
+  <property name="generate.xmlFile" type="Boolean" value="false"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <implementation class="com.eaton.platform.core.servlets.SitemapFamilyProductServlet"/>
+</scr:component>

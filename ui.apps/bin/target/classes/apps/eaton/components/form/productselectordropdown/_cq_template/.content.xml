@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Product Dropdown"
+    guideNodeClass="guideDropDownList"
+    initScript="try {&#xa;      window.eatonInitializeProductForm();&#xa;    } catch (e) {&#xa;      window.guideBridge._guide.logger().error(&quot;AF&quot;,&quot;Failed to execute rule: &quot; + e);&#xa;    }"
+    valueCommitScript="try {&#xa;      window.eatonUpdateProductForm();&#xa;    } catch (e) {&#xa;      window.guideBridge._guide.logger().error(&quot;AF&quot;,&quot;Failed to execute rule: &quot; + e);&#xa;    }"/>

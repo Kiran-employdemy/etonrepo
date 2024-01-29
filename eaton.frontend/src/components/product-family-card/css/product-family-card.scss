@@ -1,0 +1,157 @@
+//-----------------------------------
+// EATON-109: Product Family Card
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+.product-family-card {
+
+  &__component {
+    margin-bottom: 60px;
+
+    [dir='rtl'] & {
+      .col-md-8,
+      .col-md-6 {
+        float: right;
+      }
+    }
+  }
+
+  &__header {
+    padding-bottom: $spacing__sm / 2;
+  }
+
+  &__separator {
+    width: 10%;
+    height: 5px;
+    background: var(--primary-brand-color, $color__primary-blue);
+    margin-bottom: $spacing__sm / 2;
+  }
+
+  &__image-wrapper {
+    margin: $spacing__md / 2 0;
+    text-align: center;
+
+    img {
+      max-width: 750px;
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      margin: 0px, 0px, 10px;
+    }
+
+    .carousel-indicators li {
+      background-color: #ccd2d7;
+      border: 0px;
+    }
+
+    .carousel-indicators .active {
+      background-color: var(--primary-brand-color, #005eb8);
+      border: 0px;
+    }
+
+    .carousel-control.left {
+      background: none;
+      left: 74%;
+    }
+
+    .carousel-control.right {
+      background: none;
+    }
+
+    .carousel-control {
+      top: 100%;
+      @include media-mobile-and-tablet {
+        display: none;
+      }
+    }
+
+    .carousel-indicators {
+      bottom: -50px;
+      @include media-mobile-and-tablet {
+        bottom: -26px;
+      }
+    }
+
+  }
+
+  &__cta {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  &__links {
+
+    margin-top: 30px;
+
+    a {
+      display: block;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  @include media-desktop-and-up {
+
+    &__header {
+
+      padding-bottom: $spacing__sm;
+    }
+
+    &__separator {
+
+      margin-bottom: $spacing__sm;
+    }
+
+    &__image-wrapper {
+      margin-bottom: 0;
+
+      img {
+        max-width: 360px;
+      }
+    }
+
+    &__link-wrapper {
+      margin-top: $spacing__md;
+    }
+
+    &__links-row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+    }
+
+    &__cta {
+      float: left;
+      padding-right: $grid__gutter-width;
+      text-align: left;
+    }
+
+    &__links {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      a {
+        margin-bottom: 20px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.padding-bottom-40 {
+  // stylelint-disable no-missing-end-of-source-newline
+  padding-bottom: 40px;
+
+}
+// stylelint-enable no-missing-end-of-source-newline

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.ProductFamilyDetailServiceImpl" immediate="true">
+  <service>
+    <provide interface="com.eaton.platform.core.services.ProductFamilyDetailService"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="eatonSiteConfigService" interface="com.eaton.platform.core.services.EatonSiteConfigService" field="eatonSiteConfigService"/>
+  <reference name="queryBuilder" interface="com.day.cq.search.QueryBuilder" field="queryBuilder"/>
+  <implementation class="com.eaton.platform.core.services.impl.ProductFamilyDetailServiceImpl"/>
+</scr:component>

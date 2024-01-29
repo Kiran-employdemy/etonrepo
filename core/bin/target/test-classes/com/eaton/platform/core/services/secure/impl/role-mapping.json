@@ -1,0 +1,595 @@
+{
+  "accounttype":{
+    "CNTRLPANELBUILDER":{
+      "tagpath":"eaton-secure:accounttype/control-panel-builder"
+    },
+    "CONSULTANT":{
+      "tagpath":"eaton-secure:accounttype/consultant"
+    },
+    "AGENT":{
+      "tagpath":"eaton-secure:accounttype/agent"
+    },
+    "CONTRACTOREXT":{
+      "tagpath":"eaton-secure:accounttype/contractor"
+    },
+    "DEALER":{
+      "tagpath":"eaton-secure:accounttype/dealers-and-service-stations"
+    },
+    "DISTRIBUTOR":{
+      "tagpath":"eaton-secure:accounttype/distributor"
+    },
+    "DISTPANELBUILDER":{
+      "tagpath":"eaton-secure:accounttype/distribution-panel-builder"
+    },
+    "EMPLOYEE":{
+      "tagpath":"eaton-secure:accounttype/eaton-employee"
+    },
+    "ENDUSERCUSTOMER":{
+      "tagpath":"eaton-secure:accounttype/end-customer"
+    },
+    "FLEET":{
+      "tagpath":"eaton-secure:accounttype/fleet"
+    },
+    "GOVERNMENT":{
+      "tagpath":"eaton-secure:accounttype/government"
+    },
+    "RESELLER":{
+      "tagpath":"eaton-secure:accounttype/reseller"
+    },
+    "OEM":{
+      "tagpath":"eaton-secure:accounttype/manufacturer"
+    },
+    "RETAILER":{
+      "tagpath":"eaton-secure:accounttype/retailer"
+    },
+    "SUPPLIER":{
+      "tagpath":"eaton-secure:accounttype/supplier"
+    },
+    "SYSTEMINTEGRATOR":{
+      "tagpath":"eaton-secure:accounttype/system-integrator"
+    }
+  },
+  "businessgroup":{
+    "ELECTRICAL/AMER":{
+      "tagpath":"eaton-secure:business-group/electrical-amer"
+    },
+    "ELECTRICAL/APAC":{
+      "tagpath":"eaton-secure:business-group/electrical-apac"
+    },
+    "ELECTRICAL/EMEA":{
+      "tagpath":"eaton-secure:business-group/electrical-emea"
+    },
+    "ELECTRICAL/CBO":{
+      "tagpath":"eaton-secure:business-group/electrical-amer"
+    },
+    "INDUSTRIAL/AER":{
+      "tagpath":"eaton-secure:business-group/industrial-aer"
+    },
+    "INDUSTRIAL/FIL":{
+      "tagpath":"eaton-secure:business-group/industrial-fil"
+    },
+    "INDUSTRIAL/GOLF":{
+      "tagpath":"eaton-secure:business-group/industrial-golf"
+    },
+    "INDUSTRIAL/HQ":{
+      "tagpath":"eaton-secure:business-group/Industrial-hq"
+    },
+    "INDUSTRIAL/HYD":{
+      "tagpath":"eaton-secure:business-group/industrial-hyd"
+    },
+    "INDUSTRIAL/VEH":{
+      "tagpath":"eaton-secure:business-group/industrial-veh"
+    },
+    "CORPORATE":{
+      "tagpath":"eaton-secure:business-group/Corporate"
+    }
+  },
+  "productcategory":{
+    "ACTUATION GEAR SYSTEMS":{
+      "tagpath":"eaton-secure:product-category/aerospace/actuation-gear-systems"
+    },
+    "ENGINE BUILD-UP SOLUTIONS":{
+      "tagpath":"eaton-secure:product-category/aerospace/engine-build-up-solutions"
+    },
+    "ENGINE FUEL SYSTEM":{
+      "tagpath":"eaton-secure:product-category/aerospace/engine-fuel-system"
+    },
+    "ENGINE OIL SYSTEM":{
+      "tagpath":"eaton-secure:product-category/aerospace/engine-oil-system"
+    },
+    "ENGINE SEALING SOLUTIONS":{
+      "tagpath":"eaton-secure:product-category/aerospace/engine-sealing-solutions"
+    },
+    "FUEL CONVEYANCE HOSE TUBES CONNECTORS":{
+      "tagpath":"eaton-secure:product-category/aerospace/fuel-conveyance-hose-tubes-connectors"
+    },
+    "FUEL INERTING SOLUTIONS":{
+      "tagpath":"eaton-secure:product-category/aerospace/fuel-inerting-solutions"
+    },
+    "FUEL MEASUREMENT":{
+      "tagpath":"eaton-secure:product-category/aerospace/fuel-measurement"
+    },
+    "FUEL PUMPS AND VALVES":{
+      "tagpath":"eaton-secure:product-category/aerospace/fuel-pumps-and-valves"
+    },
+    "HIGH PRESSURE PNEUMATIC DUCTING":{
+      "tagpath":"eaton-secure:product-category/aerospace/high-pressure-pneumatic-ducting"
+    },
+    "HYDRAULIC CONVEYANCE HOSE TUBES CONNECTORS":{
+      "tagpath":"eaton-secure:product-category/aerospace/hydraulic-conveyance-hose-tubes-connectors"
+    },
+    "HYDRAULIC POWER DISTRIBUTION":{
+      "tagpath":"eaton-secure:product-category/aerospace/hydraulic-power-distribution"
+    },
+    "HYDRAULIC POWER GENERATION":{
+      "tagpath":"eaton-secure:product-category/aerospace/hydraulic-power-generation"
+    },
+    "LOW PRESSURE PNEUMATIC DUCTING":{
+      "tagpath":"eaton-secure:product-category/aerospace/low-pressure-pneumatic-ducting"
+    },
+    "PNEUMATIC CONNECTORS AND HARDWARE":{
+      "tagpath":"eaton-secure:product-category/aerospace/pneumatic-connectors-and-hardware"
+    },
+    "SECONDARY CONTROL ACTUATION":{
+      "tagpath":"eaton-secure:product-category/aerospace/secondary-control-actuation"
+    },
+    "UTILITY ACTUATION SYSTEM":{
+      "tagpath":"eaton-secure:product-category/aerospace/utility-actuation-system"
+    },
+    "AEROQUIP":{
+      "tagpath":"eaton-secure:product-category/hydraulics/aeroquip"
+    },
+    "AEROQUIP PERFORMANCE":{
+      "tagpath":"eaton-secure:product-category/hydraulics/aeroquip-performance"
+    },
+    "AIRFLEX":{
+      "tagpath":"eaton-secure:product-category/hydraulics/airflex"
+    },
+    "ARROW":{
+      "tagpath":"eaton-secure:product-category/hydraulics/arrow"
+    },
+    "CHAR-LYNN":{
+      "tagpath":"eaton-secure:product-category/hydraulics/char-lynn"
+    },
+    "DOWMAX":{
+      "tagpath":"eaton-secure:product-category/hydraulics/dowmax"
+    },
+    "DUFFIELD":{
+      "tagpath":"eaton-secure:product-category/hydraulics/duffield"
+    },
+    "DURAFORCE":{
+      "tagpath":"eaton-secure:product-category/hydraulics/duraforce"
+    },
+    "EATON":{
+      "tagpath":"eaton-secure:product-category/hydraulics/eaton"
+    },
+    "EATON INDUSTRIAL HOSE":{
+      "tagpath":"eaton-secure:product-category/hydraulics/eaton-industrial-hose"
+    },
+    "EVERFLEX":{
+      "tagpath":"eaton-secure:product-category/hydraulics/everflex"
+    },
+    "HANSEN AND GROMELLE":{
+      "tagpath":"eaton-secure:product-category/hydraulics/hansen-and-gromelle"
+    },
+    "HYDRO-LINE":{
+      "tagpath":"eaton-secure:product-category/hydraulics/hydro-line"
+    },
+    "HYDROKRAFT":{
+      "tagpath":"eaton-secure:product-category/hydraulics/hydrokraft"
+    },
+    "HYDROWA":{
+      "tagpath":"eaton-secure:product-category/hydraulics/hydrowa"
+    },
+    "LIFESENSE":{
+      "tagpath":"eaton-secure:product-category/hydraulics/lifesense"
+    },
+    "SCREW-IN CARTRIDGE VALVE":{
+      "tagpath":"eaton-secure:product-category/hydraulics/screw-in-cartridge-valve"
+    },
+    "SYNFLEX":{
+      "tagpath":"eaton-secure:product-category/hydraulics/synflex"
+    },
+    "VICKERS":{
+      "tagpath":"eaton-secure:product-category/hydraulics/vickers"
+    },
+    "VICKERS CYLINDERS":{
+      "tagpath":"eaton-secure:product-category/hydraulics/vickers-cylinders"
+    },
+    "WALTERSCHEID":{
+      "tagpath":"eaton-secure:product-category/hydraulics/walterscheid"
+    },
+    "WEATHERHEAD":{
+      "tagpath":"eaton-secure:product-category/hydraulics/weatherhead"
+    },
+    "WINNER":{
+      "tagpath":"eaton-secure:product-category/hydraulics/winner"
+    },
+    "AUTOMATIC SELF CLEANING FILTRATION":{
+      "tagpath":"eaton-secure:product-category/filtration/automatic-self-cleaning-filtration"
+    },
+    "BAG AND CARTRIDGE FILTRATION":{
+      "tagpath":"eaton-secure:product-category/filtration/bag-and-cartridge-filtration"
+    },
+    "DEPTH FILTRATION":{
+      "tagpath":"eaton-secure:product-category/filtration/depth-filtration"
+    },
+    "FABRICATED PIPELINE STRAINERS":{
+      "tagpath":"eaton-secure:product-category/filtration/fabricated-pipeline-strainers"
+    },
+    "GAS LIQUID SEPARATORS":{
+      "tagpath":"eaton-secure:product-category/filtration/gas-liquid-separators"
+    },
+    "HYDRAULIC AND LUBRICATION OIL FILTRATION":{
+      "tagpath":"eaton-secure:product-category/filtration/hydraulic-and-lubrication-oil-filtration"
+    },
+    "MECHANICALLY CLEANED TUBULAR BACKWASHING FILTERS":{
+      "tagpath":"eaton-secure:product-category/filtration/mechanically-cleaned-tubular-backwashing-filters"
+    },
+    "PORTABLE FILTRATION":{
+      "tagpath":"eaton-secure:product-category/filtration/portable-filtration"
+    },
+    "STANDARD PIPELINE STRAINERS":{
+      "tagpath":"eaton-secure:product-category/filtration/standard-pipeline-strainers"
+    },
+    "ADVANCED MACHINING":{
+      "tagpath":"eaton-secure:product-category/vehicle/advanced-machining"
+    },
+    "AFTERMARKET":{
+      "tagpath":"eaton-secure:product-category/vehicle/aftermarket"
+    },
+    "CLUTCHES":{
+      "tagpath":"eaton-secure:product-category/vehicle/clutches"
+    },
+    "DIFFERENTIALS AND LOCKING DIFFERENTIALS":{
+      "tagpath":"eaton-secure:product-category/vehicle/differentials-and-locking-differentials"
+    },
+    "ENGINE VALVES LIFTERS AND VALVE ACTUATION":{
+      "tagpath":"eaton-secure:product-category/vehicle/engine-valves-lifters-and-valve-actuation"
+    },
+    "FLUID CONVEYANCE":{
+      "tagpath":"eaton-secure:product-category/vehicle/fluid-conveyance"
+    },
+    "FUEL EMISSIONS CONTROL":{
+      "tagpath":"eaton-secure:product-category/vehicle/fuel-emissions-control"
+    },
+    "GEARS":{
+      "tagpath":"eaton-secure:product-category/vehicle/gears"
+    },
+    "HYBRID POWER SYSTEMS":{
+      "tagpath":"eaton-secure:product-category/vehicle/hybrid-power-systems"
+    },
+    "LUBRICANTS":{
+      "tagpath":"eaton-secure:product-category/vehicle/lubricants"
+    },
+    "PLASTICS":{
+      "tagpath":"eaton-secure:product-category/vehicle/plastics"
+    },
+    "POWERTRAIN CONTROLS":{
+      "tagpath":"eaton-secure:product-category/vehicle/powertrain-control"
+    },
+    "SERVICE TOOLS":{
+      "tagpath":"eaton-secure:product-category/vehicle/service-tools"
+    },
+    "SUPERCHARGERS":{
+      "tagpath":"eaton-secure:product-category/vehicle/superchargers"
+    },
+    "TECHNOLOGY AND INNOVATION":{
+      "tagpath":"eaton-secure:product-category/vehicle/technology-and-innovation"
+    },
+    "TRANSMISSIONS":{
+      "tagpath":"eaton-secure:product-category/vehicle/transmissions"
+    },
+    "BACKUP POWER PROTECTION (UPS) AND RACK INFRASTRUCTURE":{
+      "tagpath":"eaton-secure:product-category/electrical/backup-power-protection-ups-and-rack-infrastructure"
+    },
+    "B-LINE SERIES SUPPORT SYSTEMS":{
+      "tagpath":"eaton-secure:product-category/electrical/b-line-series-support-systems"
+    },
+    "BUSSMANN SERIES CIRCUIT PROTECTION":{
+      "tagpath":"eaton-secure:product-category/electrical/bussmann-series-circuit-protection"
+    },
+    "CIRCUIT BREAKERS":{
+      "tagpath":"eaton-secure:product-category/electrical/circuit-breakers"
+    },
+    "COMMERCIAL DISTRIBUTION EQUIPMENT":{
+      "tagpath":"eaton-secure:product-category/electrical/commercial-distribution-equipment"
+    },
+    "CONTROL AND AUTOMATION":{
+      "tagpath":"eaton-secure:product-category/electrical/control-and-automation"
+    },
+    "CONTROL ASSEMBLIES":{
+      "tagpath":"eaton-secure:product-category/electrical/control-assemblies"
+    },
+    "COOPER POWER SERIES SOLUTIONS":{
+      "tagpath":"eaton-secure:product-category/electrical/cooper-power-series-solutions"
+    },
+    "CROUSE-HINDS SERIES HARSH AND HAZARDOUS":{
+      "tagpath":"eaton-secure:product-category/electrical/crouse-hinds-series-harsh-and-hazardous"
+    },
+    "ELECTRICAL-GENERAL":{
+      "tagpath":"eaton-secure:product-category/electrical/electrical-general"
+    },
+    "ELECTRONICS":{
+      "tagpath":"eaton-secure:product-category/electrical/electronics"
+    },
+    "ENERGY AUTOMATION SOLUTIONS":{
+      "tagpath":"eaton-secure:product-category/electrical/energy-automation-solutions"
+    },
+    "ENERGY STORAGE":{
+      "tagpath":"eaton-secure:product-category/electrical/energy-storage"
+    },
+    "ENGINEERING SERVICES":{
+      "tagpath":"eaton-secure:product-category/electrical/engineering-services"
+    },
+    "EV CHARGING":{
+      "tagpath":"eaton-secure:product-category/electrical/ev-charging"
+    },
+    "FIRE DETECTION SYSTEMS":{
+      "tagpath":"eaton-secure:product-category/electrical/fire-detection-systems"
+    },
+    "LIFE SAFETY AND MASS NOTIFICATION":{
+      "tagpath":"eaton-secure:product-category/electrical/life-safety-and-mass-notification"
+    },
+    "METERING AND POWER MONITORING":{
+      "tagpath":"eaton-secure:product-category/electrical/metering-and-power-monitoring"
+    },
+    "RESIDENTIAL":{
+      "tagpath":"eaton-secure:product-category/electrical/residential"
+    },
+    "SURGE PROTECTION AND POWER FACTOR CORRECTION":{
+      "tagpath":"eaton-secure:product-category/electrical/surge-protection-and-power-factor-correction"
+    },
+    "SWITCHGEAR AND POWER ASSEMBLIES":{
+      "tagpath":"eaton-secure:product-category/electrical/switchgear-and-power-assemblies"
+    },
+    "WIRING DEVICES":{
+      "tagpath":"eaton-secure:product-category/electrical/wiring-devices"
+    }
+  },
+  "applicationaccess":{
+    "ESHOPPING":{
+      "tagpath":"eaton-secure:application-access/order-center"
+    },
+    "HASBIDMAN":{
+      "tagpath":"eaton-secure:application-access/bid-manager"
+    },
+    "HASCFE":{
+      "tagpath":"eaton-secure:application-access/cfe-guadalajara-mexico"
+    },
+    "hasEASAdvancedMeteringInfrastructure":{
+      "tagpath":"eaton-secure:application-access/eas-advanced-metering-infrastructure"
+    },
+    "hasEASDemandResponse":{
+      "tagpath":"eaton-secure:application-access/eas-demand-response"
+    },
+    "hasEASDistibutionAutomation":{
+      "tagpath":"eaton-secure:application-access/eas-distribution-automation"
+    },
+    "hasEASSubstationAutomation":{
+      "tagpath":"eaton-secure:application-access/eas-substation-automation"
+    },
+    "hasEASYukonSoftware":{
+      "tagpath":"eaton-secure:application-access/eas-yukon-software"
+    },
+    "HASEIREGISTERED":{
+      "tagpath":"eaton-secure:application-access/electrical-installer-registered"
+    },
+    "HASEICERTIFIED":{
+      "tagpath":"eaton-secure:application-access/electrical-installer-authorized"
+    },
+    "HASEIPREMIUM":{
+      "tagpath":"eaton-secure:application-access/electrical-installer-premium"
+    },
+    "HASFCC3AGENTREPORT":{
+      "tagpath":"eaton-secure:application-access/c3-agent-reports"
+    },
+    "HASVOTW":{
+      "tagpath":"eaton-secure:application-access/votw"
+    },
+    "HASBTCONFIG":{
+      "tagpath":"eaton-secure:application-access/bt-configurator"
+    },
+    "HASPROJECTCENTRAL":{
+      "tagpath":"eaton-secure:application-access/project-center"
+    },
+    "CUSTOMERCARECENTERTRUCK_ADD":{
+      "tagpath":"eaton-secure:application-access/eaton-customer-care-center"
+    },
+    "HASOSC":{
+      "tagpath":"eaton-secure:application-access/eaton-distributor-advantage-program-edap"
+    },
+    "HASOSCUDAP":{
+      "tagpath":"eaton-secure:application-access/eaton-utility-distributor-advantage-program-udap"
+    },
+    "HASLIGHTINGCLASS":{
+      "tagpath":"eaton-secure:application-access/eaton-s-learning-classrooms"
+    },
+    "HASCPAMOBILE":{
+      "tagpath":"eaton-secure:application-access/component-pricing-mobile"
+    },
+    "HASSIEBELPRMENTERPRISE":{
+      "tagpath":"eaton-secure:application-access/customer-360-enterprise"
+    },
+    "HASSTOCKADVANTAGE":{
+      "tagpath":"eaton-secure:application-access/eaton-stock-advantage"
+    },
+    " hasECCNProgram": {
+      "tagpath": "eaton-secure:partner-programme-type/eccn-program"
+    },
+    "EATONEGREPCENTRAL_ADD":{
+      "tagpath":"eaton-secure:application-access/rep-central"
+    },
+    "EG_SALES_REP":{
+      "tagpath":"eaton-secure:application-access/eg-sales-rep"
+    },
+    "HASLMS":{
+      "tagpath":"eaton-secure:application-access/eaton-university"
+    },
+    "HASSALESREPORTING":{
+      "tagpath":"eaton-secure:application-access/sales-reporting"
+    },
+    "CUSTOMERICCEBOM_ADD":{
+      "tagpath":"eaton-secure:application-access/engineering-evaluation-tools"
+    },
+    "HASEPIC":{
+      "tagpath":"eaton-secure:application-access/epic-aerospace-supply-chain-management"
+    },
+    "HASEWSCERTIFIED":{
+      "tagpath":"eaton-secure:application-access/ews-certified"
+    },
+    "HASEWSPREMIUM":{
+      "tagpath":"eaton-secure:application-access/ews-premium"
+    },
+    "HASEWSREGISTERED":{
+      "tagpath":"eaton-secure:application-access/ews-registered"
+    },
+    "CUSTOMERFPGAOORDERMANAGEMENT_ADD":{
+      "tagpath":"eaton-secure:application-access/order-management-aerospace"
+    },
+    "EATONMATRIXONEAEROSPACE_ADD":{
+      "tagpath":"eaton-secure:application-access/engineering-plm-aerospace"
+    },
+    "HASORDERENTRYAEROSPACE":{
+      "tagpath":"eaton-secure:application-access/order-management-aerospace"
+    },
+    "HASEEMONEPLM":{
+      "tagpath":"eaton-secure:application-access/engineering-plm-electrical"
+    },
+    "EATONCORPISUPPLIER_ADD":{
+      "tagpath":"eaton-secure:application-access/isupplier"
+    },
+    "CUSTOMERICCMATERIALSSTANDARDS_ADD":{
+      "tagpath":"eaton-secure:application-access/materials-standards"
+    },
+    "EATONGREENPRODUCTMGMT_ADD":{
+      "tagpath":"eaton-secure:application-access/green-product-management"
+    },
+    "ISPASSKEYADMIN":{
+      "tagpath":"eaton-secure:application-access/passkey"
+    },
+    "EATONGAS_ADD":{
+      "tagpath":"eaton-secure:application-access/roadranger-application-approval-system"
+    },
+    "EATONWIRELESSCTRCONFIG_ADD":{
+      "tagpath":"eaton-secure:application-access/product-configurator"
+    },
+    "EATONCPK_ADD":{
+      "tagpath":"eaton-secure:application-access/process-capability-entry-form"
+    },
+    "HASORDERENTRYFILTRATION":{
+      "tagpath":"eaton-secure:application-access/order-management-filtration"
+    },
+    "HASPLMINDUSTRIAL":{
+      "tagpath":"eaton-secure:application-access/product-lifecycle-management-industrial-sector-enovia-2015x"
+    },
+    "EATONPQNASAP_ADD":{
+      "tagpath":"eaton-secure:application-access/pqna-sap-ep-system-online-invoice-payment-status"
+    },
+    "HASORACLECPQ":{
+      "tagpath":"eaton-secure:application-access/pricing-and-quoting-cpq-cloud"
+    },
+    "HASOPTYMYZE":{
+      "tagpath":"eaton-secure:application-access/score-sales-compensation-reporting-optymyze"
+    },
+    "HASSIEBELWARRANTYPASSKEY":{
+      "tagpath":"eaton-secure:application-access/warranty-claim-center"
+    },
+    "HASLEVERTCOCONFIG":{
+      "tagpath":"eaton-secure:application-access/tco-lever-configurator"
+    },
+    "EATONSVEN_ADD":{
+      "tagpath":"eaton-secure:application-access/supplier-visualization"
+    },
+    "EATONWISPERNEW_ADD":{
+      "tagpath":"eaton-secure:application-access/wisper"
+    },
+    "EATONOCWEBCONNECT_ADD":{
+      "tagpath":"eaton-secure:application-access/vista-or-oc-webconnect"
+    },
+    "WORKPLACENEWMYEATON_ADD":{
+      "tagpath":"eaton-secure:application-access/new-myeaton"
+    },
+    "OEMADVANTAGE":{
+      "tagpath":"eaton-secure:application-access/oem-advantage-program"
+    },
+    "HASVISTEX_ADD":{
+      "tagpath":"eaton-secure:application-access/vistex-portal"
+    },
+    "HASSPA":{
+      "tagpath":"eaton-secure:application-access/spa-search"
+    },
+    "HASTQMS":{
+      "tagpath":"eaton-secure:application-access/tqms"
+    },
+    "HASTLSUPPLIERPORTAL":{
+      "tagpath":"eaton-secure:application-access/cpdi-chicago-citu-supplier-portal"
+    },
+    "HASGROWTHPOINT":{
+      "tagpath":"eaton-secure:application-access/growth-point-lead-central"
+    },
+    "hasUPSServiceConfigurator":{
+      "tagpath":"eaton-secure:application-access/ups-service-configurator"
+    },
+    "hasPowerAdvantagePortal":{
+      "tagpath":"eaton-secure:application-access/power-advantage-portal"
+    },
+    "HASFORESEER":{
+      "tagpath":"eaton-secure:application-access/foreseer"
+    },
+    "EATONNETPROTECTIONSOFT_ADD":{
+      "tagpath":"eaton-secure:application-access/network-protector-software"
+    }
+  },
+  "oktagroups":{
+    "Revenera_PQ_Product Manager":{
+      "tagpath": "eaton-secure:okta-group/revenera_pq_product-manager"
+    },
+    "Revenera_PQ_System Administrator":{
+      "tagpath": "eaton-secure:okta-group/revenera_pq_system-administrator"
+    }
+  },
+  "tierlevel":{
+    "AUTHORIZED":{
+      "tagpath":"eaton-secure:tier-level/authorized"
+    },
+    "LICENSED":{
+      "tagpath":"eaton-secure:tier-level/licensed"
+    },
+    "PREMIUM":{
+      "tagpath":"eaton-secure:tier-level/premium"
+    },
+    "QUALIFIED":{
+      "tagpath":"eaton-secure:tier-level/qualified"
+    },
+    "REGISTERED":{
+      "tagpath":"eaton-secure:tier-level/registered"
+    }
+  },
+  "partnerProgramTypeAndTier": {
+    "progAutoSolPartner": {
+      "tagpath": "eaton-secure:partner-programme-type/automation-solution-program"
+    },
+    "progDrivesSolPartner": {
+      "tagpath": "eaton-secure:partner-programme-type/drives-solution-program"
+    },
+    "progElectricalInstaller|Authorized": {
+      "tagpath": "eaton-secure:partner-programme-type/electrical-installer-programme/authorized"
+    },
+    "progElectricalInstaller|Premium": {
+      "tagpath": "eaton-secure:partner-programme-type/electrical-installer-programme/premium"
+    },
+    "progElectricalWholesaler": {
+      "tagpath": "eaton-secure:partner-programme-type/electrical-wholesaler-programme"
+    },
+    "progITDistributor": {
+      "tagpath": "eaton-secure:partner-programme-type/it-distributor-programme"
+    },
+    "progITReseller": {
+      "tagpath": "eaton-secure:partner-programme-type/it-reseller-programme"
+    },
+    "progChnlPanelBuilder": {
+      "tagpath": "eaton-secure:partner-programme-type/channel-panel-builder-program"
+    }
+  }
+}

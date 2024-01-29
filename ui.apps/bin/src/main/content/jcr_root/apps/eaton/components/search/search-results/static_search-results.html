@@ -1,0 +1,23 @@
+<!--/*
+
+  Load Component Views:
+
+	Author may select one of the following views
+	- default
+	- simple
+
+*/-->
+
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Search Results</div>
+</sly>
+
+
+<sly data-sly-test="${ properties.view == 'default' }">
+  <sly data-sly-include="views/view-default.html"></sly>
+</sly>
+
+<sly data-sly-test="${ properties.view == 'advanced' }">
+  <sly data-sly-include="views/view-simple.html"></sly>
+</sly>

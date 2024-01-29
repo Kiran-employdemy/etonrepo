@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    basePathProp="basePath"
+    indexPathProp="indexPath"
+    landingPageTemplate="/conf/eaton/settings/wcm/templates/eaton--ccms-landing-page"
+    pdfPathProp="pdfPath"
+    pdfTypeProp="pdfType"
+    serializedMap="{Boolean}false"
+    shadowPageTemplate="fmdita/templates/default/cqtemplates/shadowpage"
+    siteTitleProp="siteTitle"
+    sourcePathProp="sourcePath"
+    title="Eaton CCMS DITA Template"
+    tocNode="jcr:content/toc"
+    tocPathProp="tocPath"
+    topicContentNode="jcr:content/root/contentnode"
+    topicHeadNode="jcr:content/root/headnode"
+    topicPageTemplate="/conf/eaton/settings/wcm/templates/eaton-ccms-dita-page"/>

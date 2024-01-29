@@ -1,0 +1,168 @@
+<!--/* Component M-46: Category Menu | Tabbed Menu List */-->
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Tabbed Menu List: ${currentNode.name}</div>
+</sly>
+
+<sly data-sly-use.data="com.eaton.platform.core.models.TabbedMenuListModel">
+
+    <div class="tabbed-menu-list__component">
+    
+        <!--/*
+            View: Mobile Breakpoint
+        */-->
+        <div class="container tabbed-menu-list__view-mobile">
+            <div
+                id="tabbed-menu-list--${ data.uniqueId }"
+                class="panel-group tabbed-menu-list__accordion mobile"
+                data-sly-list.tab="${ data.tabsList }"
+                role="presentation"
+            >
+                <div class="tabbed-menu-list__tab-title b-body-copy col-md-4" role="heading">
+    
+                    <!--/*
+                        If menu item doesn't have sub-links
+                    */-->
+                    <a
+                        data-sly-test="${ tab.titleLink } "
+                        class="tabbed-menu-list__title mobile collapsed"
+                        href="${ tab.titleLink }"
+                        target="${ tab.titleTarget }"
+                    >${ tab.title }</a>
+    
+                    <!--/*
+                        If menu item does have sub-links
+                    */-->
+                    <a
+                        data-sly-test="${ !tab.titleLink }"
+                        class="tabbed-menu-list__title mobile collapsed"
+                        data-toggle="collapse"
+                        data-parent="#tabbed-menu-list--${ data.uniqueId }"
+                        href="#collapse-${ data.uniqueId }-${ tabList.index }"
+                        data-index="${ tabList.index }"
+                        aria-expanded="false"
+                    >${ tab.title } <i class="icon icon-sign-plus pull-right" aria-hidden="true"></i>
+                    </a>
+    
+                    <div
+                        data-sly-test="${ !tab.titleLink }"
+                        id="collapse-${ data.uniqueId }-${ tabList.index }"
+                        class="panel-collapse collapse"
+                        role="region"
+                        aria-labelledby="${ tab.title }"
+                    >
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <a class="b-body-copy" href="${tab.headerLink}" target="${ tab.headerTarget }">${ tab.headerText }</a>
+                            </div>
+                            <sly data-sly-list.link="${ tab.tabbedMenuLinkList }">
+                                <div class="col-xs-12">
+                                    <a class="b-body-copy-small" href="${ link.link }" target="${ link.target }">${ link.text }</a>
+                                </div>
+                            </sly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+        <!--/*
+            View: Desktop Breakpoint
+        */-->
+        <div class="container tab-container tabbed-menu-list__view-desktop">
+    
+            <!--/* Tabs Titles */-->
+            <sly data-sly-list.tab="${ data.tabsList }">
+    
+                <!--/*
+                    Define a custom CSS class based on the amount of Tabs that the component has
+                    MAX ALLOWED: 60 Tabs = 20 rows / 3 items per row
+                    TODO: This can be refactored in order to allow infinite number of tabs.
+                */-->
+                <sly data-sly-test.cssRowNumber="${
+                    tabList.index >= 0 && tabList.index <= 2 ?   'row-1' : '' }${
+                    tabList.index >= 3 && tabList.index <= 5 ?   'row-2' : '' }${
+                    tabList.index >= 6 && tabList.index <= 8 ?   'row-3' : '' }${
+                    tabList.index >= 9 && tabList.index <= 11 ?  'row-4' : '' }${
+                    tabList.index >= 12 && tabList.index <= 14 ? 'row-5' : '' }${
+                    tabList.index >= 15 && tabList.index <= 17 ? 'row-6' : '' }${
+                    tabList.index >= 18 && tabList.index <= 20 ? 'row-7' : '' }${
+                    tabList.index >= 21 && tabList.index <= 23 ? 'row-8' : '' }${
+                    tabList.index >= 24 && tabList.index <= 26 ? 'row-9' : '' }${
+                    tabList.index >= 27 && tabList.index <= 29 ? 'row-10' : '' }${
+                    tabList.index >= 30 && tabList.index <= 32 ? 'row-11' : '' }${
+                    tabList.index >= 33 && tabList.index <= 35 ? 'row-12' : '' }${
+                    tabList.index >= 36 && tabList.index <= 38 ? 'row-13' : '' }${
+                    tabList.index >= 39 && tabList.index <= 41 ? 'row-14' : '' }${
+                    tabList.index >= 42 && tabList.index <= 44 ? 'row-15' : '' }${
+                    tabList.index >= 45 && tabList.index <= 47 ? 'row-16' : '' }${
+                    tabList.index >= 48 && tabList.index <= 50 ? 'row-17' : '' }${
+                    tabList.index >= 51 && tabList.index <= 53 ? 'row-18' : '' }${
+                    tabList.index >= 54 && tabList.index <= 56 ? 'row-19' : '' }${
+                    tabList.index >= 57 && tabList.index <= 59 ? 'row-20' : '' }" >
+    
+                <div class="tabbed-menu-list__tab-title ${ cssRowNumber } desktop b-body-copy">
+    
+                    <!--/*
+                        IF the Title is a External link
+                    */-->
+                    <a
+                        data-sly-test="${ tab.titleLink }"
+                        class="tabbed-menu-list__title desktop link"
+                        href="${ tab.titleLink }"
+                        target="${ tab.titleTarget }"
+                    >${ tab.title }</a>
+    
+    
+                    <!--/*
+                        IF the Title behaves a "Tabbed Pannel"
+                    */-->
+                    <a data-sly-test="${ !tab.titleLink }"
+                        class="tabbed-menu-list__title desktop"
+                        data-toggle="tab"
+                        href="javascript:void(0)#tab-${ data.uniqueId }-${ tabList.index }"
+                        data-index="${ tabList.index }"
+                        role="tab"
+                        aria-selected="false"
+                    >${ tab.title }</a>
+    
+                </div>
+    
+    
+                <div
+                    data-sly-test="${ !tab.titleLink }"
+                    class="tabbed-menu-list__tab-content ${ cssRowNumber }">
+                    <div
+                        id="tab-${ data.uniqueId }-${ tabList.index }"
+                        data-index="${ tabList.index }"
+                        class="tab-pane fade tabbed-menu-list__item-content">
+    
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-md-3 tabbed-menu-list__content-title">
+                                    <a class="b-body-copy" href="${ tab.headerLink }" target="${ tab.headerTarget }">${ tab.headerText }</a>
+                                </div>
+    
+                                <div class="col-xs-12 col-md-9 tabbed-menu-list__tab-links">
+                                    <div>
+                                        <sly data-sly-list.link="${ tab.tabbedMenuLinkList }">
+                                            <div class="col-xs-12 col-md-4 tabbed-menu-list__tab-links--link">
+                                                <a class="b-body-copy-small" href="${ link.link }" target="${ link.target }">${ link.text }</a>
+                                            </div>
+                                        </sly>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+    
+                </sly>
+            </sly>
+    
+        </div>
+    </div>
+
+</sly>

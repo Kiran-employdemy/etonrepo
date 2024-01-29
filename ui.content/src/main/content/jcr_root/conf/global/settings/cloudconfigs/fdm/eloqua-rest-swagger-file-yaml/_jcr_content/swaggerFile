@@ -1,0 +1,254 @@
+---
+swagger: "2.0"
+info:
+  description: EloquaForm
+  version: 1.0.0
+  title: EloquaForm
+host: secure.p01.eloqua.com
+schemes:
+- https
+security:
+- basicAuth: []
+paths:
+  /api/REST/2.0/assets/form/{id}:
+    get:
+      parameters:
+      - name: id
+        in: path
+        description: Form ID
+        required: true
+        type: string
+      responses:
+        200:
+          description: OK.
+          schema:
+            $ref: '#/definitions/FormRest10'
+        400:
+          description: Bad request. See <a href='https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAB/index.html#CSHID=HTTPStatusCodes'>Status Codes</a> for information about other possible HTTP status codes.
+        401:
+          description: Unauthorized. See <a href='https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAB/index.html#CSHID=HTTPStatusCodes'>Status Codes</a> for information about other possible HTTP status codes.
+        403:
+          description: Forbidden. See <a href='https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAB/index.html#CSHID=HTTPStatusCodes'>Status Codes</a> for information about other possible HTTP status codes.
+        404:
+          description: The requested resource was not found. See <a href='https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAB/index.html#CSHID=HTTPStatusCodes'>Status Codes</a> for information about other possible HTTP status codes.
+        500:
+          description: The service has encountered an error. See <a href='https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAB/index.html#CSHID=HTTPStatusCodes'>Status Codes</a> for information about other possible HTTP status codes.
+securityDefinitions:
+  basicAuth:
+    type: basic
+definitions:
+  FormRest10:
+    properties:
+      type:
+        type: string
+        description: 'The asset''s type in Eloqua. This is a read-only property. '
+      id:
+        type: string
+        description: Id of the form. This is a read-only property.
+        readOnly: true
+      currentStatus:
+        type: string
+        description: 'The form''s current status. Example: draft, active, or complete.'
+      name:
+        type: string
+        description: The name of the form.
+      description:
+        type: string
+        description: The description of the form.
+      permissions:
+        type: string
+        description: The permissions for the form granted to your current instance. This is a read-only property.
+      createdBy:
+        type: string
+        description: The login id of the user who created the form.
+        readOnly: true
+      createdAt:
+        type: string
+        description: The date and time the form was created, expressed in Unix time.
+        readOnly: true
+      updatedBy:
+        type: string
+        description: The login id of the user that last updated the form.
+        readOnly: true
+      updatedAt:
+        type: string
+        description: Unix timestamp for the date and time the form was last updated.
+        readOnly: true
+      accessedAt:
+        type: string
+        description: The date and time the form was last accessed, expressed in Unix time.
+        readOnly: true
+      depth:
+        type: string
+        description: 'Level of detail returned by the request. Eloqua APIs can retrieve
+          entities at three different levels of depth: <code>minimal</code>, <code>partial</code>,
+          and <code>complete</code>. Any other values passed are reset to <code>complete</code>
+          by default. For more information, see <a href=''https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAB/index.html#CSHID=RequestDepth''>Request
+          depth</a>.'
+        readOnly: true
+      htmlName:
+        type: string
+        description: The asset's raw HTML name.
+      processingType:
+        type: string
+        description: 'A list of the form''s processing types. For example: externalEmail,
+          externalWebsite, internallyHosted, internalAgentProxyForm.'
+      emailAddressFormFieldId:
+        type: string
+        description: The email address form field entity's unique identifier.
+      submitFailedLandingPageId:
+        type: string
+        description: The landing page id of the failed submit.
+      html:
+        type: string
+        description: The asset's raw HTML content.
+      style:
+        type: string
+        description: The asset's main layout style.
+      elements:
+        type: array
+        description: Array consisting of form elements.
+        items:
+          $ref: '#/definitions/FormElementRest10'
+      processingSteps:
+        type: array
+        description: 'A list of the form''s processing steps. There is no limit to
+          the number of processing steps that can be included. Possible values include:
+          FormStepAddToCampaign, FormStepAddToContactList, FormStepAddToDataCanvas,
+          FormStepAddToProgram, FormStepAssociateToCampaign, FormStepCancelRegistration,
+          FormStepUpdateContactEmailAddress, FormStepCreateUpdateEventRegistration,
+          FormStepCreateUpdate, FormStepCreateUpdateFromFormField, FormStepGlobalSubscribe,
+          FormStepGlobalUnsubscribe, FormStepGroupSubscription, FormStepPostData,
+          FormStepRedirectToWebPage, FormStepRemoveFromContactList, FormStepRunIntegrationRules,
+          FormStepSendEmail, FormStepSendNotificationEmail, and FormStepWebTracking.'
+        items:
+          $ref: '#/definitions/FormProcessingStepRest10'
+      isHidden:
+        type: string
+        description: Form_Field_IsHidden_Description
+    title: Form
+  FormElementRest10:
+    properties:
+      type:
+        type: string
+        description: The asset's type in Eloqua. This is a read-only property.
+      id:
+        type: string
+        description: Id of the form element. This is a read-only property.
+        readOnly: true
+      currentStatus:
+        type: string
+        description: The form element's current status.
+      name:
+        type: string
+        description: Name of the form element.
+      description:
+        type: string
+        description: The description of the form element.
+      permissions:
+        type: string
+        description: The permissions for the form element granted to your current instance.
+      createdBy:
+        type: string
+        description: The login id of the user who created the form element.
+        readOnly: true
+      createdAt:
+        type: string
+        description: The date and time the form element was created, expressed in Unix time.
+        readOnly: true
+      updatedBy:
+        type: string
+        description: The login id of the user that last updated the form element.
+        readOnly: true
+      updatedAt:
+        type: string
+        description: Unix timestamp for the date and time the form element was last updated.
+        readOnly: true
+      accessedAt:
+        type: string
+        description: The date and time the form element was last accessed.
+        readOnly: true
+      depth:
+        type: string
+        description: 'Level of detail returned by the request. Eloqua APIs can retrieve
+          entities at three different levels of depth: <code>minimal</code>, <code>partial</code>,
+          and <code>complete</code>. Any other values passed are reset to <code>complete</code>
+          by default. For more information, see <a href=''https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAB/index.html#CSHID=RequestDepth''>Request
+          depth</a>.'
+        readOnly: true
+      instructions:
+        type: string
+        description: The form element's field instructions. Field instructions are optional instructions that help users fill in fields.
+      style:
+        type: string
+        description: The asset's main layout style.
+    title: FormElement
+  FormProcessingStepRest10:
+    properties:
+      type:
+        type: string
+        description: The asset's type in Eloqua. This is a read-only property.
+      id:
+        type: string
+        description: Id of the form processing step. This is a read-only property.
+        readOnly: true
+      currentStatus:
+        type: string
+        description: The form processing step's current status.
+      name:
+        type: string
+        description: Name of the form processing step.
+      description:
+        type: string
+        description: The description of the form processing step.
+      permissions:
+        type: string
+        description: The permissions for the form processing step granted to your current instance.
+      createdBy:
+        type: string
+        description: The login id of the user who created the form processing step.
+        readOnly: true
+      createdAt:
+        type: string
+        description: The date and time the form processing step was created, expressed in Unix time.
+        readOnly: true
+      updatedBy:
+        type: string
+        description: The login id of the user that last updated the form processing step.
+        readOnly: true
+      updatedAt:
+        type: string
+        description: Unix timestamp for the date and time the form processing step was last updated.
+        readOnly: true
+      accessedAt:
+        type: string
+        description: The date and time the form processing step was last accessed.
+        readOnly: true
+      depth:
+        type: string
+        description: 'Level of detail returned by the request. Eloqua APIs can retrieve
+          entities at three different levels of depth: <code>minimal</code>, <code>partial</code>,
+          and <code>complete</code>. Any other values passed are reset to <code>complete</code>
+          by default. For more information, see <a href=''https://docs.oracle.com/cloud/latest/marketingcs_gs/OMCAB/index.html#CSHID=RequestDepth''>Request
+          depth</a>.'
+        readOnly: true
+      execute:
+        type: string
+        description: 'The conditions for which this form processing step will execute.
+          Possible values include: <code>always</code>, <code>conditionally</code>,
+          and <code>never</code>.'
+      conditionalType:
+        type: string
+        description: 'The type of value the comparator is validating. Possible values
+          include: ''form field'' or ''static value''.'
+      conditionalFieldId:
+        type: string
+        description: The form field id used to compare form fields within a form processing step condition.
+      conditionalComparator:
+        type: string
+        description: 'The comparator used to validate a condition. Possible values
+          include: <code>exactly</code> or <code>not exactly</code>.'
+      isConditionallyNegated:
+        type: string
+        description: The conditions for which the processing step will execute. If <code>yes</code>, the processing step will execute when the conditions are met. If <code>no</code>, the processing step will execute when the conditions are not met.
+    title: FormProcessingStep

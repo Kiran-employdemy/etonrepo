@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Interactive Image Dialog"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <textConfig
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Text Configuration"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Title"
+                                name="./title"
+                                required="{Boolean}false"/>
+                            <secondTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Second Title"
+                                name="./title1"
+                                required="{Boolean}false"/>
+                            <description
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Description"
+                                name="./desc"
+                                required="{Boolean}false"/>
+                            <radioButtonText1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="First Button Label"
+                                name="./radioButtonText1"/>
+                            <radioButtonText2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Second Button Label"
+                                name="./radioButtonText2"/>
+                            <radioButtonText3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Third Button Label"
+                                name="./radioButtonText3"/>
+                            <rightImage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Image on the Right Side"
+                                name="./imageOnright"
+                                required="{Boolean}false"
+                                rootPath="/content/dam"/>
+                            <leftImage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Image on the Left Side"
+                                name="./imageOnleft"
+                                required="{Boolean}false"
+                                rootPath="/content/dam"/>
+                            <redirectLink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                fieldLabel="Redirect Link"
+                                name="./redirectLink"
+                                required="{Boolean}false"/>
+                        </items>
+                    </columns>
+                </items>
+            </textConfig>
+            <variationOneImageConfig
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Variation One Configuration"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <imagepath
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="First Image Path"
+                                name="./image"
+                                required="{Boolean}false"
+                                rootPath="/content/dam"/>
+                            <imagepath1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Second Image Path"
+                                name="./image1"
+                                rootPath="/content/dam"/>
+                            <imagepathMob
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Mobile First Image Path"
+                                name="./imagemob"
+                                required="{Boolean}false"
+                                rootPath="/content/dam"/>
+                            <imagepathMob1
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Mobile Second Image Path"
+                                name="./image1mob"
+                                rootPath="/content/dam"/>
+                        </items>
+                    </columns>
+                </items>
+            </variationOneImageConfig>
+            <variationTwoImageConfig
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Variation Two Configuration"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <columns
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <imagepath2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="First Image Path"
+                                name="./image2"
+                                required="{Boolean}false"
+                                rootPath="/content/dam"/>
+                            <imagepath3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Second Image Path"
+                                name="./image3"
+                                rootPath="/content/dam"/>
+                            <imagepathMob2
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Mobile First Image Path"
+                                name="./image2mob"
+                                required="{Boolean}false"
+                                rootPath="/content/dam"/>
+                            <imagepathMob3
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Mobile Second Image Path"
+                                name="./image3mob"
+                                rootPath="/content/dam"/>
+                        </items>
+                    </columns>
+                </items>
+            </variationTwoImageConfig>
+        </items>
+    </content>
+</jcr:root>

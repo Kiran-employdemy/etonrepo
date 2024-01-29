@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Primary Navigation"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <header
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldDescription="This field stores the value for&#xa;Primary&#x9;Navigation&#xa;field.&#x9;This&#xa;displayed in mobile mode.&#xa;"
+                        fieldLabel="Primary&#x9;Nav&#xa;Header *"
+                        name="./header"
+                        required="true"/>
+                    <list-type
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        class="cq-dialog-dropdown-showhide"
+                        cq-dialog-dropdown-showhide-target=".child-manual-hide-show"
+                        fieldDescription="This field stores the value for&#xa;list type for article list. There&#xa;are four options: Child page,&#xa;and Manual.&#x9;&#x9;&#x9;&#x9;&#xa;"
+                        fieldLabel="List Type *"
+                        name="./listType"
+                        required="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <child-pages
+                                jcr:primaryType="nt:unstructured"
+                                text="Child Page"
+                                value="child-pages"/>
+                            <manual-list
+                                jcr:primaryType="nt:unstructured"
+                                text="Manual"
+                                value="manual-list"/>
+                        </items>
+                    </list-type>
+                    <parentPage
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                        granite:class="hide child-manual-hide-show"
+                        fieldDescription="This field stores the value of parent page path. This field is applicable when List Type selected is “Child Page”."
+                        fieldLabel="Parent Page *"
+                        name="./parentPage"
+                        required="true">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="child-pages"/>
+                    </parentPage>
+                    <manualLinks
+                        granite:class="hide child-manual-hide-show"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldDescription="This field stores the various attributes of manual link object. This field is applicable when List Type selected is “Manual”"
+                        fieldLabel="Manual Links">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="manual-list"/>
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./manualLinks">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    class="multifield-border">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <linkTitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="This field stores the path for Link Title of the page. This field is applicable when List Type selected is “Manual”"
+                                            fieldLabel="Primary&#xa;Link Title&#xa;"
+                                            name="./transLinkTitle"/>
+                                        <path
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                            fieldDescription="This field stores the path for Page path of the page. This field is applicable when List Type selected is “Manual”"
+                                            fieldLabel="&#x9;Primary&#x9;Nav&#xa;&#x9;Link Path *"
+                                            name="./path"
+                                            required="true"/>
+                                        <newWindow
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            fieldDescription="This field indicates if the url would open in new window or not."
+                                            name="./newWindow"
+                                            text="Open in New Window"
+                                            value="true"/>
+                                        <overlayPath
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                            fieldDescription="This field stores the path for&#xa;Overlay&#x9;path&#x9;for&#x9;primary&#xa;navigation.&#x9;This&#x9;field   is&#xa;applicable&#x9;when&#x9;List&#xa;selected is “Manual”&#x9;&#xa;"
+                                            fieldLabel="&#x9;Mega&#xa;&#x9;Overlay Path&#xa;"
+                                            name="./overlayPath"/>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </manualLinks>
+                    <count
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                        granite:class="hide child-manual-hide-show"
+                        fieldDescription="This field stores the value for&#xa;no of results field. This field&#xa;is applicable when List Type&#xa;selected is “Child Page”&#x9;&#xa;"
+                        fieldLabel="Maximum&#xa;number&#x9;of&#xa;links&#x9;to&#xa;Display *"
+                        min="{Long}4"
+                        name="./count"
+                        required="true"
+                        showhidetargetvalue="child-pages"/>
+                    <secureMenu
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                            name="./enableSecureMenu"
+                            fieldDescription="Check this field to enable Secure Menu in Primary Navigation"
+                            text="Enable Secure Menu"
+                            value="true"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

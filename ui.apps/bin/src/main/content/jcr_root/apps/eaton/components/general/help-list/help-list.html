@@ -1,0 +1,21 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Help List</div>
+</sly>
+
+<sly data-sly-use.data="com.eaton.platform.core.models.HelpListModel">
+  
+	<div data-sly-test="${ data.userDownStreamLink }" class="help-block__links-list">
+		<div class="help-block__list">
+			<span class="help-block__header">${'or' @ i18n}</span>
+			<span class="help-block__header">${'selectApplication' @ i18n}</span>
+				<sly data-sly-list.link="${ data.userDownStreamLink }">
+				  <a class="help-block__links-item"
+					href="${ link.helpListLinkPath }"
+					target="_blank"
+				  >${ link.helplistLinkText }</a>
+				</sly>
+		</div>
+    </div>
+
+</sly>
+

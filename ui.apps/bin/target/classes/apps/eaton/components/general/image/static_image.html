@@ -1,0 +1,37 @@
+<sly data-sly-test.author="${wcmmode.edit}">
+    <div class="alert alert-warning">Image: ${currentNode.name}</div>
+</sly>
+
+<sly data-sly-use.imageBean="com.eaton.platform.core.models.ImageModel">
+
+<a
+	data-sly-use.image="image.js"
+	data-sly-unwrap="${!image.linkUrl}"
+    href="${imageBean.linkURL}"
+    target="_blank"
+
+>
+ <div data-sly-test="${ imageBean.desktopTransformedUrl || imageBean.mobileTransformedUrl }" class="eaton-image">
+    <div class="${properties.toggleInnerGrid ? 'container' : ''} eaton-image__container">
+      <!-- Start: Rendition Image Component -->
+      <sly data-sly-use.tpl="eaton/components/shared/templates/rendition-image.html">
+        <sly data-sly-call="${ tpl.module @ data=imageBean }"></sly>
+      </sly>
+      <!-- End: Rendition Image Component -->
+    </div>
+  </div>
+</a>
+
+<small data-sly-test="${properties.jcr:description}">${properties.jcr:description}</small>
+<map
+    data-sly-list="${image.imageMaps.maps}"
+    name="${image.imageMaps.name}">
+    <area
+        shape="${item.type}"
+        coords="${item.coords}"
+        href="${item.href}"
+        target="${item.target}"
+        alt="${item.alt}" 
+        title="${item.title}"/>
+</map>
+</sly>

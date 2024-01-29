@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.EatonCacheServiceConfig">
+  <OCD id="com.eaton.platform.core.services.config.EatonCacheServiceConfig" name="EatonCacheServiceImpl" description="">
+    <AD id="CONFIGURABLE.MAX.CACHE.SIZE" type="Integer" name="Max Cache Size" default="1000"/>
+    <AD id="CONFIGURABLE.DURATION" type="Integer" name="Cache Duration" default="60"/>
+  </OCD>
+</metatype:MetaData>

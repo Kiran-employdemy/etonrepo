@@ -1,0 +1,56 @@
+<template data-sly-template.module="${ @ data }"> 
+<sly data-sly-use.imageModel="com.eaton.platform.core.models.ImageModel"></sly>
+<sly
+	data-sly-test.classIsAlignmentEnabled="${
+    data.alignmentDesktop || data.alignmentMobile ? 'rendition-img--alignment' : ''
+  }" />
+
+  <!--/*
+    Define a specific CSS Class based on the Alignment options for a DESKTOP Breakpoint
+  */--> <sly
+	data-sly-test.classAlignmentDesktop="${
+    data.alignmentDesktop == 'left'      ? 'desktop-left-top ' : '' }${
+    data.alignmentDesktop == 'center'    ? 'desktop-center-top ' : '' }${
+    data.alignmentDesktop == 'right'     ? 'desktop-right-top ' : '' }
+   " />
+
+
+<!--/*
+    Define a specific CSS Class based on the Alignment options for a MOBILE Breakpoint
+  */--> <sly
+	data-sly-test.classAlignmentMobile="${
+    data.alignmentMobile == 'left'       ? 'mobile-left-top ' : '' }${
+    data.alignmentMobile == 'center'     ? 'mobile-center-top ' : '' }${
+    data.alignmentMobile == 'right'      ? 'mobile-right-top ' : '' }
+   " />
+
+
+<sly
+	data-sly-test.tabletTransformedUrl="${
+    data.tabletTransformedUrl ? data.tabletTransformedUrl : data.mobileTransformedUrl
+  }" />
+
+<div class="rendition ${
+      classIsAlignmentEnabled } ${
+      classAlignmentDesktop }${
+      classAlignmentMobile
+    }">
+	 <sly data-sly-test="${imageModel.applyNoFollowTag == 'true'}">
+        <img class="rendition__image img-responsive"
+		data-src="${ data.desktopTransformedUrl }"
+		data-mobile-rendition="${ data.mobileTransformedUrl }"
+		data-tablet-rendition="${ tabletTransformedUrl }"
+		data-desktop-rendition="${ data.desktopTransformedUrl }"
+		alt="${ data.alttxt || data.landingHeroImageAltText || data.imageAltText || data.altTxt || data.heroImageAltText || data.altText || data.tileBlockLinksImageAltText || data.linkImageAltText }"
+		data-rel="noindex,nofollow"/> 
+     </sly> 
+     <sly data-sly-test="${imageModel.applyNoFollowTag != 'true'}">
+        <img class="rendition__image img-responsive" 
+		data-src="${ data.desktopTransformedUrl }"
+		data-mobile-rendition="${ data.mobileTransformedUrl }"
+		data-tablet-rendition="${ tabletTransformedUrl }"
+		data-desktop-rendition="${ data.desktopTransformedUrl }"
+		alt="${ data.alttxt || data.landingHeroImageAltText || data.imageAltText || data.altTxt || data.heroImageAltText || data.altText || data.tileBlockLinksImageAltText || data.linkImageAltText }"/> 
+     </sly> 
+</div>
+</template>

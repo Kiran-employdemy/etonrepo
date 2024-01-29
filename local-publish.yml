@@ -1,0 +1,22 @@
+version: '3'
+services:
+  author:
+    container_name: eaton_aem_publish
+    image: artifactory-prod.tcc.etn.com/aem-docker-virtual/eaton-aem-publish
+    deploy:
+      resources:
+        limits:
+          memory: 12G
+        reservations:
+          memory: 6G
+    ports:
+      - '4503:4503'
+      - '5005:5005'
+    volumes:
+      - ./logs:/opt/aem/crx-quickstart/logs
+    environment:
+      CQ_RUNMODE: 'publish,dev'
+      CQ_XMS: '1g'
+      CQ_XMX: '4g'
+      CQ_PORT: 4503
+      CQ_DEBUG_PORT: 5005

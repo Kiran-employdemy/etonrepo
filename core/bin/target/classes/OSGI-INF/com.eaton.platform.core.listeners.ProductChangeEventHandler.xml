@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.listeners.ProductChangeEventHandler">
+  <property name="resource.paths" type="String" value="/var/commerce/products/eaton"/>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="service.description" type="String" value=" Listens to Product resource modified  Event."/>
+  <property name="resource.change.types" type="String" value="CHANGED"/>
+  <service>
+    <provide interface="org.apache.sling.api.resource.observation.ResourceChangeListener"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="referenceAggregator" interface="com.adobe.granite.references.ReferenceAggregator" field="referenceAggregator"/>
+  <reference name="replicator" interface="com.day.cq.replication.Replicator" field="replicator"/>
+  <reference name="slingSettingsService" interface="org.apache.sling.settings.SlingSettingsService" field="slingSettingsService"/>
+  <implementation class="com.eaton.platform.core.listeners.ProductChangeEventHandler"/>
+</scr:component>

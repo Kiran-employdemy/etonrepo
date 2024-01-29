@@ -1,0 +1,133 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon Jun 26 2023 11:30:47 GMT+0000",
+  "jcr:content": {
+    "jcr:primaryType": "nt:unstructured",
+    "jcr:createdBy": "e0461736",
+    "jcr:title": "Reference Report by Keyword or Path",
+    "jcr:created": "Thu May 25 2023 08:55:10 GMT-0400",
+    "sling:resourceType": "acs-commons/components/utilities/report-builder/report-page",
+    "cq:designPath": "/etc/designs/acs-commons",
+    "config": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/parsys",
+      "queryconfig": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "e0461736",
+        "jcr:lastModifiedBy": "e0461736",
+        "jcr:created": "Thu May 25 2023 08:58:15 GMT-0400",
+        "query": "type={{type}}\r\nfulltext=\"{{{keyword}}}\"",
+        "queryLanguage": "queryBuilder",
+        "reportExecutor": "com.adobe.acs.commons.reports.models.QueryReportExecutor",
+        "pageSize": "50",
+        "jcr:lastModified": "Thu May 25 2023 09:19:47 GMT-0400",
+        "sling:resourceType": "acs-commons/components/utilities/report-builder/configs/queryconfig"
+      }
+    },
+    "parameters": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/parsys",
+      "basic": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "e0461736",
+        "jcr:lastModifiedBy": "e0461736",
+        "required": "true",
+        "resourceType": "granite/ui/components/coral/foundation/form/textfield",
+        "jcr:created": "Thu May 25 2023 08:59:20 GMT-0400",
+        "name": "keyword",
+        "fieldLabel": "Enter Keyword or Path",
+        "jcr:lastModified": "Thu May 25 2023 08:59:49 GMT-0400",
+        "sling:resourceType": "acs-commons/components/utilities/report-builder/parameters/basic"
+      },
+      "select": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "e0461736",
+        "jcr:lastModifiedBy": "e0461736",
+        "resourceType": "granite/ui/components/coral/foundation/form/select",
+        "jcr:created": "Thu May 25 2023 09:00:22 GMT-0400",
+        "name": "type",
+        "fieldLabel": "Type",
+        "jcr:lastModified": "Thu May 25 2023 09:01:54 GMT-0400",
+        "sling:resourceType": "acs-commons/components/utilities/report-builder/parameters/select",
+        "items": {
+          "jcr:primaryType": "nt:unstructured",
+          "item0": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "All",
+            "value": "nt:base"
+          },
+          "item1": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "Pages",
+            "value": "cq:Page"
+          },
+          "item2": {
+            "jcr:primaryType": "nt:unstructured",
+            "text": "Assets",
+            "value": "dam:Asset"
+          }
+        }
+      }
+    },
+    "columns": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/parsys",
+      "path": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "e0461736",
+        "exporter": "com.adobe.acs.commons.reports.models.PathReportCellCSVExporter",
+        "jcr:lastModifiedBy": "e0461736",
+        "jcr:created": "Thu May 25 2023 09:02:20 GMT-0400",
+        "heading": "Path",
+        "jcr:lastModified": "Thu May 25 2023 09:02:31 GMT-0400",
+        "sling:resourceType": "acs-commons/components/utilities/report-builder/columns/path"
+      },
+      "text": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "e0461736",
+        "exporter": "com.adobe.acs.commons.reports.models.StringReportCellCSVExporter",
+        "jcr:lastModifiedBy": "e0461736",
+        "property": "jcr:content/jcr:title",
+        "jcr:created": "Thu May 25 2023 09:02:59 GMT-0400",
+        "heading": "Page Title",
+        "jcr:lastModified": "Thu May 25 2023 09:03:10 GMT-0400",
+        "sling:resourceType": "acs-commons/components/utilities/report-builder/columns/text"
+      },
+      "text_639757938": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "e0461736",
+        "exporter": "com.adobe.acs.commons.reports.models.StringReportCellCSVExporter",
+        "jcr:lastModifiedBy": "e0461736",
+        "property": "jcr:content/metadata/dc:title",
+        "jcr:created": "Thu May 25 2023 09:03:29 GMT-0400",
+        "heading": "Asset Title",
+        "jcr:lastModified": "Thu May 25 2023 09:03:41 GMT-0400",
+        "sling:resourceType": "acs-commons/components/utilities/report-builder/columns/text"
+      },
+      "editor": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "e0461736",
+        "editor": "custom",
+        "jcr:lastModifiedBy": "admin",
+        "jcr:created": "Thu May 25 2023 09:04:08 GMT-0400",
+        "customEditor": "/editor.html",
+        "heading": "Edit Page",
+        "jcr:lastModified": "Thu May 25 2023 09:55:45 GMT-0400",
+        "sling:resourceType": "acs-commons/components/utilities/report-builder/columns/editor",
+        "appendHtmlExtension": "true"
+      },
+      "editor_781638811": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "e0461736",
+        "editor": "custom",
+        "jcr:lastModifiedBy": "e0461736",
+        "jcr:created": "Thu May 25 2023 09:16:00 GMT-0400",
+        "customEditor": "/assetdetails.html",
+        "heading": "Edit Asset",
+        "jcr:lastModified": "Thu May 25 2023 09:16:26 GMT-0400",
+        "sling:resourceType": "acs-commons/components/utilities/report-builder/columns/editor"
+      }
+    }
+  }
+}

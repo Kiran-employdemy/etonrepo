@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.google.services.config.GoogleServiceConfig">
+  <OCD id="com.eaton.platform.integration.google.services.config.GoogleServiceConfig" name="GoogleServiceImpl" description="">
+    <AD id="baseUrl" type="String" name="Base Url" description="Base Url" default="https://maps.googleapis.com"/>
+    <AD id="key" type="String" name="Key" description="Api Key" default="AIzaSyBE9jgy97Zhmn-s5vyOzwAj2jaCslurhlQ"/>
+    <AD id="responseCache" type="String" name="Response Cache" description="Response Cache" default=""/>
+    <AD id="responseCacheSize" type="Integer" name="Response Cache Size" description="Response Cache Size" default="1000"/>
+    <AD id="responseCacheDuration" type="Integer" name="Response Cache Duration (hours)" description="Response Cache Duration (hours)" default="24"/>
+    <AD id="responseTimeout" type="Integer" name="Response Timeout (seconds)" description="Response Timeout (seconds)" default="15"/>
+    <AD id="maxConnections" type="Integer" name="Max Connections" description="Defines the maximum number of connections allowed overall. This value only applies to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+    <AD id="maxHostConnections" type="Integer" name="Max Host Connections" description="Defines the maximum number of connections allowed per host configuration. These values only apply to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+  </OCD>
+</metatype:MetaData>

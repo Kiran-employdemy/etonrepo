@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.productdatasheet.DatasheetEmailServlet" immediate="true">
+  <property name="sling.servlet.paths" type="String" value="/eaton/datasheets/sendEmail"/>
+  <property name="sling.servlet.methods" type="String" value="POST"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="eatonEmailService" interface="com.eaton.platform.core.services.EatonEmailService" field="eatonEmailService"/>
+  <reference name="i18nProvider" interface="com.adobe.acs.commons.i18n.I18nProvider" field="i18nProvider"/>
+  <implementation class="com.eaton.platform.core.servlets.productdatasheet.DatasheetEmailServlet"/>
+</scr:component>

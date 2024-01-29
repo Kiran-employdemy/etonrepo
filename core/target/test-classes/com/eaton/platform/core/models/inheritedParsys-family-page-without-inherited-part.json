@@ -1,0 +1,201 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Nov 14 2023 14:37:36 GMT-0500",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "CAT8 network cable",
+    "jcr:versionHistory": "e4199be1-ac88-4698-81fd-67c3c584343a",
+    "pimPagePath": "/var/commerce/products/eaton/en_us/aem20231024135550",
+    "cq:template": "/conf/eaton/settings/wcm/templates/product-family-page",
+    "jcr:lastModifiedBy": "c3037550",
+    "priority": "0.5",
+    "primarySubCategory": "/content/eaton/language-masters/en-us/products/backup-power-ups-surge-it-power-distribution/power-distribution-for-it-equipment",
+    "msmcomponent": "/content/eaton/language-masters/en-us/catalog/tripp-lite/cat8-network-cable/jcr:content/root/responsivegrid/product_tabs/content-tab-2/product_grid",
+    "jcr:predecessors": [
+      "c6d8cb62-978c-414c-9fc5-19c89f465731"
+    ],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Tue Nov 14 2023 14:37:36 GMT-0500",
+    "excludeCountries": "false",
+    "cq:lastModified": "Tue Oct 31 2023 06:36:38 GMT-0400",
+    "view": "generic",
+    "hideInHtml": "false",
+    "meta-robot-tags": "index,follow",
+    "jcr:baseVersion": "c6d8cb62-978c-414c-9fc5-19c89f465731",
+    "jcr:isCheckedOut": true,
+    "hideInXml": "false",
+    "page-type": "product-family",
+    "cq:tags": [
+      "eaton:search-tabs/page-type/product-family",
+      "eaton:search-tabs/content-type/product"
+    ],
+    "jcr:lastModified": "Tue Oct 24 2017 12:59:35 GMT-0400",
+    "jcr:uuid": "c27ac01e-6c90-418b-99f1-fe950a69de6b",
+    "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "textIsRich": "true",
+    "cq:lastModifiedBy": "e0469239",
+    "changefrequency": "weekly",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:lastModifiedBy": "e0063964",
+      "jcr:lastModified": "Thu Oct 05 2017 13:11:18 GMT-0400",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "header": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "c3037550",
+        "jcr:lastModifiedBy": "c3037550",
+        "jcr:created": "Thu Oct 05 2017 10:36:06 GMT-0400",
+        "jcr:lastModified": "Thu Oct 05 2017 10:54:00 GMT-0400",
+        "sling:resourceType": "eaton/components/structure/header"
+      },
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "e0063964",
+        "jcr:lastModifiedBy": "e0063964",
+        "jcr:created": "Thu Oct 05 2017 12:44:25 GMT-0400",
+        "jcr:lastModified": "Thu Oct 05 2017 13:15:53 GMT-0400",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "cq:responsive": {
+          "jcr:primaryType": "nt:unstructured"
+        },
+        "product_family_card": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "c3037550",
+          "jcr:lastModifiedBy": "c3037550",
+          "jcr:created": "Thu Oct 05 2017 14:00:32 GMT-0400",
+          "jcr:lastModified": "Thu Oct 05 2017 14:00:32 GMT-0400",
+          "sling:resourceType": "eaton/components/product/product-family-card-v2"
+        },
+        "product_tabs": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "c3037550",
+          "jcr:lastModifiedBy": "c3037550",
+          "jcr:created": "Thu Oct 05 2017 13:59:59 GMT-0400",
+          "view": "links-navigation",
+          "jcr:lastModified": "Thu Oct 05 2017 14:00:06 GMT-0400",
+          "sling:resourceType": "eaton/components/product/product-tabs-v2",
+          "content-tab-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/parsys",
+            "product_features": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:createdBy": "c3037550",
+              "jcr:lastModifiedBy": "c3037550",
+              "jcr:created": "Thu Oct 05 2017 14:03:23 GMT-0400",
+              "jcr:lastModified": "Thu Oct 05 2017 14:03:23 GMT-0400",
+              "sling:resourceType": "eaton/components/product/product-features"
+            },
+            "family_inherited_par": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:createdBy": "e0087282",
+              "jcr:lastModifiedBy": "e0087282",
+              "jcr:created": "Fri Feb 02 2018 21:07:38 GMT-0500",
+              "jcr:lastModified": "Fri Feb 02 2018 21:07:38 GMT-0500",
+              "sling:resourceType": "eaton/components/product/family-inherited-parsys"
+            }
+          },
+          "content-tab-2": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/parsys",
+            "product_grid": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:createdBy": "c3037550",
+              "hidePriceDisc": "true",
+              "jcr:lastModifiedBy": "e0469239",
+              "defaultSortingDirection": "asc",
+              "subCategoryHideShow": "false",
+              "turnOffProductTypes": "true",
+              "jcr:created": "Thu Oct 05 2017 14:03:50 GMT-0400",
+              "view": "productFamily",
+              "jcr:lastModified": "Tue Oct 31 2023 06:35:48 GMT-0400",
+              "sling:resourceType": "eaton/components/product/product-grid",
+              "taxonomyAttributes": {
+                "jcr:primaryType": "nt:unstructured",
+                "item0": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "sortOrder": "0"
+                }
+              },
+              "globalAttributes": {
+                "jcr:primaryType": "nt:unstructured",
+                "item0": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "globalAttributeValue": "Product_Type",
+                  "sortOrder": "0"
+                }
+              }
+            }
+          },
+          "content-tab-3": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/parsys",
+            "topic_link_with_icon": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:createdBy": "e0063964",
+              "jcr:lastModifiedBy": "e0063964",
+              "jcr:created": "Tue Oct 24 2017 14:44:50 GMT-0400",
+              "jcr:lastModified": "Tue Oct 24 2017 14:44:50 GMT-0400",
+              "sling:resourceType": "eaton/components/product/topic-link-with-icon-pdh"
+            },
+            "resource_list": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:createdBy": "c3037550",
+              "jcr:lastModifiedBy": "e0469239",
+              "enableBulkDownload": "true",
+              "jcr:created": "Thu Oct 05 2017 14:04:46 GMT-0400",
+              "view": "view-tags",
+              "jcr:lastModified": "Mon Oct 30 2023 14:23:00 GMT-0400",
+              "sling:resourceType": "eaton/components/product/resource-list",
+              "damPath": "/content/dam/eaton",
+              "externalResourceList": {
+                "jcr:primaryType": "nt:unstructured",
+                "item0": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "resourceLink": "https://tripplite.eaton.com/products/accessories-networking-accessories~372-1436",
+                  "accordionName": "sales-notes",
+                  "externalLinkText": "Accessories for copper network cables"
+                },
+                "item1": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "resourceLink": "/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/eaton-critical-power-distributed-IT-line-overview-br153163en.pdf",
+                  "accordionName": "catalogs",
+                  "externalLinkText": "Eaton CPDI product catalog"
+                }
+              }
+            },
+            "product_support": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:createdBy": "c3037550",
+              "jcr:lastModifiedBy": "c3037550",
+              "jcr:created": "Thu Oct 05 2017 14:04:57 GMT-0400",
+              "jcr:lastModified": "Thu Oct 05 2017 14:04:57 GMT-0400",
+              "sling:resourceType": "eaton/components/product/product-support"
+            }
+          }
+        },
+        "how_to_buy": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "e0063964",
+          "jcr:lastModifiedBy": "e0063964",
+          "jcr:created": "Thu Oct 05 2017 13:17:49 GMT-0400",
+          "jcr:lastModified": "Thu Oct 05 2017 13:17:49 GMT-0400",
+          "sling:resourceType": "eaton/components/product/how-to-buy"
+        }
+      },
+      "footer": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "c3037550",
+        "jcr:lastModifiedBy": "c3037550",
+        "jcr:created": "Thu Oct 05 2017 10:36:20 GMT-0400",
+        "jcr:lastModified": "Thu Oct 05 2017 10:54:05 GMT-0400",
+        "sling:resourceType": "eaton/components/structure/footer"
+      }
+    }
+  }
+}

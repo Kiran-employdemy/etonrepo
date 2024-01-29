@@ -1,0 +1,27 @@
+{
+  "response" : {
+    "status" : "Success",
+    "statusDetails" : {
+      "messages" : null
+    },
+    "didYouMean" : null,
+    "binning" : null,
+    "searchResults" : null,
+    "request" : {
+      "searchApplication" : "eatoncomtypeahead",
+      "searchApplicationKey" : "abc123",
+      "function" : "search",
+      "searchTerms" : "eat",
+      "language" : "en_US",
+      "startingRecordNumber" : 0,
+      "numberOfRecordsToReturn" : 10,
+      "filters" : [ {
+        "filterName" : "Country",
+        "filterValue" : [ "US" ],
+        "preferenceValue" : null
+      } ],
+      "userName" : null
+    },
+    "results" : "COVER - 1004931BCH MTR SKT, RS101 EATON RL FRONT ASY W/ CPSB||Eaton  A200 series Thermal overload relay||Eaton  DA1 IP66 480V IN/460V OUT 1HP, 2.2A, RFI, CC PowerXL drive||Eaton 1-IQ260 10-IQ150 W/ NEMA12; CPT; PXG900||Eaton 1/2 Round legend plate||Eaton 1000 Vdc DC Switched Combiner||Eaton 10250T Contact block terminal jumpers||Eaton 10250T Pushbutton and Indicating Light||Eaton 10250T pushbutton control stations||Eaton 10250T Selector switch||EATS115||EATS120||EATS16||EATS16CN||EATS16N||EATS220||EATS30H||EATS30P||Eaton to Debut 93PM UPS at AFCOM Data Center World Conference in Orlando||Eaton’s Belinda Whitaker-Gary Named to CRN’s 100 People You Don’t Know But Should List||Eaton’s 93PM UPS Recognized as Finalist for 2014 Engineers’ Choice Award||Eaton to Announce Fourth Quarter 2016 Earnings on February 2, 2017||For Solar PV, Eaton has Convenient Switching and Protection||4S/6S Series Spiral Hose Fittings – Hydraulic Fittings – Eaton||5S UPS Overview | Eaton||9155 UPS Overview | Eaton"
+  }
+}

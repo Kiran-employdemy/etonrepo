@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="$eatonSiteConfigCurrentLanguage">
+<head>
+
+<link rel="stylesheet" href="https://www.eaton.com/etc.clientlibs/eaton/settings/wcm/designs/clientlib/clientlib-all.min.css"  type="text/css">
+
+
+
+
+
+<style>
+* {
+	box-sizing: border-box !important;
+	transition: ease all 0.5s;
+}
+html {
+	scroll-behavior: smooth;
+}
+
+
+/* font-family:'EatonMedium'
+font-family:'EatonBold' */
+
+body {
+	color: #666666;
+	font-size: 14px;
+	font-family:'Eaton';
+	line-height: 1.80857;
+	font-weight: normal;
+	overflow-x: hidden;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+	letter-spacing: 0;
+	font-weight: normal;
+	position: relative;
+	padding: 0 0 10px 0;
+	font-weight: normal;
+	line-height: normal;
+	color: #111111;
+	margin: 0
+}
+ul, li, ol {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+a {
+	color: #000;
+	text-decoration: none;
+	outline: none !important;
+}
+
+h2 {
+	font-size:42px;
+	padding-left:20px;
+	color:#007ac3;
+	margin:0 0 30px 0;
+	padding-top: 55px;
+	font-family:Arial, Helvetica, sans-serif;
+	 float: left; width: 100%;
+
+
+}
+h3 {
+	float: left;
+	width: 100%;
+	font-size: 14.6px;
+	/* background:#495966; */
+	background: #333F48;
+	width:100%;
+	float:left;
+	color:#fff;
+	padding:6px 4px;
+	margin:10px 10px 10px 0;
+	clear: both;
+	display: block;
+	font-family:'EatonMedium';
+}
+h5 {
+	color:#005288;
+	font-size:11.33px;
+	padding: 10px 0 5px 0;
+	float: left; width: 100%;
+	font-family:Arial, Helvetica, sans-serif;
+}
+.link_text, .textmsg, p {color:#000;font-size:11.33px;font-weight: 300;  padding:0 0 5px 0;line-height:20px;margin:0}
+.textmsg{ position: relative; font-family:Arial, Helvetica, sans-serif;}
+.textmsg .fa{ display: inline-block; font-size: 5px;vertical-align: middle; }
+.textmsg span{ margin-left:2px;}
+
+
+header {float:left;width:100%;background:#005eb8;height:100px;color:#fff;}
+header h4 {font-size:17px; color:#fff;padding-top:70px;padding-left:20px; font-family:Arial, Helvetica, sans-serif;}
+.prodcuts {float:left;width:100%;margin:10px 0;position: relative;}
+.right_specification {float: right;width:60%;}
+.right_specification .heads {background:#005eb8;color:#fff;font-size:18px; font-family:Arial, Helvetica, sans-serif; padding:20px;margin-bottom:20px;}
+.right_specification p{ padding:0 0 10px 0; font-size: 14px; font-family:Arial, Helvetica, sans-serif;}
+
+.general_spec {float: left;width: 100%;}
+.general_spec .left_img {display: none;}
+.general_spec .left_img {float: left;width:40%;}
+.general_spec .left_img .logo {margin-top: 200px;}
+.general_spec .left_img:first-child {display: block;height: 600px;}
+.general_spec:after {content: "";display: table;clear: both;}
+.general_spec ul.items1 {width: 60%; padding: 0; height: 600px;}
+
+
+.general_spec ul.items1 li .spec_box {float: left;width: 50%;}
+.general_spec ul {float: left;width: 50%;padding: 10px;height:100%;}
+.general_spec ul li {float: left;width: 100%;}
+.general_spec .spec_box{ float: left; width: 100%;}
+
+
+
+/* .items1, .items3, .items5, .items7, .items9{ float: left; width: 45%; background: #ddd; height: 600px;}
+.items2, .items4, .items6, .items8, .items10{ float: right; width: 45%; background: #999; height: 600px;} */
+
+
+
+
+.resource_data .link_text{ color: #394ea2;}
+
+.ressouce_list {float: left;width: 100%;}
+.resource-list__title-link {display: inline;color: #000;font-size: 13px;}
+.external_data {float: left;width: 100%;}
+
+footer{float: left; width: 100%; margin:100px 0 0 0; padding-top: 20px; border-top: 1px solid #000;  }
+footer h4{ font-family: Arial, Helvetica, sans-serif;}
+footer .logo{ float: left; width: 25%; margin-top: 100px;}
+footer .logo img{ width: 90%;}
+footer .address{ float: left; width: 20%; margin-top: 38px;}
+footer .tread_mark{ float: left; width: 25%; margin-top: 73px;}
+footer .socail{ float: right; width: 25%; margin-top: 83px;}
+footer .socail li{ display: inline-block; margin: 5px 0;}
+footer p{ font-size: 12px; line-height: 15px; font-family: Arial, Helvetica, sans-serif; font-weight: 100; color: #000;}
+
+</style>
+</head>
+<body>
+<header>
+  <h4>$defaultTaxonomyAttributeLabel</h4>
+</header>
+<h2>Eaton $title </h2>
+<div class="prodcuts">
+<div class="right_specification">
+  <div class="heads"> $catalogNumber: $headerCatlogNumber<br/>
+  </div>
+  <p>$description</p>
+</div>
+
+<!-- start specification data -->
+
+<div class="general_spec"> #set($i = 0)
+
+  #foreach($item in $attributeGroupList)
+
+  #set($i = $i+1)
+  <div class="left_img"> <img class="rendition__image img-responsive" style="max-width: 100%;"  alt="5PX1000RT - Eaton 5PX UPS" src="$imagePath">
+    <div class="logo"><a href="$logoLink"><img src="$eatonLogo" style="max-width: 100%;"></a> </div>
+  </div>
+
+  <ul class='items$i'>
+    <li>
+      <h3>$item.attributeGroupName</h3>
+      #foreach($row in $item.attributeList)
+      <div class="spec_box">
+        <h5>$row.attributeLabel</h5>
+        <div class="values"> #set ($document = "document")
+          #set ($link = "link")
+          #set ($image = "image")
+          #set ($multiple = "multiple")
+          #if( $row.attributeValue.attributeType == $document)
+          <div class="link_text"> <a href="$row.attributeValue.documentURL" target="_blank"> $row.attributeValue.cdata </a> </div>
+          #elseif( $row.attributeValue.attributeType == $link)
+          <div class="link_text"> <a href="$row.attributeValue.linkURL" target="_blank"> $row.attributeValue.cdata </a> </div>
+          #elseif( $row.attributeValue.attributeType == $image)
+          <div class="link_text"> <span>$row.attributeValue.cdata</span> <a href="$row.attributeValue.imageURL" target="_blank"> <img data-src="$row.attributeValue.imageURL" alt="$row.attributeValue.cdata" class="lazyload"/> <span>4</span> </a> </div>
+          #elseif( $row.attributeValue.attributeType == $multiple)
+          <div class="link_text"> <a href="$row.attributeValue.linkURL" target="_blank"> $row.attributeValue.cdata </a> </div>
+          #else
+          <div class="textmsg"><i class="fa fa-circle" aria-hidden="true"></i> <span>$row.attributeValue.cdata</span> </div>
+          #end </div>
+      </div>
+      #end </li>
+  </ul>
+  #end
+
+ <!-- Start Resource data -->
+
+  <ul class="resource_data">
+	<li>
+	<h3>$Resources</h3>
+	#foreach( $item in $resourceListDetails)
+	<div class="spec_box">
+	  <h5>$item.resourceGroupName</h5>
+
+		#foreach( $documentItem in $item.documentList)
+		<div class="link_text"> <a href="$documentItem.documentLink" aria-label="Download PDF for $documentItem.documentName" target="_blank" class="link_text"> <!-- <i id="sku-page-download-icon" class="icon icon-download" aria-hidden="true"></i> --> $documentItem.documentName</a> <span class=""></span></div>
+		#end
+
+	</div>
+	#end
+</li>
+</ul>
+
+  <!-- End Resource data -->
+
+</div>
+
+ <!-- End specification data -->
+
+
+
+   <!-- Start External  data -->
+
+<div class="external_data"> #if($externalResourceList)
+  <div class="external_link_name">
+    <h3>External Link TabName</h3>
+    <ul class="">
+      #foreach( $item in $externalResourceList)
+      <li class=""> <a href="$item.resourceLink" class="link_text"
+	                                                       target="_blank" data-analytics-event="search-result"> <span class="name-label">$item.externalLinkText</span>
+        <sly data-sly-test="$item.isExternalLink"> <i class="icon icon-link-external" aria-hidden="true"></i> </sly>
+        </a> </li>
+      #end
+    </ul>
+  </div>
+  #end </div>
+
+   <!-- End External  data -->
+
+    <!-- Start Footer  data -->
+
+	<footer>
+
+  <div class="logo"><a href="$logoLink"><img src="$eatonLogo" style="max-width: 100%;"></a> </div>
+
+	<div class="address">
+
+
+	<p>$eatonCorp<br/>
+		$eatonHouse<br/>
+		$pembrokeRoad<br/>
+		$dublinIreland<br/>
+		Eaton.com<br/> </p>
+
+		<p>&copy; $year $copyright<br/>
+		</p>
+
+</div>
+
+	<div class="tread_mark">
+
+		<p>$trademarkLine1<br/><br/>
+			$trademarkLine2</p>
+
+	</div>
+
+	<div class="socail">
+
+		<ul class="eaton-social-links__list">
+		<li class="eaton-social-links__list-item">
+		  <a href="https://www.linkedin.com/company/eaton/" class="eaton-social-links__list-link" target="_blank">
+			<img data-src="https://www.eaton.com/content/dam/eaton/resources/icons/socialicons/linked-in.png" class="eaton-social-links__list-icon ls-is-cached lazyloaded" alt="" src="https://www.eaton.com/content/dam/eaton/resources/icons/socialicons/linked-in.png">
+		  </a>
+		</li>
+
+		<li class="eaton-social-links__list-item">
+		  <a href="https://twitter.com/eatoncorp/" class="eaton-social-links__list-link" target="_blank">
+			<img data-src="https://www.eaton.com/content/dam/eaton/resources/icons/socialicons/twitter.png" class="eaton-social-links__list-icon ls-is-cached lazyloaded" alt="" src="https://www.eaton.com/content/dam/eaton/resources/icons/socialicons/twitter.png">
+		  </a>
+		</li>
+
+		<li class="eaton-social-links__list-item">
+		  <a href="https://facebook.com/eatoncorporation/" class="eaton-social-links__list-link" target="_blank">
+			<img data-src="https://www.eaton.com/content/dam/eaton/resources/icons/socialicons/facebook.png" class="eaton-social-links__list-icon ls-is-cached lazyloaded" alt="" src="https://www.eaton.com/content/dam/eaton/resources/icons/socialicons/facebook.png">
+		  </a>
+		</li>
+
+		<li class="eaton-social-links__list-item">
+		  <a href="https://www.youtube.com/EatonVideos" class="eaton-social-links__list-link" target="_blank">
+			<img data-src="https://www.eaton.com/content/dam/eaton/resources/icons/socialicons/YouTubeLogo.jpg" class="eaton-social-links__list-icon ls-is-cached lazyloaded" alt="" src="https://www.eaton.com/content/dam/eaton/resources/icons/socialicons/YouTubeLogo.jpg">
+		  </a>
+		</li>
+	  </ul>
+	  <p>Eaton.com/socialmedia</p>
+
+	</div>
+
+
+
+
+	</footer>
+
+  </div>
+
+</body>
+</html>

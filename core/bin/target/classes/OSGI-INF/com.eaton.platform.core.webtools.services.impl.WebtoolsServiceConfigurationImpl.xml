@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.webtools.services.impl.WebtoolsServiceConfigurationImpl" immediate="true" activate="activate" modified="activate">
+  <property name="arincComponentEndpoint" type="String" value="/arinc/components"/>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="maxHostConnections" type="Integer" value="1000"/>
+  <property name="process.label" type="String" value=" WebtoolsServiceConfiguration"/>
+  <property name="service.description" type="String" value=" Webtools Service Configuration"/>
+  <property name="backshellMetadataEndpoint" type="String" value="/backshell/metadata"/>
+  <property name="webtoolsUsername" type="String" value="user"/>
+  <property name="freeSampleStockAvailabilityEndpoint" type="String" value="/freesample/getFreeSamplePerName"/>
+  <property name="webtoolsPassword" type="String" value="{fa771e1a37f7991485059fa6934ce8066e3c8aa7547c1b3aa998b3450d55435c}"/>
+  <property name="webtoolsBaseEndpointRoot" type="String" value="http://localhost:8080/eaton-utilities/v1/products"/>
+  <property name="arincPackages" type="String" value="/arinc/packageValidation"/>
+  <property name="backshellPartbuildEndpoint" type="String" value="/backshell/partBuild"/>
+  <property name="arincPackagesEndpoint" type="String" value="/arinc/packages"/>
+  <property name="maxConnections" type="Integer" value="100"/>
+  <service>
+    <provide interface="com.eaton.platform.core.webtools.services.WebtoolsServiceConfiguration"/>
+  </service>
+  <reference name="httpFactory" interface="org.apache.http.osgi.services.HttpClientBuilderFactory" field="httpFactory"/>
+  <implementation class="com.eaton.platform.core.webtools.services.impl.WebtoolsServiceConfigurationImpl"/>
+</scr:component>

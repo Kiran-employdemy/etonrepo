@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Okta Login Widget"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                margin="{Boolean}false"
+                type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <view
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldDescription="The language code that will populate empty fields (Ex: en, cs, fr)"
+                        fieldLabel="Language Code"
+                        name="./defaultLanguage"
+                        required="{Boolean}true"/>
+                    <primaryauth_title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="title(leave it empty)"
+                            name="./primaryauth_title"
+                            emptyText=" "/>
+                    <primaryauth_username_placeholder
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Username Placeholder"
+                            name="./primaryauth_username_placeholder"
+                            emptyText="Email"/>
+                    <mfa_challenger_password_placeholder
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Password Placeholder"
+                            name="./mfa_challenger_password_placeholder"
+                            emptyText="Password"/>
+                    <factor_password
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Password Tooltip"
+                            name="./factor_password"
+                            emptyText="Password"/>
+                    <remember_me
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Remember Me Checkbox Label"
+                            name="./remember_me"
+                            emptyText="Remember Me"/>
+                    <oform_next
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Next Button Text"
+                            name="./oform_next"
+                            emptyText="Next"/>
+                    <mfa_challenge_verify
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Verify Button Text"
+                            name="./mfa_challenge_verify"
+                            emptyText="Verify"/>
+                    <oform_errorbanner_title
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Form Error Banner title"
+                            name="./oform_errorbanner_title"
+                            emptyText="We found some errors. Please review the form and make corrections."/>
+                    <error_username_required
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Error message for Username"
+                            name="./error_username_required"
+                            emptyText="Please enter a username."/>
+                    <error_password_required
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Error message for password"
+                            name="./error_password_required"
+                            emptyText="Please enter a password."/>
+                    <error_login_locked_multi_wrong_password_attempt
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Error message for account locked"
+                            name="./error_login_locked_multi_wrong_password_attempt"
+                            emptyText="Your account is locked due to too many authentication attempts. You can try to log in again after 15 minutes."/>
+                    <forgot_password_email_tooltip
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Email tooltip for forgot password"
+                            name="./forgot_password_email_tooltip"
+                            emptyText="Email"/>
+                    <forgot_password_email_placeholder
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                            fieldLabel="Email placeholder for forgot password"
+                            name="./forgot_password_email_placeholder"
+                            emptyText="yourname@yourdomain.com"/>
+
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

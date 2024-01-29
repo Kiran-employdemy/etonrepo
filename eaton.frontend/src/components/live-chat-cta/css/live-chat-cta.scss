@@ -1,0 +1,40 @@
+//-----------------------------------
+// Component M-6 Page Utility Module - live chat cta
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-product-live-chat {
+  margin: $spacing__sm;
+  margin-bottom: 0;
+
+  i {
+    color: var(--grey-primary-brand-color, $color__primary-gray2);
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0;
+    padding-right: rem($spacing__sm / 3);
+    height: 12px;
+    margin-top: -17px;
+
+    [dir='rtl'] & {
+      padding-left: rem($spacing__sm / 3);
+      padding-right: 0;
+    }
+  }
+
+  a {
+    color: var(--grey-primary-brand-color, $color__primary-gray2);
+  }
+
+  @include media-mobile-and-tablet {
+    margin: 15px;
+
+    i {
+      font-size: 2rem;
+      margin-top: -8px;
+    }
+  }
+}

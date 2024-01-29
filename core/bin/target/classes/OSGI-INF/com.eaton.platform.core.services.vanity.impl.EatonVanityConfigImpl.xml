@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.vanity.impl.EatonVanityConfigImpl" activate="activate">
+  <property name="enable.vanity.flow" type="Boolean" value="false"/>
+  <property name="vanity.data.store.location.path" type="String" value=""/>
+  <property name="eatoncummins.data.store.filename" type="String" value=""/>
+  <property name="intermediate.page.name" type="String" value=""/>
+  <property name="eaton.com.data.store.filename" type="String" value=""/>
+  <property name="greenswitching.data.store.filename" type="String" value=""/>
+  <property name="phoenixtecpower.data.store.filename" type="String" value=""/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.vanity.EatonVanityConfigService"/>
+  </service>
+  <implementation class="com.eaton.platform.core.services.vanity.impl.EatonVanityConfigImpl"/>
+</scr:component>

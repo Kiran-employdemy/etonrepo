@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.endeca.services.impl.EndecaSkuResponseMappingService" immediate="true">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="serviceName" type="String" value="endeca-sku-mapping-service"/>
+  <property name="service.description" type="String" value=" Endeca Sku Json Response Mapping Service"/>
+  <property name="process.label" type="String" value=" EndecaSkuResponseMappingService"/>
+  <service>
+    <provide interface="com.eaton.platform.core.search.service.SearchResponseMappingService"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="eatonSiteConfigService" interface="com.eaton.platform.core.services.EatonSiteConfigService" field="eatonSiteConfigService"/>
+  <reference name="productFamilyDetailService" interface="com.eaton.platform.core.services.ProductFamilyDetailService" field="productFamilyDetailService"/>
+  <implementation class="com.eaton.platform.integration.endeca.services.impl.EndecaSkuResponseMappingService"/>
+</scr:component>

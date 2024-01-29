@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:showOnCreate="{Boolean}false"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Blueprint"
+    granite:class="cq-siteadmin-admin-properties-blueprint"
+    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+    <granite:rendercondition
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/include"
+            path="/mnt/overlay/wcm/foundation/components/basicpage/v1/basicpage/tabs/blueprint/granite:rendercondition"/>
+    <items jcr:primaryType="nt:unstructured">
+        <column
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items
+                jcr:primaryType="nt:unstructured">
+                <writeblueprintconfig
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/include"
+                    path="/mnt/overlay/wcm/foundation/components/basicpage/v1/basicpage/tabs/blueprint/items/column/items/writeblueprintconfig"/>
+                <livecopies
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/include"
+                    path="/mnt/overlay/wcm/foundation/components/basicpage/v1/basicpage/tabs/blueprint/items/column/items/livecopies"/>
+                <rolloutconfiguration
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/include"
+                    path="/mnt/overlay/wcm/foundation/components/basicpage/v1/basicpage/tabs/blueprint/items/column/items/rolloutconfiguration"/>
+                <pagePropertiesList
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        cq-msm-lockable="pagePropertiesList"
+                        fieldDescription="Select the page properties to be rolled out as part of Page Property Update on Rollout config"
+                        fieldLabel="Rollout Properties List(NOTE: Complete list of properties will be considered for rollout if this field is not configured)"
+                        granite:class="rolloutpropertiesfieldcss"
+                        renderReadOnly="{Boolean}true">
+                    <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Property Name"
+                            multiple="{Boolean}false"
+                            name="./rolloutPropertyList">
+                        <datasource
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/eaton/authoring/rolloutpagepropertylist"
+                                addNone="{Boolean}true"/>
+                    </field>
+                </pagePropertiesList>
+            </items>
+        </column>
+    </items>
+</jcr:root>

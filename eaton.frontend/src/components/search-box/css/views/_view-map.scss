@@ -1,0 +1,89 @@
+//-------------------------------------------------
+// SearchBox Component: Map View
+//-------------------------------------------------
+
+/* stylelint-disable */
+.eaton-search--map {
+  &__locator {
+    cursor: pointer;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    padding-left: rem($spacing__sm * 0.5); //15px
+    
+    @include media-mobile-only {
+      display: none;
+    }
+
+    &__wrapper {
+      @include media-mobile-only {
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+      }
+      @include media-tablet-and-up {
+        display: flex; 
+        flex-direction: row;
+        align-items: center;
+        padding-top: rem($spacing__sm * 0.33333); //10px
+        padding-bottom: rem($spacing__sm * 0.33333); //10px
+      }
+    }
+
+    
+    &__copy {
+      color: white;
+      white-space: nowrap;
+      margin: 0;
+
+      @include media-mobile-only {
+        font-size: rem($base__font-size * 1.6); //16px
+      }
+
+      @include media-tablet-and-up {
+        font-size: rem($base__font-size * 2.6); //26px
+      }
+    }
+
+    &__icon {
+      color: $color__white;
+      width: auto;
+
+      @include media-mobile-only {
+        height: 18px;
+        padding-right: rem($spacing__sm * 0.166667); //5px
+      }
+
+      @include media-tablet-and-up {
+        height: 19px;
+        padding-left: rem($spacing__sm * 0.5); //15px
+        padding-right: rem($spacing__sm * 0.33333); //10px
+      }
+    }
+
+    &__divider {
+      color: $color__white;
+      display: block;
+      font-size: rem($base__font-size * 2.6); //26px
+    }
+  }
+
+  &__locator--mobile {
+    cursor: pointer;
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: rem($spacing__sm * 0.33333); //10px
+
+    @include media-tablet-and-up {
+      display: none;
+    }
+  }
+
+  textarea {
+    @include media-tablet-and-up {
+      flex: 18;
+    }
+  }
+}

@@ -1,0 +1,150 @@
+//------------------------------------------
+// Handles Header Behaviors & Interactions
+// Visual state when the nav is open (desktop/mobile)
+// Visual state when the search is open (default)
+// Visual state when the drawer is open (default)
+//------------------------------------------
+.search-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+
+  @include media-desktop-and-up {
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+
+  .header-primary-nav__open-search {
+    background: $color__primary-gray1;
+    transition: background 0.3s ease-in-out, padding .3s ease-in-out;
+
+    .icon-search {
+      display: none;
+    }
+
+    .icon-close {
+      color: $color__white;
+      display: block;
+      font-size: rem($base__font-size * 1.8);
+      top: rem($spacing__sm * -.1);
+
+      @include media-desktop-and-up {
+        top: rem($spacing__sm * -.1666666667);
+      }
+    }
+  }
+}
+
+.nav-open {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+
+  @include media-desktop-and-up {
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+
+  .primary-navigation {
+    opacity: 1;
+    overflow: auto;
+    visibility: visible;
+  }
+
+  .header-primary-nav__toggle-mobile-menu {
+    background: var(--navigation-mega-menu-title-background-color, $color__primary-gray1);
+    transition: background 0.3s ease-in-out;
+
+    .icon-hamburger {
+      display: none;
+    }
+
+    .icon-close {
+      display: block;
+      font-size: rem($base__font-size * 1.8);
+      top: rem($spacing__sm * -.1);
+    }
+  }
+
+  .header-utility-nav {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.level-2-open {
+  // Styles on Body while the nav is open
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+
+  @include media-desktop-and-up {
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+
+  .primary-navigation {
+    transform: translate(-100%, 0);
+
+    @include media-desktop-and-up {
+      transform: none;
+    }
+  }
+
+  .mega-menu {
+    transform: translate(0, 0);
+
+    @include media-desktop-and-up {
+      opacity: 1;
+      transform: none;
+      visibility: visible;
+    }
+  }
+}
+
+.nav-is-animating {
+  .mega-menu {
+    transition: transform 0.5s ease-in-out;
+
+    @include media-desktop-and-up {
+      transition: none;
+    }
+  }
+}
+
+.country-page {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+
+  @include media-desktop-and-up {
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+
+  .full-page {
+    transform: translate(0, 0);
+    visibility: visible;
+
+    @include media-desktop-and-up {
+      transform: none;
+      visibility: visible;
+      max-height: 100%;
+      height: 100%;
+
+      &__country-selector {
+        height: 100%;
+
+        .country-selector-drawer {
+          height: 100%;
+          overflow-y: auto;
+        }
+      }
+    }
+  }
+}
+

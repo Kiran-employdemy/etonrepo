@@ -1,0 +1,111 @@
+/**
+* NOTE: The global facet search and facet group search use nearly identical styles.
+  The common styles have been extracted into this mixin.
+*/
+
+@mixin filter-search-styles {
+  &__container {
+    display: none;
+    margin-bottom: rem($spacing__sm * .5);
+    position: relative;
+
+    @include media-tablet-and-up {
+      display: block;
+    }
+    @include media-mobile-and-tablet {
+      display: block;
+    }
+    @include media-tablet-only {
+      margin-top: 3rem;
+    }
+  }
+
+  &__input {
+    /* stylelint-disable-declaration-no-important */
+    border: 2px solid rgba(red(var(--primary-brand-color)), green(var(--primary-brand-color)), blue(var(--primary-brand-color)), .5) !important; /* stylelint-disable declaration-no-important */
+    font-size: rem($base__font-size * 1.8);
+    height: rem($spacing__md * .8333333333) !important;
+    line-height: $base__line-height * (1 / 1.4);
+    margin-top: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+
+    [dir='rtl'] & {
+      padding-left: 0 !important;
+      padding-right: rem($spacing__sm * .33333) !important;
+    }
+
+
+    &:focus {
+      border-color: var(--primary-brand-color) !important;
+    }
+    /* stylelint-enable declaration-no-important */
+  }
+
+  &__label {
+    display: block;
+    font-size: rem($base__font-size * 1.4);
+    font-weight: normal;
+    line-height: $base__line-height * (1.25 / 1.4);
+  }
+
+  &__suggestions {
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.15);
+    left: 0;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: auto;
+    width: 100%;
+    z-index: 5;
+  }
+
+  &__suggestion {
+    font-size: rem($base__font-size * 1.4);
+    list-style: none;
+
+    &__link {
+      background: var(--color__white);
+      display: block;
+      padding: rem($spacing__sm * .333333);
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: var(--color__lunar-10);
+      }
+    }
+
+    &__no-suggestions__message {
+      background: var(--color__white);
+      display: block;
+      padding: rem($spacing__sm * .5) rem($spacing__sm * .333333);
+    }
+
+    &__suggested-term {
+      color: var(--color__black);
+      font-weight: bold;
+    }
+
+    &__conjunction {
+      color: var(--color__black);
+    }
+
+    &__suggested-facetgroup {
+      color: var(--primary-brand-color);
+      font-weight: bold;
+    }
+  }
+}
+
+.global-filter-search {
+  @include filter-search-styles;
+}
+
+.faceted-navigation__list__search {
+  @include filter-search-styles;
+
+  &__container {
+    display: block;
+  }
+}

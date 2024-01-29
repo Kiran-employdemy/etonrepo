@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Advanced Search"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <columns
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                    margin="{Boolean}false">
+                <items jcr:primaryType="nt:unstructured">
+                    <column2
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <tabs
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                                    type="nav">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <config
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="Config"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <default-sorting
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    class="cq-dialog-dropdown-showhide"
+                                                    cq-dialog-dropdown-showhide-target=".view-hide-show"
+                                                    fieldDescription="Choose the default sorting order"
+                                                    fieldLabel="Default sorting order"
+                                                    name="./defaultSort">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <newestToOldest
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Newest to Oldest"
+                                                            value="pub_date_desc"/>
+                                                    <relevance
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Relevance"
+                                                            value="relevance"/>
+                                                    <ascending
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Alpha A to Z"
+                                                            value="asc"/>
+                                                    <descending
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Alpha Z to A"
+                                                            value="desc"/>
+                                                </items>
+                                            </default-sorting>
+                                            <facets
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true"
+                                                    fieldDescription="List of facets to be enabled "
+                                                    fieldLabel="Facets">
+                                                <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                        name="./whitelistFacets">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <column
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <attribute-value
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                                                        rootPath="/eaton"
+                                                                        fieldLabel="Facet"
+                                                                        multiple="{Boolean}false"
+                                                                        name="./facet">
+                                                                </attribute-value>
+                                                                <showAsGrid
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                        name="./showAsGrid"
+                                                                        text="Show as Grid"
+                                                                        value="faceted-navigation__facet-group--grid"/>
+                                                                <facetSearchEnabled
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                        name="./facetSearchEnabled"
+                                                                        text="Facet Search Enabled"
+                                                                        value="show"/>
+                                                                <singleFacetEnabled
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                        name="./singleFacetEnabled"
+                                                                        text="Single Facet Enabled"
+                                                                        value="radio"/>
+                                                            </items>
+                                                        </column>
+                                                    </items>
+                                                </field>
+                                            </facets>
+                                            <filters
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Enable Filters"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                <columns
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <enableBulkDownload
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                    fieldDescription="Select the checkbox to enable Bulk download"
+                                                                    name="./enableBulkDownload"
+                                                                    text="Bulk Download"
+                                                                    value="true"/>
+                                                            <enableGridListView
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                    fieldDescription="Default view is Grid "
+                                                                    name="./enableGridListView"
+                                                                    text="Grid/List View"
+                                                                    value="true"/>
+                                                            <enableDateRange
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                    fieldDescription="Select the checkbox to enable Date Range Filter"
+                                                                    name="./enableDateRange"
+                                                                    text="Date Range"
+                                                                    value="true"/>
+                                                            <closeMobileAccordions
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                    fieldDescription="Select the checkbox to collapse all filters on mobile view"
+                                                                    name="./closeMobileAccordions"
+                                                                    text="Collapse mobile filters"
+                                                                    value="true"/>
+                                                        </items>
+                                                    </column>
+                                                </items>
+                                            </filters>
+                                            <listing
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Default view type"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                <columns
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <column
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <viewType
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                                                    name="./viewType">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <listView
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+                                                                            checked="{Boolean}true"
+                                                                            text="List View"
+                                                                            value="list"/>
+                                                                    <gridView
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/radio"
+                                                                            text="Grid View"
+                                                                            value="grid"/>
+                                                                </items>
+                                                            </viewType>
+                                                        </items>
+                                                    </column>
+                                                </items>
+                                            </listing>
+                                            <experimental-features
+                                                    jcr:primaryType="nt:unstructured"
+                                                    jcr:title="Experimental Features"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                                    sling:resourceSuperType="eaton/components/shared/dialogs/feature-flags">
+                                            </experimental-features>
+                                        </items>
+                                    </config>
+                                    <noresult
+                                            jcr:primaryType="nt:unstructured"
+                                            jcr:title="No Result"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <zeroSearchResultsMainMessage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldLabel="Zero Search Results Main Message"
+                                                    name="./zeroSearchResultsMainMessage"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                                    <format
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                    <justify
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                    <lists
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                    <paraformat
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                    <links
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                    <subsuperscript
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                    <table
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="[]">
+                                                        <hiddenHeaderConfig
+                                                                jcr:primaryType="nt:unstructured"
+                                                                hiddenHeaderClassName="cq-wcm-foundation-aria-visuallyhidden"
+                                                                hiddenHeaderEditingCSS="coral-RichText-hiddenHeader--editing"/>
+                                                    </table>
+                                                    <experience-aem
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                    <styles
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="styles">
+                                                        <styles jcr:primaryType="cq:WidgetCollection">
+                                                            <plainSpan
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="defaultSpan"
+                                                                    text="Default (add span tag)"/>
+                                                            <strikethrough
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="rte-strikethrough"
+                                                                    text="Strike Through"/>
+                                                            <warning
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="rte-warning"
+                                                                    text="Warning"/>
+                                                            <note
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="rte-note"
+                                                                    text="Note"/>
+                                                            <header
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="rte-header"
+                                                                    text="Header"/>
+                                                            <dark-headline
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="rte-dark-headline"
+                                                                    text="Dark Headline"/>
+                                                            <smalltext
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="rte-small-text"
+                                                                    text="Small Text"/>
+                                                            <quote
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="rte-quote"
+                                                                    text="Quote"/>
+                                                        </styles>
+                                                    </styles>
+                                                    <experience-aem-one
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                    <spellcheck
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                </rtePlugins>
+                                                <uiSettings jcr:primaryType="nt:unstructured">
+                                                    <cui jcr:primaryType="nt:unstructured">
+                                                        <inline
+                                                                jcr:primaryType="nt:unstructured"
+                                                                toolbar="[format#bold,format#italic,format#underline,#paraformat,image#imageProps,#justify,#lists,links#modifylink,links#unlink,links#anchor,subsuperscript#subscript,subsuperscript#superscript,experience-aem#colorPicker,experience-aem-one#touchuitouppercase,#styles,spellcheck#checktext]">
+                                                            <popovers jcr:primaryType="nt:unstructured">
+                                                                <justify
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                                                        ref="justify"/>
+                                                                <lists
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                                                        ref="lists"/>
+                                                                <paraformat
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        items="paraformat:getFormats:paraformat-pulldown"
+                                                                        ref="paraformat"/>
+                                                                <styles
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        items="styles:getStyles:styles-pulldown"
+                                                                        ref="styles"/>
+                                                            </popovers>
+                                                        </inline>
+                                                    </cui>
+                                                </uiSettings>
+                                            </zeroSearchResultsMainMessage>
+                                        </items>
+                                    </noresult>
+                                </items>
+                            </tabs>
+                        </items>
+                    </column2>
+                </items>
+            </columns>
+        </items>
+    </content>
+</jcr:root>

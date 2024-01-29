@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          user.default=""
+          user.mapping="[com.adobe.granite.oauth.server\=oauthservice,com.eaton.platform.core-bundle:readService\=eatonreaduser,com.eaton.platform.core-bundle:writeService\=eatonwriteuser,com.eaton.platform.core-bundle:backupService\=eatonbackupuser,gs4tr-globallink-adaptors-aem-bundle:gl-service\=gl-service,com.percolate.aem-plugin.core\=\[percolate-system-user\]]"/>

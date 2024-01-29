@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2019-03-20T16:23:53.177-04:00"
+        cq:lastModifiedBy="c3042434"
+        cq:lastReplicated="{Date}2019-04-09T14:26:30.452-04:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:lastModified="{Date}2019-03-20T16:23:45.272-04:00"
+        jcr:lastModifiedBy="c3042434"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:uuid="a9a363e9-e11a-4d34-885f-70289ba5c530"
+        sling:resourceType="fd/fdm/gui/components/admin/fdmcloudservice/rest"
+        authenticationType="None"
+        client_secret="\{99c3b0c9335ddd83101fc60a153cb802e9ed6c48ddf20b6f0eab4332b95b54b2}"
+        dataSourceType="REST"
+        filename="swagger-full.json"
+        location="header"
+        name="eloqua-full"
+        selectAuthentication="None"
+        selectHeader="Authorization Bearer"
+        swaggerSource="swaggerFile"
+        thumbnailPath="C3042434"
+        userName="C3042434">
+        <swaggerFile/>
+    </jcr:content>
+</jcr:root>

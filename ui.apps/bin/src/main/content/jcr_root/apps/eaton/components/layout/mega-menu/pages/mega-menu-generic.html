@@ -1,0 +1,71 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.MegaMenuModel">
+
+
+    <!--/* Include Level 1: Links *-->
+    <!--/*  Include: Mega-Menu-Title */-->
+
+  	<div class="mega-menu-title">
+        <div class="container">
+            <a href="${data.megaMenuTitlePath}" class="mega-menu-title__level1-link">
+                <i class="mega-menu-title__icon glyphicon glyphicon-menu-left" aria-hidden="true"></i>
+                <div class="mega-menu-title__border">${data.megaMenuTitleText}</div>
+                <i class="mega-menu-title__icon glyphicon glyphicon-menu-right" aria-hidden="true"></i>
+            </a>
+            <button class="button--reset mega-menu-title__close-menu">
+            <span class="sr-only">Close Search</span>
+            <i class="mega-menu-title__icon icon icon-close" aria-hidden="true"></i>
+            </button>
+        </div>
+	</div>
+
+    <!--/* Include: Mega Menu Modules */-->
+    <div class="mega-menu__category">
+        <div class="container">
+            <div class="mega-menu__row">
+
+                <!--/* Include: Column 1 - Flexible width */-->
+
+  		<!--/* Link Groups - Cols */-->
+		<div class="mega-menu__col mega-menu-custom-col">
+        	<div class="mega-menu__row" data-sly-test="${!data.secureMenu}">
+            	<sly data-sly-resource="${'links-products' @ resourceType='/apps/eaton/components/general/vertical-link-list'}"></sly>
+			</div>
+            <!--/* Include: secure-linked-list for secure*/-->
+            <div class="mega-menu__row" data-sly-test="${data.secureMenu}">
+                <sly data-sly-resource="${'secure-links' @ resourceType='eaton/components/secure/secure-linked-list'}"></sly>
+            </div>
+        </div>
+		 <sly data-sly-use.megaMenuModel="com.eaton.platform.core.models.MegaMenuModel"/>
+
+                <sly data-sly-test="${!megaMenuModel.hideSecondCol}">
+                	<!--/* Include: Column 2  */-->
+                    <div class="mega-menu__col ${megaMenuModel.secondColCSS}">
+                        <!--/* Include: Search Box - Inline */-->
+                        <div class="mega-menu__category-item">
+                            <sly data-sly-resource="${'par1' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+                        </div>
+                    </div>
+                </sly>
+                <sly data-sly-test="${!megaMenuModel.hideThirdCol}">
+                    <!--/* Include: Column 3  */-->
+                    <div class="mega-menu__col ${megaMenuModel.thridColCSS}">
+                        <!--/* Include: TTIL - Single Feature */-->
+                        <div class="mega-menu__category-item">
+                            <sly data-sly-resource="${'par3' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+                        </div>
+                    </div>
+				</sly>
+				<sly data-sly-test="${!megaMenuModel.hideFourthCol}">
+                    <!--/* Include: Column 4  */-->
+                    <div class="mega-menu__col ${megaMenuModel.fourthColCSS}">
+                        <!--/* Include: TTIL - Single Feature */-->
+                        <div class="mega-menu__category-item">
+                            <sly data-sly-resource="${'par4' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+                        </div>
+                    </div>
+                </sly>
+            </div>
+        </div>
+    </div>
+
+</sly>

@@ -1,0 +1,51 @@
+//-----------------------------------
+// Module - M-64: Autocorrected Search
+//
+//
+// NOTE: This module is being used by these AEM-Components:
+//  - Search Results - Default View
+//-----------------------------------
+
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+
+.autocorrected-search {
+
+
+  //-----------------------------------
+  // MediaQuery: 0 to 991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    margin-top: 44px; // EATON-662, Spacing between Tabs and Auto correct should be 50x.
+    margin-bottom: 4px; // EATON-662: Spacing between Auto Correct and Number of Results should be 40px
+
+    &__search-instead {
+      display: block;
+    }
+  }
+
+
+
+  //-----------------------------------
+  // Media Query: > 992px
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    margin-top: 40px;   // EATON-662: Spacing between Tabs and Auto correct should be 50x.
+    margin-bottom: 4px; // EATON-662: Spacing between Auto Correct and Number of Results should be 40px
+
+    &__results {
+      display: inline-block;
+    }
+
+    &__search-instead {
+      display: inline-block;
+      margin-left: 16px;
+    }
+
+  }
+
+}

@@ -1,0 +1,38 @@
+.min-duration-range-val, .max-duration-range-val{
+    display: inline-block;
+    vertical-align: middle;
+    min-width: 3rem;
+}
+
+.min-duration-range-val input, .max-duration-range-val input {
+    font-size: .7rem;
+    display: inline-block;
+    width: 2.6rem;
+    min-width: 2.6rem;
+    margin: 0em  0.1rem;
+}
+
+.noslider > i {
+    margin-left: 1rem;
+}
+
+/** Handles the range component while inside a Collapsible. */
+.coral-Collapsible-content .max-duration-range-val,
+.coral-Collapsible-content .min-duration-range-val input,
+.coral-Collapsible-content .max-duration-range-val input {
+  margin: 0;
+}
+
+.coral-Collapsible-content .min-duration-range-val {
+  margin: 0 0.625rem 0 0;
+  width: auto;
+}
+
+.coral-Collapsible-content .max-duration-range-val {
+  margin: 0 0 0 0.625rem;
+  width: auto;
+}
+
+.coral-Collapsible-content .noslider > i {
+  margin-left: 0;
+}

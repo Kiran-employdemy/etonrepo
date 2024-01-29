@@ -1,0 +1,104 @@
+{
+  "jcr:primaryType": "dam:Asset",
+  "jcr:mixinTypes": [
+    "mix:versionable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:versionHistory": "ab3901ee-e14e-429e-826a-d7857e659c50",
+  "jcr:predecessors": [
+    "efa028b1-a250-4d7c-b09e-4204a94f286b"
+  ],
+  "jcr:created": "Wed Nov 30 2022 13:38:54 GMT-0500",
+  "jcr:baseVersion": "efa028b1-a250-4d7c-b09e-4204a94f286b",
+  "jcr:isCheckedOut": true,
+  "jcr:uuid": "3abdbfe6-83cb-43ec-869d-6b78daf38a92",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "jcr:lastModifiedBy": "e0547414",
+    "dam:assetState": "processed",
+    "cq:name": "instructions-me-replacement-contact-kit-il15-800-13.pdf",
+    "jcr:lastModified": "Thu Aug 24 2023 08:26:44 GMT-0400",
+    "cq:parentPath": "/content/dam/eaton/products/industrialcontrols-drives-automation&sensors/mill-type-dc-contactors",
+    "dam:relativePath": "eaton/products/industrialcontrols,drives,automation&sensors/mill-type-dc-contactors/instructions-me-replacement-contact-kit-il15-800-13.pdf",
+    "renditions": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Thu Aug 24 2023 08:26:55 GMT-0400"
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ],
+      "bornOnDate": "Thu Aug 24 2023 18:34:00 GMT+0530",
+      "xmp:eaton-file-name": "instructions-me-replacement-contact-kit-il15-800-13.pdf",
+      "dam:Physicalheightininches": "11.0",
+      "dam:Physicalwidthininches": "8.5",
+      "dam:numPages": 2,
+      "assetPublicationDate": "Thu Aug 24 2023 18:34:00 GMT+0530",
+      "xmp:eaton-rights-restricted": "no",
+      "xmp:eaton-search-tabs": [
+        "eaton:search-tabs/content-type/resources"
+      ],
+      "trackDownload": "false",
+      "xmp:eaton-language": [
+        "eaton:language/en-us",
+        "eaton:language/zh-cn"
+      ],
+      "jcr:lastModifiedBy": "e0547414",
+      "xmp:CreatorTool": "DigiPath.",
+      "dam:extracted": "Wed Jun 19 2019 09:02:20 GMT-0400",
+      "dc:format": "application/pdf",
+      "xmp:eaton-content-type": [
+        "eaton:resources/technical-resources/installation-instructions"
+      ],
+      "dam:Producer": "DigiPath.",
+      "excludeCountries": "false",
+      "xmp:eaton-country": [
+        "eaton:country/north-america/us",
+        "eaton:country/asia/cn"
+      ],
+      "dc:modified": "Wed Jun 19 2019 09:03:51 GMT-0400",
+      "xmp:eaton-imported-by": "e0387293",
+      "xmp:MetadataDate": "Tue Aug 22 2000 15:19:32 GMT+0000",
+      "cq:tags": [
+        "eaton:country/north-america/us",
+        "eaton:language/en-us",
+        "eaton:search-tabs/content-type/resources",
+        "eaton:resources/technical-resources/installation-instructions",
+        "eaton:product-taxonomy/control-drives-automation-sensors/contactors-and-starters/dc-contactors",
+        "eaton:country/asia/cn",
+        "eaton:language/zh-cn"
+      ],
+      "jcr:lastModified": "Thu Aug 24 2023 08:26:44 GMT-0400",
+      "pdf:Producer": "DigiPath.",
+      "product-taxonomy-extended": [
+        "eaton:product-taxonomy",
+        "eaton:product-taxonomy/control-drives-automation-sensors",
+        "eaton:product-taxonomy/control-drives-automation-sensors/contactors-and-starters",
+        "eaton:product-taxonomy/control-drives-automation-sensors/contactors-and-starters/dc-contactors"
+      ],
+      "xmp:ModifyDate": "Tue Aug 22 2000 11:19:32 GMT-0400",
+      "dam:Author": "Eaton",
+      "xmp:CreateDate": "Tue Aug 22 2000 11:19:26 GMT-0400",
+      "countries": [
+        "eaton:country/north-america/us",
+        "eaton:country/asia/cn"
+      ],
+      "dam:sha1": "8956d5be5f138a386005b8a2de697fba3591f137",
+      "dam:size": 447936,
+      "dam:scene7PublishPending": true,
+      "xmp:eaton-product-taxonomy": [
+        "eaton:product-taxonomy/control-drives-automation-sensors/contactors-and-starters/dc-contactors"
+      ],
+      "dc:title": "Instructions for ME replacement contact kit",
+      "xmp:eaton-modified-by": "e0547414"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "language": "English",
+  "totalCount": 1,
+  "facets": {
+    "facetGroupList": [
+      {
+        "facetGroupId": "product-attributes_topology",
+        "gridFacet": false,
+        "facetValueList": [
+          {
+            "facetValueId": "3973989620",
+            "facetValueLabel": "Line-interactive",
+            "facetValueDocs": 1
+          }
+        ],
+        "facetGroupLabel": "Topology",
+        "singleFacetEnabled": false,
+        "facetSearchEnabled": false
+      },
+      {
+        "facetGroupId": "product-attributes_input-power",
+        "gridFacet": false,
+        "facetValueList": [
+          {
+            "facetValueId": "1442118548",
+            "facetValueLabel": "Single phase",
+            "facetValueDocs": 15
+          }
+        ],
+        "facetGroupLabel": "Input power",
+        "singleFacetEnabled": false,
+        "facetSearchEnabled": false
+      }
+    ]
+  },
+
+  "siteSearchResults": [
+    {
+      "image": "/content/dam/eaton/resources/advanced-search/html-thumbnail.png",
+      "middleTabURL": "",
+      "downloadEnabled": false,
+      "publishDate": "13/06/2016",
+      "description": "",
+      "dsktopRendition": "",
+      "secure": false,
+      "title": "test",
+      "url": "/company/news-insights/news-releases/2016/Eatons-ephesus-all-field-led-lighting-series.html.html",
+      "mobileRendition": "",
+      "fileSize": "110329",
+      "middleTabName": "",
+      "contentType": "news-and-insights",
+      "fileType": "text/html",
+      "status": ""
+    }
+  ],
+  "productsCount": 62,
+  "status": "Success"
+}

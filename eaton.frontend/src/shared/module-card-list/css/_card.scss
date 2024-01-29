@@ -1,0 +1,116 @@
+//-----------------------------------
+// M-33: Related Items - Card List
+//-----------------------------------
+.card-list {
+
+  &__component {
+    margin-top: rem($spacing__md * .8); // Visually, 60px spacing
+    margin-bottom: rem($spacing__md);
+  }
+
+  &__list {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    z-index: 1;
+  }
+
+  &__image {
+    position: relative;
+
+    // Image Aspect Ratio 4-by-3
+    // NOTE: Use a pseudo element due to issues with flexbox in Firefox / IE when added to the &__image element
+    &::before {
+      content: '';
+      padding-top: $ratio__4-3;
+      display: block;
+    }
+
+    // This behavior was disabled due to the new image-alignment options added in EATON-762
+    // .rendition-bg {
+    //   background-position: center center;
+    //   background-size: auto 100%;
+    // }
+  }
+
+  &__card {
+    border: 1px solid var(--color__iron-30);
+    display: flex;
+    flex-direction: column;
+    height: $ratio__1-1;
+  }
+
+  &__content {
+    background: var(--color__white);
+    padding: rem($spacing__sm) rem($spacing__sm) rem($spacing__sm * .5) rem($spacing__sm);
+  }
+
+  &__heading {
+    color: var(--link-brand-color);
+    font-size: rem($base__font-size * 2.4);
+    line-height: $base__line-height * (1.25 / 1.4);
+  }
+
+  &__date { color: var(--color__lunar-40); }
+
+
+  //-----------------------------------
+  // MediaQuery: 0-767px
+  //-----------------------------------
+  @include media-mobile-only {
+
+    &__content {
+      flex: 1 1 auto;
+      padding: rem($spacing__sm);
+      width: $ratio__1-1;
+    }
+
+  }
+
+
+  //-----------------------------------
+  // 768-991px
+  //-----------------------------------
+  @include media-tablet-only {
+
+    &__item { margin-bottom: rem($spacing__sm * .66); }
+
+    &__card { flex-direction: row; }
+
+    &__image {
+      width: 50%;
+    }
+
+    &__content {
+      padding: rem($spacing__sm);
+      width: 50%;
+    }
+
+  }
+
+  //-----------------------------------
+  // >992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    // EATON-639: Override Line-height in the Title in order to create better hierarchy
+    &__heading { line-height: rem($base__font-size * 3.4); }
+
+    &__card {
+      flex-direction: column;
+    }
+
+    &__date {
+      margin-top: rem($spacing__sm * .533333); // Visually, 30px spacing between Title and Date
+      margin-bottom: rem($spacing__sm * .33);
+    }
+
+    &__content {
+      flex: 1 1 auto;
+      padding: rem($spacing__sm) rem($spacing__sm * .5) rem($spacing__sm * .5) rem($spacing__sm);
+    }
+
+  }
+
+}

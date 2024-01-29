@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.workflows.config.EatonContentRolloutReviewNotificationOffloadingProcessConfig">
+  <OCD id="com.eaton.platform.core.workflows.config.EatonContentRolloutReviewNotificationOffloadingProcessConfig" name="Eaton Content Rollout Review Notification Offloading process workflow service" description="">
+    <AD id="externalizer.domain" type="String" name="Externalizer Domain" description="Must correspond to a configuration of the Externalizer component." default="author"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.workflows.EatonContentRolloutReviewNotificationOffloadingProcess">
+    <Object ocdref="com.eaton.platform.core.workflows.config.EatonContentRolloutReviewNotificationOffloadingProcessConfig"/>
+  </Designate>
+</metatype:MetaData>

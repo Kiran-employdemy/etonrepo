@@ -1,0 +1,21 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Raw HTML Component</div>
+</sly>
+
+      <div data-sly-test="${properties.htmlsource != null}" data-sly-use.data="${'com.eaton.platform.core.models.RawHTMLModel'}">
+        <div class="${data.toggleInnerGrid ? 'container' : ''}">
+                <h3 class="secondary-headline">${properties.title}</h3>
+
+                 <div class="html-fragment-content" >
+						${data.htmlBody  @ context='unsafe'}
+                 </div>
+
+                 <dl data-sly-list="${data.componentJSSourceList}">
+                     <dt data-asset-src=${item} data-asset-type="js"></dt>
+                 </dl>
+
+                 <dl data-sly-list="${data.componentCSSSourceList}">
+                     <dt data-asset-src=${item} data-asset-type="css"></dt>
+                 </dl>
+        </div>
+      </div>

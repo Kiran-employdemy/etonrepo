@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.informatica.services.config.InformaticaOSGIServiceConfig">
+  <OCD id="com.eaton.platform.integration.informatica.services.config.InformaticaOSGIServiceConfig" name="Eaton Informatica Configration Service" description="">
+    <AD id="family.file.name" type="String" name="Product Data File Name" description="Product data file Name" default=""/>
+    <AD id="input.family.file.path" type="String" name="Product Data File Input Path" description="Input path for product data file" default=""/>
+    <AD id="archive.family.file.path" type="String" name="Product Data Archive Path" description="Archive path product data file" default=""/>
+    <AD id="failed.family.file.path" type="String" name="Failed Product Data File Path" description="Path for Failed product data file" default=""/>
+    <AD id="family.languages" type="String" cardinality="50" name="Language" description="Please enter languages" default=""/>
+    <AD id="family.notification.emailIds" type="String" cardinality="2147483647" name="Recipients Email Ids For Product Family" description="Please enter Email IDs of the recipients for product data file" default=""/>
+    <AD id="taxattr.file.name" type="String" name="Taxonomy Attribute File Name" description="Taxonomy Attribute File Name" default=""/>
+    <AD id="globalattr.file.name" type="String" name="Global Attribute File Name" description="Global Attribute File Name" default=""/>
+    <AD id="input.attribute.file.path" type="String" name="Attribute Data file Input Path" description="Input path for Attribute data file" default=""/>
+    <AD id="archive.attribute.file.path" type="String" name="Attribute Data file Archival Path" description="Archive path Attribute data file" default=""/>
+    <AD id="failed.attribute.file.path" type="String" name="Failed Attribute Data file Path" description="Path for Failed Attribute data file" default=""/>
+    <AD id="attribute.notification.emailIds" type="String" cardinality="50" name="Recipients Email Ids For Attribute File" description="Please enter Email IDs of the recipients for Attribute data file" default=""/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.informatica.services.impl.InformaticaOSGIServiceImpl">
+    <Object ocdref="com.eaton.platform.integration.informatica.services.config.InformaticaOSGIServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

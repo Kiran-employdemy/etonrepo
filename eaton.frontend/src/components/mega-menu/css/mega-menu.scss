@@ -1,0 +1,554 @@
+//-----------------------------------
+// Component: Mega Menu
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+// Import Overrides
+@import "mega-menu-modules";
+
+.mega-menu {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+
+  &__content {
+    color: $color__white;
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  &__row {
+    .eaton-text-default__content {
+      color: $color__white;
+    }
+    display: block;
+  }
+
+  &__col {
+
+    .mega-menu__category-item {
+      margin-bottom: $spacing__sm;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .article-feature {
+      @include media-mobile-only {
+        display: none;
+      }
+
+      &__component {
+        margin: 0;
+
+        .container {
+          width: auto;
+          padding: 0;
+        }
+      }
+
+      &__image {
+        margin-bottom: 1.5rem;
+      }
+
+      &__title {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        color: $color__white;
+        padding-bottom: 1.5rem;
+        margin-top: 0;
+      }
+
+      &__link {
+        font-size: 1.6rem;
+        line-height: 1.25;
+        color: $color__white;
+        padding-bottom: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        a:link,
+        a:visited {
+          color: $color__white;
+        }
+      }
+
+      &__date {
+        font-size: 1.2rem;
+        color: $color__white;
+        margin-bottom: 1.5rem;
+        font-style: normal;
+      }
+
+      &__body {
+        font-size: 1.2rem;
+        color: $color__white;
+      }
+    }
+  }
+
+  &__category {
+    background: var(--navigation-mega-menu-background-color, $color__primary-gray2);
+  }
+
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    position: fixed;
+    top: 52px;
+    bottom: 0;
+    background: var(--navigation-mega-menu-background-color, $color__primary-gray2);
+    overflow: auto;
+    transform: translate(100%, 0);
+
+    &__row {
+
+      .mega-menu__col {
+        //display: none; Commented this because it was hidding level 3 mega menu
+
+        // Only display level-2 links in mobile
+        &.mega-menu__col--flex {
+          display: block;
+        }
+      }
+    }
+
+    &__content {
+
+      &--active {
+        margin-bottom: 100px;
+      }
+    }
+
+  }
+
+  //-----------------------------
+  // 991 Breakpoint
+  //-----------------------------
+  @include media-mobile-tablet-and-down {
+    position: fixed;
+    top: 52px;
+    bottom: 0;
+    background: var(--navigation-mega-menu-background-color, $color__primary-gray2);
+    overflow: auto;
+    transform: translate(100%, 0);
+
+    &__row {
+
+      .mega-menu__col {
+        //display: none; Commented this because it was hidding level 3 mega menu
+
+        // Only display level-2 links in mobile
+        &.mega-menu__col--flex {
+          display: block;
+        }
+      }
+    }
+
+    &__content {
+
+      &--active {
+        margin-bottom: 100px;
+      }
+    }
+
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.1s ease-in-out;
+    background: $color__primary-gray1;
+
+    &__row {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__col {
+      margin: 0 ($spacing__sm / 2);
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      // Container for Flexible list-links
+      &--flex {
+        border-right: 1px solid $color__secondary-gray4;
+      }
+
+      // Container for 25% columns
+      &--4 {
+        flex-basis: 25%;
+      }
+
+      // Container for 50% columns
+      &--6 {
+        flex-basis: 50%;
+      }
+    }
+
+    &__category {
+      padding: $spacing__sm 0;
+    }
+  }
+}
+
+// Mega Menu Title
+.mega-menu-title {
+  @include font-family__secondary(--primary-nav-font);
+  font-size: 2.6rem;
+  background: var(--navigation-mega-menu-title-background-color, $color__primary-gray1);
+
+  .container {
+    display: flex;
+    position: relative;
+  }
+
+  &__border {
+    /* stylelint-disable declaration-property-value-blacklist  */
+    border-style: none;
+    /* stylelint-enable declaration-property-value-blacklist */
+    outline: 0px;
+  }
+
+  a {
+    text-decoration: none;
+    cursor: pointer;
+
+    .dark-theme & {
+      color: $color__white;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $color__white;
+      /* stylelint-disable declaration-no-important */
+      outline: none !important;
+      // stylelint-enable
+    }
+  }
+
+  &__level1-link {
+    align-items: center;
+    display: flex;
+  }
+
+  &__close-menu {
+    display: none;
+  }
+
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    padding: 20px 0;
+    font-size: 2rem;
+
+    &__level1-link {
+      padding: 10px 10px 10px 0;
+      /* stylelint-disable declaration-property-value-blacklist  */
+      border-style: none;
+      /* stylelint-enable declaration-property-value-blacklist */
+      outline: 0;
+
+      .glyphicon-menu-left {
+        display: inline;
+        font-size: 0.66667em;
+        margin-left: 0;
+        margin-right: rem($spacing__sm / 6);
+
+        &::before {
+          vertical-align: middle;
+        }
+
+        @media screen and (-ms-high-contrast: none),
+          (-ms-high-contrast: active) {
+          font-size: rem($base__font-size * 1.333);
+        }
+      }
+
+      .glyphicon-menu-right {
+        display: none;
+      }
+    }
+  }
+
+  //-----------------------------
+  // 991 Breakpoint
+  //-----------------------------
+  @include media-mobile-tablet-and-down {
+    padding: 20px 0;
+    font-size: 2rem;
+
+    &__level1-link {
+      padding: 10px 10px 10px 0;
+      /* stylelint-disable declaration-property-value-blacklist  */
+      border-style: none;
+      /* stylelint-enable declaration-property-value-blacklist */
+      outline: 0;
+
+      .glyphicon-menu-left {
+        display: inline;
+        font-size: 0.66667em;
+        margin-left: 0;
+        margin-right: rem($spacing__sm / 6);
+
+        &::before {
+          vertical-align: middle;
+        }
+
+        @media screen and (-ms-high-contrast: none),
+          (-ms-high-contrast: active) {
+          font-size: rem($base__font-size * 1.333);
+        }
+      }
+
+      .glyphicon-menu-right {
+        display: none;
+      }
+    }
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    padding: 30px 0;
+
+    &__level1-link {
+      .glyphicon-menu-left {
+        display: none;
+      }
+
+      .glyphicon-menu-right {
+        display: inline;
+        font-size: 0.66667em;
+        margin-left: rem($spacing__sm / 6);
+        margin-right: 0;
+
+        &::before {
+          vertical-align: middle;
+        }
+
+        @media screen and (-ms-high-contrast: none),
+          (-ms-high-contrast: active) {
+          font-size: rem($base__font-size * 1.733);
+        }
+      }
+    }
+
+    &__close-menu {
+      display: inline;
+      position: absolute;
+      right: ($spacing__sm / 2);
+
+      .icon {
+        font-size: 2.1rem;
+      }
+    }
+  }
+}
+
+.links-list__link {
+
+  &:hover,
+  &:active,
+  &:focus {
+    /* stylelint-disable declaration-no-important */
+    text-decoration: none !important;
+
+    // stylelint-enable
+    bdi {
+      text-decoration: underline;
+    }
+  }
+}
+
+html[dir="rtl"] {
+  .mega-menu-title {
+    &__close-menu {
+      left: 0;
+      right: auto;
+    }
+  }
+
+  .glyphicon-menu-right {
+    margin-left: 0;
+    margin-right: rem($spacing__sm / 6);
+    transform: rotate(180deg);
+  }
+
+  .glyphicon-menu-left {
+    @include media-mobile-and-tablet {
+      order: 1;
+    }
+
+    @include media-mobile-tablet-and-down {
+      order: 1;
+    }
+  }
+
+}
+
+/* stylelint-disable no-duplicate-selectors */
+.links-list__link {
+
+  //-----------------------------
+  // 991 Breakpoint
+  //-----------------------------
+  /* stylelint-disable value-no-vendor-prefix */
+  /* stylelint-disable property-no-vendor-prefix */
+  @include media-mobile-tablet-and-down {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px 0;
+    position: relative;
+    border-bottom: 1px solid rgba(238, 240, 242, 0.3);
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  @include media-mobile-tablet-and-down {
+    &::after {
+      color: #FFF;
+      content: "\EA07";
+      font-family: 'eaton-glyphicon';
+      display: inline;
+      font-size: 0.66667em;
+      padding-left: 0;
+      padding-right: 0.5rem;
+      text-decoration: none;
+      top: 15px;
+      vertical-align: middle;
+      white-space: nowrap;
+      left: 98%;
+      position: absolute;
+    }
+  }
+
+  @include media-mobile-and-tablet {
+    &::after {
+      left: auto;
+    }
+  }
+
+  .links-list__text {
+
+    @include media-mobile-tablet-and-down {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      margin-left: 0;
+      margin-right: 15px;
+    }
+
+    @media screen and (-ms-high-contrast: none),
+      (-ms-high-contrast: active) {
+      &::after {
+        display: inline-block;
+        font-size: rem($base__font-size * 1.066);
+      }
+    }
+
+    @include media-desktop-and-up {
+      &::after {
+        color: #FFF;
+        position: relative;
+        content: "\EA07";
+        font-family: 'eaton-glyphicon';
+        display: inline;
+        font-size: 0.66667em;
+        padding-left: 0.5rem;
+        padding-right: 0;
+        text-decoration: none;
+        top: 0;
+        left: auto;
+        vertical-align: middle;
+        white-space: nowrap;
+      }
+    }
+
+    @media screen and (-ms-high-contrast: none),
+      (-ms-high-contrast: active) {
+      &::after {
+        display: inline-block;
+        font-size: rem($base__font-size * 1.066);
+      }
+    }
+
+  }
+
+  @include media-mobile-and-tablet {
+    &::after {
+      content: "\EA06";
+    }
+  }
+
+}
+
+/* stylelint-disable */
+.icon-secure-lock {
+  color: $color__accent-orange;
+  padding-right: 4px;
+  display: inline-block !important;
+  font-size: 1.6rem;
+}
+
+/* stylelint-enable */
+.primary-navigation__menu {
+  &:focus-visible {
+    border: 1px solid #000;
+    outline: none;
+  }
+}
+
+.card-list__link {
+  &:focus-visible {
+    border: 1px solid #000;
+    outline: none;
+  }
+}
+
+/* stylelint-disable no-duplicate-selectors */
+.mega-menu-title {
+
+  a {
+    /* stylelint-disable */
+    position: relative;
+
+    /* stylelint-enable no-duplicate-selectors */
+    &:focus-visible {
+      border: 1px solid #000;
+      outline: none;
+    }
+  }
+}
+
+.links-list {
+  @include media-mobile-tablet-and-down {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+

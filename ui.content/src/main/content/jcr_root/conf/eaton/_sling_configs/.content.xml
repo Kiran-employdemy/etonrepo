@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <com.adobe.cq.wcm.core.components.internal.services.pdfviewer.PdfViewerCaConfig
+        jcr:primaryType="nt:unstructured"
+        clientId="997b4d9e864a4d6ab67e770af4be83c5"/>
+</jcr:root>

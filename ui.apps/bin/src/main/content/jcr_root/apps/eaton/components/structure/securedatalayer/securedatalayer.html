@@ -1,0 +1,13 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Secure Data Layer</div>
+</sly>
+<sly data-sly-use.secureDataLayerModel="com.eaton.platform.core.models.SecureDataLayerModel">
+    <script type="text/javascript">
+        let secureDataLayer = ${secureDataLayerModel.dataLayerJson @ context='unsafe'};
+        if(window.dataLayer != undefined && window.dataLayer != null){
+            $.each(secureDataLayer, function(i, val){
+                window.dataLayer[i] = val;
+            });
+        }
+     </script>
+</sly>

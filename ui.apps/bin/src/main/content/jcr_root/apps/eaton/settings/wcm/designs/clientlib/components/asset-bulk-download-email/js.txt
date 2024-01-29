@@ -1,0 +1,3 @@
+#base=js
+
+asset-bulk-download-email.js

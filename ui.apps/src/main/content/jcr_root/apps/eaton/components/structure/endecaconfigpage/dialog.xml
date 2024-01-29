@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    jcr:title="Endeca Configuration"
+    height="{Long}650"
+    warnIfModified="{Boolean}false"
+    width="{Long}900"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Site_x0020_Configuration
+                jcr:primaryType="cq:Panel"
+                title="Endeca Configuration"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <sortableAttributes
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Sortable Attribute"
+                        fieldDescription="The list of attributes that Endeca is capable of sorting on. Any configurations providing sorting options to the author will be filtered by this list."
+                        name="./sortableAttributes"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            xtype="textfield">
+                        </fieldConfig>
+                    </sortableAttributes>
+                    <attributeMapping
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Attribute Mappings"
+                        fieldDescription="This list of mappings will transform a PDH taxonomy attribute name as it exists in AEM into a different name for making requests to Endeca. Specifically this can be used alongside the PDH Cloud Config Combo Attributes field for turning the two combo attribute fields back into the normal PDH field name. In this case two attribute mappings would be needed for each combo attribute configuration."
+                        name="./attributeMappings"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <aemAttributeName
+                                    jcr:primaryType="cq:Widget"
+                                    dName="aemAttributeName"
+                                    fieldLabel="AEM Attribute Name"
+                                    xtype="textfield">
+                                </aemAttributeName>
+                                <endecaRequestAttributeName
+                                    jcr:primaryType="cq:Widget"
+                                    dName="endecaRequestAttributeName"
+                                    fieldLabel="Endeca Request Attribute Name"
+                                    xtype="textfield">
+                                </endecaRequestAttributeName>
+                                <endecaResponseAttributeName
+                                    jcr:primaryType="cq:Widget"
+                                    dName="endecaResponseAttributeName"
+                                    fieldLabel="Endeca Response Attribute Name"
+                                    xtype="textfield">
+                                </endecaResponseAttributeName>
+                            </items>
+                        </fieldConfig>
+                    </attributeMapping>
+                    <additionalTaxonomyAttribute
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Additional Taxonomy Attributes"
+                            fieldDescription="This list of additional taxonomy attribute will be listed in product grid and same will be passed to endeca for filteration."
+                            name="./additionalTaxonomyAttributes"
+                            xtype="multifield">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                border="{Boolean}true"
+                                hideLabel="{Boolean}true"
+                                layout="form"
+                                padding="10px"
+                                width="1000"
+                                xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <taxonomyAttributeName
+                                        jcr:primaryType="cq:Widget"
+                                        dName="taxonomyAttributeName"
+                                        fieldLabel="Taxonomy Attribute Name"
+                                        xtype="textfield">
+                                </taxonomyAttributeName>
+                                <taxonomyAttributeI18nKey
+                                        jcr:primaryType="cq:Widget"
+                                        dName="taxonomyAttributeI18nKey"
+                                        fieldLabel="Taxonomy Attribute I18 Key"
+                                        xtype="textfield">
+                                </taxonomyAttributeI18nKey>
+                            </items>
+                        </fieldConfig>
+                    </additionalTaxonomyAttribute>
+                </items>
+            </Site_x0020_Configuration>
+        </items>
+    </items>
+</jcr:root>

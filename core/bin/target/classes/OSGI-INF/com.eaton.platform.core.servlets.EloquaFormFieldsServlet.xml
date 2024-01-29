@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.EloquaFormFieldsServlet" immediate="true">
+  <property name="sling.servlet.paths" type="String" value="/eaton/eloqua/formfield"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="configurationManagerFactory" interface="com.day.cq.wcm.webservicesupport.ConfigurationManagerFactory" field="configurationManagerFactory"/>
+  <reference name="eloquaFormConfigService" interface="com.eaton.platform.core.services.EloquaFormConfigService" field="eloquaFormConfigService"/>
+  <reference name="eloquaFormOverlayService" interface="com.eaton.platform.core.services.EloquaFormOverlayService" field="eloquaFormOverlayService"/>
+  <reference name="eloquaService" interface="com.eaton.platform.integration.eloqua.services.EloquaService" field="eloquaService"/>
+  <reference name="queryBuilder" interface="com.day.cq.search.QueryBuilder" field="queryBuilder"/>
+  <implementation class="com.eaton.platform.core.servlets.EloquaFormFieldsServlet"/>
+</scr:component>

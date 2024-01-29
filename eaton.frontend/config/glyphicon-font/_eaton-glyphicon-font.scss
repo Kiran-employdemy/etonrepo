@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "<%= fontName %>";
+  font-style: normal;
+  font-weight: normal;
+  src: url('<%= fontPath %><%= fontName %>.eot');
+  src: url('<%= fontPath %><%= fontName %>.eot?#iefix') format('eot'),
+    url('<%= fontPath %><%= fontName %>.woff') format('woff'),
+    url('<%= fontPath %><%= fontName %>.ttf') format('truetype');
+}
+
+.<%= className %> {
+  font-size: 24px; // Default Icon Size
+  line-height: 0;
+
+  &::before {
+    @extend %font-family-glyphicon;
+  }
+}
+
+<% _.each(glyphs, function(glyph) { %>
+.<%= className %>-<%= glyph.name %>::before { @extend %icon-<%= glyph.name %>; }
+<% }); %>

@@ -1,0 +1,142 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Resource List PDH Component</div>
+</sly>
+<div data-sly-use.data="com.eaton.platform.core.models.resourcelistpdh.ResourceListPDHModel">
+    <div class="container">
+        <div class="loader">
+            <div class="loader__loader-circle"></div>
+        </div>
+
+        <div class="row">
+
+            <!--/* M-45: Table */-->
+            <div class="col-xs-12">
+                
+                <div data-sly-list.item="${data.resourceList}" class="panel-group secondary-content-accordion"
+                     role="tablist" aria-multiselectable="true">
+
+                    <div class="panel secondary-content-accordion__panel sku-resource-print">
+                        <div class="panel-heading secondary-content-accordion__header" role="tab"
+                             id="${itemList.index}">
+                            <div href="#collapse-${itemList.index}" aria-expanded="true"
+                               aria-controls="collapse-${itemList.index}"
+                               class="secondary-content-accordion__header--title"
+                               data-toggle="collapse" data-parent="secondary-content-accordion">
+                                <i class="secondary-content-accordion__icons icon icon-sign-plus"></i>
+                                <h2 class="secondary-content-accordion__header--title">
+                                    ${item.resourceGroupName}
+                                </h2>
+                            </div>
+
+                        </div>
+                        <div id="collapse-${itemList.index}" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="${item.resourceGroupName}">
+                            <div class="secondary-content-accordion__body">
+                              <div class="iframe-download-container">
+                                  <div class="iframe-download-container__iframe" data-sly-test="${item.partSolutionURL}">
+                                    <iframe src="${item.partSolutionURL @context='attribute'}">
+                                    </iframe>
+                                  </div>
+                                  <ul class="resource-list__download-links secondary-content-accordion__column">
+                                    <li data-sly-repeat.documentItem="${item.documentList}"
+                                        class="resource-list__download-item secondary-content-accordion__download-icon">
+                                        <div class="resource-list__download-document">
+                                            <div class="resource-list__title excel-title-resource-tab">
+                                                <a href="${documentItem.documentLink}"
+                                                   aria-label="Download PDF for ${ documentItem.documentName }"
+                                                   name="${item.resourceGroupName}"
+                                                   target="_blank" class="resource-list__title-link b-heading-h5 ">
+                                       			   <i id="sku-page-download-icon" class="icon icon-download" aria-hidden="true"></i>
+                                                   ${documentItem.documentName}</a>
+                                                <!--  <span data-sly-test="true" class="secondary-content-accordion__badge"></span> -->
+                                                <span class="b-body-copy-small resource-list__download-size"></span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <button data-sly-test="${item.counter > 1}"
+                                            class="resource-list__button b-button b-button__primary b-button__primary--light resource_download_all"
+                                            data-resource-links = "${item.documentLinksJson}"
+                                            data-product-family ="${data.productName}"
+                                            data-category-name="${item.resourceGroupName}"
+                                            type="button">
+                                      ${'ResourceList.DownloadAll' @ i18n}
+                                    </button>
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <sly data-sly-test="${data.externalResourceList}">
+                    <div class="panel-group secondary-content-accordion_one" role="tablist" aria-multiselectable="true">
+                        <div class="panel secondary-content-accordion__panel">
+                            <div class="panel-heading secondary-content-accordion__header" role="tab" id="p1">
+                                <div href="#collapse-t1" aria-expanded="true" aria-controls="collapse-t1"
+                                   class="secondary-content-accordion__header--title"
+                                   data-toggle="collapse" data-parent="secondary-content-accordion_one">
+                                    <i class="secondary-content-accordion__icons icon icon-sign-plus"></i>
+                                    <h2 class="secondary-content-accordion__header--title">${properties.externalLinkTabName}</h2>
+                                </div>
+                            </div>
+                            <div id="collapse-t1" class="panel-collapse collapse " role="tabpanel" aria-labelledby="p1">
+                                <div class="secondary-content-accordion__body">
+                                    <ul class="resource-list__download-links secondary-content-accordion__column">
+                                        <li class="resource-list__download-item secondary-content-accordion__download-icon" data-sly-repeat="${data.externalResourceList}">
+                                            <div class="resource-list__download-document">
+                                                <div class="resource-list__title resource-list-module__name excel-title-resource-tab">
+                                                    <a href="${item.resourceLink}" class="resource-list__title-link b-heading-h5"
+                                                       target="_blank" data-analytics-event="search-result">
+                                                        <span class="name-label">${item.externalLinkText}</span>
+                                                        <sly data-sly-test="${item.isExternalLink}">
+                                                            <i class="icon icon-link-external" aria-hidden="true"></i>
+                                                        </sly>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </sly>
+
+                <!-- DataSheet Export .xsl option. -->
+			    <div class="secondary-content-accordion__panel excel__convert-download hide" data-sly-test="${data.disableDatasheet=='false'}">
+                    <div class="panel-heading secondary-content-accordion__header" role="tab">
+                        <a href="javascript:void(0);" data-target="#collapse-excel" aria-expanded="true"
+                            aria-controls="collapse-excel"
+                            class="secondary-content-accordion__header--title"
+                            data-toggle="collapse" data-parent="secondary-content-accordion">
+                            <i class="secondary-content-accordion__icons icon icon-sign-plus secondary-content-accordion-datasheet__icons"></i>
+                            <h2 class="secondary-content-accordion__header--title excel-title">
+                                ${'dataSheetsExport' @ i18n}
+                            </h2>
+                        </a>
+                    </div>
+                    <div id="collapse-excel" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="${data.resourceGroupName}" >
+                        <div class="excel__convert-download">
+                           <ul class="resource-list__download-links secondary-content-accordion__column">
+                                <li class="resource-list__download-item secondary-content-accordion__download-icon">
+                                    <div class="resource-list__download-document">
+                                        <div class="resource-list__title">
+                                            <a class="resource-list__title-link b-heading-h5" id="export-btn">
+                                                <i id="sku-page-download-icon" class="icon icon-download" aria-hidden="true"></i>
+                                                <span id="sku-number" data-sku-number="" data-sku-extension="" data-sku-file-anchor-text="${'dataSheetsExportToFile' @ i18n}"></span>
+                                            </a>
+                                            <span class="b-body-copy-small resource-list__download-size"></span>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <span class="resource-list__disclaimer disclaimer" style="display:none;">${'ResourceList.DisclaimerMessage' @ i18n}</span>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.salesforce.services.config.SalesforceKnowledgeSearchConfiguration">
+  <OCD id="com.eaton.platform.integration.salesforce.services.config.SalesforceKnowledgeSearchConfiguration" name="Salesforce Knowledge Search Configuration" description="">
+    <AD id="isGlobalEnabled" type="Boolean" name="Enable salesforce knowledge search at a global level" description="turn on salesforce knowledge search for pages containing any of the target tags" default="true"/>
+    <AD id="targetTags" type="String" cardinality="2147483647" name="Target Tags" description="list of tags that enable knowledge search on page" default=""/>
+    <AD id="salesforceSiteUrl" type="String" name="Salesforce Site Url" default="https://eaton--rollhier.sandbox.my.site.com/EatonKnowledge"/>
+    <AD id="salesforceSearchPath" type="String" name="Salesforce Search Path" description="path to global search within salesforce site ( ex: /s/global-search )" default="/s/global-search"/>
+    <AD id="imagePath" type="String" name="Salesforce Knowledge Search Image Path" description="path to image for salesforce knowledge search" default="/content/dam/eaton/resources/knowledgeSearchIcon.png"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.salesforce.services.impl.SalesforceKnowledgeSearchServiceImpl">
+    <Object ocdref="com.eaton.platform.integration.salesforce.services.config.SalesforceKnowledgeSearchConfiguration"/>
+  </Designate>
+</metatype:MetaData>

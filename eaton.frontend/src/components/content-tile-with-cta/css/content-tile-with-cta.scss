@@ -1,0 +1,51 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.content-tile-with-cta-wrapper {
+  margin-bottom: 30px;
+
+  &__image-wrapper {
+    position: relative;
+
+    &::before {
+      display: block;
+      content: '';
+      padding-top: 75%;
+    }
+
+
+    &-image {
+      width: 100%;
+    }
+
+  }
+
+  &__text-wrapper {
+    padding: 20px 0;
+
+    &-title {
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: bold;
+    }
+
+    &-body-copy {
+      line-height: 22px;
+      letter-spacing: 0.16px;
+      margin-top: 15px;
+    }
+  }
+
+
+  &__button-wrapper-tile_button {
+    width: 100%;
+    margin: 0 15px 20px 0;
+  }
+
+}
+
+@include media-desktop-and-up {
+  .content-tile-with-cta-wrapper__text-wrapper {
+    min-height: 300px;
+  }
+}

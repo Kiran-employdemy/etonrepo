@@ -1,0 +1,399 @@
+<link rel="shortcut icon" href="/libs/granite/core/content/login/favicon.ico">
+<title>Vanity Dashboard</title>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+	<sly data-sly-call="${clientLib.all @ categories='coralui3,coralui2,granite.ui.coral.foundation,granite.ui.shell,eaton-vanity.app'}"
+		 data-sly-unwrap />
+	<coral-shell class="coral3-Shell">
+		<coral-shell-header class="coral--dark coral-Shell-header">
+			<coral-shell-header-home data-globalnav-navigator-main-href="/mnt/overlay/granite/ui/content/shell/globalnav.html?consoleId=cq-projects"
+									 class="coral-Shell-header-home" role="heading" aria-level="2">
+				<a is="coral-shell-homeanchor" icon="adobeExperienceManagerColor" href="#" class="coral-Shell-homeAnchor" role="heading"
+				   aria-level="2">
+					<coral-icon class="coral-Icon coral-Icon--sizeM coral-Icon--adobeExperienceManagerColor" icon="adobeExperienceManagerColor"
+								size="M" role="img" aria-label="adobe experience manager color"></coral-icon>
+					<coral-shell-homeanchor-label class="coral-Shell-homeAnchor-label">Adobe Experience Manager</coral-shell-homeanchor-label>
+				</a>
+			</coral-shell-header-home>
+			<coral-shell-header-actions class="coral-Shell-header-actions">
+				<coral-shell-menubar class="coral-Shell-menubar">
+					<coral-shell-menubar-item class="foundation-toggleable-control coral-Shell-menubar-item" title="Help"
+											  data-foundation-toggleable-control-src="/mnt/overlay/granite/ui/content/shell/help.html" icon="helpCircle">
+		</coral-shell-menubar-item>
+					<coral-shell-menubar-item class="foundation-toggleable-control coral-Shell-menubar-item" title="Solutions"
+											  data-foundation-toggleable-control-src="/mnt/overlay/granite/ui/content/shell/solutionswitcher.html" icon="apps">
+					</coral-shell-menubar-item>
+					<coral-shell-menubar-item title="Notifications" icon="bell" class="granite-shell-badge coral-Shell-menubar-item"
+											  data-granite-shell-badge-src="/mnt/overlay/granite/ui/content/shell/header/actions/pulse.data.json"
+											  data-granite-shell-badge-console="/notifications.html{?ref}">
+					</coral-shell-menubar-item>
+					<coral-shell-menubar-item class="foundation-toggleable-control coral-Shell-menubar-item" title="User"
+											  data-foundation-toggleable-control-src="/mnt/overlay/granite/ui/content/shell/userproperties.html" icon="user">
+					</coral-shell-menubar-item>
+
+				</coral-shell-menubar>
+			</coral-shell-header-actions>
+			<coral-shell-header-content class="coral-Shell-header-content"></coral-shell-header-content>
+		</coral-shell-header>
+		<coral-shell-content role="main" class="coral-Shell-content" id="processListing">
+<!--			<div id="vanity-url-creation" class="foundation-layout-panel" style="display:none">-->
+<!--				<div class="foundation-layout-panel-bodywrapper">-->
+<!--					<div class="foundation-layout-panel-body">-->
+<!--						<div class="foundation-layout-panel-content">-->
+<!--							<div class="vanity-url-creation">-->
+<!--								<form class="coral-Form coral-Form&#45;&#45;aligned u-columnLarge" id="vanity-url-form">-->
+<!--									<div class="form-body">-->
+<!--										<div class="vanity-url-heading">-->
+<!--											<h3 class="coral-Form-fieldset-legend" id="processName">Vanity URL Creation</h3>-->
+<!--										</div>-->
+<!--										<section class="coral-Form-fieldset">-->
+<!--											<div class="vanity-url-section">-->
+<!--												<div class="coral-Form-fieldwrapper coral-Form-rightsection">-->
+<!--													<label>Vanity URL(example-one, example-two)</label>-->
+<!--													<coral-multifield class="coral-Form-field coral3-Multifield" aria-labelledby="label_64afab61-7a4e-4d10-9df1-ecf6253ba03a description_64afab61-7a4e-4d10-9df1-ecf6253ba03a"-->
+<!--																	  data-foundation-validation="" data-validation="" data-granite-coral-multifield-name="./vanityUrlList"-->
+<!--																	  data-granite-coral-multifield-composite="" id="coral-collection-id-60" role="list" aria-invalid="false"><button-->
+<!--															type="button" is="coral-button" coral-multifield-add="" class="coral3-Button coral3-Button&#45;&#45;secondary"-->
+<!--															size="M" variant="secondary">-->
+<!--														<coral-button-label>Add</coral-button-label>-->
+<!--													</button>-->
+<!--														<input class="foundation-field-related" type="hidden" name="./vanityUrlList@Delete"><template-->
+<!--																coral-multifield-template="">-->
+<!--															<div>-->
+<!--																<div>-->
+<!--																	<div class="coral-Form-fieldwrapper"><input class="coral-Form-field coral-Textfield vanity-url-input"-->
+<!--																												type="text" name="./vanityUrl" value="" aria-labelledby="label_64afab61-7a4e-4d10-9df1-ecf6253ba03a"-->
+<!--																												data-validation=""></div>-->
+<!--																</div>-->
+<!--															</div>-->
+<!--														</template></coral-multifield>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--											<div class="vanity-url-detaile-section">-->
+<!--												<div class="coral-Form-fieldwrapper">-->
+<!--													<label>Default published page</label>-->
+<!--													<foundation-autocomplete class="coral-Form-field default-published-url" name="./defaultPublishPage"-->
+<!--																			 pickersrc="/mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.html?_charset_=utf-8&amp;path={value}&amp;root=%2fcontent&amp;filter=hierarchyNotFile&amp;selectionCount=single"-->
+<!--																			 labelledby="label_b56b95f8-a1a7-4fcd-bd4f-e2f7c3b460b7" data-foundation-validation="" role="combobox">-->
+<!--														<div class="foundation-autocomplete-inputgroupwrapper">-->
+<!--															<div class="coral-InputGroup"><input is="coral-textfield" class="coral3-Textfield coral-InputGroup-input"-->
+<!--																								 autocomplete="off" placeholder="" id="coral-id-523" aria-labelledby="label_b56b95f8-a1a7-4fcd-bd4f-e2f7c3b460b7"-->
+<!--																								 labelledby="label_b56b95f8-a1a7-4fcd-bd4f-e2f7c3b460b7" aria-invalid="false"><span class="coral-InputGroup-button"><button-->
+<!--																	is="coral-button" class="coral3-Button coral3-Button&#45;&#45;secondary" size="M" variant="secondary" title="Open Selection Dialog"-->
+<!--																	type="button" aria-label="Open Selection Dialog">-->
+<!--																	<coral-icon class="coral3-Icon coral3-Icon&#45;&#45;sizeS coral3-Icon&#45;&#45;select" icon="select" size="S" role="img"-->
+<!--																				aria-label="select"></coral-icon>-->
+<!--																	<coral-button-label></coral-button-label>-->
+<!--																</button></span></div>-->
+<!--														</div>-->
+<!--														<coral-overlay foundation-autocomplete-suggestion="" class="foundation-picker-buttonlist coral3-Overlay"-->
+<!--																	   data-foundation-picker-buttonlist-src="/mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/suggestion{.offset,limit}.html?_charset_=utf-8&amp;root=%2fcontent&amp;filter=hierarchyNotFile{&amp;query}"-->
+<!--																	   aria-hidden="true" style="display: none;"></coral-overlay>-->
+<!--														<coral-taglist foundation-autocomplete-value="" name="./defaultPublishPage" class="coral3-TagList"-->
+<!--																	   aria-disabled="false" role="listbox" aria-live="off" aria-atomic="false" aria-relevant="additions"-->
+<!--																	   aria-readonly="false" aria-invalid="false" aria-required="false">-->
+<!--															<coral-tag value="" tabindex="0" class="coral3-Tag coral3-Tag&#45;&#45;large" role="option" aria-selected="false"><button-->
+<!--																	is="coral-button" class="coral3-Button coral3-Button&#45;&#45;minimal coral3-Tag-removeButton" size="M" variant="minimal"-->
+<!--																	tracking="off" handle="button" type="button" icon="close" iconsize="XS" title="Remove" tabindex="-1"-->
+<!--																	coral-close="">-->
+<!--																<coral-icon class="coral3-Icon coral3-Icon&#45;&#45;close coral3-Icon&#45;&#45;sizeXS" icon="close" size="XS" role="img"-->
+<!--																			aria-label="close"></coral-icon>-->
+<!--																<coral-button-label></coral-button-label>-->
+<!--															</button>-->
+<!--																<coral-tag-label></coral-tag-label><input handle="input" type="hidden" name="./defaultPublishPage" value="">-->
+<!--															</coral-tag><object aria-hidden="true" tabindex="-1" style="display:block; position:absolute; top:0; left:0; height:100%; width:100%; opacity:0; overflow:hidden; z-index:-100;"-->
+<!--																				type="text/html" data="about:blank">&#8203;</object>-->
+<!--														</coral-taglist><input class="foundation-field-related" type="hidden" name="./defaultPublishPage@Delete">-->
+<!--													</foundation-autocomplete>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--											<div class="additional-published-pages">-->
+<!--												<div class="coral-Form-fieldwrapper">-->
+<!--													<div class="label">-->
+<!--														<label>Additional published landing pages</label>-->
+<!--													</div>-->
+<!--													<coral-multifield class="coral-Form-field coral3-Multifield" aria-labelledby="label_db2e61d6-3eb7-43e9-8e62-caf00fa97362 description_db2e61d6-3eb7-43e9-8e62-caf00fa97362"-->
+<!--																	  data-foundation-validation="" data-validation="" data-granite-coral-multifield-name="./additionalPageList"-->
+<!--																	  data-granite-coral-multifield-composite="" id="coral-collection-id-62" role="list" aria-invalid="false"><button-->
+<!--															type="button" is="coral-button" coral-multifield-add="" class="coral3-Button coral3-Button&#45;&#45;secondary"-->
+<!--															size="M" variant="secondary">-->
+<!--														<coral-button-label>Add</coral-button-label>-->
+<!--													</button>-->
+<!--														<input class="foundation-field-related" type="hidden" name="./additionalPageList@Delete"><template-->
+<!--																coral-multifield-template="">-->
+<!--															<div>-->
+<!--																<div>-->
+<!--																	<div class="coral-Form-fieldwrapper">-->
+<!--																		<foundation-autocomplete class="coral-Form-field additional-url-input" name="./additionalPage"-->
+<!--																								 pickersrc="/mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.html?_charset_=utf-8&amp;path={value}&amp;root=%2fcontent&amp;filter=hierarchyNotFile&amp;selectionCount=single"-->
+<!--																								 labelledby="label_db2e61d6-3eb7-43e9-8e62-caf00fa97362" data-foundation-validation="">-->
+<!--																			<coral-overlay foundation-autocomplete-suggestion="" class="foundation-picker-buttonlist"-->
+<!--																						   data-foundation-picker-buttonlist-src="/mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/suggestion{.offset,limit}.html?_charset_=utf-8&amp;root=%2fcontent&amp;filter=hierarchyNotFile{&amp;query}">-->
+<!--																			</coral-overlay>-->
+<!--																			<coral-taglist foundation-autocomplete-value="" name="./additionalPage">-->
+<!--																				<coral-tag value=""></coral-tag>-->
+<!--																			</coral-taglist><input class="foundation-field-related" type="hidden" name="./additionalPage@Delete">-->
+<!--																		</foundation-autocomplete>-->
+<!--																	</div>-->
+<!--																</div>-->
+<!--															</div>-->
+<!--														</template></coral-multifield>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</section>-->
+<!--										<div class="form-submit-buttons">-->
+<!--											<button is="coral-button" class="coral-Form&#45;&#45;aligned" id="vanity-submit-id" variant="secondary"-->
+<!--													coral-wizardview-previous="" size="L">-->
+<!--												<coral-button-label>Create</coral-button-label>-->
+<!--											</button>-->
+<!--											<button type="reset" is="coral-button" class="coral-Form&#45;&#45;aligned" id="reset" variant="warning"-->
+<!--													coral-wizardview-previous="" size="L">-->
+<!--												<coral-button-label>Cancel</coral-button-label>-->
+<!--											</button>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</form>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+
+			<div class="foundation-layout-table-panel">
+				<div class="vanity-url-section">
+					<div class="coral-Form-fieldwrapper coral-Form-leftsection">
+						<div class="coral-Form-fieldwrapper">
+							<label id="label-vertical-0" class="coral-Form-fieldlabel">Domain Url</label>
+							<coral-select class="coral-Form-field" placeholder="Select one" name="./vanityTopDomain" labelledby="label-vertical-0" id="select_Domain_URL">
+								<coral-select-item value="eaton.com" selected>eaton.com</coral-select-item>
+								<coral-select-item value="eaton-cummins.com">eaton-cummins.com</coral-select-item>
+								<coral-select-item value="greenswitching.com">greenswitching.com</coral-select-item>
+								<coral-select-item value="phoenixtecpower.com">phoenixtecpower.com</coral-select-item>
+							</coral-select>
+						</div>
+					</div>
+				</div>
+				<table is="coral-table" id="dataTable" class="display" style="width:100%">
+					<thead is="coral-table-head">
+					<tr is="coral-table-row">
+						<th is="coral-table-headercell">Title</th>
+						<th is="coral-table-headercell">Vanity URL</th>
+						<th is="coral-table-headercell">Domain</th>
+						<th is="coral-table-headercell">Created Date</th>
+						<th is="coral-table-headercell">Last Modified</th>
+						<th is="coral-table-headercell">Publish Date</th>
+						<th is="coral-table-headercell">Status</th>
+					</tr>
+					</thead>
+					<tbody is="coral-table-body" divider="cell">
+					</tbody>
+					<tfoot>
+					<tr>
+						<th is="coral-table-headercell">Status</th>
+					</tr>
+					</tfoot>
+				</table>
+				<div id="customForm">
+					<div id="vanity-url-creation" class="foundation-layout-panel" style="">
+						<div class="foundation-layout-panel-bodywrapper">
+							<div class="foundation-layout-panel-body">
+								<div class="foundation-layout-panel-content">
+									<div class="vanity-url-creation">
+
+										<form class="coral-Form coral-Form--aligned u-columnLarge" id="vanity-url-form">
+											<div class="form-body">
+												<div class="vanity-url-heading">
+													<h3 class="coral-Form-fieldset-legend" id="processName">Vanity URL Creation</h3>
+												</div>
+												<section class="coral-Form-fieldset">
+													<div class="additional-published-pages">
+														<div class="coral-Form-fieldwrapper">
+															<div class="label">
+																<label id="label_14b31a13-4318-4e78-8d9d-b3c1af4dceb3" class="coral-Form-fieldlabel">Title<sup>*</sup></label>
+															</div>
+															<input class="coral-Form-field coral-Textfield" type="text" name="./vanityTitle" value="" aria-labelledby="label_14b31a13-4318-4e78-8d9d-b3c1af4dceb3" data-validation="">
+														</div>
+													</div>
+													<div class="vanity-url-section">
+
+<!--														<div class="coral-Form-fieldwrapper coral-Form-leftsection">-->
+<!--															<label>Domain Url</label>-->
+<!--															<span class="coral-Form-field coral-Select" data-init="select" data-collision="none">-->
+<!--													<button type="button" class="coral-Select-button coral-MinimalButton" id="coral-91" aria-haspopup="true"-->
+<!--															aria-expanded="false" data-toggle="selectlist" data-target="#coral-101" role="button" aria-owns="coral-89">-->
+<!--														<span class="coral-Select-button-text" id="coral-96">eaton.com</span>-->
+<!--													</button>-->
+<!--													<select name="./vanityDomainName" class="coral-Select-select coral-Select-select&#45;&#45;native" aria-labelledby="label_b0f35561-29d7-4aef-8e30-abcd4798cd84"-->
+<!--															data-validation="" tabindex="-1" aria-hidden="true" style="height: 38px;">-->
+<!--														<option value="eaton.com">eaton.com</option>-->
+<!--														<option value="eaton-cummins.com">eaton-cummins.com</option>-->
+<!--														<option value="greenswitching.com">greenswitching.com</option>-->
+<!--														<option value="phoenixtecpower.com">phoenixtecpower.com</option>-->
+<!--													</select>-->
+<!--													<ul class="coral-SelectList is-above" id="coral-101" role="listbox" aria-hidden="true" tabindex="-1"-->
+<!--														aria-controls="coral-90" aria-activedescendant="coral-93" style="top: -169px; left: 0px;">-->
+<!--														<li class="coral-SelectList-item coral-SelectList-item&#45;&#45;option" data-value="eaton.com"-->
+<!--															aria-selected="false" role="option" id="coral-91">eaton.com</li>-->
+<!--														<li class="coral-SelectList-item coral-SelectList-item&#45;&#45;option" data-value="eaton-cummins.com"-->
+<!--															aria-selected="false" role="option" id="coral-92">eaton-cummins.com</li>-->
+<!--														<li class="coral-SelectList-item coral-SelectList-item&#45;&#45;option is-highlighted" data-value="greenswitching.com"-->
+<!--															aria-selected="false" role="option" id="coral-93" tabindex="0">greenswitching.com</li>-->
+<!--														<li class="coral-SelectList-item coral-SelectList-item&#45;&#45;option" data-value="phoenixtecpower.com"-->
+<!--															aria-selected="false" role="option" id="coral-94">phoenixtecpower.com</li>-->
+<!--													</ul><input type="hidden" name="./vanityDomainName@Delete">-->
+<!--												</span>-->
+<!--														</div>-->
+
+                                                        <div class="coral-Form-fieldwrapper coral-Form-leftsection">
+                                                            <label id="label-vertical-1" class="coral-Form-fieldlabel">Domain Url</label>
+                                                            <coral-select class="coral-Form-field" placeholder="Select one" name="./vanityTopDomain" labelledby="label-vertical-0" id="select_Domain_URL2">
+                                                                <coral-select-item value="eaton.com" selected>eaton.com</coral-select-item>
+                                                                <coral-select-item value="eaton-cummins.com">eaton-cummins.com</coral-select-item>
+                                                                <coral-select-item value="greenswitching.com">greenswitching.com</coral-select-item>
+                                                                <coral-select-item value="phoenixtecpower.com">phoenixtecpower.com</coral-select-item>
+                                                            </coral-select>
+                                                        </div>
+														<div class="coral-Form-fieldwrapper coral-Form-rightsection">
+															<label>Vanity URL(example-one, example-two)<sup>*</sup> </label>
+															<coral-multifield class="coral-Form-field coral3-Multifield" aria-labelledby="label_64afab61-7a4e-4d10-9df1-ecf6253ba03a description_64afab61-7a4e-4d10-9df1-ecf6253ba03a"
+																			  data-foundation-validation="" data-validation="" data-granite-coral-multifield-name="./vanityUrlList"
+																			  data-granite-coral-multifield-composite="" id="coral-collection-id-60" role="list" aria-invalid="false"><button
+																	type="button" is="coral-button" coral-multifield-add="" class="coral3-Button coral3-Button--secondary"
+																	size="M" variant="secondary">
+																<coral-button-label>Add</coral-button-label>
+															</button>
+																<input class="foundation-field-related" type="hidden" name="./vanityUrlList@Delete"><template
+																		coral-multifield-template="">
+																	<div>
+																		<div>
+																			<editor-field name="position">
+																				<div class="coral-Form-fieldwrapper"><input class="coral-Form-field coral-Textfield vanity-url-input"
+																															type="text" name="./vanityUrl" value="" aria-labelledby="label_64afab61-7a4e-4d10-9df1-ecf6253ba03a"
+																															data-validation=""></div>
+																			</editor-field>
+																		</div>
+																	</div>
+																</template></coral-multifield>
+														</div>
+													</div>
+													<div class="vanity-url-detaile-section">
+														<div class="coral-Form-fieldwrapper">
+															<label>Default published page<sup>*</sup> </label>
+															<foundation-autocomplete class="coral-Form-field default-published-url vanitydefault-published-url" name="./defaultPublishPage"
+																					 pickersrc="/mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.html?_charset_=utf-8&amp;path={value}&amp;root=%2fcontent&amp;filter=hierarchyNotFile&amp;selectionCount=single"
+																					 labelledby="label_b56b95f8-a1a7-4fcd-bd4f-e2f7c3b460b7" data-foundation-validation="" role="combobox">
+																<div class="foundation-autocomplete-inputgroupwrapper">
+																	<div class="coral-InputGroup"><input is="coral-textfield" class="coral3-Textfield coral-InputGroup-input"
+																										 autocomplete="off" placeholder="" id="coral-id-523" aria-labelledby="label_b56b95f8-a1a7-4fcd-bd4f-e2f7c3b460b7"
+																										 labelledby="label_b56b95f8-a1a7-4fcd-bd4f-e2f7c3b460b7" aria-invalid="false"><span class="coral-InputGroup-button"><button
+																			is="coral-button" class="coral3-Button coral3-Button--secondary" size="M" variant="secondary" title="Open Selection Dialog"
+																			type="button" aria-label="Open Selection Dialog">
+																	<coral-icon class="coral3-Icon coral3-Icon--sizeS coral3-Icon--select" icon="select" size="S" role="img"
+																				aria-label="select"></coral-icon>
+																	<coral-button-label></coral-button-label>
+																</button></span></div>
+																</div>
+																<coral-overlay foundation-autocomplete-suggestion="" class="foundation-picker-buttonlist coral3-Overlay"
+																			   data-foundation-picker-buttonlist-src="/mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/suggestion{.offset,limit}.html?_charset_=utf-8&amp;root=%2fcontent&amp;filter=hierarchyNotFile{&amp;query}"
+																			   aria-hidden="true" style="display: none;"></coral-overlay>
+																<coral-taglist foundation-autocomplete-value="" name="./defaultPublishPage" class="coral3-TagList"
+																			   aria-disabled="false" role="listbox" aria-live="off" aria-atomic="false" aria-relevant="additions"
+																			   aria-readonly="false" aria-invalid="false" aria-required="false">
+																	<coral-tag value="" tabindex="0" class="coral3-Tag coral3-Tag--large" role="option" aria-selected="false"><button
+																			is="coral-button" class="coral3-Button coral3-Button--minimal coral3-Tag-removeButton" size="M" variant="minimal"
+																			tracking="off" handle="button" type="button" icon="close" iconsize="XS" title="Remove" tabindex="-1"
+																			coral-close="">
+																		<coral-icon class="coral3-Icon coral3-Icon--close coral3-Icon--sizeXS" icon="close" size="XS" role="img"
+																					aria-label="close"></coral-icon>
+																		<coral-button-label></coral-button-label>
+																	</button>
+																		<coral-tag-label></coral-tag-label><input handle="input" type="hidden" name="./defaultPublishPage" value="">
+																	</coral-tag><object aria-hidden="true" tabindex="-1" style="display:block; position:absolute; top:0; left:0; height:100%; width:100%; opacity:0; overflow:hidden; z-index:-100;"
+																						type="text/html" data="about:blank">&#8203;</object>
+																</coral-taglist><input class="foundation-field-related" type="hidden" name="./defaultPublishPage@Delete">
+															</foundation-autocomplete>
+														</div>
+													</div>
+													<div class="additional-published-pages">
+														<div class="coral-Form-fieldwrapper">
+															<div class="label">
+																<label>Additional published landing pages</label>
+															</div>
+															<coral-multifield class="coral-Form-field coral3-Multifield" aria-labelledby="label_db2e61d6-3eb7-43e9-8e62-caf00fa97362 description_db2e61d6-3eb7-43e9-8e62-caf00fa97362"
+																			  data-foundation-validation="" data-validation="" data-granite-coral-multifield-name="./additionalPageList"
+																			  data-granite-coral-multifield-composite="" id="coral-collection-id-62" role="list" aria-invalid="false"><button
+																	type="button" is="coral-button" coral-multifield-add="" class="coral3-Button coral3-Button--secondary"
+																	size="M" variant="secondary">
+																<coral-button-label>Add</coral-button-label>
+															</button>
+																<input class="foundation-field-related" type="hidden" name="./additionalPageList@Delete"><template
+																		coral-multifield-template="">
+																	<div>
+																		<div>
+																			<div class="coral-Form-fieldwrapper">
+																				<foundation-autocomplete class="coral-Form-field additional-url-input" name="./additionalPage"
+																										 pickersrc="/mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.html?_charset_=utf-8&amp;path={value}&amp;root=%2fcontent&amp;filter=hierarchyNotFile&amp;selectionCount=single"
+																										 labelledby="label_db2e61d6-3eb7-43e9-8e62-caf00fa97362" data-foundation-validation="">
+																					<coral-overlay foundation-autocomplete-suggestion="" class="foundation-picker-buttonlist"
+																								   data-foundation-picker-buttonlist-src="/mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/suggestion{.offset,limit}.html?_charset_=utf-8&amp;root=%2fcontent&amp;filter=hierarchyNotFile{&amp;query}">
+																					</coral-overlay>
+																					<coral-taglist foundation-autocomplete-value="" name="./additionalPage">
+																						<coral-tag value=""></coral-tag>
+																					</coral-taglist><input class="foundation-field-related" type="hidden" name="./additionalPage@Delete">
+																				</foundation-autocomplete>
+																			</div>
+																		</div>
+																	</div>
+																</template></coral-multifield>
+														</div>
+													</div>
+
+													<div class="additional-published-pages">
+														<div class="coral-Form-fieldwrapper note">
+															<div class="label">
+																<label class="coral-Form-fieldlabel" id="label_15b26779-2328-4946-b99e-10546e2a31c2">Notes</label>
+															</div>
+
+															<textarea class="coral-Form-field foundation-layout-util-resizable-none coral-Textfield coral-Textfield--multiline" name="./vanityNote" rows="5" aria-labelledby="label_15b26779-2328-4946-b99e-10546e2a31c2" data-validation=""></textarea>
+
+														</div>
+													</div>
+												</section>
+
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</coral-shell-content>
+	</coral-shell>
+</sly>
+
+
+
+<link href="https://cdn.datatables.net/1.10.18/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.datatables.net/1.10.18/js/jquery.dataTables.js"></script>
+<link href="https://cdn.datatables.net/buttons/1.5.4/css/buttons.dataTables.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.datatables.net/buttons/1.5.4/js/dataTables.buttons.js"></script>
+<link href="https://cdn.datatables.net/select/1.2.6/css/select.dataTables.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.datatables.net/select/1.2.6/js/dataTables.select.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/css/select2.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.min.js"></script>
+<link href="https://sandbox.scoretility.com/static/js/Editor-1.8.1/css/editor.dataTables.css" rel="stylesheet" type="text/css" />
+<script src="https://sandbox.scoretility.com/static/js/Editor-1.8.1/js/dataTables.editor.js"></script>
+<link rel=stylesheet type=text/css href="https://code.jquery.com/ui/1.12.1/themes/ui-lightness/jquery-ui.css">
+<link rel=stylesheet type=text/css href="https://cdn.datatables.net/1.10.18/css/dataTables.jqueryui.css?v=1.10.18">
+<link rel=stylesheet type=text/css href="https://cdn.datatables.net/buttons/1.5.2/css/buttons.jqueryui.css?v=1.5.2">
+<link rel=stylesheet type=text/css href="https://cdn.datatables.net/fixedcolumns/3.2.5/css/fixedColumns.jqueryui.css?v=3.2.5">
+<link rel=stylesheet type=text/css href="https://sandbox.scoretility.com/static/js/Editor-1.8.1/css/editor.jqueryui.css?v=1539093792">
+<link rel=stylesheet type=text/css href="https://cdn.datatables.net/select/1.2.6/css/select.jqueryui.css?v=1.2.6">
+
+<script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.18/js/dataTables.jqueryui.js?v=1.10.18"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/buttons/1.5.2/js/buttons.jqueryui.js?v=1.5.2"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/fixedcolumns/3.2.5/js/dataTables.fixedColumns.js?v=3.2.5"></script>
+<script src="https://sandbox.scoretility.com/static/js/Editor-1.8.1/js/editor.jqueryui.js"></script>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.workflows.CCMSPDFMetadataUpdate">
+  <property name="process.label" type="String" value=" Eaton CCMS - Update PDF Metadata"/>
+  <service>
+    <provide interface="com.day.cq.workflow.exec.WorkflowProcess"/>
+  </service>
+  <reference name="resolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" field="resolverFactory"/>
+  <implementation class="com.eaton.platform.core.workflows.CCMSPDFMetadataUpdate"/>
+</scr:component>

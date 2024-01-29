@@ -1,0 +1,245 @@
+<!--/* BEGIN M-40 Product Tabs (Family/SKU) */-->
+<template data-sly-template.data="${ @ data }">
+<sly data-sly-use.chatConfig="com.eaton.platform.core.models.ChatConfigModel"></sly>
+
+<sly data-sly-test="${data.noMatchFound == true }">
+  <sly data-sly-resource="${'content' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+</sly>
+<sly data-sly-test="${data.noMatchFound == false }">
+  <div class="eaton-product-tabs ${ data.useDarktheme  ? 'dark-theme-tabs' : '' }" >
+    <div class="">
+      <sly data-sly-test="${ data.graphicToggle }" >
+        <!-- inputs neeeded for tab behavior -->
+        <input
+          data-sly-repeat="${data.tabslist}"
+             id="tab-${itemList.index}"
+          data-sly-attribute.checked="${item.selected}"
+          class="${item.href}"
+          type="radio"
+          name="product-tab"
+        >
+      </sly>
+	<div class="container container-tabs sticky-tabs">
+      <div class="row eaton-product-tabs__buttons">
+        <div class="col-md-4">
+          <div class="eaton-product-tabs__description">
+          <sly data-sly-test="${data.eyebrowtitle}">
+		  <sly data-sly-test="${data.eyebrowLink}">
+            <a href="${data.eyebrowLink}"
+              class="b-eyebrow-small b-eyebrow-small-link"
+               aria-label="Go to ${data.eyebrowtitle}" ><i class="icon icon-chevron-left" aria-hidden="true"></i><bdi>${data.eyebrowtitle}</bdi></a>
+			</sly>
+			<sly data-sly-test="${ !data.eyebrowLink}">
+			 <span class="b-eyebrow-small"
+              aria-label="Go to ${data.eyebrowtitle}" >
+                ${data.eyebrowtitle}
+            </span>
+			</sly>
+            </sly>
+            <div class="b-heading-h5">
+              ${data.productName}
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-5 eaton-product-tabs__buttons__center">
+          <div class="row">
+            <!-- graphicToggle without <a> -->
+            <sly data-sly-test="${ data.graphicToggle }" >
+
+              <label data-sly-repeat="${data.tabslist}" for="tab-${itemList.index}" class="tab-label ${item.selected ? 'tab-active' : ''}" style="width:33.33%;padding: 0;" >
+             <a
+                href="${item.href}"
+                target="${item.target}"
+                aria-label="Go to ${item.title}"
+              	style="padding: 4rem 0;">
+                <i class="icon icon-${item.icons}" aria-hidden="true"></i>
+                <span>${item.title}</span>
+              </a>
+              </label>
+
+            </sly>
+
+            <!-- graphicToggle with <a> -->
+            <sly data-sly-test="${ !data.graphicToggle }" >
+              <a data-sly-repeat="${data.tabs}"
+                href="${item.href}"
+                target="${item.target}"
+                aria-label="Go to ${item.title}"
+              >
+                <div for="tab-${itemList.index}" class="tab-label ${item.selected ? 'tab-active' : ''}" >
+                  <i class="icon icon-${item.icon}" aria-hidden="true"></i>
+                  <span>${item.title}</span>
+                </div>
+              </a>
+            </sly>
+          </div>
+        </div>
+
+        <div class="col-md-3 u-text-center eaton-product-tabs__dropdown-container">
+          <div class="dropdown">
+			<sly data-sly-test="${ data.howToBuyOptions }">
+            <button id="dHowtoBuy"
+              class="eaton-product-tabs__dropdown button--reset"
+              type="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false" >
+              ${data.howToBuyLabel}
+			<i class="icon icon-chevron-down" aria-hidden="true"></i>
+			 </button>
+
+            <ul data-sly-list="${ data.howToBuyOptions }"
+                class="dropdown-menu eaton-product-tabs__dropdown__content"
+                id="dHowtoBuyList"
+                aria-labelledby="dHowtoBuy" >
+              <li data-sly-test="${!item.skuOnly}">
+                <a data-sly-test="${!item.isModalEnabled}"
+                   href="${item.link @context='html'}"
+                 target="${item.openInNewWindow}"
+                 aria-label="Go to ${item.title}"
+                  data-page-path-tracking="${item.isSuffixEnabled ? 'true' : 'false'}" 
+                   data-source-tracking="${item.isSourceTrackingEnabled ? 'true' : 'false'}">
+                <i class="icon icon-${item.dropdownIcon}" aria-hidden="true"></i><span>${item.title}</span>
+                </a>
+                <a data-sly-test="${item.isModalEnabled}"
+                   class="buy-now__modal__trigger"
+                   id="buyNowTrigger"
+                   data-toggle="modal"
+                   data-target="#buyNowModal"
+                   aria-label="Go to ${item.title}">
+                  <i class="icon icon-${item.dropdownIcon}" aria-hidden="true"></i><span>${item.title}</span>
+                </a>
+              </li>
+            </ul>
+			</sly>
+			<sly data-sly-test="${ !data.howToBuyOptions }">
+              <a data-sly-test="${!data.isModalEnabled}"
+                 href="${data.howToBuyLink @context='html'}"
+                 target="${data.howToBuytarget}"
+                 aria-label="Go to ${data.howToBuyLabel}"
+                 data-page-path-tracking="${data.isSuffixEnabled ? 'true' : 'false'}"
+                 data-source-tracking="${data.isSourceTrackingEnabled ? 'true' : 'false'}">
+                <button id="dHowtoBuy"
+                        class="eaton-product-tabs__dropdown button--reset"
+                        type="button">
+                  ${data.howToBuyLabel}
+                </button>
+              </a>
+              <a data-sly-test="${data.isModalEnabled}"
+                 href="${data.howToBuyLink @context='html'}"
+                 onclick="event.preventDefault();"
+                 aria-label="Go to ${data.howToBuyLabel}">
+                <button id="buyNowTrigger"
+                        class="eaton-product-tabs__dropdown button--reset buy-now__modal__trigger"
+                        data-toggle="modal"
+                        data-target="#buyNowModal"
+                        aria-label="Go to ${data.howToBuyLabel}"
+                        type="button">
+                  ${data.howToBuyLabel}
+                </button>
+              </a>
+            </sly>
+          </div>
+        </div>
+      </div>
+	  </div>
+		<div class="container container-tabs">
+      <div class="row eaton-product-tabs__page-utility">
+        <div data-sly-unwrap="${!wcmmode.edit}">
+          <sly data-sly-resource="${'back-to-search' @ resourceType='/apps/eaton/components/search/back-to-search'}"></sly>
+        </div>
+        <div data-sly-unwrap="${!wcmmode.edit}">
+          <sly data-sly-resource="${'share-cta' @ resourceType='/apps/eaton/components/structure/social-share'}"></sly>
+        </div>
+        <div  data-sly-test = "${chatConfig.showComponent}" data-sly-unwrap="${!wcmmode.edit}">
+          <sly data-sly-resource="${'live-chat' @ resourceType='/apps/eaton/components/content/chat'}"></sly>
+        </div>
+      </div>
+	  </div>
+
+
+
+      <sly data-sly-test="${ data.graphicToggle }">
+        <!-- graphic toggle use 3 panels that are hide/show via css -->
+		 <sly data-sly-test="${ wcmmode.edit || wcmmode.design }">
+
+        <div class="row">
+          <div
+            class="col-sm-12 "
+            data-tab-name="tab-0" >
+            <sly data-sly-test="${ wcmmode.edit }">
+              <div class="alert alert-warning">Content on tab 1</div>
+            </sly>
+
+              <sly data-sly-resource="${'content-tab-1' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+
+          </div>
+          <div
+            class="col-sm-12 "
+            data-tab-name="tab-1" >
+            <sly data-sly-test="${ wcmmode.edit }">
+              <div class="alert alert-warning">Content on tab 2</div>
+            </sly>
+
+              <sly data-sly-resource="${'content-tab-2' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+
+          </div>
+          <div
+            class="col-sm-12 "
+            data-tab-name="tab-2" >
+            <sly data-sly-test="${ wcmmode.edit }">
+              <div class="alert alert-warning">Content on tab 3</div>
+            </sly>
+
+              <sly data-sly-resource="${'content-tab-3' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+
+          </div>
+        </div>
+
+		</sly>
+		<sly data-sly-test="${ wcmmode.preview || wcmmode.disabled }">
+
+            <div class="row">
+              <div class="col-sm-12 eaton-product-tabs__tab-panel ${ data.showOverviewTab ? '' : 'hidden' }"
+                   data-tab-name="tab-0" >
+                <sly data-sly-test="${ wcmmode.edit }">
+                  <div class="alert alert-warning">Content on tab 1</div>
+                </sly>
+                <sly data-sly-resource="${'content-tab-1' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+              </div>
+              <div class="col-sm-12 eaton-product-tabs__tab-panel ${ data.showMiddleTab ? '' : 'hidden' }"
+                   data-tab-name="tab-1" >
+                <span class="print-tab-heading specification-print-heading">${ 'productfamily.specification' @ i18n }</span>
+                <sly data-sly-test="${ wcmmode.edit }">
+                  <div class="alert alert-warning">Content on tab 2</div>
+                </sly>
+                <sly data-sly-resource="${'content-tab-2' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+              </div>
+              <div class="col-sm-12 eaton-product-tabs__tab-panel ${ data.showResourcesTab ? '' : 'hidden' }"
+                   data-tab-name="tab-2" >
+                <span class="print-tab-heading resource-print-heading">${ 'productfamily.downloadlink' @ i18n }</span>
+                <sly data-sly-test="${ wcmmode.edit }">
+                  <div class="alert alert-warning">Content on tab 3</div>
+                </sly>
+                <sly data-sly-use.temp="/apps/eaton/components/shared/templates/qr-code.html"></sly>
+                <sly data-sly-call="${ temp.data @ data=data }"></sly>
+                <sly data-sly-resource="${'content-tab-3' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+              </div>
+            </div>
+		</sly>
+      </sly>
+    </div>
+  </div>
+
+<div data-sly-test="${ data.intraTabHref }" class="module-intra-tab-link">
+    <div class="container">
+      <a  data-sly-test="${ data.intraTabTitle }"
+          target="${ data.intraTabTarget }"
+          href="${ data.intraTabHref }"
+          aria-label="${ data.intraTabTitle }"><span><bdi>${ data.intraTabTitle }</bdi></span><i class="icon icon-chevron-right" aria-hidden="true"></i></a>
+    </div>
+	</div>
+
+</sly>
+</template>

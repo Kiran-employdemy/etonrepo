@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.salesforce.services.impl.SalesforceKnowledgeSearchServiceImpl" immediate="true" activate="activate" modified="activate">
+  <property name="isGlobalEnabled" type="Boolean" value="true"/>
+  <property name="salesforceSiteUrl" type="String" value="https://eaton--rollhier.sandbox.my.site.com/EatonKnowledge"/>
+  <property name="salesforceSearchPath" type="String" value="/s/global-search"/>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="process.label" type="String" value=" SalesforceKnowledgeSearchServiceImpl"/>
+  <property name="imagePath" type="String" value="/content/dam/eaton/resources/knowledgeSearchIcon.png"/>
+  <property name="service.description" type="String" value=" SalesforceKnowledgeSearchServiceImpl"/>
+  <service>
+    <provide interface="com.eaton.platform.integration.salesforce.services.SalesforceKnowledgeSearchService"/>
+  </service>
+  <implementation class="com.eaton.platform.integration.salesforce.services.impl.SalesforceKnowledgeSearchServiceImpl"/>
+</scr:component>

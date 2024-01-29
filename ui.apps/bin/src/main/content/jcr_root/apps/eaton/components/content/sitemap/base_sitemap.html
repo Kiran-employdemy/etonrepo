@@ -1,0 +1,78 @@
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Sitemap</div>
+</sly>
+<sly data-sly-use.primaryNav="com.eaton.platform.core.models.SitemapModel">
+
+  <div class="eaton-sitemap">
+<sly data-sly-test="${! primaryNav.modifiedNavList}">
+  <sly data-sly-list.primarynavbean="${ primaryNav.primaryNavList}">
+    <div class="container" >
+    	<a data-sly-test="${primarynavbean.nav}" class="eaton-sitemap__levelone" href="${primarynavbean.nav.linkPath}" title="${primarynavbean.nav.linkTitle}">
+    		${primarynavbean.nav.linkTitle}
+    	</a>
+    	<div class="eaton-sitemap__wrapper" data-sly-list.secondarynavbean="${ primarynavbean.innerNavList}">
+    		<a data-sly-test="${secondarynavbean.nav}"  class="eaton-sitemap__leveltow" href="${secondarynavbean.nav.linkPath}"  title="${secondarynavbean.nav.linkTitle}">${secondarynavbean.nav.linkTitle}</a>
+    		<div class="separator" data-sly-test="${secondarynavbean.innerNavList}"></div>
+    		<div class="eaton-sitemap__wrapper" data-sly-test="${secondarynavbean.innerNavList}">
+    			<div data-sly-list.ternarynavbean="${secondarynavbean.innerNavList}">
+    				<a data-sly-test="${ternarynavbean.nav}" class="eaton-sitemap__levelthree" href="${ternarynavbean.nav.linkPath}"  title="${ternarynavbean.nav.linkTitle}">${ternarynavbean.nav.linkTitle}</a>
+    				<div class="eaton-sitemap__wrapper" data-sly-test="${ternaryNavBean.innerNavList}">
+		    			<div data-sly-list.fourthnavbean="${ternaryNavBean.innerNavList}">
+		    				<a data-sly-test="${fourthnavbean.nav}" class="eaton-sitemap__levelfour" href="${fourthnavbean.nav.linkPath}"  title="${fourthnavbean.nav.linkTitle}">${fourthnavbean.nav.linkTitle}</a>
+		    				<div class="eaton-sitemap__wrapper" data-sly-test="${fourthNavBean.innerNavList}">
+				    			<div class="row" data-sly-list.fifthnavbean="${fourthNavBean.innerNavList}">
+				    				<div class="col-xs-12 col-md-4">
+				    					<a data-sly-test="${fifthnavbean.nav}" class="eaton-sitemap__levelfive" href="${fifthnavbean.nav.linkPath}"  title="${fifthnavbean.nav.linkTitle}">${fifthnavbean.nav.linkTitle}</a>
+				    					<div class="eaton-sitemap__wrapper" data-sly-test="${fifthNavBean.innerNavList}">
+							    			<div class="last-wrapper" data-sly-list.sixthnavbean="${fifthNavBean.innerNavList}">
+						    					<a data-sly-test="${sixthnavbean.nav}" class="eaton-sitemap__levelsix" href="${sixthnavbean.nav.linkPath}"  title="${sixthnavbean.nav.linkTitle}">${sixthnavbean.nav.linkTitle}</a>
+							    			</div>
+							    			
+							    		</div>
+				    				</div>
+				    			</div>
+				    			
+				    		</div>
+		    			</div>
+		    			
+		    		</div>
+    			</div>
+    			
+    		</div>
+    	</div>
+    </div>
+    </sly>
+    </sly>
+
+<sly data-sly-test="${primaryNav.modifiedNavList}">
+	<sly data-sly-list.modifiednavbean="${ primaryNav.modifiedNavList}"> 
+	<div class="container">
+
+		<div class="eaton-sitemap__wrapper">		
+			<div class="separator"></div>
+			<div class="eaton-sitemap__wrapper">
+				<div>				
+					<div class="eaton-sitemap__wrapper">
+						<div>							
+							<div class="eaton-sitemap__wrapper">
+								<div class="row">
+									<div class="col-xs-12 col-md-4">
+										<a class="eaton-sitemap__levelfive"
+											href="${modifiednavbean.linkPath}"
+											title="${modifiednavbean.linkTitle}">${modifiednavbean.linkTitle}</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</sly>
+</sly>
+    
+  </div>
+
+</sly>

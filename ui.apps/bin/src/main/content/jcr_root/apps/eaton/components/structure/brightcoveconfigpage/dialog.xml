@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    jcr:title="Brightcove Configuration"
+    height="{Long}600"
+    warnIfModified="{Boolean}false"
+    width="{Long}800"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Accounts
+                jcr:primaryType="cq:Panel"
+                title="Accounts"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <accounts
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Accounts"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <accnumber
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Account Number"
+                                name="./accNumber"
+                                xtype="textfield"/>
+                            <accname
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Account Name"
+                                name="./accName"
+                                xtype="textfield"/>
+                            <players
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Players"
+                                hideLabel="{Boolean}false"
+                                name="./players"
+                                title="Add Players"
+                                xtype="multifield">
+                                <fieldConfig
+                                    jcr:primaryType="cq:Widget"
+                                    border="{Boolean}true"
+                                    hideLabel="{Boolean}true"
+                                    layout="form"
+                                    padding="10px"
+                                    width="1000"
+                                    xtype="multi-field-panel">
+                                    <items jcr:primaryType="cq:WidgetCollection">
+                                        <playerid
+                                            jcr:primaryType="cq:Widget"
+                                            dName="playerID"
+                                            fieldLabel="Player ID"
+                                            width="{Long}300"
+                                            xtype="textfield"/>
+                                        <playername
+                                            jcr:primaryType="cq:Widget"
+                                            dName="playerName"
+                                            fieldLabel="Player Name"
+                                            width="{Long}300"
+                                            xtype="textfield"/>
+                                    </items>
+                                </fieldConfig>
+                            </players>
+                        </items>
+                    </accounts>
+                    <errorMsg
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Message to be displayed to&#xd;&#xa;the user in case of invalid&#xd;&#xa;video id or playlist id&#xd;&#xa;"
+                        fieldLabel="Error Message"
+                        name="./errorMsg"
+                        xtype="textarea"/>
+                </items>
+            </Accounts>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,68 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.SearchSlingModel">
+		<div class="eaton-search eaton-search--default eaton-search--map">
+			 <div class="container">
+				 	<div class="loader">
+					 	<div class="loader__loader-circle"></div>
+				 	</div>
+					<div class="row">
+						 <!--/* Search Form */-->
+						 <form id="location-search-form" class="col-xs-12 eaton-search__form eaton-search--default__form">
+								<div class="form-group">
+									 <label for="location-search-box" class="sr-only">${data.searchModel.transSearchHeader}</label>
+ 
+									 <sly data-sly-test="${data.isSearchTermPresent}">
+									 <textarea rows="1" name="search-term" id="location-search-box"
+											class="form-control eaton-search--default__form-input"
+											placeholder="${data.searchTerm}"
+											required="true">${data.searchTerm}</textarea>
+									 </sly>
+									 
+									 <sly data-sly-test="${!data.isSearchTermPresent}">   
+									 <textarea rows="1" name="search-term" id="location-search-box"
+											class="form-control eaton-search--default__form-input"
+											placeholder="${data.searchModel.transFieldAid}"
+											required="required"></textarea>
+									 </sly>
+ 
+									 <!--/* Mobile Search Form */-->
+									 <div data-sly-test="false"
+											class="eaton-search--default__form-external">
+											<span class="sr-only">Submit form in new Tab</span> <i
+												 class="icon icon-link-external" aria-hidden="true"></i>
+									 </div>
+ 
+									 <button type="button" class="button--reset eaton-search__submit eaton-search--default__form-submit map-search">
+										 <span class="sr-only">${data.searchModel.submitLabel}</span> <i
+												 class="icon icon-search" aria-hidden="false"></i>
+									 </button>
+ 
+									 <!--/* Where to Buy Locator */-->
+									 <div class="eaton-search--map__locator">
+										 <span class="eaton-search--map__locator__divider">|</span>
+										 <div class="eaton-search--map__locator__wrapper">
+											<img class="eaton-search--map__locator__icon lazyload" data-src="/apps/eaton/settings/wcm/designs/clientlib/clientlib-all/img/autolocate-icon.svg"/>
+											<p class="eaton-search--map__locator__copy">${'Map.LocateMe' @i18n}</p>
+										</div>
+									 </div>
+								</div>
+ 
+								<!--/* Where to Buy Locator - Mobile*/-->
+								<div class="eaton-search--map__locator--mobile">
+									<div class="eaton-search--map__locator__wrapper">
+										<img class="eaton-search--map__locator__icon lazyload" data-src="/apps/eaton/settings/wcm/designs/clientlib/clientlib-all/img/autolocate-icon.svg"/>
+									 	<p class="eaton-search--map__locator__copy">${'Map.LocateMe' @i18n}</p>
+									</div> 
+								 </div>
+								
+								<!--/* Search results panel */-->
+								<div class="eaton-search--default__results">
+									 <ul class="eaton-search--default__result-list">
+											<!--/* Result Links will be populated here via AJAX Request /* -->
+									 </ul>
+								</div>
+						 </form>
+					</div>
+			 </div>
+			 
+		</div>
+ </sly>

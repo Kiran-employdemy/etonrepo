@@ -1,0 +1,173 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+$color__arrow-colors: #ccd2e1;
+
+@mixin tab-and-desktop-only {
+  @media screen and (min-width: $grid__sm) and (max-width: $grid__md-max) {
+
+    @content;
+
+  }
+}
+
+.content-tile-slider {
+  center {
+    margin-bottom: -4rem;
+  }
+
+  &__header {
+    text-align: center;
+    font-size: 3rem;
+    line-height: 3.7rem;
+    font-family: var(--font-family-eaton-primary);
+    letter-spacing: 0;
+    color: $color__primary-gray1;
+
+    @include media-mobile-portrait {
+      font-size: 2.4rem;
+      line-height: 3.2rem;
+      width: 19rem;
+    }
+  }
+
+  &__subheader {
+    text-align: center;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-family: var(--secondary-font);
+    letter-spacing: 0.016rem;
+    color: $color__primary-gray1;
+    margin-bottom: 0;
+  }
+}
+
+.eaton-content-slider {
+
+  .slick-list,
+  .slick-track {
+    display: flex;
+  }
+
+  .module-related-content {
+    &__slide-item {
+      display: flex;
+      flex-direction: column;
+      border: .1rem solid $color__primary-gray3;
+      margin-right: 3rem;
+      padding: 0;
+
+      .rendition-bg {
+        // stylelint-disable declaration-no-important
+        background-size: cover !important; // overrides the tile background image in tiles.
+        // stylelint-enable
+        background-position: 0 0; // changed
+        background-repeat: no-repeat;
+        background: transparent;
+      }
+    }
+  }
+
+  .module-related-products {
+    &__info {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      padding: 0 2rem 2rem;
+
+      &-btns {
+        display: flex;
+        flex-direction: column;
+
+        .btn-block {
+          margin: 2rem 0 0;
+          // stylelint-disable declaration-no-important
+          width: 100% !important; // need this to override button width
+          // stylelint-enable
+          min-height: 7.4rem;
+          border: 0.3rem solid $color__primary-blue;
+          font: normal normal bold 20px/20px Arial;
+          text-decoration: none;
+
+          @include media-mobile-portrait {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+
+    &__arrows {
+      color: $color__arrow-colors;
+    }
+
+    &__title {
+      margin-bottom: 2rem;
+      padding-top: 2rem;
+      text-align: left;
+      font: normal normal bold 2.4rem/3.6rem Arial;
+      letter-spacing: 0;
+      color: $color__primary-gray1;
+      text-transform: none;
+
+      @include media-mobile-portrait {
+        font: normal normal bold 2rem/3rem Arial;
+      }
+    }
+
+    &__subtitle {
+      max-height: 9rem; //new
+
+      &,
+      p {
+        text-align: left;
+        font: normal normal normal 1.6rem/2.2rem Arial;
+        letter-spacing: 0.16px;
+        color: $color__primary-gray2;
+        // stylelint-disable value-no-vendor-prefix
+        display: -webkit-box;
+        // stylelint-enable
+        -webkit-line-clamp: 4;
+        // stylelint-disable property-no-vendor-prefix
+        -webkit-box-orient: vertical;
+        // stylelint-enable
+        overflow: hidden;
+
+        @include media-mobile-portrait {
+          font: normal normal normal 1.6rem/2.2rem Arial;
+        }
+      }
+
+      &-list {
+        ul {
+          // stylelint-disable declaration-no-important
+          text-align: left !important;
+
+          li {
+            display: list-item !important;
+          }
+          // stylelint-enable
+        }
+      }
+    }
+  }
+
+  .eaton-slider {
+    &__dots {
+      padding-right: 2.5rem;
+
+      @include media-mobile-portrait {
+        margin-top: 2rem;
+      }
+
+      button {
+        background-color: $color__primary-gray3;
+      }
+
+      .slick-active {
+        button {
+          background-color: $color__primary-blue;
+        }
+      }
+    }
+  }
+}

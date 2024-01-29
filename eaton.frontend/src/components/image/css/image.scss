@@ -1,0 +1,110 @@
+//-----------------------------------
+// Component - Image
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-image {
+
+  // Center the rendition image
+  .rendition {
+    text-align: center;
+
+    img {
+      display: inline;
+    }
+  }
+}
+
+.eaton-grid-control__column {
+  .eaton-image {
+    margin-top: 25px;
+  }
+}
+
+.rendition-img--alignment {
+
+  //-----------------------------------
+  // Media-Query: 0 to 991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &.mobile-left-top {
+      text-align: left;
+    }
+
+    &.mobile-left-center {
+      text-align: left;
+    }
+
+    &.mobile-left-bottom {
+      text-align: left;
+    }
+
+    &.mobile-center-top {
+      text-align: center;
+    }
+
+    &.mobile-center-center {
+      text-align: center;
+    }
+
+    &.mobile-center-bottom {
+      text-align: center;
+    }
+
+    &.mobile-right-top {
+      text-align: right;
+    }
+
+    &.mobile-right-center {
+      text-align: right;
+    }
+
+    &.mobile-right-bottom {
+      text-align: right;
+    }
+
+  }
+
+  //-----------------------------------
+  // Media-Query: 992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &.desktop-left-top {
+      text-align: left;
+    }
+
+    &.desktop-left-center {
+      text-align: left;
+    }
+
+    &.desktop-left-bottom {
+      text-align: left;
+    }
+
+    &.desktop-center-top {
+      text-align: center;
+    }
+
+    &.desktop-center-center {
+      text-align: center;
+    }
+
+    &.desktop-center-bottom {
+      text-align: center;
+    }
+
+    &.desktop-right-top {
+      text-align: right;
+    }
+
+    &.desktop-right-center {
+      text-align: right;
+    }
+
+    &.desktop-right-bottom {
+      text-align: right;
+    }
+  }
+}

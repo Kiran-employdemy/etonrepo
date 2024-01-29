@@ -1,0 +1,114 @@
+//-----------------------------------
+// Home Page Hero Adjustments.
+// EATON-808: Make down arrow display above the fold.
+// EATON-794: Text is not visible without scroll on landscape mobile and tablet
+//-----------------------------------
+//
+// This file is used to define multiple aspect-ratios for this component
+// across different devices/screen sizes.
+//
+// The Aspect-Ratios were defined keeping balance between showing
+// the content/component above the fold and making the component to have a simmilar
+// Aspect-Ratio to the size of the image that the component uses for that breakpoint
+// (Based on the ExperienceToolkit.pdf).
+//
+// eg: Avoid cropping large areas of the image by reducing too much the height of the componnet.
+//
+//-----------------------------------
+
+.hero-with-cta {
+
+
+  // Mobile Portrait: 0px to 479px
+  //--------------
+  @include media-mobile-portrait {
+
+    // EATON-808: Homepage Hero - Make down arrow display above the fold.
+    // NOTE: Offset used for devices with iOS where the toolbar of Safari/Chrome (address bar)
+    // and bottom buttons cover the component, and the arrow/slider-pagination is not visible.
+    $viewport-height-offset: 100px;
+    $aspect-ratio--viewport-height: calc(100vh - 250px);
+
+    // Default Height in mobile BP
+    &__component,
+    &__component &__slide-item {
+      height: 54.7rem;
+    }
+  }
+
+
+  // Mobile Landscape: 480px to 767px
+  //--------------
+  @include media-mobile-landscape {
+
+    // Aspect Ratio Mobile-Landscape Breakpoint
+    $aspect-ratio--mobile-landscape: 80vw;
+
+    &__component,
+    &__component &__slide-item {
+      height: $aspect-ratio--mobile-landscape;
+    }
+  }
+
+
+  // Desktop Small: 768px to 991px
+  //--------------
+  @include media-tablet-only {
+
+    // Aspect Ratio Mobile Breakpoint
+    // 16:9 ratio
+    $aspect-ratio--tablet: 56.25vw;
+
+    &__component,
+    &__component &__slide-item {
+      height: $aspect-ratio--tablet;
+    }
+  }
+
+
+
+  // Tablet Orientation: Portrait
+  //--------------
+  @include media-tablet-portrait {
+
+    // Aspect Ratio Mobile Breakpoint
+    // 4:3 ratio
+    $aspect-ratio--tablet: 75vw;
+
+    &__component,
+    &__component &__slide-item {
+      height: $aspect-ratio--tablet;
+    }
+
+  }
+
+
+  // Desktop Small: 992px to 1199px
+  //--------------
+  @include media-desktop-only {
+
+    // Aspect Ratio Mobile Breakpoint
+    // 2:1 ratio (Slightly Less tall than 16:9)
+    $aspect-ratio--desktop-small: 50vw;
+
+    &__component,
+    &__component &__slide-item {
+      height: $aspect-ratio--desktop-small;
+    }
+  }
+
+
+  // Desktop Large: >1200px and up
+  //--------------
+  @include media-desktop-large {
+
+    // Aspect Ratio desktop-large Breakpoint
+    $aspect-ratio--desktop-large: 42.5rem;
+
+    &__component,
+    &__component &__slide-item {
+      height: $aspect-ratio--desktop-large;
+    }
+  }
+
+}

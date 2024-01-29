@@ -1,0 +1,20 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Up-Sell/Cross-Sell Products</div>
+</sly>
+
+<sly data-sly-use.viewData="com.eaton.platform.core.models.ProductDetailsCardModel">
+    <sly data-sly-test="${viewData.productDetailsCardBean.skuSellList.size}">
+        <sly data-sly-test="${viewData.view == 'cross-sell'}">
+            <sly data-sly-use.tpl="eaton/components/shared/templates/module-upsell-products.html">
+                <sly data-sly-call="${ tpl.module @ data=viewData.productDetailsCardBean }"></sly>
+            </sly>
+        </sly>
+    </sly>
+</sly>
+<sly data-sly-use.upsellModel="com.eaton.platform.core.models.UpSellProductsModel">
+    <sly data-sly-test="${upsellModel.skuSellList.size}">
+        <sly data-sly-test="${upsellModel.view == 'up-sell'}">
+            <sly data-sly-include="views/view-upsell-products.html"></sly>
+        </sly>
+    </sly>
+</sly>

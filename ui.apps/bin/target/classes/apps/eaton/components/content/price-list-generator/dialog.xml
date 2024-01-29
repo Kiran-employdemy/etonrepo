@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Title"
+    title="Price List Converter "
+    xtype="panel">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <uploadTitle
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Upload Title Text"
+            fieldLabel="Upload Title Text"
+            name="./uploadTitle"
+            xtype="textfield"/>
+             <successMsg
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Success Message"
+            fieldLabel="Success Message"
+            name="./successMsg"
+            xtype="textarea"/>
+             <failureMsg
+            jcr:primaryType="cq:Widget"
+            fieldDescription="Failure Message"
+            fieldLabel="Failure Message"
+            name="./failureMsg"
+            xtype="textarea"/>
+    </items>
+</jcr:root>

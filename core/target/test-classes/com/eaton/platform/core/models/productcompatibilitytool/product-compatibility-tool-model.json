@@ -1,0 +1,97 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "e0063964",
+  "jcr:lastModifiedBy": "admin",
+  "defaultSortingDirection": [
+    "desc",
+    "desc"
+  ],
+  "lampModelNumber": "Bulb model number",
+  "defaultSearchTerm": "33071",
+  "jcr:created": "Wed Jun 29 2022 09:51:29 GMT-0400",
+  "lampManufacturerLabel": "Lamp manufacturer",
+  "jcr:lastModified": "Thu May 18 2023 13:08:40 GMT-0400",
+  "sling:resourceType": "eaton/components/product/compatible-product-tool",
+  "componentValue": "ledView",
+  "attributeList": {
+    "jcr:primaryType": "unstructured",
+    "item0": {
+      "jcr:primaryType":"nt:unstructured",
+      "attributeLabel":"Type (bulb shape)",
+      "attributeVaue":"TST_Ext_Type"
+    },
+    "item1": {
+      "jcr:primaryType":"nt:unstructured",
+      "attributeLabel":"LED wattage (cannot see that to select it)",
+      "attributeVaue":"TST_LED_Rating"
+    },
+    "item2": {
+      "jcr:primaryType":"nt:unstructured",
+      "attributeLabel":"Color temperature",
+      "attributeVaue":"TST_EXT_Color_Temperature"
+    },
+    "item3": {
+      "jcr:primaryType":"nt:unstructured",
+      "attributeLabel":"Lamp lumen output",
+      "attributeVaue":"TST_EXT_Lamp_Lumen_Output"
+    },
+    "item4": {
+      "jcr:primaryType":"nt:unstructured",
+      "attributeLabel":"Base",
+      "attributeVaue":"TST_EXT_Base"
+    },
+    "item5": {
+      "jcr:primaryType":"nt:unstructured",
+      "attributeLabel":"country",
+      "attributeVaue":"Country"
+    }
+  },
+  "filterList": {
+    "jcr:primaryType": "unstructured",
+    "item0": {
+      "jcr:primaryType":"nt:unstructured",
+      "filterAttributeVaue":"D_TST_LED_Compatible_Score",
+      "filterAttributeLabel":"LED compatible score"
+    },
+    "item1": {
+      "jcr:primaryType":"nt:unstructured",
+      "filterAttributeVaue":"D_TST_Ext_Type",
+      "filterAttributeLabel":"Type (bulb shape)"
+    },
+    "item2": {
+      "jcr:primaryType":"nt:unstructured",
+      "filterAttributeVaue":"D_TST_LED_Rating",
+      "filterAttributeLabel":"LED rating (max wattage)"
+    },
+    "item3": {
+      "jcr:primaryType":"nt:unstructured",
+      "filterAttributeVaue":"D_TST_EXT_Wattage",
+      "filterAttributeLabel":"LED wattage"
+    },
+    "item4": {
+      "jcr:primaryType":"nt:unstructured",
+      "filterAttributeVaue":"D_TST_EXT_EquivalentIncandescent_wattage",
+      "filterAttributeLabel":"Incandescent wattage"
+    },
+    "item5": {
+      "jcr:primaryType":"nt:unstructured",
+      "filterAttributeVaue":"Product_Type",
+      "filterAttributeLabel":"Product Type"
+    },
+    "item6": {
+      "jcr:primaryType":"nt:unstructured",
+      "filterAttributeVaue":"D_TST_EXT_Color_Temperature",
+      "filterAttributeLabel":"Color temperature"
+    },
+    "item7": {
+      "jcr:primaryType":"nt:unstructured",
+      "filterAttributeVaue":"Voltage_Rating",
+      "filterAttributeLabel":"Voltage rating"
+    },
+    "item8": {
+      "jcr:primaryType":"nt:unstructured",
+      "filterAttributeVaue":"D_TST_EXT_Base",
+      "filterAttributeLabel":"Base"
+    }
+  }
+}

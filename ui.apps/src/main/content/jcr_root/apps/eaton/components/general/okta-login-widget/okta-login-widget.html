@@ -1,0 +1,108 @@
+<sly data-sly-test="${wcmmode.edit }">
+    <div class="alert alert-warning">Okta Login Widget</div>
+</sly>
+
+<sly data-sly-use.OktaWidget="com.eaton.platform.integration.auth.models.OktaLoginWidgetModel">
+
+    <div id="widget-container"></div>
+
+    <sly data-sly-test="${OktaWidget.isOktaWidgetNew}">
+        <script type="text/javascript">
+            const signIn = new OktaSignIn({
+                useClassicEngine: true,
+                baseUrl: "${OktaWidget.oktaEndpointRoot @ context="unsafe"}",
+                el: '#widget-container',
+                // Enable or disable widget functionality with the following options. Some of these features require additional configuration in your Okta admin settings. Detailed information can be found here: https://github.com/okta/okta-signin-widget#okta-sign-in-widget
+                // Look and feel changes:
+                logo: '',
+                language: '${OktaWidget.defaultLanguage @ context="scriptString"}',
+                i18n: {
+                    //Overrides default text when using English. Override other languages by adding additional sections.
+                    '${OktaWidget.defaultLanguage @ context="scriptString"}': {
+                        'primaryauth.title': '${OktaWidget.primaryauth_title @ context="scriptString"}',   // Changes the sign in title
+                        'primaryauth.username.placeholder': '${OktaWidget.primaryauth_username_placeholder @ context="scriptString"}',  // changes the username label
+                        'mfa.challenge.password.placeholder': '${OktaWidget.mfa_challenger_password_placeholder @ context="scriptString"}', //Changes the field label on password panel
+                        'factor.password': '${OktaWidget.factor_password @ context="scriptString"}', //Changes the title on password panel
+                        'remember': '${OktaWidget.remember_me @ context="scriptString"}',
+                        'oform.next': '${OktaWidget.oform_next @ context="scriptString"}',
+                        'mfa.challenge.verify': '${OktaWidget.mfa_challenge_verify @ context="scriptString"}', //Changes the submit button on password panel
+                        'oform.errorbanner.title': '${OktaWidget.oform_errorbanner_title @ context="scriptString"}',
+                        'error.password.required': '${OktaWidget.error_password_required @ context="scriptString"}',
+                        'error.username.required': '${OktaWidget.error_username_required @ context="scriptString"}',
+                        'password.forgot.email.or.username.placeholder': '${OktaWidget.forgot_password_email_placeholder @ context="scriptString"}',
+                        'password.forgot.email.or.username.tooltip': '${OktaWidget.forgot_password_email_tooltip @ context="scriptString"}',
+                        'errors.E0000069': '${OktaWidget.error_login_locked_multi_wrong_password_attempt @ context="scriptString"}'
+                    }
+                },
+                // Changes to widget functionality
+                features: {
+                    registration: ${OktaWidget.oktaRegistrationFlag @ context="scriptString"},       // Enable self-service registration flow
+                    rememberMe: ${OktaWidget.oktaRememberMeFlag @ context="scriptString"},          // Setting to false will remove the checkbox to save username
+                    passwordlessAuth: ${OktaWidget.oktaPasswordLessAuthFlag @ context="scriptString"},
+                    idpDiscovery: ${OktaWidget.oktaidpDiscoveryFlag @ context="scriptString"}
+                },
+                idpDiscovery: {requestContext: "${OktaWidget.oktaidpDiscoveryValue @ context="scriptString"}"},
+                clientId: "${OktaWidget.oktaClientID @ context="scriptString"}",
+                redirectUri: '${OktaWidget.oktaRedirectURI @ context="unsafe"}',
+                authParams: {
+                    issuer: "${OktaWidget.oktaIssuer @ context="unsafe"}",
+                    responseType: ['code'],
+                    pkce: false
+                },
+            });
+
+            // A query parameter named `code` will be passed to the login redirect URI
+            // This should be handled by server-side code. The code can be exchanged for tokens
+            signIn.showSignInAndRedirect();
+        </script>
+    </sly>
+    <sly data-sly-test="${!OktaWidget.isOktaWidgetNew}">
+        <script type="text/javascript">
+            const signIn = new OktaSignIn({
+                baseUrl: "${OktaWidget.oktaEndpointRoot @ context="unsafe"}",
+                el: '#widget-container',
+                // Enable or disable widget functionality with the following options. Some of these features require additional configuration in your Okta admin settings. Detailed information can be found here: https://github.com/okta/okta-signin-widget#okta-sign-in-widget
+                // Look and feel changes:
+                logo: '',
+                language: '${OktaWidget.defaultLanguage @ context="scriptString"}',
+                i18n: {
+                    //Overrides default text when using English. Override other languages by adding additional sections.
+                    '${OktaWidget.defaultLanguage @ context="scriptString"}': {
+                        'primaryauth.title': '${OktaWidget.primaryauth_title @ context="scriptString"}',   // Changes the sign in title
+                        'primaryauth.username.placeholder': '${OktaWidget.primaryauth_username_placeholder @ context="scriptString"}',  // changes the username label
+                        'mfa.challenge.password.placeholder': '${OktaWidget.mfa_challenger_password_placeholder @ context="scriptString"}', //Changes the field label on password panel
+                        'factor.password': '${OktaWidget.factor_password @ context="scriptString"}', //Changes the title on password panel
+                        'remember': '${OktaWidget.remember_me @ context="scriptString"}',
+                        'oform.next': '${OktaWidget.oform_next @ context="scriptString"}',
+                        'mfa.challenge.verify': '${OktaWidget.mfa_challenge_verify @ context="scriptString"}', //Changes the submit button on password panel
+                        'oform.errorbanner.title': '${OktaWidget.oform_errorbanner_title @ context="scriptString"}',
+                        'error.password.required': '${OktaWidget.error_password_required @ context="scriptString"}',
+                        'error.username.required': '${OktaWidget.error_username_required @ context="scriptString"}',
+                        'password.forgot.email.or.username.placeholder': '${OktaWidget.forgot_password_email_placeholder @ context="scriptString"}',
+                        'password.forgot.email.or.username.tooltip': '${OktaWidget.forgot_password_email_tooltip @ context="scriptString"}',
+                        'errors.E0000069': '${OktaWidget.error_login_locked_multi_wrong_password_attempt @ context="scriptString"}'
+                    }
+                },
+                // Changes to widget functionality
+                features: {
+                    registration: ${OktaWidget.oktaRegistrationFlag @ context="scriptString"},       // Enable self-service registration flow
+                    rememberMe: ${OktaWidget.oktaRememberMeFlag @ context="scriptString"},          // Setting to false will remove the checkbox to save username
+                    passwordlessAuth: ${OktaWidget.oktaPasswordLessAuthFlag @ context="scriptString"},
+                    idpDiscovery: ${OktaWidget.oktaidpDiscoveryFlag @ context="scriptString"}
+                },
+                idpDiscovery: {requestContext: "${OktaWidget.oktaidpDiscoveryValue @ context="scriptString"}"},
+                clientId: "${OktaWidget.oktaClientID @ context="scriptString"}",
+                redirectUri: '${OktaWidget.oktaRedirectURI @ context="unsafe"}',
+                authParams: {
+                    issuer: "${OktaWidget.oktaIssuer @ context="unsafe"}",
+                    responseType: ['code'],
+                    pkce: false
+                },
+            });
+
+            // A query parameter named `code` will be passed to the login redirect URI
+            // This should be handled by server-side code. The code can be exchanged for tokens
+            signIn.showSignInAndRedirect();
+        </script>
+    </sly>
+</sly>

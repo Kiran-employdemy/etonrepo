@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.FormFacetsDropDownServlet" immediate="true">
+  <property name="sling.servlet.extensions" type="String" value="json"/>
+  <property name="sling.servlet.resourceTypes" type="String" value="eaton/components/form/product-selector-form"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <property name="sling.servlet.selectors" type="String" value="formfacetdropdown"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="eatonSiteConfigService" interface="com.eaton.platform.core.services.EatonSiteConfigService" field="eatonSiteConfigService"/>
+  <reference name="endecaRequestService" interface="com.eaton.platform.core.services.EndecaRequestService" field="endecaRequestService"/>
+  <reference name="endecaService" interface="com.eaton.platform.integration.endeca.services.EndecaService" field="endecaService"/>
+  <implementation class="com.eaton.platform.core.servlets.FormFacetsDropDownServlet"/>
+</scr:component>

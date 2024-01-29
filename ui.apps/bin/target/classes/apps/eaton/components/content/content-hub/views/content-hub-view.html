@@ -1,0 +1,124 @@
+<!--/*
+  Module M-26 - Content Hub 
+*/-->
+<sly data-sly-use.data="com.eaton.platform.core.models.contenthub.ContentHubModel">
+<sly data-sly-test="${data.totalCount}" >
+  <sly data-sly-test="${data.showFilters == 'true' }">
+  <div class="container">
+     <div class="row">
+        <div class="col-xs-12">
+            <div class="faceted-navigation-header" data-redirect-link="" data-active-facet-count="0">
+                <div class="faceted-navigation-header__container">
+                    <button id="contentHub-filters" data-toggle-modal-facet="" class="open-facets-mobile b-button b-button__primary b-button__primary--light" role="button">${'Filters.Title' @ i18n}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3 col-xs-12">
+            <div id="product-grid__filters" data-hide-from-active="" data-title="Filters" data-mobile-dialog-title="Filters" data-close-text="Close" data-clear-all-filters-text="Clear all filters" data-clear-filters-text="Clear filters" data-clear-selection-text="Clear selection" data-view-more-text="View more" data-view-less-text="View less" data-results-plural-text="Results" data-results-singular-text="Result" data-facet-search-label="Narrow results" data-facet-search-placeholder="Search values" data-no-suggestions-text="No suggestions" data-in-text="in" data-of-text="of" data-facet-group-search-label="Search within these results" data-facet-group-search-placeholder="Enter a value" data-facet-group-search-no-suggestions-text="No results based on search terms" data-ref="0.726508222562708">
+                <div class="eaton-form faceted-navigation faceted-navigation__filters">
+                    <h3 class="faceted-navigation__title">${'Filters.Title' @ i18n}</h3>
+                    <div class="global-filter-search__container">
+                        <label class="global-filter-search__label">${'narrowResults' @ i18n}</label>
+                        <div class="autocomplete">
+                        <input type="text" class="global-filter-search__input" placeholder="Search values" id="myInput" >
+                    </div>
+                        <ul class="global-filter-search__suggestions"></ul>
+                        <div class="global-filter-search__suggestions no-suggestions-container hidden">
+                            <div class="global-filter-search__suggestion global-filter-search__suggestion__no-suggestions__message">
+                                ${'GlobalFacetSearch.NoSugestions' @i18n}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-header">
+                        <span>${'Filters.Title' @ i18n}</span>
+                        <button data-toggle-modal-facet="" aria-label="Close" id="contenthub-filterClose" class="close-facets-mobile button--reset" >
+                            <span class="sr-only">${'Filters.Close' @ i18n}</span>
+                            <i class="icon icon-close" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <hr class="faceted-navigation__hr">
+                    <div class="faceted-navigation__active-filters__container faceted-navigation__active-filters__container--mobile " data-active-filter-values="%5B%5D" data-result-count="undefined" data-results-text="Result" data-of-text="of" data-clear-all-filters-text="${'Filters.ClearFilters' @ i18n}" data-clear-filters-text="${'Filters.ClearFilters' @ i18n}" data-clear-selection-text="${'Filters.ClearSelection' @ i18n}">
+                        <div class="hidden">
+                            <div class="hidden">
+                            </div>
+                            <a href="#" rel="nofollow" class="faceted-navigation__action-link faceted-navigation__action-link--clear-filters faceted-navigation__action-link--clear-filters--mobile hidden">${'Filters.ClearFilters' @ i18n}</a>
+                        </div>
+                    </div>
+					<div data-sly-list.facetGroupBean="${ data.filters }">
+                    <div class="faceted-navigation__filter-container">
+                        <div class="faceted-navigation__facet-group  ">
+                            <button class="faceted-navigation__header button--reset" data-toggle="collapse" data-target="#product-content-type-${facetGroupBeanList.index}" aria-expanded="true" aria-controls="product-content-type">
+                                ${facetGroupBean.facetGroupLabel}
+                                <i class="icon icon-sign-minus" aria-hidden="true"></i>
+                                <i class="icon icon-sign-plus faceted-navigation__icon-sign-plus" aria-hidden="true"></i>
+                            </button>
+                            <div id="product-content-type-${facetGroupBeanList.index}" class="collapse in">
+                                <div class="faceted-navigation__list__search__container hidden">
+                                    <label class="faceted-navigation__list__search__label">${'GroupFacetSearch.Label' @i18n}</label>
+                                    <input type="text" class="faceted-navigation__list__search__input" placeholder="Enter a value">
+                                    <div class="faceted-navigation__list__search__suggestions faceted-navigation__list__search__no-suggestions__container hidden">
+                                        <div class="faceted-navigation__list__search__suggestion faceted-navigation__list__search__suggestion__no-suggestions__message">
+                                            ${'GroupFacetSearch.NoSuggestionsText' @i18n}
+                                            <span class="faceted-navigation__list__search__suggestion__suggested-term"></span>
+                                        </div>
+                                    </div>
+                                </div>
+									<a href="#" rel="nofollow" role="button" class="faceted-navigation-header__action-link faceted-navigation-header__action-link--clear-filters faceted-navigation-header__action-link--clear-filters--sidebar hidden"> ${'Filters.ClearSelection' @ i18n} </a>
+                                <fieldset>
+                                    <ul class="faceted-navigation__list faceted-navigation__list--unfiltered ">
+                                        <div data-sly-list.facetValueBean="${ facetGroupBean.facetValueList }" >
+										<li class="faceted-navigation__list-item">
+                                            <div class="faceted-navigation__facet-value">
+                                                <label class="faceted-navigation__facet-value-label">
+                                                    <span rel="nofollow" class="faceted-navigation__facet-value-label__content-check">
+                           							 	<input  type="checkbox" autocomplete="off" class="input input--small" name="${facetValueBean.facetValueLabel}" value="${facetValueBean.facetValueLabel}" id="${facetGroupBean.facetGroupLabel}" data-tagId="${facetValueBean.facetValueId}">
+                            							<span class="inner"><bdi>${facetValueBean.facetValueLabel}</bdi></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </li>
+										</div>
+                                    </ul>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+					</div>	
+				</div>
+            </div>
+        </div>
+        <div class="col-md-9 col-xs-12">
+            <div class="content-hub__card-list" id="content-hub__component_id" data-default-icon-path="${ data.defaultImagePath }" data-result-list-json="${ data.resultJson }" data-result-list-size="${data.totalCount}" data-initial-results-to-load="${data.initialNumberOfResults}">
+                <div class="content-hub-results" id="content-hub__results"></div>
+            </div>
+            <div class="col-md-4 col-xs-12 col-md-offset-4 content__hub-btn hide" id="contentHubLoadMore">
+                <button class="eaton-topic-link__button b-button b-button__primary b-button__primary--light load">
+                    ${'loadMore' @ i18n}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</sly>
+<sly data-sly-test="${data.showFilters == 'false' }">
+<div class="container">
+   <div class="row">
+      <div class="col-md-12 col-xs-12">
+            <div class="content-hub__card-list" id="content-hub__component_id" data-default-icon-path="${ data.defaultImagePath }" data-result-list-json="${ data.resultJson }" data-result-list-size="${data.totalCount}" data-initial-results-to-load="${data.initialNumberOfResults}">
+                <div class="content-hub-results result-without__filters" id="content-hub__results"></div>
+            </div>
+            <div class="col-md-4 col-xs-12 col-md-offset-4 content__hub-btn hide" id="contentHubLoadMore">
+                <button class="eaton-topic-link__button b-button b-button__primary b-button__primary--light load">
+                    ${'loadMore' @ i18n}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</sly>
+
+</sly>
+</sly>
+

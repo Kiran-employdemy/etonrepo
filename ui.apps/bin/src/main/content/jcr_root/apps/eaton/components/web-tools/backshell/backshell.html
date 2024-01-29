@@ -1,0 +1,164 @@
+<div class='backshell-config' id='backshell-config' data-resource='${resource.path}'
+    data-component-error-message="${'Webtools.Backshell.Component.ErrorMessage' @ i18n}"
+    data-component-error-message1="${'Webtools.Backshell.errorMessage.code1' @ i18n}"
+    data-component-error-message2="${'Webtools.Backshell.errorMessage.code2' @ i18n}"
+    data-component-error-message3="${'Webtools.Backshell.errorMessage.code3' @ i18n}"
+    data-component-error-message4="${'Webtools.Backshell.errorMessage.code4' @ i18n}"
+    data-component-error-message5="${'Webtools.Backshell.errorMessage.code5' @ i18n}">
+    <div class='container'>
+        <form action='' method='post' id='souriau-toolkit-backshell-main-form' accept-charset='UTF-8'
+            class='backshell-form'>
+            <div class='b-two-cols col-md-12 box'>
+
+                <!-- SIDE A -->
+
+                <div class='col-md-6 l-column'>
+
+                    <!-- PRODUCT -->
+                    <div class='form-item form-item__b-margin'>
+                        <label class='form-item-label'> ${'Webtools.Backshell.General.SelectAProduct' @ i18n} </label>
+                        <select id='edit-product' class='wide'>
+                            <option value='-1' selected='selected'>- Select -</option>
+                        </select>
+                    </div>
+
+                    <!-- SERIES -->
+                    <div class='form-item form-item__b-margin'>
+                        <label class='form-item-label'> ${'Webtools.Backshell.General.SelectASeries' @ i18n} </label>
+                        <select id='edit-series' class='wide'>
+                            <option value='-1' selected='selected'>- Select -</option>
+                        </select>
+                    </div>
+
+                    <!-- PART NUMBER -->
+                    <div class='form-item form-item__b-margin'>
+                        <label class='form-item-label'> ${'Webtools.Backshell.General.SelectAPartNumber' @ i18n}
+                        </label>
+                        <select id='edit-part-number' class='wide'>
+                            <option value='-1' selected='selected'>- Select -</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <!-- SIDE B -->
+
+                <div class='col-md-6 r-column'>
+                    <div id='part-number-components-section' class='u-hide'></div>
+                </div>
+            </div>
+
+            <!-- ERROR - BANNER -->
+            <div class="u-error">
+                <i class="icon icon-info" aria-hidden="true"></i>
+                <p class="u-inline error-banner-backshell" id="error-banner-backshell"></p>
+                <button class="button--reset u-error-close"><i class="icon icon-close" aria-hidden="true"></i></button>
+             </div>
+
+            <!-- BUTTON - SUBMIT -->
+            <div class='form-actions form-block text-center'>
+                <div class='align-btn-center'>
+                    <button type='submit' id='calculate' name='op' value='CALCULATE'
+                        class='b-button b-button__primary b-button__primary--primary-branding-color-reversedbtn b-button__primary b-button__primary--primary-branding-color-reversed b-button__primary--primary-disabled'>
+                        ${'Webtools.Backshell.General.ButtonText' @ i18n}
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- PART NUMBER -->
+    <div class='eaton-topic-link mt cc eaton-topic-link--primary-branding-color part-number-display-banner scroll-here'>
+        <div class='container '>
+            <div class='row eaton-topic-link__row'>
+                <div class='col-md-10'>
+                    <h3 class='eaton-topic-link__header b-heading-h3'>
+                        ${'Webtools.Backshell.General.MatchingProductText' @ i18n} <span id='calc-result'></span>
+                    </h3>
+                </div>
+                <div class='col-md-2'>
+                    <button class='b-button b-button__primary b-button__primary--dark u-float-right' id='prints'>
+                        ${'Webtools.Backshell.General.PrintText' @ i18n}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WARNING MESSAGE -->
+    <div class='container warning-msg'></div>
+
+    <!-- TECHNICAL DRAWING -->
+    <div class='part-image-drawing'></div>
+
+    <!-- PART NUMBER META DATA -->
+    <div id='part-number-meta' class="part-number-meta">
+        <div class='container'>
+            <div class='col-md-12 meta-content'>
+                <!-- LEFT META DATA -->
+                <div class='col-md-6 left-meta-data'></div>
+                <!-- RIGHT META DATA -->
+                <div class='col-md-6 right-meta-data'></div>
+            </div>
+        </div>
+    </div>
+
+     <!-- TOLERANCE -->
+    <div class='container'>
+        <div class='bs-tolerance u-hide'>
+            <!-- TOLERANCE MESSAGE A -->
+            <div class='message-a' id="message-a">
+                <div>${'Webtools.Backshell.General.ToleranceMessage' @ i18n}</div>
+                <div>.X ± .060</div>
+                <div>.XX ± .03</div>
+                <div>.XXX ± .015</div>
+                <div>ANGLES ± 5°</div>
+            </div>
+            <!-- TOLERANCE MESSAGE B -->
+            <div class='message-b' id="message-b">
+                <div>${'Webtools.Backshell.General.ToleranceMessage' @ i18n}</div>
+                <div>.X ± .030</div>
+                <div>.XX ± .010</div>
+                <div>.XXX ± .005</div>
+                <div>ANGLES ± 2°</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTES -->
+    <div id='notes-section' class='container notes-section u-hide'>
+        <div class='col-md-12'>
+            <div> ${'Webtools.Backshell.General.NotesText' @ i18n} </div>
+            <ol id='notes'></ol>
+        </div>
+    </div>
+ <!-- BUTTON - CONTACT -->
+ <!-- <div class='form-actions form-block text-center'>
+    <div class='align-btn-center'>
+        <a id='backshell-contact-btn' href="${properties.contactLinkPath}.html"
+            class='b-button b-button__primary b-button__primary--primary-branding-color-reversedbtn b-button__primary b-button__primary--primary-branding-color-reversed backshell-contact-btn'>
+            ${'Webtools.Backshell.General.ContactUsButton' @ i18n}
+        </a>
+    </div>
+</div> -->
+
+<!-- TODO: PRODUCT CARD : Revisit and integrate this code once the Souriau PDH migration completes. -->
+
+<!-- <div class="container backshell-product-card u-hide" id="backshell-product-card">
+    <div class='col-md-12 bs-main-card'>
+        <div class='col-md-2 col-sm-12 bs-product-image'>
+            <img alt='' src=''>
+        </div>
+        <div class='col-md-8 col-sm-12 bs-product-detail'>
+            <div class="bs-title">Shielded heat shrink book backshell, size 08 for connector 26482 II, EN2997</div>
+            <div class="bs-sub">09 Series</div>
+        </div>
+
+        <div class='col-md-2 col-sm-12 bs-product-number'>
+            <div>09F4001S11N</div>
+        </div>
+    </div>
+</div> -->
+</div>
+
+<h1 id='default-message' class='u-text-center'> Backshell Component </h1>

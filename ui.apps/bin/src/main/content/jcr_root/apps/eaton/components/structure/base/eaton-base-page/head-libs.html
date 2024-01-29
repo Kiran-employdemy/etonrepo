@@ -1,0 +1,62 @@
+<!--/*
+    Copyright 2015 Adobe Systems Incorporated
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+
+<script>window.CQ = window.CQ || {}</script>
+<link rel="preload" as="font" href="/etc.clientlibs/eaton/settings/wcm/designs/clientlib/clientlib-all/resources/fonts/EatonRegular.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="/etc.clientlibs/eaton/settings/wcm/designs/clientlib/clientlib-all/resources/fonts/EatonMedium.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="/etc.clientlibs/eaton/settings/wcm/designs/clientlib/clientlib-all/resources/fonts/EatonBold.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="/etc.clientlibs/eaton/settings/wcm/designs/clientlib/clientlib-all/resources/fonts/eaton-glyphicon.woff2" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" as="font" href="/etc.clientlibs/eaton/settings/wcm/designs/clientlib/clientlib-all/resources/fonts/glyphicons-halflings-regular.woff2" type="font/woff2" crossorigin="anonymous">
+
+
+<sly data-sly-include="customheaderlibs.html" />
+
+<!--/* Include the site client libraries (loading only the CSS in the header, JS will be loaded in the footer) */-->
+<sly data-sly-use.wcmInit="/libs/wcm/foundation/components/page/initwcm.js"
+     data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-test.templateCategories="${wcmInit.templateCategories.length > 0}"
+         data-sly-call="${clientLib.css @ categories=wcmInit.templateCategories}" />
+</sly>
+
+<!--/* Initialize the Authoring UI */-->
+<sly data-sly-include="author.html" />
+
+<!--/* Initialize Cloud Services */-->
+<sly  data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page">
+    <template data-sly-template.head="${ @ page }" data-sly-use.headlibRenderer="headlibs.html">
+        <sly data-sly-call="${headlibRenderer.headlibs @
+                                    designPath                = page.designPath,
+                                    staticDesignPath          = page.staticDesignPath,
+                                    clientLibCategories       = page.clientLibCategories,
+                                    clientLibCategoriesJsHead = page.clientLibCategoriesJsHead,
+                                    hasCloudconfigSupport     = page.hasCloudconfigSupport}"></sly>
+    </template>
+    <sly data-sly-call="${head @ page = page}"> </sly>
+</sly>
+
+<sly data-sly-use.salesforceKnowledgeSearchService="com.eaton.platform.integration.salesforce.services.SalesforceKnowledgeSearchService">
+    <sly data-sly-test="${ !salesforceKnowledgeSearchService.isGlobalEnabled }">
+        <sly data-sly-use.nanoRepchatConfig="com.eaton.platform.core.models.NanoRepChatConfigModel">
+            <sly data-sly-test="${! inheritedPageProperties.disableNanoRep}">
+                <sly data-sly-test="${nanoRepchatConfig.showComponent}">
+                    <sly data-sly-resource="${'nanorep-chat' @ resourceType='/apps/eaton/components/content/nanorep-chat'}"></sly>
+                </sly>
+            </sly>
+        </sly>
+    </sly>
+</sly>
+
+<sly data-sly-resource="${'salesforce-knowledge-search' @ resourceType='/apps/eaton/components/search/salesforce-knowledge-search'}"></sly>

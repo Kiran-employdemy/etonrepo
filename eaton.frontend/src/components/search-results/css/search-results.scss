@@ -1,0 +1,92 @@
+//-----------------------------------
+// Component Search Results
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, etc)
+@import "../../../global/css/_config/sass";
+
+
+.search-results {
+  position: relative;
+
+  &-default {
+    .col-md-3,
+    .col-md-9 {
+      @include media-desktop-and-up {
+        [dir='rtl'] & {
+          float: right;
+        }
+      }
+    }
+  }
+
+  &__no-result {
+    padding-bottom: rem($spacing__sm * 1.5);
+
+    @include media-desktop-and-up {
+      padding-bottom: rem($spacing__md);
+    }
+
+    .eaton-title {
+      &__headline {
+        font-size: rem($base__font-size * 3.2);
+        line-height: $base__line-height * .9;
+        padding-top: rem($spacing__sm * 1.5);
+
+        @include media-desktop-and-up {
+          font-size: rem($base__font-size * 3.6);
+          padding-top: rem($spacing__sm * 2);
+        }
+      }
+    }
+
+    .rich-text-container {
+      p {
+        font-size: rem($base__font-size * 1.6);
+
+        @include media-desktop-and-up {
+          font-size: rem($base__font-size * 1.8);
+        }
+      }
+
+      ul li {
+        margin-bottom: rem($spacing__sm * .54);
+        padding-bottom: 0;
+
+        /* stylelint-disable selector-max-compound-selectors */
+        [dir='rtl'] & {
+          padding: 0 rem($spacing__sm * .5) rem($spacing__sm * .5) 0;
+        }
+        /* stylelint-enable selector-max-compound-selectors */
+
+
+        @include media-desktop-and-up {
+          margin-bottom: 0;
+          padding-bottom: rem($spacing__sm * .6);
+
+          /* stylelint-disable selector-max-compound-selectors */
+          [dir='rtl'] & {
+            padding: 0 rem($spacing__sm) rem($spacing__sm * .5) 0;
+          }
+          /* stylelint-enable selector-max-compound-selectors */
+        }
+
+        &::before {
+          height: rem($spacing__sm * 0.2);
+          width: rem($spacing__sm * 0.2);
+
+          @include media-desktop-and-up {
+            height: rem($spacing__sm * 0.27);
+            width: rem($spacing__sm * 0.27);
+          }
+
+          /* stylelint-disable selector-max-compound-selectors */
+          [dir='rtl'] & {
+            right: 0;
+          }
+          /* stylelint-enable selector-max-compound-selectors */
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.msm.RolloutConflictInheritanceServlet" configuration-policy="require">
+  <property name="sling.servlet.extensions" type="String" value="json"/>
+  <property name="sling.servlet.resourceTypes" type="String" value="sling/servlet/default"/>
+  <property name="sling.servlet.methods" type="String" value="POST"/>
+  <property name="sling.servlet.selectors" type="String" value="eaton.msm.enable"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="inheritanceService" interface="com.eaton.platform.core.services.msm.RolloutConflictInheritanceService" field="inheritanceService"/>
+  <implementation class="com.eaton.platform.core.servlets.msm.RolloutConflictInheritanceServlet"/>
+</scr:component>

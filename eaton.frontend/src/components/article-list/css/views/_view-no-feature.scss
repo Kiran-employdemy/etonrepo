@@ -1,0 +1,106 @@
+//-----------------------------------
+// Module M-26 - Article List: No Feature (Text-Only 2-Col)
+//-----------------------------------
+.text-only-2-column {
+  padding-top: rem($spacing__md * .75);
+
+  @include media-tablet-and-up {
+    padding-top: rem($spacing__md);
+  }
+
+  @include media-desktop-and-up {
+    padding-top: rem($spacing__md * 2);
+  }
+
+  &__heading {
+    color: var(--primary-brand-color);
+    font-size: rem($base__font-size * 2.4);
+    line-height: $base__line-height * (1.25 / 1.4);
+
+    @include media-desktop-and-up {
+      font-size: rem($base__font-size * 2.8);
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  &__article-copy {
+    margin-top: rem($spacing__sm);
+    position: relative;
+
+    @include media-tablet-and-up {
+      margin-bottom: rem($spacing__md * .75);
+      margin-top: 0;
+      padding-right: rem($spacing__sm * .33333);
+    }
+
+    &::after {
+      //width: rem($grid__xs * .1041666667);
+      background-color: var(--primary-brand-color);
+      bottom: rem(-$spacing__sm * .6666666);
+      content: '';
+      display: block;
+      height: rem($grid__xs * .008333333333);
+      position: absolute;
+      left: 0;
+      width: rem($grid__xs * .1666666667);
+
+      @include media-desktop-and-up {
+        bottom: rem(-$spacing__sm * .8333333333);
+      }
+
+      [dir='rtl'] & {
+        right: 1.2rem;
+      }
+    }
+
+  }
+
+  &__eyebrow {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__cta {
+    display: block;
+  }
+
+  &__title {
+    margin-bottom: 0;
+    margin-top: rem($spacing__sm * .2666666667);
+
+    @include media-desktop-and-up {
+      margin-bottom: 0;
+      margin-top: rem($spacing__sm * .5333333333);
+    }
+  }
+
+  &__description {
+    font-size: rem($base__font-size * 1.6);
+
+    @include media-desktop-and-up {
+      font-size: rem($base__font-size * 1.8);
+      margin-bottom: rem($spacing__sm);
+    }
+  }
+
+  &__date {
+    color: var(--color__lunar-40);
+    line-height: $base__line-height * (1 / 1.4);
+    margin-bottom: 0;
+    margin-top: rem($spacing__sm * .6);
+  }
+
+  &__cta-container {
+    margin-top: rem($spacing__sm * .1);
+
+    @include media-desktop-and-up {
+      margin-top: rem($spacing__sm);
+    }
+  }
+}
+

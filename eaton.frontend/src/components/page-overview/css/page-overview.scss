@@ -1,0 +1,125 @@
+//-----------------------------------
+// Component M-11: Page Overview
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.page-overview {
+
+  &__component {
+    margin-bottom: rem($spacing__md);
+    margin-top: rem($spacing__md);
+  }
+
+  &_rtl__container {
+    [dir='rtl'] & {
+      @include media-desktop-and-up {
+        display: flex;
+      }
+    }
+  }
+
+  // Page Overview Styles
+  //--------------
+  &__title {
+    // TO DO: possibly remove this once microsites brand tool has been implemented.
+    // If global font overrides are desired once microsites brand tool is implement, it should be handled in _mixins-typography.scss
+    @include font-family__primary-medium(--header-font-medium);
+    line-height: $base__line-height * .895;
+    padding-bottom: rem($spacing__sm);
+    position: relative;
+
+    &::after {
+      background-color: var(--feature-overlay-color, $color__primary-blue);
+      bottom: 0;
+      content: '';
+      display: block;
+      height: rem($base__font-size * .4);
+      left: 0;
+      position: absolute;
+      width: rem($base__font-size * 8.2);
+    }
+
+    [dir='rtl'] & {
+      &::after {
+        right: 0;
+      }
+    }
+
+    &.b-heading-h2 {
+      font-size: rem($base__font-size * 2.7);
+    }
+  }
+
+  &__content {
+    font-size: rem($base__font-size * 1.8);
+    line-height: $base__line-height * 1.08;
+  }
+
+  @include media-mobile-only {
+    &__component {
+      margin-top: rem($spacing__md * .75);
+    }
+
+    &__title {
+      font-size: rem($base__font-size * 3.2);
+      padding-bottom: rem($spacing__sm * .8333333333);
+      position: relative;
+
+      &::after {
+        width: rem($base__font-size * 7.7);
+      }
+    }
+
+    &__content {
+      font-size: rem($base__font-size * 1.6);
+    }
+
+  }
+
+
+  //-----------------------------------
+  // Media-Query: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    &__content,
+    &__cta {
+      margin-top: rem($spacing__sm);
+    }
+
+    &__cta {
+
+      &--mobile { display: block; }
+
+      &--desktop { display: none; }
+
+    }
+
+  }
+
+
+  //-----------------------------------
+  // Media-Query: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    &__cta {
+      margin-top: rem($spacing__md);
+
+      &--mobile { display: none; }
+
+      &--desktop { display: block; }
+
+      &--buttondesktop {
+        width: 66.66%;
+      }
+
+    }
+
+  }
+
+}
+
+

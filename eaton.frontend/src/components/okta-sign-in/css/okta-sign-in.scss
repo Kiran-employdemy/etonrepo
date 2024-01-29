@@ -1,0 +1,31 @@
+
+.okta-sign-in-header {
+  display: none;
+}
+
+.auth-container {
+  /* stylelint-disable */
+  margin-top: 50px !important;
+  /* stylelint-enable */
+  .auth-footer {
+    display: none;
+  }
+}
+/* stylelint-disable */
+#help-links-container {
+  display: block !important;
+}
+#okta-sign-in a.link.js-help-link {
+  display: none;
+}
+#okta-sign-in a.link.js-forgot-password {
+  display: block;
+  margin-top: -25px;
+}
+#okta-sign-in a:link.js-help {
+  display: none;
+}
+#okta-sign-in .auth-content .help-links li {
+  margin-top: 0px !important;
+}
+/* stylelint-enable */

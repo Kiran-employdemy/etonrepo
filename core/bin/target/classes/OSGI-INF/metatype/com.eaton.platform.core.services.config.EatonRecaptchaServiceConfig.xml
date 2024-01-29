@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.EatonRecaptchaServiceConfig">
+  <OCD id="com.eaton.platform.core.services.config.EatonRecaptchaServiceConfig" name="EatonRecaptchaServiceConfigImpl" description="">
+    <AD id="recaptcha.site.key" type="String" name="Google Recaptcha Site Key" default=""/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.impl.EatonRecaptchaServiceConfigImpl">
+    <Object ocdref="com.eaton.platform.core.services.config.EatonRecaptchaServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

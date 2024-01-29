@@ -1,0 +1,12 @@
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Article List: ${currentNode.name}</div>
+</sly>
+
+<sly data-sly-test="${ properties.view == 'feature' }">
+  <sly data-sly-include="views/view-feature.html"></sly>
+</sly>
+
+<sly data-sly-test="${ properties.view == 'no-feature' }">
+  <sly data-sly-include="views/view-no-feature.html"></sly>
+</sly>

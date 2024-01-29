@@ -1,0 +1,54 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.icon-with-link {
+  font-size: rem($base__font-size * 1.2);
+  line-height: 0;
+}
+
+.icon-with-link-container {
+  text-align: center;
+  padding: 1rem;
+}
+
+.heading {
+  text-align: center;
+  font-weight: medium;
+  font-size: rem($base__font-size * 2.4);
+  line-height: 3.6rem;
+  letter-spacing: 0rem;
+  color: $color__primary-gray1;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.sub-heading {
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: rem($base__font-size * 1.4);
+  line-height: 1.8rem;
+  letter-spacing: 0.014rem;
+  color: $color__primary-gray1;
+  opacity: 1;
+  margin-top: 1rem;
+}
+
+.link-text {
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: rem($base__font-size * 1.4);
+  line-height: 2.5rem;
+  letter-spacing: 0rem;
+  color: $color__primary-blue;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-top: 1.5rem;
+}
+
+.icon-with-link-image {
+  height: 4rem;
+}

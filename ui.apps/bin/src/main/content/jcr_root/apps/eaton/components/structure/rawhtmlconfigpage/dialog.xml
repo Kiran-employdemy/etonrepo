@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    jcr:title="HTML Fragment Settings"
+    height="{Long}600"
+    warnIfModified="{Boolean}false"
+    width="{Long}900"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Config
+                jcr:primaryType="cq:Panel"
+                title="Config"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <documentation
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="{Boolean}true"
+                        fieldLabel="Documentation"
+                        name="./documentation"
+                        rootPath="/etc/raw-html"
+                        xtype="pathfield"/>
+                    <stylesheets
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' button to add more files."
+                        fieldLabel="Associated CSS files"
+                        name="./css"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            rootPath="/content/dam"
+                            xtype="pathfield"/>
+                    </stylesheets>
+                    <scripts
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription="Click the '+' button to add more files."
+                        fieldLabel="Associated JS files"
+                        name="./scripts"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            allowBlank="{Boolean}false"
+                            rootPath="/content/dam"
+                            xtype="pathfield"/>
+                    </scripts>
+                    <body
+                        jcr:primaryType="cq:Widget"
+                        boxMaxHeight="{Long}600"
+                        fieldLabel="HTML Content"
+                        grow="{Boolean}true"
+                        growMax="{Long}600"
+                        height="500"
+                        name="./body"
+                        xtype="textarea"/>
+                </items>
+            </Config>
+        </items>
+    </items>
+</jcr:root>

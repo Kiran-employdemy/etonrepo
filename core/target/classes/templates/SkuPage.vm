@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- style css -->
+<style>
+
+* {
+     box-sizing: border-box !important;
+     transition: ease all 0.5s;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     color: #666666;
+     font-size: 14px;
+     font-family: 'Josefin Sans', sans-serif;;
+     line-height: 1.80857;
+     font-weight: normal;
+     overflow-x: hidden;
+}
+
+a {
+     color: #1f1f1f;
+     text-decoration: none !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #111111;
+     margin: 0
+}
+
+h1 {
+     font-size: 48px
+}
+
+h2 {
+     font-size: 22px
+}
+
+h3 {
+     font-size: 18px
+}
+
+h4 {
+     font-size: 16px
+}
+
+h5 {
+     font-size: 14px
+}
+
+h6 {
+     font-size: 13px
+}
+
+*,
+*::after,
+*::before {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+     color: #212121;
+     text-decoration: none!important;
+     opacity: 1
+}
+
+button:focus {
+     outline: none;
+}
+
+ul,
+li,
+ol {
+     margin: 0px;
+     padding: 0px;
+     list-style: none;
+}
+
+p {
+     margin: 20px;
+     font-weight: 600;
+     font-size: 15px;
+     line-height: 24px;
+     color: #110f0a;
+}
+
+a {
+     color: #ffffff;
+     text-decoration: none;
+     outline: none !important;
+}
+
+.layout_padding {
+    padding-bottom: 0px;
+   
+}}
+
+
+.header_main{ width: 100%; float: left; }
+
+
+.banner_section_start{
+	width: 100%;
+	float: left; 
+	background-color: #fefcfb; 
+	height: auto; 
+	padding-top: 20px; 
+	padding-bottom: 20px;
+	border-bottom: 1px solid #000;
+}
+
+
+
+
+.padding_0 {
+	padding: 0 !important;
+}
+
+
+
+ .about_section{
+ 	width: 100%;
+ 	float: left;
+ }
+
+ .about_text{
+ 	width: 100%;
+ 	float: left;
+ 	color: #fa3e19;
+ 	font-size: 50pt;
+ 	border-bottom: 3px solid #111111;
+    margin-top: 65px;
+ }
+
+ .color{ color: #383737; }
+
+ .about_taital{
+ 	width: 100%;
+ 	float: left;
+ 	color: #686666;
+ 	font-size: 14pt;
+ 	margin-left: 0px;
+ 	padding-top: 20px;
+ }
+ .read_more{
+	width: 30%;
+	float: left;
+	background-color: #fa3e19;
+	height: 50px;
+	font-size: 16pt;
+	margin-top: 20px;
+	border: 0px;
+    color: #fff;
+
+ }
+ .read_more :hover{color: #000}
+
+
+.copyright_section{
+	width: 100%;
+	float: left;
+	background-color: #fefefe;
+	height: auto;
+}
+
+.copyright_taital{
+	font-weight: 18px; 
+	color: #010000;
+	text-align: center;
+}
+
+.copyright_taital a{
+	color: #010000;
+}
+.copyright_taital a:hover{
+	color: #f73c1d;
+}
+
+
+</style>
+
+
+
+
+</head>
+<body>
+	<header>
+		<div class="layout_padding banner_section_start">
+         <!-- header inner -->
+         <div class="header">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo"><a href="#home"><img src="$eatonLogo" style="max-width: 100%;"></a> 
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
+         </div>
+         <!-- end header inner -->		
+	
+	</header>
+	
+
+	<div id="about" class="layout_padding about_section">
+		<div class="container">
+			<div class="row">
+		        <div class="col-md-6">
+		        	
+		        	<div>
+						
+						<img class="rendition__image img-responsive"  alt="5PX1000RT - Eaton 5PX UPS" src="$imagePath">
+					</div>
+		        </div>
+		        <div class="col-md-6">
+		        	<h1 class="about_text"><strong>$title</strong></h1>
+		        	<p class="about_taital">
+						<div class="module-product-detail-card__description b-body-copy">
+							Not for sale or distribution in Colorado, Vermont or Washington state - Eaton 5PX UPS, 1000 VA, 1000 W, 5-15P input, Outputs: (8) 5-15R, 120V
+						 </div>
+
+						<div class="module-product-detail-card__price b-body-copy-small">
+						
+						  <b>List price</b>
+						  <span>$985</span>
+						  <div class="module-product-detail-card__price-disclaimer">
+							<span>List Prices are not a reflection of the actual product Street Price. Check with your Eaton reseller or partner to get actual pricing</span>
+						  </div>
+					
+						</div>
+					</p>
+		        	<button class="read_more"><a href="https://eaton-qa.tcc.etn.com/content/eaton/us/en-us/support/backup-power-ups-surge-it-power-distribution/contact-me-pq.html/content/eaton/us/en-us/catalog/backup-power-ups-surge-it-power-distribution/eaton-5px-ups.SKUID.5PX1000RT" data-analytics-event="request quote" aria-label="Go to Contact me about this product" target="_blank" class="b-button b-button__tertiary b-button__tertiary--light">
+					  Contact me about this product
+					</a></button>
+	
+          </div>
+					
+		        </div>
+			</div>
+		</div>
+	</div>
+
+    <div class="copyright_section">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm-12">
+    				<p class="copyright_taital">2021 All Rights Reserved.</p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          include-filter.config.ignoreUrlParams="[source,percolateContentId]"
+          include-filter.config.resource-types="[eaton/components/structure/full-page-drawer,eaton/components/product/product-grid,eaton/components/product/resource-list,eaton/components/secure/securemenu,eaton/components/secure/secure-linked-list,eaton/components/secure/securelinkscontainer,eaton/components/structure/securedatalayer,eaton_ecommerce/components/digital/my-subscription,eaton/components/general/download-link-list,eaton/components/product/related-products-pdh,eaton/components/general/vertical-link-list,eaton_ecommerce/components/product_information,eaton_ecommerce/components/product_carousal,eaton/components/secure/securexf,eaton/components/search/search-results,eaton/components/content/freesample-button,software_delivery/components/activation-id,software_delivery/components/software-download]"
+          include-filter.config.extension="html"
+          include-filter.config.enabled="{Boolean}true"
+          include-filter.config.path="/content/eaton/"
+          include-filter.config.required_header="Server-Agent\=Communique-Dispatcher"
+          include-filter.config.include-type="SSI"
+          include-filter.config.disableIgnoreUrlParams="{Boolean}false"
+          include-filter.config.selector="nocache"
+          include-filter.config.appendSuffix="{Boolean}true"
+          include-filter.config.add_comment="{Boolean}true"
+          include-filter.config.rewrite="{Boolean}true"
+          include-filter.config.ttl=""
+/>

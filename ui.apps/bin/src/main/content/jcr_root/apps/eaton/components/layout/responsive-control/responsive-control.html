@@ -1,0 +1,6 @@
+<div data-sly-test="${ wcmmode.edit }" class="alert alert-warning">Responsive Control Container</div>
+<sly data-sly-use.responsiveControl="com.eaton.platform.core.models.ResponsiveControlModel">
+
+<div class="container responsive-control ${! wcmmode.edit && responsiveControl.hideInMobile ? 'hide-mobile' : ''} ${! wcmmode.edit && responsiveControl.hideInDesktop ? 'hide-desktop' : ''}">
+  <sly data-sly-resource="${ @ path='responsive-par', resourceType='wcm/foundation/components/responsivegrid'}" />
+</div>

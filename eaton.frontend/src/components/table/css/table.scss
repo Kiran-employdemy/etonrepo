@@ -1,0 +1,116 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+$cell-padding-desktop: ($spacing__md * .43333) ($spacing__md * .33);
+$cell-padding-mobile: ($spacing__md * .4) ($spacing__md * .25);
+
+.table-flex {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.eaton-custom-table {
+  overflow-x: auto;
+  margin: $spacing__sm 0;
+  flex: 1;
+
+  table {
+    color: var(--grey-primary-brand-color, $color__primary-gray1);
+    @include font-family__secondary(--secondary-font);
+    line-height: $base__line-height * .7857; // 1.1;
+    margin-left: auto;
+    margin-right: auto;
+
+    thead {
+      tr {
+        align-items: center;
+      }
+    }
+
+    &.no-border {
+      .border-remove {
+        // stylelint-disable declaration-no-important
+        border: 0 !important; // need this to override Boostrap default styles
+        // stylelint-enable
+      }
+
+      th {
+        // stylelint-disable declaration-no-important
+        border: 0 !important; // need this to override Boostrap default styles
+        // stylelint-enable
+      }
+
+      td {
+        // stylelint-disable declaration-no-important
+        border: 0 !important; // need this to override Boostrap default styles
+        // stylelint-enable
+      }
+    }
+
+    tbody {
+      tr {
+        &:nth-child(odd) {
+          // change to gradient
+          background-color: $color__secondary-gray6;
+        }
+
+      }
+    }
+
+    th {
+      font-weight: bold;
+      font-size: 1.4rem;
+      // stylelint-disable declaration-no-important
+      padding: $cell-padding-mobile !important; // need this to override Boostrap default styles
+      // stylelint-enable
+      text-transform: uppercase;
+
+
+      @include media-desktop-and-up {
+        font-size: 1.8rem;
+        // stylelint-disable declaration-no-important
+        padding: $cell-padding-desktop !important; // need this to override Bootstrap default styles
+        // stylelint-enable
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    td {
+      border-width: 0;
+      font-size: 1.3rem;
+      // stylelint-disable declaration-no-important
+      padding: $cell-padding-mobile !important; // need this to override Bootstrap default styles
+      // stylelint-enable
+
+      @include media-desktop-and-up {
+        font-size: 1.8rem;
+        //min-width: $cell-min-width-desktop;
+        // stylelint-disable declaration-no-important
+        padding: $cell-padding-desktop !important; // need this to override Bootstrap default styles
+        // stylelint-enable
+      }
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    i {
+      font-style: italic;
+    }
+  }
+
+  &.table-border {
+    table {
+      td {
+        border-width: 1px;
+        border-style: solid;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,55 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.cardlist.CardListModel">
+
+  <!--/* Container */-->
+  <div class="card-list__component container">
+    <div class="js-list-slider row">
+
+      <ul class="card-list__list js-list-slider__slides"
+	  data-sly-list.slider="${ data.listTypeArray}" 
+	  >
+        <li class="card-list__item js-list-slider__slide-item col-sm-12 ${ 
+		data.listTypeArray.length == 2 ? 'col-md-6' : 'col-md-4' }">
+          <a href="${ slider.pagePath }"
+            target="${ slider.newWindow }"
+            class="card-list__link u-absolute-fill">
+
+ <!--/* This Text is used by Screen Readers / For Accessibility */-->
+            <span class="sr-only">${ slider.eyebrow } ${ slider.headline  }</span>
+          </a>
+            <div class="card-list__card">
+
+
+		<div class="card-list__image">
+         <!-- Start: Rendition Image Component -->
+             
+		<sly data-sly-use.tpl="eaton/components/shared/templates/rendition-background.html">
+                <sly data-sly-call="${ tpl.module @ data=slider }"></sly>
+        </sly>
+         <!-- Rendition Refractoring  -->
+		 </div>
+              <div class="card-list__content">
+                <div class="card-list__eyebrow b-eyebrow-small">${ slider.eyebrow }</div>
+                <div class="card-list__heading b-heading-h5">${ slider.headline }</div>
+                <div class="card-list__date"><em>${ slider.publicationDateDisplay }</em></div>
+              </div>
+            </div>
+          
+        </li>
+      </ul>
+
+      <!--/* Carousel: Navigation Arrows */-->
+      <sly data-sly-test="${data.isEligibleForCarousel}"> 
+        <button class="js-list-slider__prev-arrow js-list-slider__arrows button--reset">
+          <span class="sr-only">${ 'Go to Previous Item' @ i18n }</span>
+          <i class="icon icon-chevron-left" aria-hidden="true"></i>
+        </button>
+        <button class="js-list-slider__next-arrow js-list-slider__arrows button--reset">
+          <span class="sr-only">${ 'Go to Next Item' @ i18n }</span>
+          <i class="icon icon-chevron-right" aria-hidden="true"></i>
+        </button>
+      </sly>
+
+    </div>
+  </div>
+
+</sly>

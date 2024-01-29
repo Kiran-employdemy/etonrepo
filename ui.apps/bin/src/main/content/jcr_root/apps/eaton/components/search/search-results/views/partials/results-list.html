@@ -1,0 +1,78 @@
+<!--/* M-60: Results List */-->
+<template data-sly-template.module="${ @ data, results }">
+
+<!--/*
+  NOTE: data-i18n is a JSON object that contains a list i18n strings used in this View
+  - These strings are used by JavaScript templates (when the user clicks "Load More")
+*/-->
+<div class="results-list"
+  data-results-url="${ data.loadMoreAttrJsonString }"
+  data-results-next-page="0"
+  data-i18n='{ "goTo": "${ "Go to" @ i18n }", "download": "${ "Download" @ i18n }", "sha256": "${  "sha256" @ i18n  }" , "eccnWarning": "${  "eccnWarning" @ i18n  }" }'
+    >
+  <div data-sly-list="${ results.siteSearchResultsBeanList }"
+    class="results-list__content">
+
+     <sly data-sly-test.abc="${data.searchResultsModel.view == 'default' || (data.searchResultsModel.view == 'advanced' && data.searchResultsModel.contentTypeOption == 'enableProductsTab') } ">
+	 <sly data-sly-test="${ item.contentType == 'family' }">
+      <sly data-sly-use.tpl="views/partials/content-type--family.html">
+        <sly data-sly-call="${ tpl.item @ data=item }"></sly>
+      </sly>
+      </sly>
+
+    <sly data-sly-test="${ item.contentType == 'sku' }">
+      <sly data-sly-use.tpl="views/partials/content-type--family.html">
+        <sly data-sly-call="${ tpl.item @ data=item }"></sly>
+      </sly>
+    </sly>
+    </sly>
+
+    <sly data-sly-test="${data.searchResultsModel.view == 'default' || (data.searchResultsModel.view == 'advanced' && data.searchResultsModel.contentTypeOption == 'enableNewsTab') } ">
+    <sly data-sly-test="${ item.contentType == 'article' }">
+      <sly data-sly-use.tpl="views/partials/content-type--article.html">
+        <sly data-sly-call="${ tpl.item @ data=item }"></sly>
+      </sly>
+    </sly>
+
+    <sly data-sly-test="${ item.contentType == 'news-and-insights' }">
+      <sly data-sly-use.tpl="views/partials/content-type--article.html">
+        <sly data-sly-call="${ tpl.item @ data=item }"></sly>
+      </sly>
+    </sly>
+    </sly>
+
+    <sly data-sly-test="${data.searchResultsModel.view == 'default' || (data.searchResultsModel.view == 'advanced' && data.searchResultsModel.contentTypeOption == 'enableResourcesTab') } ">
+    <sly data-sly-test="${ item.contentType == 'resources' }">
+      <sly data-sly-use.tpl="views/partials/content-type--resource.html">
+        <sly data-sly-call="${ tpl.item @ data=item }"></sly>
+      </sly>
+    </sly>
+    </sly>
+	<sly data-sly-test="${ item.contentType == 'others' && item.ecommPageType != 'learn-page' }">
+      <sly data-sly-use.tpl="views/partials/content-type--others.html">
+        <sly data-sly-call="${ tpl.item @ data=item }"></sly>
+      </sly>
+    </sly>
+    <sly data-sly-test="${ item.ecommPageType == 'learn-page' }">
+      <sly data-sly-use.tpl="views/partials/content-type--learn.html">
+        <sly data-sly-call="${ tpl.item @ data=item }"></sly>
+      </sly>
+    </sly>
+
+  </div>
+
+  <div class="results-list__bottom text-center">
+    <div class="results-list__actions text-center">
+
+      <!--/* Render Button "Load More" results only if the property 'ajaxRequestUrl' is not empty */-->
+      <button
+        data-sly-test="${ data.loadMoreFlag == 'true' }"
+        class="b-button b-button__primary b-button__primary--light"
+        role="button"
+        data-load-more>${'loadMore' @ i18n}</button>
+    </div>
+  </div>
+
+</div>
+
+</template>

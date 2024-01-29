@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Content Hub Component"
+    categories="[cq.authoring.dialog]"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly"
+    extraClientlibs="[product.grid.dialog,cq.authoring.dialog]"
+    mode="edit">
+    <content
+        granite:class="product-grid-dialog"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <herotext
+                granite:rel="cq-siteadmin-admin-properties-tabs"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Component Properties - Touch UI"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <tags
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                fieldDescription="This field stores the value of tags field."
+                                fieldLabel="Tags"
+                                multiple="{Boolean}true"
+								required="true"
+                                name="./tags"/>
+                            <initialNumberOfResults
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                defaultValue="6"
+                                fieldDescription="This field stores the value for no of results to load initially. "
+                                fieldLabel="Number of results to load initially"
+                                min="{Long}0"
+                                name="./initialNumberOfResults"/>
+							<showFilters
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="This field stores the value for show filter field."
+                                name="./showFilters"
+                                text="Show filters"
+                                value="true"/>
+							<enablePublicationDate
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                defaultChecked="true"
+                                fieldDescription="Display published date"
+                                name="./enablePublicationDate"
+                                text="Display published date"
+                                uncheckedValue="{Boolean}false"
+                                value="true"/>
+                            <sortBy
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldDescription="This field stores the value of sort field. There are two options: Publication Date, Title."
+                                fieldLabel="Sort By"
+                                name="./sortBy"
+                                required="false">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <publication-date
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Publication Date"
+                                        value="pub-date"/>
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Title"
+                                        value="title"/>
+                                </items>
+                            </sortBy>	
+                        </items>
+                    </column>
+                </items>
+            </herotext>
+        </items>
+    </content>
+</jcr:root>

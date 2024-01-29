@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.vgselector.servlets.VGSelectorLoadMoreServlet" immediate="true">
+  <property name="sling.servlet.paths" type="String" value="/eaton/vgproductselector/loadmore"/>
+  <property name="sling.servlet.methods" type="String" value="POST"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="configFactory" interface="com.day.cq.wcm.webservicesupport.ConfigurationManagerFactory" field="configFactory"/>
+  <reference name="endecaConfigService" interface="com.eaton.platform.integration.endeca.services.EndecaConfig" field="endecaConfigService"/>
+  <reference name="endecaService" interface="com.eaton.platform.integration.endeca.services.EndecaService" field="endecaService"/>
+  <implementation class="com.eaton.platform.core.vgselector.servlets.VGSelectorLoadMoreServlet"/>
+</scr:component>

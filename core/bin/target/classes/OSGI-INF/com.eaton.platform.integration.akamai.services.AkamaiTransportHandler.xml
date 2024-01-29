@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.akamai.services.AkamaiTransportHandler" immediate="true" activate="activate" modified="activate">
+  <property name="base.url" type="String" value="https://www.eaton.com"/>
+  <property name="client.token" type="String" value="akab-ue3z7mcjpxh2xfq6-ollme4xqg3vq3433"/>
+  <property name="akamai.host" type="String" value="akab-z2mvxb46gck35oic-rqldw3ivl32ff4jk.purge.akamaiapis.net"/>
+  <property name="transport.delay" type="Integer" value="2"/>
+  <property name="client.secret" type="String" value="3WNnFNcXToxEDAfrq14cLBH7RqjEvvSZGGuPN0NTLGw="/>
+  <property name="access.token" type="String" value="akab-6xyajldthlukfru7-nqnpornelvonijew"/>
+  <service>
+    <provide interface="com.day.cq.replication.TransportHandler"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="externalizer" interface="com.day.cq.commons.Externalizer" field="externalizer"/>
+  <reference name="flushServiceConfiguration" interface="com.eaton.platform.core.replication.FlushServiceConfiguration" field="flushServiceConfiguration"/>
+  <reference name="httpFactory" interface="org.apache.http.osgi.services.HttpClientBuilderFactory" field="httpFactory"/>
+  <reference name="productFamilyDetailService" interface="com.eaton.platform.core.services.ProductFamilyDetailService" field="productFamilyDetailService"/>
+  <implementation class="com.eaton.platform.integration.akamai.services.AkamaiTransportHandler"/>
+</scr:component>

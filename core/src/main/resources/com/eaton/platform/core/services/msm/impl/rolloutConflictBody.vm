@@ -1,0 +1,30 @@
+Conflicts were detected during rollout.
+
+Blueprint path: $RolloutConflictUtils.buildLink($result.root, $externalizer, $resourceResolver)
+Rollout page and subpages: ${result.deep}
+-------------------------------------------------------------------------------------
+
+#foreach( $entry in $result.items.entrySet() )
+Page: $RolloutConflictUtils.buildLink($entry.key, $externalizer, $resourceResolver)
+	
+	#if( $entry.value.liveCopyMsmMovedPath )
+    	Conflicting page:
+    	
+    	$RolloutConflictUtils.buildLink($entry.value.liveCopyMsmMovedPath, $externalizer, $resourceResolver)
+	#end
+	#if( $entry.value.msmMovedComponentPaths )
+    	Conflicting resources:
+    	
+    	#foreach( $path in $entry.value.msmMovedComponentPaths )
+    	$RolloutConflictUtils.buildComponentPath($path)
+		#end
+	#end
+	
+#end
+
+-------------------------------------------------------------------------------------
+
+
+#if( $docLink )
+Documentation link: ${docLink}
+#end

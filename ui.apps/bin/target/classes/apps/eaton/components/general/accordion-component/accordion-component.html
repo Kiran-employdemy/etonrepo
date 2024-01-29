@@ -1,0 +1,36 @@
+<sly data-sly-use.accordionItems="com.eaton.platform.core.models.AccordionModel" />
+
+<div data-sly-test="${wcmmode.edit}" class="alert alert-warning">Accordion: ${currentNode.name}</div>
+
+<div class="accordion ${accordionItems.toggleInnerGrid ? 'container' : ''}">
+    <div class="accordion__option">
+        <a data-sly-test="${accordionItems.accordionItemValue.length > 1}"
+        class="toggle-accordion active" href="javascript:void(0)" accordion-id="#accordion-${accordionItems.uniqueId}"
+        data-active-text="${'Accordion.ExpandAllLabel' @ i18n}"
+        data-inactive-text="${'Accordion.CollapseAllLabel' @ i18n}"></a>
+    </div>
+
+    <div class="panel-group" id="accordion-${accordionItems.uniqueId}" role="tablist" aria-multiselectable="true" data-default-closed="${accordionItems.defaultAccordionClosed}">
+        <sly data-sly-list.accordionItem="${accordionItems.accordionItemValue}">
+            <div class="panel" id="panel-${accordionItems.uniqueId}-${accordionItemList.index}">
+                <div class="panel__header" role="tab" id="heading-${accordionItems.uniqueId}-${accordionItemList.index}">
+                    <div class="panel__header__title ${wcmmode.edit ? '' : 'collapsed'}"
+                    role="button" data-toggle="collapse" href="#collapse-${accordionItems.uniqueId}-${accordionItemList.index}"
+                    aria-expanded="true" aria-controls="collapse-${accordionItems.uniqueId}-${accordionItemList.index}">
+                        <h2>${accordionItem}</h2>
+                        <i class="panel__header__icon"></i>
+                    </div>
+                </div>
+                <div id="collapse-${accordionItems.uniqueId}-${accordionItemList.index}"
+                    class="panel-collapse ${wcmmode.edit ? 'collapse in' : 'collapse'} ${accordionItemList.first ? 'first-panel' : ''}"
+                    role="tabpanel" aria-labelledby="heading-${accordionItems.uniqueId}-${accordionItemList.index}">
+                    <div class="panel__body">
+                        <sly data-sly-test.parResource="${'par{0}' @format=[accordionItemList.index]}"></sly>
+                        <sly data-sly-resource="${ parResource @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+                        <span class="panel__body__fix">spacer</span>
+                    </div>
+                </div>
+            </div>
+        </sly>
+    </div>
+</div>

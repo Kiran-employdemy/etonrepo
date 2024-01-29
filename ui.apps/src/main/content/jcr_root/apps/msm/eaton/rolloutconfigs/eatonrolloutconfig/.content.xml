@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    cq:trigger="rollout"
+    jcr:description="Standard rollout configuration which allows to start rollout process on rollout trigger and runs actions: create, update, delete content and order children nodes."
+    jcr:primaryType="cq:RolloutConfig"
+    jcr:title="EN-US publish on rollout">
+    <contentUpdate jcr:primaryType="cq:LiveSyncAction"/>
+    <contentCopy jcr:primaryType="cq:LiveSyncAction"/>
+    <contentDelete jcr:primaryType="cq:LiveSyncAction"/>
+    <referencesUpdate jcr:primaryType="cq:LiveSyncAction"/>
+    <productUpdate jcr:primaryType="cq:LiveSyncAction"/>
+    <orderChildren jcr:primaryType="cq:LiveSyncAction"/>
+    <personalizationContentRollout jcr:primaryType="cq:LiveSyncAction"/>
+    <publishOnRolloutLiveAction
+        jcr:primaryType="cq:LiveSyncAction"
+        repLastModBy="{Boolean}true"/>
+</jcr:root>

@@ -1,0 +1,511 @@
+{
+  "response" : {
+    "status" : "Success",
+    "statusDetails" : {
+      "messages" : [ "Query=enePort=16400&amp;Nr=AND%28language%3aen_US%2cOR%28p_product_family%3aproduct-taxonomy_support-systems_cable-tray-and-ladder-systems%29%2cOR%28country%3aUS%2ccountry%3aGLOBAL%29%29&amp;Ns=%7c0&amp;eneHost=endeca-dev.tcc.etn.com&amp;N=0" ]
+    },
+    "didYouMean" : null,
+    "binning" : {
+      "binningSet" : [ {
+        "label" : "b-line-submittal-builder_material",
+        "bsId" : "b-line-submittal-builder_material",
+        "bin" : [ {
+          "label" : "aluminum",
+          "ndocs" : 0,
+          "value" : "355485688"
+        }, {
+          "label" : "electro-plated-zinc",
+          "ndocs" : 0,
+          "value" : "548847137"
+        }, {
+          "label" : "multiple-options",
+          "ndocs" : 0,
+          "value" : "1067305562"
+        }, {
+          "label" : "other",
+          "ndocs" : 0,
+          "value" : "2064670398"
+        }, {
+          "label" : "pre-galvanized",
+          "ndocs" : 0,
+          "value" : "2336155058"
+        }, {
+          "label" : "stainless-steel-type-316",
+          "ndocs" : 0,
+          "value" : "2537368814"
+        } ]
+      }, {
+        "label" : "b-line-submittal-builder_type",
+        "bsId" : "b-line-submittal-builder_type",
+        "bin" : [ {
+          "label" : "accessories",
+          "ndocs" : 0,
+          "value" : "1685503211"
+        }, {
+          "label" : "fittings",
+          "ndocs" : 0,
+          "value" : "347558571"
+        }, {
+          "label" : "straight-section",
+          "ndocs" : 0,
+          "value" : "196079063"
+        }, {
+          "label" : "straight_section",
+          "ndocs" : 0,
+          "value" : "3832259321"
+        } ]
+      } ]
+    },
+    "searchResults" : {
+      "totalCount" : 86,
+      "document" : [ {
+        "content" : [ {
+          "name" : "b-line-submittal-builder_material",
+          "type" : "text",
+          "value" : "aluminum"
+        }, {
+          "name" : "b-line-submittal-builder_series",
+          "type" : "text",
+          "value" : "all-redi-rail-series"
+        }, {
+          "name" : "b-line-submittal-builder_description",
+          "type" : "text",
+          "value" : "horizontal-tee"
+        }, {
+          "name" : "b-line-submittal-builder_type",
+          "type" : "text",
+          "value" : "fittings"
+        }, {
+          "name" : "b-line-submittal-builder_nema-load",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-rail-height",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_load-depth",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-dam_size",
+          "type" : "text",
+          "value" : "317942"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/support-systems/cable-management/redi-rail-cable-tray/redi-rail-cable-tray-submittals/Redi-Rail-horizontal-reducing-tee-submittal.pdf"
+        }, {
+          "name" : "title",
+          "type" : "text",
+          "value" : "Redi-Rail horizontal reducing tee submittal"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "b-line-submittal-builder_material",
+          "type" : "text",
+          "value" : "aluminum"
+        }, {
+          "name" : "b-line-submittal-builder_series",
+          "type" : "text",
+          "value" : "all-redi-rail-series"
+        }, {
+          "name" : "b-line-submittal-builder_description",
+          "type" : "text",
+          "value" : "horizontal-tee"
+        }, {
+          "name" : "b-line-submittal-builder_type",
+          "type" : "text",
+          "value" : "fittings"
+        }, {
+          "name" : "b-line-submittal-builder_nema-load",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-rail-height",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_load-depth",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-dam_size",
+          "type" : "text",
+          "value" : "306231"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/support-systems/cable-management/redi-rail-cable-tray/redi-rail-cable-tray-submittals/Redi-Rail-horizontal-tee-submittal.pdf"
+        }, {
+          "name" : "title",
+          "type" : "text",
+          "value" : "Redi-Rail horizontal tee submittal"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "b-line-submittal-builder_material",
+          "type" : "text",
+          "value" : "aluminum"
+        }, {
+          "name" : "b-line-submittal-builder_series",
+          "type" : "text",
+          "value" : "all-redi-rail-series"
+        }, {
+          "name" : "b-line-submittal-builder_description",
+          "type" : "text",
+          "value" : "offset-reducing-splice-plate"
+        }, {
+          "name" : "b-line-submittal-builder_type",
+          "type" : "text",
+          "value" : "accessories"
+        }, {
+          "name" : "b-line-submittal-builder_nema-load",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-rail-height",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_load-depth",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-dam_size",
+          "type" : "text",
+          "value" : "168051"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/support-systems/cable-management/redi-rail-cable-tray/redi-rail-cable-tray-submittals/Redi-Rail-reducing-splice-submittal.pdf"
+        }, {
+          "name" : "title",
+          "type" : "text",
+          "value" : "Redi-Rail reducing splice submittal"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "b-line-submittal-builder_material",
+          "type" : "text",
+          "value" : "aluminum"
+        }, {
+          "name" : "b-line-submittal-builder_series",
+          "type" : "text",
+          "value" : "all-redi-rail-series"
+        }, {
+          "name" : "b-line-submittal-builder_description",
+          "type" : "text",
+          "value" : "horizontal-tee"
+        }, {
+          "name" : "b-line-submittal-builder_type",
+          "type" : "text",
+          "value" : "fittings"
+        }, {
+          "name" : "b-line-submittal-builder_nema-load",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-rail-height",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_load-depth",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-dam_size",
+          "type" : "text",
+          "value" : "321472"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/support-systems/cable-management/redi-rail-cable-tray/redi-rail-cable-tray-submittals/Redi-Rail-horizontal-expanding-tee-submittal.pdf"
+        }, {
+          "name" : "title",
+          "type" : "text",
+          "value" : "Redi-Rail horizontal expanding tee submittal"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "b-line-submittal-builder_material",
+          "type" : "text",
+          "value" : "aluminum"
+        }, {
+          "name" : "b-line-submittal-builder_series",
+          "type" : "text",
+          "value" : "all-redi-rail-series"
+        }, {
+          "name" : "b-line-submittal-builder_description",
+          "type" : "text",
+          "value" : "horizontal-cross"
+        }, {
+          "name" : "b-line-submittal-builder_type",
+          "type" : "text",
+          "value" : "fittings"
+        }, {
+          "name" : "b-line-submittal-builder_nema-load",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-rail-height",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_load-depth",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-dam_size",
+          "type" : "text",
+          "value" : "207439"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/support-systems/cable-management/redi-rail-cable-tray/redi-rail-cable-tray-submittals/Redi-Rail-solid%20bottom-horizontal-cross-submittal.PDF"
+        }, {
+          "name" : "title",
+          "type" : "text",
+          "value" : "Redi-Rail cable tray solid bottom horizontal cross submittal"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "b-line-submittal-builder_material",
+          "type" : "text",
+          "value" : "aluminum"
+        }, {
+          "name" : "b-line-submittal-builder_series",
+          "type" : "text",
+          "value" : "all-redi-rail-series"
+        }, {
+          "name" : "b-line-submittal-builder_description",
+          "type" : "text",
+          "value" : "horizontal-tee"
+        }, {
+          "name" : "b-line-submittal-builder_type",
+          "type" : "text",
+          "value" : "fittings"
+        }, {
+          "name" : "b-line-submittal-builder_nema-load",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-rail-height",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_load-depth",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-dam_size",
+          "type" : "text",
+          "value" : "187994"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/support-systems/cable-management/redi-rail-cable-tray/redi-rail-cable-tray-submittals/Redi-Rail-solid-bottom-horizontal-tee-submittal.PDF"
+        }, {
+          "name" : "title",
+          "type" : "text",
+          "value" : "Redi-Rail cable tray solid bottom horizontal tee submittal"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "b-line-submittal-builder_material",
+          "type" : "text",
+          "value" : "aluminum"
+        }, {
+          "name" : "b-line-submittal-builder_series",
+          "type" : "text",
+          "value" : "all-redi-rail-series"
+        }, {
+          "name" : "b-line-submittal-builder_description",
+          "type" : "text",
+          "value" : "universal-fitting"
+        }, {
+          "name" : "b-line-submittal-builder_type",
+          "type" : "text",
+          "value" : "accessories"
+        }, {
+          "name" : "b-line-submittal-builder_nema-load",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-rail-height",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_load-depth",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-dam_size",
+          "type" : "text",
+          "value" : "265750"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/support-systems/cable-management/redi-rail-cable-tray/redi-rail-cable-tray-submittals/Universal-fitting-with-Redi-Rail-splices-submittal.pdf"
+        }, {
+          "name" : "title",
+          "type" : "text",
+          "value" : "Universal fitting with Redi-Rail splices submittal"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "b-line-submittal-builder_material",
+          "type" : "text",
+          "value" : "aluminum"
+        }, {
+          "name" : "b-line-submittal-builder_series",
+          "type" : "text",
+          "value" : "all-redi-rail-series"
+        }, {
+          "name" : "b-line-submittal-builder_description",
+          "type" : "text",
+          "value" : "horizontal-bend"
+        }, {
+          "name" : "b-line-submittal-builder_type",
+          "type" : "text",
+          "value" : "fittings"
+        }, {
+          "name" : "b-line-submittal-builder_nema-load",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-rail-height",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_load-depth",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-dam_size",
+          "type" : "text",
+          "value" : "210569"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/support-systems/cable-management/redi-rail-cable-tray/redi-rail-cable-tray-submittals/Redi-Rail-solid-bottom-horizontal-bend-submittal.PDF"
+        }, {
+          "name" : "title",
+          "type" : "text",
+          "value" : "Redi-Rail cable tray solid bottom horizontal bend submittal"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "b-line-submittal-builder_material",
+          "type" : "text",
+          "value" : "aluminum"
+        }, {
+          "name" : "b-line-submittal-builder_series",
+          "type" : "text",
+          "value" : "all-kwiksplice-series"
+        }, {
+          "name" : "b-line-submittal-builder_description",
+          "type" : "text",
+          "value" : "straight-reducer-fitting"
+        }, {
+          "name" : "b-line-submittal-builder_type",
+          "type" : "text",
+          "value" : "fittings"
+        }, {
+          "name" : "b-line-submittal-builder_nema-load",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-rail-height",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_load-depth",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-dam_size",
+          "type" : "text",
+          "value" : "172657"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/support-systems/cable-management/kwiksplice-cable-tray-/kwiksplice-cable-tray-submittals/KwikSplice-straight-reducer-submittal.PDF"
+        }, {
+          "name" : "title",
+          "type" : "text",
+          "value" : "KwikSplice cable tray straight reducer submittal"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "b-line-submittal-builder_material",
+          "type" : "text",
+          "value" : "aluminum"
+        }, {
+          "name" : "b-line-submittal-builder_series",
+          "type" : "text",
+          "value" : "all-redi-rail-series"
+        }, {
+          "name" : "b-line-submittal-builder_description",
+          "type" : "text",
+          "value" : "vertical-inside-bend"
+        }, {
+          "name" : "b-line-submittal-builder_type",
+          "type" : "text",
+          "value" : "fittings"
+        }, {
+          "name" : "b-line-submittal-builder_nema-load",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-rail-height",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_load-depth",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "b-line-submittal-builder_side-dam_size",
+          "type" : "text",
+          "value" : "214702"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/support-systems/cable-management/redi-rail-cable-tray/redi-rail-cable-tray-submittals/Redi-Rail-solid-bottom-vertical-bend-submittal%20.PDF"
+        }, {
+          "name" : "title",
+          "type" : "text",
+          "value" : "Redi-Rail cable tray solid bottom vertical bend submittal"
+        } ]
+      } ]
+    },
+    "request" : {
+      "searchApplication" : "eatoncomsubmittalbuilder",
+      "searchApplicationKey" : "abc123",
+      "function" : "search",
+      "searchTerms" : "product-taxonomy_support-systems_cable-tray-and-ladder-systems",
+      "language" : "en_US",
+      "startingRecordNumber" : 0,
+      "numberOfRecordsToReturn" : 10,
+      "filters" : [ {
+        "filterName" : "ReturnFacetsFor",
+        "filterValue" : [ "b-line-submittal-builder_material", "b-line-submittal-builder_type" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "Country",
+        "filterValue" : [ "US" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "Facets",
+        "filterValue" : [ "" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "sortBy",
+        "filterValue" : [ "|0" ],
+        "preferenceValue" : null
+      } ],
+      "userName" : null
+    }
+  }
+}

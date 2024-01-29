@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          scheduler.expression="0 0/30 * 1/1 * ? *"
+          scheduler.concurrent="{Boolean}false"
+          agentIDs="[prod_china_pub01,prod_china_pub02,prod_publish_01,prod_publish_02,prod-publish-03,prod-publish-04,prod-publish-05,prod_web01,prod_web02,prod-varnish--us-,prod-varnish--cn-,akamai-purge,author-dispatcher-flush-agent]"
+          schdulerName = "Replication Queue Scheduler"
+          emailDL="List-Enterprise-AEM-Support-PROD@Eaton.com"
+          enabled="{Boolean}true"/>

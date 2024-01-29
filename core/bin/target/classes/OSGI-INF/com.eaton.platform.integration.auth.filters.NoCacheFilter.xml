@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.auth.filters.NoCacheFilter" activate="activate">
+  <property name="sling.filter.methods" type="String">GET
+POST</property>
+  <property name="sling.filter.scope" type="String" value="REQUEST"/>
+  <property name="service.description" type="String" value=" Eaton No-Cache Filter"/>
+  <property name="sling.filter.selectors" type="String">nocache
+auth</property>
+  <property name="service.ranking" type="Integer" value="10000"/>
+  <property name="sling.filter.extensions" type="String">html
+json</property>
+  <service>
+    <provide interface="javax.servlet.Filter"/>
+  </service>
+  <reference name="authenticationService" interface="com.eaton.platform.integration.auth.services.AuthenticationService" field="authenticationService"/>
+  <reference name="authenticationServiceConfig" interface="com.eaton.platform.integration.auth.services.AuthenticationServiceConfiguration" field="authenticationServiceConfig"/>
+  <reference name="authorizationService" interface="com.eaton.platform.integration.auth.services.AuthorizationService" field="authorizationService"/>
+  <reference name="slingSettingsService" interface="org.apache.sling.settings.SlingSettingsService" field="slingSettingsService"/>
+  <implementation class="com.eaton.platform.integration.auth.filters.NoCacheFilter"/>
+</scr:component>

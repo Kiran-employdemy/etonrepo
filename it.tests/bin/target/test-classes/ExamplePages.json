@@ -1,0 +1,35 @@
+{
+  "genericpage": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:title": "Submittal Builder",
+      "cq:template": "/conf/eaton/settings/wcm/templates/generic-page",
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "primary-sub-category-tag@TypeHint": "String[]",
+      "publication-date@TypeHint": "Date",
+      "view": "generic",
+      "page-type": "generic-page",
+      "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "cq:allowedTemplates": [
+        "/conf/eaton/settings/wcm/templates/generic-page",
+        "/conf/eaton/settings/wcm/templates/article-page"
+      ],
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "responsivegrid": {
+          "jcr:primaryType": "nt:unstructured",
+          "sling:resourceType": "wcm/foundation/components/responsivegrid",
+          "cq:responsive": {
+            "jcr:primaryType": "nt:unstructured"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.secure.impl.AgentReportsServiceImpl" immediate="true" activate="activate" modified="activate">
+  <service>
+    <provide interface="com.eaton.platform.core.services.secure.AgentReportsService"/>
+  </service>
+  <reference name="agentReportsMapperService" interface="com.eaton.platform.core.services.secure.AgentReportsMapperService" field="agentReportsMapperService"/>
+  <reference name="agentReportsServiceConfiguration" interface="com.eaton.platform.core.services.secure.AgentReportsServiceConfiguration" field="agentReportsServiceConfiguration"/>
+  <reference name="authorizationService" interface="com.eaton.platform.integration.auth.services.AuthorizationService" field="authorizationService"/>
+  <reference name="httpFactory" interface="org.apache.http.osgi.services.HttpClientBuilderFactory" field="httpFactory"/>
+  <reference name="profileService" interface="com.eaton.platform.integration.auth.services.UserProfileService" field="profileService"/>
+  <implementation class="com.eaton.platform.core.services.secure.impl.AgentReportsServiceImpl"/>
+</scr:component>

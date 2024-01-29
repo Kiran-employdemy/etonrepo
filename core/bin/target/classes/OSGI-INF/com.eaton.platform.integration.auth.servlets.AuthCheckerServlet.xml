@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.auth.servlets.AuthCheckerServlet" immediate="true">
+  <property name="sling.filter.pattern" type="String" value="(^/content/eaton/.*/secure/.*|^/content/dam/eaton/.*/secure/.*|^/content/dam/eaton/secure/.*|^/content/eaton/.*/digital/secure/.*)"/>
+  <property name="sling.servlet.paths" type="String" value="/bin/permissioncheck"/>
+  <property name="sling.servlet.methods" type="String">GET
+HEAD</property>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="authenticationService" interface="com.eaton.platform.integration.auth.services.AuthenticationService" field="authenticationService"/>
+  <reference name="authenticationServiceConfig" interface="com.eaton.platform.integration.auth.services.AuthenticationServiceConfiguration" field="authenticationServiceConfig"/>
+  <reference name="authorizationService" interface="com.eaton.platform.integration.auth.services.AuthorizationService" field="authorizationService"/>
+  <reference name="mimeTypeService" interface="org.apache.sling.commons.mime.MimeTypeService" field="mimeTypeService"/>
+  <implementation class="com.eaton.platform.integration.auth.servlets.AuthCheckerServlet"/>
+</scr:component>

@@ -1,0 +1,44 @@
+//-----------------------------------
+// EATON-81: Rendition Background Images
+//-----------------------------------
+.rendition-bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+
+  // stylelint-disable block-opening-brace-space-before
+  // stylelint-disable rules/empty-line-between-blocks
+  &.rendition-bg--alignment {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @include media-mobile-and-tablet {
+    &.mobile-left-top      { background-position: left top; }
+    &.mobile-left-center   { background-position: left center; }
+    &.mobile-left-bottom   { background-position: left bottom; }
+    &.mobile-center-top    { background-position: center top; }
+    &.mobile-center-center { background-position: center center; }
+    &.mobile-center-bottom { background-position: center bottom; }
+    &.mobile-right-top     { background-position: right top; }
+    &.mobile-right-center  { background-position: right center; }
+    &.mobile-right-bottom  { background-position: right bottom; }
+  }
+
+  @include media-desktop-and-up {
+    &.desktop-left-top      { background-position: left top; }
+    &.desktop-left-center   { background-position: left center; }
+    &.desktop-left-bottom   { background-position: left bottom; }
+    &.desktop-center-top    { background-position: center top; }
+    &.desktop-center-center { background-position: center center; }
+    &.desktop-center-bottom { background-position: center bottom; }
+    &.desktop-right-top     { background-position: right top; }
+    &.desktop-right-center  { background-position: right center; }
+    &.desktop-right-bottom  { background-position: right bottom; }
+  }
+
+}

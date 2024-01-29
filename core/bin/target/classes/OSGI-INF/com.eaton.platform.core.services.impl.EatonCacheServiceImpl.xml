@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.EatonCacheServiceImpl" immediate="true" activate="activate">
+  <property name="CONFIGURABLE.MAX.CACHE.SIZE" type="Integer" value="1000"/>
+  <property name="CONFIGURABLE.DURATION" type="Integer" value="60"/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.EatonCacheService"/>
+  </service>
+  <implementation class="com.eaton.platform.core.services.impl.EatonCacheServiceImpl"/>
+</scr:component>

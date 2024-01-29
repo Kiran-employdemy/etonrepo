@@ -1,0 +1,38 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Link List with Icons: ${currentNode.name}</div>
+</sly>
+<sly data-sly-use.data="com.eaton.platform.core.models.LinkListWithIconModel">
+  <div class="link-list-with-icon__component">
+    <div class="container" >
+     <div class="row">
+    <sly data-sly-list.link="${data.links}">
+	  <div 
+	    data-sly-test="${ link.linkIcon }" 
+	    class="link-list-with-icon__element col-xs-12 col-md-4">
+        <div class="link-list-with-icon__icon">
+          <img data-src="${link.linkIcon}" alt="" class="lazyload">
+        </div>
+        <div class="link-list-with-icon__text-wrapper">
+         <!--/* If the current items has a Link/Url */-->
+          <a data-sly-test="${ link.linkPath }"
+		   href="${ link.linkPath }" 
+		    class="link-list-with-icon__item-title"
+             data-page-path-tracking="${link.isSuffixEnabled ? 'true' : 'false'}"
+			target="${link.linkOpenNewWindow}"
+			>${link.linkTitle}</a>
+			 <!--/* Else if Link/Url is empty */-->
+            <div data-sly-test="${!link.linkPath }"
+              class="link-list-with-icon__item-title"
+            >${link.linkTitle}</div>
+          <div class="link-list-with-icon__text b-body-copy">${link.linkDesc}</div>
+        </div>
+      </div>
+	  
+	        <div data-sly-test="${!link.linkIcon}" class="link-list-with-icon__element col-xs-12 col-md-4">
+        <div class="link-list-with-icon__title b-heading-h3">${link.linkTitle}</div>
+      </div>
+    </sly>
+    </div>
+  </div>
+  </div>
+</sly>

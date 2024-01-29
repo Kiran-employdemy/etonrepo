@@ -1,0 +1,167 @@
+//-----------------------------------
+// Component M-0: Country Selector
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.country-selector {
+
+  background-color: #333f48;
+
+  &__icons {
+    position: absolute;
+    right: 30px;
+    font-size: 22px;
+  }
+
+  &__region-label {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+    font-family: var(--primary-custom-brand-font-medium);
+    margin-top: 0px;
+    padding-left: 12px;
+  }
+
+  &__accordian {
+    /* stylelint-disable declaration-no-important */
+    color: #fff !important;
+    text-decoration: none !important;
+    /* stylelint-enable */
+  }
+
+  &__language-list {
+    display: inline-block;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-bottom: 0px;
+    padding: 0px;
+  }
+
+  &__item-country-flag {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+
+  &-header {
+    padding-top: 10px;
+    margin-top: 1.8rem;
+  }
+
+  &__item-language a {
+    color: #FFF;
+    font-weight: normal;
+    line-height: 1.6rem;
+    text-transform: none;
+    font-size: 1.4rem;
+  }
+
+  &-body {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+  }
+
+  &-footer {
+    position: relative;
+    bottom: 0px;
+    padding-bottom: 4.5rem;
+    padding-top: 4.5rem;
+  }
+}
+
+.country-list {
+
+  padding-left: 0px;
+  padding-bottom: 3rem;
+
+  &__country-item {
+    display: inline-block;
+    width: 24%;
+    padding-bottom: 3rem;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+
+  &__language-block {
+    padding: 0rem;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.footer-bottom__copyright {
+  color: #FFF;
+}
+
+@include media-desktop-and-up {
+  .country-selector {
+    padding: 0px;
+  }
+}
+
+@include media-mobile-only {
+  .country-list {
+    &__country-item {
+      width: 100%;
+      border-bottom: 1px solid rgba(204, 210, 215, 0.5);
+      padding: 2.5rem 0;
+    }
+
+    &__language-block {
+      margin-bottom: 2.0rem;
+    }
+  }
+
+  .country-selector {
+    &-header {
+      padding: 1.5rem 3rem;
+      margin-top: 0px;
+      padding-top: 2.5rem;
+    }
+
+    &__region-label {
+      border-bottom: 1px solid #fff;
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+      font-family: var(--primary-custom-brand-font-medium);
+      margin-top: 0px;
+      padding-left: 12px;
+      width: 80%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .region-item.container {
+    padding: 0px;
+    width: auto;
+  }
+
+  .country-block__list {
+    padding: 0 3rem;
+  }
+
+  .country-selector.container {
+    padding: 0px;
+  }
+
+  .country-block {
+    display: none;
+  }
+
+}
+
+.region-item > .panel {
+  /* stylelint-disable declaration-no-important */
+  background-color: transparent !important;
+  /* stylelint-enable */
+}
+
+.region-item {
+  /* stylelint-disable declaration-no-important */
+  padding: 0px !important;
+  margin-bottom: 0px !important;
+  /* stylelint-enable */
+}

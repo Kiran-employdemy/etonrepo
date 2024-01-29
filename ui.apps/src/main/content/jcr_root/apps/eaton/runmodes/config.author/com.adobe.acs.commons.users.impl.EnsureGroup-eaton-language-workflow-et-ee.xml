@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    aces="[type=allow;privileges=crx:replicate;path=/content/dam/eaton,type=allow;privileges=jcr:lockManagement\,jcr:removeChildNodes\,jcr:addChildNodes\,jcr:versionManagement\,jcr:removeNode\,jcr:nodeTypeManagement\,jcr:modifyProperties\,crx:replicate;path=/content/eaton/language-masters/et-ee,type=deny;privileges=jcr:read;path=/var/acs-commons,type=deny;privileges=jcr:read;path=/apps/cq/core/content/nav/tools/acs-commons]"
+    ensure-immediately="{Boolean}true"
+    member-of="[everyone]"
+    operation="add"
+    principalName="eaton-language-workflow-et-ee"/>

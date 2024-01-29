@@ -1,0 +1,16 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Asset Sitemap</div>
+</sly>
+<sly data-sly-use.sitemap="com.eaton.platform.core.models.sitemap.AssetSiteMapModel">
+    <div class="eaton-sitemap">
+        <sly data-sly-test="${sitemap.assetLinks}">
+            <sly data-sly-list.key="${sitemap.assetLinks}">
+                <div class="container" data-sly-test="${key}" >
+                    <a class="eaton-sitemap__levelone" href="${sitemap.assetLinks[key]}" title="${key}">
+                        ${key}
+                    </a>
+                </div>
+            </sly>
+        </sly>
+    </div>
+</sly>

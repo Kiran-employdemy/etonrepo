@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.secure.config.AgentReportsServiceConfig">
+  <OCD id="com.eaton.platform.core.services.secure.config.AgentReportsServiceConfig" name="AgentReportsService" description="">
+    <AD id="userLookupUrl" type="String" name="User Lookup URL Part" description="Service URL part for user lookup" default="http://shoputil-qa.tcc.etn.com/public/v1/currentUser/login"/>
+    <AD id="userLookupAPIUsername" type="String" name="User Lookup API Username" description="Username for User Lookup API" default="myeaton_ws"/>
+    <AD id="userLookupAPIPassword" type="Password" name="User Lookup API  Password" description="Password for User Lookup API. Should be encrypted with crypto service" default="Welcome12"/>
+    <AD id="userInfoAPIEndPointURL" type="String" name="User Info API URL" description="Endpoint URL for User Info API" default="http://shoputil-qa.tcc.etn.com/public/v1/userInfo/"/>
+    <AD id="orgInfoAPIEndPointURL" type="String" name="Org Info API URL" description="Endpoint URL for Org Info API" default="http://shoputil-qa.tcc.etn.com/public/v1/orgInfo/"/>
+    <AD id="dmAPIEndPointURL" type="String" name="Document Manager API URL" description="Endpoint URL for Document Manager API" default="http://dm-qa-ws.tcc.etn.com/_dav/urm/idcplg"/>
+    <AD id="getDmAPIUsername" type="String" name="Document Manager API Username" description="Username for Document Manager API" default="ebs_reporting"/>
+    <AD id="getDmAPIPassword" type="Password" name="Document Manager API  Password" description="Password for Document Manager API. Should be encrypted with crypto service" default="R3p0rt1ng"/>
+    <AD id="maxConnections" type="Integer" name="Max Connections" description="Defines the maximum number of connections allowed overall. This value only applies to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+    <AD id="maxHostConnections" type="Integer" name="Max Host Connections" description="Defines the maximum number of connections allowed per host configuration. These values only apply to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+    <AD id="maxCacheSize" type="Integer" name="Max Cache Size" description="Defines the maximum of the cached response before invalidating the oldest." default="1000"/>
+    <AD id="accessTokenCacheTTL" type="Integer" name="Access Token Cache TTL" description="The length of time the access token cache should exist (Seconds)" default="1800"/>
+    <AD id="userInfoCacheTTL" type="Integer" name="User Info Cache TTL" description="The length of time the user info cache should exist (Seconds)" default="1800"/>
+    <AD id="resultCount" type="Integer" name="Result Count" description="Agent reports result count" default="50"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.secure.impl.AgentReportsServiceConfigurationImpl">
+    <Object ocdref="com.eaton.platform.core.services.secure.config.AgentReportsServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

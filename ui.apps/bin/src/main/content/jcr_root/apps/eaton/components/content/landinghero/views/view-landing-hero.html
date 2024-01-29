@@ -1,0 +1,46 @@
+<sly data-sly-test="${wcmmode.edit}">
+  <div class="alert alert-warning">Landing Hero</div>
+</sly>
+
+
+<!--/* Module: L2 Hero - Part of M-49 Category Highlight */-->
+<sly data-sly-use.slide="com.eaton.platform.core.models.LandingHeroModel">
+
+<!--/*
+
+  NOTE: As per EATON-724 There is requirement to copy
+  the HTML from "home-page-hero" component into this "landing-hero" component
+
+*/-->
+<div data-sly-test = "${ slide.landingHeroHeader }" class="landing-hero__component ">
+  <ul class="home-page-hero__slide-list">
+    <li class="home-page-hero__slide-item image-mask">
+      <div class="home-page-hero__image">
+        <!-- Start: Rendition Image Component -->
+    <sly data-sly-test.useDynamicRendition="${ slide.desktopDynamicRenditionUrl != null && slide.mobileDynamicRenditionUrl != null }"/>
+    <sly data-sly-use.tpl="${ useDynamicRendition ? 'eaton/components/shared/templates/dynamic-rendition-background.html' : 'eaton/components/shared/templates/rendition-background.html'}">
+      <sly data-sly-call="${ tpl.module @ data=slide }"></sly>
+    </sly>
+    <!-- End: Rendition Image Component -->
+      </div>
+      <div class="home-page-hero__content">
+        <div class="container">
+          <div class="home-page-hero__caption">
+            <h2 class="b-heading-h1-hero home-page-hero__title">${ slide.landingHeroHeader @ context='html'}</h2>
+
+            <div data-sly-test="${ properties.showSeparator }"
+              class="home-page-hero__separator"></div>
+            <div class="home-page-hero__text b-hero-description">${ slide.landingHeroDesc @ context = 'html'}</div>
+            <a data-sly-test="${ slide.landingHeroLinkPath }"
+              class="home-page-hero__cta b-button b-button__primary b-button__primary--dark"
+              href="${ slide.landingHeroLinkPath }"
+              target="${ slide.newWindow }"
+              role="button">${ slide.landingHeroLinkTitle }</a>
+          </div>
+        </div>
+      </div>
+
+    </li>
+  </ul>
+
+</div>

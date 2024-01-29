@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/libs/settings/wcm/designs/default"
+        cq:lastModified="{Date}2021-06-30T09:55:20.797-05:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Eaton DAM Expiring Asset"
+        sling:resourceType="cq/workflow/components/pages/model">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <dynamic_participant
+                jcr:created="{Date}2021-06-30T08:36:15.458-05:00"
+                jcr:createdBy="admin"
+                jcr:description="This asset will expire soon. Choose to renew or expire it."
+                jcr:lastModified="{Date}2021-06-30T08:52:02.496-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Renew or Expire Asset"
+                sling:resourceType="cq/workflow/components/model/dynamic_participant">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    DIALOG_PATH="/var/workflow/models/eaton-dam/dam/dialogs/content-review-decision/dialog"
+                    DYNAMIC_PARTICIPANT="com.eaton.platform.core.workflows.dynamicParticipant.GetDynamicParticipantByProperty"
+                    PROCESS_ARGS="jcr:content/metadata/xmp:eaton-imported-by,eaton-librarian-users"
+                    timeoutHandler="com.eaton.platform.core.workflows.timeout.AbsoluteTimeout"
+                    timeoutMillis="5184000000"/>
+            </dynamic_participant>
+            <process
+                jcr:created="{Date}2021-06-30T08:42:52.166-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-30T08:44:21.680-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Timeout or Decision Made"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.eaton.platform.core.workflows.SetMetadataFromDialog"
+                    PROCESS_ARGS="RENEW_DECISION,NEW_EXPIRATION_DATE"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process>
+            <or
+                jcr:created="{Date}2021-06-30T08:44:34.837-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-30T09:12:38.538-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Did the uploader time out?"
+                sling:resourceType="cq/workflow/components/model/or"
+                branches="2"
+                branchName1="Timed Out"
+                branchName2="Decision Made"
+                branchOrder="[0,1]"
+                default1="true"
+                orSplit="true"
+                script2="function check() { return true; }"
+                scriptPath1="/apps/workflow/scripts/eatonscripts/timeoutDecider.ecma">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <noopprocess
+                        jcr:created="{Date}2021-06-30T08:47:30.151-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="A no operation process"
+                        jcr:lastModified="{Date}2021-06-30T08:48:09.836-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Timed Out"
+                        sling:resourceType="cq/workflow/components/workflow/noopprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="/libs/workflow/scripts/noop.ecma"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </noopprocess>
+                    <dialog
+                        jcr:created="{Date}2021-06-30T08:48:19.094-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="This asset will expire soon. Choose to renew or expire it."
+                        jcr:lastModified="{Date}2021-06-30T08:51:30.156-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Renew or expire asset"
+                        sling:resourceType="cq/workflow/components/model/dialog">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            DIALOG_PATH="/var/workflow/models/eaton-dam/dam/dialogs/content-review-decision/dialog"
+                            PARTICIPANT="eaton-librarian-users"/>
+                    </dialog>
+                    <process
+                        jcr:created="{Date}2021-06-30T08:54:04.951-05:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-06-30T08:55:08.199-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Renewal Decision Made"
+                        sling:resourceType="cq/workflow/components/model/process">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.eaton.platform.core.workflows.SetMetadataFromDialog"
+                            PROCESS_ARGS="RENEW_DECISION,NEW_EXPIRATION_DATE"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </process>
+                </_x0031_>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <noopprocess_copy
+                        jcr:created="{Date}2021-06-30T08:47:30.151-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="A no operation process"
+                        jcr:lastModified="{Date}2021-06-30T09:12:46.991-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Decision Made"
+                        sling:resourceType="cq/workflow/components/workflow/noopprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="/libs/workflow/scripts/noop.ecma"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </noopprocess_copy>
+                </_x0032_>
+            </or>
+            <or_1525982499
+                jcr:created="{Date}2021-06-30T09:10:51.848-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-30T09:13:27.212-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Will the asset be renewed?"
+                sling:resourceType="cq/workflow/components/model/or"
+                branches="2"
+                branchName1="Renew"
+                branchName2="Expire"
+                branchOrder="[0,1]"
+                default1="true"
+                orSplit="true"
+                script2="function check() { return true; }"
+                scriptPath1="/apps/workflow/scripts/eatonscripts/contentReviewDecider.ecma">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <noopprocess
+                        jcr:created="{Date}2021-06-30T08:47:30.151-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="A no operation process"
+                        jcr:lastModified="{Date}2021-06-30T09:13:51.861-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Renew"
+                        sling:resourceType="cq/workflow/components/workflow/noopprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="/libs/workflow/scripts/noop.ecma"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </noopprocess>
+                    <process
+                        jcr:created="{Date}2021-06-30T09:14:16.662-05:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-06-30T09:15:31.975-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Set New Expiration Date"
+                        sling:resourceType="cq/workflow/components/model/process">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.eaton.platform.core.workflows.UpdateExpirationDate"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </process>
+                </_x0031_>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <noopprocess
+                        jcr:created="{Date}2021-06-30T08:47:30.151-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="A no operation process"
+                        jcr:lastModified="{Date}2021-06-30T09:14:01.790-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Expire"
+                        sling:resourceType="cq/workflow/components/workflow/noopprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="/libs/workflow/scripts/noop.ecma"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </noopprocess>
+                    <process
+                        jcr:created="{Date}2021-06-30T09:15:59.496-05:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-06-30T09:41:12.414-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Check Published Properties"
+                        sling:resourceType="cq/workflow/components/model/process">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.eaton.platform.core.workflows.PropertiesValuesCheckProcess"
+                            PROCESS_ARGS="jcr:content/metadata/dam:scene7FileStatus::PublishComplete,jcr:content/cq:lastReplicationAction::Activate"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </process>
+                    <or
+                        jcr:created="{Date}2021-06-30T09:43:19.236-05:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-06-30T09:45:54.353-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Is Asset Published to Sites/Dynamic Media Cloud?"
+                        sling:resourceType="cq/workflow/components/model/or"
+                        branches="2"
+                        branchName1="Asset Is Published"
+                        branchName2="Asset is Not Published"
+                        branchOrder="[0,1]"
+                        default1="true"
+                        orSplit="true"
+                        script2="function check() { return true; }"
+                        scriptPath1="/apps/workflow/scripts/eatonscripts/hasPropValueDecider.ecma">
+                        <_x0031_
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/flow/components/parsys">
+                            <noopprocess
+                                jcr:created="{Date}2021-06-30T08:47:30.151-05:00"
+                                jcr:createdBy="admin"
+                                jcr:description="A no operation process"
+                                jcr:lastModified="{Date}2021-06-30T09:49:27.046-05:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Asset Has Been Published To Dynamic Media Cloud/Sites"
+                                sling:resourceType="cq/workflow/components/workflow/noopprocess">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PROCESS="/libs/workflow/scripts/noop.ecma"
+                                    PROCESS_AUTO_ADVANCE="true"/>
+                            </noopprocess>
+                            <dynamic_participant
+                                jcr:created="{Date}2021-06-30T09:49:47.613-05:00"
+                                jcr:createdBy="admin"
+                                jcr:description="Unpublish this asset from Sites and/or Dynamic Media Cloud"
+                                jcr:lastModified="{Date}2021-06-30T09:51:12.377-05:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Remove Web References"
+                                sling:resourceType="cq/workflow/components/model/dynamic_participant">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    DIALOG_PATH="/var/workflow/models/eaton-dam/dam/dialogs/published-asset-error/dialog"
+                                    DO_NOTIFY="true"
+                                    DYNAMIC_PARTICIPANT="com.eaton.platform.core.workflows.dynamicParticipant.GetDynamicParticipantByProperty"
+                                    PROCESS_ARGS="jcr:content/metadata/xmp:eaton-imported-by,eaton-librarian-users"/>
+                            </dynamic_participant>
+                        </_x0031_>
+                        <_x0032_
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/flow/components/parsys">
+                            <noopprocess
+                                jcr:created="{Date}2021-06-30T08:47:30.151-05:00"
+                                jcr:createdBy="admin"
+                                jcr:description="A no operation process"
+                                jcr:lastModified="{Date}2021-06-30T09:49:18.926-05:00"
+                                jcr:lastModifiedBy="admin"
+                                jcr:primaryType="nt:unstructured"
+                                jcr:title="Asset Has Not Been Published to Dynamic Media Cloud/Sites"
+                                sling:resourceType="cq/workflow/components/workflow/noopprocess">
+                                <metaData
+                                    jcr:primaryType="nt:unstructured"
+                                    PROCESS="/libs/workflow/scripts/noop.ecma"
+                                    PROCESS_AUTO_ADVANCE="true"/>
+                            </noopprocess>
+                        </_x0032_>
+                    </or>
+                    <deactivateresourcepr
+                        jcr:created="{Date}2021-06-30T09:51:58.236-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="A process to deactivate a page or asset."
+                        jcr:lastModified="{Date}2021-06-30T09:53:03.261-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Deactivate Page/Asset"
+                        sling:resourceType="wcm/workflow/components/workflow/deactivateresourceprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.day.cq.wcm.workflow.process.DeactivatePageProcess"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </deactivateresourcepr>
+                    <process_2134103674
+                        jcr:created="{Date}2021-06-30T09:53:39.579-05:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-06-30T09:54:36.208-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Set Asset To Expired"
+                        sling:resourceType="cq/workflow/components/model/process">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.eaton.platform.core.workflows.NormalizeAssetNodeProperties"
+                            PROCESS_ARGS="&quot;expired&quot;::jcr:content/metadata/dam:status"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </process_2134103674>
+                </_x0032_>
+            </or_1525982499>
+            <container
+                jcr:created="{Date}2021-06-30T09:54:49.003-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-30T09:55:20.789-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Eaton DAM Update Metadata"
+                sling:resourceType="cq/workflow/components/model/container">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    CONTAINER="/var/workflow/models/eaton-dam/dam/eaton-dam-update-metadata"/>
+            </container>
+        </flow>
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+    </jcr:content>
+</jcr:root>

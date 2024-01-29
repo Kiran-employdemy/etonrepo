@@ -1,0 +1,4 @@
+<template data-sly-template.include="${@ categories='Client Library categories', mode='optional: JS or CSS, case-insensitve', option='optional: defer, async'}"
+          data-sly-use.clientlib="${'com.eaton.platform.core.advancedclientlibs.CustomClientLibUseObject' @ categories=categories, mode=mode, option=option}">
+${clientlib.include @ context='unsafe'}
+</template>

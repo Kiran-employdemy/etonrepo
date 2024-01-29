@@ -1,0 +1,103 @@
+//-----------------------------------
+// M-48: Media Gallery - Zoom Behavior
+//-----------------------------------
+.module-media-gallery {
+
+  &__image-wrapper {
+    position: relative;
+  }
+
+  // Magnifiying-glass icon
+  &__zoom {
+
+    // The entire image is clickable, the zoom icon is a UI element with no behaviors
+    pointer-events: none;
+  }
+
+  // Toggle Carousel UI (Arrows and Buttons) when the Zoom is enabled/disabled (Desktop BP)
+  &__slide-arrows-container,
+  &__slide-utility {
+    transition: opacity 250ms ease-out, visibility 250ms ease-out;
+    opacity: 1;
+    visibility: visible;
+  }
+
+
+  @include media-mobile-and-tablet {
+    &__image-wrapper {
+      cursor: pointer; // If the Zoom behavior is enabled, the entire image is clickable
+    }
+  }
+
+  @include media-desktop-and-up {
+    &.zoom-inline-open &__slide-arrows-container,
+    &.zoom-inline-open &__slide-utility {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+}
+
+
+//-----------------------------------
+// Zoom Behavior - Desktop Breakpoint
+//-----------------------------------
+.zoom-inline {
+  @include absolute-fill();
+}
+
+
+//-----------------------------------
+// Zoom Behavior - Mobile/Tablet Breakpoint
+//-----------------------------------
+body.zoom-overlay-open {
+  overflow: hidden;
+}
+
+.zoom-overlay {
+
+  background: var(--color__white);
+  display: none;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+
+  &__close {
+    color: var(--primary-brand-color);
+    height: 44px;
+    width: 44px;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    z-index: 5;
+  }
+
+  &__image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  }
+
+
+  //-----------------------------------
+  // Media Query: > 992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    /* Important is used due to inline styles added by Javascript */
+    display: none !important; // stylelint-disable-line declaration-no-important
+
+  }
+
+}

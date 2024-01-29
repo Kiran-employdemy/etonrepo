@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+    xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/acs-commons"
+        jcr:created="{Date}2023-05-25T08:55:10.303-04:00"
+        jcr:createdBy="e0461736"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Reference Report by Keyword or Path"
+        jcr:description="A report shows information about references of assets or pages via path or keyword."
+        sling:resourceType="acs-commons/components/utilities/report-builder/report-page">
+        <config
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <queryconfig
+                jcr:created="{Date}2023-05-25T08:58:15.520-04:00"
+                jcr:createdBy="e0461736"
+                jcr:lastModified="{Date}2023-05-25T09:19:47.603-04:00"
+                jcr:lastModifiedBy="e0461736"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="acs-commons/components/utilities/report-builder/configs/queryconfig"
+                pageSize="50"
+                query="type={{type}}&#xd;&#xa;fulltext=&quot;{{{keyword}}}&quot;"
+                queryLanguage="queryBuilder"
+                reportExecutor="com.adobe.acs.commons.reports.models.QueryReportExecutor" />
+        </config>
+        <parameters
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <basic
+                jcr:created="{Date}2023-05-25T08:59:20.818-04:00"
+                jcr:createdBy="e0461736"
+                jcr:lastModified="{Date}2023-05-25T08:59:49.130-04:00"
+                jcr:lastModifiedBy="e0461736"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="acs-commons/components/utilities/report-builder/parameters/basic"
+                fieldLabel="Enter Keyword or Path"
+                name="keyword"
+                required="true"
+                resourceType="granite/ui/components/coral/foundation/form/textfield" />
+            <select
+                jcr:created="{Date}2023-05-25T09:00:22.546-04:00"
+                jcr:createdBy="e0461736"
+                jcr:lastModified="{Date}2023-05-25T09:01:54.312-04:00"
+                jcr:lastModifiedBy="e0461736"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="acs-commons/components/utilities/report-builder/parameters/select"
+                fieldLabel="Type"
+                name="type"
+                resourceType="granite/ui/components/coral/foundation/form/select">
+                <items jcr:primaryType="nt:unstructured">
+                    <item0
+                        jcr:primaryType="nt:unstructured"
+                        text="All"
+                        value="nt:base" />
+                    <item1
+                        jcr:primaryType="nt:unstructured"
+                        text="Pages"
+                        value="cq:Page" />
+                    <item2
+                        jcr:primaryType="nt:unstructured"
+                        text="Assets"
+                        value="dam:Asset" />
+                </items>
+            </select>
+        </parameters>
+        <columns
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <path
+                jcr:created="{Date}2023-05-25T09:02:20.133-04:00"
+                jcr:createdBy="e0461736"
+                jcr:lastModified="{Date}2023-05-25T09:02:31.983-04:00"
+                jcr:lastModifiedBy="e0461736"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="acs-commons/components/utilities/report-builder/columns/path"
+                exporter="com.adobe.acs.commons.reports.models.PathReportCellCSVExporter"
+                heading="Path" />
+            <text
+                jcr:created="{Date}2023-05-25T09:02:59.723-04:00"
+                jcr:createdBy="e0461736"
+                jcr:lastModified="{Date}2023-05-25T09:03:10.727-04:00"
+                jcr:lastModifiedBy="e0461736"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="acs-commons/components/utilities/report-builder/columns/text"
+                exporter="com.adobe.acs.commons.reports.models.StringReportCellCSVExporter"
+                heading="Page Title"
+                property="jcr:content/jcr:title" />
+            <text_639757938
+                jcr:created="{Date}2023-05-25T09:03:29.691-04:00"
+                jcr:createdBy="e0461736"
+                jcr:lastModified="{Date}2023-11-29T06:09:20.334Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="acs-commons/components/utilities/report-builder/columns/text"
+                exporter="com.adobe.acs.commons.reports.models.StringReportCellCSVExporter"
+                heading="Asset Title [dc]"
+                property="jcr:content/metadata/dc:title" />
+            <text_599491772
+                jcr:created="{Date}2023-11-29T06:09:27.510Z"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-11-29T06:10:59.955Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="acs-commons/components/utilities/report-builder/columns/text"
+                exporter="com.adobe.acs.commons.reports.models.StringReportCellCSVExporter"
+                heading="Asset Title [jcr]"
+                property="jcr:content/metadata/jcr:title" />
+            <text_1527289566
+                jcr:created="{Date}2023-11-29T06:10:20.030Z"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-11-29T06:11:07.117Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="acs-commons/components/utilities/report-builder/columns/text"
+                exporter="com.adobe.acs.commons.reports.models.StringReportCellCSVExporter"
+                heading="Country"
+                property="jcr:content/metadata/xmp:eaton-country" />
+            <text_1733463634
+                jcr:created="{Date}2023-11-29T06:11:33.235Z"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-11-29T06:12:17.653Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="acs-commons/components/utilities/report-builder/columns/text"
+                exporter="com.adobe.acs.commons.reports.models.StringReportCellCSVExporter"
+                heading="Business unit and Function Division"
+                property="jcr:content/metadata/xmp:eaton-business-unit-function-division" />
+            <text_497087205
+                jcr:created="{Date}2023-11-29T06:13:27.694Z"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-11-29T06:14:09.866Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="acs-commons/components/utilities/report-builder/columns/text"
+                exporter="com.adobe.acs.commons.reports.models.StringReportCellCSVExporter"
+                heading="Modified By"
+                property="jcr:content/metadata/jcr:lastModifiedBy" />
+            <date
+                jcr:created="{Date}2023-12-04T09:49:17.543Z"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-12-04T09:50:08.730Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="acs-commons/components/utilities/report-builder/columns/date"
+                exporter="com.adobe.acs.commons.reports.models.DateReportCellCSVExporter"
+                format="yyyy-MM-dd hh:mm:ss"
+                heading="Last Modified"
+                property="jcr:content/jcr:lastModified"/>
+            <editor
+                jcr:created="{Date}2023-05-25T09:04:08.932-04:00"
+                jcr:createdBy="e0461736"
+                jcr:lastModified="{Date}2023-05-25T09:55:45.141-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="acs-commons/components/utilities/report-builder/columns/editor"
+                appendHtmlExtension="true"
+                customEditor="/editor.html"
+                editor="custom"
+                heading="Edit Page" />
+            <editor_781638811
+                jcr:created="{Date}2023-05-25T09:16:00.685-04:00"
+                jcr:createdBy="e0461736"
+                jcr:lastModified="{Date}2023-05-25T09:16:26.384-04:00"
+                jcr:lastModifiedBy="e0461736"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="acs-commons/components/utilities/report-builder/columns/editor"
+                customEditor="/assetdetails.html"
+                editor="custom"
+                heading="Edit Asset" />
+        </columns>
+    </jcr:content>
+</jcr:root>

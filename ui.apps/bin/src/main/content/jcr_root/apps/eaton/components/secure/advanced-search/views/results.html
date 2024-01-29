@@ -1,0 +1,129 @@
+<div class="advanced-search__results u-clearfix"></div>
+<div class="advanced-search__result--list table-responsive" id="result-list"></div>
+<div class="adv-results-container">
+    <div class="results-list__bottom">
+        <div class="results-list__actions text-center">
+            <button
+                    class="b-button b-button__primary b-button__primary--light load__more"
+                    role="button"
+                    data-load-more>${ 'loadMore' @ i18n}
+            </button>
+        </div>
+    </div>
+    <sly data-sly-test="${!properties.descriptionEnabled}">
+        <script id="mustache-advanced-search-result" type="text/mustache">
+            {{#siteSearchResults}}
+                <div class="advanced-search__result" style="height: 35rem;">
+                 {{#downloadEnabled}}
+                    <input type="checkbox" title="{{i18n.tooltiptext}}" class="advanced-search__select advanced-search_track" name="toDownload" data-size="{{fileSize}}" id="{{id}}" data-url="{{url}}"  track-download="{{trackDownload}}" asset-type="{{fileType}}" />
+                 {{/downloadEnabled}}
+                    <div class="advanced-search__image">
+                        <img src="{{image}}" />
+                    </div>
+                    <div class="advanced-search__title">{{#secure}}<i class="icon icon-secure-lock" aria-hidden="true"></i>{{/secure}}<a target="_blank" data-track-download="{{trackDownload}}" href="{{url}}" filename="{{fileName}}">{{title}}</a></div>
+                    {{#badge}}
+                        <span class="secondary-content-accordion__badge resource-list__badge">{{badge.label}}</span>
+                     {{/badge}}
+                </div>
+            {{/siteSearchResults}}
+
+        </script>
+        <script id="mustache-list-result-partial" type="text/mustache">
+            {{#siteSearchResults}}
+                <tr class="list-view">
+                    <td class="advanced-search__result--list--checkbox">
+                     {{#downloadEnabled}}
+                         <input type="checkbox" class="advanced-search_track" name="toDownload" data-size="{{fileSize}}" id="{{id}}" data-url="{{url}}" track-download="{{trackDownload}}" asset-type="{{fileType}}"></td>
+                     {{/downloadEnabled}}
+                    <td class="advanced-search__result--list--name">
+                     {{#secure}}
+                        <i class="icon icon-secure-lock" aria-hidden="true"></i>
+                     {{/secure}}
+                        <span class="doc-name"><a target="_blank" data-track-download="{{trackDownload}}" href="{{url}}" filename="{{fileName}}">{{title}}</a></span>
+                    </td>
+                    <td>{{publishDate}}
+                    {{#badge}}
+                        <span class="secondary-content-accordion__badge resource-list__badge">{{badge.label}}</span>
+                     {{/badge}}
+                    </td>
+                    <td>{{fileTypeAndSize}}</td>
+                    <td>{{language}}</td>
+                </tr>
+            {{/siteSearchResults}}
+
+        </script>
+    </sly>
+    <sly data-sly-test.descriptionEnabled="${properties.descriptionEnabled}">
+        <script id="mustache-advanced-search-result" type="text/mustache">
+            {{#siteSearchResults}}
+                <div class="advanced-search__result" style="min-height: 40rem;">
+                 {{#downloadEnabled}}
+                    <input type="checkbox" title="{{i18n.tooltiptext}}" class="advanced-search__select advanced-search_track" name="toDownload" data-size="{{fileSize}}" id="{{id}}" data-url="{{url}}"  track-download="{{trackDownload}}" asset-type="{{fileType}}" />
+                 {{/downloadEnabled}}
+                    <div class="advanced-search__image">
+                    {{#badge}}
+                        <span class="secondary-content-accordion__badge resource-list__badge">{{badge.label}}</span>
+                    {{/badge}}
+                        <img src="{{image}}" />
+                    </div>
+                    <div class="advanced-search__title" style="font-size: 1.6rem;">{{#secure}}<i class="icon icon-secure-lock" aria-hidden="true"></i>{{/secure}}<a target="_blank" data-track-download="{{trackDownload}}" href="{{url}}" filename="{{fileName}}">{{title}}</a></div>
+                    {{#description}}
+                    <div class="advanced-search__description">{{description}}</div>
+                    {{/description}}
+                    {{^description}}
+                    <div class="advanced-search__description">Description will appear here, this is a normal text with normal chars, but very long to test the elipsis</div>
+                    {{/description}}
+                </div>
+            {{/siteSearchResults}}
+
+        </script>
+        <script id="mustache-list-result-partial" type="text/mustache">
+            {{#siteSearchResults}}
+                <tr class="list-view">
+                    <td class="advanced-search__result--list--checkbox">
+                     {{#downloadEnabled}}
+                         <input type="checkbox" class="advanced-search_track" name="toDownload" data-size="{{fileSize}}" id="{{id}}" data-url="{{url}}" track-download="{{trackDownload}}" asset-type="{{fileType}}"></td>
+                     {{/downloadEnabled}}
+                    <td class="advanced-search__result--list--name">
+                     {{#secure}}
+                        <i class="icon icon-secure-lock" aria-hidden="true"></i>
+                     {{/secure}}
+                        <span class="doc-name" style="font-size: 1.6rem; line-height: unset;"><a target="_blank" data-track-download="{{trackDownload}}" href="{{url}}" filename="{{fileName}}">{{title}}</a></span>
+                        {{#description}}
+                        <span class="doc-description">{{description}}</span>
+                        {{/description}}
+                        {{^description}}
+                        <div class="doc-description">Description will appear here, this is a normal text with normal chars, but very long to test the elipsis</div>
+                        {{/description}}
+                    </td>
+                    <td class="advanced-search__result--list--publish-date-and-badge">
+                    <div>{{publishDate}}</div>
+                    {{#badge}}
+                        <div class="secondary-content-accordion__badge resource-list__badge">{{badge.label}}</div>
+                     {{/badge}}
+                    <td>{{fileTypeAndSize}}</td>
+                    <td>{{language}}</td>
+                </tr>
+            {{/siteSearchResults}}
+        </script>
+    </sly>
+    <script id="mustache-advanced-search-list-result" type="text/mustache">
+        <div class="table-responsive">
+            <table class="table advance__search-list-view">
+                <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                      <th>{{i18n.date}}</th>
+                      <th>{{i18n.size}}</th>
+                      <th>{{i18n.language}}</th>
+                    </tr>
+              </thead>
+              <tbody>
+                {{> listItems}}
+              </tbody>
+            </table>
+        </div>
+
+    </script>
+</div>

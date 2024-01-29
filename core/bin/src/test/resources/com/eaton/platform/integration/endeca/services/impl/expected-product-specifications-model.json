@@ -1,0 +1,189 @@
+{
+  "skuSearchRecords": [
+    {
+      "attributeGroups": [
+        {
+          "attributeGroupName": "General specifications",
+          "attributeList": [
+            {
+              "attributeLabel": "Product Name",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Eaton ELocker Differential"
+              }
+            },
+            {
+              "attributeLabel": "Catalog Number",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "14020-010"
+              }
+            },
+            {
+              "attributeLabel": "Product Weight",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "44.5 lb"
+              }
+            }
+          ]
+        },
+        {
+          "attributeGroupName": "Product Specifications",
+          "attributeList": [
+            {
+              "attributeLabel": "Differential type",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Locking"
+              }
+            },
+            {
+              "attributeLabel": "Gear spline tooth count",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "30 EA"
+              }
+            },
+            {
+              "attributeLabel": "Ring gear size",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "9.75 in"
+              }
+            },
+            {
+              "attributeLabel": "Axle shaft diameter",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "1.31 in"
+              }
+            },
+            {
+              "attributeLabel": "Vehicle usage",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Off-Road: Rock Crawl \u003cbr\u003e On Road: Work Truck / Towing \u003cbr\u003e Off-Road: Work Truck / Towing \u003cbr\u003e Off-Road: Extreme Off-Road \u003cbr\u003e Off-Road: Light Trail / Sand Sports"
+              }
+            }
+          ]
+        }
+      ],
+      "attributeTables": [
+        {
+          "id": "XXPDH_VEHICLE_PRODUCT_SELECTOR",
+          "headline": "Differential Product Selector",
+          "headers": [
+            "Model year start",
+            "Model year end",
+            "Vehicle type (model)",
+            "Vehicle make",
+            "Axle description",
+            "Axle location"
+          ],
+          "rows": [
+            {
+              "id": 46432644,
+              "cells": {
+                "Model year start": "1966",
+                "Model year end": "1972",
+                "Vehicle type (model)": "Passenger Car",
+                "Vehicle make": "Chrysler, Dodge, Plymouth",
+                "Axle description": "Dana 60",
+                "Axle location": "Rear"
+              }
+            },
+            {
+              "id": 46432645,
+              "cells": {
+                "Model year start": "1994",
+                "Model year end": "1999",
+                "Vehicle type (model)": "Small, Half-Ton Truck, Wagon, Van",
+                "Vehicle make": "Chrysler, Dodge, Plymouth",
+                "Axle description": "Dana 60",
+                "Axle location": "Front"
+              }
+            },
+            {
+              "id": 46432646,
+              "cells": {
+                "Model year start": "1972",
+                "Model year end": "2002",
+                "Vehicle type (model)": "Small, Half-Ton Truck, Wagon, Van",
+                "Vehicle make": "Chrysler, Dodge, Plymouth",
+                "Axle description": "Dana 60",
+                "Axle location": "Rear"
+              }
+            },
+            {
+              "id": 46432647,
+              "cells": {
+                "Model year start": "1975",
+                "Model year end": "2002",
+                "Vehicle type (model)": "Three Quarter, One-Ton Truck, Wagon, Van, Cab and Chassis, Motor Home",
+                "Vehicle make": "Chrysler, Dodge, Plymouth",
+                "Axle description": "Dana 60, 60 HD, 60M",
+                "Axle location": "Rear"
+              }
+            },
+            {
+              "id": 46432648,
+              "cells": {
+                "Model year start": "1975",
+                "Model year end": "1984",
+                "Vehicle type (model)": "Three Quarter-Ton Truck, Van, SUV",
+                "Vehicle make": "Ford",
+                "Axle description": "Dana 60-3",
+                "Axle location": "Rear"
+              }
+            },
+            {
+              "id": 46432649,
+              "cells": {
+                "Model year start": "1974",
+                "Model year end": "1987",
+                "Vehicle type (model)": "Three Quarter-Ton Truck, Van, SUV",
+                "Vehicle make": "Ford",
+                "Axle description": "Dana 61-1",
+                "Axle location": "Rear"
+              }
+            },
+            {
+              "id": 46432650,
+              "cells": {
+                "Model year start": "1978",
+                "Model year end": "1979",
+                "Vehicle type (model)": "One-Ton Truck, Van, Wagon, Cab and Chassis",
+                "Vehicle make": "Ford",
+                "Axle description": "Dana 60 Snowplow Package",
+                "Axle location": "Rear"
+              }
+            },
+            {
+              "id": 46432651,
+              "cells": {
+                "Model year start": "0000",
+                "Model year end": "1974",
+                "Vehicle type (model)": "Three Quarter-Ton Truck",
+                "Vehicle make": "General Motors",
+                "Axle description": "Dana 60",
+                "Axle location": "Rear"
+              }
+            },
+            {
+              "id": 46432652,
+              "cells": {
+                "Model year start": "1974",
+                "Model year end": "1987",
+                "Vehicle type (model)": "Cherokee, Grand Cherokee, Liberty, Post Office Truck, Scrambler, Wagoneer, Wrangler",
+                "Vehicle make": "Jeep",
+                "Axle description": "Dana M60-3R",
+                "Axle location": "Rear"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.SmartCropServiceConfigImpl" configuration-policy="require" immediate="true" activate="activate" deactivate="deactivate" modified="activate">
+  <property name="smart.crop.title" type="String" value=""/>
+  <property name="smart.crop.url.suffix" type="String" value=""/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.SmartCropConfigService"/>
+  </service>
+  <implementation class="com.eaton.platform.core.services.impl.SmartCropServiceConfigImpl"/>
+</scr:component>

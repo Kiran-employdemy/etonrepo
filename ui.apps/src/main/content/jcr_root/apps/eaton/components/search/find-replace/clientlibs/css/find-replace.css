@@ -1,0 +1,324 @@
+.foundation-layout-util-vmargin {
+    margin-left: 4em;
+}
+
+.coral-Form--aligned .coral-Form-fieldwrapper {
+    margin-left: 4em;
+}
+
+.coral3-Shell {
+    background-color: #fff;
+}
+
+.coral-PanelStack.coral-Well,
+.coral-Panel.coral-Well {
+    margin-top: 0;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.find-replace-content-container {
+    margin: 50px auto;
+    width: 70%;
+    min-width: 1280px;
+    padding: 7px 7px;
+}
+
+.find-replace-content {
+    border-radius: 0.25rem;
+    border: 1px solid #12181C;
+    padding: 7px 7px;
+}
+
+.find-replace-content .coral3-SelectList-item {
+    font-size: 14px;
+}
+
+.find-replace-tab {
+    min-width: 15.625rem;
+    padding: 0.9375rem;
+    margin-top: 0.375rem;
+    border: 0.0625rem solid #e9e9e9;
+    border-radius: 0.25rem;
+    background: white;
+}
+
+.find-replace-form-container {
+    margin: 0 0 0.9375rem 4em;
+}
+
+.find-replace-form-row {
+    display: flex;
+    width: 100%;
+}
+
+.find-replace-form-column {
+    flex: 50%;
+}
+
+.find-replace-form-column:nth-of-type(2n) {
+    float: right;
+}
+
+.find-replace-form-container .find-replace-form-column .coral-Form-fieldwrapper {
+    margin-left: 1.2em;
+}
+
+.find-replace-form-container .find-replace-form-column coral-multifield {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.25rem;
+}
+
+.find-replace-form-container .find-replace-form-column coral-multifield .find-replace-form-field {
+    width: 90%;
+}
+
+.find-replace-form-container .find-replace-form-column coral-multifield .find-replace-form-field.full {
+    width: 100%;
+}
+
+.find-replace-form-container .find-replace-form-column coral-multifield .coral-Form-fieldwrapper {
+    margin-left: 0.5rem;
+    margin-right: 2.5rem;
+}
+
+.find-replace-form-container .find-replace-form-column coral-multifield .coral-Form-fieldwrapper .coral-Form-fieldlabel {
+    min-width: 3rem;
+}
+
+.find-replace-form-container .find-replace-form-column coral-multifield button[coral-multifield-add] {
+    margin-left: 0.5rem;
+}
+
+.find-replace-form-container .find-replace-form-fieldset {
+    width: calc(100% - 1.25em);
+    display: inline-block;
+    border: 1px solid #EEF0F2;
+    border-radius: 0.25rem;
+    margin: 0.5em 0em;
+    color: #12181C;
+}
+
+#findReplaceTextForm .find-replace-form-field {
+    width: 32.5rem;
+}
+
+.find-replace-form-field {
+    width: 92%;
+}
+
+.find-replace-form-field input::placeholder {
+    color: #98A4AE;
+    -webkit-text-fill-color: #98A4AE;
+}
+
+.find-replace-form-field input:-ms-input-placeholder {
+    color: red;
+}
+
+.find-replace-form-field input::-ms-input-placeholder {
+    color: red;
+}
+
+.find-replace-form-field-input {
+    background-color: #5B6770;
+}
+
+.coral-Form--aligned .coral-Form-fieldwrapper.results-wrapper {
+    margin-top: 0.5em;
+    margin-left: 4em;
+}
+
+coral-select button {
+    background-color: #5B6770;
+    color: #fff;
+}
+
+coral-select coral-select-item {
+    background-color: #5B6770;
+    color: #fff;
+}
+
+.find-replace-form-select-help {
+    min-width: 300px
+}
+
+.find-replace-form-select-help-btn {
+    background-color: transparent !important;
+    ;
+    border: 0;
+    margin-left: 0.2em;
+}
+
+.find-replace-form-select-help-btn:hover:not(:disabled) {
+    color: #12181C;
+}
+
+.find-replace-form-select-help-btn>coral-button-label {
+    display: none;
+}
+
+.find-replace-form-select-help-data {
+    display: none;
+}
+
+coral-shell-header.coral--dark.coral-Shell-header {
+    background-color: #1e1e1e;
+}
+
+.coral-Form-fieldset-legend {
+    display: block;
+    margin: .5rem 0 .625rem 0;
+    font-family: var(--font-secondary-ahas);
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    color: #12181C;
+}
+
+.coral-Form-fieldlabel {
+    color: #12181C;
+}
+
+.find-replace-heading {
+    border-bottom: 1px solid #12181C;
+    margin-bottom: 10px;
+}
+
+.head-message {
+    border-bottom: 2px solid #000;
+}
+
+span a {
+    margin: 10px;
+}
+
+coral-wait#wait {
+    display: none;
+    margin: 10% 45%;
+}
+
+#destPath input,
+#findText,
+#replaceText {
+    color: #fff;
+    background-color: #5B6770;
+    border-color: #fff;
+}
+
+.coral-Form-field.cq-ui-tagfield.find-replace-form-field input {
+    color: #fff;
+    background-color: #5B6770;
+}
+
+#btnPreview {
+    margin-right: 10px;
+}
+
+#btnPreview,
+#btnReplace {
+    border-color: #003865;
+    background-color: #005EB8;
+    color: #fff;
+    text-shadow: 0 -0.0625rem 0 #003865;
+}
+
+.multi-select-box {
+    height: 126px;
+    overflow: scroll;
+}
+
+#case-insensitive label,
+#whole-words-only label {
+    color: #12181C;
+    font-size: 16px;
+}
+
+.results-table .coral-Table-body .coral-Table-cell {
+    background-color: #fff;
+    color: #12181C;
+    font-size: 14px;
+    border-bottom: 1px solid #CCD2D7;
+    word-wrap: break-word;
+}
+
+.coral-table-headercell {
+    background-color: #EEF0F2;
+}
+
+.coral-Table-body .coral-Table-row:first-of-type .coral-Table-cell:first-of-type {
+    border-top-left-radius: 0;
+}
+
+.coral-Table-body .coral-Table-row:first-of-type .coral-Table-cell {
+    border-top: none;
+    border-top-left-radius: 0;
+}
+
+
+table {
+    border: 1px solid #EEF0F2;
+}
+
+.coral-Table {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    height: 200px;
+
+}
+
+tbody {
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.results-table thead tr,
+.results-table tbody tr {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
+.results-table thead tr th:nth-child(1),
+.results-table tbody tr td:nth-child(1) {
+    width: 2%;
+}
+
+.coral-Table-body .coral-Table-row .coral-Table-cell {
+    border-left: hidden;
+    border-right: hidden;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.coral-Table-body .coral-Table-row:last-of-type .coral-Table-cell:first-of-type {
+    border-bottom-left-radius: 0;
+}
+
+.coral-Table-body .coral-Table-row:last-of-type .coral-Table-cell:last-of-type {
+    border-bottom-right-radius: 0;
+}
+
+.coral-Table-body .coral-Table-row:first-of-type .coral-Table-cell:last-of-type {
+    border-top-right-radius: 0;
+}
+
+.coral-Table-body .coral-Table-cell {
+    border-top: 0.0625rem solid #fff;
+}
+
+.coral-Table-body .coral-Table-row:last-of-type .coral-Table-cell {
+    border-bottom: 0.0625rem solid #fff;
+}
+
+#confirmationDialogContent>p {
+    margin: 6px 0px;
+}
+
+#findReplaceDialog .coral3-Dialog-wrapper {
+    max-width: 50%;
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+  jcr:primaryType="cq:Dialog"
+  title="Choose a view"
+  xtype="dialog">
+  <items
+    jcr:primaryType="cq:Widget"
+    xtype="tabpanel">
+    <items jcr:primaryType="cq:WidgetCollection">
+      <tab1
+        jcr:primaryType="cq:Panel"
+        title="Choose a view">
+        <items jcr:primaryType="cq:WidgetCollection">
+          <view
+            jcr:primaryType="cq:Widget"
+            allowBlank="false"
+            defaultValue="toggle-graphic"
+            fieldDescription="Choose a view"
+            fieldLabel="View"
+            fieldSubLabel=""
+            name="./view"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+              <toggle-graphic
+                jcr:primaryType="nt:unstructured"
+                text="Toggle Graphic"
+                value="toggle-graphic"/>
+              <links-navigation
+                jcr:primaryType="nt:unstructured"
+                text="Links Navigation"
+                value="links-navigation"/>
+            </options>
+          </view>
+        </items>
+      </tab1>
+    </items>
+  </items>
+</jcr:root>

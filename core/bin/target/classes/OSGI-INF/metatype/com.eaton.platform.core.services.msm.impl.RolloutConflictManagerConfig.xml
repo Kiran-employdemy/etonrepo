@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.msm.impl.RolloutConflictManagerConfig">
+  <OCD id="com.eaton.platform.core.services.msm.impl.RolloutConflictManagerConfig" name="Rollout Conflict Manager Config" description="">
+    <AD id="sendNotification" type="Boolean" name="Send notification" description="If checked, a notification via AEM inbox will be sent to the user, who did rollout, in case conflicts are detected." default="false"/>
+    <AD id="sendEmailNotification" type="Boolean" name="Send email notification" description="If checked, an email notification via AEM inbox will be sent to the user, who did rollout, in case conflicts are detected." default="false"/>
+    <AD id="emailNotificationTemplatePath" type="String" name="Notification tempalte path" description="Email notification tempalte path." default="/etc/notification/email/txt/com.eaton.generic.email/rolloutConflictNotification.txt"/>
+    <AD id="emailReportTemplatePath" type="String" name="Report Tempalte path" description="Email report tempalte path." default="/etc/notification/email/txt/com.eaton.generic.email/rolloutConflictReport.txt"/>
+    <AD id="reportRootPath" type="String" name="Report root path" description="Report root path." default="/content/eaton"/>
+    <AD id="detailedReport" type="Boolean" name="Detailed report" description="Detailed report." default="false"/>
+    <AD id="reportRecipients" type="String" cardinality="2147483647" name="Report recipients" description="List of report recipients' emails. Takes precedence over reportRecipientGroup." default=""/>
+    <AD id="reportRecipientGroup" type="String" name="Report recipient group" description="Report recipient group name in AEM." default=""/>
+    <AD id="docLink" type="String" name="Documentation link" description="Link to documentation." default=""/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.msm.impl.RolloutConflictManagerImpl">
+    <Object ocdref="com.eaton.platform.core.services.msm.impl.RolloutConflictManagerConfig"/>
+  </Designate>
+</metatype:MetaData>

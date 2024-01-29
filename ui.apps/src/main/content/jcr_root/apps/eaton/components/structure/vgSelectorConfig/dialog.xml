@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    jcr:title="VG Selector Configuration"
+    height="500"
+    warnIfModified="{Boolean}false"
+    width="500"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Selector_x0020_Configuration
+                jcr:primaryType="cq:Panel"
+                title="Selector Configuration"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <selectorToolType
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Selector Tool Type"
+                        name="./selectorToolType"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <clutch
+                                jcr:primaryType="nt:unstructured"
+                                text="Clutch"
+                                value="clutch-selector"/>
+                            <torque
+                                jcr:primaryType="nt:unstructured"
+                                text="Torque"
+                                value="torque-selector"/>
+                        </options>
+                    </selectorToolType>
+                    <returnFacetsFor
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Endeca Questions ID"
+                        name="./returnFacetsFor"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <attributes
+                                    jcr:primaryType="cq:Widget"
+                                    dName="returnFacets"
+                                    fieldLabel="ID"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </returnFacetsFor>
+                    <additional_facets
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Additional Facet Groups"
+                        name="./additional_facets"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <facets
+                                    jcr:primaryType="cq:Widget"
+                                    dName="facets"
+                                    fieldLabel="Facets"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </additional_facets>
+                    <skucardattributes
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="SKU Card Attributes"
+                        name="./skucardattributes"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <attributes
+                                    jcr:primaryType="cq:Widget"
+                                    dName="attributes"
+                                    fieldLabel="Attributes"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </skucardattributes>
+                    <fallbackImage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Fallback Image"
+                        name="./fallbackImage"
+                        rootPath="/content/dam"
+                        xtype="pathfield"/>
+                    <longDescriptionCheckbox
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Long Description Checkbox"
+                        name="./longDescriptionCheckbox"
+                        type="checkbox"
+                        xtype="selection"/>
+                    <facetValueCount
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Facet Value Count"
+                        name="./facetValueCount"
+                        xtype="numberfield"/>
+                    <facetCount
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Facet Count"
+                        name="./facetCount"
+                        xtype="numberfield"/>
+                    <expandedFacetCount
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Expanded Facet Count"
+                        name="./expandedFacetCount"
+                        xtype="numberfield"/>
+                    <pageSize
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Number Of Records to Return"
+                        name="./pageSize"
+                        xtype="numberfield"/>
+                    <good
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Portfolio Rating For Good Id"
+                        name="./good"
+                        xtype="textfield"/>
+                    <better
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Portfolio Rating For Better Id"
+                        name="./better"
+                        xtype="textfield"/>
+                    <best
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Portfolio Rating For Best Id"
+                        name="./best"
+                        xtype="textfield"/>
+                </items>
+            </Selector_x0020_Configuration>
+        </items>
+    </items>
+</jcr:root>

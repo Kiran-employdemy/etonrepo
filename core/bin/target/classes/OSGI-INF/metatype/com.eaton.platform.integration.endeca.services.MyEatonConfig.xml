@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.endeca.services.MyEatonConfig">
+  <OCD id="com.eaton.platform.integration.endeca.services.MyEatonConfig" name="My Eaton Config" description="This config contains a My Eaton mockup for local author environment">
+    <AD id="sec.account.type.name" type="String" name="sec_account_type_name" default="SEC-Account-Type"/>
+    <AD id="sec.account.type.values" type="String" cardinality="2147483647" name="sec_account_type_values" default=""/>
+    <AD id="sec.application.access.name" type="String" name="sec_application_access_name" default="SEC-Application-Access"/>
+    <AD id="sec.application.access.values" type="String" cardinality="2147483647" name="sec_application_access_values" default=""/>
+    <AD id="sec.company.name" type="String" name="sec_company_name" default="SEC-Company"/>
+    <AD id="sec.company.values" type="String" cardinality="2147483647" name="sec_company_values" default=""/>
+    <AD id="sec.product.categories.name" type="String" name="sec_product_categories_name" default="SEC-Product-Categories"/>
+    <AD id="sec.product.categories.values" type="String" cardinality="2147483647" name="sec_product_categories_values" default=""/>
+    <AD id="sec.country.name" type="String" name="sec_country_name" default="SEC-country"/>
+    <AD id="sec.country.values" type="String" cardinality="2147483647" name="sec_country_values" default=""/>
+    <AD id="sec.tier.level.name" type="String" name="sec_tier_level_name" default="SEC-Tier-Level"/>
+    <AD id="sec.tier.level.values" type="String" cardinality="2147483647" name="sec_tier_level_values" default=""/>
+    <AD id="sec.partner.programme.type.name" type="String" name="sec_partner_programme_type_name" default="SE-Partner-Programme-Type"/>
+    <AD id="sec.partner.programme.type.values" type="String" cardinality="2147483647" name="sec_partner_programme_type_values" default=""/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.endeca.services.impl.EndecaAdvancedSearchServiceImpl">
+    <Object ocdref="com.eaton.platform.integration.endeca.services.MyEatonConfig"/>
+  </Designate>
+</metatype:MetaData>

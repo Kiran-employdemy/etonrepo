@@ -1,0 +1,86 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Jun 20 2023 16:26:00 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "English",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "3e3a576e-366f-416f-bae1-0fb4862157b8",
+    "cq:template": "/conf/eaton/settings/wcm/templates/home-page",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:lastModifiedBy": "e0078808",
+    "priority": "0.5",
+    "jcr:language": "en_gb",
+    "jcr:predecessors": [
+      "37ea4b5f-ddca-4147-9953-ba601e642cb2"
+    ],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Tue Jun 20 2023 16:26:00 GMT-0400",
+    "cq:lastReplicated": "Thu Oct 12 2023 11:31:27 GMT-0400",
+    "cq:lastModified": "Mon Jul 10 2023 16:08:07 GMT-0400",
+    "view": "generic",
+    "meta-robot-tags": "index,follow",
+    "jcr:baseVersion": "37ea4b5f-ddca-4147-9953-ba601e642cb2",
+    "jcr:isCheckedOut": true,
+    "page-type": "home-page",
+    "jcr:lastModified": "Thu Oct 05 2017 15:36:02 GMT-0400",
+    "jcr:uuid": "5c80894f-c443-4fd8-8d07-982b6cf20505",
+    "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "cq:allowedTemplates": [
+      "/apps/eaton/templates/eaton-redirect-template",
+      "/apps/eaton/templates/eaton-reference-template",
+      "/conf/eaton/settings/wcm/templates/primary-page",
+      "/conf/eaton/settings/wcm/templates/site-map",
+      "/conf/eaton/settings/wcm/templates/search-results-page",
+      "/conf/eaton/settings/wcm/templates/category-with-cards"
+    ],
+    "cq:lastModifiedBy": "admin",
+    "cq:isLanguageRoot": "true",
+    "changefrequency": "weekly"
+  },
+  "digital": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Wed Jun 21 2023 07:55:27 GMT-0400"
+  },
+  "support": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": [
+      "rep:AccessControllable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Tue Jul 11 2023 06:35:20 GMT-0400"
+  },
+  "secure": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Mon Jul 10 2023 15:58:03 GMT-0400"
+  },
+  "megamenu-reference-folder": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": [
+      "rep:AccessControllable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Mon Jul 10 2023 16:06:33 GMT-0400"
+  },
+  "skuPage": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": [
+      "rep:AccessControllable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Oct 12 2023 11:07:12 GMT-0400"
+  },
+  "test-eloise": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Wed Jun 21 2023 09:44:09 GMT-0400"
+  }
+}

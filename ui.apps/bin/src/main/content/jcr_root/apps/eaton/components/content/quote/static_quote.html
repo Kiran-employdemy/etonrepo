@@ -1,0 +1,24 @@
+<sly data-sly-test="${ wcmmode.edit }">
+<div class="alert alert-warning">Quote: ${currentNode.name}</div>
+</sly>
+
+<sly data-sly-use.quoteBean="com.eaton.platform.core.models.QuoteModel"></sly>
+
+
+<div class="eaton-quote text-center" data-sly-test ="${quoteBean.transAuthorName}">
+	<div class="container">
+		<div class="eaton-quote__image">
+			<i class="icon icon-quote-dark" aria-hidden="true"></i>
+		</div>
+		<div class="eaton-quote__text">${quoteBean.transQuote
+			@context="html"}</div>
+		<div class="eaton-quote__author">
+			<span class="eaton-quote__name">${quoteBean.transAuthorName},</span>
+			<span class="eaton-quote__title"> <sly
+					data-sly-test="${quoteBean.transDesignation}">${quoteBean.transDesignation}</sly>
+			</span>
+		</div>
+	</div>
+</div>
+
+</sly>

@@ -1,0 +1,13 @@
+//-----------------------------------
+// M-62: Faceted Navigation
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+
+// Import SubModules
+@import "faceted-nav-header";
+@import "faceted-nav-sidebar";
+@import "faceted-nav-active-filters";
+@import "faceted-nav-filter-search";

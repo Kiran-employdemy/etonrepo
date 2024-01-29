@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/eaton/settings/dam/cfm/models/person"/>
+    <filter root="/conf/eaton-cummins/settings/wcm/template-types"/>
+    <filter root="/conf/global/settings/workflow/models/eaton-dam"/>
+	<filter root="/conf/global/settings/workflow/models/eaton-workflows"/>
+	<filter root="/conf/global/settings/workflow/models/eaton-ccms-update-pdf-metadata"/>
+	<filter root="/conf/global/settings/workflow/models/eaton-ccms-page-metadata-update"/>
+	<filter root="/conf/global/settings/workflow/launcher" mode="merge" />
+    <filter root="/conf/global/settings/workflow/launcher/config/eaton_update_metadata"/>
+    <filter root="/conf/global/settings/workflow/launcher/config/dm_encode_video_create"/>
+    <filter root="/conf/global/settings/workflow/launcher/config/dm_encode_video_create_(post-6.3)"/>
+    <filter root="/conf/global/settings/workflow/launcher/config/dm_encode_video_mod"/>
+    <filter root="/conf/global/settings/workflow/launcher/config/dm_encode_video_mod_(post-6.3)"/>
+    <filter root="/conf/global/settings/workflow/launcher/config/dm_encode_video_mod_reupload"/>
+    <filter root="/conf/global/settings/workflow/launcher/config/update_asset_create"/>
+    <filter root="/conf/global/settings/workflow/launcher/config/update_asset_create_without_DM"/>
+    <filter root="/conf/global/settings/workflow/launcher/config/update_asset_mod"/>
+    <filter root="/conf/global/settings/workflow/launcher/config/update_asset_mod_without_DM"/>
+    <filter root="/conf/global/settings/dam/search"/>
+    <filter root="/conf/global/settings/dam/adminui-extension/metadataprofile"/>
+    <filter root="/conf/global/settings/dam/adminui-extension/metadataschema"/>
+	<filter root="/conf/eaton" mode="merge"/>
+	<filter root="/conf/eaton/settings/wcm/template-types" mode="merge"/>
+	<filter root="/conf/eaton/settings/wcm/templates/eaton-dita-landing-page"/>
+	<filter root="/conf/eaton/settings/wcm/templates/eaton-ccms-dita-page"/>
+    <filter root="/conf/eaton/settings/wcm/templates/software-delivery"/>
+	<filter root="/conf/eaton/settings/wcm/template-types/contentbase"/>
+	<filter root="/conf/eaton/settings/wcm/template-types/landingbase"/>
+	<filter root="/content" mode="update">
+        <include pattern="/content/cq:tags(/.*)?" mode="update"/>
+    </filter>
+</workspaceFilter>

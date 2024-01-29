@@ -1,0 +1,81 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:mixinTypes": [
+    "rep:AccessControllable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon Mar 04 2019 23:46:58 GMT-0500",
+  "product-family-site-map": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": [
+      "rep:AccessControllable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Jun 21 2019 02:44:19 GMT-0400"
+  },
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable",
+      "cq:LiveSync",
+      "cq:PropertyLiveSyncCancelled"
+    ],
+    "hrefLangCode": "de-de",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Effiziente Energiemanagement-LÃ¶sungen | Eaton",
+    "cq:propertyInheritanceCancelled": [
+      "jcr:language",
+      "cq:cloudserviceconfigs"
+    ],
+    "jcr:versionHistory": "f28a7a9d-7fde-4314-8d85-70c97c295631",
+    "cq:template": "/conf/eaton/settings/wcm/templates/home-page",
+    "jcr:lastModifiedBy": "c3037550",
+    "priority": "0.5",
+    "jcr:language": "de_de",
+    "cq:lastRolledout": "Thu Jan 17 2019 16:20:44 GMT-0500",
+    "jcr:predecessors": [
+      "db33bbf9-728b-4ac8-a76f-e9ec65eeb4d9"
+    ],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Mon Mar 22 2021 03:10:12 GMT-0400",
+    "primary-sub-category-tag@TypeHint": "String[]",
+    "cq:lastModified": "Thu Oct 21 2021 11:53:14 GMT-0400",
+    "view": "generic",
+    "cq:cloudserviceconfigs": [
+      "/etc/cloudservices/brightcoveconfig/us-en",
+      "/etc/cloudservices/siteconfig/de_de",
+      "/etc/cloudservices/eloquaconfig/production-eloqua-configuration",
+      "/etc/cloudservices/socialshare/social-share",
+      "/etc/cloudservices/nanorepchatconfig/nanorep-configurations",
+      "/etc/cloudservices/endeca-configurations/endeca-prod",
+      "/etc/cloudservices/pdh-configurations/pdh-configurations"
+    ],
+    "overlay-path": "/content/eaton/de/de-de/megamenu-reference-folder",
+    "meta-robot-tags": "index,follow",
+    "jcr:description": "Eaton ist ein breit aufgestelltes Energiemanagement-Unternehmen und gehÃ¶rt in den folgenden Technologiebereichen zu den WeltmarktfÃ¼hrern: elektrische Systeme fÃ¼r sichere Stromversorgung, -verteilung und -steuerung, hydraulische Komponenten, Systeme und Dienstleistungen fÃ¼r industrielle und mobile GerÃ¤te, Kraftstoffe fÃ¼r die Luft- und Raumfahrt, Kraftstoffversorgungs-, Hydraulik- und Druckluftsystemen fÃ¼r Verkehrs- und MilitÃ¤rflugzeuge sowie Transmissions- und KraftÃ¼bertragungssystemen fÃ¼r bessere Leistung, mehr Sicherheit und geringen Kraftstoffverbrauch von Pkws und Lkws.",
+    "jcr:baseVersion": "db33bbf9-728b-4ac8-a76f-e9ec65eeb4d9",
+    "jcr:isCheckedOut": true,
+    "page-type": "home-page",
+    "switchSubCategoryToPIM": "false",
+    "pageTitle": "Startseite",
+    "cq:conf": "/conf/eaton",
+    "jcr:lastModified": "Mon Nov 13 2017 07:56:39 GMT-0500",
+    "jcr:uuid": "b23e2850-530d-4223-aac7-de6e96872c7b",
+    "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "switchTaxonomyAttributesToPIM": "false",
+    "cq:allowedTemplates": [
+      "/apps/eaton/templates/eaton-redirect-template",
+      "/apps/eaton/templates/eaton-reference-template",
+      "/conf/eaton/settings/wcm/templates/primary-page",
+      "/conf/eaton/settings/wcm/templates/site-map",
+      "/conf/eaton/settings/wcm/templates/search-results-page",
+      "/conf/eaton/settings/wcm/templates/category-with-cards"
+    ],
+    "errorPages": "/content/eaton/de/de-de",
+    "cq:lastRolledoutBy": "e0020354",
+    "cq:lastModifiedBy": "eatonwriteuser",
+    "changefrequency": "daily",
+    "navTitle": "Startseite"
+  }
+}

@@ -1,0 +1,2 @@
+js/dialog-submit-action.js
+js/facet-grp-value-list.js

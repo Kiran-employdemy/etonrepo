@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.PredectiveSearchServlet" immediate="true">
+  <property name="sling.servlet.paths" type="String" value="/eaton/content/search/predective-search"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="authenticationServiceConfig" interface="com.eaton.platform.integration.auth.services.AuthenticationServiceConfiguration" field="authenticationServiceConfig"/>
+  <reference name="authorizationService" interface="com.eaton.platform.integration.auth.services.AuthorizationService" field="authorizationService"/>
+  <reference name="configService" interface="com.eaton.platform.core.services.EatonConfigService" field="configService"/>
+  <reference name="endecaConfigService" interface="com.eaton.platform.integration.endeca.services.EndecaConfig" field="endecaConfigService"/>
+  <reference name="endecaService" interface="com.eaton.platform.integration.endeca.services.EndecaService" field="endecaService"/>
+  <reference name="resolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" field="resolverFactory"/>
+  <implementation class="com.eaton.platform.core.servlets.PredectiveSearchServlet"/>
+</scr:component>

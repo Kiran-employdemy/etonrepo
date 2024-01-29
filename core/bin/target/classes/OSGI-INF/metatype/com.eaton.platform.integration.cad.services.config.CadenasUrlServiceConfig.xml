@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.cad.services.config.CadenasUrlServiceConfig">
+  <OCD id="com.eaton.platform.integration.cad.services.config.CadenasUrlServiceConfig" name="CadenasUrlServiceImpl" description="">
+    <AD id="cadQualifierUrl" type="String" name="Cad Qualifier Url" description="Cadenas Qualifier Url" default="https://www.partcommunity.com/cadqualifier.asp?firm=eaton_cad"/>
+    <AD id="partCommunityUrl" type="String" name="Part Community Url" description="Cadenas Part Community Url" default="https://webapi.partcommunity.com/cgi-bin/cgi2pview.exe"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.cad.impl.CadenasUrlServiceImpl">
+    <Object ocdref="com.eaton.platform.integration.cad.services.config.CadenasUrlServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

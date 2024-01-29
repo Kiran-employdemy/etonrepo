@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/libs/settings/wcm/designs/default"
+        cq:lastModified="{Date}2023-05-15T12:28:26.696Z"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:mixinTypes="[]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Eaton DAM Update Asset Workflow"
+        sling:resourceType="cq/workflow/components/pages/model">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <process
+                jcr:created="{Date}2021-06-15T08:29:08.696-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-15T08:30:23.022-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="OOTB GateKeeperProcess"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.day.cq.dam.core.process.GateKeeperProcess"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process>
+            <or
+                jcr:created="{Date}2021-06-15T08:31:08.783-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-15T08:34:22.120-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Is this asset a video and is Cloud Dynamic Media configured?"
+                sling:resourceType="cq/workflow/components/model/or"
+                branches="2"
+                branchName1="Yes Branch"
+                branchName2="No Branch"
+                branchOrder="[0,1]"
+                default1="true"
+                orSplit="true"
+                script2="function check() {&#xd;&#xa;return true; }"
+                scriptPath1="/apps/workflow/scripts/eatonscripts/cloudDMVideoChecker.ecma">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <noopprocess
+                        jcr:created="{Date}2021-06-15T08:34:37.852-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="A no operation process"
+                        jcr:lastModified="{Date}2021-06-15T08:36:16.541-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Yes"
+                        sling:resourceType="cq/workflow/components/workflow/noopprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="/libs/workflow/scripts/noop.ecma"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </noopprocess>
+                    <container
+                        jcr:created="{Date}2021-06-15T08:36:38.013-05:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-06-15T08:40:32.589-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Dynamic Media Encode Video Workflow"
+                        sling:resourceType="cq/workflow/components/model/container">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            CONTAINER="/var/workflow/models/dam/dynamic-media-encode-video"/>
+                    </container>
+                    <process
+                        jcr:created="{Date}2021-06-15T08:36:57.811-05:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-06-15T08:41:21.689-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Update Duration"
+                        sling:resourceType="cq/workflow/components/model/process">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.eaton.platform.core.workflows.UpdateDuration"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </process>
+                    <process_425772855
+                        jcr:created="{Date}2021-06-15T08:37:01.981-05:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-06-15T08:43:05.268-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Set Image Width &amp; Height"
+                        sling:resourceType="cq/workflow/components/model/process">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.eaton.platform.core.workflows.NormalizeAssetNodeProperties"
+                            PROCESS_ARGS="jcr:content/metadata/dam:scene7Height::jcr:content/metadata/tiff:ImageLength,jcr:content/metadata/dam:scene7Width::jcr:content/metadata/tiff:ImageWidth"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </process_425772855>
+                </_x0031_>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <noopprocess
+                        jcr:created="{Date}2021-06-15T08:34:41.252-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="A no operation process"
+                        jcr:lastModified="{Date}2021-06-15T08:36:25.174-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="No"
+                        sling:resourceType="cq/workflow/components/workflow/noopprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="/libs/workflow/scripts/noop.ecma"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </noopprocess>
+                    <container
+                        jcr:created="{Date}2021-06-15T08:36:44.517-05:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-06-15T08:43:28.382-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="OOTB DAM Update Asset Workflow"
+                        sling:resourceType="cq/workflow/components/model/container">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            CONTAINER="/var/workflow/models/dam/update_asset"/>
+                    </container>
+                </_x0032_>
+            </or>
+            <process_1492403768
+                jcr:created="{Date}2021-06-15T08:37:21.409-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-15T08:44:16.407-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Update DC Format"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.eaton.platform.core.workflows.SetDcFormat"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process_1492403768>
+            <process_1256063178
+                jcr:created="{Date}2021-06-15T08:37:31.620-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-15T08:48:27.365-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Update Aspect Ratio"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.eaton.platform.core.workflows.SetImageShape"
+                    PROCESS_ARGS="jcr:content/metadata/xmp:eaton-aspect-ratio,portrait,square,wide,panoramic"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process_1256063178>
+            <process_1240992306
+                jcr:created="{Date}2021-06-15T08:37:35.134-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-15T08:48:57.328-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Update Create Date"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.eaton.platform.core.workflows.UpdateCreateDateProcess"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process_1240992306>
+            <autotagassetprocess
+                jcr:created="{Date}2021-06-15T08:38:32.269-05:00"
+                jcr:createdBy="admin"
+                jcr:description="This process will add smart tags to assets."
+                jcr:lastModified="{Date}2021-06-15T08:49:08.798-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Smart Tag Assets Process"
+                sling:resourceType="dam/components/workflow/autotagassetprocess">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    IGNORE_ERRORS="true"
+                    IGNORE_SMART_TAG_FLAG="true"
+                    PROCESS="com.day.cq.dam.similaritysearch.internal.workflow.process.AutoTagAssetProcess"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </autotagassetprocess>
+            <process_1495245876
+                jcr:created="{Date}2021-06-15T08:38:09.734-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-15T08:55:45.062-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Smart Tag Assets Blocklist Cleanup"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.eaton.platform.core.workflows.SmartTagAssetsBlocklistCleanup"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process_1495245876>
+            <container
+                jcr:created="{Date}2021-06-15T08:38:19.399-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-15T08:49:38.410-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Eaton DAM Update Metadata"
+                sling:resourceType="cq/workflow/components/model/container">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    CONTAINER="/var/workflow/models/eaton-dam/dam/eaton-dam-update-metadata"/>
+            </container>
+        </flow>
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+    </jcr:content>
+</jcr:root>

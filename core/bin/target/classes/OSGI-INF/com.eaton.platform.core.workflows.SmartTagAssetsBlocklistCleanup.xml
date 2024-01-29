@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.workflows.SmartTagAssetsBlocklistCleanup" immediate="true">
+  <property name="service.vendor" type="String" value="Freedom Marketing"/>
+  <property name="service.description" type="String" value="Removes blocklisted smart tags from asset."/>
+  <property name="process.label" type="String" value="FM - Smart Tag Assets Blocklist Cleanup"/>
+  <service>
+    <provide interface="com.adobe.granite.workflow.exec.WorkflowProcess"/>
+  </service>
+  <reference name="resourceResolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" field="resourceResolverFactory"/>
+  <implementation class="com.eaton.platform.core.workflows.SmartTagAssetsBlocklistCleanup"/>
+</scr:component>

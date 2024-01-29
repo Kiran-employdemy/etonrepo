@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.featureflags.FeatureFlagServlet" immediate="true">
+  <property name="sling.servlet.resourceTypes" type="String" value="eaton/components/shared/feature-flags"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="featureFlagRegistryService" interface="com.eaton.platform.core.featureflags.FeatureFlagRegistryService" field="featureFlagRegistryService"/>
+  <implementation class="com.eaton.platform.core.featureflags.FeatureFlagServlet"/>
+</scr:component>

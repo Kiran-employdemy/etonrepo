@@ -1,0 +1,7 @@
+<template data-sly-template.module="${ @ person, showEmail }">
+  <div>${person.name}</div>
+  <div>${person.phoneNumber}</div>
+  <div data-sly-test="${showEmail}">
+    <a href="mailto:${person.email}" target="_blank">${person.email}</a>
+  </div>
+</template>

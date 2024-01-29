@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    enabled="{Boolean}true"
+    overrides="\[/content/eaton]com.adobe.cq.wcm.core.components.internal.services.pdfviewer.PdfViewerCaConfig/clientId=&quot;64a64b2ba9a8427aabe761a5a07a4d48&quot;"/>

@@ -1,0 +1,391 @@
+{
+  "response" : {
+    "status" : "Success",
+    "statusDetails" : {
+      "messages" : [ "Query=enePort=16600&amp;Nr=AND%28language%3aen_US%2cSub_Category_ID%3abackup-power-%5c%28ups%5c%29%2ccountry%3aUS%29&amp;eneHost=endeca-dev.tcc.etn.com&amp;N=0" ]
+    },
+    "didYouMean" : null,
+    "binning" : {
+      "binningSet" : [ {
+        "label" : null,
+        "bsId" : "product-attributes_application",
+        "bin" : [ {
+          "label" : "Data center UPS",
+          "ndocs" : 0,
+          "value" : "893616327"
+        }, {
+          "label" : "Emergency lighting UPS",
+          "ndocs" : 0,
+          "value" : "1977776937"
+        }, {
+          "label" : "Industrial UPS",
+          "ndocs" : 0,
+          "value" : "1802490658"
+        }, {
+          "label" : "Marine UPS",
+          "ndocs" : 0,
+          "value" : "1899937489"
+        }, {
+          "label" : "Network closet UPS",
+          "ndocs" : 0,
+          "value" : "4090566200"
+        }, {
+          "label" : "Server room UPS",
+          "ndocs" : 0,
+          "value" : "4268705436"
+        }, {
+          "label" : "Workstation &amp; Home UPS",
+          "ndocs" : 0,
+          "value" : "3449424565"
+        } ]
+      }, {
+        "label" : null,
+        "bsId" : "product-attributes_power-rating",
+        "bin" : [ {
+          "label" : "0-1 kVA",
+          "ndocs" : 0,
+          "value" : "864762506"
+        }, {
+          "label" : "1-3 kVA",
+          "ndocs" : 0,
+          "value" : "2148849980"
+        }, {
+          "label" : "13-19 kVA",
+          "ndocs" : 0,
+          "value" : "2059266985"
+        }, {
+          "label" : "161-400 kVA",
+          "ndocs" : 0,
+          "value" : "3220353296"
+        }, {
+          "label" : "20-40 kVA",
+          "ndocs" : 0,
+          "value" : "1129746183"
+        }, {
+          "label" : "401 kVA-1200 kVA",
+          "ndocs" : 0,
+          "value" : "703783742"
+        }, {
+          "label" : "41-80 kVA",
+          "ndocs" : 0,
+          "value" : "3379264278"
+        }, {
+          "label" : "5-6 kVA",
+          "ndocs" : 0,
+          "value" : "3311928947"
+        }, {
+          "label" : "7-12 kVA",
+          "ndocs" : 0,
+          "value" : "573817674"
+        }, {
+          "label" : "81-160 kVA",
+          "ndocs" : 0,
+          "value" : "1338697791"
+        } ]
+      }, {
+        "label" : "Topology",
+        "bsId" : "product-attributes_topology",
+        "bin" : [ {
+          "label" : "Ferroresonant",
+          "ndocs" : 0,
+          "value" : "3707749884"
+        }, {
+          "label" : "Line-interactive",
+          "ndocs" : 0,
+          "value" : "2881735177"
+        }, {
+          "label" : "Multi-mode",
+          "ndocs" : 0,
+          "value" : "3640373899"
+        }, {
+          "label" : "Online",
+          "ndocs" : 0,
+          "value" : "1841924040"
+        }, {
+          "label" : "Standby",
+          "ndocs" : 0,
+          "value" : "1764159966"
+        } ]
+      }, {
+        "label" : null,
+        "bsId" : "product-attributes_form-factor",
+        "bin" : [ {
+          "label" : "Desktop",
+          "ndocs" : 0,
+          "value" : "3853907918"
+        }, {
+          "label" : "End of row",
+          "ndocs" : 0,
+          "value" : "1895036906"
+        }, {
+          "label" : "Facility level",
+          "ndocs" : 0,
+          "value" : "3568781136"
+        }, {
+          "label" : "Rackmount",
+          "ndocs" : 0,
+          "value" : "2195222850"
+        }, {
+          "label" : "Tower",
+          "ndocs" : 0,
+          "value" : "790045815"
+        }, {
+          "label" : "Wallmount",
+          "ndocs" : 0,
+          "value" : "482678548"
+        } ]
+      }, {
+        "label" : "Features",
+        "bsId" : "product-attributes_features",
+        "bin" : [ {
+          "label" : "Extended runtime",
+          "ndocs" : 0,
+          "value" : "1059685865"
+        }, {
+          "label" : "Generator compatible",
+          "ndocs" : 0,
+          "value" : "3056071272"
+        }, {
+          "label" : "Lithium batteries",
+          "ndocs" : 0,
+          "value" : "2885345314"
+        }, {
+          "label" : "Modular scalable",
+          "ndocs" : 0,
+          "value" : "3336537850"
+        }, {
+          "label" : "Network capable",
+          "ndocs" : 0,
+          "value" : "1060224054"
+        }, {
+          "label" : "TAA compliant (US only)",
+          "ndocs" : 0,
+          "value" : "4044426854"
+        } ]
+      }, {
+        "label" : null,
+        "bsId" : "product-attributes_input-power",
+        "bin" : [ {
+          "label" : "Single phase",
+          "ndocs" : 0,
+          "value" : "3228454634"
+        }, {
+          "label" : "Three phase",
+          "ndocs" : 0,
+          "value" : "2207614559"
+        } ]
+      } ]
+    },
+    "searchResults" : {
+      "totalCount" : 25,
+      "document" : [ {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : "Power Xpert 9395 UPS"
+        }, {
+          "name" : "product_image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/power-xpert-9395/9395.jpg"
+        }, {
+          "name" : "sub-category_name",
+          "type" : "text",
+          "value" : "Backup power | UPS | Eaton"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-auth01.tcc.etn.com:4502/content/eaton/us/en-us/catalog/backup-power-ups-surge-it-power-distribution/power-xpert-9395.html"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : "Eaton FERRUPS Rackmount UPS"
+        }, {
+          "name" : "product_image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-ferrups-rackmount-ups/eaton-ferrups-rackmount.jpg"
+        }, {
+          "name" : "sub-category_name",
+          "type" : "text",
+          "value" : "Backup power | UPS | Eaton"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-auth01.tcc.etn.com:4502/content/eaton/us/en-us/catalog/backup-power-ups-surge-it-power-distribution/eaton-ferrups-rackmount-ups.html"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : "Eaton 9390 UPS"
+        }, {
+          "name" : "product_image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-9390-ups/eaton-9390-ups.jpg"
+        }, {
+          "name" : "sub-category_name",
+          "type" : "text",
+          "value" : "Backup power | UPS | Eaton"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-auth01.tcc.etn.com:4502/content/eaton/us/en-us/catalog/backup-power-ups-surge-it-power-distribution/eaton-9390-ups.html"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : "Eaton 5PX UPS"
+        }, {
+          "name" : "product_image",
+          "type" : "text",
+          "value" : "http://eaton.com/mdmfiles/PDM23009336/Eatons-5PX-UPS_FM/500x500_72dpi"
+        }, {
+          "name" : "sub-category_name",
+          "type" : "text",
+          "value" : "Backup power | UPS | Eaton"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-auth01.tcc.etn.com:4502/content/eaton/us/en-us/catalog/backup-power-ups-surge-it-power-distribution/eaton-5px-ups-sit.html"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : "Eaton 9170+ UPS"
+        }, {
+          "name" : "product_image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-9170plus-ups/eaton-9170plus-ups.jpg"
+        }, {
+          "name" : "sub-category_name",
+          "type" : "text",
+          "value" : "Backup power | UPS | Eaton"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-auth01.tcc.etn.com:4502/content/eaton/us/en-us/catalog/backup-power-ups-surge-it-power-distribution/Eaton-9170plus-ups.html"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : "Eaton Emergency Lighting UPS"
+        }, {
+          "name" : "product_image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-emergency-lighting-ups/eaton-emergency-lighting-ups.jpg"
+        }, {
+          "name" : "sub-category_name",
+          "type" : "text",
+          "value" : "Backup power | UPS | Eaton"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-auth01.tcc.etn.com:4502/content/eaton/us/en-us/catalog/backup-power-ups-surge-it-power-distribution/eaton-emergency-lighting-ups.html"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : "Eaton 93E UPS"
+        }, {
+          "name" : "product_image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-93e-ups/eaton-93e-ups.jpg"
+        }, {
+          "name" : "sub-category_name",
+          "type" : "text",
+          "value" : "Backup power | UPS | Eaton"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-auth01.tcc.etn.com:4502/content/eaton/us/en-us/catalog/backup-power-ups-surge-it-power-distribution/eaton-93e-ups.html"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : "Eaton 9355 Marine UPS"
+        }, {
+          "name" : "product_image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-9355-marine-ups/eaton-9355-marine-ups.jpg"
+        }, {
+          "name" : "sub-category_name",
+          "type" : "text",
+          "value" : "Backup power | UPS | Eaton"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-auth01.tcc.etn.com:4502/content/eaton/us/en-us/catalog/backup-power-ups-surge-it-power-distribution/eaton-9355-marine-ups.html"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : "Eaton BladeUPS"
+        }, {
+          "name" : "product_image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-bladeups/eaton-blade-ups.jpg"
+        }, {
+          "name" : "sub-category_name",
+          "type" : "text",
+          "value" : "Backup power | UPS | Eaton"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-auth01.tcc.etn.com:4502/content/eaton/us/en-us/catalog/backup-power-ups-surge-it-power-distribution/Eaton_BladeUPS_UPS.html"
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : "Eaton 9155 Marine UPS"
+        }, {
+          "name" : "product_image",
+          "type" : "text",
+          "value" : "/content/dam/eaton/products/backup-power-ups-surge-it-power-distribution/backup-power-ups/eaton-9155-marine-ups/eaton-9155-marine-ups.jpg"
+        }, {
+          "name" : "sub-category_name",
+          "type" : "text",
+          "value" : "Backup power | UPS | Eaton"
+        }, {
+          "name" : "URL",
+          "type" : "text",
+          "value" : "http://aem-sit-auth01.tcc.etn.com:4502/content/eaton/us/en-us/catalog/backup-power-ups-surge-it-power-distribution/eaton-9155-marine-ups.html"
+        } ]
+      } ]
+    },
+    "request" : {
+      "searchApplication" : "eatonauthpdh3",
+      "searchApplicationKey" : "abc123",
+      "function" : "search",
+      "searchTerms" : "backup-power-(ups)",
+      "language" : "en_US",
+      "startingRecordNumber" : 0,
+      "numberOfRecordsToReturn" : 10,
+      "filters" : [ {
+        "filterName" : "Country",
+        "filterValue" : [ "US" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "Facets",
+        "filterValue" : [ "" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "SortBy",
+        "filterValue" : [ "" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "ReturnFacetsFor",
+        "filterValue" : [ "product-attributes_input-power", "product-attributes_floor-standing-monitoring", "product-attributes_features", "product-attributes_topology", "product-attributes_input-connection", "product-attributes_application", "product-attributes_form-factor", "product-attributes_rackmount-function", "product-attributes_power-rating" ],
+        "preferenceValue" : null
+      } ],
+      "userName" : null
+    }
+  }
+}

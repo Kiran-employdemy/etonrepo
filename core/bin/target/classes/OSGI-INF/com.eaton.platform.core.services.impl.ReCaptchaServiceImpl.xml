@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.ReCaptchaServiceImpl" immediate="true" activate="activate" modified="activate">
+  <property name="validationUrl" type="String" value="https://www.google.com/recaptcha/api/siteverify"/>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="maxHostConnections" type="Integer" value="100"/>
+  <property name="service.description" type="String" value=" ReCaptcha Service"/>
+  <property name="process.label" type="String" value=" ReCaptchaServiceImpl"/>
+  <property name="maxConnections" type="Integer" value="100"/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.ReCaptchaService"/>
+  </service>
+  <reference name="configService" interface="com.eaton.platform.core.services.CloudConfigService" field="configService"/>
+  <reference name="httpFactory" interface="org.apache.http.osgi.services.HttpClientBuilderFactory" field="httpFactory"/>
+  <implementation class="com.eaton.platform.core.services.impl.ReCaptchaServiceImpl"/>
+</scr:component>

@@ -1,0 +1,338 @@
+//-----------------------------------
+// Component: Global Header
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+
+// Import Sub Components
+@import "header-utility-nav";
+@import "header-primary-nav";
+@import "header-search";
+@import "header-interactions";
+@import "header-aem-authoring";
+
+$eaton-header-fixed-height-desktop: rem($spacing__md * 1.25);
+$eaton-header-z-index: 200;
+$eaton-header-primary-nav-z-index: 250;
+
+// Container for the Entire Header Component (TopNav, MainNav, Mega-Menu, Search)
+//--------------
+.header-wrapper {
+
+  @include media-desktop-and-up {
+    .header-fixed & {
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+}
+
+.eaton-header {
+  position: relative;
+  z-index: $eaton-header-z-index;
+
+  .eaton-logo {
+    padding: 0 rem($spacing__sm * .5);
+
+    @include media-desktop-and-up {
+      padding: 0 rem($spacing__sm * .5);
+    }
+
+    &__link {
+      height: rem($spacing__sm * 1.0666666667);
+      width: rem($spacing__xl * .8333333333);
+
+      @include media-desktop-and-up {
+        height: rem($spacing__md * .95);
+        transition: height ease-in-out .3s, width ease-in-out .3s;
+        width: rem($spacing__xl * 1.5083333333);
+
+        .header-fixed & {
+          height: rem($spacing__sm * 1.25);
+          width: rem($spacing__xl * 1.05);
+        }
+      }
+    }
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    .header-fixed & {
+      .header-primary-nav {
+        position: fixed;
+        top: 45px;
+        width: 100%;
+        z-index: $eaton-header-primary-nav-z-index;
+
+        &__sku-global.header-primary-nav {
+          top: 0;
+        }
+      }
+
+      .header-search {
+        position: fixed;
+        top: $eaton-header-fixed-height-desktop;
+        width: 100%;
+      }
+
+      .mega-menu {
+        position: absolute;
+        top: $eaton-header-fixed-height-desktop;
+      }
+
+      .header-utility-nav {
+        display: none;
+      }
+    }
+  }
+}
+
+@include media-desktop-and-up {
+  .header-fixed {
+    .header-utility-nav {
+      display: block;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+  }
+
+}
+
+.second-logo-authored {
+  .eaton-logo {
+
+    &__link {
+      height: rem($spacing__sm * 0.9);
+      width: max-content;
+
+      @media all and (-ms-high-contrast: none),
+      (-ms-high-contrast: active) {
+        width: auto;
+
+        .header-fixed & {
+          width: auto !important; // stylelint-disable-line declaration-no-important
+        }
+      }
+
+      @include media-desktop-and-up {
+        height: rem($spacing__sm * 1.16666667);
+
+        .header-fixed & {
+          height: rem($spacing__sm * 1.16666667);
+          width: max-content;
+        }
+      }
+    }
+
+    &__image {
+      height: rem($spacing__sm * 0.9);
+
+      @include media-desktop-and-up {
+        height: rem($spacing__sm * 1.16666667);
+      }
+    }
+  }
+
+  .header-primary-nav__logo--secondary {
+    .eaton-logo {
+      padding: 0;
+
+      &__link {
+        margin: 0 0 0 rem($spacing__sm * 1.3);
+
+        @include media-desktop-and-up {
+          margin: 0 rem($spacing__sm * 2.16666667) 0 rem($spacing__sm * 1.83333334);
+        }
+
+        .header-fixed & {
+          max-width: initial;
+          width: auto;
+        }
+      }
+
+      &__image {
+        margin-left: 0;
+        margin-right: 0;
+        max-height: rem($spacing__sm);
+
+        [dir='rtl'] & {
+          margin-left: 0;
+          margin-right: 0;
+        }
+
+        @include media-desktop-and-up {
+          margin-left: 0;
+          margin-right: 0;
+          max-height: 100%;
+          max-width: initial;
+
+          [dir='rtl'] & {
+            margin-left: 0;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.microsite {
+  @include media-desktop-and-up {
+
+    .header-search .eaton-search--default {
+      display: block !important; // stylelint-disable-line declaration-no-important
+    }
+
+    .row {
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      &::before,
+      &::after {
+        content: none;
+      }
+
+      .header-fixed & {
+        flex-wrap: no-wrap;
+      }
+    }
+
+    .header-primary-nav {
+      &__menu {
+        flex-grow: 0;
+      }
+
+      &__container {
+        width: auto;
+        justify-content: flex-end;
+      }
+
+      &__logo_container {
+        padding: 0;
+        align-items: center;
+      }
+
+      position: relative !important; // stylelint-disable-line declaration-no-important
+
+      &__links {
+        display: block !important; // stylelint-disable-line declaration-no-important
+      }
+
+    }
+
+    .header-stacked {
+      .header-primary-nav {
+        &__logo_container {
+          padding: rem($spacing__sm * .6666666) 0 0;
+
+          .header-fixed & {
+            padding: rem($spacing__sm * .6666666) 0;
+          }
+        }
+
+        &__container {
+          width: 100%;
+
+          .header-fixed & {
+            width: auto;
+          }
+        }
+      }
+    }
+
+    .header-sticky {
+      .header-primary-nav {
+        &__logo_container {
+          display: flex;
+
+          .header-fixed & {
+            display: none;
+          }
+        }
+
+        &__container {
+          .header-fixed & {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .primary-navigation {
+      &__items {
+        justify-content: flex-start;
+
+        a {
+          white-space: nowrap;
+        }
+      }
+
+      &__container {
+        padding: 0;
+      }
+    }
+  }
+}
+
+body.header-fixed {
+
+  .eaton-header {
+    .header-primary-nav {
+      &__sku-global.header-primary-nav {
+        top: 0;
+      }
+    }
+  }
+
+  .second-logo-authored {
+
+    .header-primary-nav__logo--secondary {
+      width: auto;
+
+      .u-visible-desktop {
+        display: none;
+      }
+
+      .u-visible-mobile {
+        display: block;
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+        height: 100%;
+      }
+    }
+
+    [dir='rtl'] & .u-visible-mobile {
+      margin-right: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .row {
+      flex-wrap: nowrap;
+    }
+
+    .primary-navigation {
+      &__container {
+        padding-left: 0;
+
+        [dir='rtl'] & {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.search-box-edit-mode {
+  transform: translateY(0);
+  visibility: visible;
+  position: relative;
+}

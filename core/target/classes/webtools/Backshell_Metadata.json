@@ -1,0 +1,1282 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Self Seating Circulars",
+      "code": "saseriesSTART",
+      "series": [
+        {
+          "seriesId": 1,
+          "name": "03 - Band Adapter Products",
+          "code": "03",
+          "basicPartNumbers": [
+            {
+              "part_id": 1,
+              "part_name": "001",
+              "part_code": "03001",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 2,
+              "part_name": "008",
+              "part_code": "03008",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 3,
+              "part_name": "009",
+              "part_code": "03009",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 4,
+              "part_name": "010",
+              "part_code": "03010",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 5,
+              "part_name": "011",
+              "part_code": "03011",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 6,
+              "part_name": "013",
+              "part_code": "03013",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 7,
+              "part_name": "014",
+              "part_code": "03014",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 8,
+              "part_name": "015",
+              "part_code": "03015",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 9,
+              "part_name": "016",
+              "part_code": "03016",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 10,
+              "part_name": "022",
+              "part_code": "03022",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 11,
+              "part_name": "024",
+              "part_code": "03024",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 2,
+          "name": "06 - Shrink Boot Adapter Products",
+          "code": "06",
+          "basicPartNumbers": [
+            {
+              "part_id": 12,
+              "part_name": "001",
+              "part_code": "06001",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 13,
+              "part_name": "008",
+              "part_code": "06008",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 14,
+              "part_name": "009",
+              "part_code": "06009",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 15,
+              "part_name": "017",
+              "part_code": "06017",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 16,
+              "part_name": "026",
+              "part_code": "06026",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 3,
+          "name": "09 - Strain Relief Adapter Products",
+          "code": "09",
+          "basicPartNumbers": [
+            {
+              "part_id": 17,
+              "part_name": "001",
+              "part_code": "09001",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 18,
+              "part_name": "021",
+              "part_code": "09021",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 4,
+          "name": "12 - Adapter Extender Products",
+          "code": "12",
+          "basicPartNumbers": [
+            {
+              "part_id": 19,
+              "part_name": "001",
+              "part_code": "12001",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 5,
+          "name": "15 - Non Environmental Adapter Products",
+          "code": "15",
+          "basicPartNumbers": [
+            {
+              "part_id": 20,
+              "part_name": "001",
+              "part_code": "15001",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 6,
+          "name": "18 - Environmental Adapter Products",
+          "code": "18",
+          "basicPartNumbers": [
+            {
+              "part_id": 21,
+              "part_name": "001",
+              "part_code": "18001",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 22,
+              "part_name": "002",
+              "part_code": "18002",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 7,
+          "name": "21 - EMI / RFI Adapter Products",
+          "code": "21",
+          "basicPartNumbers": [
+            {
+              "part_id": 23,
+              "part_name": "001",
+              "part_code": "21001",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 24,
+              "part_name": "002",
+              "part_code": "21002",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 25,
+              "part_name": "003",
+              "part_code": "21003",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 26,
+              "part_name": "004",
+              "part_code": "21004",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 27,
+              "part_name": "011",
+              "part_code": "21011",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 28,
+              "part_name": "013",
+              "part_code": "21013",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 29,
+              "part_name": "015",
+              "part_code": "21015",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 30,
+              "part_name": "018",
+              "part_code": "21018",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 8,
+          "name": "24 - EMI / RFI Environmental Products",
+          "code": "24",
+          "basicPartNumbers": [
+            {
+              "part_id": 31,
+              "part_name": "001",
+              "part_code": "24001",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 32,
+              "part_name": "002",
+              "part_code": "24002",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 25,
+              "part_name": "003",
+              "part_code": "21003",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 33,
+              "part_name": "003",
+              "part_code": "24003",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 34,
+              "part_name": "004",
+              "part_code": "24004",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 9,
+          "name": "33 - EMI / RFI 'S' Spring Adapter Products",
+          "code": "33",
+          "basicPartNumbers": [
+            {
+              "part_id": 35,
+              "part_name": "001",
+              "part_code": "33001",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 36,
+              "part_name": "003",
+              "part_code": "33003",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 10,
+          "name": "39 - Pipe Thread Adapter Products",
+          "code": "39",
+          "basicPartNumbers": [
+            {
+              "part_id": 37,
+              "part_name": "001",
+              "part_code": "36001",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 11,
+          "name": "36 - Shorting Can Adapter Products",
+          "code": "36",
+          "basicPartNumbers": [
+            {
+              "part_id": 38,
+              "part_name": "001/002",
+              "part_code": "39001",
+              "useToleranceMessage": "a"
+            }
+          ]
+        },
+        {
+          "seriesId": 12,
+          "name": "51 - Lamp Base Adapter Products",
+          "code": "51",
+          "basicPartNumbers": [
+            {
+              "part_id": 39,
+              "part_name": "001",
+              "part_code": "51001",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 40,
+              "part_name": "004",
+              "part_code": "51004",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 13,
+          "name": "57 - Commercial Conduit Product Adapters",
+          "code": "57",
+          "basicPartNumbers": [
+            {
+              "part_id": 41,
+              "part_name": "001",
+              "part_code": "57001",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 14,
+          "name": "90 - Accessory Hardware Products",
+          "code": "90",
+          "basicPartNumbers": [
+            {
+              "part_id": 42,
+              "part_name": "001",
+              "part_code": "90001",
+              "useToleranceMessage": "a"
+            },
+            {
+              "part_id": 43,
+              "part_name": "002",
+              "part_code": "90002",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 44,
+              "part_name": "003",
+              "part_code": "90003",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 45,
+              "part_name": "004",
+              "part_code": "90004",
+              "useToleranceMessage": "a"
+            },
+            {
+              "part_id": 46,
+              "part_name": "005",
+              "part_code": "90005",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 47,
+              "part_name": "006",
+              "part_code": "90006",
+              "useToleranceMessage": "a"
+            }
+          ]
+        },
+        {
+          "seriesId": 15,
+          "name": "99 - Assembly Tool Products",
+          "code": "99",
+          "basicPartNumbers": [
+            [
+              {
+                "part_id": 48,
+                "part_name": "001",
+                "part_code": "99001",
+                "useToleranceMessage": "b"
+              },
+              {
+                "part_id": 49,
+                "part_name": "002",
+                "part_code": "99002",
+                "useToleranceMessage": "b"
+              },
+              {
+                "part_id": 50,
+                "part_name": "003",
+                "part_code": "99003",
+                "useToleranceMessage": "b"
+              },
+              {
+                "part_id": 51,
+                "part_name": "004",
+                "part_code": "99004",
+                "useToleranceMessage": "b"
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Rectangular Accessories",
+      "code": "raseriesSTART",
+      "series": [
+        {
+          "seriesId": 16,
+          "name": "Arinc",
+          "code": "arinc",
+          "basicPartNumbers": [
+            {
+              "part_id": 52,
+              "part_name": "J1500",
+              "part_code": "J1500",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 53,
+              "part_name": "J1518",
+              "part_code": "J1518",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 54,
+              "part_name": "J1560",
+              "part_code": "J1560",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 55,
+              "part_name": "J1730",
+              "part_code": "J1730",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 56,
+              "part_name": "J1746",
+              "part_code": "J1746",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 57,
+              "part_name": "J1758",
+              "part_code": "J1758",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 58,
+              "part_name": "J1764",
+              "part_code": "J1764",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 17,
+          "name": "Micro D-Sub",
+          "code": "micro",
+          "basicPartNumbers": [
+            {
+              "part_id": 59,
+              "part_name": "J1584",
+              "part_code": "J1584",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 60,
+              "part_name": "J1585",
+              "part_code": "J1585",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 61,
+              "part_name": "J1586",
+              "part_code": "J1586",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 62,
+              "part_name": "J1636",
+              "part_code": "J1636",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 63,
+              "part_name": "J1638",
+              "part_code": "J1638",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 64,
+              "part_name": "J1658",
+              "part_code": "J1658",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 65,
+              "part_name": "J1731",
+              "part_code": "J1731",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 66,
+              "part_name": "J1765",
+              "part_code": "J1765",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 18,
+          "name": "Solid D-Sub",
+          "code": "solid",
+          "basicPartNumbers": [
+            {
+              "part_id": 67,
+              "part_name": "J1587",
+              "part_code": "J1587",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 68,
+              "part_name": "J1594",
+              "part_code": "J1594",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 69,
+              "part_name": "J1596",
+              "part_code": "J1596",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 70,
+              "part_name": "J1597",
+              "part_code": "J1597",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 71,
+              "part_name": "J1732",
+              "part_code": "J1732",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 72,
+              "part_name": "J1733",
+              "part_code": "J1733",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 73,
+              "part_name": "J1737",
+              "part_code": "J1737",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 74,
+              "part_name": "J1738",
+              "part_code": "J1738",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 75,
+              "part_name": "J1740",
+              "part_code": "J1740",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 76,
+              "part_name": "J1742",
+              "part_code": "J1742",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 77,
+              "part_name": "J1743",
+              "part_code": "J1743",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 78,
+              "part_name": "J1747",
+              "part_code": "J1747",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 19,
+          "name": "Split D-Sub",
+          "code": "split",
+          "basicPartNumbers": [
+            {
+              "part_id": 79,
+              "part_name": "J1504",
+              "part_code": "J1504",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 80,
+              "part_name": "J1514",
+              "part_code": "J1514",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 81,
+              "part_name": "J1515",
+              "part_code": "J1515",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 82,
+              "part_name": "J1523",
+              "part_code": "J1523",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 83,
+              "part_name": "J1529",
+              "part_code": "J1529",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 84,
+              "part_name": "J1546",
+              "part_code": "J1546",
+              "useToleranceMessage": "b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Composite Accessories",
+      "code": "comseriesSTART",
+      "series": [
+        {
+          "seriesId": 20,
+          "name": "Select Options for Composite Accessories",
+          "code": "composite",
+          "basicPartNumbers": [
+            {
+              "part_id": 85,
+              "part_name": "03700",
+              "part_code": "03700",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 86,
+              "part_name": "03701",
+              "part_code": "03701",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 87,
+              "part_name": "03702",
+              "part_code": "03702",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 88,
+              "part_name": "03703",
+              "part_code": "03703",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 89,
+              "part_name": "03704",
+              "part_code": "03704",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 90,
+              "part_name": "06700",
+              "part_code": "06700",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 91,
+              "part_name": "06701",
+              "part_code": "06701",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 92,
+              "part_name": "06702",
+              "part_code": "06702",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 93,
+              "part_name": "09701",
+              "part_code": "09701",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 94,
+              "part_name": "09720",
+              "part_code": "09720",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 95,
+              "part_name": "15700",
+              "part_code": "15700",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 96,
+              "part_name": "18700",
+              "part_code": "18700",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 97,
+              "part_name": "21700",
+              "part_code": "21700",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 98,
+              "part_name": "24700",
+              "part_code": "24700",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 99,
+              "part_name": "30700",
+              "part_code": "30700",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 100,
+              "part_name": "30701",
+              "part_code": "30701",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 101,
+              "part_name": "30702",
+              "part_code": "30702",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 102,
+              "part_name": "30703",
+              "part_code": "30703",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 103,
+              "part_name": "51700",
+              "part_code": "51700",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 104,
+              "part_name": "90004",
+              "part_code": "90004",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 105,
+              "part_name": "90006",
+              "part_code": "90006",
+              "useToleranceMessage": "b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "AS85049",
+      "code": "m85049START",
+      "series": [
+        {
+          "seriesId": 21,
+          "name": "Select Options for AS85049",
+          "code": "M85049SLASHNUM",
+          "basicPartNumbers": [
+            {
+              "part_id": 106,
+              "part_name": "M85049/6",
+              "part_code": "M85049_6",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 107,
+              "part_name": "M85049/7",
+              "part_code": "M85049_7",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 108,
+              "part_name": "M85049/8",
+              "part_code": "M85049_8",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 109,
+              "part_name": "M85049/9",
+              "part_code": "M85049_9",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 110,
+              "part_name": "M85049/10",
+              "part_code": "M85049_10",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 111,
+              "part_name": "M85049/11",
+              "part_code": "M85049_11",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 112,
+              "part_name": "M85049/14",
+              "part_code": "M85049_14",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 113,
+              "part_name": "M85049/15",
+              "part_code": "M85049_15",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 114,
+              "part_name": "M85049/16",
+              "part_code": "M85049_16",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 115,
+              "part_name": "M85049/17",
+              "part_code": "M85049_17",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 116,
+              "part_name": "M85049/18",
+              "part_code": "M85049_18",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 117,
+              "part_name": "M85049/19",
+              "part_code": "M85049_19",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 118,
+              "part_name": "M85049/20",
+              "part_code": "M85049_20",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 119,
+              "part_name": "M85049/21",
+              "part_code": "M85049_21",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 120,
+              "part_name": "M85049/23",
+              "part_code": "M85049_23",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 121,
+              "part_name": "M85049/24",
+              "part_code": "M85049_24",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 122,
+              "part_name": "M85049/25",
+              "part_code": "M85049_25",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 123,
+              "part_name": "M85049/26-1",
+              "part_code": "M85049_26_1",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 124,
+              "part_name": "M85049/26-2",
+              "part_code": "M85049_26_2",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 125,
+              "part_name": "M85049/26-3",
+              "part_code": "M85049_26_3",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 126,
+              "part_name": "M85049/27",
+              "part_code": "M85049_27",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 127,
+              "part_name": "M85049/29",
+              "part_code": "M85049_29",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 128,
+              "part_name": "M85049/31",
+              "part_code": "M85049_31",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 129,
+              "part_name": "M85049/33-2",
+              "part_code": "M85049_33_2",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 130,
+              "part_name": "M85049/34",
+              "part_code": "M85049_34",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 131,
+              "part_name": "M85049/36",
+              "part_code": "M85049_36",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 132,
+              "part_name": "M85049/37",
+              "part_code": "M85049_37",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 133,
+              "part_name": "M85049/38",
+              "part_code": "M85049_38",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 134,
+              "part_name": "M85049/39",
+              "part_code": "M85049_39",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 135,
+              "part_name": "M85049/42",
+              "part_code": "M85049_42",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 136,
+              "part_name": "M85049/43",
+              "part_code": "M85049_43",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 137,
+              "part_name": "M85049/45",
+              "part_code": "M85049_45",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 138,
+              "part_name": "M85049/46",
+              "part_code": "M85049_46",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 139,
+              "part_name": "M85049/47",
+              "part_code": "M85049_47",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 140,
+              "part_name": "M85049/49-2",
+              "part_code": "M85049_49_2",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 141,
+              "part_name": "M85049/51",
+              "part_code": "M85049_51",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 142,
+              "part_name": "M85049/52",
+              "part_code": "M85049_52",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 143,
+              "part_name": "M85049/53",
+              "part_code": "M85049_53",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 144,
+              "part_name": "M85049/54",
+              "part_code": "M85049_54",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 145,
+              "part_name": "M85049/55",
+              "part_code": "M85049_55",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 146,
+              "part_name": "M85049/57",
+              "part_code": "M85049_57",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 147,
+              "part_name": "M85049/58",
+              "part_code": "M85049_58",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 148,
+              "part_name": "M85049/59",
+              "part_code": "M85049_59",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 149,
+              "part_name": "M85049/60-1",
+              "part_code": "M85049_60_1",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 150,
+              "part_name": "M85049/60-2",
+              "part_code": "M85049_60_2",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 151,
+              "part_name": "M85049/61",
+              "part_code": "M85049_61",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 152,
+              "part_name": "M85049/62",
+              "part_code": "M85049_62",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 153,
+              "part_name": "M85049/63",
+              "part_code": "M85049_63",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 154,
+              "part_name": "M85049/69",
+              "part_code": "M85049_69",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 155,
+              "part_name": "M85049/76",
+              "part_code": "M85049_76",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 156,
+              "part_name": "M85049/77",
+              "part_code": "M85049_77",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 157,
+              "part_name": "M85049/78",
+              "part_code": "M85049_78",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 158,
+              "part_name": "M85049/79",
+              "part_code": "M85049_79",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 159,
+              "part_name": "M85049/82",
+              "part_code": "M85049_82",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 160,
+              "part_name": "M85049/83",
+              "part_code": "M85049_83",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 161,
+              "part_name": "M85049/84",
+              "part_code": "M85049_84",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 162,
+              "part_name": "M85049/85",
+              "part_code": "M85049_85",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 163,
+              "part_name": "M85049/86",
+              "part_code": "M85049_86",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 164,
+              "part_name": "M85049/87",
+              "part_code": "M85049_87",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 165,
+              "part_name": "M85049/88",
+              "part_code": "M85049_88",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 166,
+              "part_name": "M85049/89",
+              "part_code": "M85049_89",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 167,
+              "part_name": "M85049/90",
+              "part_code": "M85049_90",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 168,
+              "part_name": "M85049/93",
+              "part_code": "M85049_93",
+              "useToleranceMessage": "b"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Protective Covers",
+      "code": "dustcvrSTART",
+      "series": [
+        {
+          "seriesId": 22,
+          "name": "Select a specific Protective Cover",
+          "code": "DUSTSLASHNUM",
+          "basicPartNumbers": [
+            {
+              "part_id": 169,
+              "part_name": "D38999/32",
+              "part_code": "D38999_32",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 170,
+              "part_name": "D38999/33",
+              "part_code": "D38999_33",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 171,
+              "part_name": "MS25042",
+              "part_code": "MS25042",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 172,
+              "part_name": "MS25043",
+              "part_code": "MS25043",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 173,
+              "part_name": "MS27501",
+              "part_code": "MS27501",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 174,
+              "part_name": "MS27502",
+              "part_code": "MS27502",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 175,
+              "part_name": "MS27510",
+              "part_code": "MS27510",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 176,
+              "part_name": "MS27511",
+              "part_code": "MS27511",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 177,
+              "part_name": "MS3180",
+              "part_code": "MS3180",
+              "useToleranceMessage": "b"
+            },
+            {
+              "part_id": 178,
+              "part_name": "MS3181",
+              "part_code": "MS3181",
+              "useToleranceMessage": "b"
+            }
+          ]
+        },
+        {
+          "seriesId": 23,
+          "name": "Protective Cover Selection Guide",
+          "code": "DUSTCVR",
+          "basicPartNumbers": [
+            {
+              "part_id": 179,
+              "part_name": "Select",
+              "part_code": "No",
+              "useToleranceMessage": "b"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

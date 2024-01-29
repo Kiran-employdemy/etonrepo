@@ -1,0 +1,5 @@
+#base=js
+
+product-grid.js
+comparison-widget-constants.js
+comparison.js

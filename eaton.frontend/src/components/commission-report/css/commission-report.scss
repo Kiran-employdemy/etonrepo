@@ -1,0 +1,111 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.commission-report {
+  margin-bottom: 5rem;
+  margin-top: 5rem;
+  float: left;
+  width: 100%;
+
+  .form-control {
+    border-radius: 0px;
+     /* stylelint-disable */
+    margin: 0px !important;
+  }
+
+  label {
+    text-align: left !important;
+  }
+  
+.loader {
+  visibility: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.2);
+
+  &__loader-circle {
+    border-top: 1.1em solid rgba(0, 0, 0, 0.2);
+    border-right: 1.1em solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1.1em solid rgba(0, 0, 0, 0.2);
+    border-left: 1.1em solid $color__primary-gray1;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+  }
+
+  &__loader-circle,
+  &__loader-circle:after {
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+  }
+}
+
+.loader-active {
+  visibility: visible !important;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+ /* stylelint-enable */
+
+  .table {
+    @include media-mobile-only {
+      table-layout: fixed;
+    }
+  }
+}
+
+.commission-report__button {
+  display: inline-block;
+  background-color: #006ec7;
+  border-radius: 0px;
+  color: #fff;
+  font-size: 1em;
+  font-weight: normal;
+  padding: 0.579em 1em;
+  text-decoration: none;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+  border: 0;
+  box-shadow: 0 1px 0 0 #005294;
+}
+
+.commission-report__button:disabled {
+  cursor: not-allowed;
+  background-color: rgba(0, 110, 199, .6);
+  border-radius: 0px;
+  color: #FFF;
+  border: 0px;
+  box-shadow: none;
+}
+
+.agent-heading {
+  cursor: pointer;
+  color: #006ec7;
+}
+
+.data-td {
+  cursor: pointer;
+  @include media-mobile-only {
+    width: 18rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+  }
+}
+

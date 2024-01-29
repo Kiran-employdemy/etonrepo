@@ -1,0 +1,608 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Eloqua Form"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[eloqua.form.dialog]"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container"
+		class="eloqua-dialog">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <general
+                jcr:primaryType="nt:unstructured"
+                jcr:title="General"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <eloquaformid
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Eloqua Form ID *"
+                                name="./formId"
+                                required="true"
+                                validation="formId.validation"/>
+                            <addcaptcha
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./addCaptcha"
+                                text="Add Captcha"
+                                value="true"/>
+                            <prepopulate
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./prepopulate"
+                                text="Prepopulate"
+                                value="true"/>
+                            <defaultmarketdisclaimer
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./defaultmarketdisclaimer"
+                                text="Default marketing opt-in disclaimer"
+                                value="true"/>
+                            <disclaimer
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                fieldLabel="Disclaimer"
+                                name="./disclaimer"
+                                removeSingleParagraphContainer="{Boolean}true"
+                                singleParagraphContainerReplacement="div"
+                                useFixedInlineToolbar="{Boolean}true">
+                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                    <format
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <justify
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <lists
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <paraformat
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <links
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <subsuperscript
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <table
+                                        jcr:primaryType="nt:unstructured"
+                                        features="[]">
+                                        <hiddenHeaderConfig
+                                            jcr:primaryType="nt:unstructured"
+                                            hiddenHeaderClassName="cq-wcm-foundation-aria-visuallyhidden"
+                                            hiddenHeaderEditingCSS="coral-RichText-hiddenHeader--editing"/>
+                                    </table>
+                                    <experience-aem
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <styles
+                                        jcr:primaryType="nt:unstructured"
+                                        features="styles">
+                                        <styles jcr:primaryType="cq:WidgetCollection">
+                                            <plainSpan
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="defaultSpan"
+                                                text="Default (add span tag)"/>
+                                            <strikethrough
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="rte-strikethrough"
+                                                text="Strike Through"/>
+                                            <warning
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="rte-warning"
+                                                text="Warning"/>
+                                            <note
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="rte-note"
+                                                text="Note"/>
+                                            <header
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="rte-header"
+                                                text="Header"/>
+                                            <dark-headline
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="rte-dark-headline"
+                                                text="Dark Headline"/>
+                                            <smalltext
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="rte-small-text"
+                                                text="Small Text"/>
+                                            <quote
+                                                jcr:primaryType="nt:unstructured"
+                                                cssName="rte-quote"
+                                                text="Quote"/>
+                                        </styles>
+                                    </styles>
+                                    <experience-aem-one
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <spellcheck
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                </rtePlugins>
+                                <uiSettings jcr:primaryType="nt:unstructured">
+                                    <cui jcr:primaryType="nt:unstructured">
+                                        <inline
+                                            jcr:primaryType="nt:unstructured"
+                                            toolbar="[format#bold,format#italic,format#underline,#paraformat,image#imageProps,#justify,#lists,links#modifylink,links#unlink,links#anchor,subsuperscript#subscript,subsuperscript#superscript,experience-aem#colorPicker,experience-aem-one#touchuitouppercase,#styles,spellcheck#checktext]">
+                                            <popovers jcr:primaryType="nt:unstructured">
+                                                <justify
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                                    ref="justify"/>
+                                                <lists
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                                    ref="lists"/>
+                                                <paraformat
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="paraformat:getFormats:paraformat-pulldown"
+                                                    ref="paraformat"/>
+                                                <styles
+                                                    jcr:primaryType="nt:unstructured"
+                                                    items="styles:getStyles:styles-pulldown"
+                                                    ref="styles"/>
+                                            </popovers>
+                                        </inline>
+                                    </cui>
+                                </uiSettings>
+                            </disclaimer>
+                            <privacypageurl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                fieldDescription="Privacy policy page URL"
+                                fieldLabel="Privacy policy page URL"
+                                name="./privacypageurl"
+                                required="{Boolean}false"/>
+                            <description-info
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldDescription="Multi field for adding multiple description"
+                                fieldLabel="Multiple disclaimer">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./disclaimerlist">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <fieldselection
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Select Field"
+                                                    name="./selectedField"
+                                                    selector="hidden">
+                                                    <datasource
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/eaton/eloqua/formfield"
+                                                        addNone="{Boolean}true"/>
+                                                </fieldselection>
+                                                <description-text
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldLabel="Disclaimer Text"
+                                                    name="./disclaimersText"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                    <rtePlugins jcr:primaryType="nt:unstructured">
+                                                        <format
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                        <justify
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                        <lists
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                        <paraformat
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                        <links
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                        <subsuperscript
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                        <table
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="[]">
+                                                            <hiddenHeaderConfig
+                                                                jcr:primaryType="nt:unstructured"
+                                                                hiddenHeaderClassName="cq-wcm-foundation-aria-visuallyhidden"
+                                                                hiddenHeaderEditingCSS="coral-RichText-hiddenHeader--editing"/>
+                                                        </table>
+                                                        <experience-aem
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                        <styles
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="styles">
+                                                            <styles jcr:primaryType="cq:WidgetCollection">
+                                                                <plainSpan
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="defaultSpan"
+                                                                    text="Default (add span tag)"/>
+                                                                <strikethrough
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="rte-strikethrough"
+                                                                    text="Strike Through"/>
+                                                                <warning
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="rte-warning"
+                                                                    text="Warning"/>
+                                                                <note
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="rte-note"
+                                                                    text="Note"/>
+                                                                <header
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="rte-header"
+                                                                    text="Header"/>
+                                                                <dark-headline
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="rte-dark-headline"
+                                                                    text="Dark Headline"/>
+                                                                <smalltext
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="rte-small-text"
+                                                                    text="Small Text"/>
+                                                                <quote
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cssName="rte-quote"
+                                                                    text="Quote"/>
+                                                            </styles>
+                                                        </styles>
+                                                        <experience-aem-one
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                        <spellcheck
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*"/>
+                                                        <misctools
+                                                            jcr:primaryType="nt:unstructured"
+                                                            features="*">
+                                                            <specialCharsConfig jcr:primaryType="nt:unstructured">
+                                                                <chars jcr:primaryType="nt:unstructured">
+                                                                    <pound
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        entity="&amp;#163;"/>
+                                                                    <registered
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        entity="&amp;#174;"/>
+                                                                    <copyright
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        entity="&amp;#169;"/>
+                                                                    <trademark
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        entity="&amp;#8482;"/>
+                                                                </chars>
+                                                            </specialCharsConfig>
+                                                        </misctools>
+                                                    </rtePlugins>
+                                                    <uiSettings jcr:primaryType="nt:unstructured">
+                                                        <cui jcr:primaryType="nt:unstructured">
+                                                            <inline
+                                                                jcr:primaryType="nt:unstructured"
+                                                                toolbar="[format#bold,format#italic,format#underline,#paraformat,image#imageProps,#justify,#lists,links#modifylink,links#unlink,links#anchor,subsuperscript#subscript,subsuperscript#superscript,experience-aem#colorPicker,experience-aem-one#touchuitouppercase,#styles,spellcheck#checktext,misctools#specialchars]">
+                                                                <popovers jcr:primaryType="nt:unstructured">
+                                                                    <justify
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                                                                        ref="justify"/>
+                                                                    <lists
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                                                                        ref="lists"/>
+                                                                    <paraformat
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        items="paraformat:getFormats:paraformat-pulldown"
+                                                                        ref="paraformat"/>
+                                                                    <styles
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        items="styles:getStyles:styles-pulldown"
+                                                                        ref="styles"/>
+                                                                </popovers>
+                                                            </inline>
+                                                        </cui>
+                                                    </uiSettings>
+                                                </description-text>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </description-info>
+                            <toggleInnerGrid
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./toggleInnerGrid"
+                                text="Include Margin"
+                                value="true"/>
+                            <redirectUrl
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                fieldDescription="After a successful submission the url will be sent to this URL. If this is left blank then the Eloqua response will be inspected for a redirect target."
+                                fieldLabel="Redirect URL"
+                                name="./redirectUrl"
+                                required="{Boolean}false"/>
+						</items>
+                    </column>
+                </items>
+            </general>
+            <hiddenfields
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Hidden Fields"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <country
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Country"
+                                name="./tag_country">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/eaton/dropdown/countryoptions"
+                                    addNone="{Boolean}true"/>
+                            </country>
+                            <market
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Market"
+                                name="./tag_market">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/eaton/dropdown/marketoptions"
+                                    addNone="{Boolean}true"/>
+                            </market>
+                            <topic
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Topic"
+                                name="./tag_topic"/>
+                            <location
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Location"
+                                name="./tag_location">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/eaton/dropdown/locationoptions"
+                                    addNone="{Boolean}true"/>
+                            </location>
+                            <cta
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="CTA"
+                                name="./tag_cta">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/eaton/dropdown/ctaoptions"
+                                    addNone="{Boolean}true"/>
+                            </cta>
+                            <stage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Stage"
+                                name="./tag_stage">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/eaton/dropdown/stageoptions"
+                                    addNone="{Boolean}true"/>
+                            </stage>
+                            <businessgroup
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldLabel="Business Group"
+                                name="./tag_businessGrp">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/eaton/dropdown/businessgrpoptions"
+                                    addNone="{Boolean}true"/>
+                            </businessgroup>
+                            <assetPath
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathbrowser"
+                                    fieldLabel="Asset Path"
+                                    name="./tag_asset">
+                            </assetPath>
+                            <percolateAssetID
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldLabel="Percolate Asset ID"
+                                    name="./tag_percolateAssetId"/>
+                            <pagerequired
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./pageReqd"
+                                text="Page Value required"
+                                value="true"/>
+                        </items>
+                    </column>
+                </items>
+            </hiddenfields>
+            <form-rules-config
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Form Rule config"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                    margin="{Boolean}false"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <forumrules
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldLabel="Form rules config">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./formRulesList">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <condition-field-selection
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                            emptyOption="{Boolean}true"
+                                            fieldLabel="Condition Field"
+                                            multiple="{Boolean}false"
+                                            name="./conditionField"
+                                            selector="all">
+                                            <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/eaton/eloqua/formfield"
+                                                addNone="{Boolean}true"/>
+                                        </condition-field-selection>
+                                        <conditiontype
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                            emptyOption="{Boolean}true"
+                                            fieldLabel="Condition Type"
+                                            name="./conditionType">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <isEqual
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Is equal to"
+                                                    value="EQUALS_TO"/>
+                                                <notEqual
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Is not equal to"
+                                                    value="NOT_EQUALS_TO"/>
+                                                <startsWith
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Starts with"
+                                                    value="STARTS_WITH"/>
+                                                <endsWith
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Ends with"
+                                                    value="ENDS_WITH"/>
+                                                <contains
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Contains"
+                                                    value="CONTAINS"/>
+                                                <onload
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="On load"
+                                                    value="ON_LOAD"/>
+                                                <isempty
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Is Empty"
+                                                    value="IS_EMPTY"/>
+                                                <isnotempty
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Is Not Empty"
+                                                    value="IS_NOT_EMPTY"/>
+                                                <regularExp
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Regular expression"
+                                                        value="REG_EXP"/>
+                                            </items>
+                                        </conditiontype>
+                                        <conditionText
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldLabel="Condition Text"
+                                            name="./conditionText"/>
+                                        <actionconfig
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}true"
+                                            fieldLabel="Action config">
+                                            <field
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                name="./actionConfig">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <column
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <form-rules-targetfield
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                fieldLabel="Select Target fields"
+                                                                name="./targetField"
+                                                                selector="all">
+                                                                <datasource
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="/eaton/eloqua/formfield"
+                                                                    addNone="{Boolean}true"/>
+                                                            </form-rules-targetfield>
+                                                            <actiontype
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                fieldLabel="Action Type"
+                                                                name="./actionType">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <hide
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="Hide"
+                                                                        value="Hide"/>
+                                                                    <show
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="Show"
+                                                                        value="Show"/>
+                                                                    <showRequired
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="Show and Required"
+                                                                        value="showRequired"/>
+                                                                    <disable
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="Disable"
+                                                                        value="Disable"/>
+                                                                    <enable
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="Enable"
+                                                                        value="Enable"/>
+                                                                    <clearValueOf
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="Clear Value Of"
+                                                                        value="clearValueOf"/>
+                                                                    <setfocus
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        text="Set Focus"
+                                                                        value="setFocus"/>
+                                                                </items>
+                                                            </actiontype>
+                                                        </items>
+                                                    </column>
+                                                </items>
+                                            </field>
+                                        </actionconfig>
+                                    </items>
+                                </column>
+                            </items>
+                        </field>
+                    </forumrules>
+                </items>
+            </form-rules-config>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,4 @@
+/** Hide In Bulk Editor **/
+.aem-assets-metadataform-bulk .hide-in-bulk-editor {
+    display: none !important;
+}

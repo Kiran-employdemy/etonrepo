@@ -1,0 +1,111 @@
+//-----------------------------------
+// M-39: Anchor Links
+//
+//
+// NOTE: This module is being used by these AEM-Components:
+//  - Product Specifications (PDH) Component
+//  - Resource List (PDH) Component
+//  - Resource List (Tags) Component
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+
+.module-anchor-links {
+
+  position: inherit;
+
+  $anchor-padding: 20px;
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  &__list-item {
+    border-bottom: 1px solid var(--color__iron-30);
+    align-items: center;
+    // NOTE: Flexbox issue: https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items
+    display: flex;
+    flex-direction: column;
+    min-height: 75px;
+    min-width: 100%;
+    padding: 0;
+
+    &:first-child {
+      border-top: 1px solid var(--color__iron-30);
+    }
+  }
+
+  &__list-link {
+    align-items: center;
+    background-color: var(--color__white);
+    color: var(--link-brand-color);
+    display: flex;
+    flex-grow: 1;
+    position: relative;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+
+    &:hover {
+      background-color: var(--color__lunar-10);
+      font-weight: bold;
+      outline: 0;
+    }
+
+    // Link Label
+    span {
+      padding-right: $anchor-padding;
+    }
+
+    .icon {
+      color: var(--link-brand-color);
+      font-size: 0.66667em;
+      height: 10px;
+      position: absolute;
+      left: auto;
+      right: $anchor-padding;
+      top: 50%;
+      transform: translateY(-50%);
+
+      [dir='rtl'] & {
+        left: $anchor-padding;
+        right: auto;
+      }
+
+      @media all and (-ms-high-contrast: none),
+        (-ms-high-contrast: active) {
+        font-size: rem($base__font-size * 0.8);
+      }
+    }
+  }
+
+  //-----------------------------------
+  // Media Query Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {}
+
+
+  //-----------------------------------
+  // IE11 Styles - http://browserhacks.com/
+  //-----------------------------------
+  /* stylelint-disable   */
+  @media all and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+    /* IE11 and Up */
+    position: initial;
+
+    // EATON-349 - FIX: IE11 - Archor links not vertically centered
+    // NOTE: Flexbox Issue: https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items
+    &__list {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+  /* stylelint-enable */
+
+}

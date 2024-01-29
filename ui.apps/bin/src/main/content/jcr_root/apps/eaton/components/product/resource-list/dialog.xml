@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    jcr:title="Site Configuration"
+    height="{Long}650"
+    warnIfModified="{Boolean}false"
+    width="{Long}900"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Site_x0020_Configuration
+                jcr:primaryType="cq:Panel"
+                title="Site Configuration"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <overridepdhdata
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel=" Override PDH Data"
+                        name="./overridePDHData"
+                        xtype="checkbox"/>
+                    <pagesize
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Page Size"
+                        name="./pageSize"
+                        xtype="numberfield"/>
+                    <facetcount
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Facet Count"
+                        name="./facetCount"
+                        xtype="numberfield"/>
+                    <expandedfacetcount
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Expanded Facet Count"
+                        name="./expandedFacetCount"
+                        xtype="numberfield"/>
+                    <facetvaluecount
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Facet Value Count"
+                        name="./facetValueCount"
+                        xtype="numberfield"/>
+                    <defaultsortorder
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Default Sort Order"
+                        name="./defaultSortOrder"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <relevance
+                                jcr:primaryType="nt:unstructured"
+                                text="Relevance"
+                                value="Relevance"/>
+                            <atoz
+                                jcr:primaryType="nt:unstructured"
+                                text="A-Z"
+                                value="atoz"/>
+                            <ztoa
+                                jcr:primaryType="nt:unstructured"
+                                text="Z-A"
+                                value="ztoa"/>
+                        </options>
+                    </defaultsortorder>
+                    <globalattribute
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Global Attribute"
+                        name="./globalAttributeList"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <attributegroupname
+                                    jcr:primaryType="cq:Widget"
+                                    dName="attributegroupname"
+                                    fieldLabel="Attribute Group Name"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <attributevalue
+                                    jcr:primaryType="cq:Widget"
+                                    dName="attributevalue"
+                                    fieldLabel="Attribute Value"
+                                    options="/eaton/content/GlobalAt.json"
+                                    optionsRoot="root"
+                                    type="select"
+                                    xtype="selection"/>
+                            </items>
+                        </fieldConfig>
+                    </globalattribute>
+                    <defaulttaxonomyattributelabel
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Default Taxonomy Attribute Label"
+                        name="./defaultTaxAttributeLabel"
+                        xtype="textfield"/>
+                    <resourcecategory
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Resource Category List"
+                        name="./resourceCategoryList"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <documentType
+                                    jcr:primaryType="cq:Widget"
+                                    dName="resourceCategory"
+                                    fieldLabel="Resource Category"
+                                    type="select"
+                                    xtype="selection">
+                                    <options jcr:primaryType="cq:WidgetCollection">
+                                        <relevance
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Relevance"
+                                            value="Relevance"/>
+                                        <atoz
+                                            jcr:primaryType="nt:unstructured"
+                                            text="A-Z"
+                                            value="atoz"/>
+                                        <ztoa
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Z-A"
+                                            value="ztoa"/>
+                                    </options>
+                                </documentType>
+                            </items>
+                        </fieldConfig>
+                    </resourcecategory>
+                    <documenttype
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Document Type List"
+                        name="./documentTypeList"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <documentType
+                                    jcr:primaryType="cq:Widget"
+                                    dName="documentType"
+                                    fieldLabel="Document Type"
+                                    type="select"
+                                    xtype="selection">
+                                    <options jcr:primaryType="cq:WidgetCollection">
+                                        <relevance
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Relevance"
+                                            value="Relevance"/>
+                                        <atoz
+                                            jcr:primaryType="nt:unstructured"
+                                            text="A-Z"
+                                            value="atoz"/>
+                                        <ztoa
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Z-A"
+                                            value="ztoa"/>
+                                    </options>
+                                </documentType>
+                            </items>
+                        </fieldConfig>
+                    </documenttype>
+                    <maxcountforupsell
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Max count for Up-Sell"
+                        name="./countUpSell"
+                        xtype="numberfield"/>
+                    <maxcountforimagesingallery
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Max count for Images in Gallery"
+                        name="./countImages"
+                        xtype="numberfield"/>
+                    <carouselmaximumnumberofitems
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Carousel Maximum Number of Items"
+                        name="./countCorouselItem"
+                        xtype="numberfield"/>
+                    <skufallbackimage
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="SKU Fallback Image"
+                        name="./skuFallBackImage"
+                        xtype="pathfield"/>
+                    <defaultlink
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Default link for Primary CTA Button and How to Buy Option for Orphan SKUs"
+                        name="./defaultLinkCTA"
+                        xtype="pathfield"/>
+                    <defaultLinkHTB
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Default link for How to Buy Option for Orphan SKUs"
+                        name="./defaultLinkHTB"
+                        xtype="pathfield"/>
+                    <productfamilyseometa
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Product Family SEO Meta"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <overviewdesc
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Description"
+                                    name="./pfOverviewDesc"
+                                    xtype="textfield"/>
+                            <overviewtitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Overview Title"
+                                name="./pfOverviewTitle"
+                                xtype="textfield"/>
+                            <modelstitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Models Title"
+                                name="./pfModelsTitle"
+                                xtype="textfield"/>
+                            <resourcestitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Resources Title"
+                                name="./pfResourcesTitle"
+                                xtype="textfield"/>
+                        </items>
+                    </productfamilyseometa>
+                    <skupageseometa
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="SKU Page SEO Meta"
+                        xtype="dialogfieldset">
+                        <items jcr:primaryType="cq:WidgetCollection">
+                            <overviewdesc
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Description"
+                                    name="./skuOverviewDesc"
+                                    xtype="textfield"/>
+                            <overviewtitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Overview Title"
+                                name="./skuOverviewTitle"
+                                xtype="textfield"/>
+                            <modelstitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Models Title"
+                                name="./skuModelsTitle"
+                                xtype="textfield"/>
+                            <resourcestitle
+                                jcr:primaryType="cq:Widget"
+                                fieldLabel="Resources Title"
+                                name="./skuResourcesTitle"
+                                xtype="textfield"/>
+                        </items>
+                    </skupageseometa>
+                    <supportcountrylist
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Support Info Country List"
+                        name="./suppCountryList"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <text
+                                    jcr:primaryType="cq:Widget"
+                                    dName="text"
+                                    fieldLabel="Country Name"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <value
+                                    jcr:primaryType="cq:Widget"
+                                    dName="value"
+                                    fieldLabel="Country Code"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </supportcountrylist>
+                    <documentGroup
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Document Group with corresponding AEM tags"
+                        hideLabel="{Boolean}false"
+                        name="./documentGroup"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <groupName
+                                    jcr:primaryType="cq:Widget"
+                                    dName="groupName"
+                                    fieldLabel="Group Name"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <groupDesc
+                                    jcr:primaryType="cq:Widget"
+                                    dName="groupDescription"
+                                    fieldLabel="Group Description"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <aemtags
+                                    jcr:primaryType="cq:Widget"
+                                    cls="cq-propsdialog-tags"
+                                    dName="aemtags"
+                                    fieldDescription="AEM tags that would make given AEM page eligible for this group"
+                                    fieldLabel="AEM Tags"
+                                    name="./aemtags"
+                                    xtype="tags"/>
+                            </items>
+                        </fieldConfig>
+                    </documentGroup>
+                </items>
+            </Site_x0020_Configuration>
+        </items>
+    </items>
+</jcr:root>

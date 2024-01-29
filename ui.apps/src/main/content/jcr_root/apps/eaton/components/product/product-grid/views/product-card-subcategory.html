@@ -1,0 +1,42 @@
+<!--/*
+  M-37 - Product Grid: Family Results List
+*/-->
+<template data-sly-template.view="${ @ data, results }">
+
+  <!--/* Results Wrapper */-->
+  <!--/*
+    NOTE: data-i18n is a JSON object that contains a list i18n strings used in this View
+    - These strings are used by JavaScript templates (when the user clicks "Load More")
+  */-->
+  <!--/* prateek - approach to get url */-->
+  <div class="results-list"
+    data-results-url="${ data.loadMoreAttrJsonString }"
+    data-results-next-page="0"
+    data-results-type="product-card-subcategory"
+    data-i18n='{
+      "goTo": "${ data.productCardSubcategoryBean.goTo }"
+    }'
+  >
+
+    <!--/* Result Items - Family */-->
+    <div class="results-list__content">
+      <sly data-sly-list="${ results.productFamilyList }">
+        <sly data-sly-use.tpl="views/partials/product-card-subcategory-item.html">
+          <sly data-sly-call="${ tpl.item @ results=results, itemData=item }"></sly>
+        </sly>
+      </sly>
+
+      <div data-sly-test="${data.facetedHeaderNavigationResultBean.totalCount == 0}" >
+        ${ data.zeroFacetResultsMessage || 'zeroSearchResultsTitle' @ i18n } 
+   </div>
+  
+    </div>
+
+    <!--/* Results List - Disclaimer & Actions */-->
+    <sly data-sly-use.tpl="views/partials/results-list-bottom.html">
+      <sly data-sly-call="${ tpl.partial @ data=data }"></sly>
+    </sly>
+
+  </div>
+
+</template>

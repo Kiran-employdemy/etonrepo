@@ -1,0 +1,137 @@
+<sly data-sly-use.map="com.eaton.platform.integration.bullseye.models.MapModel">
+
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Bullseye Map</div>
+</sly>
+
+  <div class="container mapContainer" data-resource-path="${resource.path}"  data-current-latitude="" data-current-longitude=""
+       data-page-size="${map.pageSize}" data-km-text="${'Map.KM' @i18n}" data-miles-text="${'Map.MI' @i18n}"
+       data-website-text="${'Map.Website' @i18n}" data-email-text="${'Map.Email' @i18n}"
+       data-services-text="${'Map.Services' @ i18n }" data-products-text="${'Map.Products' @ i18n }"
+       data-direction-text="${'Map.Directions' @i18n}" data-enable-expander="${map.enableExpander}"
+       data-enable-locationtype="${map.enableLocationType}"data-product-services-text="${map.expanderTitle}"
+       data-hide-website="${map.hideWebsite?'true':'false'}" 
+       data-hide-direction="${map.hideDirection?'true':'false'}"
+       data-hide-email="${map.hideEmail?'true':'false'}"
+       data-label-category="${map.labelCategory}" data-mapping-vendor="${map.mappingVendor}"
+       data-mapping-apikey="${map.mappingApiKey}" data-search-type="${map.searchType}"
+       data-prefilters="${map.prefilters}">
+
+      <!--/* Initial Map */-->
+      <div class="row initial-layout">
+        <div class="col-xs-12">
+            <span class="map-primary__location__code-error hide">
+                ${'Map.DisabledLocationError' @i18n}
+            </span>
+          <div class="map-landing">
+            <h1 class="map-landing__title">${properties.instructionText}</h1>
+            <div class="map-landing__map" id="mapLanding"></div>
+          </div>
+        </div>
+      </div>
+
+      <!--/* Primary Map Active Filters */-->
+      <div class="row primary-layout">
+        <div class="col-xs-12">
+            <span class="map-primary__location__code-error hide">
+                ${'Map.DisabledLocationError' @i18n}
+            </span>
+            <div class="faceted-navigation-header">
+                <div class="faceted-navigation-header__header-top" data-sortable="true">
+                    <div class="faceted-navigation-header__results-count map_result" data-map-results="${'Map.Results' @ i18n}" data-clear-filters-text="${'Filters.ClearFilters' @ i18n}"></div>
+                    <a href="#"
+                       role="button"
+                       class="bullseye__clear-all-filters faceted-navigation-header__action-link faceted-navigation-header__action-link--clear-filters faceted-navigation-header__action-link--clear-filters--desktop hidden-xs hidden-sm" style="display: none;">
+                        ${'Filters.ClearFilters' @ i18n}
+                    </a>
+                </div>
+                <div id="bullseye-map-active__filters" class="map_active_filter visible-lg visible-md hidden-xs hidden-sm"
+                     data-clear-filters-text="${'Filters.ClearFilters' @ i18n}"></div>
+                <div class="map__facet__buttons__container hidden-lg hidden-md visible-xs visible-sm">
+                    <a rel="nofollow"
+                       target="_self"
+                       data-toggle-modal-facet
+                       class="open-facets-map-mobile b-button b-button__primary b-button__primary--light"
+                       role="button">
+                        Filters
+                    </a>
+                </div>
+                <div id="bullseye-map-active__filters" class="map_active_filter"
+                     data-clear-filters-text="${'Filters.ClearFilters' @ i18n}"></div>
+            </div>
+        </div>
+      </div>
+
+      <div class="row primary-layout">
+          <div class="col-xs-12 col-md-3">
+            <div id="bullseye-map__filters"
+                 data-filter-list="${map.facetGroupListJson}"
+                 data-property-list="${map.facetGroupOrderingJson}"
+				 data-facet-value-count="${map.facetValueCount}"
+                 data-hide-from-active='["Product_Type"]'
+                 data-facet-search-disabled="true"
+                 data-is-edit-mode="${wcmmode.edit ? 'true' : ''}"
+                 data-title="${'Filters.Title' @ i18n}"
+                 data-mobile-dialog-title="${'Filters.Title' @ i18n}"
+                 data-close-text="${'Filters.Close' @ i18n}"
+                 data-clear-all-filters-text="${'Filters.ClearAllFilters' @ i18n}"
+                 data-clear-filters-text="${'Filters.ClearFilters' @ i18n}"
+                 data-clear-selection-text="${'Filters.ClearSelection' @ i18n}"
+                 data-view-more-text="${'Filters.ViewMore' @ i18n}"
+                 data-view-less-text="${'Filters.ViewLess' @ i18n}"
+                 data-results-plural-text="${'Search.Results' @ i18n}"
+                 data-results-singular-text="${'Search.Result' @ i18n}"
+                 data-facet-search-label="${'GlobalFacetSearch.SearchLabel' @i18n}"
+                 data-facet-search-placeholder="${'GlobalFacetSearch.Placeholder' @i18n}"
+                 data-no-suggestions-text="${'GlobalFacetSearch.NoSugestions' @i18n}"
+                 data-in-text="${'GlobalFacetSearch.In' @i18n}"
+                 data-of-text="${'Global.Of' @ i18n}"
+                 data-facet-group-search-label="${'GroupFacetSearch.Label' @i18n}"
+                 data-facet-group-search-placeholder="${'GroupFacetSearch.Placeholder' @i18n}"
+                 data-facet-group-search-no-suggestions-text="${'GroupFacetSearch.NoSuggestionsText' @i18n}"
+                 data-default-radius="${properties.defaultRadius}"
+                 data-default-radius-unit="${properties.defaultDistanceUnit}"
+                 data-default-latitude="${properties.defaultLatitude}"
+                 data-default-longitude="${properties.defaultLongitude}"
+                 data-mapping-vendor="${map.mappingVendor}"
+                 data-mapping-key="${map.mappingApiKey}"></div>
+          </div>
+
+          <!--/* Primary Map and Result Cards */-->
+          <div class="col-xs-12 col-md-9">
+              <div class="loader">
+                        <div class="loader__loader-circle"></div>
+                     </div>
+            <div class="map-primary">
+                <div class="map-primary__download ${map.hideDownload? 'hide':''}">
+                    <i class="map-primary__download__icon icon icon-download"></i>
+                    <p class="map-primary__download__copy whereToBuy">${'Map.Download'  @i18n}</p>
+                    <div class="loader--inline">
+                        <div class="loader--inline__loader-circle"></div>
+                    </div>
+                </div>
+                <div class="map-primary__map ${map.hideMap? 'hide':''}" id="mapPrimary"></div>
+            </div>
+
+            <div class="card-list"></div>
+              <!--/* Load More Button */-->
+              <div class="map-primary__load-more results-list__bottom">
+                  <div class="results-list__actions text-center">
+                    <button class="b-button b-button__primary b-button__primary--light mapLoadMore"
+                              role="button"
+                              data-load-more>${'Map.LoadMore'  @i18n}
+                    </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <sly data-sly-test="${map.mappingVendor == 'mapbox'}">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js'></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
+  </sly>
+  <sly data-sly-test="${map.mappingVendor == 'google'}">
+    <script src="https://maps.googleapis.com/maps/api/js?key=${map.mappingApiKey}&callback=App.Bullseye.initMap&libraries=places" defer></script>
+  </sly>

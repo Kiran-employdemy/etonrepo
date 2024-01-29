@@ -1,0 +1,117 @@
+/****
+ * sku-details-light.scss developed for lite-sku component.
+ */
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.light-sku-default-view-container {
+
+  label.tab-label {
+    width: 50%;
+  }
+
+  .tab-label:active,
+  .tab-label:hover,
+  .tab-label:focus {
+    background-color: $color__secondary-gray5;
+  }
+
+  .light-sku-module-product-detail-card {
+    padding-top: 1.5rem;
+
+    .module-product-detail-card--image-container {
+      padding-top: 2rem;
+    }
+
+  }
+
+  .light-sku-product-images-container {
+
+    &__image-wrapper {
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    .module-media-gallery {
+      &__slide-item {
+        .embed-responsive-16by9 {
+          height: auto;
+          min-height: 30rem;
+        }
+      }
+
+      &__next-arrow {
+        right: -5rem;
+      }
+
+      &__zoom {
+        right: -5rem;
+      }
+
+      &__prev-arrow {
+        left: -5rem;
+      }
+
+      &__download {
+        left: -5rem;
+      }
+
+      &__thumbnail-item {
+        .embed-responsive-16by9 {
+          height: auto;
+          min-height: 5rem;
+          min-width: 5rem;
+        }
+      }
+
+    }
+
+  }
+
+  .eaton-how-to-buy {
+    margin: auto;
+  }
+
+  .eaton-product-tabs {
+    &__dropdown-container {
+      @include media-mobile-and-tablet {
+        margin-top: 3rem;
+      }
+    }
+  }
+
+  &__invalid-msg-block {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  
+  .b-eyebrow-large {
+    font-size: 1.8rem;
+    color: $color__primary-gray2;
+  }
+  
+  .module-table {
+    margin-bottom: 4.5rem;
+	
+    &__head {
+	  margin-bottom: 1rem;
+    }
+  
+    &__row {
+	  padding: 1rem 2rem;
+	  border-top: 1px solid $color__secondary-gray12;
+    }
+  }
+  
+  .b-eyebrow-small {
+    font-size: 1.4rem;
+  }
+  
+  .module-anchor-links {
+    margin-top: 3.8rem;
+  }
+  
+}

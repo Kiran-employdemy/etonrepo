@@ -1,0 +1,26 @@
+{
+  "technical-support": {
+    "jcr:primaryType": "cq:Tag",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title": "Contact technical support",
+    "jcr:title.de_de": "Kontakt zum technischen Support"
+  },
+  "training-education": {
+    "jcr:primaryType": "cq:Tag",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title": "Training and education",
+    "jcr:title.de_de": "Ausbildung und Schulung"
+  },
+  "tools": {
+    "jcr:primaryType": "cq:Tag",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title": "Tools",
+    "jcr:title.de_de": "Werkzeuge"
+  },
+  "become-partner": {
+    "jcr:primaryType": "cq:Tag",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title": "Become a partner",
+    "jcr:title.de_de": "Ausbildung und Schulung"
+  }
+}

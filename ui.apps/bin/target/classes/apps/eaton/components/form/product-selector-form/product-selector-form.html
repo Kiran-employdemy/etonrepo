@@ -1,0 +1,63 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ ADOBE CONFIDENTIAL
+  ~ ___________________
+  ~ Copyright 2015 Adobe Systems Incorporated
+  ~ All Rights Reserved.
+  ~
+  ~ NOTICE:  All information contained herein is, and remains
+  ~ the property of Adobe Systems Incorporated and its suppliers,
+  ~ if any.  The intellectual and technical concepts contained
+  ~ herein are proprietary to Adobe Systems Incorporated and its
+  ~ suppliers and are protected by all applicable intellectual property
+  ~ laws, including trade secret and copyright laws.
+  ~ Dissemination of this information or reproduction of this material
+  ~ is strictly forbidden unless prior written permission is obtained
+  ~ from Adobe Systems Incorporated.
+  */-->
+
+<sly data-sly-test="${wcmmode.edit}">
+    <div class="alert alert-warning">Eaton Product Selector Form</div>
+</sly>
+
+<sly data-sly-use.form="com.adobe.aemds.guide.common.AEMForm"/>
+<sly data-sly-test.af="${form.isAdaptiveForm}">
+    <sly data-sly-use.form="com.adobe.aemds.guide.common.AdaptiveForm"/>
+</sly>
+<script>
+    // Editor evaluates this script and if the clientlib is not loaded by then, it will fail. Hence triggering an
+    // event after clientlib load and initializing on that event.
+    (function () {
+        var onScriptLoad = function (evnt) {
+            var formApp = evnt.detail.formApp;
+            formApp.initializeAEMForm({
+                "form" : "${form.isFormSelected @ context='scriptString'}",
+    			 "submitType" : "${form.submitType @ context='scriptString'}",
+
+                "useIframe" : "${properties.useiframe @ context='scriptString'}",
+                "height" : "${form.height @ context='scriptString'}"
+            });
+            //remove the event listener after completion
+            window.removeEventListener("aemform-onscript-load", onScriptLoad);
+        };
+        window.addEventListener("aemform-onscript-load", onScriptLoad);
+    }());
+</script>
+<sly data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}"/>
+<sly data-sly-test.useIframe="${properties.useiframe != 'false'}">
+        <iframe id="aemFormFrame"
+            src="${request.contextPath}${resource.path}.iframe.html?dataRef=${request.requestParameterMap['dataRef'][0].toString @ context='attribute'}${form.AcceptLangParamString}"
+            width="100%"
+            data-form-page-path="${form.formEditPagePath}"></iframe>
+    <sly data-sly-test="${properties.useiframe != 'false' && form.height == 'auto'}"
+         data-sly-call="${clientLib.all @ categories=['aemfd.afc.iframeResizer']}"/>
+</sly>
+<sly data-sly-call="${clientLib.all @ categories=['aemfd.afc.formapp']}"/>
+<sly data-sly-test="${!useIframe}">
+    <sly data-sly-include="formcontainer.html"></sly>
+</sly>
+<div class="hidden">
+    <div id="label-PASSWORD_SAVED_SUCCESS" data-label="${'ChangePassword.PASSWORD_SAVED_SUCCESS' @ i18n}">${'ChangePassword.PASSWORD_SAVED_SUCCESS' @ i18n}</div>
+    <div id="label-PASSWORD_NOT_SAVED_ERROR" data-label="${'ChangePassword.PASSWORD_NOT_SAVED_ERROR' @ i18n}">${'ChangePassword.PASSWORD_NOT_SAVED_ERROR' @ i18n}</div>
+    <div id="label-PASSWORD_PREVIOUSLY_USED" data-label="${'ChangePassword.PASSWORD_PREVIOUSLY_USED' @ i18n}">${'ChangePassword.PASSWORD_PREVIOUSLY_USED' @ i18n}</div>
+    <div id="label-INVALID_CURRENT_PASSWORD" data-label="${'ChangePassword.INVALID_CURRENT_PASSWORD' @ i18n}">${'ChangePassword.INVALID_CURRENT_PASSWORD' @ i18n}</div>
+</div>

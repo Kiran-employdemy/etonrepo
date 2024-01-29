@@ -1,0 +1,27 @@
+<sly data-sly-use.download="com.eaton.platform.core.models.submittalbuilder.SubmittalDownload">
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Submittal Download</div>
+</sly>
+
+<div class="submittal-builder__download ${wcmmode.edit ? 'is-author-mode' : 'submittal-builder__modal overlay hidden'}"
+     data-title="${download.title}"
+     data-preferred-option-text="${download.preferredOptionText}"
+     data-send-email-text="${download.sendEmailText}"
+     data-expiration-text="${download.expirationText}"
+     data-close-text="${'Close' @ i18n}"
+     data-thank-you-download-message="${download.thankYouDownloadMessage}"
+     data-thank-you-email-message="${download.thankYouEmailMessage}"
+     data-invalid-email-message="${download.invalidEmailMessage}"
+     data-eaton-communications-page="${download.eatonCommunicationsPage}"
+     data-eaton-communications-message="${download.eatonCommunicationsMessage}"
+     data-asset-required-message="${download.assetRequiredMessage}"
+     data-file-size-limit-text="${download.fileSizeLimitText}"
+     data-max-size-exceeded-message="${download.maxSizeExceededMessage}"
+     data-file-name-prefix="${download.fileNamePrefix}"
+     data-merge-assets-file-name="${download.mergeAssetsFileName}"
+     data-download-option-text="${'download' @ i18n}"
+     data-email-option-text="${'email' @ i18n}"
+     data-yes-text="${'Yes' @ i18n}"
+     data-no-text="${'No' @ i18n}"
+     data-size-text="${'size' @ i18n}"></div>

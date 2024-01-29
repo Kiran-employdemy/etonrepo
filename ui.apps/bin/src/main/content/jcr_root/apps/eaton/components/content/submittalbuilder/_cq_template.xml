@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Submittal Builder"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <submittalintro
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="eaton/components/content/submittalintro"
+        title="Submittal Builder"
+        description="This is where you can build a submittal of products for your project needs."
+        instructionsTitle="Submittal Instructions"
+        instructions="You're using the Submittal Builder tool. Here are some simple onboarding instructions to help you get started. Please look around and create a folder. Submittal packages cannot exceed 100mb."
+        filtersButtonText="Filters"
+        packageButtonText="View Submittal Package"
+        viewSubmittalBuilderButtonText="Return to Submittal Builder"
+        editSubmittalBuilderButtonText="Edit Package"
+        finishEditsButtonText="Finish Edits"
+        downloadButtonText="Download Package">
+    </submittalintro>
+    <submittalfilters
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="eaton/components/content/submittalintro"
+        mobileDialogTitle="Filters"
+        title="Filters">
+    </submittalfilters>
+    <submittalresults
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="eaton/components/content/submittalintro"
+        title="Search Results"
+        loadMoreLabel="Load More"
+        searchResultsTitle="Search Results"
+        packageViewTitle="Package"
+        addAllText="Add all documents to package"
+        removeAllText="Remove all documents from package"
+        cannotAddMoreFilesMessage="Your submittal currently exceeds the 100MB limit. Please remove documents from package until limit is met."
+        description="Use the faceted navigation to find items that you can add to the submittal package."
+        allItemsRemovedText="You do not have any documents selected.&#xa;Please go to 'All Results' tab to filter and browse for documents to add to your package."
+        fileDeletionConfirmation="Confirm Deletion"
+        fileDeletionConfirmationText="Remove all documents from Submittal Builder Package?"
+        itemHasBeenRemovedText="Item removed from package">
+    </submittalresults>
+    <welcometitle
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Welcome to the Submittal Builder"
+        sling:resourceType="eaton/components/general/title"
+        toggleInnerGrid="false"
+        view="default"/>
+    <welcometext
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="eaton/components/general/text"
+        textIsRich="[true,true]"
+        toggleInnerGrid="false"
+        transText="&lt;p>This is a bulk document collection and download system. Browse, select documents and they will be added to your submittal package.&lt;/p>&#xd;&#xa;&lt;p>&lt;b>All Results&lt;/b>: Use the filter navigation to the left to find documents for the B-Line product line.&lt;/p>&#xd;&#xa;&lt;p>&lt;b>View Submittal Package&lt;/b>: Once you have collected all the documents you want or reach 100mb, go to “view submittal package” tab to review and edit your documents.&lt;/p>&#xd;&#xa;&lt;p>&lt;b>Download Package&lt;/b>: Select this tab when you are ready to download your documents.&lt;/p>&#xd;&#xa;&lt;p>&lt;b>Contact:&amp;nbsp;&lt;/b>&lt;a href=&quot;mailto:Blineus@Eaton.com&quot;>Blineus@Eaton.com&lt;/a> if you have any issues with using the Submittal Builder.&lt;/p>&#xd;&#xa;"
+        view="default"/>
+    <submittaldownload
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="eaton/components/content/submittalintro"
+        title="Download"
+        preferredOptionText="Do you prefer to download your submittal or recieve a link to it by email?"
+        expirationText="Link expires 24 hours after being created."
+        sendEmailText="Send Email"
+        thankYouDownloadMessage="Thank you. Your file has been downloaded."
+        thankYouEmailMessage="Thank you. Your file has been emailed."
+        invalidEmailMessage="Please enter a valid email."
+        data-eaton-communications-page=""
+        data-eaton-communications-message="Are you willing to recieve communications from Eaton?"
+        fileSizeLimitText="The package size is limited to 100mb."
+        assetRequiredMessage="Invalid number of assets. Minimum one valid asset is required."
+        maxSizeExceededMessage="Max size exceeded."
+        eatonCommunicationsMessage="Do you want to sign up for Eaton B-Line newsletter?"
+        fileNamePrefix="Submittal_Package"
+        mergeAssetsFileName="Eaton Submittal Builder Package">
+    </submittaldownload>
+</jcr:root>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.bullseye.services.config.BullseyeCacheConfig">
+  <OCD id="com.eaton.platform.integration.bullseye.services.config.BullseyeCacheConfig" name="Bullseye Cache" description="Cache Object for Bullseye">
+    <AD id="ttl" type="Integer" name="TTL (Time to live)" description="Define in second how long should this cache be persist in the system. (default to 1 hour)" default="3600"/>
+    <AD id="cacheUrl" type="String" name="Cache Url" description="Provide endpoint to build this cache" default=""/>
+    <AD id="cacheSize" type="Integer" name="Max Cache Size" description="Provide max number of cache size. Default to 1000" default="1000"/>
+    <AD id="maxConnections" type="Integer" name="Max Connections" description="Defines the maximum number of connections allowed overall. This value only applies to the number of connections from a particular instance of HttpConnectionManager." default="250"/>
+    <AD id="maxHostConnections" type="Integer" name="Max Host Connections" description="Defines the maximum number of connections allowed per host configuration. These values only apply to the number of connections from a particular instance of HttpConnectionManager." default="250"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.bullseye.services.impl.CategoryCacheImpl">
+    <Object ocdref="com.eaton.platform.integration.bullseye.services.config.BullseyeCacheConfig"/>
+  </Designate>
+  <Designate pid="com.eaton.platform.integration.bullseye.services.impl.CategoryGroupCacheImpl">
+    <Object ocdref="com.eaton.platform.integration.bullseye.services.config.BullseyeCacheConfig"/>
+  </Designate>
+  <Designate pid="com.eaton.platform.integration.bullseye.services.impl.CountryListCacheImpl">
+    <Object ocdref="com.eaton.platform.integration.bullseye.services.config.BullseyeCacheConfig"/>
+  </Designate>
+  <Designate pid="com.eaton.platform.integration.bullseye.services.impl.SearchCacheImpl">
+    <Object ocdref="com.eaton.platform.integration.bullseye.services.config.BullseyeCacheConfig"/>
+  </Designate>
+</metatype:MetaData>

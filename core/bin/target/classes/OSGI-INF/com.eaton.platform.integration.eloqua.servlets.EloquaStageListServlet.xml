@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.eloqua.servlets.EloquaStageListServlet" immediate="true">
+  <property name="sling.servlet.resourceTypes" type="String" value="/eaton/dropdown/stageoptions"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="configManagerFctry" interface="com.day.cq.wcm.webservicesupport.ConfigurationManagerFactory" field="configManagerFctry"/>
+  <reference name="eloquaFormConfigService" interface="com.eaton.platform.core.services.EloquaFormConfigService" field="eloquaFormConfigService"/>
+  <implementation class="com.eaton.platform.integration.eloqua.servlets.EloquaStageListServlet"/>
+</scr:component>

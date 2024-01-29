@@ -1,0 +1,12 @@
+<!--/* M-40 Product Tabs: Intra Tab Link */-->
+<template data-sly-template.data="${ @ data }">
+  <div data-sly-test="${ data.href }" class="module-intra-tab-link">
+    <div class="container">
+      <a  data-sly-test="${ data }"
+          target="${ data.target }"
+          href="${ data.href }"
+          aria-label="${ data.title }"><span><bdi>${ data.title }</bdi></span><i class="icon icon-chevron-right" aria-hidden="true"></i>
+      </a>
+    </div>
+  </div>
+</template>

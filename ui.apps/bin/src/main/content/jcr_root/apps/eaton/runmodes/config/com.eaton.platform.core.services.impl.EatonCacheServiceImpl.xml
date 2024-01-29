@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          MAX.CACHE.SIZE="1000"
+          MAX.CACHE.DURATION="60"
+          CONNECTION.TIMEOUT="6000"
+          SOCKET.TIMEOUT="12000"
+          MAX.CONNECTIONS="1000"
+          MAX.HOST.CONNECTIONS="1000"
+        />

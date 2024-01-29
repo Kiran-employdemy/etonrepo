@@ -1,0 +1,41 @@
+<template data-sly-template.module="${ @ data }">
+        <div class="container">
+            <div class="row">
+
+                <!--/* M-45: Table */-->
+                <div class="col-xs-12">
+                    <div data-sly-list="${data.anchors}" class="panel-group secondary-content-accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel secondary-content-accordion__panel">
+                            <div class="panel-heading secondary-content-accordion__header" role="tab" id="${item.anchorId}">
+                                <a href="#collapse-${itemList.index}" aria-expanded="true" aria-controls="collapse-${itemList.index}" class="secondary-content-accordion__header--title"
+                                   data-toggle="collapse" data-parent="secondary-content-accordion">
+                                    <i class="secondary-content-accordion__icons icon icon-sign-plus"></i>
+                                    <h2 class="secondary-content-accordion__header--title">${ item.anchorTitle }</h2>
+                                </a>
+
+                            </div>
+                            <div id="collapse-${itemList.index}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="${item.anchorId}">
+                                <p class="b-body-copy">${item.description}</p>
+                                <div class="secondary-content-accordion__body" data-sly-list.content="${item.content}">
+                                    <ul data-sly-list.document="${content.documents}" class="eaton-download-list__links secondary-content-accordion__column">
+                                       <li class="resource-list__download-item secondary-content-accordion__download-icon">
+                                            <i class="icon icon-download" aria-hidden="true"></i>
+                                            <div class="resource-list__download-document">
+                                            <div class="resource-list__title">
+                                                <a href="${document.url}" aria-label="Download ${document.type} for ${ document.title }" target="${document.target}" class="resource-list__title-link b-heading-h5">${document.title}
+												<span data-sly-test="${ document.isNew }" class="resource-list__badge" >NEW</span>
+												</a></div>
+                                    
+                                                <div class="resource-list__download-size b-body-copy-small">(${document.type} ${document.size}, ${document.date})</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+</template>

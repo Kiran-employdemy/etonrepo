@@ -1,0 +1,14 @@
+{
+  "desktop": {
+    "jcr:primaryType": "nt:unstructured",
+    "name": "./desktopTrans",
+    "fieldLabel": "Desktop Image Transformation",
+    "sling:resourceType": "granite/ui/components/coral/foundation/form/select",
+    "datasource": {
+      "jcr:primaryType": "nt:unstructured",
+      "addNone": true,
+      "selector": "desktop",
+      "sling:resourceType": "/ecom/content/imageTransform"
+    }
+  }
+}

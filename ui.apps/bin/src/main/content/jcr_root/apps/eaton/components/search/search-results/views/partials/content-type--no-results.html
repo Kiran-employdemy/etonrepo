@@ -1,0 +1,18 @@
+<template data-sly-template.module="${ @ data }">
+<div class="search-results__no-result">
+  <div class="eaton-title eaton-title--default eaton-title--inset">
+      <div class="container">
+      	<h1 class="eaton-title__headline">${'zeroSearchResultsTitle' @ i18n}</h1>
+      </div>
+    </div>
+    
+	<div class="eaton-text-default">
+    <div class="container">
+      <div class="eaton-text-default__content rich-text-container"><p>${'preZeroSearchResultsMessage' @ i18n} "${ data.searchTerm }" ${'postZeroSearchResultsMessage' @ i18n}<br>
+		<br>
+		${ data.searchResultsModel.zeroSearchResultsMainMessage @ context = 'html'}
+	   </div>
+    </div>
+    </div>
+</div>
+</template>

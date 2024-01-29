@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.ModelViewersServlet" immediate="true">
+  <property name="sling.servlet.resourceTypes" type="String" value="/eaton/content/eatonmodelviewers"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="cloudConfigService" interface="com.eaton.platform.core.services.CloudConfigService" field="cloudConfigService"/>
+  <implementation class="com.eaton.platform.core.servlets.ModelViewersServlet"/>
+</scr:component>

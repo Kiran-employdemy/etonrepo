@@ -1,0 +1,70 @@
+//-----------------------------------
+// Featured List: Mega Menu
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, etc...)
+@import "../../../global/css/_config/sass";
+
+.feature-list {
+
+  &__eyebrow {
+    margin-bottom: $spacing__sm;
+    text-transform: uppercase;
+
+    .dark-theme & {
+      color: $color__white;
+    }
+  }
+
+  &__item {
+    margin-bottom: $spacing__sm;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    .dark-theme & {
+      color: $color__white;
+    }
+  }
+
+  &__image {
+    width: 167px;
+    min-width: 167px;
+    height: 167px;
+    display: block;
+  }
+
+  &__body {
+    padding-left: 20px;
+
+    .dark-theme & {
+      color: $color__white;
+    }
+  }
+
+  &__title,
+  &__text {
+
+    .dark-theme & {
+      color: $color__white;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__icon {
+    font-size: 0.75em;
+    margin-left: 0.25em;
+  }
+}

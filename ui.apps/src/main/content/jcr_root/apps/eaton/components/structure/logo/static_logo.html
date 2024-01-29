@@ -1,0 +1,32 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Logo</div>
+</sly>
+
+<sly data-sly-use.logo="com.eaton.platform.core.models.LogoModel">
+  <div class="eaton-logo" data-sly-test="${ wcmmode.edit || logo.logo }">
+    <a href="${logo.logoPath}"
+       target="_self"
+       class="eaton-logo__link"
+    >
+      <!--/* Logo Desktop */-->
+      <img
+              class="eaton-logo__image secondary-image u-visible-desktop lazyload"
+              data-src="${ logo.logo @context='html' }"
+              alt="${logo.logoAltText}" />
+
+      <!--/* Logo Mobile */-->
+      <sly data-sly-test=" ${! logo.logoMobile }">
+        <img
+                class="eaton-logo__image secondary-image u-visible-mobile lazyload"
+                data-src="${ logo.logo @context='html' }"
+                alt="${logo.logoAltText}" />
+      </sly>
+      <sly data-sly-test="${ logo.logoMobile }">
+        <img
+                class="eaton-logo__image secondary-image u-visible-mobile lazyload"
+                data-src="${ logo.logoMobile  @context='html' }"
+                alt="${logo.logoAltText}" />
+      </sly>
+    </a>
+  </div>
+</sly>

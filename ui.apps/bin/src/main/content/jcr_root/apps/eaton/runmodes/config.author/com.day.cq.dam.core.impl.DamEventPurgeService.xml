@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          enableActivityPurge="{Boolean}true"
+          eventTypes="[ACCEPTED,ASSET_CREATED,ASSET_MOVED,ASSET_REMOVED,ASSET_EXPIRED,ASSET_EXPIRING,REJECTED,DOWNLOADED,VERSIONED,RESTORED,METADATA_UPDATED,PUBLISHED_EXTERNAL,ORIGINAL_UPDATED,RENDITION_UPDATED,RENDITION_REMOVED,SUBASSET_UPDATED,SUBASSET_REMOVED,ASSET_VIEWED,ASSET_SHARED,ASSET_PUBLISHED,PROJECT_VIEWED,COLLECTION_VIEWED,ADDED_COMMENT]"
+          maxSavedActivities="150"
+          saveInterval="100"
+          scheduler.expression="* * 23 * * ?"/>

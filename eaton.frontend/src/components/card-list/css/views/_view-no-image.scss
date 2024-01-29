@@ -1,0 +1,153 @@
+//-----------------------------------
+// Module M-32 - Related Items - Text Only (Text-Only 3-Col)
+//-----------------------------------
+.text-only-3-column {
+
+  // EATON-598: General Spacing between components
+  margin-top: rem($spacing__sm);
+  margin-bottom: rem($spacing__xl * .958333); // Visually, 120px spacing
+
+  &__heading {
+    padding-bottom: rem($spacing__sm * .33);
+  }
+
+  &__cta {
+    display: block;
+  }
+
+  &__eyebrow {
+    padding: 0;
+  }
+
+  &__date {
+    padding-top: 0;
+    color: var(--color__lunar-40);
+  }
+
+  &__article {
+    padding-top: 0;
+  }
+
+  &__article-copy {
+    padding: rem($spacing__sm * .533333) rem($spacing__md * .833333) rem($spacing__sm * .5) 0;
+    position: relative;
+
+    &::before {
+      content: '';
+      background-color: var(--primary-brand-color);
+      display: block;
+      height: 4px;
+      width: rem($spacing__md * .833333);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  &__cta-container {
+    margin-top: rem($spacing__sm * .1);
+  }
+
+  &__title {
+    color: var(--primary-brand-color);
+    margin: 0;
+  }
+
+
+  &__slides {
+    padding-left: rem($spacing__sm * .5);
+    margin-bottom: 0;
+  }
+
+
+
+
+  //-----------------------------------
+  // 0-767px
+  //-----------------------------------
+  @include media-mobile-only {
+
+    &__cta-container a {
+      width: $ratio__1-1;
+    }
+
+    &__heading {
+      padding-bottom: rem($spacing__sm * .66);
+    }
+
+    &__eyebrow {
+      margin-bottom: rem($spacing__sm * .66); // Visually, 30px spacing
+    }
+
+    &__date {
+      margin-top: rem($spacing__sm * .166666);
+    }
+
+  }
+
+
+  //-----------------------------------
+  // > 768px
+  //-----------------------------------
+  @include media-tablet-and-up {
+
+    &__heading {
+      padding-bottom: rem($spacing__sm * .33);
+    }
+
+    &__article {
+      padding-top: rem($spacing__sm);
+    }
+
+    &__article-copy {
+      padding-bottom: rem($spacing__md * .75);
+    }
+
+    &__description {
+      padding-bottom: rem($spacing__sm * .5);
+    }
+
+    &__date {
+      margin-top: rem($spacing__sm * .166666);
+    }
+
+    &__cta-container {
+      margin-top: rem($spacing__sm);
+    }
+
+  }
+
+
+  //-----------------------------------
+  // MediaQuery: > 992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__article-copy {
+      padding: rem($spacing__sm) rem($spacing__md * .833333) 0 0;
+    }
+
+    &__eyebrow {
+      margin-bottom: rem($spacing__sm * .5); // Visually, 60px spacing
+    }
+
+    &__date {
+      margin-top: rem($spacing__sm * .5); // Visually, 30px Spacing
+    }
+  }
+
+}
+
+
+//-----------------------------------
+// EATON-598 - Spacing between components exceptions
+//-----------------------------------
+.ttil-list + .list > .text-only-3-column {
+  margin-top: rem($spacing__md);
+}

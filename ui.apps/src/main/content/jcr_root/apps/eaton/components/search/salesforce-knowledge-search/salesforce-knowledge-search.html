@@ -1,0 +1,13 @@
+<sly data-sly-use.salesforceKnowledgeSearchModel="com.eaton.platform.integration.salesforce.services.models.SalesforceKnowledgeSearchModel">
+	<sly data-sly-test="${ wcmmode.edit }">
+		<div class="alert alert-warning">Salesforce Knowledge Search</div>
+	</sly>
+	<sly data-sly-test="${salesforceKnowledgeSearchModel.isLocalEnabled}">
+		<a class="salesforce-knowledge-search"
+		   id="salesforce-knowledge-search"
+		   href="${ salesforceKnowledgeSearchModel.knowledgeSearchUrl }"
+		   target="_blank">
+			<img src="${ salesforceKnowledgeSearchModel.imagePath }" alt="${'KnowledgeSearch' @ i18n}"/>
+		</a>
+	</sly>
+</sly>

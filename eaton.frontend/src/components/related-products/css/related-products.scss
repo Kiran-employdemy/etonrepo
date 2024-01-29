@@ -1,0 +1,39 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.related-products {
+
+  //-----------------------------------
+  // EATON-673:
+  // The aspect ratio of the image within any list component should not affect
+  // the display and alignment of the List Cards with Images.
+  // If the user uploads a 16:9 image we should crop the image to the center
+  // to maintain the aspect ratio of the container.
+  //-----------------------------------
+  // NOTE: High specificity selector used in order to update only the CrossSell component and not the Upsell Component
+  &--cross-sell .module-related-products__card {
+    padding-top: $ratio__4-3;
+    position: relative;
+
+    .rendition-bg {
+      background-position: center center;
+      background-size: auto 100%;
+    }
+  }
+
+  &-component {
+    &__title {
+      color: var(--primary-brand-color, $color__primary-blue);
+    }
+  }
+}
+/* stylelint-disable */
+.related-family {
+  max-height: 230px !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 10 !important;
+  -webkit-box-orient: vertical !important;
+}
+/* stylelint-enable */

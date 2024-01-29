@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2019-03-11T14:05:18.200-04:00"
+        cq:lastModifiedBy="c3042434"
+        cq:lastReplicated="{Date}2019-03-19T10:21:04.609-04:00"
+        cq:lastReplicatedBy="e0067621"
+        cq:lastReplicationAction="Activate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:lastModified="{Date}2019-03-11T14:05:18.100-04:00"
+        jcr:lastModifiedBy="c3042434"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Eloqua OData"
+        jcr:uuid="811d0623-d8bf-479e-b37b-d60f0a304259"
+        sling:resourceType="fd/fdm/gui/components/admin/fdmcloudservice/rest"
+        authenticationType="Basic Authentication"
+        dataSourceType="ODATA_REST"
+        location="header"
+        name="eloqua-odata"
+        password="\{3d2036d15dec474d7860e8679e3274c2a2c2a41759b98cbb24cd543b6ce32e6a383057b5eb2f3585cd19baa1b098be84}"
+        selectAuthentication="Basic Authentication"
+        selectHeader="Authorization Bearer"
+        url="https://secure.p01.eloqua.com/api/REST/2.0"
+        userName="EatonSandbox\\Robb.Winkle"/>
+</jcr:root>

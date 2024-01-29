@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.injectors.impl.ProductFamilyDetailsInjectorImpl" immediate="true">
+  <property name="service.ranking" type="String" value="4003"/>
+  <service>
+    <provide interface="org.apache.sling.models.spi.Injector"/>
+  </service>
+  <reference name="endecaRequestService" interface="com.eaton.platform.core.services.EndecaRequestService" field="endecaRequestService"/>
+  <reference name="endecaService" interface="com.eaton.platform.integration.endeca.services.EndecaService" field="endecaService"/>
+  <reference name="productFamilyDetailService" interface="com.eaton.platform.core.services.ProductFamilyDetailService" field="productFamilyDetailService"/>
+  <implementation class="com.eaton.platform.core.injectors.impl.ProductFamilyDetailsInjectorImpl"/>
+</scr:component>

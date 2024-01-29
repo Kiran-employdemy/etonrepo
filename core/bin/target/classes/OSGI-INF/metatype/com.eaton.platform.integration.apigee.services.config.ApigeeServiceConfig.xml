@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.apigee.services.config.ApigeeServiceConfig">
+  <OCD id="com.eaton.platform.integration.apigee.services.config.ApigeeServiceConfig" name="ApigeeServiceImpl" description="">
+    <AD id="baseUrl" type="String" name="Base Url" description="Base Url to apigee" default="https://api.eaton.com"/>
+    <AD id="key" type="String" name="Key" description="Api Key" default="Mz4zUbvcpGelQ3SVyJ3jWi8iTLewMR0w"/>
+    <AD id="freeSampleOrderKey" type="String" name="Free sample Key" description="Free sample Api Key" default="gVcmvpJHscMtTgQAPUMXNE7p3S410LVt"/>
+    <AD id="secret" type="String" name="Secret" description="API Secret" default="{String}{a7d0d57b291d8ff9bca2800925480efc67e9b3d571e96451f43c0d78476b21a5b34404f749335c6af4553f28ef112b49}"/>
+    <AD id="freeSampleOrderSecret" type="String" name="Free sample Secret" description="Free sample API Secret" default="4ROGHVyosIdyJSVj"/>
+    <AD id="accessTokenCache" type="String" name="Token Cache" description="Token Cache" default=""/>
+    <AD id="accessTokenCacheSize" type="Integer" name="Token Cache Size" description="Token Cache Size" default="5"/>
+    <AD id="accessTokenCacheDuration" type="Integer" name="Token Cache Duration (minutes)" description="Access Token Cache Duration (minutes)" default="50"/>
+    <AD id="responseCache" type="String" name="Response Cache" description="Response Cache" default=""/>
+    <AD id="responseCacheSize" type="Integer" name="Response Cache Size" description="Response Cache Size" default="1000"/>
+    <AD id="responseCacheDuration" type="Integer" name="Response Cache Duration (hours)" description="Response Cache Duration (hours)" default="24"/>
+    <AD id="responseTimeout" type="Integer" name="Api timeout (seconds)" description="Api timeout (seconds)" default="30"/>
+    <AD id="maxConnections" type="Integer" name="Max Connections" description="Defines the maximum number of connections allowed overall. This value only applies to the number of connections from a particular instance of HttpConnectionManager." default="200"/>
+    <AD id="maxHostConnections" type="Integer" name="Max Host Connections" description="Defines the maximum number of connections allowed per host configuration. These values only apply to the number of connections from a particular instance of HttpConnectionManager." default="200"/>
+  </OCD>
+</metatype:MetaData>

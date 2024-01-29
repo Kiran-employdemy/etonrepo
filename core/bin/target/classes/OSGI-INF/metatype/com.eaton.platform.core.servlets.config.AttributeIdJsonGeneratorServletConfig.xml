@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.servlets.config.AttributeIdJsonGeneratorServletConfig">
+  <OCD id="com.eaton.platform.core.servlets.config.AttributeIdJsonGeneratorServletConfig" name="Attribute Id Json Generator Servlet" description="">
+    <AD id="excel.file.path" type="String" name="DAM Excel File Path" description="Uploaded excel file is here" default="/content/dam/eaton/resources/attribute/excel/"/>
+    <AD id="excel.file.archive.path" type="String" name="Excel File Archive Path" description="existing excel file archived here" default="/content/dam/eaton/resources/attribute/excel/archive/"/>
+    <AD id="json.file.path" type="String" name="Json File Path" description="Generated json file is here" default="/content/dam/eaton/resources/attribute/json/"/>
+    <AD id="json.file.archive.path" type="String" name="Json File Archive Path" description="existing json file archived here" default="/content/dam/eaton/resources/attribute/json/archive/"/>
+    <AD id="json.root.element" type="String" name="Json root element name" description="existing json file archived here" default="AttributeIds"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.servlets.AttributeIdJsonGeneratorServlet">
+    <Object ocdref="com.eaton.platform.core.servlets.config.AttributeIdJsonGeneratorServletConfig"/>
+  </Designate>
+</metatype:MetaData>

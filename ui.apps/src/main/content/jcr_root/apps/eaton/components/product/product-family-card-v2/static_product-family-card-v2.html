@@ -1,0 +1,188 @@
+<!--/* EATON-109: Product Family Card */-->
+
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Product Family Card</div>
+</sly>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html"/>
+<sly data-sly-call="${clientLib.css @ categories='etn-servspin'}" data-sly-unwrap/>
+<sly data-sly-use.chatConfig="com.eaton.platform.core.models.ChatConfigModel"></sly>
+<sly data-sly-use.data="com.eaton.platform.core.models.ProductFamilyCardModel">
+    <sly data-sly-use.dataModel="com.eaton.platform.core.models.DataLayerModel"></sly>
+    <div class="product-family-card__component">
+        <div class="container">
+            <div class="col-md-8">
+                <sly data-sly-test="${data.productCardBean.status}">
+                    <div class="module-product-detail-card__badge-discontinued">${data.productCardBean.status}</div>
+                </sly>
+                <sly data-sly-test="${data.productCardBean.newBadgeVisible}">
+                    <div class="module-product-detail-card__badge-new">${ 'ResourceList.NewBadge' @ i18n }</div>
+                </sly>
+                <sly data-sly-test="${data.eyebrowTitle}">
+                    <sly data-sly-test="${data.eyebrowLink}">
+                        <a href="${data.eyebrowLink}"
+                           class="b-eyebrow-small b-eyebrow-small-link"
+                           aria-label="Go to ${data.eyebrowTitle}"><i class="icon icon-chevron-left"
+                                                                      aria-hidden="true"></i>
+                            <bdi>${data.eyebrowTitle}</bdi>
+                        </a>
+                    </sly>
+                    <sly data-sly-test="${ !data.eyebrowLink}">
+                             <span class="b-eyebrow-small"
+                                   aria-label="Go to ${data.eyebrowTitle}">
+                                ${data.eyebrowTitle}
+                            </span>
+                    </sly>
+                </sly>
+                <h1 class="product-family-card__header b-heading-h1">${data.productCardBean.productFamilyName}</h1>
+                <div data-sly-test="${ data.productCardBean.marketingDesc }"
+                     class="product-family-card__separator"></div>
+                <div class="product-family-card__description b-body-copy">${data.productCardBean.marketingDesc
+                    @context = 'html'}
+                </div>
+                <div class="row padding-top-20 padding-bottom-20">
+                    <div data-sly-test="${data.productCardBean.primaryCTAURL}"
+                         class="col-md-6 product-family-card__cta">
+                        <a href="${data.productCardBean.primaryCTAURL @context='html'}"
+                           data-analytics-event="request quote"
+                           data-source-tracking="${data.productCardBean.primaryCTAEnableSourceTracking}"
+                           data-page-path-tracking="${data.productCardBean.isSuffixDisabled ? 'false' : 'true' }"
+                           class="b-button b-button__tertiary b-button__tertiary--light"
+                           title="${data.productCardBean.primaryCTALabel}"
+                           target="${data.productCardBean.primaryCTANewWindow}">
+                            ${data.productCardBean.primaryCTALabel ? data.productCardBean.primaryCTALabel :
+                            'contactMe' @i18n }</a>
+                    </div>
+                    <div class="col-md-6 u-text-center eaton-product-tabs__dropdown-container">
+                        <div class="dropdown">
+                            <sly data-sly-test="${ data.howToBuyOptions }">
+                                <sly data-sly-test="${ data.howToBuyOptions.size == 1 }">
+                                    <sly data-sly-list="${ data.howToBuyOptions }">
+                                        <a href="${item.link @context='html'}"
+                                           target="${item.openInNewWindow}"
+                                           aria-label="Go to ${item.title}"
+                                           data-page-path-tracking="${item.isSuffixEnabled ? 'true' : 'false'}"
+                                           data-source-tracking="${item.isSourceTrackingEnabled ? 'true' : 'false'}">
+                                            <button id="dHowtoBuy"
+                                                    class="eaton-product-tabs__dropdown button--reset"
+                                                    type="button">
+                                                ${item.title}
+                                            </button>
+                                        </a>
+                                    </sly>
+                                </sly>
+                                <sly data-sly-test="${ data.howToBuyOptions.size > 1 }">
+                                    <button id="dHowtoBuy"
+                                            class="eaton-product-tabs__dropdown button--reset"
+                                            type="button"
+                                            data-toggle="dropdown"
+                                            aria-haspopup="true"
+                                            aria-expanded="false">
+                                        ${data.howToBuyLabel}
+                                        <i class="icon icon-chevron-down" aria-hidden="true"></i>
+                                    </button>
+                                    <ul data-sly-list="${ data.howToBuyOptions }"
+                                        class="dropdown-menu eaton-product-tabs__dropdown__content"
+                                        id="dHowtoBuyList"
+                                        aria-labelledby="dHowtoBuy">
+                                        <li data-sly-test="${!item.skuOnly}">
+                                            <a href="${item.link @context='html'}"
+                                               target="${item.openInNewWindow}"
+                                               aria-label="Go to ${item.title}"
+                                               data-page-path-tracking="${item.isSuffixEnabled ? 'true' : 'false'}"
+                                               data-source-tracking="${item.isSourceTrackingEnabled ? 'true' : 'false'}">
+                                                <i class="icon icon-${item.dropdownIcon}" aria-hidden="true"></i><span>${item.title}</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </sly>
+                            </sly>
+                            <sly data-sly-test="${ data.howToBuyOptions.size == 0 }">
+                                <a href="${data.howToBuyLink @context='html'}"
+                                   target="${data.howToBuyLink}"
+                                   aria-label="Go to ${data.howToBuyLabel}"
+                                   data-page-path-tracking="${data.isSuffixEnabled ? 'true' : 'false'}"
+                                   data-source-tracking="${data.isSourceTrackingEnabled ? 'true' : 'false'}">
+                                    <button id="dHowtoBuy"
+                                            class="eaton-product-tabs__dropdown button--reset"
+                                            type="button">
+                                        ${data.howToBuyLabel}
+                                    </button>
+                                </a>
+                            </sly>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 product-family-card__links"
+                         data-sly-list.link="${data.productCardBean.secondaryLinksList}">
+                        <a href="${link.path}" title="${link.text}" target="${link.newWindow}" filename="${link.fileName}"> <i
+                                class="icon icon-link-external" data-sly-test="${link.isExternal}"
+                                aria-hidden="true"></i> ${link.text}</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 product-family-card__image-wrapper">
+                <div class="row eaton-product-tabs__page-utility">
+                    <div data-sly-unwrap="${!wcmmode.edit}">
+                        <div class="col-sm-6 eaton-product-back-to-search">
+                            <a id="back-to-search" class="u-hide" href=""
+                               aria-label="${ 'Back to search' @ i18n }">
+                                <i class="icon icon-chevron-left" aria-hidden="true"></i><span>${ 'Back to search' @ i18n }</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div data-sly-unwrap="${!wcmmode.edit}">
+                        <sly data-sly-resource="${'live-chat' @ resourceType='/apps/eaton/components/content/chat'}"></sly>
+                    </div>
+                </div>
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <sly data-sly-test="${data.productCardBean.primaryAndSecondaryImagesList.size > 1}">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <sly data-sly-list.imagePath="${data.productCardBean.primaryAndSecondaryImagesList}">
+                                <li data-target="#carousel-example-generic" data-slide-to="${imagePathList.index}"
+                                    class="${imagePathList.first ? 'active': ''}"></li>
+                            </sly>
+                        </ol>
+                    </sly>
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+                        <sly data-sly-list.imagePath="${data.productCardBean.primaryAndSecondaryImagesList}">
+                            <div class="item ${imagePathList.first ? 'active': ''} spinnerorNonSpinner">
+                                <sly data-sly-test.first="${imagePathList.first}">
+                                    <div class="Sirv spinnerimg" data-src="${imagePath}"></div>
+                                    <sly data-sly-test="${data.productCardBean.altPrimaryImage != ' '}">
+                                        <img class="staticPrimaryImg" src="${imagePath}"
+                                             alt="${data.productCardBean.altPrimaryImage}">
+                                    </sly>
+                                    <sly data-sly-test="${data.productCardBean.altPrimaryImage == ' '}">
+                                        <img class="staticPrimaryImg" src="${imagePath}"
+                                             alt="${dataModel.datalayerbean.productFamily}">
+                                    </sly>
+                                </sly>
+                                <!-- <sly data-sly-test="${data.productCardBean.primaryImageIsRepresentative}">
+                                    <p class="product-family-card__description">${ 'Photo is representative' @ i18n }</p>
+                                </sly> -->
+                                <sly data-sly-test="${!first}">
+                                    <img src="${imagePath}">
+                                </sly>
+                            </div>
+                        </sly>
+                    </div>
+                    <sly data-sly-test="${data.productCardBean.primaryAndSecondaryImagesList.size > 1}">
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carousel-example-generic" role="button"
+                           data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carousel-example-generic" role="button"
+                           data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </sly>
+                </div>
+            </div>
+        </div>
+</sly>

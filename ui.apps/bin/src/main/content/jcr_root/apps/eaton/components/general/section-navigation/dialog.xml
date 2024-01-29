@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Component Properties - Classic UI"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <view
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="vertical"
+                        fieldDescription="Determine which variation of component to view"
+                        fieldLabel="View"
+                        fieldSubLabel=""
+                        name="./view"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <vertical
+                                jcr:primaryType="nt:unstructured"
+                                text="Vertical View"
+                                value="vertical"/>
+                            <horizontal
+                                jcr:primaryType="nt:unstructured"
+                                text="Horizontal View"
+                                value="horizontal"/>
+                            <downloadList
+                                jcr:primaryType="nt:unstructured"
+                                text="Download List"
+                                value="download-list"/>
+                            <downloadListDesc
+                                jcr:primaryType="nt:unstructured"
+                                text="Download List with Descriptions"
+                                value="download-list-desc"/>
+                            <sectionNavigation
+                                jcr:primaryType="nt:unstructured"
+                                text="Section Navigation"
+                                value="section-navigation"/>
+                        </options>
+                    </view>
+                    <testdata
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="default"
+                        fieldDescription="Determine which test data to load"
+                        fieldLabel="Test Data"
+                        fieldSubLabel=""
+                        name="./testdata"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                text="Default"
+                                value="default"/>
+                            <footer2
+                                jcr:primaryType="nt:unstructured"
+                                text="Footer Column3"
+                                value="footer3"/>
+                        </options>
+                    </testdata>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

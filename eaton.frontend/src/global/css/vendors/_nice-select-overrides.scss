@@ -1,0 +1,24 @@
+.nice-select {
+  border-color: var(--color__iron-30);
+  border-width: 0.5px;
+  border-radius: 0;
+
+  .current {
+    font-size: 14px;
+    color: var(--color__ink-95);
+    font-weight: 400;
+  }
+
+
+  &::after {
+    width: 8px;
+    height: 8px;
+    border-color: var(--color__ink-95);
+  }
+
+  .list {
+    border-color: var(--color__iron-30);
+    border-width: 0.5px;
+    border-radius: 0;
+  }
+}

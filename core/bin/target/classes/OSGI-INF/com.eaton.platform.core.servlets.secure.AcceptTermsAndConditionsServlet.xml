@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.secure.AcceptTermsAndConditionsServlet" immediate="true">
+  <property name="sling.servlet.extensions" type="String" value="servlet"/>
+  <property name="sling.servlet.resourceTypes" type="String" value="eaton/components/general/term-condition-cta"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="authenticationServiceConfiguration" interface="com.eaton.platform.integration.auth.services.AuthenticationServiceConfiguration" field="authenticationServiceConfiguration"/>
+  <reference name="authorizationService" interface="com.eaton.platform.integration.auth.services.AuthorizationService" field="authorizationService"/>
+  <reference name="localeMappingService" interface="com.eaton.platform.core.services.vanity.LocaleMappingService" field="localeMappingService"/>
+  <reference name="updateUserService" interface="com.eaton.platform.integration.myeaton.services.UpdateUserService" field="updateUserService"/>
+  <reference name="userProfileService" interface="com.eaton.platform.integration.auth.services.UserProfileService" field="userProfileService"/>
+  <implementation class="com.eaton.platform.core.servlets.secure.AcceptTermsAndConditionsServlet"/>
+</scr:component>

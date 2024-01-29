@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.jobs.consumers.CountrySiteCreationConsumer" immediate="true">
+  <property name="job.topics" type="String" value="eaton/sling/job/countrySiteCreation"/>
+  <service>
+    <provide interface="org.apache.sling.event.jobs.consumer.JobConsumer"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="countryLangCodeConfigService" interface="com.eaton.platform.core.services.CountryLangCodeConfigService" field="countryLangCodeConfigService"/>
+  <implementation class="com.eaton.platform.core.jobs.consumers.CountrySiteCreationConsumer"/>
+</scr:component>

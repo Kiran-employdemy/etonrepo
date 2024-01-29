@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+          af.ruleeditor.defaultmode="1"
+          maximumCacheEntries="0"
+        showPlaceholder="{Boolean}true"
+        makeFileNameUnique="{Boolean}false"
+        af.wsdl.config.search.paths="[/apps,/libs]"
+        preventLiveLinkingFields="{Boolean}false"
+        af.scripting.compatversion="None"/>

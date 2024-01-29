@@ -1,0 +1,93 @@
+/*
+ * **********************************************************************
+ *  ADOBE CONFIDENTIAL
+ *  __________________
+ *
+ *  Copyright 2015 Adobe Systems Incorporated
+ *  All Rights Reserved.
+ *
+ *  NOTICE:  All information contained herein is, and remains
+ *  the property of Adobe Systems Incorporated and its suppliers,
+ *  if any.  The intellectual and technical concepts contained
+ *  herein are proprietary to Adobe Systems Incorporated and its
+ *  suppliers and may be covered by U.S. and Foreign Patents,
+ *  patents in process, and are protected by trade secret or copyright law.
+ *  Dissemination of this information or reproduction of this material
+ *  is strictly forbidden unless prior written permission is obtained
+ *  from Adobe Systems Incorporated.
+ *  **********************************************************************
+ */
+
+.coral3-Checkbox.regex-invalid + .regex-error, .coral-Checkbox.regex-invalid + .regex-error{
+	vertical-align: -webkit-baseline-middle;
+}
+
+section.regex-invalid,.coral3-Checkbox.regex-invalid, .coral-Form--vertical .coral-Checkbox.regex-invalid{
+	display: inline-table;
+}
+
+
+.regex-invalid.coral-RichText-editable.is-edited, .regex-invalid.cq-RichText-editable.is-edited, .coral3-FileUpload .regex-invalid, .coral3-Multifield.regex-invalid, .coral-Multifield.regex-invalid {
+    box-shadow: 0 0 3px #e14132;
+    border: 1px solid #e14132;
+}
+
+.regex-invalid.coral3-Textfield.is-invalid {
+	box-shadow: 0 0 3px #e14132 !important;
+}
+
+/* popup css*/
+
+#regexDialogId .coral3-Dialog-wrapper{
+    max-width: 30%
+}
+
+#regexDialogId .coral3-Dialog-header, #regexDialogId .coral-Dialog-header{
+    text-align: center;
+}
+
+#regexDialogId .coral3-Alert-header{
+    font-weight: 500;
+    text-transform: none;
+    font-size: 1.1em;
+}
+#regexDialogId div.heading{
+	margin-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#regexDialogId div.content p{
+	margin: 0px;
+    color: #505050;
+    font-family: var(--font-secondary-v);
+    font-size:12px;
+}
+
+#regexDialogId div.content p>span.errTab{
+	font-weight:bold;
+    color: #0c528c;
+    font-family: var(--font-secondary-s);
+}
+
+#regexDialogId div.content p>span.errLabel{
+	font-weight:bold;
+    color: #326ec8;
+    font-family: var(--font-secondary-s);
+}
+
+#regexDialogId div.content p>span.err-separator{
+    font-family: cursive;
+    font-size: 15px;
+    margin: 0 5px;
+    color: #000;
+    font-weight:bold;
+}
+
+#regexDialogId .coral3-Dialog-footer .coral3-Button, #regexDialogId .coral-Dialog-footer .coral-Button{
+    width: 100px;
+}
+
+input.bindRefTextField.coral3-Textfield{
+    width:100%
+}

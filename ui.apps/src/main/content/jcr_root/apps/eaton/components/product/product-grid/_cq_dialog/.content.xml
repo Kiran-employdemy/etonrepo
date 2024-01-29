@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Product Grid Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[product.grid.dialog]"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container"
+        class="product-grid-dialog">
+        <items jcr:primaryType="nt:unstructured">
+            <herotext
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/section"
+                rel="cq-siteadmin-admin-properties-tabs">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                    margin="{Boolean}false"
+                    type="nav"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Component Properties - Touch UI"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <items jcr:primaryType="nt:unstructured">
+                            <view
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                class="cq-dialog-dropdown-showhide"
+                                cq-dialog-dropdown-showhide-target=".text-hide-show"
+                                fieldDescription="Determine which variation of component to Configure"
+                                fieldLabel="View"
+                                name="./view">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <subCategory
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Sub Category"
+                                        value="subCategory"/>
+                                    <productFamily
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Product Family"
+                                        value="productFamily"/>
+                                </items>
+                            </view>
+                            <turnOffProductTypes
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                class="hide text-hide-show"
+                                name="./turnOffProductTypes"
+                                showhidetargetvalue="productFamily"
+                                text="Turn off Product Types"
+                                value="true"/>
+                            <tags
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/common/tagspicker"
+                                allowBulkEdit="{Boolean}true"
+                                allowCreate="{Boolean}true"
+                                class="hide text-hide-show"
+                                cq-msm-lockable="tags"
+                                fieldDescription="This field will only be used if the 'Tag Attributes' field is empty."
+                                fieldLabel="Tags"
+                                name="./tags"
+                                showhidetargetvalue="subCategory"/>
+                            <showPriceDisclaimer
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./hidePriceDisc"
+                                text="Hide Price Disclaimer?"
+                                value="true"/>
+                            <subCategoryHideShow
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                class="hide text-hide-show"
+                                name="./subCategoryHideShow"
+                                showhidetargetvalue="subCategory"
+                                text="Show Sub-Category Name"
+                                uncheckedValue="false"
+                                value="true"/>
+                            <hideProductDescription
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                    name="./hideProductDescription"
+                                    text="Hide Product Description" 
+                                    value="true"/>
+                            <taxonomyAttributes
+                                granite:class="hide text-hide-show"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Taxonomy Attributes">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="productFamily"/>
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./taxonomyAttributes">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <attribute-value
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Taxonomy Attribute Value"
+                                                    id="eaton-pim-scaffolding-tax-dropdown"
+                                                    multiple="{Boolean}false"
+                                                    name="./taxonomyAttributeValue">
+                                                    <datasource
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/eaton/content/txnmyattributes"
+                                                        addNone="{Boolean}true"/>
+                                                </attribute-value>
+                                                <showAsGrid
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                    name="./showAsGrid"
+                                                    text="Show as Grid"
+                                                    value="true"/>
+                                                <facetSearchEnabled
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                    name="./facetSearchEnabled"
+                                                    text="Facet Search Enabled"
+                                                    value="true"/>
+                                                <singleFacetEnabled
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                        name="./singleFacetEnabled"
+                                                        text="Single Facet Enabled"
+                                                        value="true"/>
+                                                <sortOrder
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                                        name="./sortOrder"
+                                                        fieldDescription="This field will store the sort order for filters value"
+                                                        fieldLabel="Sort Order"
+                                                        value="0"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </taxonomyAttributes>
+                            <globalAttributes
+                                granite:class="hide text-hide-show"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldLabel="Global Attributes">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="productFamily"/>
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./globalAttributes">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <attribute-value
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Global Attribute Value"
+                                                    id="eaton-pim-scaffolding-tax-dropdown"
+                                                    multiple="{Boolean}false"
+                                                    name="./globalAttributeValue">
+                                                    <datasource
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/eaton/content/facetAttributesDropdown"
+                                                        addNone="{Boolean}true"/>
+                                                </attribute-value>
+                                                <sortOrder
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                                        name="./sortOrder"
+                                                        fieldDescription="This field will store the sort order for filters value"
+                                                        fieldLabel="Sort Order"
+                                                        value="0"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </globalAttributes>
+                            <tagAttributes
+                                granite:class="hide text-hide-show"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldDescription="If this field has any facets selected it will override the value of the 'Tags' field above."
+                                fieldLabel="Tag Attributes">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="subCategory"/>
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./tagAttributes">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <attribute-value
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                                    fieldLabel="Tag Attribute Value"
+                                                    name="./cq:tags">
+                                                </attribute-value>
+                                                <showAsGrid
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                    name="./showAsGrid"
+                                                    text="Show as Grid"
+                                                    value="true"/>
+                                                <facetSearchEnabled
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                    name="./facetSearchEnabled"
+                                                    text="Facet Search Enabled"
+                                                    value="true"/>
+                                                <singleFacetEnabled
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                                        name="./singleFacetEnabled"
+                                                        text="Single Facet Enabled"
+                                                        value="true"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </tagAttributes>
+                            <sortByOptions
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldDescription="Select the Sorting option from the dropdown,that you would like to sort the results."
+                                fieldLabel="Sort By Options">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./sortByOptions">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <attribute-value
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldLabel="Sorting Option"
+                                                    id="eaton-pim-scaffolding-tax-dropdown"
+                                                    multiple="{Boolean}false"
+                                                    name="./sortByOptionsValue">
+                                                    <datasource
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/eaton/content/sortbyoptions"
+                                                        addNone="{Boolean}false"/>
+                                                </attribute-value>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </sortByOptions>
+                            <defaultSortingOption
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="Determine the default sort on page load. If this field is not authored, the results are defaulted to Alpha: A-Z"
+                                fieldLabel="Default Sorting Option"
+                                name="./defaultSortingOption">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/eaton/content/sortbyoptions"
+                                    addNone="{Boolean}true"
+                                    noneOptionTitle="Alpha"/>
+                            </defaultSortingOption>
+                            <defaultSortingDirection
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                defaultValue="asc"
+                                fieldDescription="Determine the default sort direction (asc/desc) on page load. If this field is not authored, the results are defaulted to Ascending order"
+                                fieldLabel="Default Sorting Direction"
+                                name="./defaultSortingDirection">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <asc
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="{Boolean}true"
+                                        text="Ascending Order"
+                                        value="asc"/>
+                                    <desc
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Descending Order"
+                                        value="desc"/>
+                                </items>
+                            </defaultSortingDirection>
+                            <hideGlobalFacetSearch
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./hideGlobalFacetSearch"
+                                text="Hide Global Facet Search"
+                                value="true"/>
+                              <zeroFacetResultsMessage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                fieldDescription="Message displayed when zero results is returned"
+                                fieldLabel="Zero Results Message"
+                                name="./zeroFacetResultsMessage"/>     
+                        </items>
+                    </column>
+                    <facet
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Facet Group and Value List"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container"
+                                class="hide text-hide-show"
+                                showhidetargetvalue="subCategory">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <tabular_multifield
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/apps/eaton/components/widgets/touchui-tabular-multifield"
+                                        fieldLabel="Tabs"
+                                        name="tabularFields">
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <facetgroup
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                    fieldLabel="Facet Group"
+                                                    name="./facetGroup">
+                                                    <datasource
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/eaton/content/authoredTagAttributes"
+                                                        addNone="{Boolean}true"/>
+                                                </facetgroup>
+                                                <facetvalue
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    fieldLabel="Facet Value">
+                                                    <field
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                                        class="eaton-facet-value-tab-name"
+                                                        name="./facetValue"/>
+                                                </facetvalue>
+                                            </items>
+                                        </field>
+                                    </tabular_multifield>
+                                </items>
+                            </column>
+                        </items>
+                    </facet>
+                </items>
+            </herotext>
+        </items>
+    </content>
+</jcr:root>

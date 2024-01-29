@@ -1,0 +1,70 @@
+{
+  "jcr:path": "/content/dam/eaton/secure/test.jpg",
+  "jcr:primaryType": "dam:Asset",
+  "jcr:mixinTypes": [
+    "mix:referenceable",
+    "mix:versionable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:versionHistory": "4f320d60-6347-4b97-8414-e6789383de4f",
+  "jcr:predecessors": [
+    "9d7bfce9-1102-4494-97b0-7890113968cc"
+  ],
+  "jcr:created": "Wed Feb 03 2021 17:59:49 GMT+0530",
+  "jcr:baseVersion": "9d7bfce9-1102-4494-97b0-7890113968cc",
+  "jcr:isCheckedOut": true,
+  "jcr:uuid": "993fea8f-9fcc-4ba5-96a4-1ada757ecc32",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "c3053077",
+    "jcr:lastModifiedBy": "admin",
+    "cq:lastReplicated": "Fri Jan 15 2021 11:33:40 GMT+0530",
+    "cq:lastModified": "Wed Jan 06 2021 12:05:07 GMT+0530",
+    "dam:assetState": "processed",
+    "cq:name": "test.jpg",
+    "jcr:lastModified": "Thu Feb 18 2021 11:58:52 GMT+0530",
+    "cq:parentPath": "/content/dam/eaton/products/actuators/secure-test",
+    "dam:relativePath": "eaton/homepage/test.jpg",
+    "cq:lastModifiedBy": "c3053077",
+    "renditions": {
+      "jcr:primaryType": "nt:folder",
+      "jcr:createdBy": "admin",
+      "jcr:created": "Wed Feb 03 2021 17:59:49 GMT+0530"
+    },
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ],
+      "accountType": [
+        "eaton-secure:accounttype/control-panel-builder",
+        "eaton-secure:accounttype/agent-manufacturer-rep",
+        "eaton-secure:accounttype/drives-solution-partner",
+        "eaton-secure:accounttype/electrical-installer",
+        "eaton-secure:accounttype/electrical-wholesaler"
+      ],
+      "businessGroup": [
+        "eaton-secure:business-group/industrial-fil",
+        "eaton-secure:business-group/industrial-hyd",
+        "eaton-secure:business-group/industrial-veh"
+      ],
+      "productCategories": [
+        "eaton-secure:product-category/filtration",
+        "eaton-secure:product-category/hydraulics",
+        "eaton-secure:product-category/vehicle"
+      ],
+      "businessGroup": [
+        "eaton-secure:business-group/industrial-aer",
+        "eaton-secure:business-group/industrial-fil"
+      ],
+      "secureAsset": "YES"
+    }
+  }
+}

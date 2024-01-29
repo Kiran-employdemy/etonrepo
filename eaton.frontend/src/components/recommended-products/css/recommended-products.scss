@@ -1,0 +1,97 @@
+
+//-----------------------------------
+// Recommended Products Component
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+//cards container
+.product-card-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+  padding-top: 0;
+  width: 100%;
+
+  @include media-desktop-and-up {
+    flex-direction: row;
+  }
+}
+// 
+// recommended products card 
+.product-card {
+  border: rem($spacing__sm * 0.03333) solid $color__secondary-gray4; //1px
+  margin-bottom: rem($spacing__sm * 0.5); //15px
+  padding: rem($spacing__sm * 0.5); //15px
+  width: 100%;
+
+  &__wrapper {
+    width: 100%;
+    @include media-desktop-and-up {
+      margin-right: rem($spacing__sm * 0.5); //15px
+      width: calc(33.3333% - 10px);
+    }
+  }
+
+  &__wrapper:nth-child(3n+3) {
+    @include media-desktop-and-up {
+      margin-right: 0 !important; // stylelint-disable declaration-no-important
+    }
+  }
+
+  &__image {
+    width: 100%;
+    margin-bottom: rem($spacing__sm * 0.33333); //10px
+
+    img {
+      height: auto;
+      max-width: 100%;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+
+    &__title {
+      font-size: rem($base__font-size * 2.4); //24px
+      margin-bottom: rem($spacing__sm * 0.33333); //10px
+      width: 100%;
+    }
+
+    &__separator {
+      background-color: $color__primary-blue;
+      height: rem($spacing__sm * 0.166667); //5px
+      margin-bottom: rem($spacing__sm); //30px
+      width: rem($spacing__sm * 1.66667); //50px
+    }
+
+    &__description {
+      font-size: rem($base__font-size * 1.6);
+      line-height: $base__line-height * 1.13095; //1.58333
+      margin-bottom: rem($spacing__sm * 0.666667); //20px
+      width: 100%;
+    }
+  }
+
+  &__cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a:first-child {
+      margin-bottom: rem($spacing__sm * 0.166667); //5px
+    }
+  }
+}
+
+.recommended-products {
+  .results-list {
+    margin-bottom: 0;
+  }
+}

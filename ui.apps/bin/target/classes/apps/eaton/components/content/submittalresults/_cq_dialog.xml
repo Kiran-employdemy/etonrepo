@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Submittal Results"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <section
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Submittal Results"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <searchresultstitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Search Results Title"
+                                fieldDescription="The title that the user will see in the search results section of submittal builder."
+                                name="./searchResultsTitle"/>
+                            <packageviewtitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Package View Title"
+                                fieldDescription="The title that the user will see in the package view section of submittal builder."
+                                name="./packageViewTitle"/>
+                            <description
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Description"
+                                fieldDescription="This text will appear when the user has not yet used the filters"
+                                name="./description"/>
+                            <addAllText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Add All Text"
+                                fieldDescription="This is the text that will be used for the 'Add all documents to package' link."
+                                name="./addAllText"/>
+                            <removeAllText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Remove All Text"
+                                fieldDescription="This is the text that will be used for the 'Remove all documents from package' link."
+                                name="./removeAllText"/>
+                            <cannotaddmorefilesmessage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Cannot Add More Files Message"
+                                fieldDescription="This text will appear when the package has reached the 100 mb limit"
+                                name="./cannotAddMoreFilesMessage"/>
+                            <loadMoreLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Enter the text for Load More Label"
+                                fieldDescription="This text will appear for the load more button"
+                                name="./loadMoreLabel"/>
+                            <allItemsRemovedText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                    fieldDescription="The text that appears in the view package tab when no items are selected"
+                                    fieldLabel="All Items Removed Text"
+                                    name="./allItemsRemovedText"/>
+                            <itemHasBeenRemovedText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldDescription="The text that use user sees when removing an item from the package"
+                                    fieldLabel="Item Has Been Removed Text"
+                                    name="./itemHasBeenRemovedText"/>
+                            <fileDeletionConfirmation
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldDescription="The title of the modal that user see's when confirming the removal of all the documents from the package"
+                                    fieldLabel="File Deletion Confirmation Title Text"
+                                    name="./fileDeletionConfirmation"/>
+                            <fileDeletionConfirmationText
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldDescription="The text content of the modal that user see's when confirming the removal of all the documents from the package"
+                                    fieldLabel="File Deletion Confirmation Text"
+                                    name="./fileDeletionConfirmationText"/>
+                            <i18nNotes
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/text"
+                                text="This component uses the following i18n values: 'Sort By', 'Preview', 'File Size', 'Close', 'Next column', 'Previous column'."/>
+                        </items>
+                    </column>
+                </items>
+            </section>
+        </items>
+    </content>
+</jcr:root>

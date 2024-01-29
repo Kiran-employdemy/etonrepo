@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.search.find.replace.tags.impl.FindReplaceTagsDataServiceImpl">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="service.description" type="String" value=" Find Replace Tags Data Service"/>
+  <property name="process.label" type="String" value=" FindReplaceTagsDataServiceImpl"/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.search.find.replace.tags.FindReplaceTagsDataService"/>
+  </service>
+  <reference name="Service" cardinality="0..n" policy="dynamic" interface="com.eaton.platform.core.services.search.find.replace.tags.FindReplaceTagsDataTypeService" field="services" field-option="update" field-collection-type="service"/>
+  <implementation class="com.eaton.platform.core.services.search.find.replace.tags.impl.FindReplaceTagsDataServiceImpl"/>
+</scr:component>

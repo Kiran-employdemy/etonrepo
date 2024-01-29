@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.CountryLangCodeLastmodServiceConfig">
+  <OCD id="com.eaton.platform.core.services.config.CountryLangCodeLastmodServiceConfig" name="Eaton Master Sitemap Configuraton" description="Master Sitemap Configuraton">
+    <AD id="country.language.code.list" type="String" cardinality="2147483647" name="Country Language Code List" description="Enter value in following format (no spaces) : Country Code || Language Code || Google code"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.impl.CountryLangCodeLastmodConfigServiceImpl">
+    <Object ocdref="com.eaton.platform.core.services.config.CountryLangCodeLastmodServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

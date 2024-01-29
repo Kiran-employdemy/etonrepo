@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.webtools.servlets.freesample.FreeSampleStockAvailabilityServlet" immediate="true">
+  <property name="sling.servlet.paths" type="String" value="/eaton/services/freeSampleStockAvailability"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="webtoolsService" interface="com.eaton.platform.core.webtools.services.WebtoolsServiceConfiguration" field="webtoolsService"/>
+  <implementation class="com.eaton.platform.core.webtools.servlets.freesample.FreeSampleStockAvailabilityServlet"/>
+</scr:component>

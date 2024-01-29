@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.ReferenceImpl" immediate="true">
+  <service>
+    <provide interface="com.eaton.platform.core.services.ReferenceService"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="referenceAggregator" interface="com.adobe.granite.references.ReferenceAggregator" field="referenceAggregator"/>
+  <implementation class="com.eaton.platform.core.services.impl.ReferenceImpl"/>
+</scr:component>

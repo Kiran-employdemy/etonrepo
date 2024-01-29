@@ -1,0 +1,372 @@
+//-----------------------------------
+// M-48: Media Gallery
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+// Import Sub-Modules
+@import "media-gallery-zoom";
+@import "media-gallery-aem-authoring";
+
+
+
+.module-media-gallery {
+  /*Do not change this- For spacing issue */
+  margin: 30px;
+
+  // &__slide-list {
+  //   max-height: 500px;
+  // }
+  &__slide-list {
+    [dir='rtl'] & {
+      direction: ltr;
+    }
+  }
+
+
+  //-----------------------------------
+  // Gallery Headline & Description
+  //-----------------------------------
+  &__header,
+  &__description {
+    margin-bottom: ($spacing__md / 2);
+  }
+
+  &__headline {
+    margin-bottom: $spacing__sm;
+  }
+
+  // Generic / Shared Styles for Slider Arrows
+  //--------------
+  &__arrows {
+    color: var(--color__iron-30);
+    position: absolute;
+    top: 0;
+  }
+
+  &__prev-arrow { left: 0; }
+
+  &__next-arrow {
+    right: 0;
+
+    [dir='rtl'] & {
+      .icon-chevron-right::before {
+        transform: rotate(0);
+      }
+    }
+  }
+
+
+  //-----------------------------------
+  // Slide Container
+  //-----------------------------------
+  &__slide-container {
+    position: relative;
+    text-align: center;
+  }
+
+  &__slide-preview {
+    position: relative;
+    text-align: center;
+  }
+
+  // Wrapper Div used to maintain image aspect ratio
+  &__image-wrapper {
+
+    img {
+      display: block;
+      height: 100%;
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  // Zoom & Download Styles
+  &__slide-utility {
+    position: absolute;
+    bottom: $spacing__sm / 2;
+
+    .icon {
+      color: var(--primary-brand-color);
+    }
+  }
+
+  &__download {
+    left: $spacing__sm / 2;
+  }
+
+  &__zoom {
+    right: $spacing__sm / 2;
+  }
+
+  // Slide Item - Text & description
+  &__slide-info {
+    padding: $spacing__sm 0 $spacing__sm $spacing__sm;
+    border-left: 1px solid var(--color__iron-30);
+
+    [dir='rtl'] & {
+      direction: rtl;
+    }
+
+  }
+
+  &__slide-text {
+    margin-bottom: 0;
+  }
+
+  // Slide Arrows - Prev & Next
+  &__slide-arrows-container {
+    background: transparent;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  // Arrows Center Alignment
+  &__slide-arrows-container &__arrows {
+    pointer-events: all;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+
+  //-----------------------------------
+  // Thumbnail Container
+  //-----------------------------------
+  &__thumbnail-container {
+    position: relative;
+  }
+
+  &__thumbnail-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+    [dir='rtl'] & {
+      direction: ltr;
+    }
+  }
+
+  &__thumbnail-container &__arrows {
+    background-color: var(--color__white);
+    color: var(--primary-brand-color);
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;
+    padding: 10px; // Increase button active area / as per iOS, Android guidelines: buttons should have at least 44px active area
+  }
+
+  &__thumbnail-image-wrapper {
+    padding: 0;
+
+    img {
+      height: 100%;
+      width: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  // Dot Navigation - Preview Carousel
+  //-----------------------------------
+  &__dots {
+    text-align: center;
+    margin: $spacing__sm 0;
+    display: none; // Hidden by default - Visible only in mobile breakpoint
+
+    li {
+      display: inline-block;
+      padding-right: 10px;
+
+      &.slick-active {
+        button {
+          background-color: var(--primary-brand-color);
+        }
+      }
+    }
+
+    button {
+      display: inline-block;
+      background-color: var(--color__iron-30);
+      border-radius: 50%;
+      border: 10px;
+      color: transparent;
+      font-size: 0;
+      height: 10px;
+      padding: 5px;
+      width: 10px;
+    }
+  }
+
+
+  //-----------------------------------
+  // Mobile Breakpoint: 0 to 991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    // Slide Container
+    //--------------
+    &__slide-container {
+      padding: 0;
+    }
+
+    &__slide-arrows-container {
+      display: none; // EATON-806: Media Gallery - Arrows should not display in Mobile
+    }
+
+    &__slide-utility {
+      bottom: -3px; // Align the icons to the bottom of the image in mobile
+    }
+
+    // Dot Navigation - Preview Carousel
+    //------------------------------------
+    &__dots {
+      display: block; // Visible only in mobile breakpoint
+    }
+
+    // Thumbnail Container
+    //--------------
+    &__thumbnail-container {
+      display: none;
+    }
+  }
+
+
+  //-----------------------------------
+  // Desktop Breakpoint: >992 px
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    // Slide Container
+    //--------------
+    &__slide-container {
+      .module-media-gallery__arrows {
+        .icon {
+          font-size: 37px;
+        }
+      }
+    }
+
+    &__slide-utility--desktop {
+
+      position: relative;
+      bottom: 15px;
+      z-index: 1;
+
+      .module-media-gallery__download {
+        left: ($spacing__lg * -1.0555556); //-95px
+
+        [dir='rtl'] & {
+          right: ($spacing__lg * -1.0555556);
+          left: unset;
+        }
+      }
+
+      .module-media-gallery__zoom {
+        right: ($spacing__lg * -1.0555556); //-95px
+        pointer-events: all;
+        cursor: pointer;
+
+        [dir='rtl'] & {
+          left: ($spacing__lg * -1.0555556);
+          right: unset;
+        }
+      }
+    }
+
+    &__thumbnail-container {
+
+      .module-media-gallery__prev-arrow { left: -105px; }
+
+      .module-media-gallery__next-arrow { right: -105px; }
+
+      .module-media-gallery__arrows .icon { font-size: 12px; }
+    }
+
+    &__slide-info {
+      padding: 15px 0 15px $spacing__sm;
+      margin: 0 0 $spacing__sm;
+    }
+
+    &__slide-preview {
+      margin: 0 $spacing__sm $spacing__sm;
+    }
+
+    &__slide-list__description {
+      padding: 15px 30px;
+
+      [dir='rtl'] & {
+        direction: ltr;
+      }
+    }
+
+    &__prev-arrow { left: -90px; }
+
+    &__next-arrow { right: -90px; }
+
+    &__thumbnail-item {
+      position: relative;
+      margin: 0 30px;
+      padding-bottom: 10px;
+
+      &.active {
+
+        &::after {
+          content: '';
+          position: absolute;
+          height: 2px;
+          width: 100%;
+          background: var(--primary-brand-color);
+          bottom: 0;
+        }
+      }
+    }
+
+    // Thumbnail buttons
+    &__thumbnail-aspect-ratio {
+      appearance: none;
+      background: none;
+      border-radius: 0;
+      border: 0;
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+
+  @include media-desktop-large {
+    &__slide-item {
+      .embed-responsive-16by9 {
+        padding-bottom: 0;
+        height: 500px;
+      }
+    }
+
+    &__thumbnail-item {
+      .embed-responsive-16by9 {
+        padding-bottom: 0;
+        height: 90px;
+      }
+    }
+  }
+
+  //-----------------------------------
+  // Overrides when the module is used as an Standalone component
+  // Eg: (Authored Media Gallery)
+  //-----------------------------------
+
+  // EATON-507: Media Gallery - Icons are hard to see on some gallery images
+  .eaton-media-gallery & {
+    @include media-mobile-and-tablet {
+      &__slide-utility .icon {
+        color: var(--color__white);
+        text-shadow: 0 0 2px var(--color__primary-blue-transparent);
+      }
+    }
+  }
+
+}

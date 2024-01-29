@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:EditConfig">
+    <cq:inplaceEditing
+        jcr:primaryType="cq:InplaceEditingConfig"
+        active="{Boolean}true"
+        configPath="../../dialog/items/table"
+        editorType="table">
+        <rtePlugins jcr:primaryType="nt:unstructured">
+            <format
+                jcr:primaryType="nt:unstructured"
+                features="*"/>
+            <justify
+                jcr:primaryType="nt:unstructured"
+                features="*"/>
+            <lists
+                jcr:primaryType="nt:unstructured"
+                features="*"/>
+            <paraformat
+                jcr:primaryType="nt:unstructured"
+                features="*"/>
+            <links
+                jcr:primaryType="nt:unstructured"
+                features="*"/>
+            <table
+                jcr:primaryType="nt:unstructured"
+                features="*">
+                <hiddenHeaderConfig
+                    jcr:primaryType="nt:unstructured"
+                    hiddenHeaderClassName="cq-wcm-foundation-aria-visuallyhidden"
+                    hiddenHeaderEditingCSS="cq-RichText-hiddenHeader--editing"/>
+            </table>
+            <experience-aem
+                jcr:primaryType="nt:unstructured"
+                features="*"/>
+        </rtePlugins>
+        <uiSettings jcr:primaryType="nt:unstructured">
+            <cui jcr:primaryType="nt:unstructured">
+                <inline
+                    jcr:primaryType="nt:unstructured"
+                    toolbar="[format#bold,format#italic,format#underline,#justify,#lists,links#modifylink,links#unlink,table#createoredit,experience-aem#colorPicker]">
+                    <popovers jcr:primaryType="nt:unstructured">
+                        <justify
+                            jcr:primaryType="nt:unstructured"
+                            items="[justify#justifyleft,justify#justifycenter,justify#justifyright]"
+                            ref="justify"/>
+                        <lists
+                            jcr:primaryType="nt:unstructured"
+                            items="[lists#unordered,lists#ordered,lists#outdent,lists#indent]"
+                            ref="lists"/>
+                    </popovers>
+                </inline>
+                <dialogFullScreen
+                    jcr:primaryType="nt:unstructured"
+                    toolbar="[format#bold,format#italic,format#underline,justify#justifyleft,justify#justifycenter,justify#justifyright,lists#unordered,lists#ordered,lists#outdent,lists#indent,links#modifylink,links#unlink,table#createoredit,#paraformat,image#imageProps,experience-aem#colorPicker]">
+                    <popovers jcr:primaryType="nt:unstructured">
+                        <paraformat
+                            jcr:primaryType="nt:unstructured"
+                            items="paraformat:getFormats:paraformat-pulldown"
+                            ref="paraformat"/>
+                    </popovers>
+                </dialogFullScreen>
+                <tableEditOptions
+                    jcr:primaryType="nt:unstructured"
+                    toolbar="[table#insertcolumn-before,table#insertcolumn-after,table#removecolumn,-,table#insertrow-before,table#insertrow-after,table#removerow,-,table#mergecells-right,table#mergecells-down,table#mergecells,table#splitcell-horizontal,table#splitcell-vertical,-,table#selectrow,table#selectcolumn,-,table#ensureparagraph,-,table#modifytableandcell,table#removetable,-,undo#undo,undo#redo,-,table#exitTableEditing,-]"/>
+            </cui>
+        </uiSettings>
+    </cq:inplaceEditing>
+    <cq:listeners
+        jcr:primaryType="cq:EditListenersConfig"
+        afteredit="REFRESH_SELF"/>
+</jcr:root>

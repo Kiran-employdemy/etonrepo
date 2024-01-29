@@ -1,0 +1,54 @@
+<sly data-sly-use.pathfield="parts/fields/pathfield.html"></sly>
+<form class="coral-Form coral-Form--aligned u-columnLarge find-replace-form" id="findReplaceTextForm" resource-path="${resource.path}">
+	<sly data-sly-call="${pathfield.pathfield @ id='destPath', name='destPath', label='Start in', placeholder='Enter a path, e.g. /content/eaton'}"></sly>
+	<div class="coral-Form-fieldwrapper">
+		<label id="label_cc2320c5-fc29-4dcb-84f7-b879f9e8aa2e"
+			class="coral-Form-fieldlabel" for="findText">Find</label>
+			<input class="coral-Form-field coral3-Textfield find-replace-form-field"
+				id="findText" type="text" labelledby="label_cc2320c5-fc29-4dcb-84f7-b879f9e8aa2e" value=""
+				data-foundation-validation="" data-validation="" is="coral-textfield"
+				aria-labelledby="label_cc2320c5-fc29-4dcb-84f7-b879f9e8aa2e" aria-invalid="false" />
+	</div>
+	<div class="coral-Form-fieldwrapper">
+		<label id="label_08fc8991-c4c6-49e6-bb2f-b254587adcd0"
+			class="coral-Form-fieldlabel" for="replaceText">Replace</label>
+			<input
+			class="coral-Form-field coral3-Textfield find-replace-form-field" id="replaceText" type="text"
+			labelledby="label_08fc8991-c4c6-49e6-bb2f-b254587adcd0" value="" data-foundation-validation=""
+			data-validation="" is="coral-textfield" aria-labelledby="label_08fc8991-c4c6-49e6-bb2f-b254587adcd0"
+			aria-invalid="false" />
+	</div>
+	<div class="coral-Form-fieldwrapper">
+		<coral-checkbox id="case-insensitive" data-foundation-validation="" data-validation=""
+			class="coral-Form-field coral3-Checkbox" aria-disabled="false" aria-invalid="false">
+			<input type="checkbox" handle="input" class=" coral3-Checkbox-input" id="caseInsensitive" />
+			<span class=" coral3-Checkbox-checkmark" handle="checkbox"></span>
+			<label class=" coral3-Checkbox-description" handle="labelWrapper" for="caseInsensitive">
+				<coral-checkbox-label>Case Insensitive</coral-checkbox-label>
+			</label>
+		</coral-checkbox>
+	</div>
+	<div class="coral-Form-fieldwrapper">
+		<coral-checkbox id="whole-words-only" data-foundation-validation="" data-validation=""
+			class="coral-Form-field coral3-Checkbox" aria-disabled="false" aria-invalid="false" checked>
+			<input type="checkbox" handle="input" class=" coral3-Checkbox-input" id="wholeWordsOnly" />
+			<span class=" coral3-Checkbox-checkmark" handle="checkbox"></span>
+			<label class=" coral3-Checkbox-description" handle="labelWrapper" for="wholeWordsOnly">
+				<coral-checkbox-label>Whole Words Only</coral-checkbox-label>
+			</label>
+		</coral-checkbox>
+	</div>
+	<sly data-sly-include="parts/results-table.html"></sly>
+	<div class="foundation-layout-util-vmargin">
+		<button id="btnPreview" type="button" autocomplete="off" is="coral-button" trackingfeature=""
+			trackingelement="preview" tracking="ON" class="coral3-Button coral3-Button--secondary" size="M"
+			variant="secondary">
+			<coral-button-label>Preview</coral-button-label>
+		</button>
+		<button id="btnReplace" type="submit" autocomplete="off" is="coral-button" trackingfeature=""
+			trackingelement="replace" tracking="ON" class="coral3-Button coral3-Button--secondary" size="M"
+			variant="secondary">
+			<coral-button-label>Replace</coral-button-label>
+		</button>
+	</div>
+</form>

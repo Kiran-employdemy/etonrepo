@@ -1,0 +1,9 @@
+<!-- Integrated code goes here -->
+
+<sly data-sly-test="${properties.view == 'view-tags' || !properties.view}">
+    <sly data-sly-include="views/resource-list-tags.html"></sly>
+</sly>
+
+<sly data-sly-test="${properties.view == 'view-pdh'}">
+    <sly data-sly-include="views/resource-list-pdh.html" data-sly-unwrap></sly>
+</sly>

@@ -1,0 +1,267 @@
+@import "../../../global/css/_config/sass";
+
+.submittal-builder {
+  margin-bottom: rem($spacing__md * .75);
+  margin-top: rem($spacing__sm * .5);
+  position: relative;
+
+  @include media-tablet-and-up {
+    margin-bottom: rem($spacing__md);
+
+    .col-md-3,
+    .col-md-6 {
+      [dir='rtl'] & {
+        float: right;
+      }
+    }
+  }
+
+  &__welcome-message {
+    display: none;
+
+    @include media-tablet-and-up {
+      display: block;
+      float: left;
+      padding: 0 rem($grid__gutter-width * .5);
+      width: $grid__column-width * 9;
+
+      [dir='rtl'] & {
+        float: right;
+      }
+
+      &.is-edit-mode {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    p:first-of-type {
+      margin-bottom: 6rem;
+    }
+
+    .container {
+      width: 100%;
+    }
+  }
+
+  &__body-text {
+    white-space: pre-wrap;
+  }
+
+  &__hr {
+    border-color: $color__primary-gray3;
+
+    @include media-tablet-and-up {
+      margin-bottom: rem($spacing__sm * .5);
+      margin-top: 0;
+    }
+  }
+
+  &__intro {
+    &__container {
+      margin-bottom: rem($spacing__sm * .333333);
+
+      @include media-tablet-and-up {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+    }
+
+    &__header {
+      @include font-family__primary(--header-font);
+    }
+
+    &--package-only {
+      .submittal-builder__button--finish-edits-button {
+        display: none;
+      }
+
+      .submittal-builder__button--edit-submittal-builder-button {
+        display: block;
+      }
+
+      &--edit-mode {
+        .submittal-builder__button--edit-submittal-builder-button {
+          display: none;
+        }
+
+        .submittal-builder__button--finish-edits-button {
+          display: block;
+        }
+      }
+    }
+
+    &__icon {
+      display: none;
+
+      @include media-tablet-and-up {
+        display: flex;
+        font-size: rem($base__font-size * 4.8);
+        margin-right: rem($spacing__sm);
+
+        [dir='rtl'] & {
+          margin-left: rem($spacing__sm);
+          margin-right: 0;
+        }
+      }
+    }
+
+    &__title {
+      @include media-tablet-and-up {
+        flex-basis: 60%;
+        padding-right: rem($spacing__lg);
+
+        [dir='rtl'] & {
+          padding-left: rem($spacing__lg);
+          padding-right: 0;
+        }
+      }
+
+      &__body-text {
+        color: $color__primary-gray1;
+        margin-bottom: rem($spacing__sm * .66666);
+
+        @include media-tablet-and-up {
+          font-size: rem($base__font-size * 1.8);
+        }
+      }
+    }
+
+    &__instructions {
+      @include media-tablet-and-up {
+        flex-basis: 40%;
+      }
+
+      &__title {
+        color: $color__primary-gray2;
+        font-family: var(--secondary-font);
+        font-size: rem($base__font-size * 1.6);
+        font-weight: bold;
+        line-height: $base__line-height;
+        margin-bottom: 0;
+      }
+    }
+
+    &__buttons {
+      &__container {
+        @include media-tablet-and-up {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  &__button {
+    font-size: rem($base__font-size * 1.8);
+    margin-bottom: rem($spacing__sm * .6666);
+    padding: rem($spacing__sm * .5) rem($spacing__sm * .75);
+
+    @include media-tablet-and-up {
+      flex-basis: $grid__xs * .5;
+      margin-left: rem($spacing__md);
+      padding: rem($spacing__sm * .25) rem($spacing__sm * .5);
+
+      [dir='rtl'] & {
+        margin-left: 0;
+        margin-right: rem($spacing__md);
+      }
+    }
+
+    &[disabled],
+    &[disabled]:hover,
+    &[disabled]:active,
+    &[disabled]:focus {
+      background-color: $color__white;
+      border-color: $color__secondary-gray4;
+      color: $color__secondary-gray4;
+    }
+
+    &--filters-button {
+      display: block;
+      margin: 0 auto rem($spacing__sm * .5);
+
+      @include media-desktop-and-up {
+        display: none;
+      }
+    }
+
+    &--finish-edits-button {
+      display: none;
+    }
+  }
+
+  &__results-count {
+    display: inline-block;
+
+    @include media-tablet-and-up {
+      margin-bottom: rem($spacing__sm * .5);
+    }
+
+    &__subtitle {
+      display: none;
+
+      @include media-tablet-and-up {
+        color: $color__primary-gray2;
+        display: inline;
+        font-size: rem($base__font-size * 1.8);
+      }
+    }
+  }
+
+  &__tabs {
+    .submittal-builder__tabs--fixed & {
+      position: fixed;
+      top: 0;
+      z-index: 495; // must be less than submittal-modal's 500
+    }
+
+    &__list-link {
+      font-size: rem($base__font-size * 1.4);
+      line-height: $base__line-height * (1.9 / 1.4);
+      padding-left: rem($spacing__sm * .33333);
+      padding-right: rem($spacing__sm * .33333);
+
+      @include media-tablet-and-up {
+        font-size: rem($base__font-size * 1.8);
+        line-height: $base__line-height;
+        padding-left: rem($spacing__sm * .66666);
+        padding-right: rem($spacing__sm * .66666);
+      }
+
+      .icon-download {
+        font-size: rem($base__font-size * 1.8);
+        position: relative;
+        display: block;
+
+        &--desktop {
+          display: none;
+          top: rem($base__font-size * .5);
+
+          @include media-tablet-and-up {
+            display: inline-block;
+            font-size: rem($base__font-size * 2.4);
+          }
+        }
+
+        &--mobile {
+          @include media-tablet-and-up {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__clear-filters {
+      display: none;
+
+      @include media-tablet-and-up {
+        display: block;
+      }
+    }
+  }
+}

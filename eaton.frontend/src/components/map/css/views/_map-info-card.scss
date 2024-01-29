@@ -1,0 +1,158 @@
+/* stylelint-disable */
+.gm-style-iw {
+  padding: rem($spacing__sm * 0.5) !important; //15px
+
+  @include media-mobile-only {
+    max-width: 100% !important;
+  }
+}
+
+.gm-style-iw-d {
+  overflow: hidden !important;
+
+  @include media-mobile-only {
+    max-width: 100% !important;
+  }
+}
+
+.gm-ui-hover-effect {
+  top: 0 !important;
+  right: 0 !important;
+  width: rem($spacing__sm * 1.06667) !important; //32px
+  height: rem($spacing__sm * 1.06667) !important; //32px
+
+  img {
+    display: inline-block !important;
+    height: rem($spacing__sm * 0.53333) !important; //16px
+    width: rem($spacing__sm * 0.53333) !important; //16px
+    margin: 0;
+  }
+}
+
+
+.gm-style-iw-d .map-card-info {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    &__content {
+        width: 100%;
+    }
+
+    .map-card-info-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 91%;
+
+
+        &__title {
+          font-family: var(--primary-custom-brand-font-medium);
+          font-size: rem($base__font-size * 2); //20px
+          line-height: $base__line-height * 0.89285715; //1.25
+          margin: 0;
+        }
+
+        &__vpma {
+          color: #ED8800;
+          font-family: var(--font-secondary-ahs);
+          font-size: rem($base__font-size * 1.4); //14px
+          line-height: $base__line-height * 0.89285715; //1.25
+          margin: 0;
+        }
+      }
+
+    .map-card-body {
+        &__copy {
+          font-family: var(--secondary-font);
+          line-height: $base__line-height * 0.89285715; //1.25
+          margin: 0;
+        }
+
+        &__copy--category {
+          font-size: rem($base__font-size * 1.4); //14px
+          margin-bottom: rem($spacing__sm * 0.33333); //10px
+          color: #ED8800;
+          font-weight: 100;
+        }
+
+        &__copy--class {
+          font-weight: bold;
+          font-size: rem($base__font-size * 1.6); //16px
+          margin-top: rem($spacing__sm * 0.33333); //10px;
+          margin-bottom: rem($spacing__sm * 0.33333); //10px;
+        }
+
+        &__copy--address {
+          font-family: var(--secondary-font);
+          font-size: rem($base__font-size * 1.6); //16px
+
+        }
+
+        &__copy--phonenumber {
+          font-size: rem($base__font-size * 1.6); //16px
+          font-family: var(--secondary-font);
+          color:  #005EB8;
+          margin-bottom: rem($spacing__sm * 0.33333); //10px;
+        }
+      }
+
+      .map-card-contact {
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          align-items: center;
+          width: 100%;
+
+          //contact links
+          &__copy {
+            border-right: rem($spacing__sm * 0.03333) solid #333F48;
+            color: #005EB8;
+            font-family: var(--secondary-font);
+            font-weight: bold;
+            font-size: rem($base__font-size * 1.6); //16px
+            line-height: $base__line-height * 0.89285715; //1.25
+            margin: 0 !important;
+            padding-left: rem($spacing__sm * 0.33333); //10px
+            padding-right: rem($spacing__sm * 0.33333); //10px
+            text-decoration: none;
+          }
+
+          &__copy:first-child {
+            padding-left: 0;
+          }
+      
+          &__copy:last-child {
+            padding-right: 0;
+            border-right: none;
+          }
+
+          &__copy--website {
+            border-right: rem($spacing__sm * 0.03333) solid #333F48; //1px
+            padding-right: rem($spacing__sm * 0.33333); //10px
+          }
+
+          &__copy--email {
+            border-right: rem($spacing__sm * 0.03333)solid #333F48; //1px
+            padding-left: rem($spacing__sm * 0.33333); //10px
+            padding-right: rem($spacing__sm * 0.33333); //10px
+          }
+
+          &__copy--directions {
+            padding-left: rem($spacing__sm * 0.33333); //10px
+          }
+        }
+
+        p {
+          margin: 0;
+          line-height: 1;
+        }
+
+}
+
+
+

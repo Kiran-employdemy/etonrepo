@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.EatonConfigServiceImpl" immediate="true" activate="activate" deactivate="deactivate" modified="activate">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="json.file.archive.path" type="String" value=""/>
+  <property name="process.label" type="String" value=" EatonConfigServiceImpl"/>
+  <property name="json.root.element" type="String" value=""/>
+  <property name="countryselector.folder.path" type="String" value=""/>
+  <property name="excel.file.archive.path" type="String" value=""/>
+  <property name="skupagename" type="String" value=""/>
+  <property name="service.description" type="String" value=" EatonConfigServiceImpl"/>
+  <property name="excel.file.path" type="String" value=""/>
+  <property name="number.of.days.publish" type="String" value=""/>
+  <property name="priceList.folder.path" type="String" value=""/>
+  <property name="json.file.name" type="String" value="skupricelist"/>
+  <property name="resource.listing.drawings.file.extensions.list" type="String" value=""/>
+  <property name="json.file.path" type="String" value=""/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.EatonConfigService"/>
+  </service>
+  <implementation class="com.eaton.platform.core.services.impl.EatonConfigServiceImpl"/>
+</scr:component>

@@ -1,0 +1,14 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Media Gallery: ${currentNode.name}</div>
+</sly>
+
+<sly data-sly-use.viewData="com.eaton.platform.core.models.imagegallery.ImgGalleryViewContentList">
+  <div class="eaton-media-gallery">
+
+    <!--/* M-48: Media Gallery */-->
+    <sly data-sly-use.tpl="../../shared/templates/module-media-gallery.html">
+      <sly data-sly-call="${ tpl.module @ data=viewData }"></sly>
+    </sly>
+
+  </div>
+</sly>

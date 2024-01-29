@@ -1,0 +1,47 @@
+<sly data-sly-use.gridData="com.eaton.platform.core.models.SearchResultsRenderModel">
+  <div class="search-results-simple">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <sly data-sly-use.tpl="../../shared/templates/module-faceted-navigation/faceted-navigation-header.html">
+            <sly data-sly-call="${ tpl.module @ data=gridData }"></sly>
+          </sly>
+        </div>
+      </div>
+      <div class="row">
+        <div id="search-results__filters"
+             class="col-xs-12 col-md-3"
+             data-filter-list="${gridData.facetGroupListJson}"
+             data-property-list="${gridData.facetGroupOrderingJson}"
+             data-facet-search-disabled="${gridData.hideGlobalFacetSearch}"
+			 data-facet-value-count="${gridData.facetValueCount}"
+             data-hide-from-active='["contentType"]'
+             data-is-edit-mode="${wcmmode.edit ? 'true' : ''}"
+             data-title="${'Filters.Title' @ i18n}"
+             data-mobile-dialog-title="${'Filters.Title' @ i18n}"
+             data-close-text="${'Filters.Close' @ i18n}"
+             data-clear-all-filters-text="${'Filters.ClearAllFilters' @ i18n}"
+             data-clear-filters-text="${'Filters.ClearFilters' @ i18n}"
+             data-clear-selection-text="${'Filters.ClearSelection' @ i18n}"
+             data-view-more-text="${'Filters.ViewMore' @ i18n}"
+             data-view-less-text="${'Filters.ViewLess' @ i18n}"
+             data-results-plural-text="${'Search.Results' @ i18n}"
+             data-results-singular-text="${'Search.Result' @ i18n}"
+             data-facet-search-label="${'GlobalFacetSearch.SearchLabel' @i18n}"
+             data-facet-search-placeholder="${'GlobalFacetSearch.Placeholder' @i18n}"
+             data-no-suggestions-text="${'GlobalFacetSearch.NoSugestions' @i18n}"
+             data-in-text="${'GlobalFacetSearch.In' @i18n}"
+             data-of-text="${'Global.Of' @ i18n}"
+             data-facet-group-search-label="${'GroupFacetSearch.Label' @i18n}"
+             data-facet-group-search-placeholder="${'GroupFacetSearch.Placeholder' @i18n}"
+             data-facet-group-search-no-suggestions-text="${'GroupFacetSearch.NoSuggestionsText' @i18n}"></div>
+        <!--/* M-60: Results List */-->
+        <div class="col-xs-12 col-md-9">
+          <sly data-sly-use.tpl="views/partials/results-list.html">
+            <sly data-sly-call="${ tpl.module @ data=gridData, results=gridData }"></sly>
+          </sly>
+        </div>
+      </div>
+    </div>
+  </div>
+</sly>

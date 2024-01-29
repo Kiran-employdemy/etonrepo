@@ -1,0 +1,17 @@
+<template data-sly-template.module="${ @ data }">
+  <div class="autocorrected-search">
+    <div class="container b-body-copy">
+      <div class="autocorrected-search__results">
+        <strong class="autocorrected-search__results-label">${data.showingResultsFor @ context = 'html'
+        }
+          <em class="autocorrected-search__results-term">${data.autoCorrect.correctedTerm}</em> </strong>
+      </div>
+      <div class="autocorrected-search__search-instead">
+        <strong class="autocorrected-search__search-instead-label">${data.searchInsteadFor  @ context = 'html'}</strong>
+        <a href="${ data.url}"
+        class="autocorrected-search__search-instead-link"
+        target="${ data.target }">${ data.autoCorrect.searchTerm }</a>
+      </div>
+    </div>
+  </div>
+</template>

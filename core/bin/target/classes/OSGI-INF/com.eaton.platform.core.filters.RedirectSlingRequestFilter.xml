@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.filters.RedirectSlingRequestFilter" activate="activate">
+  <property name="sling.filter.pattern" type="String" value="(^/content/eaton/.*|^/content/dam/.*/secure/.*)"/>
+  <property name="sling.filter.scope" type="String" value="REQUEST"/>
+  <property name="service.description" type="String" value=" Eaton Redirect Implementation filter"/>
+  <property name="service.ranking" type="Integer" value="-700"/>
+  <service>
+    <provide interface="javax.servlet.Filter"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="endecaConfigService" interface="com.eaton.platform.integration.endeca.services.EndecaConfig" field="endecaConfigService"/>
+  <reference name="endecaSecretKeyConfiguration" interface="com.eaton.platform.integration.auth.services.EndecaSecretKeyConfiguration" field="endecaSecretKeyConfiguration"/>
+  <reference name="slingSettingsService" interface="org.apache.sling.settings.SlingSettingsService" field="slingSettingsService"/>
+  <implementation class="com.eaton.platform.core.filters.RedirectSlingRequestFilter"/>
+</scr:component>

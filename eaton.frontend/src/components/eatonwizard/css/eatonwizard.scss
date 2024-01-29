@@ -1,0 +1,579 @@
+//-----------------------------------
+// Guided Product Selector Form Wizard
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+[id$="_guide-item-container"] {
+  overflow-x: inherit !important; // stylelint-disable declaration-no-important
+}
+
+#guideContainerForm .etn-user-registration {
+
+  .guideContainerNode { // stylelint-disable selector-class-pattern
+
+    .mobileLayout { // stylelint-disable selector-max-id
+      display: none !important;
+    }
+
+    .guideLayout {
+      // stylelint-disable selector-max-compound-selectors
+      .row {
+        margin-left: -10px;
+        margin-right: -10px;
+      }
+
+      .panel {
+        border: 0;
+        box-shadow: none;
+
+        .accordion {
+
+          .panel {
+            &__body { // stylelint-disable max-nesting-depth
+              @include media-desktop-and-up {
+                margin: 0 rem($spacing__sm * -0.25); //-0.75px
+              }
+
+              .guideFieldNode {
+                height: 100%;
+
+                .card {
+                  height: 100%;
+                }
+              }
+            }
+          }
+        }
+
+        //secondary description text for attribute and value selection
+        .text {
+          padding-left: 2.5%;
+          padding-right: 2.5%;
+
+          @media screen and (min-width: 600px) and (max-width: 767px) {
+            padding-left: 1.5%;
+            padding-right: 1.5%;
+          }
+
+          @include media-tablet-and-up {
+            padding-left: 0;
+            padding-right: 0;
+          }
+
+          p {
+            color: $color__black;
+
+            @include media-mobile-and-tablet {
+              font-size: rem($base__font-size * 1.2); //12px
+              font-family: var(--secondary-font);
+              font-weight: normal;
+              line-height: $base__line-height * 1.111; //1.55
+            }
+          }
+        }
+
+        //secondary text within review selection
+        .guideStaticText {
+          @include media-mobile-and-tablet {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 2%;
+            padding-right: 2%;
+          }
+
+          p {
+            color: #333;
+            @include media-mobile-and-tablet {
+              font-size: rem($base__font-size * 1.2); //12px
+              font-family: var(--secondary-font);
+              font-weight: normal;
+              line-height: $base__line-height * 1.111; //1.55
+            }
+          }
+        }
+      }
+    }
+
+    // Eaton Wizard parent container
+    .eatonwizard {
+      margin: rem($spacing__sm * 0.5); //15px
+
+      .accordion-component {
+        @media screen and (max-width: 601px) {
+          padding-left: 3%;
+          padding-right: 3%;
+        }
+
+        @media screen and (min-width: 602px) and (max-width: 767px) {
+          padding-left: 2.5%;
+          padding-right: 2.5%;
+        }
+
+        .title {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+      }
+
+      .etn-wizard {
+        border: 0;
+      }
+
+      .eaton-grid-control--2-col {
+        margin: 0;
+
+        > .container {
+          width: 100%;
+          padding-left: 5.5%;
+          padding-right: 5.5%;
+
+          @media screen and (min-width: 420px) {
+            padding-left: 5%;
+            padding-right: 5%;
+          }
+
+          @media screen and (min-width: 490px) {
+            padding-left: 4.5%;
+            padding-right: 4.5%;
+          }
+
+          @media screen and (min-width: 600px) {
+            padding-left: 3%;
+            padding-right: 3%;
+          }
+
+          @include media-tablet-only {
+            padding-left: 1.5%;
+            padding-right: 1.5%;
+          }
+
+          @include media-desktop-and-up {
+            padding-left: 1%;
+            padding-right: 1%;
+          }
+        }
+
+        .guideimage {
+          @include media-mobile-and-tablet {
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+
+          @include media-desktop-and-up {
+            padding-left: 0;
+            padding-right: 0;
+          }
+
+          img {
+            height: auto;
+            max-width: 100%;
+          }
+        }
+
+        .title {
+          color: $color__black;
+          padding-top: 0;
+
+          @include media-mobile-and-tablet {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+          }
+
+          @include media-desktop-and-up {
+            padding-left: 3%;
+            padding-right: 3%;
+          }
+
+          .container {
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;
+
+            @include media-desktop-and-up {
+              padding: 0 2.5%;
+            }
+
+            .eaton-title__headline {
+              padding-top: 0;
+            }
+          }
+        }
+
+        .text {
+          padding-top: 0;
+          padding-bottom: 0;
+          padding-left: 0;
+          padding-right: 0;
+
+          @include media-desktop-and-up {
+            padding-left: 3%;
+            padding-right: 3%;
+          }
+
+          .container {
+            padding-left: 0;
+            padding-right: 0;
+            width: 100%;
+
+            @include media-desktop-and-up {
+              padding: 0 2.5%;
+            }
+          }
+        }
+
+        .vertical-link-list {
+          @include media-desktop-and-up {
+            padding-left: 3%;
+            padding-right: 3%;
+          }
+
+          .link-list-vertical__component {
+            @include media-desktop-and-up {
+              padding: 0 2.5%;
+            }
+
+            .link-list-vertical {
+              &__eyebrow {
+                margin-bottom: 0;
+                text-transform: none !important;
+
+                @include media-mobile-and-tablet {
+                  font-size: rem($base__font-size * 1.2) !important; //12px
+                }
+
+                @include media-desktop-and-up {
+                  font-size: rem($base__font-size * 1.6) !important; //16px
+                }
+              }
+
+              &__list-item {
+                &::before {
+                  font-family: "eaton-glyphicon";
+                  content: "\EA12";
+                  color: $color__primary-blue;
+                  position: relative;
+                  top: 0;
+                  left: 0;
+                  padding-right: rem($spacing__sm * 0.066667); //2px
+                  font-size: rem($base__font-size * 1.7); //17px
+
+                  @include media-desktop-and-up {
+                    font-size: rem($base__font-size * 2.2); //22px
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .guidedproductselection {
+        .guideFieldNode:not(.guideButton):not(.guideTextDraw):not(.guideChart) {
+          border-color: transparent !important;
+        }
+      }
+
+      .guideLayout {
+        overflow-x: inherit;
+      }
+
+      [id$="_guide-item-container"] {
+        overflow-x: inherit;
+      }
+
+      .guideWizardLayout {  // stylelint-disable
+        background: $color__white;
+
+        .afWizardPanel {
+          padding: rem($spacing__sm * 0.166667); //5px
+          width: 100%;
+
+          .panel {
+            border: 0;
+            box-shadow: none;
+
+            .title {
+              @media screen and (max-width: 373px) {
+                padding-left: 8%;
+                padding-right: 8%;
+              }
+
+              @media screen and (min-width: 374px) and (max-width: 550px) {
+                padding-left: 6.5%;
+                padding-right: 6.5%;
+              }
+
+              @media screen and (min-width: 551px) and (max-width: 767px) {
+                padding-left: 5%;
+                padding-right: 5%;
+              }
+
+              @include media-tablet-only {
+                padding-left: 3%;
+                padding-right: 3%;
+              }
+
+              @include media-desktop-and-up{
+                padding-left: 3%;
+                padding-right: 3%;
+              }
+            }
+
+            .productselectordropdown {
+              @media screen and (max-width: 767px) and (orientation: landscape){
+                padding-left: 3.5% !important;
+                padding-right: 3.5% !important;
+              }
+
+              @include media-mobile-only {
+                padding-left: 4%;
+                padding-right: 4%;
+              }
+
+              @media screen and (max-width: 373px) {
+                padding-left: 5%;
+                padding-right: 5%;
+              }
+
+              @include media-tablet-only {
+                padding-left: 1.5%;
+                padding-right: 1.5%;
+              }
+
+              select {
+                border-color: $color__primary-gray3;
+              }
+            }
+
+            .guideToolbarNode {
+              border: 0;
+              margin: rem($spacing__sm) 0 0 0 !important;
+              padding: 0 !important;
+              position: relative;
+              height: auto;
+              border: 0;
+
+              @include media-desktop-and-up {
+                margin: rem($spacing__md) 0 0 0 !important;
+              }
+
+              //toolbar container
+              .guidetoolbar {
+                text-align: center;
+
+                @include media-desktop-and-up {
+                  font-size: 0;
+                  text-align: left;
+                  width: 100%;
+
+                  .eatonguidebutton a.Button {
+                    margin-left: 0.5rem;
+                  }
+                }
+
+                @include media-mobile-only {
+                  display: flex;
+                  flex-direction: column;
+                }
+
+                //toolbar button wrapper
+                .afToolbarButton {
+                  float: none;
+                  width: 50%;
+                  margin-bottom: rem($spacing__sm); //30px
+
+                  @include media-mobile-and-tablet {
+                    width: 100%;
+                  }
+
+                  @include media-mobile-only {
+                    padding-left: 1%;
+                    padding-right: 1%;
+
+                    &:nth-child(1) {
+                      order: 1;
+                    }
+
+                    &:nth-child(2) {
+                      order: 2;
+                    }
+
+                    &:nth-child(3) {
+                      order: 4;
+                    }
+
+                    &:nth-child(4) {
+                      order: 3;
+                    }
+                  }
+
+                  @include media-desktop-and-up {
+                    font-size: 1.6rem;
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin-bottom: rem($spacing__sm * 1.33333); //40px
+
+                    &:nth-child(2n+1) .guidefield {
+                      text-align: left;
+                      margin-left: -10px;
+
+                      [dir='rtl'] & {
+                        text-align: right;
+                        margin-right: -10px;
+                      }
+                    }
+
+                    &:nth-child(2n) .guidefield {
+                      text-align: right;
+                      margin-right: -10px;
+
+                      [dir='rtl'] & {
+                        text-align: left;
+                        margin-left: -10px;
+                      }
+                    }
+                  }
+
+                  //eaton btn component
+                  .eatonguidebutton {
+                    .button-medium {
+                      color: $color__white !important;
+                      background: $color__primary-blue !important;
+
+                      &:hover {
+                        color: $color__primary-blue !important;
+                        background: $color__white !important;
+                        border-radius: 0 !important;
+                        text-decoration: none;
+                      }
+
+                      @include media-mobile-and-tablet {
+                        max-width: 100% !important;
+                        width: 100% !important;
+                      }
+                    }
+                  }
+
+                  //recommendations btn
+                  .submit {
+                    button {
+                      @include media-mobile-and-tablet {
+                        margin-left: 0;
+                        margin-right: 0;
+                        max-width: 100% !important;
+                        width: 100%;
+                      }
+
+                      .iconButton-icon {
+                        @include media-mobile-and-tablet {
+                          display: none;
+                        }
+                      }
+
+                      .iconButton-label {
+                        @include media-mobile-and-tablet {
+                          display: block;
+                        }
+                      }
+                    }
+                  }
+
+                  //previous button container, btn
+                  .previtemnav,
+                  .guidebutton {
+                    .movePrev,
+                    button {
+                      margin-left: 0;
+                      &:hover {
+                        color: $color__primary-blue !important;
+                        background: $color__white !important;
+                        border-radius: 0 !important;
+                        text-decoration: none;
+                      }
+
+                      @include media-mobile-and-tablet {
+                        max-width: 100% !important;
+                        width: 100%;
+                      }
+
+                      .iconButton-icon {
+                        @include media-mobile-and-tablet {
+                          display: none;
+                        }
+                      }
+
+                      .iconButton-label {
+                        @include media-mobile-and-tablet {
+                          display: block;
+                        }
+                      }
+                    }
+                  }
+                  // next button container, btn
+                  .nextitemnav,
+                   .guidebutton{
+                    .moveNext,
+                    button {
+                      border-radius: 0 !important;
+                      color: $color__white !important;
+                      background: $color__primary-blue !important;
+                      text-decoration: none;
+                      margin-left: 0;
+
+                      &:hover {
+                        color: $color__primary-blue !important;
+                        background: $color__white !important;
+                        text-decoration: none;
+                        border-radius: 0 !important;
+                      }
+
+                      @include media-mobile-and-tablet {
+                        max-width: 100% !important;
+                        width: 100%;
+                      }
+
+                      .iconButton-icon {
+                        @include media-mobile-and-tablet {
+                          display: none;
+                        }
+                      }
+
+                      .iconButton-label {
+                        @include media-mobile-and-tablet {
+                          display: block;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Title, Text Component Overrides
+.eaton-title .container, .eaton-text-default .container {
+
+  @include media-tablet-and-up {
+    width: $grid__width-sm;
+  }
+
+  @include media-desktop-and-up {
+    width: $grid__width-md;
+  }
+
+  @include media-desktop-large {
+    width: $grid__width-lg;
+  }
+}
+
+//EAT-9219 / EAT-9289: Aligns eaton-title correctly within adaptive form and keeps eaton-title component outside adaptive form correctly aligned
+.guideContainerNode .guideLayout .eaton-title .container {
+  padding-left: 0%;
+}

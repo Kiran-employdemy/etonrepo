@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Bullseye Map Dialog"
+          sling:resourceType="cq/gui/components/authoring/dialog"
+          helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly"
+          extraClientlibs="[map.authoring.dialog]">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+                margin="{Boolean}false"
+                type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <defaultLatitude
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="This Latitude will be used during the initial load of the map"
+                            fieldLabel="Default Latitude"
+                            name="./defaultLatitude"/>
+                    <defaultLongitude
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="This Longitude will be used during the initial load of the map"
+                            fieldLabel="Default Longitude"
+                            name="./defaultLongitude"/>
+                    <defaultRadius
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="This Radius will be used during the initial load of the map. Please provide value from radius list configuration"
+                            fieldLabel="Default Radius"
+                            name="./defaultRadius"/>
+                    <defaultDistanceUnit
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldDescription="Default Distance Unit. The user can change the distance unit with the facet navigation."
+                            fieldLabel="Default Distance Unit"
+                            name="./defaultDistanceUnit">
+                        <items jcr:primaryType="nt:unstructured">
+                            <kilometers
+                                jcr:primaryType="nt:unstructured"
+                                text="Kilometers"
+                                value="kilometers"/>
+                            <miles
+                                jcr:primaryType="nt:unstructured"
+                                text="Miles"
+                                value="miles"/>
+                        </items>
+                    </defaultDistanceUnit>
+                    <searchType
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldDescription="This field sets the value for SearchTypeOverride attribute while doing BullsEye API call"
+                            fieldLabel="Search Type"
+                            name="./searchType">
+                        <items jcr:primaryType="nt:unstructured">
+                            <radius
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Radius"
+                                    value="1"/>
+                            <territory
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Territory"
+                                    value="2"/>
+                            <mixed
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Territory and Radius"
+                                    value="6"/>
+                        </items>
+                    </searchType>
+                    <!-- <categoryGroupList
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            fieldDescription="Click 'Add' to add a Category Group."
+                            fieldLabel="Facet Groups">
+                            <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldLabel="Select category"
+                                    name="./category">
+                                <datasource
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/eaton/bullseye/bullsEyeServiceValidation"/>
+                            </field>
+                    </categoryGroupList> -->
+                    <categoryGroupList
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            composite="{Boolean}true"
+                            fieldDescription="Click 'Add' to add a Category Group under Facets and Inside Category Group click 'Add' to show any category in Facets"
+                            fieldLabel="Facet Groups">
+                        <field
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                name="./categoryGroupList">
+                            <items jcr:primaryType="nt:unstructured">
+                                <categoryGroup
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        emptyText="Select a Category group"
+                                        fieldLabel="Add a Category Group to show under Facets"
+                                        name="./categoryGroup"/>
+                                <categoryList
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldLabel="Add a row to show the selected value as an option">
+                                    <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            name="./categoryList">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <category
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    emptyText="Select a Category"
+                                                    name="./category"/>
+                                        </items>
+                                    </field>
+                                </categoryList>
+                                <singleFacetEnabled
+	                                jcr:primaryType="nt:unstructured"
+	                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+	                                name="./singleFacetEnabled"
+	                                text="Single Facet Enabled"
+	                                value="true"/>
+                            </items>
+                        </field>
+                    </categoryGroupList>
+                    <PreSelectCategoryGroupList
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        composite="{Boolean}true"
+                        fieldDescription="Click 'Add' to add a Category Group under Facets and Inside Category Group click 'Add' to hide any category in Facets"
+                        fieldLabel="Preselect filter values (these filters will be hidden from user)">
+                        <field
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            name="./preSeltCategoryGroupList">
+                            <items jcr:primaryType="nt:unstructured">
+                                <categoryGroup
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    emptyText="Select the Filter field"
+                                    fieldLabel="Select the filer field"
+                                    name="./preSeltCategoryGroup"/>
+                                <categoryList
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                    composite="{Boolean}true"
+                                    fieldLabel="Add a row for each value to filter">
+                                    <field
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        name="./preSeltCategoryList">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <category
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                emptyText="Add a row for each value to filter"
+                                                name="./preSeltCategory"/>
+                                        </items>
+                                    </field>
+                                </categoryList>
+                            </items>
+                        </field>
+                    </PreSelectCategoryGroupList>
+                    <!-- <csvCategoryGroupColumns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            fieldDescription="This configured list of Bullseye categories will be displayed in the downloaded CSV as columns."
+                            fieldLabel="CSV Category Group Columns">
+                            <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldLabel="Select category"
+                                    name="./csvCategoryColumns">
+                                <datasource
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="/eaton/bullseye/bullsEyeServiceValidation"/>
+                            </field>
+                    </csvCategoryGroupColumns> -->
+                    <csvCategoryGroupList
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            composite="{Boolean}true"
+                            fieldDescription="This configured list of Bullseye categories will be displayed in the downloaded CSV as columns. Click 'Add' to add a Category Group and Inside Category Group click 'Add' to hide any category"
+                            fieldLabel="CSV Category Group Columns">
+                        <field
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                name="./csvCategoryGroupList">
+                            <items jcr:primaryType="nt:unstructured">
+                                <csvCategoryGroup
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        emptyText="Select a Category group"
+                                        fieldLabel="Add a Category Group to show in CSV"
+                                        name="./csvCategoryGroup"/>
+                                <csvCategoryList
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldLabel="Add a row to hide the selected value from appearing">
+                                    <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            name="./csvCategoryList">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <csvCategory
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    emptyText="Select a Category"
+                                                    name="./csvCategory"/>
+                                        </items>
+                                    </field>
+                                </csvCategoryList>
+                                <singleFacetEnabled
+	                                jcr:primaryType="nt:unstructured"
+	                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+	                                name="./singleFacetEnabled"
+	                                text="Single Facet Enabled"
+	                                value="true"/>
+                            </items>
+                        </field>
+                    </csvCategoryGroupList>
+                    <enableLocationType
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            checked="false"
+                            fieldDescription="This box is used to enable Location Type on result card."
+                            name="./enableLocationType"
+                            text="Enable Location Type on result card"
+                            uncheckedValues="false"
+                            value="true"/>
+                    <labelCategory
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldDescription="The Bullseye category to use as a label. Locations in this selected category will have this category label displayed in orange text in the location results card."
+                            fieldLabel="Label Category"
+                            name="./labelCategory">
+                        <datasource
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/eaton/bullseye/bullsEyeAllCategories"/>
+                    </labelCategory>
+                    <enableExpander
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            checked="true"
+                            fieldDescription="This box is used to disable the Expander functionality."
+                            name="./enableExpander"
+                            text="Enable Expander"
+                            uncheckedValues="false"
+                            value="true"/>
+                    <expanderTitle
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="This title is used for accordion list Ex : title- 'product and services''"
+                            fieldLabel="Expander Title"
+                            name="./expanderTitle"/>
+                    <instructionText
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="This text is used for instruction Ex : text- 'Enter a location to find a distributor'"
+                            fieldLabel="Instruction Text"
+                            name="./instructionText"/>
+                    <hidedownloadCSV
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            checked="false"
+                            fieldDescription="This box is used to hide the download results in csv"
+                            name="./hideDownload"
+                            text="Hide Download"
+                            uncheckedValues="false"
+                            value="true"/>
+                    <hideMap
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            checked="false"
+                            fieldDescription="This box is used to hide the Map"
+                            name="./hideMap"
+                            text="Hide Map"
+                            uncheckedValues="false"
+                            value="true"/>
+                    <hideEmail
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            checked="false"
+                            fieldDescription="This box is used to hide the Email"
+                            name="./hideEmail"
+                            text="Hide Email"
+                            uncheckedValues="false"
+                            value="true"/>
+                    <hideWebsite
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            checked="false"
+                            fieldDescription="This box is used to hide the Website"
+                            name="./hideWebsite"
+                            text="Hide Website"
+                            uncheckedValues="false"
+                            value="true"/>
+                    <hideDirection
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            checked="false"
+                            fieldDescription="This box is used to hide the Direction"
+                            name="./hideDirection"
+                            text="Hide Direction"
+                            uncheckedValues="false"
+                            value="true"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

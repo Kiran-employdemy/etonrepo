@@ -1,0 +1,43 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.PageOverviewModel">
+
+    <div class="page-overview__component"  data-sly-test ="${data.pageOverviewHeader}">
+
+    <div class="container">
+      <div class="row page-overview_rtl__container">
+
+        <div class="col-xs-12 col-md-6">
+          <h1 data-sly-test="${ data.pageOverviewHeader && data.pageOverviewHeaderType == 'h1' }" class="page-overview__title b-heading-h1">
+              ${ data.pageOverviewHeader }
+          </h1>
+
+          <h2 data-sly-test="${ data.pageOverviewHeader && data.pageOverviewHeaderType != 'h1' }" class="page-overview__title b-heading-h2">
+              ${ data.pageOverviewHeader }
+          </h2>
+
+          <div data-sly-test="${ data.pageOverviewLinkTitle }"
+            class="page-overview__cta page-overview__cta--desktop">
+            <a href="${ data.pageOverviewLinkPath }"
+              role="button"
+              class="b-button b-button__primary b-button__primary--light"
+              target="${ data.pageOverviewLinkOpenNewWindow }">${ data.pageOverviewLinkTitle }</a>
+          </div>
+        </div>
+
+        <div data-sly-test="${ data.pageOverviewDesc }" class="col-xs-12 col-md-6">
+          <div class="page-overview__content b-body-copy">${ data.pageOverviewDesc @ context = 'html' }</div>
+        </div>
+
+      </div>
+
+      <div data-sly-test="${ data.pageOverviewLinkTitle }"
+        class="page-overview__cta page-overview__cta--mobile text-center">
+        <a href="${ data.pageOverviewLinkPath }"
+          role="button"
+          class="b-button b-button__primary b-button__primary--light"
+          target="${ data.pageOverviewLinkOpenNewWindow }">${ data.pageOverviewLinkTitle }</a>
+      </div>
+
+    </div>
+  </div>
+
+</sly>

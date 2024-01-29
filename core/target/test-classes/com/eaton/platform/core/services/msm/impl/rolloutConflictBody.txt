@@ -1,0 +1,25 @@
+Conflicts were detected during rollout.
+
+Blueprint path: http://localhost:4502/content/eaton/language-masters/de-de/catalog/emobility.html
+Rollout page and subpages: true
+-------------------------------------------------------------------------------------
+
+Page: http://localhost:4502/content/eaton/de/de-de/catalog/emobility/battery-isolators.html
+	
+    	Conflicting page:
+    	
+    	http://localhost:4502/content/eaton/de/de-de/catalog/emobility/battery-isolators_msm_moved.html
+	
+Page: http://localhost:4502/content/eaton/de/de-de/catalog/emobility/battery-protectors.html
+	
+    	Conflicting resources:
+    	
+    	root/header_msm_moved
+    	root/header_msm_moved_1
+    	root/header_msm_moved_2
+	
+
+-------------------------------------------------------------------------------------
+
+
+Documentation link: https://confluence-prod.tcc.etn.com/display/EC/Rollout+conflicts

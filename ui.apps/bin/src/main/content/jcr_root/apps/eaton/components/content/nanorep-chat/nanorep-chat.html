@@ -1,0 +1,11 @@
+
+<sly data-sly-test="${ wcmmode.edit }">
+<div class="alert alert-warning">Nano-Rep</div>
+</sly>
+
+<sly
+	data-sly-use.nanoRepchatConfig="com.eaton.platform.core.models.NanoRepChatConfigModel"></sly>
+<script>
+  var nanorep_kbnumber= ${nanoRepchatConfig.chatBean.kbNumber  @ context="scriptString"};
+</script>
+

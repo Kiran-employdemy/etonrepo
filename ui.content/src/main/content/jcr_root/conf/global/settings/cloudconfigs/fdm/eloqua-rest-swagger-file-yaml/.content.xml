@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2019-03-12T16:06:57.117-04:00"
+        cq:lastModifiedBy="c3042434"
+        cq:lastReplicated="{Date}2019-03-19T10:21:04.609-04:00"
+        cq:lastReplicatedBy="e0067621"
+        cq:lastReplicationAction="Activate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:lastModified="{Date}2019-03-12T16:06:56.888-04:00"
+        jcr:lastModifiedBy="c3042434"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Eloqua REST Swagger File YAML"
+        jcr:uuid="ded88f17-7d2c-4dcb-9737-4817b110c644"
+        sling:resourceType="fd/fdm/gui/components/admin/fdmcloudservice/rest"
+        authenticationType="None"
+        dataSourceType="REST"
+        filename="swagger.yaml"
+        location="header"
+        name="eloqua-rest-swagger-file-yaml"
+        selectAuthentication="None"
+        selectHeader="Authorization Bearer"
+        swaggerSource="swaggerFile">
+        <swaggerFile/>
+    </jcr:content>
+</jcr:root>

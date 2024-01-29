@@ -1,0 +1,335 @@
+{
+  "signal22": true,
+  "signal22KindOptions": [
+    {
+      "value": "Signal Crimp Contacts",
+      "description": "signal contact kind",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": "G",
+      "allowedCombinations": [
+        null
+      ]
+    },
+    {
+      "value": "Signal PC TAIL Contacts",
+      "description": "signal contact kind",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": "HK",
+      "allowedCombinations": [
+        null
+      ]
+    }
+  ],
+  "signal22PackageOptions": [
+    {
+      "value": "3.81 tin",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": []
+    },
+    {
+      "value": "6.35 tin",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": []
+    },
+    {
+      "value": "6.35 gold",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": []
+    },
+    {
+      "value": "3.81 gold",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": "K",
+      "allowedCombinations": []
+    },
+    {
+      "value": "9.52 tin",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 1,
+      "additionalRestriction": null,
+      "allowedCombinations": []
+    },
+    {
+      "value": "9.52 gold",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": "K",
+      "allowedCombinations": []
+    },
+    {
+      "value": "12.7 tin",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": "K",
+      "allowedCombinations": []
+    },
+    {
+      "value": "12.7 gold",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": "K",
+      "allowedCombinations": []
+    }
+  ],
+  "power16": true,
+  "power16KindOptions": [
+    {
+      "value": "Power Crimp Contacts",
+      "description": "power contact kind",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": "GH",
+      "allowedCombinations": []
+    },
+    {
+      "value": "Power PC TAIL Contacts",
+      "description": "power contact kind",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": "K",
+      "allowedCombinations": []
+    }
+  ],
+  "power16PackageOptions": [
+    {
+      "value": "3.81 tin",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": []
+    },
+    {
+      "value": "6.35 tin",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": []
+    },
+    {
+      "value": "6.35 gold",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": []
+    },
+    {
+      "value": "3.81 gold",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": "K",
+      "allowedCombinations": []
+    },
+    {
+      "value": "9.52 tin",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 1,
+      "additionalRestriction": null,
+      "allowedCombinations": []
+    },
+    {
+      "value": "9.52 gold",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": "K",
+      "allowedCombinations": []
+    },
+    {
+      "value": "12.7 tin",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": "K",
+      "allowedCombinations": []
+    },
+    {
+      "value": "12.7 gold",
+      "description": "signal contact package size",
+      "isRestricted": true,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": "K",
+      "allowedCombinations": []
+    }
+  ],
+  "coax1": false,
+  "coax1KindOptions": null,
+  "coax1PackageOptions": null,
+  "coax5": true,
+  "coax5PackageOptions": [
+    {
+      "value": "A",
+      "description": "delivered with #5 coax RG58 and with #1 coax RG165",
+      "isRestricted": false,
+      "shellSizeRestriction": 1,
+      "additionalRestriction": null,
+      "allowedCombinations": [
+        null
+      ]
+    },
+    {
+      "value": "J",
+      "description": "delivered with #5 coax RG316 without #1 coax",
+      "isRestricted": false,
+      "shellSizeRestriction": 1,
+      "additionalRestriction": null,
+      "allowedCombinations": [
+        null
+      ]
+    },
+    {
+      "value": "N",
+      "description": "delivered without #5 coax without #1 coax",
+      "isRestricted": false,
+      "shellSizeRestriction": 1,
+      "additionalRestriction": "NO",
+      "allowedCombinations": [
+        null
+      ]
+    },
+    {
+      "value": "B",
+      "description": "delivered without #5 coax with #1coax RG141",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": [
+        null
+      ]
+    },
+    {
+      "value": "C",
+      "description": "delivered without #5 coax with #1coax RG400",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": [
+        null
+      ]
+    },
+    {
+      "value": "E",
+      "description": "delivered without #5 coax with #1coax RG393",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": [
+        null
+      ]
+    },
+    {
+      "value": "I",
+      "description": "delivered with #5 to #12 cavity reducer without #1 coax",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": [
+        null
+      ]
+    },
+    {
+      "value": "H",
+      "description": "delivered with #5 dummy contact without #1 coax",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": [
+        null
+      ]
+    },
+    {
+      "value": "M",
+      "description": "delivered with #5 coax RG58 without #1 coax",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": [
+        null
+      ]
+    },
+    {
+      "value": "F",
+      "description": "delivered with #5 coax 5021K1011 with #1 coax RG393",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": [
+        null
+      ]
+    },
+    {
+      "value": "D",
+      "description": "delivered with #5 coax 5021K1011 without #1 coax",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": [
+        null
+      ]
+    },
+    {
+      "value": "K",
+      "description": "without-contacts-new-delivered with #5 coax KX23 without #1 coax",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": [
+        null
+      ]
+    },
+    {
+      "value": "S",
+      "description": "delivered without #5 coax with #1 coax TCAS",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": [
+        null
+      ]
+    }
+  ],
+  "quadrax": false,
+  "quadraxPackagingOptions": [
+    {
+      "value": "Q",
+      "description": "Delivered with PC Tail Quadrax",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": [
+        null
+      ]
+    },
+    {
+      "value": "NQ",
+      "description": "Without Quadrax Contact",
+      "isRestricted": false,
+      "shellSizeRestriction": 0,
+      "additionalRestriction": null,
+      "allowedCombinations": [
+        null
+      ]
+    }
+  ]
+}

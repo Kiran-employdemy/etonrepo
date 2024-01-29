@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Component Properties - Classic UI"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <view
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="featured-story"
+                        fieldDescription="Determine which variation of component to view"
+                        fieldLabel="View"
+                        fieldSubLabel=""
+                        name="./view"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <featured-story
+                                jcr:primaryType="nt:unstructured"
+                                text="Featured Story"
+                                value="featured-story"/>
+                            <landing-hero
+                                jcr:primaryType="nt:unstructured"
+                                text="Landing Hero"
+                                value="landing-hero"/>
+                            <landing-hero-single
+                                jcr:primaryType="nt:unstructured"
+                                text="Landing Hero - Single"
+                                value="landing-hero-single"/>
+                            <tile-link
+                                jcr:primaryType="nt:unstructured"
+                                text="Tile Link"
+                                value="tile-link"/>
+                            <category-hero
+                                jcr:primaryType="nt:unstructured"
+                                text="Category Hero"
+                                value="category-hero"/>
+                            <image-only
+                                jcr:primaryType="nt:unstructured"
+                                text="Image Only"
+                                value="image-only"/>
+                            <featured-list
+                                jcr:primaryType="nt:unstructured"
+                                text="Featured List"
+                                value="featured-list"/>
+                        </options>
+                    </view>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

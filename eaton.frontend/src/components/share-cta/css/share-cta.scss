@@ -1,0 +1,95 @@
+//-----------------------------------
+// Component M-6 Page Utility Module - share cta
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-product-share-cta {
+  margin: ($spacing__sm) ($spacing__sm / 6) 1.3rem 0;
+
+  i {
+    color: var(--grey-primary-brand-color, $color__primary-gray2);
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 0;
+    padding-right: rem($spacing__sm / 3);
+    height: 12px;
+    margin-top: -17px;
+
+    [dir='rtl'] & {
+      padding-left: rem($spacing__sm / 3);
+      padding-right: 0;
+    }
+  }
+
+  [dir='rtl'] & {
+    margin: ($spacing__sm) 0 0 ($spacing__sm / 6);
+  }
+
+  @include media-mobile-and-tablet {
+    margin: ($spacing__sm / 2) ($spacing__sm / 3) ($spacing__sm / 2) ($spacing__sm / 2);
+
+    i {
+      font-size: 2rem;
+      margin-top: -8px;
+    }
+
+    [dir='rtl'] & {
+      margin: ($spacing__sm / 2) ($spacing__sm / 2) ($spacing__sm / 2) ($spacing__sm / 3);
+    }
+  }
+
+  .cookie-acceptance-open & {
+    .share-this-icon {
+      display: none;
+    }
+  }
+
+  .show-icon {
+    display: block !important; //stylelint-disable declaration-no-important
+  }
+}
+
+//Override styles for floating share sidebar in rtl
+
+[dir='rtl'] {
+  .atss-left {
+    right: 0;
+    float: right;
+    left: auto;
+  }
+
+  /* stylelint-disable selector-class-pattern */
+  .slideInLeft {
+    animation-name: slideInRight;
+  }
+
+  .slideOutLeft {
+    animation-name: slideOutRight;
+  }
+  /* stylelint-enable selector-class-pattern */
+  .atss .at-share-btn,
+  .atss a {
+    float: right;
+  }
+
+  .at-share-open-control-left {
+    right: 0;
+    left: auto;
+  }
+
+  div.at4-arrow {
+    text-align: right;
+
+    &.at-left {
+      background-position: ($spacing__sm * -0.6666667) 0;
+      float: left;
+    }
+
+    &.at-right {
+      background-position: 0 0;
+    }
+  }
+}

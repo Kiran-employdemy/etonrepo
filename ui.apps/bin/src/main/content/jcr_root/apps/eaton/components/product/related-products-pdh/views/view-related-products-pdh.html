@@ -1,0 +1,14 @@
+<sly data-sly-use.relatedProductsPDHModel="com.eaton.platform.core.models.relatedproductspdh.RelatedProductsPDHModel">
+    <div class="related-products--cross-sell module-related-products__wrapper container">
+		<div data-sly-test="${relatedProductsPDHModel.listTypeArray.size > 0}" class="module-related-products__header module-related-products__new-launch-product">
+            <h3 class="module-related-products__headline">${relatedProductsPDHModel.header @ i18n}</h3>
+            <sly data-sly-test="${relatedProductsPDHModel.viewAllProductsLinkLabel && relatedProductsPDHModel.viewAllProductsLink}">
+                <p class="module-related-products__view-all"><a href="${relatedProductsPDHModel.viewAllProductsLink}">${relatedProductsPDHModel.viewAllProductsLinkLabel}</a></p>
+            </sly>
+			 <p class="related-products-component__description">${relatedProductsPDHModel.productsDescription}</p>
+        </div>
+        <sly data-sly-use.tpl="eaton/components/shared/templates/module-related-products.html">
+            <sly data-sly-call="${ tpl.module @data=relatedProductsPDHModel }"></sly>
+        </sly>
+    </div>
+</sly>

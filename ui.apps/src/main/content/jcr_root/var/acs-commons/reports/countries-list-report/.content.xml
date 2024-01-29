@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/etc/designs/acs-commons"
+        jcr:created="{Date}2023-05-08T10:55:45.581-04:00"
+        jcr:createdBy="admin"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Countries List Report"
+        jcr:description="A report showing all country home pages."
+        sling:resourceType="acs-commons/components/utilities/report-builder/report-page">
+        <config
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <queryconfig
+                jcr:created="{Date}2023-05-08T10:56:07.892-04:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-05-08T10:57:34.486-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="acs-commons/components/utilities/report-builder/configs/queryconfig"
+                pageSize="50"
+                query="select  * from [cq:Page] as a where [jcr:content/cq:template] = '/conf/eaton/settings/wcm/templates/home-page' and [jcr:content/page-type] = 'home-page' and isdescendantnode(a, '/content/eaton')"
+                queryLanguage="JCR-SQL2"
+                reportExecutor="com.adobe.acs.commons.reports.models.QueryReportExecutor"/>
+        </config>
+        <columns
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/parsys">
+            <path
+                jcr:created="{Date}2023-05-08T10:58:12.209-04:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2023-05-08T11:00:05.437-04:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="acs-commons/components/utilities/report-builder/columns/path"
+                exporter="com.adobe.acs.commons.reports.models.PathReportCellCSVExporter"
+                heading="Sites Page path"
+                link="true"/>
+        </columns>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,17 @@
+.product-support-component { padding: 120px 30px; }
+
+@media screen and (min-width: 768px) { .product-support-component { padding: 120px 0; } }
+
+@media screen and (max-width: 991px) { .product-support-component--left { margin-bottom: 30px; } }
+
+.product-support-component__icon { top: 10px; position: absolute; left: -60px; font-size: 60px; color: #ED8B00; }
+
+@media screen and (max-width: 767px) { .product-support-component__icon { left: 25px; top: -80px; } }
+
+@media screen and (min-width: 1200px) { .product-support-component__info { margin-left: 50px; } }
+
+.product-support-component__info--title { margin-bottom: 25px; }
+
+.product-support-component__info--copy { width: 50%; float: left; }
+
+@media screen and (max-width: 767px) { .product-support-component__info--copy { width: 100%; } }

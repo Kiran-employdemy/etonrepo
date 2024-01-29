@@ -1,0 +1,120 @@
+{
+  "jcr:primaryType":"dam:Asset",
+  "jcr:mixinTypes":["mix:referenceable","mix:versionable"],
+  "jcr:createdBy":"admin",
+  "jcr:versionHistory":"0ea55ecc-05db-4779-8313-5a54dca8c915",
+  "jcr:predecessors":["8005fbcf-3b07-40e2-8382-ba1074bac737"],
+  "jcr:created":"Thu May 02 2019 05:43:25 GMT-0400",
+  "jcr:baseVersion":"8005fbcf-3b07-40e2-8382-ba1074bac737",
+  "jcr:isCheckedOut":true,
+  "jcr:uuid":"2ab4a736-cee0-4923-a559-efc66c2f6c51",
+  "jcr:content": {
+    "jcr:primaryType": "dam:AssetContent",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "c3060043",
+    "jcr:lastModifiedBy": "c3060043",
+    "cq:lastReplicated": "Thu Dec 01 2022 05:00:04 GMT-0500",
+    "dam:assetState": "processed",
+    "cq:name": "obc-afgf-dual-purpose-recep-sell-sheet.pdf",
+    "jcr:lastModified": "Fri May 10 2019 00:48:59 GMT-0400",
+    "cq:parentPath": "/content/dam/eaton/products/wiring-devices-and-connectivity/wiring-devices/af-gf-receptacles",
+    "dam:relativePath": "eaton/products/wiring-devices-and-connectivity/wiring-devices/af-gf-receptacles/obc-afgf-dual-purpose-recep-sell-sheet.pdf",
+    "related": {
+      "jcr:primaryType": "nt:unstructured"
+    },
+    "metadata": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:Taggable"
+      ],
+      "dam:Trapped": "false",
+      "jcr:title": "AF/GF dual-purpose receptacles sell sheet",
+      "dc:creator": [
+        "Eaton"
+      ],
+      "xmp:eaton-file-name": "obc-afgf-dual-purpose-recep-sell-sheet.pdf",
+      "dam:Physicalheightininches": "11.0",
+      "dam:Physicalwidthininches": "8.5",
+      "dam:numPages": 2,
+      "assetPublicationDate": "Sun May 01 2016 11:20:00 GMT-0400",
+      "xmp:eaton-rights-restricted": "no",
+      "author": "Eaton",
+      "xmp:eaton-search-tabs": [
+        "eaton:search-tabs/content-type/resources",
+        "eaton:search-tabs"
+      ],
+      "trackDownload": "false",
+      "xmp:eaton-language": [
+        "eaton:language/en-us"
+      ],
+      "jcr:lastModifiedBy": "admin",
+      "xmp:CreatorTool": "Adobe InDesign CC 2015 (Windows)",
+      "dam:extracted": "Fri May 10 2019 00:48:49 GMT-0400",
+      "dc:format": "application/pdf",
+      "xmp:eaton-content-type": [
+        "eaton:resources/marketing-resources/brochures"
+      ],
+      "dam:Producer": "Adobe PDF Library 15.0",
+      "dc:language": [
+        "en"
+      ],
+      "xmpMM:DocumentID": "xmp.id:e292a238-c896-f445-92d3-8c4d3d031816",
+      "excludeCountries": "false",
+      "xmp:eaton-country": [
+        "eaton:country/north-america/us"
+      ],
+      "xmpMM:OriginalDocumentID": "adobe:docid:indd:bd8cd452-d1c1-11dd-9c96-9af8a6233d4a",
+      "cq:tags_xmpArrayType": "rdf:Bag",
+      "dc:modified": "Tue Nov 20 2018 11:18:30 GMT-0500",
+      "xmp:eaton-imported-by": "admin",
+      "xmp:MetadataDate": "Tue May 29 2018 09:47:51 GMT-0400",
+      "xmpMM:RenditionClass": "proof:pdf",
+      "cq:tags": [
+        "eaton:resources/marketing-resources/brochures",
+        "eaton:product-taxonomy/wiring-devices-and-connectivity/afci-gfci-afgf",
+        "eaton:search-tabs",
+        "eaton:country/north-america/us",
+        "eaton:product-taxonomy/wiring-devices-and-connectivity/receptacles/afgf-receptacles",
+        "eaton:language/en-us",
+        "eaton:eaton-brand/industry/RWDD-wiring-devices",
+        "eaton:search-tabs/content-type/resources"
+      ],
+      "jcr:lastModified": "Fri May 10 2019 00:48:59 GMT-0400",
+      "pdf:Producer": "Adobe PDF Library 15.0",
+      "product-taxonomy-extended": [
+        "eaton:product-taxonomy",
+        "eaton:product-taxonomy/wiring-devices-and-connectivity",
+        "eaton:product-taxonomy/wiring-devices-and-connectivity/afci-gfci-afgf",
+        "eaton:product-taxonomy",
+        "eaton:product-taxonomy/wiring-devices-and-connectivity",
+        "eaton:product-taxonomy/wiring-devices-and-connectivity/receptacles",
+        "eaton:product-taxonomy/wiring-devices-and-connectivity/receptacles/afgf-receptacles"
+      ],
+      "xmpMM:InstanceID": "uuid:fd560919-d6f3-45e4-b4f6-e87b99fe9054",
+      "xmp:ModifyDate": "Tue May 29 2018 09:47:51 GMT-0400",
+      "dc:language_xmpArrayType": "rdf:Bag",
+      "dam:Author": "Eaton",
+      "xmp:CreateDate": "Tue May 24 2016 16:15:53 GMT-0400",
+      "countries": [
+        "eaton:country/north-america/us"
+      ],
+      "pdf:Trapped": false,
+      "dam:sha1": "918fc221df8de02bba680bb7ef699b3a252ed4fd",
+      "dam:size": 544827,
+      "dam:scene7PublishPending": true,
+      "xmp:eaton-eaton-brand": [
+        "eaton:eaton-brand/industry/RWDD-wiring-devices"
+      ],
+      "dc:creator_xmpArrayType": "rdf:Seq",
+      "xmp:eaton-product-taxonomy": [
+        "eaton:product-taxonomy/wiring-devices-and-connectivity/afci-gfci-afgf",
+        "eaton:product-taxonomy/wiring-devices-and-connectivity/receptacles/afgf-receptacles"
+      ],
+      "dc:title": "AF/GF dual-purpose receptacles sell sheet",
+      "xmp:eaton-modified-by": "c3060043"
+    }
+  }
+}

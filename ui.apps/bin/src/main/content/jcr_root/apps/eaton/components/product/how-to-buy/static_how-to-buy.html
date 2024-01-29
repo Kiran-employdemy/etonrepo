@@ -1,0 +1,51 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">How To Buy</div>
+</sly>
+
+<sly data-sly-use.data="com.eaton.platform.core.models.HowToBuyModel" />
+<sly data-sly-test="${data.howToBuyList}">
+    <div class="eaton-how-to-buy">
+        <div class="container row" >
+            <sly data-sly-list.listData="${data.howToBuyList}">
+
+                <sly data-sly-test="${listData.hasClearfix == true}">
+                    <div class="clearfix" ></div>
+                </sly>
+
+                <div class="col-xs-12 col-md-4 eaton-how-to-buy__element" data-sly-test=${listData.icon}>
+                    <div class="eaton-how-to-buy__icon">
+                        <img data-src="${listData.icon}" class="lazyload">
+                    </div>
+                    <div class="eaton-how-to-buy__text-wrapper">
+                        <a data-sly-test="${!listData.isModalEnabled}"
+                            href="${listData.link @context='html'}"
+                            class="b-h5-link-bold"
+                            title="${listData.title}"
+                            data-page-path-tracking="${listData.isSuffixEnabled ? 'true' : 'false'}"
+                            data-source-tracking="${listData.isSourceTrackingEnabled ? 'true' : 'false'}"
+                            target="${listData.openInNewWindow}">
+                            ${listData.title}
+                        </a>
+                        <a data-sly-test="${listData.isModalEnabled}"
+                            href="${listData.link @context='html'}"
+                            onclick="event.preventDefault();"
+                            class="buy-now__modal__trigger b-h5-link-bold"
+                            id="buyNowTrigger"
+                            data-toggle="modal"
+                            data-target="#buyNowModal"
+                            aria-label="Go to ${listData.title}"
+                            title="${listData.title}"
+                            target="${listData.openInNewWindow}">
+                            ${listData.title}
+                        </a>
+                        <div class="p-body-copy">${listData.dscription @ context='html'}</div>
+                    </div>
+                </div>
+                
+                <div class="col-xs-12 col-md-4 eaton-how-to-buy__element" data-sly-test="${!listData.icon}">
+                    <div class="b-heading-h4">${listData.title}</div>
+                </div>
+            </sly>
+        </div>
+    </div>
+</sly>

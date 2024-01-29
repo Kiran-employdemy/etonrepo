@@ -1,0 +1,206 @@
+//-----------------------------------
+// Template: T7-Product Family Models Grid
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+
+// Import SubModules
+.product-specifications {
+
+  margin-top: 60px;
+  margin-bottom: 40px;
+
+  .value-type-link {
+    margin-right: 1rem;
+  }
+
+  .value-type-image {
+
+    a {
+      display: inline-block;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+  }
+
+  //-----------------------------------
+  // MediaQuery: 0-991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    .module-anchor-links {
+      display: none;
+    }
+
+    .value-type-image {
+      img {
+        margin-left: 6px;
+        max-width: 26px;
+        max-height: 26px;
+      }
+    }
+
+  }
+
+
+  //-----------------------------------
+  // MeidaQuery: > 992px
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    .value-type-image {
+
+      $image-size: 26px;
+
+      img {
+        // EATON-347: FIX - Attribute Label not aligned with Attribute Value
+        margin-left: 6px;
+        max-width: $image-size;
+        max-height: $image-size;
+        vertical-align: text-bottom;
+      }
+    }
+
+    .col-md-3,
+    .col-md-9 {
+      @include media-desktop-and-up {
+        [dir='rtl'] & {
+          float: right;
+        }
+      }
+    }
+  }
+
+
+  .module-attribute-table {
+
+    table {
+      @include font-family__secondary(--secondary-font);
+    }
+
+    @include media-tablet-and-up {
+
+      h3 {
+        margin-top: 4rem;
+        background-color: $color__white;
+        position: sticky;
+        top: 12.4rem;
+        padding-left: 20px;
+      }
+
+      table {
+        table-layout: fixed;
+        width: 100%;
+        border-collapse: separate;
+      }
+
+      thead th {
+        color: $color__primary-blue;
+        background-color: $color__white;
+        font-size: 1.3rem;
+        border-bottom: 0.1rem solid $color__black;
+        position: sticky;
+        top: 15.1rem;
+        padding: 1rem;
+      }
+
+      tbody {
+
+        tr {
+          font-size: 1.2rem;
+
+          &:nth-child(even) {
+            background-color: $color__secondary-gray6;
+          }
+        }
+
+        td {
+          padding: 1rem;
+        }
+
+      }
+
+    }
+
+    @include media-mobile-only {
+
+      h3 {
+        padding-left: 15px;
+      }
+
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead tr {
+        display: none;
+      }
+
+      tbody tr {
+        border: 0.1rem solid $color__primary-gray3;
+        padding: 0.3rem;
+
+        &:nth-child(even) {
+          background-color: $color__secondary-gray6;
+        }
+
+      }
+
+      td {
+        border-bottom: 0.1rem solid $color__secondary-gray4;
+        position: relative;
+        padding-left: 50%;
+
+        &::before {
+          position: absolute;
+          left: 0.3rem;
+          width: 45%;
+          white-space: nowrap;
+          font-weight: bold;
+          content: attr(data-title);
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
+/* stylelint-disable */
+#export-btn {
+  line-height: 1;
+}
+
+.sku-page1 {
+
+  .single-sku-product-detail-tabs {
+
+    .eaton-product-tabs {
+      overflow: visible;
+    }
+
+  }
+
+}
+
+.sku-page1 {
+
+  .eaton-product-tabs {
+    overflow: visible;
+  }
+
+}
+/* stylelint-enable */

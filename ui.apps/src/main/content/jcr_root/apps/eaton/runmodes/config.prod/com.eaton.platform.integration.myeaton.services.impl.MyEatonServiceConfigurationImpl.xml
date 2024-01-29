@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+  jcr:primaryType="sling:OsgiConfig"
+  myEatonEndpointRoot="http://portalapps.tcc.etn.com/portal-access-api/user-management/v1"
+  userRegistrationEndpoint="/users"
+  userLookupEndpoint="/users"
+  updateUserEndpoint="/users"
+  fieldsEndpoint="/metadata"
+  maxConnections="100"
+  maxHostConnections="100"
+  maxCacheSize="1000"
+  cacheDuration="60"
+  metadataPath="/jcr:content/metadata"
+  myEatonUsername="PAA_PR0D&amp;#^0273"
+  myEatonPassword="pr0dR3stap1s909932!$%"
+  fdmDefinitionsPath="/jcr:content/renditions/fdm-json/jcr:content/definitions"
+/>

@@ -1,0 +1,17 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.horizontalinklist.HorizontalLinkListModel">
+  <!--/* Link List Horizontal */-->
+  <div class="link-list-horizontal b-body-copy-small">
+    <ul 
+	data-sly-list="${ data.links }"
+	class="link-list-horizontal__list"
+	>
+      <li data-sly-test="${item.horizontalLinkTitle}" class="link-list-horizontal__list-item">
+        <a href="${ item.horizontalLinkPath }"
+          aria-label="Go to ${ item.horizontalLinkTitle }"
+          class="link-list-horizontal__list-link"
+          target="${ item.horizontalLinkOpenNewWindow }"
+        >${ item.horizontalLinkTitle }</a>
+      </li>
+    </ul>
+  </div>
+</sly>

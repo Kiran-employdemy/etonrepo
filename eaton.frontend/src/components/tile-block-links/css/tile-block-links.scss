@@ -1,0 +1,301 @@
+//-----------------------------------
+// Tile Link with Icon
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, etc...)
+@import "../../../global/css/_config/sass";
+
+.tile-links {
+
+  &__component {
+    margin-top: rem($spacing__md);
+    margin-bottom: rem($spacing__md);
+  }
+
+  &__row {
+    position: relative;
+  }
+
+  &__copy {
+    padding: rem($spacing__md) 0;
+  }
+
+  &__title {
+    padding-left: 0;
+    padding-right: 0;
+
+    &__heading {
+      font-size: rem($base__font-size * 3.6);
+      font-weight: bold;
+    }
+
+    &__description {
+      font-size: rem($base__font-size * 1.8);
+      line-height: $base__line-height * 1.071;
+      margin-bottom: rem($spacing__sm);
+      margin-top: rem($spacing__sm * .335);
+    }
+  }
+
+  &__element {
+    margin-left: rem($spacing__sm);
+    margin-bottom: rem($spacing__sm);
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+
+    &--with-image-bg {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+
+    // Pre-Defined Background Themes
+    //--------------
+    &:nth-child(6n+1) {
+      background-color: var(--primary-brand-color, $color__primary-blue);
+      margin-left: 0;
+    }
+
+    &:nth-child(6n+2) {
+      background-color: var(--grey-primary-brand-color, $color__primary-gray2);
+    }
+
+    &:nth-child(6n+3) {
+      background-color: var(--secondary-brand-color, $color__accent-aqua);
+    }
+
+    &:nth-child(6n+4) {
+      background-color: var(--grey-secondary-brand-color, $color__accent-orange);
+      margin-left: 0;
+    }
+
+    &:nth-child(6n+5) {
+      background-color: var(--primary-brand-color, $color__primary-blue);
+    }
+
+    &:nth-child(6n+6) {
+      background-color: var(--grey-primary-brand-color, $color__primary-gray1);
+    }
+
+  }
+
+  &__icon {
+    color: $color__white;
+    width: 72px;
+    height: 72px;
+    margin-left: rem($spacing__sm);
+    margin-bottom: rem($spacing__sm * .335);
+  }
+
+  &__image {
+    background-color: $color__secondary-gray5; // EATON-798 Add image renditions to tile-block-links
+    width: 100%;
+  }
+
+  &__link {
+    color: $color__white;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color__white;
+      text-decoration: none;
+    }
+  }
+
+  &__text {
+    // position: absolute;
+    // bottom: 0;
+    width: 100%;
+    // margin: 0;
+    padding: 0 rem($spacing__sm * .5) rem($spacing__sm * .835);
+    font-size: rem($base__font-size * 3);
+
+    @include media-mobile-portrait {
+      width: 86vw;
+    }
+
+    @include media-desktop-and-up {
+      padding: 0 rem($spacing__sm) rem($spacing__sm * .535); // Visually 30px top and bottom padding
+    }
+
+    &::after {
+      color: $color__white;
+      content: "\EA07";
+      display: inline;
+      font-family: 'eaton-glyphicon';
+      font-size: 0.66667em;
+      padding-left: rem($spacing__sm / 6);
+      padding-right: 0;
+      position: relative;
+      text-decoration: none;
+      top: -0.5px;
+      vertical-align: middle;
+      white-space: nowrap;
+
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        display: inline-block;
+        font-size: rem($base__font-size * 2);
+      }
+    }
+
+    [dir='rtl'] & {
+      &::after {
+        content: "\EA06";
+        padding-left: 0;
+        padding-right: rem($spacing__sm / 6);
+      }
+    }
+  }
+
+
+  &__element--with-image-bg &__link {
+    z-index: 5;
+  }
+
+  &__element--with-image-bg &__text {
+    //background-color: rgba(var(--primary-brand-color, $color__primary-gray1), .7);
+    color: $color__white;
+    margin-bottom: 0;
+    z-index: 2;
+
+    &::before {
+      background: var(--primary-brand-color, $color__primary-gray1);
+      content: '';
+      display: block;
+      height: 100%;
+      left: 0;
+      opacity: .7;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+
+    @include media-mobile-and-tablet {
+      padding: rem($spacing__sm * .335) rem($spacing__sm * .5); // Visually 15px top and bottom padding
+    }
+
+    @include media-desktop-and-up {
+      padding: .2rem rem($spacing__sm * .9); // Visually 15px top and bottom padding
+    }
+  }
+
+
+  //-----------------------------------
+  // Component Variations
+  //-----------------------------------
+  &--with-bg-image &__text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  &--with-bg-color &__link {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--with-icon &__icon {
+    margin-top: auto;
+  }
+
+  &--without-icon &__text {
+    margin-top: auto;
+  }
+
+
+  //-----------------------------------
+  // 0-991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__element { margin-left: 0; }
+  }
+
+
+  //-----------------------------------
+  // 0-767px
+  //-----------------------------------
+  @include media-mobile-only {
+    &__component { margin: rem($spacing__md) rem($spacing__sm * .5) rem($spacing__md * .75); }
+
+    &__title {
+
+      &__heading {
+        font-size: rem($base__font-size * 3.2);
+      }
+
+      &__description {
+        font-size: rem($base__font-size * 1.6);
+      }
+    }
+
+  }
+
+
+  //-----------------------------------
+  // > 768px and up
+  //-----------------------------------
+  @include media-tablet-and-up {
+    &__content {
+      padding: 0 rem($spacing__sm * .5);
+    }
+  }
+
+
+  //-----------------------------------
+  // > 992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__element { width: 31%; }
+  }
+
+}
+
+
+
+
+//override column width
+.eaton-grid-control {
+
+  .tile-links {
+    margin: 0;
+
+    // Info: Commit SHA: a5643054d986354b86
+    &.container {
+      width: 100%;
+
+      @include media-mobile-and-tablet {
+        padding: 0 rem($spacing__sm * .5);
+      }
+    }
+
+    &__component { margin: 0; }
+
+    &__content { padding: 0; }
+
+    &__element { margin-left: 0; }
+
+    .col-md-3 { width: 100%; }
+
+  }
+
+}
+
+.text-hypens {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+
+  &::after {
+    top: -4px;
+  }
+
+  bdi {
+    word-break: break-word;
+    hyphens: auto;
+  }
+}

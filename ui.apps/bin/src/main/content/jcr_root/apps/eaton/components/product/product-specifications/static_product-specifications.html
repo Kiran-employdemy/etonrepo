@@ -1,0 +1,132 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Product Specifications</div>
+</sly>
+<script src="/etc.clientlibs/eaton/settings/wcm/designs/clientlib/clientlib-tableToExcel.js"></script>
+
+<sly data-sly-use.data="com.eaton.platform.core.models.productspecifications.ProductSpecificationsModel">
+
+  <div class="product-specifications">
+    <div class="container">
+	<div class="hide" id="excelconverttable"></div>
+      <div class="row">
+
+        <!--/* M-39: Anchor Links */-->
+        <div class="col-xs-12 col-md-3">
+          <div class="module-anchor-links">
+            <ul class="module-anchor-links__list">
+              <sly data-sly-list="${ data.attributeGroupList }">
+                <li class="module-anchor-links__list-item b-body-copy-small">
+                  <!--/* NOTE: data-scroll-to="#element-id" is a CSS Selector (Element, Class, ID) */-->
+                  <button
+                    data-scroll-to="#${ itemList.index }"
+                    data-scroll-to-offset-enabled="true"
+                    class="module-anchor-links__list-link button--reset">
+                      <span>${ item.attributeGroupName }</span>
+                      <i class="icon icon-chevron-right" aria-hidden="true"></i>
+                    </button>
+                </li>
+              </sly>
+              <sly data-sly-list="${ data.attributeTableList }">
+                <li class="module-anchor-links__list-item b-body-copy-small">
+                  <!--/* NOTE: data-scroll-to="#element-id" is a CSS Selector (Element, Class, ID) */-->
+                  <button
+                          data-scroll-to="#${ item.id }"
+                          data-scroll-to-offset-enabled="true"
+                          class="module-anchor-links__list-link button--reset">
+                    <span>${ item.headline }</span>
+                    <i class="icon icon-chevron-right" aria-hidden="true"></i>
+                  </button>
+                </li>
+              </sly>
+            </ul>
+          </div>
+        </div>
+
+        <!--/* M-45: Table */-->
+        <div class="col-xs-12 col-md-9">
+          <sly data-sly-list="${ data.attributeGroupList }">
+            <div class="module-table" id="${ itemList.index }">
+              <h3 class="module-table__head b-eyebrow-large">${ item.attributeGroupName }</h3>
+              <div class="module-table__body">
+                <sly data-sly-list.row="${ item.attributeList }">
+                  <div class="module-table__row">
+                    <div class="module-table__col b-eyebrow-small module-table__col-print">${ row.attributeLabel }</div>
+                    <div class="module-table__col b-body-copy-small">
+
+                      <!--/* Print Table Content */-->
+                      <!-- <sly data-sly-list.row.attributeValue="${ row.attributeValue }"> -->
+
+                        <!--/* if Type == Document */-->
+                        <div data-sly-test.document="${ row.attributeValue.attributeType == 'document' }"
+                          class="module-table__value value-type-document">
+                          <a href="${ row.attributeValue.documentURL }" target="_blank">
+                            ${ row.attributeValue.cdata @ context = 'html'}
+                          </a>
+                          </div>
+
+                        <!--/* if Type == Link */-->
+                        <div data-sly-test.link="${ row.attributeValue.attributeType == 'link' }"
+                          class="module-table__value value-type-link">
+                          <a href="${ row.attributeValue.linkURL }" target="_blank">
+                            ${ row.attributeValue.cdata @ context = 'html'}
+                          </a>
+                        </div>
+
+                        <!--/* if Type == Image */-->
+                        <div data-sly-test.image="${ row.attributeValue.attributeType == 'image' }"
+                          class="module-table__value value-type-image">
+                          <span>${ row.attributeValue.cdata @ context = 'html'}</span>
+                          <a href="${ row.attributeValue.imageURL }" target="_blank">
+                            <img data-src="${ row.attributeValue.imageURL }" alt="${ row.attributeValue.cdata }" class="lazyload"/>
+                          </a>
+                        </div>
+                        
+                        <div data-sly-test.multiple="${ row.attributeValue.attributeType == 'multiple' }"
+                          class="module-table__value value-type-image">
+                          <a href="${ row.attributeValue.linkURL }" target="_blank">
+                         	${ row.attributeValue.cdata @ context = 'html'}
+                          </a>
+                        </div>
+
+                        <!--/* else Default */-->
+                        <div data-sly-test="${ !document && !link && !image &&!multiple }"
+                          class="module-table__value value-type-default">${ row.attributeValue.cdata @ context = 'html'}</div>
+                      <!-- </sly> -->
+
+                    </div>
+                  </div>
+                </sly>
+              </div>
+            </div>
+          </sly>
+
+          <sly data-sly-list="${ data.attributeTableList }">
+            <div class="module-attribute-table" id="${ item.id }">
+              <h3 class="b-eyebrow-large">${ item.headline }</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <sly data-sly-list.header="${ item.headers }">
+                        <th>${ header }</th>
+                    </sly>
+                  </tr>
+                </thead>
+                <tbody>
+                    <sly data-sly-list.row="${ item.rows }">
+                      <tr id="${ row.id }">
+                          <sly data-sly-list="${ row.cells.keySet.iterator }">
+                            <td data-title="${ item }">${ row.cells[item] }</td>
+                          </sly>
+                      </tr>
+                    </sly>
+                </tbody>
+              </table>
+            </div>
+          </sly>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</sly>

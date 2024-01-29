@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          algorithm="AES"
+          key="Ep@$.e@t0n.eP@S."
+          algo.padding="AES/CBC/PKCS5Padding"
+          iv.parameter="12345678901234567890123456789012"/>

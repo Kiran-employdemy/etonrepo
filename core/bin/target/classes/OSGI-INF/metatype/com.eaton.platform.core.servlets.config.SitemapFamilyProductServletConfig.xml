@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.servlets.config.SitemapFamilyProductServletConfig">
+  <OCD id="com.eaton.platform.core.servlets.config.SitemapFamilyProductServletConfig" name="Eaton- Family Product Servlet" description="">
+    <AD id="family.product.path" type="String" name="Family product path" default="/var/commerce/products/eaton"/>
+    <AD id="generate.xmlFile" type="Boolean" name="Want to Generate XML file?" description="Please Check the check box in case want to generate xml file" default="false"/>
+    <AD id="xml.file.path" type="String" name="DAM XML File Path" description="xml file is here" default="/content/dam/eaton/resources/xml/"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.servlets.SitemapFamilyProductServlet">
+    <Object ocdref="com.eaton.platform.core.servlets.config.SitemapFamilyProductServletConfig"/>
+  </Designate>
+</metatype:MetaData>

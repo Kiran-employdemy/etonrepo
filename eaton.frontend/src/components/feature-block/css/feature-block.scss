@@ -1,0 +1,204 @@
+//-----------------------------------
+// Module M-53: Feature Block
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.feature-block {
+
+  // Background Themes
+  //--------------
+  &__component.theme-white {
+    background-color: $color__white;
+  }
+
+  &__component.theme-light-gray {
+    background-color: $color__secondary-gray6;
+  }
+
+  &__component.theme-primary-branding-color {
+    background-color: var(--primary-brand-color, $color__primary-blue);
+  }
+
+  &__component.theme-primary-branding-color &__links-item,
+  &__component.theme-primary-branding-color &__text-container {
+    color: $color__white;
+  }
+
+  &--left &__text-container {
+    @include media-desktop-and-up {
+      display: flex;
+      flex-direction: column;
+      padding-left: rem($spacing__md);
+      padding-right: rem($spacing__md);
+    }
+  }
+
+  &__component {
+    @include media-tablet-and-up {
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  &--right {
+    flex-direction: row-reverse;
+  }
+
+  &__image {
+    height: 92.6666vw;
+    position: relative;
+    text-align: center;
+
+    @include media-tablet-and-up {
+      height: 60vw;
+      width: 48vw;
+    }
+
+    @include media-desktop-and-up {
+      height: 38vw;
+      max-height: rem($grid__xs * 0.916666666);
+      width: 38vw;
+    }
+
+    @include media-desktop-large {
+      height: 34vw;
+      width: 34vw;
+    }
+
+  }
+
+  &__text-container {
+    padding: rem($spacing__sm) rem($spacing__sm * .5333333333) rem($spacing__md * .75);
+
+    @include media-desktop-and-up {
+      padding: rem($spacing__md);
+
+    }
+  }
+
+  &--with-image &__text-container {
+
+    @include media-desktop-and-up {
+      padding-bottom: rem($spacing__md);
+      padding-top: rem($spacing__md);
+      width: rem($grid__xs * 1.2083333333);
+    }
+
+    @include media-desktop-large {
+      width: rem($grid__sm * 0.9817708333);
+    }
+  }
+
+  &--without-image &__text-container {
+    margin: 0 auto;
+
+    .product-features & {
+      text-align: left;
+      width: $ratio__1-1;
+      max-width: rem($grid__lg-container);
+
+      [dir='rtl'] & {
+        text-align: right;
+      }
+
+      ul {
+        list-style: none;
+        padding-left: rem($spacing__sm * .666666);
+        padding-right: 0;
+
+        @include media-desktop-and-up {
+          padding-left: rem($spacing__sm);
+        }
+
+        /* stylelint-disable selector-max-compound-selectors */
+        [dir='rtl'] & {
+          padding-left: 0;
+          padding-right: rem($spacing__sm * .666666);
+
+          @include media-desktop-and-up {
+            padding-right: rem($spacing__sm);
+          }
+        }
+
+        li {
+          padding-bottom: rem($spacing__sm / 2);
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
+        /* stylelint-enable selector-max-compound-selectors */
+      }
+
+      li::before {
+        background-color: var(--primary-brand-color, $color__primary-blue);
+        border-radius: 50%;
+        content: '';
+        height: rem($spacing__sm * .333333);
+        position: absolute;
+        transform: translate(rem($spacing__sm * -0.6666667), rem($spacing__sm * .2333334));
+        width: rem($spacing__sm * .333333);
+
+        /* stylelint-disable selector-max-compound-selectors */
+        @include media-desktop-and-up {
+          transform: translate(rem($spacing__sm * -1), rem($spacing__sm * .3));
+        }
+
+        [dir='rtl'] & {
+          transform: translate(rem($spacing__sm * 0.6666667), rem($spacing__sm * .2333334));
+
+          @include media-desktop-and-up {
+            transform: translate(rem($spacing__sm), rem($spacing__sm * .3));
+          }
+        }
+        /* stylelint-enable selector-max-compound-selectors */
+      }
+    }
+
+    @include media-desktop-and-up {
+      text-align: center;
+      width: $ratio__4-3;
+    }
+  }
+
+  &__title {
+    // TO DO: possibly remove this once microsites brand tool has been implemented.
+    // If global font overrides are desired once microsites brand tool is implement, it should be handled in _mixins-typography.scss
+    @include font-family__primary-medium(--header-font-medium);
+    font-size: rem($base__font-size * 2.8);
+
+    @include media-desktop-and-up {
+      font-size: rem($base__font-size * 3.6);
+    }
+  }
+
+  &__description {
+    font-size: rem($base__font-size * 1.6);
+    padding-top: rem($spacing__sm * .333333);
+
+    @include media-desktop-and-up {
+      font-size: rem($base__font-size * 1.8);
+    }
+  }
+
+  &__cta-wrapper {
+    padding-top: rem($spacing__sm);
+  }
+
+  &--without-image &__cta-wrapper {
+    @include media-desktop-and-up {
+      text-align: center;
+    }
+  }
+
+  &__links-list {
+    margin-top: 10px;
+  }
+
+  &__links-item {
+    display: block;
+  }
+}
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.DefaultFormsService" immediate="true">
+  <service>
+    <provide interface="com.eaton.platform.core.services.FormsService"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="assemblerService" interface="com.adobe.fd.assembler.service.AssemblerService" field="assemblerService"/>
+  <implementation class="com.eaton.platform.core.services.impl.DefaultFormsService"/>
+</scr:component>

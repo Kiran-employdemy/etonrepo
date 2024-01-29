@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    jcr:title="3D model Configuration"
+    height="{Long}650"
+    warnIfModified="{Boolean}false"
+    width="{Long}900"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Site_x0020_Configuration
+                jcr:primaryType="cq:Panel"
+                title="3D model Configuration"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <modelViewers
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Model Viewers"
+                        fieldDescription="The list of available 3D model viewers."
+                        name="./modelViewers"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <title
+                                    jcr:primaryType="cq:Widget"
+                                    dName="title"
+                                    fieldLabel="Model Viewer Title"
+                                    xtype="textfield">
+                                </title>
+                                <name
+                                    jcr:primaryType="cq:Widget"
+                                    dName="name"
+                                    fieldLabel="Identifier"
+                                    disabled="true"
+                                    hidden="true"
+                                    xtype="textfield">
+                                </name>
+                                <partSolutionsUrl
+                                    jcr:primaryType="cq:Widget"
+                                    dName="partSolutionsUrl"
+                                    fieldLabel="Part Solutions URL"
+                                    xtype="textfield">
+                                </partSolutionsUrl>
+                                <partSolutionsCatalog
+                                    jcr:primaryType="cq:Widget"
+                                    dName="partSolutionsCatalog"
+                                    fieldLabel="Part Solutions Catalog"
+                                    xtype="textfield">
+                                </partSolutionsCatalog>
+                                <resourceGroup
+                                    jcr:primaryType="cq:Widget"
+                                    dName="resourceGroup"
+                                    fieldLabel="Resource Group"
+                                    xtype="textfield">
+                                </resourceGroup>
+                            </items>
+                        </fieldConfig>
+                    </modelViewers>
+                </items>
+            </Site_x0020_Configuration>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,140 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:mixinTypes": [
+    "rep:AccessControllable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Feb 28 2023 21:56:44 GMT-0500",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "cq:LiveRelationship",
+      "mix:versionable",
+      "cq:PropertyLiveSyncCancelled"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "SKU Page",
+    "cq:propertyInheritanceCancelled": [
+      "cq:redirectTarget"
+    ],
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "60a46773-aa75-4f11-b7fc-b1a6b4e11a10",
+    "cq:template": "/conf/eaton/settings/wcm/templates/sku-page1",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:lastModifiedBy": "e0485826",
+    "priority": "0.8",
+    "cq:lastRolledout": "Tue Nov 21 2023 11:58:48 GMT-0500",
+    "msmcomponent": "/content/eaton/us/en-us/skuPage/jcr:content/root/responsivegrid/product_detail_tabs/content/title",
+    "jcr:predecessors": [
+      "9d2c4afa-a0c5-4096-81b8-4522dbfe3756"
+    ],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Tue Feb 28 2023 21:56:44 GMT-0500",
+    "primary-sub-category-tag@TypeHint": "String[]",
+    "cq:lastReplicated": "Tue Nov 21 2023 16:07:49 GMT-0500",
+    "cq:lastModified": "Tue Nov 21 2023 11:58:48 GMT-0500",
+    "view": "generic",
+    "hideInHtml": "false",
+    "cq:cloudserviceconfigs": [
+      "/etc/cloudservices/socialshare/social-share",
+      "/etc/cloudservices/eloquaconfig/production-eloqua-configuration",
+      "/etc/cloudservices/siteconfig/en_us",
+      "/etc/cloudservices/brightcoveconfig/us-en",
+      "/etc/cloudservices/chatconfig/chat-configuration",
+      "/etc/cloudservices/nanorepchatconfig/nanorep-configurations",
+      "/etc/cloudservices/endeca-configurations/endeca-prod",
+      "/etc/cloudservices/pdh-configurations/pdh-configurations",
+      "/etc/cloudservices/pricespider-configurations/price-spider-json"
+    ],
+    "meta-robot-tags": "index,follow",
+    "jcr:baseVersion": "9d2c4afa-a0c5-4096-81b8-4522dbfe3756",
+    "jcr:isCheckedOut": true,
+    "hideInNav": "true",
+    "hideInXml": "false",
+    "page-type": "product-sku",
+    "switchSubCategoryToPIM": "false",
+    "jcr:lastModified": "Wed Sep 26 2018 08:13:15 GMT-0400",
+    "taxonomyAttribute": [
+      "Circuit Breaker Type"
+    ],
+    "jcr:uuid": "d4467d55-9a24-48cc-a2c5-ba8fee725c87",
+    "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "switchTaxonomyAttributesToPIM": "true",
+    "taxonomyAttributeGrpName": [
+      "Electrical Input"
+    ],
+    "textIsRich": "true",
+    "cq:lastRolledoutBy": "admin",
+    "cq:lastModifiedBy": "admin",
+    "changefrequency": "daily",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:LiveRelationship"
+      ],
+      "cq:lastRolledout": "Tue Nov 21 2023 11:58:48 GMT-0500",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "cq:lastRolledoutBy": "admin",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:LiveRelationship"
+        ],
+        "jcr:createdBy": "c3037550",
+        "jcr:lastModifiedBy": "c3037550",
+        "cq:lastRolledout": "Tue Nov 21 2023 11:58:48 GMT-0500",
+        "jcr:created": "Thu Oct 05 2017 15:56:43 GMT-0400",
+        "jcr:lastModified": "Tue Nov 21 2023 11:58:48 GMT-0500",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "cq:lastRolledoutBy": "admin",
+        "cq:responsive": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "cq:lastRolledout": "Tue Nov 21 2023 11:58:48 GMT-0500",
+          "cq:lastRolledoutBy": "admin"
+        },
+        "product_detail_tabs": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship",
+            "cq:LiveSyncCancelled"
+          ],
+          "jcr:createdBy": "c3037550",
+          "jcr:lastModifiedBy": "admin",
+          "cq:lastRolledout": "Fri Oct 02 2020 08:38:24 GMT-0400",
+          "jcr:created": "Thu Oct 05 2017 16:11:00 GMT-0400",
+          "view": "toggle-graphic",
+          "checkIconQrCodePath": "/content/dam/eaton/resources/icons/Confirmation Check.svg",
+          "jcr:lastModified": "Fri Oct 02 2020 08:38:24 GMT-0400",
+          "sling:resourceType": "eaton/components/product/single-sku-product-detail-tabs",
+          "cq:lastRolledoutBy": "e0484348"
+        },
+        "how_to_buy": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "jcr:createdBy": "c9910238",
+          "jcr:lastModifiedBy": "c9910238",
+          "cq:lastRolledout": "Tue Nov 21 2023 11:58:48 GMT-0500",
+          "jcr:created": "Thu Oct 05 2017 16:35:16 GMT-0400",
+          "jcr:lastModified": "Tue Nov 21 2023 11:58:48 GMT-0500",
+          "sling:resourceType": "eaton/components/product/how-to-buy",
+          "cq:lastRolledoutBy": "admin"
+        },
+        "buy_now": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "e9909320",
+          "jcr:lastModifiedBy": "e9909320",
+          "jcr:created": "Tue May 24 2022 09:20:27 GMT-0400",
+          "defaultRadius": "500",
+          "jcr:lastModified": "Tue May 24 2022 09:20:31 GMT-0400",
+          "sling:resourceType": "eaton/components/product/buy-now"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "jcr:primaryType": "nt:unstructured",
+  "jcr:createdBy": "admin",
+  "jcr:lastModifiedBy": "admin",
+  "fragmentVariationPath": "/content/experience-fragments/eaton/language-masters/en-us/test-rollout/master",
+  "jcr:created": "Mon Mar 20 2023 23:08:23 GMT+0000",
+  "excludeCountries": "false",
+  "accountType": [
+    "eaton-secure:accounttype/contractor",
+    "eaton-secure:accounttype/distribution-panel-builder"
+  ],
+  "securePage": "true",
+  "jcr:lastModified": "Tue Mar 21 2023 21:32:24 GMT+0000",
+  "sling:resourceType": "eaton/components/secure/securexf"
+}

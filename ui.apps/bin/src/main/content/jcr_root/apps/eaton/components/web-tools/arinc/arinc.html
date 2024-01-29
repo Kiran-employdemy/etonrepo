@@ -1,0 +1,205 @@
+<div class="arinc-600-config" data-resource="${resource.path}"
+    data-CodificationMessage="${'Webtools.Arinc.CodificationMessage' @ i18n}"
+    data-MandatoryFieldMessage="${'Webtools.Arinc.MandatoryFieldMessage' @ i18n}">
+    <div class="container">
+        <form action="/en-en/arinc600-configurator" method="post" id="souriau-toolkit-arinc-main-form"
+            accept-charset="UTF-8" class="arnic-form">
+            <div class="b-two-cols col-md-12">
+
+                <!-- SIDE A -->
+
+                <div class="col-md-6">
+                    <div class="box">
+                        <!-- SHELL -->
+                        <div class="box-title">${'Webtools.Arinc.ShellTab' @ i18n}</div>
+                        <div id="shell"></div>
+                    </div>
+
+                    <div class="box">
+                        <!-- POLARIZATION -->
+                        <div class="box-title">${'Webtools.Arinc.PolarizationTab' @ i18n}</div>
+                        <div id="polarization"></div>
+                    </div>
+                </div>
+
+                <!-- SIDE B -->
+
+                <div class="col-md-6">
+                    <div class="box">
+                        <div class="box-title">${'Webtools.Arinc.InsertConfigurationTab' @ i18n}</div>
+                        <div id="insert-config"></div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-title">${'Webtools.Arinc.PackagingTab' @ i18n}</div>
+
+                        <!-- CONNECTOR WITH/WITHOUT CONTACTS -->
+
+                        <div class="form-item form-item__b-margin">
+                            <label for="contacts-flag" class="form-item-label">
+                                ${'Webtools.Arinc.ConnectorRequiredToDeliver' @ i18n}
+                            </label>
+                            <span class="form-required">*</span>
+                            <div id="contacts-flag" class="radio-wrapper">
+                                <div class="form-item form-type-radio form-type-radio__inline">
+                                    <input type="radio" id="with-contacts" name="contacts-flag" value="with-contacts">
+                                    <label class="option" for="with-contacts">
+                                        ${'Webtools.Arinc.WithContacts' @i18n}
+                                    </label>
+                                </div>
+
+                                <div class="form-item form-type-radio form-type-radio__inline">
+                                    <input type="radio" id="without-contacts" name="contacts-flag"
+                                        value="without-contacts">
+                                    <label class="option" for="without-contacts">
+                                        ${'Webtools.Arinc.WithoutContacts' @i18n}
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="show-on-contact" class="u-hide">
+
+                            <!-- SIGNAL -->
+                            <div class="form-item form-item__b-margin form-item__hide">
+                                <label for="edit-packaging-signal" class="form-item-label">${'Webtools.Arinc.Signal' @
+                                    i18n}</label>
+                                <span class="form-required">*</span>
+                                <select id="edit-packaging-signal" class="wide">
+                                    <option value="" selected="selected">- Select -</option>
+                                    <option value="with">With</option>
+                                    <option value="without">With out</option>
+                                </select>
+                            </div>
+
+                            <!-- SIGNAL KIND -->
+                            <div class="form-item form-item__b-margin form-item__hide">
+                                <label for="signal-kind" class="form-item-label">${'Webtools.Arinc.Kind' @ i18n}</label>
+                                <span class="form-required">*</span>
+                                <select id="signal-kind" class="wide">
+                                    <option value="" selected="selected">- Select -</option>
+                                </select>
+                            </div>
+
+                            <!-- SIGNAL TAIL -->
+                            <div class="form-item form-item__b-margin form-item__hide">
+                                <label for="signal-tail" class="form-item-label">${'Webtools.Arinc.PCTailLength' @
+                                    i18n}</label>
+                                <span class="form-required">*</span>
+                                <select id="signal-tail" class="wide">
+                                    <option value="" selected="selected">- Select -</option>
+                                </select>
+                            </div>
+
+                            <!-- POWER -->
+                            <div class="form-item form-item__b-margin form-item__hide">
+                                <label for="edit-packaging-power" class="form-item-label">${'Webtools.Arinc.Power' @
+                                    i18n}</label>
+                                <span class="form-required">*</span>
+                                <select id="edit-packaging-power" class="wide">
+                                    <option value="" selected="selected">- Select -</option>
+                                    <option value="with">With</option>
+                                    <option value="without">With out</option>
+                                </select>
+                            </div>
+
+                            <!--POWER KIND -->
+                            <div class="form-item form-item__b-margin form-item__hide">
+                                <label for="power-kind" class="form-item-label">${'Webtools.Arinc.Kind' @ i18n}</label>
+                                <span class="form-required">*</span>
+                                <select id="power-kind" class="wide">
+                                    <option value="" selected="selected">- Select -</option>
+                                </select>
+                            </div>
+
+                            <!-- POWER TAIL -->
+                            <div class="form-item form-item__b-margin form-item__hide">
+                                <label for="power-tail" class="form-item-label">${'Webtools.Arinc.PCTailLength' @
+                                    i18n}</label>
+                                <span class="form-required">*</span>
+                                <select id="power-tail" class="wide">
+                                    <option value="" selected="selected">- Select -</option>
+                                </select>
+                            </div>
+
+                            <!-- COAX -->
+                            <div class="form-item form-item__b-margin form-item__hide">
+                                <label for="edit-packaging-coax" class="form-item-label">${'Webtools.Arinc.Coax' @
+                                    i18n}</label>
+                                <span class="form-required">*</span>
+                                <select id="edit-packaging-coax" class="wide">
+                                    <option value="" selected="selected">- Select -</option>
+                                </select>
+                            </div>
+
+                            <!-- QUADRAX -->
+                            <div class="form-item form-item__b-margin form-item__hide">
+                                <label for="edit-packaging-quadrax" class="form-item-label">${'Webtools.Arinc.Quadrax' @
+                                    i18n}</label>
+                                <span class="form-required">*</span>
+                                <select id="edit-packaging-quadrax" class="wide">
+                                    <option value="" selected="selected">- Select -</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- SOURCE CODE -->
+                        <div class="form-item form-item__b-margin">
+                            <label for="packaging-source-code"
+                                class="form-item-label">${'Webtools.Arinc.PackagingSourceCode' @ i18n}</label>
+                            <input type="text" value="" id="packaging-source-code" disabled class="u-show" />
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <div class="form-actions form-block text-center">
+                <div class="align-btn-center">
+                    <button type="submit" id="calculate" name="op" value="CALCULATE"
+                        class="b-button b-button__primary b-button__primary--primary-branding-color-reversedbtn b-button__primary b-button__primary--primary-branding-color-reversed">
+                        ${'Webtools.Arinc.BuildButton' @ i18n}
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="eaton-topic-link mt cc">
+        <div class="container scroll-here">
+            <div class="row eaton-topic-link__row">
+                <div class="col-md-12 text-center">
+
+                    <!-- PART NUMBER GENERATED -->
+                    <div id="valid-result" class="eaton-topic-link--primary-branding-color ptb30">
+                        <h3 class="eaton-topic-link__header b-heading-h3">
+                            ${'Webtools.Arinc.MatchingProductText' @ i18n}
+                        </h3>
+                        <h3 class="eaton-topic-link__header b-heading-h3 calc-result" id="calc-result">
+
+                        </h3>
+                    </div>
+
+                    <!-- PART NUMBER FAILED -->
+                    <div id="failed-result" class="eaton-topic-link--primary-branding-color ptb30">
+                        <h3 class="eaton-topic-link__header b-heading-h3">
+                            ${'Webtools.Arinc.PartNumberFailureMessage' @ i18n}
+                        </h3>
+                    </div>
+
+                    <!-- <p class="contact-info">${'Webtools.Arinc.ContactInfoText' @ i18n}</p> -->
+                </div>
+
+                <!-- CONTACT US BUTTON -->
+                <!-- <div class="col-md-4">
+                    <a class="b-button b-button__primary b-button__primary--dark u-float-right" href="${properties.contactLinkPath}.html">
+                        ${'Webtools.Arinc.ContactUsButton' @ i18n}
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<h1 id="default-message" class="u-text-center"> ARINC600 Component </h1>

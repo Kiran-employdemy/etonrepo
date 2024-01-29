@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.endeca.services.impl.EndecaQRServiceImpl" immediate="true" activate="init">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="max.host.connections" type="Integer" value="1000"/>
+  <property name="process.label" type="String" value=" EndecaQRServiceImpl"/>
+  <property name="max.connections" type="Integer" value="1000"/>
+  <property name="service.description" type="String" value=" Endeca QR Service"/>
+  <property name="max.cache.duration" type="Integer" value="60"/>
+  <property name="max.cache.size" type="Integer" value="1000"/>
+  <property name="global.sku.page.path" type="String" value="/globalSku"/>
+  <service>
+    <provide interface="com.eaton.platform.integration.endeca.services.EndecaQRService"/>
+  </service>
+  <reference name="endecaConfig" interface="com.eaton.platform.integration.endeca.services.EndecaConfig" field="endecaConfig"/>
+  <implementation class="com.eaton.platform.integration.endeca.services.impl.EndecaQRServiceImpl"/>
+</scr:component>

@@ -1,0 +1,89 @@
+<sly data-sly-use.upsellModel="com.eaton.platform.core.models.UpSellProductsModel">
+	<a name="upsell-products"></a>
+	<div class="related-products--upsell module-related-products__wrapper container">
+		<div class="container">
+		<div class="module-related-products__header">
+			<sly data-sly-test="${upsellModel.skuSellList}">
+				<sly data-sly-test="${upsellModel.getHeadlineValue}">
+					<h3 class="module-related-products__headline">${upsellModel.getHeadlineValue}</h3>
+				</sly>
+			</sly>
+		</div>
+	
+
+	<!-- Start Carousel Grid-->
+	<div class="grid-crousal-view">
+		<!--Carousel View-->
+		<div
+			class="module-related-products upsell-products hides ${upsellModel.viewType == 'Carousel' ? 'showbox' : ''}">
+			<ul class="upsell-products__slides" data-sly-list="${upsellModel.skuSellList}">
+				<li class="slides col-xs-12 ${upsellModel.skuSellList.size < 3 ? 'col-sm-4' : 'col-sm-3'}">
+					<a href="${item.link}" target="_blank" class="u-absolute-fill">
+						<span class="sr-only">${item.title}</span>
+					</a>
+					<div class="col-xs-12 related-products-component__card rendition">
+						<div class="rendition">
+							<img class="rendition__image img-responsive" data-src="${ item.image }"
+								data-mobile-rendition="${ item.image }" data-tablet-rendition="${ item.image }"
+								data-desktop-rendition="${ item.image }" alt="${ item.altText }" />
+						</div>
+					</div>
+					<div class="col-xs-12 related-products-component__info">
+						<p class="b-eyebrow-small related-products-component__title">${item.catalog}</p>
+						<p class="b-h4-link">${item.productFamily}</p>
+						<sly data-sly-test="${item.longDesc}">
+							<p>${item.longDesc}</p>
+						</sly>
+					</div>
+				</li>
+			</ul>
+			<sly data-sly-test="${upsellModel.skuSellList.size > 3}">
+				<button class="upsell-products__prev-arrow upsell-products__arrows button--reset">
+					<i class="icon icon-chevron-left"></i> <span class="sr-only">Go
+						to Previous Item</span>
+				</button>
+				<button class="upsell-products__next-arrow upsell-products__arrows button--reset">
+					<i class="icon icon-chevron-right"></i> <span class="sr-only">Go
+						to Next Item</span>
+				</button>
+			</sly>
+		</div>
+
+		<!----- Grid View ----->
+		<div class="module-related-products upsell-products  hides ${upsellModel.viewType == 'Grid' ? 'showbox' : ''}">
+			<ul class="upsell-products grid-view grid-upshell" id="gridupshell" data-sly-list="${upsellModel.skuSellList}">
+				<li class="col-xs-12">
+					<a href="${item.link}" target="_blank" class="u-absolute-fill grid-link">
+						<span class="sr-only">${item.title}</span>
+					</a>
+					<div class="col-xs-12 related-products-component__card">
+						<div class="rendition">
+							<img class="rendition__image img-responsive" data-src="${ item.image }"
+								data-mobile-rendition="${ item.image }" data-tablet-rendition="${ item.image }"
+								data-desktop-rendition="${ item.image }" alt="${ item.altText }" />
+						</div>
+					</div>
+					<div class="col-xs-12 related-products-component__info">
+						<p class="b-eyebrow-small related-products-component__title">${item.catalog}</p>
+						<p class="b-h4-link">${item.productFamily}</p>
+						<sly data-sly-test="${item.longDesc}">
+							<p>${item.longDesc}</p>
+						</sly>
+					</div>
+				</li>
+			</ul>
+			<div class="load-more-btn grid-upshell-btn cta-default">
+				<a href="javascript:void(0)" class="b-button b-button__tertiary b-button__tertiary--light more-text">
+					${'viewMoreText' @ i18n}
+				</a>
+				<a href="javascript:void(0)" class="b-button b-button__tertiary b-button__tertiary--light less-text">
+					${'viewLessText' @ i18n}
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- End Carousel Grid-->
+</div>
+</div>
+</sly>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.jobs.consumers.RolloutConflictReportConsumerImpl" configuration-policy="require">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="service.description" type="String" value=" Rollout Conflict Report Job Consumer"/>
+  <property name="job.topics" type="String" value="eaton/sling/job/rolloutConflict"/>
+  <property name="process.label" type="String" value=" RolloutConflictReportConsumerImpl"/>
+  <service>
+    <provide interface="org.apache.sling.event.jobs.consumer.JobConsumer"/>
+  </service>
+  <reference name="rolloutConflictManager" interface="com.eaton.platform.core.services.msm.RolloutConflictManager" field="rolloutConflictManager"/>
+  <implementation class="com.eaton.platform.core.jobs.consumers.RolloutConflictReportConsumerImpl"/>
+</scr:component>

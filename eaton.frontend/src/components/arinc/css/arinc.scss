@@ -1,0 +1,130 @@
+//-----------------------------------
+// Arinc600 Component
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, etc...)
+@import "../../../global/css/_config/sass";
+
+.arinc-600-config {
+  .box {
+    padding: 40px 40px 20px;
+    margin: 0 0 20px;
+    border: 1px solid var(--color__ink-30);
+  }
+
+  .box-title {
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 40px;
+    margin-bottom: 27px;
+  }
+
+  .form-item {
+
+    &__b-margin {
+      margin-bottom: 3rem;
+    }
+
+    &__hide {
+      display: none;
+    }
+
+    .form-item-label {
+      font-family: var(--secondary-font);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--color__ink-95);
+    }
+
+    .form-required {
+      color: var(--color__ruby-40);
+    }
+
+    input:disabled {
+      outline: 0;
+      border-width: 0 0 1px;
+      background-color: transparent;
+      cursor: not-allowed;
+      width: 100%;
+    }
+
+    .form-type-radio {
+      &__inline {
+        display: inline-block;
+        margin-right: 1rem;
+      }
+    }
+
+    .option {
+      font-family: var(--secondary-font);
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    .error-msg {
+      color: var(--color__ruby-40);
+      font-weight: 400;
+      font-size: 12px;
+    }
+
+  }
+
+  .calc-result {
+    margin: .5rem 0 .75rem 0;
+    text-transform: uppercase;
+  }
+
+  .b-two-cols {
+    margin-bottom: 60px;
+  }
+
+  .mt {
+    margin-top: 0px;
+  }
+
+  .ptb30 {
+    padding: 30px;
+  }
+
+  .contact-info {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color__white);
+  }
+
+  /* stylelint-disable property-no-empty-source */
+  .check-box-wrapper {
+    .eaton-checkbox-custom {
+      padding-right: 1rem;
+    }
+  }
+  /* stylelint-enable property-no-empty-source */
+
+  .nice-select {
+    float: inherit;
+
+    .current {
+      display: block;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .option {
+      white-space: initial;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .list {
+      max-height: 160px;
+      overflow-y: scroll;
+    }
+  }
+}

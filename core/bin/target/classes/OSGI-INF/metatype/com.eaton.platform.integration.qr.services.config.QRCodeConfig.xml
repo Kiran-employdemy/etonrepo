@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.qr.services.config.QRCodeConfig">
+  <OCD id="com.eaton.platform.integration.qr.services.config.QRCodeConfig" name="Eaton QR code Service" description="">
+    <AD id="google.api.key" type="String" name="Config google api for Geo location" default=""/>
+    <AD id="qr.validation.url" type="String" name="QR validation URL(validateSerial)" default=""/>
+    <AD id="qr.authCode.validation.url" type="String" name="QR validation URL(validateAuthCode)" default=""/>
+    <AD id="qr.reportissue.url" type="String" name="QR report issue URL(validateSerial)" default=""/>
+    <AD id="qr.oauth.accessToken.url" type="String" name="QR oauth accessToken URL" default=""/>
+    <AD id="qr.validation.apikey" type="String" name="QR validation api key" default=""/>
+    <AD id="qr.validation.apisecret" type="String" name="QR validation api secret" default=""/>
+    <AD id="serial.num.auth.msg" type="String" name="Default Serial number Authenticated message." default=""/>
+    <AD id="catalog.number" type="String" name="Default Catalog Number" default=""/>
+    <AD id="authentication.tool.type" type="String" name="Default Authentication ToolType"/>
+    <AD id="geolocation.akamai.header" type="String" name="Akamai Geolocation Header"/>
+    <AD id="request.header.attributes" type="String" cardinality="2147483647" name="Attribute Names From Request Header" description="Enter value in following format : Country = country_code"/>
+    <AD id="true.client.ip.header" type="String" name="Akamai True Client IP Header"/>
+    <AD id="country.code.mapping" type="String" name="Country Code to Country Name Mapping Json File Path"/>
+    <AD id="scan.image" type="String" name="Default Scan Image" default=""/>
+    <AD id="registered.user" type="String" name="Default Registered User" default=""/>
+    <AD id="user.id" type="String" name="Default UserId" default=""/>
+    <AD id="language" type="String" name="Default Language" default=""/>
+    <AD id="accessTokenCache" type="String" name="Token Cache" description="Token Cache" default=""/>
+    <AD id="accessTokenCacheSize" type="Integer" name="Token Cache Size" description="Token Cache Size" default="5"/>
+    <AD id="accessTokenCacheDuration" type="Integer" name="Token Cache Duration (minutes)" description="Access Token Cache Duration (minutes)" default="50"/>
+    <AD id="responseCache" type="String" name="Response Cache" description="Response Cache" default=""/>
+    <AD id="responseCacheSize" type="Integer" name="Response Cache Size" description="Response Cache Size" default="1000"/>
+    <AD id="responseCacheDuration" type="Integer" name="Response Cache Duration (hours)" description="Response Cache Duration (hours)" default="24"/>
+    <AD id="responseTimeout" type="Integer" name="Api timeout (seconds)" description="Api timeout (seconds)" default="30"/>
+    <AD id="maxConnections" type="Integer" name="Max Connections" description="Defines the maximum number of connections allowed overall. This value only applies to the number of connections from a particular instance of HttpConnectionManager." default="200"/>
+    <AD id="maxHostConnections" type="Integer" name="Max Host Connections" description="Defines the maximum number of connections allowed per host configuration. These values only apply to the number of connections from a particular instance of HttpConnectionManager." default="200"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.qr.services.impl.QRServiceImpl">
+    <Object ocdref="com.eaton.platform.integration.qr.services.config.QRCodeConfig"/>
+  </Designate>
+</metatype:MetaData>

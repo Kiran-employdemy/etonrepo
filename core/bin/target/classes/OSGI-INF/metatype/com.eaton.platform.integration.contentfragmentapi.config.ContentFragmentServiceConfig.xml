@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.contentfragmentapi.config.ContentFragmentServiceConfig">
+  <OCD id="com.eaton.platform.integration.contentfragmentapi.config.ContentFragmentServiceConfig" name="ContentFragmentService" description="">
+    <AD id="config.delimiter" type="String" name="Config Delimiter" description="Delimiter used for the config values" default="="/>
+    <AD id="contentfragment.service.config" type="String" cardinality="2147483647" name="Content Fragment Service Configuration" description="Content Fragment DAM and Content Service Model properties" default="cfdam-golfpride-navigation=/content/dam/golfpride/,cfmodel-golfpride-navigation=/conf/golfpride/settings/dam/cfm/models/navigation-api"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.contentfragmentapi.servlet.ContentFragmentAPIServlet">
+    <Object ocdref="com.eaton.platform.integration.contentfragmentapi.config.ContentFragmentServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

@@ -1,0 +1,84 @@
+<sly data-sly-use.articleListModel="com.eaton.platform.core.models.articlelist.ArticleListModel">
+
+  <div class="article-list__component">
+    <div class="container">
+      <!--/* Component header */-->
+      <div data-sly-test="${ articleListModel.cardsHeader || articleListModel.cardsDescription }" class="row">
+        <div class="col-xs-12">
+          <h2 data-sly-test="${ articleListModel.cardsHeader }"
+            class="article-list__title b-heading-h2">${ articleListModel.cardsHeader }</h2>
+          <p data-sly-test="${ articleListModel.cardsDescription }"
+            class="article-list__description b-body-copy">${ articleListModel.cardsDescription }</p>
+        </div>
+      </div>
+      <div class="row">
+
+<sly data-sly-list.card="${articleListModel.listTypeArray}" data-sly-unwrap>
+        <!--/*
+          Single Feature
+          */-->
+
+        <div data-sly-test="${cardList.first}" class="article-single-feature col-xs-12 col-md-6">
+          <a href="${card.linkPath}"
+            target="${card.newWindow}"
+            class="article-single-feature__link u-absolute-fill"
+          >
+            <!--/* This Text is used by Screen Readers / For Accessibility */-->
+            <span class="sr-only">${ articleListModel.cardsHeader } ${ articleListModel.cardsDescription }</span>
+          </a>
+
+          <div class="article-single-feature__image">
+            <!-- Start: Rendition Image Component -->
+            <sly data-sly-use.tpl="eaton/components/shared/templates/rendition-background.html">
+              <sly data-sly-call="${ tpl.module @ data=card }"></sly>
+            </sly>
+            <!-- End: Rendition Image Component -->
+          </div>
+
+          <div class="article-single-feature__copy">
+            <div class="article-single-feature__eyebrow b-eyebrow-large" data-sly-test="${ card.linkEyebrow }">${ card.linkEyebrow }</div>
+            <div class="article-single-feature__heading b-heading-h4">${ card.linkTitle }</div>
+            <div class="article-single-feature__date">${ card.publicationDateDisplay }</div>
+          </div>
+        </div>
+
+
+
+        <!--/*
+          Other Articles
+        */-->
+        <div data-sly-test="${!cardList.first}"
+          class="article-list__articles col-xs-12 col-md-6">
+
+          <div class="article-list__item">
+            <a href="${ card.linkPath }"
+              target="${ card.newWindow }"
+              class="article-list__link u-absolute-fill"
+            >
+              <!--/* This Text is used by Screen Readers / For Accessibility */-->
+              <span class="sr-only">${ articleListModel.cardsHeader } ${ articleListModel.cardsDescription }</span>
+            </a>
+
+            <!-- <div class="article-list__border"></div> -->
+            <div class="article-list__article-copy">
+              <p class="article-list__eyebrow b-eyebrow-small" data-sly-test="${ card.linkEyebrow }">${ card.linkEyebrow }</p>
+              <p class="article-list__heading b-heading-h4">${ card.linkTitle }</p>
+              <p class="article-list__date">${ card.publicationDateDisplay }</p>
+            </div>
+          </div>
+        </div>
+
+</sly>
+      </div>
+
+
+      <!--/* Bottom CTA */-->
+      <div class="row">
+        <div class="article-list__cta-container col-xs-12 text-center">
+          <sly data-sly-resource="${ 'cta' @ resourceType='/apps/eaton/components/general/ctabutton' }"></sly>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</sly>

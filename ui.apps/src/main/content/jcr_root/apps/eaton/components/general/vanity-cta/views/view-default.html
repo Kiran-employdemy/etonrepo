@@ -1,0 +1,11 @@
+<sly>
+    <div data-sly-test="${properties.label}" class="cta-default ${properties.alignRight ? 'cta-align__right' : ''}">
+        <sly data-sly-test="${ properties.color != 'primary-branding-blue-link' }">
+            <a href="#"
+            target="${properties.newWindow ? '_blank' : ''}"
+			data-attr-param="${properties.vanityQueryParameterName}"
+            class="b-button b-button__primary b-button__primary--${properties.color}"
+            role="button">${properties.label}</a>
+        </sly>
+    </div>
+</sly>

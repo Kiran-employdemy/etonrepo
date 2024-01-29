@@ -1,0 +1,63 @@
+<!--/*
+  Search Result Module - Type: Resource
+
+  -
+  NOTE: If the HTML structure of this file changes, please also Update the file:
+  `/eaton.frontend/src/components/search-results/js/search-results.js`
+  Since that files contains a Javascript Template that is used when more results are loaded with AJAX
+
+*/-->
+<template data-sly-template.item="${ @ data }">
+
+  <div class="results-list-submodule results-list-submodule--type-${ data.contentType }">
+
+    <div class="results-list-submodule__icon-wrapper">
+      <a href="${ data.url @ context='uri' }"
+        target="${ data.urlTarget }"
+        class="results-list-submodule__url-link"
+        aria-label="${ 'Download' @i18n } ${ data.contentItem.documentName }"
+      >
+
+        <span class="sr-only">${ data.url @ context='uri'}</span>
+        <i class="icon icon-download" aria-hidden="true"></i>
+      </a>
+    </div>
+
+    <!--/* Content */-->
+    <div class="results-list-submodule__content-wrapper">
+
+      <h4 class="results-list-submodule__name b-heading-h5">
+        <a href="${ data.url @ context='uri' }"
+          target="${ data.urlTarget }"
+          data-track-download="${data.trackDownload}"
+          class="results-list-submodule__name-link track_download"
+          data-analytics-event="search-result"
+        >${ data.title @ context='html'}</a>
+      </h4>
+
+	 <sly data-sly-test="${ data.fileSize !='' || data.fileType != ''}">
+      <div class="results-list-submodule__document b-body-copy">${ '({0}{1})' @ format=[ data.fileType, data.fileSize ] }</div>
+	 </sly> 
+    <sly data-sly-test="${data.eatonSHA != ''}">
+      <div class="b-body-copy-small download-links__SHA">
+          ${'sha256' @ i18n} : ${data.eatonSHA @ context='unsafe'}
+      </div>
+    </sly>
+    <sly data-sly-test="${data.eatonECCN != ''}">
+      <div class="b-body-copy-small download-links__warning">
+          ${'eccnWarning' @ i18n} ${data.eatonECCN @ context='unsafe'}
+      </div>
+    </sly>
+
+      <div class="results-list-submodule__url b-body-copy-small">
+        <a href="${ data.url @ context='uri' }"
+          target="${ data.urlTarget }"
+          data-track-download="${data.trackDownload}"
+          class="results-list-submodule__url-link track_download"
+          aria-label="${ 'Download' @i18n } ${ data.title @ context='html'}"
+        ><i data-sly-test="${data.secure}" class="icon icon-secure-lock" aria-hidden="true"></i>${ data.completeUrl @ context='uri'}</a>
+      </div>
+    </div>
+  </div>
+
+</template>

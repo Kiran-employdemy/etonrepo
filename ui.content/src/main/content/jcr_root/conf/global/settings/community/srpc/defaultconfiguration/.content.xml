@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    asipath="/content/usergenerated/asi/cloud"
+    consumerkey="\{83317bc1916856748bf58d825acf5609530035014e569870bc42cd0b90023a19c26e0fa7b5781c5d4a003054890d4203756fad51da2462265d3002b19776e0e9}"
+    hosturl="https://ep1or1.aemcommunities.com"
+    reportsuite="EATCasrpdev"
+    secret="\{ce55e201dfd55e0474acb69e5c4ec11328df136772db33a259e5e3b535c7888f8c8b40ece6ee02108e67a142da8f7c51d3c6383ce8dde2d5ae18c1d98e70f04e}"
+    type="asrp"/>

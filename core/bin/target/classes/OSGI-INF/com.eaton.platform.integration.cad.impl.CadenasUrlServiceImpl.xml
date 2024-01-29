@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.cad.impl.CadenasUrlServiceImpl" immediate="true" activate="activate" modified="activate">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="cadQualifierUrl" type="String" value="https://www.partcommunity.com/cadqualifier.asp?firm=eaton_cad"/>
+  <property name="service.description" type="String" value=" CadenasUrlServiceImpl"/>
+  <property name="process.label" type="String" value=" CadenasUrlServiceImpl"/>
+  <property name="partCommunityUrl" type="String" value="https://webapi.partcommunity.com/cgi-bin/cgi2pview.exe"/>
+  <service>
+    <provide interface="com.eaton.platform.integration.cad.services.CadenasUrlService"/>
+  </service>
+  <reference name="httpFactory" interface="org.apache.http.osgi.services.HttpClientBuilderFactory" field="httpFactory"/>
+  <implementation class="com.eaton.platform.integration.cad.impl.CadenasUrlServiceImpl"/>
+</scr:component>

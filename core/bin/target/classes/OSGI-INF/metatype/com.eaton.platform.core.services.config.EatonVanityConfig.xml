@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.EatonVanityConfig">
+  <OCD id="com.eaton.platform.core.services.config.EatonVanityConfig" name="Eaton Vanity URL Configuration" description="Vanity URL data-store and redirect paths configuration">
+    <AD id="enable.vanity.flow" type="Boolean" name="Enable Vanity Flow" description="If true, custom vanity flow will be enabled" default="false"/>
+    <AD id="intermediate.page.name" type="String" name="Intermediate page name" description="Enter absolute path for intermediate page name" default=""/>
+    <AD id="vanity.data.store.location.path" type="String" name="Vanity data store parent" description="Enter parent jcr node for vanity data store" default=""/>
+    <AD id="eaton.com.data.store.filename" type="String" name="Vanity data store - eaton" description="Enter eaton file name for vanity data store" default=""/>
+    <AD id="eatoncummins.data.store.filename" type="String" name="Vanity data store - eatoncummins" description="Enter eatoncummins file name for vanity data store" default=""/>
+    <AD id="greenswitching.data.store.filename" type="String" name="Vanity data store - greenswitching" description="Enter greenswitching file name for vanity data store" default=""/>
+    <AD id="phoenixtecpower.data.store.filename" type="String" name="Vanity data store - phoenixtecpower" description="Enter phoenixtecpower file name for vanity data store" default=""/>
+    <AD id="top.level.domain.config" type="String" cardinality="2147483647" name="Top level domain configuration" description="Enter Top level domain with respective repository path in this format (no spaces) : Domain name | Repository Path" default=""/>
+    <AD id="vanity.lookup.skip.paths" type="String" cardinality="2147483647" name="Vanity lookup paths to skip" description="Enter the paths that will be skipped from vanity lookup " default=""/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.vanity.impl.EatonVanityConfigImpl">
+    <Object ocdref="com.eaton.platform.core.services.config.EatonVanityConfig"/>
+  </Designate>
+</metatype:MetaData>

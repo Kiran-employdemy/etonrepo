@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.injectors.impl.EatonSiteConfigInjectorImpl" immediate="true">
+  <property name="service.ranking" type="String" value="4004"/>
+  <service>
+    <provide interface="org.apache.sling.models.spi.Injector"/>
+  </service>
+  <reference name="eatonSiteConfigService" interface="com.eaton.platform.core.services.EatonSiteConfigService" field="eatonSiteConfigService"/>
+  <implementation class="com.eaton.platform.core.injectors.impl.EatonSiteConfigInjectorImpl"/>
+</scr:component>

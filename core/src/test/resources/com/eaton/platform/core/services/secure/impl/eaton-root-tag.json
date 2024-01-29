@@ -1,0 +1,52 @@
+{
+  "jcr:primaryType": "cq:Tag",
+  "jcr:mixinTypes": [
+    "cq:ReplicationStatus",
+    "rep:AccessControllable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:title": "Eaton",
+  "cq:lastReplicationAction": "Activate",
+  "cq:lastReplicatedBy": "admin",
+  "jcr:created": "Tue Feb 28 2023 21:29:43 GMT-0500",
+  "cq:lastReplicated": "Fri Jan 22 2021 00:02:56 GMT-0500",
+  "jcr:description": "",
+  "sling:resourceType": "cq/tagging/components/tag",
+  "country": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Country",
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:lastModifiedBy": "e0063964",
+    "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+    "cq:lastReplicated": "Fri Jan 22 2021 00:52:56 GMT-0500",
+    "jcr:description": "",
+    "jcr:lastModified": "Fri Oct 13 2017 09:41:47 GMT-0400",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title.da_dk": "Land",
+    "jcr:title.de_de": "Land",
+    "jcr:title.en_gb": "Country",
+    "jcr:title.es_mx": "País",
+    "jcr:title.fi_fi": "Maa",
+    "jcr:title.fr_ca": "Pays",
+    "jcr:title.he_il": "מדינה",
+    "jcr:title.hu_hu": "Ország",
+    "jcr:title.it_it": "Paese",
+    "jcr:title.lt_lt": "Šalis",
+    "jcr:title.nl_nl": "Land",
+    "jcr:title.no_no": "Land",
+    "jcr:title.pl_pl": "Kraj",
+    "jcr:title.pt_br": "País",
+    "jcr:title.ro_ro": "Țara",
+    "jcr:title.ru_ru": "Страна",
+    "jcr:title.sv_se": "Land",
+    "jcr:title.tr_tr": "Ülke",
+    "jcr:title.uk_ua": "Країна",
+    "jcr:title.zh_cn": "国家/地区"
+  },
+  "rep:policy": {}
+}

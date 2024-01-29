@@ -1,0 +1,46 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">3 Column Container: ${currentNode.name}</div>
+</sly>
+
+
+<div class="eaton-grid-control eaton-grid-control--3-col eaton-grid-control--theme-${ properties.color == 'primary-branding-color' ? 'primary-branding-color' : ''}${ properties.color == 'grey' ? 'grey' : ''} ${ properties.color == 'primary-branding-color'  ? 'dark-theme' : '' }">
+  <div class="container">
+    <div class="row">
+      <!--/* Include Parsys - Column One */-->
+      <div class="col-xs-12 col-md-4 eaton-grid-control__column${properties.padding == 'default' ? '--defaultPadding' : null}">
+         <sly data-sly-test="${properties.dividers != 'no'}">
+			<div data-sly-unwrap="${!wcmmode.edit}">
+				<sly data-sly-resource="${'col1-par-divider' @ resourceType='eaton/components/general/divider'}" />
+			</div>
+		 </sly>
+          <div data-sly-unwrap="${!wcmmode.edit}">
+            <sly data-sly-resource="${@path='col1-par', resourceType='wcm/foundation/components/responsivegrid'}" />
+          </div>
+      </div>
+
+      <!--/* Include Parsys - Column Two */-->
+      <div class="col-xs-12 col-md-4 eaton-grid-control__column${properties.padding == 'default' ? '--defaultPadding' : null}">
+        <sly data-sly-test="${properties.dividers != 'no'}">
+			<div data-sly-unwrap="${!wcmmode.edit}">
+				<sly data-sly-resource="${'col2-par-divider' @ resourceType='eaton/components/general/divider'}" />
+			</div>
+		</sly>	
+        <div data-sly-unwrap="${!wcmmode.edit}">
+          <sly data-sly-resource="${@path='col2-par', resourceType='wcm/foundation/components/responsivegrid'}" />
+        </div>
+      </div>
+
+      <!--/* Include Parsys - Column Three */-->
+      <div class="col-xs-12 col-md-4 eaton-grid-control__column${properties.padding == 'default' ? '--defaultPadding' : null}">
+        <sly data-sly-test="${properties.dividers != 'no'}">
+			<div data-sly-unwrap="${!wcmmode.edit}">
+				<sly data-sly-resource="${'col3-par-divider' @ resourceType='eaton/components/general/divider'}" />
+			</div>
+		</sly>
+        <div data-sly-unwrap="${!wcmmode.edit}">
+          <sly data-sly-resource="${@path='col3-par', resourceType='wcm/foundation/components/responsivegrid'}" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.akamai.services.impl.AkamaiNetStorageServiceImpl" configuration-policy="require" activate="activate">
+  <property name="cpCode" type="String" value=""/>
+  <property name="downloadDomain" type="String" value=""/>
+  <property name="signVersion" type="Integer" value="5"/>
+  <property name="shortLiveTokenEncryptionKey" type="String" value=""/>
+  <property name="version" type="String" value="1"/>
+  <property name="storageGroup" type="String" value=""/>
+  <property name="shortLiveTokenTTL" type="Long" value="300"/>
+  <property name="isShortLiveUrl" type="Boolean" value="false"/>
+  <property name="accessKey" type="String" value=""/>
+  <property name="domain" type="String" value=""/>
+  <property name="id" type="String" value=""/>
+  <property name="account" type="String" value=""/>
+  <service>
+    <provide interface="com.eaton.platform.integration.akamai.services.AkamaiNetStorageService"/>
+  </service>
+  <reference name="cryptoSupport" interface="com.adobe.granite.crypto.CryptoSupport" field="cryptoSupport"/>
+  <implementation class="com.eaton.platform.integration.akamai.services.impl.AkamaiNetStorageServiceImpl"/>
+</scr:component>

@@ -1,0 +1,212 @@
+//-----------------------------------
+// M-24: Featured Story
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.featured-story {
+
+  // Featured Story - Image Aspect Ratios
+  // The Above values are Not standard aspect ratios. These were created usign aproximate measures based on the image sizes used in Featured Story component (Experience-Toolkit.pdf).
+  $component-ratio-mobile: percentage(6 / 10);
+  $component-ratio-desktop: percentage(9 / 24);
+
+  &__component {
+    margin: rem($spacing__md) 0;
+    overflow: hidden;
+  }
+
+  &__image {
+    position: relative;
+    padding-top: $component-ratio-mobile;
+  }
+
+  &__text {
+    // TO DO: possibly remove this once microsites brand tool has been implemented.
+    // If global font overrides are desired once microsites brand tool is implement, it should be handled in _mixins-typography.scss
+    @include font-family__primary-medium(--header-font-medium);
+    font-size: rem($base__font-size * 3.6);
+    line-height: $base__line-height * (1.25 / 1.4);
+    padding-top: rem($spacing__sm * .66666);
+  }
+
+  &__row {
+    @include media-desktop-and-up {
+      &--right {
+        padding-right: 0;
+      }
+
+      &--left {
+        padding-left: 0;
+      }
+    }
+  }
+
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__eyebrow {
+    color: $color__white;
+    font-size: rem($base__font-size * 1.8);
+    line-height: $base__line-height * (1.16667 / 1.4);
+  }
+
+  &__link {
+    color: $color__white;
+    display: block;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none;
+      color: $color__white;
+    }
+  }
+
+  &__text &__link::after {
+    color: $color__white;
+    content: "\e258";
+    font-family: 'Glyphicons Halflings';
+    font-size: 0.66667em;
+    display: inline;
+    font-style: normal;
+    font-weight: normal;
+    margin-left: rem($spacing__sm / 6);
+    position: relative;
+    top: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      display: inline-block;
+      font-size: rem($base__font-size * 1.866);
+    }
+
+    @include media-desktop-and-up {
+      font-size: 0.66667em;
+
+      @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        font-size: rem($base__font-size * 2.4);
+      }
+    }
+
+    [dir='rtl'] & {
+      content: "\e257";
+      margin-left: 0;
+      margin-right: rem($spacing__sm / 6);
+    }
+  }
+
+  &__blue {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    color: $color__white;
+    padding: 0;
+
+    &--right {
+      right: 0;
+    }
+
+    &--left {
+      left: 0;
+    }
+
+    &::after {
+      background-color: var(--feature-overlay-color, $color__primary-blue);
+      content: '';
+      display: block;
+      height: 100%;
+      opacity: .8;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+
+      @include media-mobile-only {
+        left: -$grid__outer-padding-width;
+        width: calc(100% + #{$grid__outer-padding-width});
+      }
+    }
+  }
+
+
+  //-----------------------------------
+  // 0 - 767px
+  //-----------------------------------
+  @include media-mobile-only {
+
+    &__blue {
+      padding-left: $grid__outer-padding-width;
+      padding-right: $grid__outer-padding-width;
+      position: relative;
+    }
+
+    &__content {
+      padding: rem($spacing__sm * .8) 0 rem($spacing__sm);
+    }
+
+    &__row {
+      padding-bottom: rem($spacing__sm * .167);
+    }
+
+    &__component {
+      margin-bottom: rem($spacing__md * .75);
+    }
+
+    &__eyebrow {
+      line-height: $base__line-height * 1.1;
+    }
+
+    &__text {
+      font-size: rem($base__font-size * 2.8);
+      line-height: $base__line-height * .9;
+    }
+  }
+
+
+  //-----------------------------------
+  // 768px to 991px
+  //-----------------------------------
+  @include media-tablet-only {
+
+    &__text {
+      padding-top: rem($spacing__sm * .5);
+      width: 250px;
+    }
+
+    &__content {
+      padding: rem($spacing__md) rem($spacing__sm) rem($spacing__md) rem($spacing__md * .834);
+    }
+
+  }
+
+
+  //-----------------------------------
+  // >992px
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__image {
+      padding-top: $component-ratio-desktop;
+    }
+
+    &__blue {
+
+      &--right {
+        .featured-story__content {
+          padding: rem($spacing__md) rem($spacing__md * .85) rem($spacing__md) rem($spacing__md);
+        }
+      }
+
+      &--left {
+        .featured-story__content {
+          padding: rem($spacing__md) rem($spacing__md) rem($spacing__md) rem($spacing__md * .85);
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.MetaTagsLinkDomainServiceConfig">
+  <OCD id="com.eaton.platform.core.services.config.MetaTagsLinkDomainServiceConfig" name="Meta Tags Link Domain Service Configuration" description="Modify domains of canonical and alternate links in the page's metadata">
+    <AD id="excludedCountryDomainKeyList" type="String" cardinality="2147483647" name="Country Code Domain Key Mapping" description="A mapping of excluded countries with their domain key (from ExternalizerImpl config). format: country:domain key, example: cn:eaton-meta-cn" default=""/>
+    <AD id="fallbackDomainKey" type="String" name="Fallback domain key" description="Domain key to use when a country's domain key is not found in ExternalizerImpl config. Domain key must exist in ExternalizerImpl config." default="eaton"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.impl.MetaTagsLinkDomainServiceImpl">
+    <Object ocdref="com.eaton.platform.core.services.config.MetaTagsLinkDomainServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

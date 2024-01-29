@@ -1,0 +1,49 @@
+// Locale / Languages
+// Mapping of locale specific properties based on languages that can be accessed
+// via the get-locale function. These are the default values used.
+//--------------
+
+$locales: (
+  en: (
+    font__primary: Eaton,
+    font__secondary: Arial,
+    h1: (
+      font: 'Eaton Medium',
+      desktop: (
+        font-size: '',
+        line-height: '',
+      ),
+      tablet: 'xx',
+      mobile: (
+        font-size: '',
+        line-height: '',
+      )
+    )
+  ),
+  jp: (
+    font__primary: 'Kozuka Gothic Pro',
+    font__secondary: Eaton
+  ),
+  cn: (
+    font__primary: 'Heiti SC Medium',
+    font__secondary: Eaton
+  ),
+  kr: (
+    font__primary: 'HeadLineA',
+    font__secondary: Eaton
+  ),
+  marathi: (
+    font__primary: 'Kruti Dev',
+    font__secondary: Eaton
+  ),
+  thai: (
+    font__primary: 'Cordia DSE',
+    font__secondary: Eaton
+  )
+);
+
+// Getter for retrieving Font Families
+// @param {String} $locale Locale Value to retrieve properties for
+@function get-locale-font($locale: 'en', $font-property: 'font__primary') {
+  @return map-deep-get($locales, $locale, $font-property);
+}

@@ -1,0 +1,11 @@
+<sly data-sly-test="${wcmmode.edit}">
+    <div class="alert alert-warning">Card List: ${currentNode.name}</div>
+</sly>
+
+<sly data-sly-test="${ properties.view == 'cardList-with-images' }">
+  <sly data-sly-include="views/view-with-image.html"></sly>
+</sly>
+
+<sly data-sly-test="${ properties.view == 'cardList-without-image' }">
+  <sly data-sly-include="views/view-no-image.html"></sly>
+</sly>

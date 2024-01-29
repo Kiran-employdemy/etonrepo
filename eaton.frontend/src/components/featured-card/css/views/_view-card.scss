@@ -1,0 +1,58 @@
+//-----------------------------------
+// M-29: Next Steps (Card Componet)
+//-----------------------------------
+
+
+.card {
+  $color__image-bg: $color__secondary-gray6;
+  $color__image-border: $color__secondary-gray5;
+
+  position: relative;
+
+  &__cta {
+    display: block;
+  }
+
+  &__image-wrapper {
+    margin-bottom: 26px; // Visually 30px bottom margin
+    text-align: center;
+  }
+
+  .rendition__image {
+    background-color: $color__image-bg;
+    border: 1px solid $color__image-border;
+    margin: 0 auto;
+    padding: 20px;
+    height: auto;
+    width: 100%;
+  }
+
+  &__title {
+    color: var(--primary-brand-color, $color__primary-blue);
+  }
+
+  &__eyebrow {
+    // Empty Selector for future reference
+  }
+
+
+  //-----------------------------------
+  // Media Query: Mobile 0-991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__eyebrow {
+      margin-bottom: 4px; // Visually 15px margin
+    }
+  }
+
+
+  //-----------------------------------
+  // Media Query: Desktop >992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__eyebrow {
+      margin-bottom: 20px; // Visually 30px margin
+    }
+  }
+
+}

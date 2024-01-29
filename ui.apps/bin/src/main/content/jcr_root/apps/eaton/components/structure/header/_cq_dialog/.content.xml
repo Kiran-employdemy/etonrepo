@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Header"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Title - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <reference
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                        fieldLabel="Reference *"
+                        name="./reference"
+                        required="true"/>
+                    <primaryNavBGImage
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                        allowUpload="{Boolean}false"
+                        autoStart="{Boolean}false"
+                        class="cq-droptarget"
+                        fieldDescription="This field stores the primary navigation background image which would appear in mobile mode"
+                        fieldLabel="Primary Nav Background Image;"
+                        fileNameParameter="./fileName"
+                        fileReferenceParameter="./primaryNavBGImage"
+                        mimeTypes="[image]"
+                        multiple="{Boolean}false"
+                        name="./imageName"
+                        title="Upload Image Asset"
+                        uploadUrl="${suffix.path}"
+                        useHTML5="{Boolean}true"/>
+                    <primaryNavBGImgAltText
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldLabel="Image Alt Text"
+                            name="./primaryNavImgAtlTxt"/>
+                    <enableBackToTop
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        defaultChecked="false"
+                        name="./enableBackToTop"
+                        text="Enable Back to Top"
+                        value="true"/>
+                    <enableCookieAcceptance
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        defaultChecked="false"
+                        name="./enableCookieAcceptance"
+                        text="Enable Cookie Acceptance"
+                        value="true"/>
+                    <disableFullPageDrawer
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        name="./disableFullPageDrawer"
+                        text="Disable Full Page Drawer"
+                        value="true"/>
+                    <microSiteHeaderOptions
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/select"
+                            fieldDescription="This field indicated about the Micro Site header options."
+                            class="eaton-microsite-header-options"
+                            fieldLabel="Micro Site Header Options"
+                            defaultValue="search"
+                            name="./microSiteHeaderOptions"
+                            required="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <search
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Search Icon"
+                                    value="search"/>
+                            <cta
+                                    jcr:primaryType="nt:unstructured"
+                                    text="CTA"
+                                    value="cta"/>
+                            <none
+                                    jcr:primaryType="nt:unstructured"
+                                    text="None"
+                                    value="none"/>
+                        </items>
+                    </microSiteHeaderOptions>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

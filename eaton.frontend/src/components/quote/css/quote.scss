@@ -1,0 +1,109 @@
+//-----------------------------------
+// Component M-22: Quote
+//-----------------------------------
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+
+.eaton-quote {
+  margin: $spacing__md 0;
+
+  .container {
+    padding: 100px 0 60px;
+    border-top: 4px solid $color__secondary-gray5;
+    border-bottom: 4px solid $color__secondary-gray5;
+    position: relative;
+  }
+
+  &__image {
+    // width: 80px;
+    // height: 82px;
+    // background: $color__white;
+    color: var(--primary-brand-color, $color__primary-blue);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: -8px auto 0;
+
+    .icon {
+      font-size: 8rem;
+    }
+  }
+
+  &__text {
+    font-size: 3.4rem;
+    font-style: italic;
+    @include font-family__secondary(--secondary-font);
+    color: $color__primary-gray1;
+    margin-bottom: 60px;
+  }
+
+  &__author {
+    font-size: 2rem;
+    @include font-family__secondary(--secondary-font);
+    font-style: italic;
+    color: var(--grey-primary-brand-color, $color__primary-gray1);
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+}
+
+@include media-mobile-and-tablet {
+  .eaton-quote {
+    .container {
+      padding: 60px 15px 25px;
+    }
+
+    &__image {
+      // width: 17%;
+      // height: 50px;
+      // background-size: contain;
+
+      .icon {
+        font-size: 6rem;
+        line-height: .9;
+      }
+    }
+
+    &__text {
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+    }
+
+    &__author {
+      font-size: 1.6rem;
+    }
+
+    &__name {
+      display: block;
+    }
+  }
+}
+
+@include media-desktop-and-up {
+  .eaton-grid-control {
+    .eaton-quote {
+      .container {
+        width: 100%;
+      }
+    }
+
+    .quote {
+      padding-top: 0;
+    }
+
+    &.dark-theme {
+      .eaton-quote {
+        &__image,
+        &__text,
+        &__author {
+          color: $color__white;
+        }
+      }
+    }
+  }
+}

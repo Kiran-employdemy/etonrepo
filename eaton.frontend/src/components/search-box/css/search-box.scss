@@ -1,0 +1,109 @@
+//-----------------------------------
+// Component M-4.3: Search Box
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+// Import SubViews
+@import "views/view-inline";
+@import "views/view-default";
+@import "views/view-map";
+
+.eaton-search {
+  .form-control { // Styles for Form Elements
+    appearance: none;
+    border: 0;
+    border-radius: 0;
+    height: auto;
+    box-shadow: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__career {
+    .eaton-search--default__results.active {
+      position: absolute;
+      background: var(--search-box-background-color, #005EB8);
+      box-shadow: 0 rem($spacing__sm / 15) rem($spacing__sm * 0.1333334) rem(-$spacing__sm / 30) rgba(0, 0, 0, .2), 0 rem($spacing__sm * 0.1333334) rem($spacing__sm / 6) 0 rgba(0, 0, 0, .14), 0 rem($spacing__sm / 30) rem($spacing__sm / 3) 0 rgba(0, 0, 0, .12);
+      width: 100%;
+      padding: rem($spacing__sm / 3);
+      margin-top: rem($spacing__sm / 30);
+      z-index: 100;
+    }
+
+    .eaton-search--default__form-submit {
+      @include media-mobile-and-tablet {
+        padding: 0;
+        width: 100%;
+      }
+    }
+
+    .form-group {
+      border-bottom: 0;
+
+      @include media-mobile-and-tablet {
+        display: block;
+        margin: 0 rem($spacing__sm / 3);
+        padding: 0;
+      }
+
+      .b-button__primary {
+        border-color: $color__white;
+        color: $color__white;
+        margin-top: rem($spacing__sm / 2);
+        display: none;
+
+        @include media-mobile-and-tablet {
+          display: inline-block;
+        }
+
+        &:hover {
+          background-color: $color__white;
+          color: var(--navigation-mega-menu-title-background-color, $color__primary-gray1);
+        }
+      }
+
+    }
+
+    &-field {
+      border-bottom: 1px solid $color__white;
+      margin: 0;
+      padding: 0;
+
+      @include media-desktop-and-up {
+        margin: 0 rem($spacing__sm * 0.6666667);
+      }
+    }
+  }
+  // stylelint-disable selector-no-vendor-prefix
+
+  &__career ::placeholder {
+    color: $color__white;
+  }
+  // stylelint-enable
+
+}
+
+.search-results-page {
+  @include media-desktop-and-up {
+    .eaton-search--default {
+      display: none;
+    }
+
+    .eaton-search--default.eaton-search--xref {
+      display: block;
+    }
+
+  }
+}
+
+.eaton-search--default__form-input.eaton-search-textarea {
+  @include media-mobile-portrait {
+    font-size: 1.8rem;
+  }
+}
+
+

@@ -1,0 +1,83 @@
+//-----------------------------------
+// Generic Mixins
+//-----------------------------------
+
+// Typography
+//--------------
+$base-size: $base__font-size;
+
+@function rem($size) {
+  $rem-size: $size / $base-size;
+  @return #{$rem-size}rem;
+}
+
+// @mixin font-size($size) {
+//   font-size: $size; // Fallback in PX
+//   font-size: rem($size);
+// }
+
+
+// Size
+//--------------
+@mixin size($width, $height) {
+  height: $height;
+  width: $width;
+}
+
+// Width & Height
+@mixin square($size) {
+  @include size($size, $size);
+}
+
+// Size
+//--------------
+@mixin component-spacing($spacing: $spacing__sm) {
+  padding: $spacing 0;
+}
+
+
+// Layout Mixins
+//--------------
+@mixin absolute-fill() {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+
+// Appearance
+//--------------
+// EATON-474: Category Hero, Landing Hero - Semi-Transparent gradient should be applied on the whole image
+@mixin image-mask-gradient() {
+  @include absolute-fill;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#bf000000', GradientType=0);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 85%, rgba(0, 0, 0, 0.75) 100%);
+
+  content: '';
+  z-index: 2;
+}
+
+// Clearfix (from Bootstrap v3.3.7)
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+//
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+@mixin clearfix() {
+  &::before,
+  &::after {
+    content: " ";   // 1
+    display: table; // 2
+  }
+
+  &::after {
+    clear: both;
+  }
+}

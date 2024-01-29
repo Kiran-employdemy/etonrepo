@@ -1,0 +1,26 @@
+function check() {
+    var value = false;
+    var decision = "TIMEOUT";
+    try {
+        log.debug("---------- Executing: TimeoutDecider.ecma ----------");
+        var metaData = workflowData.getMetaDataMap();
+        var mdIter = metaData.keySet().iterator();
+
+        while (mdIter.hasNext()) {
+            var key = mdIter.next();
+            log.debug("Key: " + key + "\tValue: " + metaData.get(key));
+        }//while
+
+        log.debug("-----");
+
+        if (metaData.get(decision) == "true") {
+            log.debug("Value was set to 'true'");
+            value = true;
+        }//if
+        log.debug("--------------------");
+    }//try
+    catch (e) {
+        log.error("Error!\n" + e.message);
+    }//catch
+    return value;
+}

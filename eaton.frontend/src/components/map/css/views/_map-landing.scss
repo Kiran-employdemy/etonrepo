@@ -1,0 +1,22 @@
+/* stylelint-disable */
+.map-landing {
+  padding-bottom: rem($spacing__sm); //30px
+
+  &__title {
+    margin: 0;
+    padding-top: rem($spacing__sm); //30px
+    padding-bottom: rem($spacing__sm); //30px
+  }
+
+  &__map {
+    height: auto;
+    overflow: hidden;
+    width: 100%; 
+    height: rem($spacing__sm * 15); //450px
+
+    @include media-tablet-and-up {
+      padding-bottom: 56.25%;
+      height: auto;
+    }
+  }
+}

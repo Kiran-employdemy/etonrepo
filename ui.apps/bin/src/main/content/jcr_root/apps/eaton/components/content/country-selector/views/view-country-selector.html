@@ -1,0 +1,16 @@
+<sly data-sly-use.footerModel="com.eaton.platform.core.models.FooterModel" />
+<div class="country-selector container" data-is-edit-mode="${wcmmode.edit @ context='text'}">
+    <div class="country-selector-header">
+        	<sly data-sly-resource="${'logo' @ resourceType='/apps/eaton/components/structure/logo'}"></sly>
+    </div>
+    <div class="country-selector-body">
+        <div class="row">
+            <div class="col-sm-12 col-md-12">
+                <sly data-sly-resource="${@path='responsivegrid', resourceType='wcm/foundation/components/responsivegrid'}" />
+            </div>
+        </div>
+    </div>
+    <div class="country-selector-footer container">
+        <div class="footer-bottom__copyright b-body-copy-small"> ${ footerModel.copyrightYear } ${ footerModel.defaultLocaleCopyright}</div>
+    </div>
+</div>

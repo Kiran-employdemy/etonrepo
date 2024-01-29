@@ -1,0 +1,47 @@
+<template data-sly-template.module="${ @ data }">
+
+    <div class="module-related-products">
+        <ul class="module-related-products__slides new-product" data-sly-list="${data.listTypeArray}">
+            <li data-sly-test="${item.linkTitle && item.desktopTransformedUrl}" class="module-related-products__slide-item col-xs-12 ${!data.isEligibleForCarousel ? 'col-sm-4' : 'col-sm-3'}">
+    <a href="${item.linkPath}" target="${item.newWindow}" class="u-absolute-fill">
+                <span class="sr-only">${item.linkTitle}</span>
+                </a>
+                <div class="col-xs-12 module-related-products__card">
+                  <!-- Start: Rendition Image Component -->
+                <sly data-sly-use.tpl="eaton/components/shared/templates/rendition-background.html">
+                    <sly data-sly-call="${ tpl.module @ data=item }"></sly>
+                </sly>
+                  <!-- End: Rendition Image Component -->
+                </div>
+                <div class="col-xs-12 module-related-products__info">
+                    <p class="module-related-products__title b-eyebrow-small ">${item.linkEyebrow}</p>
+                    <p class="b-h4-link">
+                        <sly data-sly-test="${item.isSecure}">
+                        <i class="icon icon-secure-lock" aria-hidden="true"></i>
+                        </sly>
+                        ${item.linkTitle}
+                    </p>
+                    <sly data-sly-test="${item.marketingDescription}">
+                        <p class="module-related-products__description related-family" id="related-family-${itemList.index}">
+                            ${item.marketingDescription}
+                        </p>
+                    </sly>
+                    <sly data-sly-test="${data.enableReadMoreLink}">
+                        <a class=".module-related-products-read_more" href="${item.linkPath}" target="${item.newWindow}"><b>${'readMore' @ i18n } ></b></a>
+                    </sly>
+                </div>
+            </li>
+        </ul>
+
+  <sly data-sly-test="${data.isEligibleForCarousel }">
+            <button class="module-related-products__prev-arrow module-related-products__arrows button--reset">
+                <span class="icon icon-chevron-left"></span>
+                <span class="sr-only">Go to Previous Item</span>
+            </button>
+            <button class="module-related-products__next-arrow module-related-products__arrows button--reset">
+                <span class="icon icon-chevron-right"></span>
+                <span class="sr-only">Go to Next Item</span>
+            </button>
+  </sly>
+    </div>
+</template>

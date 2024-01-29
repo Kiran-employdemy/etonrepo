@@ -1,0 +1,114 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.BuyNowModel" 
+     data-sly-use.apigeeConstants="com.eaton.platform.integration.apigee.constants.ApigeeConstants"
+     data-sly-use.googleConstants="com.eaton.platform.integration.google.constants.GoogleConstants"
+      data-sly-use.apigeeService="com.eaton.platform.integration.apigee.services.ApigeeService"
+     data-sly-use.googleService="com.eaton.platform.integration.google.services.GoogleService">
+  <div class="modal fade" 
+       id="buyNowModal" 
+       tabindex="-1" 
+       role="dialog" 
+       aria-hidden="true" 
+       data-page-size="${data.PAGE_SIZE}"
+       data-default-radius="${data.defaultRadius}"
+       data-table-row-link-text="${data.tableRowLinkText}"
+       data-table-row-link-default="${data.tableRowLinkDefault}"
+       data-apigee-servlet-path="${apigeeConstants.APIGEE_SERVLET_PATH}"
+       data-google-servlet-path="${googleConstants.GEOCODING_SERVLET_PATH}"
+       data-di-endpoint-prefix="${data.DI_ENDPOINT_PREFIX}"
+       data-di-endpoint-suffix="${data.DI_ENDPOINT_SUFFIX}"
+        data-apigee-service-timeout="${apigeeService.responseTimeout}"
+        data-google-service-timeout="${googleService.responseTimeout}">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="buy-now__modal__close btn-close" data-dismiss="modal" aria-label="Close">x</button>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+                <form>
+                  <div class="buy-now__location">
+                      <div class="row">
+                        <div class="col">
+                          <label for="buyNowLocation" class="form-label">${'BuyNow.SearchLocationLabel' @i18n}</label>
+                          <img class="buy-now__location__btn__geoicon" src="${data.geolocationIconPath}" alt="${'BuyNow.GeolocationIconAlt' @i18n}">
+                          <a id="buyNowGeolocation"
+                                  class="buy-now__location__btn__geo"
+                                  type="submit">
+                            ${'BuyNow.GeolocationButtonText' @i18n}
+                          </a>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-4 col-md-4 col-xs-8">
+                          <input type="text" class="form-control buy-now__location__input" id="buyNowLocation" placeholder="${'BuyNow.SearchLocationPlaceholder' @i18n}">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col">
+                          <button id="buyNowLocationSearch" 
+                                  class="buy-now__location__btn__search" 
+                                  type="submit">
+                            ${'BuyNow.SearchLocationButtonText' @i18n}
+                          </button>
+                        </div>
+                      </div>
+                  </div>
+                  <div class="form-group buy-now__filter">
+                      <label class="form-group-label">${'BuyNow.FilterLabel' @i18n}</label>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="filterShipType1" data-filter-value="pick-up">
+                        <label class="form-check-label" for="filterShipType1">${'BuyNow.FilterPickup' @i18n}</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="filterShipType2" data-filter-value="ship">
+                        <label class="form-check-label" for="filterShipType2">${'BuyNow.FilterOnline' @i18n}</label>
+                      </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+              <div class="col">
+                <table class="table border border-bottom border-dark buy-now__table" aria-label="buy-now-table" id="buyNowTable">
+                <thead hidden id="buyNowTableHeader">
+                <tr>
+                  <th scope="col">${'BuyNow.TableColLabelName' @i18n}</th>
+                  <th scope="col">${'BuyNow.TableColLabelQuantity' @i18n}</th>
+                  <th scope="col" class="buy-now__mobile">${'BuyNow.TableColLabelPickShipFlag' @i18n}</th>
+                  <th scope="col" class="buy-now__mobile">${'BuyNow.TableColLabelLink' @i18n}</th>
+                </tr>
+                </thead>
+                <tbody id="buyNowTableBody">
+                </tbody>
+              </table>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="buy-now__messages">
+                  <div hidden id="buyNowMsg" class="alert fade in"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="buy-now__load">
+                  <button hidden
+                          type="button"
+                          id="buyNowLoad"
+                          data-load-size="${data.LOAD_SIZE}">
+                    <span id="buyNowLoadText"
+                          data-load-text="${'loadMore' @i18n}"
+                          data-load-text-alt="${'BuyNow.Retry' @i18n}">
+                    </span>
+                  </button>
+                  <div hidden id="buyNowLoadSpin" class="load-spinner"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</sly>

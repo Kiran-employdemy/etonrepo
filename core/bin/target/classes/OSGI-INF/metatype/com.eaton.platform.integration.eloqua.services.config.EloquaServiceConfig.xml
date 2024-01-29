@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.eloqua.services.config.EloquaServiceConfig">
+  <OCD id="com.eaton.platform.integration.eloqua.services.config.EloquaServiceConfig" name="EloquaServiceImpl" description="">
+    <AD id="maxConnections" type="Integer" name="Max Connections" description="Defines the maximum number of connections allowed overall. This value only applies to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+    <AD id="maxHostConnections" type="Integer" name="Max Host Connections" description="Defines the maximum number of connections allowed per host configuration. These values only apply to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+    <AD id="doProxy" type="Boolean" name="Do Proxy" description="If checked this will put a proxy between the form submission and Eloqua that will validate Google reCAPTCHA." default="true"/>
+    <AD id="defaultRedirect" type="String" name="Default Redirect" description="The fallback redirect URL if there is no redirect set in Eloqua, AEM, or the header region." default="https://eaton.com"/>
+    <AD id="guidTimeout" type="Integer" name="Total GUID Timeout (seconds)" description="Total seconds to look for GUID before timeout. Half this amount will be for first party guid, the other half will be for third party guid (if first party not found)." default="20"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.eloqua.services.impl.EloquaServiceImpl">
+    <Object ocdref="com.eaton.platform.integration.eloqua.services.config.EloquaServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

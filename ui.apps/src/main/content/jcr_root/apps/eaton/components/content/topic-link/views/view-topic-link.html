@@ -1,0 +1,39 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.topiclink.TopicLinkModel">
+	<div class="eaton-topic-link
+					eaton-topic-link--${data.topicLinkColor == 'primary-branding-color' ? 'primary-branding-color' : [data.topicLinkColor == '#F8F8F8' ? 'white' : 'grey']}">
+			<div class="container ${data.topicLinkCTATitle ? '' : 'no-cta'}">
+				<div class="row eaton-topic-link__row">
+					<div class="eaton-topic-link__icon col-md-1" data-sly-test=${data.topicLinkIcon}>
+						<img data-src="${data.topicLinkIcon}" alt="" aria-hidden="true" class="lazyload">
+					</div>
+
+					<div class="${data.topicLinkIcon && data.topicLinkCTATitle ? 'col-md-7' : ''}
+											${data.topicLinkIcon && !data.topicLinkCTATitle ? 'col-md-11' : ''}
+											${!data.topicLinkIcon && data.topicLinkCTATitle ? 'col-md-8' : ''}
+											${!data.topicLinkIcon && !data.topicLinkCTATitle ? 'col-md-12' : ''}">
+						<h3 data-sly-test="${data.topicLinkHeader}" class="eaton-topic-link__header b-heading-h3">
+							${data.topicLinkHeader}
+						</h3>
+						<p class="eaton-topic-link__description b-body-copy">
+							${data.topicLinkDesc}
+						</p>
+					</div>
+
+					<div class="col-md-3 col-md-offset-1" data-sly-test="${data.topicLinkCTATitle && !data.topicLinkCTALink}">
+							${data.topicLinkCTATitle}
+					</div>
+
+					<div class="col-md-3 col-md-offset-1" data-sly-test="${data.topicLinkCTATitle && data.topicLinkCTALink}">
+						<a
+							href="${data.topicLinkCTAModal ? '#': data.topicLinkCTALink @context='html'}"
+							data-lookbook-overlay-href="${data.topicLinkCTAModal ? data.topicLinkCTALink : '' @context='html'}"
+							target="${data.topicLinkCTAOpenNewWindow}"
+							data-source-tracking="${data.enableSourceTracking}"
+							class="eaton-topic-link__button b-button b-button__primary ${data.topicLinkColor == 'primary-branding-color' ? 'b-button__primary--dark' : 'b-button__primary--light'}" >
+							${data.topicLinkCTATitle}
+						</a>
+					</div>
+				</div>
+			</div>
+	</div>
+</sly>

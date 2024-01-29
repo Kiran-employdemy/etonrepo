@@ -1,0 +1,127 @@
+//-----------------------------------
+// M-63: Image List
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.thumbnail-image-list {
+
+  &__component {
+    margin: 30px 0;
+  }
+
+  &__item {
+    padding: 0 10px;
+  }
+
+  &__content {
+    display: block;
+    text-align: center;
+    position: relative;
+  }
+
+  &__image {
+    position: relative;
+  }
+
+  &__image-headline {
+    margin-top: ($spacing__sm);
+    font-weight: bold;
+  }
+
+  .headline-link {
+    color: var(--primary-brand-color, $color__primary-blue);
+  }
+
+  // If the item has a link - update the headline color
+  // &--has-link .eaton-ttil-image-list__image-headline {
+  //   color: $color__primary-blue;
+  // }
+
+  //-----------------------------
+  // Mobile-Tablet Breakpoint
+  // ----------------------------
+  @include media-mobile-and-tablet {
+    &__container {
+      display: block;
+    }
+
+    &__item {
+      flex-basis: 100%;
+      padding: 0 10px;
+      margin-bottom: $spacing__sm;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__content {
+      text-align: center;
+    }
+
+    &__image {
+      max-width: 480px;
+      min-width: 250px;
+      margin: 0 auto;
+    }
+
+    &__image img {
+      display: inline-block;
+    }
+
+    &__image-headline {
+      text-align: center;
+    }
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      // align-items: center;
+    }
+
+    &__item {
+      flex-basis: 31%;
+      margin-bottom: ($spacing__sm * 2);
+
+      // Only 2 images should display when used in two column grid
+      .eaton-grid-control & {
+        flex-basis: 50%;
+        padding: 0;
+      }
+    }
+
+    &__image {
+      display: block;
+      width: 100%;
+      padding: 0;
+      text-align: center;
+      overflow: hidden;
+
+      // Create a bounding-box 1:1 for the image
+      &::before {
+        display: block;
+        content: '';
+        padding-top: 100%;
+      }
+    }
+
+    &__image img {
+      position: absolute;
+      top: 50%;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__image-headline {
+      text-align: left;
+    }
+  }
+}

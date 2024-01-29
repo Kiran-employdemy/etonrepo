@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="cq:Dialog"
+          jcr:title="Branding Selector Tool - Brand Color Selection"
+          height="{Long}650"
+          warnIfModified="{Boolean}false"
+          width="{Long}900"
+          xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <brandColorSelectionConfig
+                    jcr:primaryType="cq:Panel"
+                    title="Brand Color Selection Configuration"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <colorImpactGuidelinesLink
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Branding Color Impact Guidelines Link"
+                            fieldDescription="Branding color impact guidelines documentation link"
+                            defaultValue="https://eatonbrand.frontify.com/document/34#/aem-authoring-intro/authoring/microsites-branding-color-impact"
+                            value="https://eatonbrand.frontify.com/document/34#/aem-authoring-intro/authoring/microsites-branding-color-impact"
+                            disabled="${Boolean}true"
+                            name="./colorImpactGuidelinesLink"
+                            xtype="textfield"/>
+                    <primaryBrandingColor
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Primary Branding Color"
+                            fieldDescription="color will replace all Eaton Blue,including buttons,excluding text links"
+                            showHexValue="{Boolean}true"
+                            defaultValue="005EB8"
+                            defaultColor="005EB8"
+                            curColor="005eb8"
+                            value="005EB8"
+                            type="text"
+                            name="./primaryBrandingColor"
+                            xtype="customColorField"/>
+                    <accentColorOne
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Accent Color #1"
+                            fieldDescription="color should be able to stand alone on light background"
+                            showHexValue="{Boolean}true"
+                            defaultValue="00B2A9"
+                            defaultColor="00B2A9"
+                            curColor="00b2a9"
+                            value="00B2A9"
+                            type="text"
+                            name="./accentColorOne"
+                            xtype="customColorField"/>
+                    <accentColorTwo
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Accent Color #2"
+                            fieldDescription="color should be able to stand alone on light background"
+                            showHexValue="{Boolean}true"
+                            defaultValue="ED8B00"
+                            defaultColor="ED8B00"
+                            curColor="ed8b00"
+                            value="ED8B00"
+                            type="text"
+                            name="./accentColorTwo"
+                            xtype="customColorField"/>
+                    <linkColor
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Link Color"
+                            fieldDescription="color will apply to text links"
+                            showHexValue="{Boolean}true"
+                            defaultValue="005EB8"
+                            defaultColor="005EB8"
+                            curColor="005eb8"
+                            value="005EB8"
+                            type="text"
+                            name="./linkColor"
+                            xtype="customColorField"/>
+                    <siteName
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Site Name"
+                            fieldDescription="Site name to be used for SEO purposes"
+                            name="./siteName"
+                            type="text"
+                            xtype="textfield"/>
+                    <twitterSite
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Twitter site handle"
+                            fieldDescription="Twitter handle for the company's social platform"
+                            name="./twitterSite"
+                            type="text"
+                            xtype="textfield"/>
+                    <primaryBrandFont
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Override Eaton Font"
+                            fieldDescription=" Use Arial as the primary brand font"
+                            name="./primaryBrandFont"
+                            type="checkbox"
+                            xtype="selection"/>
+                </items>
+            </brandColorSelectionConfig>
+        </items>
+    </items>
+</jcr:root>

@@ -1,0 +1,63 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.ThumbnailImageListModel">
+
+  <div class="thumbnail-image-list__component">
+
+ 
+
+    <!--/* Check if Grid is enabled */-->
+
+    <div data-sly-list="${ data.links }"
+
+      class="${ properties.enableInnerGrid ? 'container' : '' } thumbnail-image-list__container"
+
+    >
+
+      <div class="thumbnail-image-list__item">
+
+        <div class="thumbnail-image-list__content">
+
+          <div class="thumbnail-image-list__image">
+
+            <!-- Start: Rendition Image Component -->
+
+            <sly data-sly-use.tpl="eaton/components/shared/templates/rendition-image.html">
+
+              <sly data-sly-call="${ tpl.module @ data=item }"></sly>
+
+            </sly>
+
+            <!-- End: Rendition Image Component -->
+
+          </div>
+
+          <div data-sly-test="${ item.imageListLinkTitle }"
+
+            class="thumbnail-image-list__image-headline ${ item.imageListLinkPath ? 'headline-link' : '' }"
+
+          >${ item.imageListLinkTitle }</div>
+
+          <a data-sly-test="${ item.imageListLinkPath }"
+
+            class="thumbnail-image-list__image-link u-absolute-fill"
+
+            href="${ item.imageListLinkPath }"
+
+            target="${ item.newWindow }">
+
+            <!--/* This Text is used by Screen Readers / For Accessibility */-->
+
+            <span class="sr-only">${ item.imageListLinkTitle }</span>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+ 
+
+  </div>
+
+</sly>

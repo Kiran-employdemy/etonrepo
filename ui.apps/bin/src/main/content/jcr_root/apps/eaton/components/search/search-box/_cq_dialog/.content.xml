@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Search Box"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <section
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Component Properties - Touch UI"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <view
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                class="cq-dialog-dropdown-showhide"
+                                cq-dialog-dropdown-showhide-target=".search-hide-show"
+                                fieldDescription="Determine which variation of component to view"
+                                fieldLabel="View"
+                                name="./view">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <default
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Default View"
+                                        value="default"/>
+                                    <inline
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Inline View"
+                                        value="inline"/>
+                                    <jibe
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Jibe Search"
+                                        value="jibe"/>
+                                    <map
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Map"
+                                        value="map"/>
+                                    <crossReference
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Cross Reference"
+                                        value="crossReference"/>
+                                    <advSearch
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Advanced Search"
+                                            value="advsearch"/>
+                                </items>
+                            </view>
+                            <transSearchHeader
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                class="hide search-hide-show"
+                                fieldLabel="Search Header *"
+                                name="./transSearchHeader"
+                                required="true"
+                                showhidetargetvalue="inline,jibe"/>
+                            <transLocationSearchHeader
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    class="hide search-hide-show"
+                                    fieldLabel="Search Location Header *"
+                                    name="./transLocationSearchHeader"
+                                    required="true"
+                                    showhidetargetvalue="default"/>
+                            <transFieldAid
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                class="hide search-hide-show"
+                                fieldLabel="Field Aid: Primary *"
+                                name="./transFieldAid"
+                                required="true"
+                                showhidetargetvalue="inline,default,jibe,map,crossReference,advsearch"/>
+                            <transLocationFieldAid
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    class="hide search-hide-show"
+                                    fieldLabel="Field Aid: Location *"
+                                    name="./transLocationFieldAid"
+                                    required="true"
+                                    showhidetargetvalue="jibe"/>
+                            <transSubhead
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                class="hide search-hide-show"
+                                fieldLabel="Sub Head *"
+                                name="./transSubhead"
+                                required="true"
+                                showhidetargetvalue="inline,jibe"/>
+                            <transSearchKey
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                class="hide search-hide-show"
+                                fieldLabel="Search Query Parameter *"
+                                name="./transSearchKey"
+                                required="true"
+                                showhidetargetvalue="jibe"/>
+                            <searchResutlsPath
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                granite:class="hide search-hide-show"
+                                fieldLabel="Search Result Page Path *"
+                                name="./searchResutlsPath"
+                                required="true">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="default,inline,jibe"/>
+                            </searchResutlsPath>
+                            <relevantLinks
+                                granite:class="hide search-hide-show"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldDescription="Click 'Add' to add more Relevant Links"
+                                fieldLabel="Relevant Links">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="inline,jibe"/>
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./relevantLinks">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <linkPage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                                    fieldDescription="This field stores the path of page to be linked. This field is used when relevant link type is Fixed."
+                                                    fieldLabel="Link Page"
+                                                    name="./link"/>
+                                                <linkText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="This field stores the link text value. This value overrides the navigation title of the source page. This field is used when relevant link type is Fixed."
+                                                    fieldLabel="Link Text"
+                                                    name="./transLinkText"/>
+                                                <newWindow
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldDescription="This field indicates if the url would open in new window or not. This field is used when relevant link type is Fixed."
+                                                    name="./newWindow"
+                                                    text="Open Link in New Window"
+                                                    value="true"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </relevantLinks>
+                        </items>
+                    </column>
+                </items>
+            </section>
+        </items>
+    </content>
+</jcr:root>

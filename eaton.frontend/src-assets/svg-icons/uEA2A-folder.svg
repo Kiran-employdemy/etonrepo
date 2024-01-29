@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="30px" viewBox="0 0 40 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Submittal Package</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Submittal-Initial-State-Counter" transform="translate(-9.000000, -14.000000)" fill="#000000" fill-rule="nonzero">
+            <g id="Submittal-Package" transform="translate(9.000000, 14.000000)">
+                <path d="M39.7297297,2.70762125 L39.7297297,30 L0,30 L0,0 L30.8429617,0 L31.0995495,2.71039261 L39.7297297,2.70762125 Z M3.81295045,26.6688222 L35.9167793,26.6688222 L35.9167793,6.03879908 L28.0839527,6.03879908 L27.8273649,3.3256351 L3.82398649,3.3256351 L3.81295045,26.6688222 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

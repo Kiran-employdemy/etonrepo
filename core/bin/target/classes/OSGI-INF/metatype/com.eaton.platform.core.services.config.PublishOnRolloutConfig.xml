@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.PublishOnRolloutConfig">
+  <OCD id="com.eaton.platform.core.services.config.PublishOnRolloutConfig" name="PublishOnRolloutLiveActionFactory" description="">
+    <AD id="LIVE.COPY.LIST" type="String" cardinality="2147483647" name="Live Copies " description="List of live sites to publish on rollout. " default="/us/,/br/,/mx/,/sg/,/cn/,/in/"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.impl.PublishOnRolloutLiveActionFactory">
+    <Object ocdref="com.eaton.platform.core.services.config.PublishOnRolloutConfig"/>
+  </Designate>
+</metatype:MetaData>

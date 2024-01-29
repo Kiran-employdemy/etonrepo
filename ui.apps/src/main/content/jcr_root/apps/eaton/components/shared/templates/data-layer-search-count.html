@@ -1,0 +1,10 @@
+<template data-sly-template.module="${ @ data }">
+    <script type="text/javascript">
+        let searchCount = "${data.resultsCount  || data.facetedHeaderNavigationResultBean.totalCount @context='scriptString'}";
+        let searchKeyWord = "${data.searchTerm @context='scriptString'}";
+        if (window.dataLayer != undefined && window.dataLayer != null) {
+            window.dataLayer['searchResultsCount'] = searchCount;
+            window.dataLayer['searchQuery'] = searchKeyWord;
+        }
+    </script>
+</template>

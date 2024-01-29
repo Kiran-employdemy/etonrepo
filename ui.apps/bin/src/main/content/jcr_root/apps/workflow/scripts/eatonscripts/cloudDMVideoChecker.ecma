@@ -1,0 +1,54 @@
+/*
+ * Checks if this asset is a video and if Cloud Dynamic Media is configured.
+ *
+ * Created By Julie Rybarczyk (julie@freedomdam.com) on 6/28/2019
+ */
+function check() {
+    log.debug("Executing cloudDMVideoChecker script to check if this asset is a video and Cloud Dynamic Media is configured.");
+
+    var jcrContent = "/jcr:content";
+    var dcFormatProp = "jcr:content/metadata/dc:format";
+    var jcrMimeTypeProp = "jcr:content/jcr:mimeType";
+    var cloudDMConfigPath = "/conf/global/settings/cloudconfigs/dmscene7";
+    var publishEnabledProp = "jcr:content/publishEnabled";
+    var syncEnabledProp = "jcr:content/syncEnabled";
+
+    // Get the asset node.
+    var path = workflowData.getPayload().toString();
+    if (path.contains(jcrContent)) {
+        path = path.split(jcrContent)[0];
+    }
+    log.debug("Path: " + path);
+    if (!workflowSession.getSession().nodeExists(path)) {
+        log.debug("Node at path " + path + " either does not exist or this session does not have access to it.");
+        return false;
+    }
+    var node = workflowSession.getSession().getNode(path);
+
+    // Check if the asset is a video.
+    var isVideo = false;
+    if ((node.hasProperty(dcFormatProp) && node.getProperty(dcFormatProp).getString().contains("video"))
+        || (node.hasProperty(jcrMimeTypeProp) && node.getProperty(jcrMimeTypeProp).getString().contains("video"))) {
+        isVideo = true;
+    }
+    if (!isVideo) {
+		log.debug("Asset is not a video.");
+        return false;
+    }
+
+    // Check if the Cloud DM Config node exists.
+    if (!workflowSession.getSession().itemExists(cloudDMConfigPath)) {
+        log.debug("Cloud Dynamic Media Config node does not exist.");
+        return false;
+    }
+    var cloudDMConfig = workflowSession.getSession().getItem(cloudDMConfigPath);
+
+    // Check if syncEnabled property is on.
+    if (!cloudDMConfig.hasProperty(syncEnabledProp) || !cloudDMConfig.getProperty(syncEnabledProp).getString().equalsIgnoreCase("on")) {
+        log.debug("Cloud Dynamic Media sync is not enabled.");
+        return false;
+    }
+
+    log.debug("The asset is a video and Cloud Dynamic Media is configured.");
+	return true;
+}

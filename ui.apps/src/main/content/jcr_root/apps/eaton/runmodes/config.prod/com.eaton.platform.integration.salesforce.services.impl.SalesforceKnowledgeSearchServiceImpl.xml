@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+		  jcr:primaryType="sling:OsgiConfig"
+		  isGlobalEnabled="true"
+		  salesforceSiteUrl="https://eaton.my.site.com/publicknowledge"
+		  salesforceSearchPath="/s/global-search"
+		  imagePath="/content/dam/eaton/resources/knowledgeSearchIcon.png"
+		  targetTags="[eaton/integrations/nanorep/lighting-nanorep,eaton/integrations/nanorep/distribution-and-control-nanorep,eaton/integrations/nanorep/crouse-hinds-nanorep,eaton/integrations/nanorep/meters-and-relays-nanorep,eaton/integrations/nanorep/bussmann-nanorep,eaton/integrations/nanorep/wiring-devices-nanorep,eaton/integrations/nanorep/power-quality-nanorep,eaton/integrations/nanorep/uk-pdd-icpd-and-pq-nanorep,eaton/integrations/nanorep/electronic-components-nanorep,eaton/integrations/nanorep/b-line-nanorep,eaton/integrations/nanorep/filtration-kb-widget,eaton/integrations/nanorep/vehicle-nanorep]"/>

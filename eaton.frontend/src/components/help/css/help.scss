@@ -1,0 +1,51 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...
+@import "../../../global/css/_config/sass";
+
+.help-block {
+  &__links-list {
+    margin-top: 1.2rem;
+    margin-bottom: 4.5rem;
+    display: flex;
+  }
+
+  &__list {
+    font-size: 1.6rem;
+    font-weight: 700;
+    float: right;
+    margin-top: 0px;
+    margin: 0 auto;
+    width: 70%;
+
+    a:link,
+    a:hover,
+    a:focus {
+      color: var(--link-brand-color, $color__primary-blue);
+      text-decoration: none;
+      cursor: pointer;
+      margin-top: 0px;
+    }
+  }
+
+  @include media-mobile-and-tablet {
+    &__links-list {
+      display: none;
+    }
+  }
+
+  &__links-item {
+    display: block;
+    border: $color__primary-blue;
+    border-style: solid;
+    width: 100%;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+
+  &__header {
+    display: block;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 1.2rem;
+  }
+}
+

@@ -1,0 +1,12 @@
+//-----------------------------------
+// Template: T7-Product Family Models Grid
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+
+// Import Sub Views
+@import "views/product-card-sku";
+@import "views/product-card-subcategory";
+@import "views/comparision";

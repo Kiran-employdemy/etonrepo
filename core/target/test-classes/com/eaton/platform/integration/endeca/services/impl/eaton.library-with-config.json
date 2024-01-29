@@ -1,0 +1,193 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Feb 28 2023 21:50:13 GMT-0500",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "cq:LiveRelationship",
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Library",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "e86a6282-bfe7-42ed-b8cf-7cf0d3696914",
+    "cq:template": "/conf/eaton/settings/wcm/templates/generic-page",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:lastModifiedBy": "e0078808",
+    "priority": "0.0",
+    "cq:lastRolledout": "Tue Jun 27 2023 16:28:09 GMT-0400",
+    "jcr:predecessors": [
+      "5d96f8eb-0d44-4825-82ab-7fe174e2b44e"
+    ],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Tue Feb 28 2023 21:50:13 GMT-0500",
+    "cq:lastReplicated": "Mon Jul 17 2023 10:56:27 GMT-0400",
+    "cq:lastModified": "Tue Jun 27 2023 16:28:09 GMT-0400",
+    "view": "generic",
+    "jcr:baseVersion": "5d96f8eb-0d44-4825-82ab-7fe174e2b44e",
+    "jcr:isCheckedOut": true,
+    "primary-sub-category-tag": [
+      "eaton:country/north-america/us",
+      "eaton:language/en-us"
+    ],
+    "hideInNav": "true",
+    "page-type": "generic-page",
+    "cq:tags": [
+      "eaton:eaton-brand/industry/RWDD-wiring-devices"
+    ],
+    "jcr:lastModified": "Mon Oct 23 2017 19:29:19 GMT-0400",
+    "jcr:uuid": "685491ae-172b-4a61-8421-35d95c7e3b3b",
+    "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "cq:allowedTemplates": [
+      "/conf/eaton/settings/wcm/templates/generic-page",
+      "/conf/eaton/settings/wcm/templates/article-page"
+    ],
+    "cq:lastRolledoutBy": "admin",
+    "cq:lastModifiedBy": "admin",
+    "changefrequency": "always",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:LiveRelationship"
+      ],
+      "cq:lastRolledout": "Tue Jun 27 2023 16:28:09 GMT-0400",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "cq:lastRolledoutBy": "admin",
+      "header": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:LiveRelationship"
+        ],
+        "jcr:createdBy": "c3037550",
+        "jcr:lastModifiedBy": "c3037550",
+        "cq:lastRolledout": "Tue Jun 27 2023 16:28:09 GMT-0400",
+        "jcr:created": "Thu Oct 05 2017 10:36:06 GMT-0400",
+        "jcr:lastModified": "Tue Jun 27 2023 16:28:09 GMT-0400",
+        "sling:resourceType": "eaton/components/structure/header",
+        "cq:lastRolledoutBy": "admin"
+      },
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:LiveRelationship"
+        ],
+        "jcr:createdBy": "e0078808",
+        "jcr:lastModifiedBy": "e0078808",
+        "cq:lastRolledout": "Tue Jun 27 2023 16:28:09 GMT-0400",
+        "jcr:created": "Thu Oct 05 2017 10:47:13 GMT-0400",
+        "jcr:lastModified": "Tue Jun 27 2023 16:28:09 GMT-0400",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "cq:lastRolledoutBy": "admin",
+        "cq:responsive": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "cq:lastRolledout": "Tue Jun 27 2023 16:28:09 GMT-0400",
+          "cq:lastRolledoutBy": "admin"
+        },
+        "category_hero": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship",
+            "cq:ReplicationStatus"
+          ],
+          "titleText": "Wiring Devices resource libary",
+          "jcr:createdBy": "e0063964",
+          "alignmentDesktop": "right-center",
+          "description": "This page is designed for quick access to our most commonly requested resources.",
+          "mobileTrans": "default-mobile",
+          "jcr:lastModifiedBy": "e0409825",
+          "cq:lastRolledout": "Tue Jun 27 2023 16:28:09 GMT-0400",
+          "imagePath": "/content/dam/eaton/products/wiring-devices-and-connectivity/wiring-devices/images/wd-resource-library.jpg",
+          "alignmentMobile": "right-center",
+          "jcr:created": "Mon Nov 25 2019 12:58:06 GMT-0500",
+          "imageAltText": "1068618392",
+          "jcr:lastModified": "Tue Jun 27 2023 16:28:09 GMT-0400",
+          "desktopTrans": "default-desktop",
+          "tabletTrans": "default-tablet",
+          "sling:resourceType": "eaton/components/content/category-hero",
+          "textIsRich": "true",
+          "cq:lastRolledoutBy": "admin",
+          "categoryHeroHeaderType": "h1"
+        },
+        "advanced_search": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "jcr:createdBy": "e0063964",
+          "zeroSearchResultsMainMessage": "<p>There are no results anymore!</p>\r\n",
+          "jcr:lastModifiedBy": "admin",
+          "cq:lastRolledout": "Tue Jun 27 2023 16:28:09 GMT-0400",
+          "enableBulkDownload": "true",
+          "defaultSort": "relevance",
+          "jcr:created": "Tue Oct 19 2021 13:27:11 GMT-0400",
+          "jcr:lastModified": "Tue Jun 27 2023 16:28:09 GMT-0400",
+          "viewType": "grid",
+          "sling:resourceType": "eaton/components/secure/advanced-search",
+          "textIsRich": "true",
+          "cq:lastRolledoutBy": "admin",
+          "enableDateRange": "true",
+          "search-box": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:mixinTypes": [
+              "cq:LiveRelationship"
+            ],
+            "jcr:lastModifiedBy": "e0063964",
+            "cq:lastRolledout": "Tue Jun 27 2023 16:28:09 GMT-0400",
+            "view": "advsearch",
+            "jcr:lastModified": "Tue Jun 27 2023 16:28:09 GMT-0400",
+            "sling:resourceType": "eaton/components/search/search-box",
+            "transFieldAid": "Search here",
+            "cq:lastRolledoutBy": "admin"
+          },
+          "whitelistFacets": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:mixinTypes": [
+              "cq:LiveRelationship"
+            ],
+            "cq:lastRolledout": "Tue Jun 27 2023 16:28:09 GMT-0400",
+            "cq:lastRolledoutBy": "admin",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "cq:LiveRelationship"
+              ],
+              "cq:lastRolledout": "Tue Jun 27 2023 16:28:09 GMT-0400",
+              "facet": "eaton:resources/marketing-resources",
+              "facetSearchEnabled": "show",
+              "showAsGrid": "faceted-navigation__facet-group--grid",
+              "cq:lastRolledoutBy": "admin"
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "cq:LiveRelationship"
+              ],
+              "cq:lastRolledout": "Tue Jun 27 2023 16:28:09 GMT-0400",
+              "facet": "eaton:resources/technical-resources",
+              "cq:lastRolledoutBy": "admin",
+              "singleFacetEnabled": "radio"
+            }
+          }
+        }
+      },
+      "footer": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:LiveRelationship"
+        ],
+        "jcr:createdBy": "c3037550",
+        "jcr:lastModifiedBy": "c3037550",
+        "cq:lastRolledout": "Tue Jun 27 2023 16:28:09 GMT-0400",
+        "jcr:created": "Thu Oct 05 2017 10:36:20 GMT-0400",
+        "jcr:lastModified": "Tue Jun 27 2023 16:28:09 GMT-0400",
+        "sling:resourceType": "eaton/components/structure/footer",
+        "cq:lastRolledoutBy": "admin"
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<sly data-sly-use.dataModel="com.eaton.platform.integration.priceSpider.models.PriceSpiderModel">
+
+    <sly data-sly-test="${dataModel.priceSpider}">
+        <meta name="ps-key" content="4593-6053d4d0c845a301579bcd86">
+        <meta name="ps-country" content="US">
+        <meta name="ps-language" content="en">
+        <script src="${dataModel.productScriptPath @ context='html'}" async></script>
+        <script type="text/javascript">
+            priceSpiderEnabled = "${dataModel.priceSpider @ context='html'}";
+        </script>
+    </sly>
+
+    <sly data-sly-test="${dataModel.universalScriptPath}">
+        <script type="text/javascript" src="${dataModel.universalScriptPath @ context='html'}" async></script>
+    </sly>
+</sly>

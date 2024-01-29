@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          org.apache.felix.eventadmin.AsyncToSyncThreadRatio="{Double}0.5"
+        org.apache.felix.eventadmin.IgnoreTopic="[]"
+        org.apache.felix.eventadmin.RequireTopic="{Boolean}true"
+        org.apache.felix.eventadmin.IgnoreTimeout="[org.apache.felix*,org.apache.sling*,com.day*,com.adobe*,org.gs4tr.globallink.adaptors.aem.bundle.event.CQSubmissionStatusEventHandler,org.gs4tr.globallink.adaptors.aem.event.UpdateTargetStatusEventHandler]"
+        org.apache.felix.eventadmin.Timeout="{Long}15000"
+        org.apache.felix.eventadmin.ThreadPoolSize="{Long}20"/>

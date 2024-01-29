@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Selection-Remove" transform="translate(-9.000000, -9.000000)">
+            <g id="Group-2" transform="translate(9.000000, 9.000000)">
+                <g id="Group" fill="#000000">
+                    <circle id="Oval" cx="11" cy="11" r="11"></circle>
+                </g>
+                <g id="Close" transform="translate(6.000000, 6.000000)"></g>
+                <polygon id="Shape" fill="#FFFFFF" fill-rule="nonzero" points="16 7.07318854 12.0576748 11.0173389 15.8558131 14.8081767 14.8501551 15.8156598 11.0501916 12.0229969 7.07318854 16 6 14.9268115 9.9770031 10.9498084 6.18251506 7.15714546 7.19182333 6.1514875 10.9826611 9.94232524 14.9268115 6"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

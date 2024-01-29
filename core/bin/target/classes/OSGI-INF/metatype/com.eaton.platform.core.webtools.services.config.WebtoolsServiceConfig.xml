@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.webtools.services.config.WebtoolsServiceConfig">
+  <OCD id="com.eaton.platform.core.webtools.services.config.WebtoolsServiceConfig" name="WebtoolsService" description="">
+    <AD id="webtoolsBaseEndpointRoot" type="String" name="Endpoint URL Root" description="Service URL Root for the Webtools API" default="http://localhost:8080/eaton-utilities/v1/products"/>
+    <AD id="arincComponentEndpoint" type="String" name="Arinc600 Components URL Part" description="Service URL part for arinc600 components" default="/arinc/components"/>
+    <AD id="arincPackagesEndpoint" type="String" name="Arinc600 Packaging URL Part" description="Service URL part for arinc600 packages" default="/arinc/packages"/>
+    <AD id="backshellMetadataEndpoint" type="String" name="Backshell Metadata URL Part" description="Service URL part for backshell metadata" default="/backshell/metadata"/>
+    <AD id="backshellPartbuildEndpoint" type="String" name="Backshell Partbuild URL Part" description="Service URL part for Backshell Partbuild" default="/backshell/partBuild"/>
+    <AD id="freeSampleStockAvailabilityEndpoint" type="String" name="Free sample Endpoint" description="Service URL part for Backshell Partbuild" default="/freesample/getFreeSamplePerName"/>
+    <AD id="webtoolsUsername" type="String" name="Webtools Username" description="Service Username for Basic Authentication" default="user"/>
+    <AD id="webtoolsPassword" type="Password" name="Webtools Password" description="Service Password for Basic Authentication. Should be encrypted with crypto service" default="{fa771e1a37f7991485059fa6934ce8066e3c8aa7547c1b3aa998b3450d55435c}"/>
+    <AD id="maxConnections" type="Integer" name="Max Connections" description="Defines the maximum number of connections allowed overall. This value only applies to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+    <AD id="maxHostConnections" type="Integer" name="Max Host Connections" description="Defines the maximum number of connections allowed per host configuration. These values only apply to the number of connections from a particular instance of HttpConnectionManager." default="1000"/>
+    <AD id="arincPackages" type="String" name="Arinc600 Packaging URL Part" description="Service URL part for arinc600 packages" default="/arinc/packageValidation"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.webtools.services.impl.WebtoolsServiceConfigurationImpl">
+    <Object ocdref="com.eaton.platform.core.webtools.services.config.WebtoolsServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

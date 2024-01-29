@@ -1,0 +1,89 @@
+@import "../../../global/css/_config/sass";
+
+.submittal-builder {
+  &__floating-button {
+    background-color: $color__white;
+    box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    height: rem($base__font-size * 5.8);
+    margin-right: 1px;
+    position: relative;
+    width: rem($base__font-size * 5.8);
+    z-index: 5;
+
+    &:hover,
+    &:active {
+      background-color: var(--link-brand-color, $color__primary-blue);
+      color: $color__white;
+    }
+
+    &[disabled],
+    &[disabled]:hover,
+    &[disabled]:active,
+    &[disabled]:focus {
+      background-color: $color__white;
+
+      .icon,
+      .submittal-builder__preview-button__document-count {
+        color: $color__secondary-gray4;
+      }
+    }
+
+    &__container {
+      bottom: rem($spacing__sm);
+      box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, 0.15);
+      cursor: pointer;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      position: fixed;
+      right: rem($spacing__sm);
+      z-index: 15;
+
+      @include media-tablet-and-up {
+        bottom: rem($spacing__sm * 2);
+      }
+    }
+
+    &__icon {
+      color: var(--link-brand-color, $color__primary-blue);
+      display: block;
+      font-size: rem($base__font-size * 3);
+      height: 100%;
+      line-height: rem($base__font-size * 6.8);
+      text-align: center;
+      width: 100%;
+
+      .submittal-builder__floating-button:hover &,
+      .submittal-builder__floating-button:active & {
+        color: $color__white;
+      }
+    }
+  }
+
+  &__preview-button {
+    &__document-count {
+      color: var(--link-brand-color, $color__primary-blue);
+      left: 50%;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      transform: translateX(-50%) translateY(-42.5%);
+
+      .submittal-builder__floating-button:hover &,
+      .submittal-builder__floating-button:active & {
+        color: $color__white;
+      }
+    }
+  }
+
+  &__back-to-top {
+    /* need !important to override default .back-to-top styling */
+    /* stylelint-disable declaration-no-important */
+    bottom: auto !important;
+    display: block !important;
+    position: relative !important;
+    right: auto !important;
+    /* stylelint-enable */
+  }
+}

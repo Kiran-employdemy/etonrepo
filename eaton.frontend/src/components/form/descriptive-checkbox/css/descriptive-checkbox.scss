@@ -1,0 +1,67 @@
+//-----------------------------------
+// User Registration Page
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../../global/css/_config/sass";
+
+.descriptive-checkbox {
+  /* stylelint-disable selector-class-pattern */
+  .guideCheckBoxGroupItems:not(.guideImageChoice):not(.guideSwitch) {
+    /* stylelint-enable selector-class-pattern */
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  /* stylelint-disable selector-class-pattern */
+  .afCheckBoxItem {
+    /* stylelint-enable selector-class-pattern */
+    cursor: default;
+    margin-right: 0;
+    padding: 0 2rem 3rem 0;
+
+    @media (min-width: $grid__sm) {
+      width: 33%;
+    }
+
+    /* stylelint-disable selector-class-pattern */
+    .guideFieldLabel.top {
+      /* stylelint-enable selector-class-pattern */
+      margin-bottom: 2rem;
+
+      label {
+        font-size: 1.7rem;
+      }
+    }
+
+    /* stylelint-disable selector-class-pattern */
+    .guideWidgetLabel.right {
+      /* stylelint-enable selector-class-pattern */
+      display: inline-block;
+      margin-left: 1.2rem;
+
+      label {
+        color: $color__black;
+        font-weight: bold;
+        line-height: 1;
+        padding-top: .3rem;
+      }
+    }
+  }
+
+  .checkbox-description {
+    padding-left: 3.2rem;
+
+    p {
+      color: $color__primary-gray3;
+      font-size: 1.5rem;
+      line-height: 2.6rem;
+    }
+
+    b {
+      color: $color__black;
+      font-weight: normal;
+      line-height: 2rem;
+    }
+  }
+}

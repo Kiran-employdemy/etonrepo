@@ -1,0 +1,100 @@
+<template data-sly-template.module="${ @ data}">
+    <!--/* M-41: Related Products */-->
+    <!--/* NOTE: It should behave as an Upsell Component: Carousel starts after 3 items */-->
+    <sly data-sly-use.viewData="com.eaton.platform.core.models.ProductDetailsCardModel">
+        <div class="product-detail-card__related-products">
+            <div data-sly-test="${ viewData.productDetailsCardBean.skuSellList }" class="container">
+                <div
+                        data-sly-test="${ viewData.productDetailsCardBean.crossSellTitle || viewData.productDetailsCardBean.crossSellDescription }"
+                        class="product-detail-card__related-products-header">
+
+                    <h3 data-sly-test="${ viewData.productDetailsCardBean.crossSellTitle }"
+                        class="product-detail-card__related-products-title"
+                    >${ viewData.productDetailsCardBean.crossSellTitle }</h3>
+
+                    <p data-sly-test="${ viewData.productDetailsCardBean.crossSellDescription }"
+                       class="product-detail-card__related-products-description"
+                    >${ viewData.productDetailsCardBean.crossSellDescription }</p>
+
+                </div>
+            </div>
+        </div>
+    </sly>
+    <div class="container">
+        <div class="grid-crousal-view">
+            <div class="module-related-products upsell-products hides ${data.viewType == 'Carousel' ? 'showbox' : ''}">
+                <ul class="upsell-products__slides" data-sly-list="${data.skuSellList}">
+                    <li class="slides col-xs-12 ${data.length < 3 ? 'col-sm-4' : 'col-sm-3'}">
+                        <a href="${item.link}" target="${item.target}" class="u-absolute-fill">
+                            <span class="sr-only">${item.catalog}</span>
+                        </a>
+                        <div data-sly-test="${item.image}" class="col-xs-12 related-products-component__card rendition">
+                            <div class="rendition">
+                                <img class="rendition__image img-responsive" data-src="${item.image}" data-desktop-rendition="${item.image}" data-mobile-rendition="${item.image}" data-tablet-rendition="${item.image}" alt="${item.imageAltText}"/>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 related-products-component__info">
+                            <sly data-sly-test="${item.catalog}">
+                                <p class="b-eyebrow-small related-products-component__title">${item.catalog}</p>
+                            </sly>
+                            <sly data-sly-test="${item.productFamily}">
+                                <p class="b-h4-link">${item.productFamily}</p>
+                            </sly>
+                            <sly data-sly-test="${item.longDesc}">
+                                <p>${item.longDesc}</p>
+                            </sly>
+                        </div>
+                    </li>
+                </ul>
+                <sly data-sly-test="${data.length && data.length > 3}">
+                    <button class="upsell-products__prev-arrow upsell-products__arrows button--reset">
+                        <i class="icon icon-chevron-left"></i>
+                        <span class="sr-only">Go to Previous Item</span>
+                    </button>
+                    <button class="upsell-products__next-arrow upsell-products__arrows button--reset">
+                        <i class="icon icon-chevron-right"></i>
+                        <span class="sr-only">Go to Next Item</span>
+                    </button>
+                </sly>
+            </div>
+
+            <!----- Grid View ----->
+
+            <div class="module-related-products upsell-products hides ${data.viewType == 'Grid' ? 'showbox' : ''}">
+                <ul class="upsell-products grid-view grid-cross" id="gridcross" data-sly-list="${data.skuSellList}">
+                    <li class="col-xs-12">
+                        <a href="${item.link}" target="${item.target}" class="u-absolute-fill grid-link">
+                            <span class="sr-only">${item.catalog}</span>
+                        </a>
+                        <div data-sly-test="${item.image}" class="related-products-component__card">
+                            <div class="rendition">
+                                <img class="rendition__image img-responsive" data-src="${item.image}" data-desktop-rendition="${item.image}" data-mobile-rendition="${item.image}" data-tablet-rendition="${item.image}" alt="${item.imageAltText}"/>
+                            </div>
+                        </div>
+                        <div class="related-products-component__info">
+                            <sly data-sly-test="${item.catalog}">
+                                <p class="b-eyebrow-small related-products-component__title">${item.catalog}</p>
+                            </sly>
+                            <!-- <sly data-sly-test="${item.productFamily}">
+                                <p class="b-h4-link">${item.productFamily}</p>
+                                </sly> -->
+                            <sly data-sly-test="${item.longDesc}">
+                                <p class="longdisc">${item.longDesc}</p>
+
+                            </sly>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="load-more-btn grid-cross-btn cta-default">
+                    <a href="javascript:void(0)" class="b-button b-button__tertiary b-button__tertiary--light more-text">
+                        ${'viewMoreText' @ i18n}
+                    </a>
+                    <a href="javascript:void(0)" class="b-button b-button__tertiary b-button__tertiary--light less-text">
+                        ${'viewLessText' @ i18n}
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

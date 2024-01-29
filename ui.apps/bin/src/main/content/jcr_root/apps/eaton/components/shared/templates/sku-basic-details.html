@@ -1,0 +1,83 @@
+<template data-sly-template.data="${ @ data }">
+<div class="module-product-detail-card light-sku-module-product-detail-card">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 module-product-detail-card--image-container">
+                <script src="https://scripts.sirv.com/sirv.js"></script>
+
+                <div data-sly-use.htmlVariation="../../shared/templates/sku-product-carosel.html"
+                    class="light-sku-product-images-container">
+                    <div data-sly-call="${htmlVariation.skuProductCarousel @ dataObject=data}"></div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-6  light-sku-module-product-detail-card">
+
+                <h1 class="module-product-detail-card__title excel_class">
+                    ${data.skuDetails.skuId}
+                </h1>
+                <div class="module-product-detail-card__description b-body-copy excel_class">
+                    ${ data.skuDetails.skuDescription }
+                </div>
+
+                <div class="module-product-detail-card__price b-body-copy-small">
+
+                </div>
+
+                <div class="module-product-detail-card__actions">
+                    <div class="ps-widget" ps-sku="${request.requestPathInfo.selectors[0]}"></div>
+                    <sly
+                        data-sly-test="${ data.skuDetails.productFamilyPIMDetails.primaryCTALabel && data.skuDetails.productFamilyPIMDetails.primaryCTAURL }">
+
+                        <a href="${data.skuDetails.productFamilyPIMDetails.primaryCTAURL @context='html'}"
+                            data-analytics-event="request quote"
+                            aria-label="Go to ${ data.skuDetails.productFamilyPIMDetails.primaryCTALabel}"
+                            target="${ data.skuDetails.productFamilyPIMDetails.primaryCTANewWindow}"
+                            data-source-tracking="${data.skuDetails.productFamilyPIMDetails.primaryCTAEnableSourceTracking}"
+                            data-page-path-tracking="${data.skuDetails.productFamilyPIMDetails.isSuffixDisabled ? 'false' : 'true'}"
+                            class="b-button b-button__tertiary b-button__tertiary--light">
+                            ${ data.skuDetails.productFamilyPIMDetails.primaryCTALabel }
+                        </a>
+                    </sly>
+                </div>
+
+
+                <sly
+                    data-sly-test="${ data.skuDetails.productFamilyPIMDetails.displayReplacementOptions.iterator }">
+                    <div class="module-product-detail-card__replacement">
+                        <sly data-sly-test="${data.replacementOptionText}">
+                            <h2 class="module-product-detail-card__replacement--header">
+                                ${data.replacementOptionText} </h2>
+                        </sly>
+                        <ul data-sly-list="${data.skuReplacementOptionList}">
+                            <li>
+                                <a href="${item.link}" aria-label="Go to ${ item.catalog }"
+                                    class="module-product-detail-card__replacement--link">${ item.catalog
+                                    }</a>
+                            </li>
+                        </ul>
+                    </div>
+                </sly>
+
+                <div class="module-product-detail-card__links">
+                    <div>
+                        <ul
+                            data-sly-list="${ data.skuDetails.productFamilyPIMDetails.secondaryLinksList.iterator }">
+                            <sly data-sly-test="${ item.text }">
+                                <li>
+                                    <a href="${item.path}" aria-label="Go to ${ item.text }">
+                                        <i data-sly-test="${item.newWindow == '_blank'}"
+                                            class="icon icon-link-external" aria-hidden="true"></i>
+                                        ${ item.text }
+                                    </a>
+
+                                </li>
+                            </sly>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</template>

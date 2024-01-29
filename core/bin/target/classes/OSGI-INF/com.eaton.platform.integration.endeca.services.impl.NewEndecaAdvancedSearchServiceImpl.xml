@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.endeca.services.impl.NewEndecaAdvancedSearchServiceImpl" immediate="true">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="serviceName" type="String" value="advanced-search-service"/>
+  <property name="service.description" type="String" value=" Endeca Advanced Search Implementation"/>
+  <property name="process.label" type="String" value=" NewEndecaAdvancedSearchServiceImpl"/>
+  <service>
+    <provide interface="com.eaton.platform.core.search.service.AssetSearchService"/>
+  </service>
+  <reference name="endecaAdvancedSearchResponseMappingService" interface="com.eaton.platform.core.search.service.SearchResponseMappingService" target="(serviceName=endeca-asset-search-mapping-service)" field="endecaAdvancedSearchResponseMappingService"/>
+  <reference name="endecaAdvancedSearchService" interface="com.eaton.platform.integration.endeca.services.EndecaAdvancedSearchService" field="endecaAdvancedSearchService"/>
+  <reference name="endecaService" interface="com.eaton.platform.integration.endeca.services.EndecaService" field="endecaService"/>
+  <implementation class="com.eaton.platform.integration.endeca.services.impl.NewEndecaAdvancedSearchServiceImpl"/>
+</scr:component>

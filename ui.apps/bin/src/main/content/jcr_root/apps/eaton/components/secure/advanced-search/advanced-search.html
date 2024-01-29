@@ -1,0 +1,69 @@
+<!-- Integrated code goes here -->
+
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Advanced Search: ${currentNode.name}</div>
+</sly>
+<sly data-sly-use.configData="com.eaton.platform.core.models.secure.AdvancedSearchModel">
+
+    <!---Assets Bulkdownload Email Component condition for class 'bde-activated' Add class when bulkdownload option is enabled.-->
+    <div class="${configData.enableBulkDownload ? 'bde-activated' : ''}">
+
+        <!---Assets Bulkdownload Email Component Container START-->
+        <sly data-sly-test="${configData.enableBulkDownload}">
+            <div id="assets-bulkdownload-email-div"
+                data-sly-resource="${ 'asset-bulk-download-email' @ resourceType='/apps/eaton/components/general/asset-bulk-download-email' }">
+            </div>
+        </sly>
+        <!---Assets Bulkdownload Email Component Container END-->
+
+
+        <div class="eaton-advanced-search" id="advance__search-result-doc"
+            data-bulkdownload="${configData.enableBulkDownload}"
+            data-authenticated="${configData.isAuthenticated? 'true':'false'}" data-resource="${resource.path}"
+            data-date-label="${configData.dateText}" data-size-label="${configData.sizeText}"
+            data-language-label="${configData.languagesText}"
+            data-bulkdownload-tooltip-text="${configData.bulkDownloadToolTipText}"
+            data-default-sort-option="${configData.defaultSort}" data-attribute="3"
+            data-attribute-view-type="${configData.viewType}" data-download-text="${configData.downloadText}">
+
+            <div class="eaton-title eaton-title--default eaton-title--inset doc-title">
+                <sly data-sly-resource="${'title' @ resourceType='/apps/eaton/components/general/title'}"></sly>
+            </div>
+            <div>
+                <sly data-sly-resource="${'search-box' @ resourceType='eaton/components/search/search-box'}"></sly>
+            </div>
+
+            <div class="eaton-search--advanced-results" id="advance__search">
+                <sly data-sly-test="${ !wcmmode.edit }">
+                    <div class="loader loader-active adv-search__loader">
+                        <div class="loader__loader-circle"></div>
+                    </div>
+                </sly>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <sly data-sly-use.tpl="views/menubar.html">
+                                <sly data-sly-call="${ tpl.module @ data=configData }"></sly>
+                            </sly>
+                        </div>
+                    </div>
+                    <div class="faceted-navigation-header__active-filter" id="selectedFilter"></div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-3">
+                            <!--/*<sly data-sly-include="views/filters.html" data-sly-unwrap></sly>*/-->
+                            <sly data-sly-use.tpl="views/filters.html">
+                                <sly data-sly-call="${ tpl.module @ data=configData }"></sly>
+                            </sly>
+                        </div>
+                        <div class="col-xs-12 col-md-9">
+                            <sly data-sly-include="views/results.html" data-sly-unwrap></sly>
+                        </div>
+                        <sly data-sly-use.tpl="views/noresults.html">
+                            <sly data-sly-call="${ tpl.module @ data=configData}"></sly>
+                        </sly>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>

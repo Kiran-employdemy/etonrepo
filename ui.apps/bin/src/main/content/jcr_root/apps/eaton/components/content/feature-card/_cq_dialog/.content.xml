@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Feature Card"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Carousel">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <section
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Feature Card Properties"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <view
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                class="cq-dialog-dropdown-showhide"
+                                cq-dialog-dropdown-showhide-target=".image-hide-show"
+                                fieldDescription="Determine which variation of component to view"
+                                fieldLabel="View *"
+                                name="./view"
+                                required="true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <card
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Default (Card)"
+                                        value="card"/>
+                                    <singleFeature
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Single Feature"
+                                        value="single-feature"/>
+                                </items>
+                            </view>
+                            <cardsHeader
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="This field stores the value for Header field."
+                                fieldLabel="Header"
+                                name="./cardHeader"/>
+                            <cardImage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                allowUpload="{Boolean}false"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldDescription="This field stores the image."
+                                fieldLabel="Image *"
+                                fileNameParameter="./fileName"
+                                fileReferenceParameter="./cardImage"
+                                mimeTypes="[image]"
+                                multiple="{Boolean}false"
+                                name="./imageName"
+                                required="{Boolean}true"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
+                            <imageAltText
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Image Alt Text"
+                                name="./cardImageAltText"/>
+                            <cardEyebrow
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                class="hide image-hide-show"
+                                fieldDescription="This field stores the value for Title field."
+                                fieldLabel="Eyebrow"
+                                name="./cardEyebrow"
+                                showhidetargetvalue="card"/>
+                            <cardLinkPath
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                fieldDescription="This field stores the value for Link Path field."
+                                fieldLabel="Link Path *"
+                                name="./cardLinkPath"
+                                required="{Boolean}true"/>
+                            <cardLinkTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="This field stores the value for Card Title field."
+                                fieldLabel="Link Title"
+                                name="./cardLinkTitle"/>
+                            <cardLinkDesc
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                class="hide image-hide-show"
+                                fieldDescription="This field stores the value for the Card Description field"
+                                fieldLabel="Link Description"
+                                name="./cardLinkDesc"
+                                showhidetargetvalue="single-feature"/>
+                            <cardLinkOpenNewWindow
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                fieldDescription="This field stores the value for new window field."
+                                name="./cardLinkOpenNewWindow"
+                                text="Open New Window"
+                                value="true"/>
+                            <enableTeaserContent
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./enableTeaserContent"
+                                text="Enable Teaser Content"
+                                value="false"/>
+                            <desktopTrans
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="All values should drive from the configuration"
+                                fieldLabel="Desktop Image *"
+                                name="./desktopTrans"
+                                required="true">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/ecom/content/imageTransform"
+                                    addNone="{Boolean}true"
+                                    selector="desktop"/>
+                            </desktopTrans>
+                            <mobileTrans
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="All values should drive from the configuration"
+                                fieldLabel="Mobile Image *"
+                                name="./mobileTrans"
+                                required="true">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/ecom/content/imageTransform"
+                                    addNone="{Boolean}true"
+                                    selector="mobile"/>
+                            </mobileTrans>
+                        </items>
+                    </column>
+                </items>
+            </section>
+        </items>
+    </content>
+</jcr:root>

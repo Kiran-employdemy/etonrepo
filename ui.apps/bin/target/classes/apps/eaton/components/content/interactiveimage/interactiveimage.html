@@ -1,0 +1,80 @@
+<sly data-sly-use.imageAuthorableDialog="com.eaton.platform.core.models.InteractiveImageModel"></sly>
+<sly data-sly-test="${wcmmode.edit}">
+	<div class="alert alert-warning">Interactive Image Component</div>
+</sly>
+
+<sly data-sly-test="${imageAuthorableDialog.image}">
+	 <div class="interactive-room-component interactive-room-component--image dataset"  data-image="${imageAuthorableDialog.image}" data-image1="${imageAuthorableDialog.image1}" data-image2="${imageAuthorableDialog.image2}" data-image3="${imageAuthorableDialog.image3}" data-imagemob="${imageAuthorableDialog.imagemob}" data-image1mob="${imageAuthorableDialog.image1mob}" data-image2mob="${imageAuthorableDialog.image2mob}" data-image3mob="${imageAuthorableDialog.image3mob}">
+		<div class="blur-container">
+			<div class="loader">
+				<div class="loader-circle"></div>
+			</div>
+			<section class="hero-panel interactive-image-container"
+				data-sly-use.data="data/interactive-image-data.js"
+				imageComponentData=${data.imageJsData}
+				data-redirect-link="${imageAuthorableDialog.redirectLink}.html">
+				<div class="hero-panel__consumer">
+					<!--/ these elements have their background image set via JS /-->
+					<div class="hero-panel__item item hero-panel__item-background hero-panel__item-background--desktop" style=""></div>
+					<div class="hero-panel__item item hero-panel__item-background hero-panel__item-background--mobile" style=""></div>
+					<div class="hero-panel__item item">
+						<div class="hero-panel__tile hero-panel__tile--short">
+							<div class="hero-panel__tile-background hero-panel__tile-background--dark"></div>
+							<div data-sly-test="${imageAuthorableDialog.title}" class="hero-panel__tile-body hero-panel__tile-body--dark">
+								<h1 class="hero-panel__title">${imageAuthorableDialog.title}</h1>
+							</div>
+						</div>
+						<div class="hero-panel__tile hero-panel__tile--more">
+							<div class="hero-panel__tile-background hero-panel__tile-background--dark"></div>
+							<div data-sly-test="${imageAuthorableDialog.title1 && imageAuthorableDialog.desc}" class="hero-panel__tile-body hero-panel__tile-body--dark">
+								<h1 class="hero-panel__title">${imageAuthorableDialog.title1}</h1>
+								<p class="hero-panel__copy">${imageAuthorableDialog.desc}</p>
+							</div>
+						</div>
+
+						<div class="parallax-nav">
+							<ul>
+								<li class="active">
+									<a href="javascript:;" class="parallx-welcome">
+										<span>${imageAuthorableDialog.radioButtonText1 ? imageAuthorableDialog.radioButtonText1 : '' }</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="parallx-introduction">
+										<span>${imageAuthorableDialog.radioButtonText2 ? imageAuthorableDialog.radioButtonText2 : '' }</span>
+									</a>
+								</li>
+								<li>
+									<a href="javascript:;" class="parallx-lifestyle">
+										<span>${imageAuthorableDialog.radioButtonText3 ? imageAuthorableDialog.radioButtonText3 : '' }</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="hero-panel__scroll-link">
+							<a href="javascript:;">
+								<span class="icon icon-chevron-down"></span>
+							</a>
+						</div>
+
+						<div class="hero-panel__Weather-picker__container">
+							<div class="hero-panel__Weather-picker">
+								<div class="hero-panel__Weather-picker__block"
+									data-summer-image-url="${imageAuthorableDialog.imageOnleft @context='html'}"
+									data-winter-image-url="${imageAuthorableDialog.imageOnright @context='html'}"
+									style="background-image: url(${imageAuthorableDialog.imageOnright @context='html'});">
+									<a href="javascript:;" class="hero-panel__Weather-picker__summer">${'summer' @ i18n}</a>
+									<a href="javascript:;" class="hero-panel__Weather-picker__winter">${'winter' @ i18n}</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<img src="" class="hero-panel__sizing-image hero-panel__sizing-image--desktop" />
+					<img src="" class="hero-panel__sizing-image hero-panel__sizing-image--mobile" />
+				</div>
+			</section>
+		</div>
+	</div>
+</sly>

@@ -1,0 +1,105 @@
+{
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Sep 09 2021 14:23:25 GMT+0000",
+    "jcr:content": {
+        "jcr:primaryType": "cq:PageContent",
+        "jcr:mixinTypes": [
+            "cq:LiveRelationship",
+            "cq:PropertyLiveSyncCancelled",
+            "mix:versionable"
+        ],
+        "jcr:createdBy": "admin",
+        "jcr:title": " Company Overview",
+        "cq:propertyInheritanceCancelled": [
+            "cq:cloudserviceconfigs",
+            "jcr:language",
+            "hideInNav"
+        ],
+        "cq:lastReplicationAction": "Activate",
+        "jcr:versionHistory": "e6a7e5dc-c228-46e9-8973-d4a51e50d41b",
+        "cq:template": "/conf/eaton/settings/wcm/templates/generic-page",
+        "cq:lastReplicatedBy": "admin",
+        "jcr:lastModifiedBy": "e0078808",
+        "priority": "0.5",
+        "cq:lastRolledout": "Thu Feb 01 2018 12:52:01 GMT-0500",
+        "jcr:predecessors": [
+            "c9b701a2-1600-4b27-95d7-e691db0631bb"
+        ],
+        "cq:redirectTarget": "/content/eaton/us/en-us/company",
+        "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+        "jcr:created": "Thu Sep 09 2021 14:23:25 GMT+0000",
+        "primary-sub-category-tag@TypeHint": "String[]",
+        "cq:lastReplicated": "Sat May 11 2019 09:38:53 GMT-0400",
+        "cq:lastModified": "Sat Jan 28 2023 19:56:55 GMT+0000",
+        "view": "generic",
+        "hideInHtml": "false",
+        "cq:cloudserviceconfigs": [
+            "/etc/cloudservices/socialshare/social-share",
+            "/etc/cloudservices/eloquaconfig/production-eloqua-configuration",
+            "/etc/cloudservices/siteconfig/en_us",
+            "/etc/cloudservices/brightcoveconfig/us-en",
+            "/etc/cloudservices/chatconfig/chat-configuration",
+            "/etc/cloudservices/dynamictagmanagement/eaton-aem-dtm-connection",
+            "/etc/cloudservices/nanorepchatconfig/nanorep-configurations",
+            "/etc/cloudservices/endeca-configurations/endeca-prod",
+            "/etc/cloudservices/pdh-configurations/pdh-configurations"
+        ],
+        "meta-robot-tags": "index,follow",
+        "jcr:baseVersion": "c9b701a2-1600-4b27-95d7-e691db0631bb",
+        "jcr:isCheckedOut": true,
+        "hideInNav": "true",
+        "hideInXml": "false",
+        "page-type": "product-sku",
+        "jcr:lastModified": "Mon Oct 23 2017 19:29:19 GMT-0400",
+        "jcr:uuid": "f917b471-d1a0-4543-bd2b-dce37137cf11",
+        "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+        "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+        "cq:allowedTemplates": [
+            "/conf/eaton/settings/wcm/templates/generic-page",
+            "/conf/eaton/settings/wcm/templates/article-page"
+        ],
+        "textIsRich": "true",
+        "cq:lastRolledoutBy": "e0020354",
+        "cq:lastModifiedBy": "admin",
+        "changefrequency": "weekly",
+        "root": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:mixinTypes": [
+                "cq:LiveRelationship"
+            ],
+            "cq:lastRolledout": "Tue Jan 09 2018 16:18:06 GMT-0500",
+            "sling:resourceType": "wcm/foundation/components/responsivegrid",
+            "cq:lastRolledoutBy": "e0087642",
+            "responsivegrid": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:mixinTypes": [
+                    "cq:LiveRelationship"
+                ],
+                "jcr:createdBy": "e0078808",
+                "jcr:lastModifiedBy": "e0078808",
+                "cq:lastRolledout": "Tue Jan 09 2018 16:18:06 GMT-0500",
+                "jcr:created": "Thu Oct 05 2017 10:47:13 GMT-0400",
+                "jcr:lastModified": "Tue Jan 09 2018 16:18:06 GMT-0500",
+                "sling:resourceType": "wcm/foundation/components/responsivegrid",
+                "cq:lastRolledoutBy": "e0087642",
+                "cq:responsive": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "jcr:mixinTypes": [
+                        "cq:LiveRelationship"
+                    ],
+                    "cq:lastRolledout": "Tue Jan 09 2018 16:18:06 GMT-0500",
+                    "cq:lastRolledoutBy": "e0087642"
+                },
+                "light_sku": {
+                    "jcr:primaryType": "nt:unstructured",
+                    "jcr:createdBy": "admin",
+                    "jcr:lastModifiedBy": "admin",
+                    "jcr:created": "Sat Jan 28 2023 19:04:59 GMT+0000",
+                    "jcr:lastModified": "Sat Jan 28 2023 19:04:59 GMT+0000",
+                    "sling:resourceType": "eaton/components/product/light-sku"
+                }
+            }
+        }
+    }
+}

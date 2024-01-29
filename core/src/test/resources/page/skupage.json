@@ -1,0 +1,181 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:mixinTypes": [
+    "rep:AccessControllable"
+  ],
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "cq:LiveRelationship",
+      "mix:versionable"
+    ],
+    "jcr:title": "SKU Page",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "0c230c17-b35a-42df-a4f0-0912444bd94e",
+    "cq:template": "/conf/eaton/settings/wcm/templates/sku-page",
+    "priority": "0.0",
+    "jcr:language": "en_us",
+    "jcr:predecessors": [
+      "a293f3db-0898-4f0b-a2d1-562282f5a64c"
+    ],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "primary-sub-category-tag@TypeHint": "String[]",
+    "view": "generic",
+    "jcr:baseVersion": "a293f3db-0898-4f0b-a2d1-562282f5a64c",
+    "jcr:isCheckedOut": true,
+    "hideInNav": "true",
+    "page-type": "product-sku",
+    "switchSubCategoryToPIM": "false",
+    "taxonomyAttribute": [
+      "Circuit Breaker Type"
+    ],
+    "jcr:uuid": "d4467d55-9a24-48cc-a2c5-ba8fee725c87",
+    "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "switchTaxonomyAttributesToPIM": "true",
+    "taxonomyAttributeGrpName": [
+      "Electrical Input"
+    ],
+    "changefrequency": "always",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:LiveRelationship"
+      ],
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:LiveRelationship"
+        ],
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "cq:responsive": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ]
+        },
+        "product_detail_tabs": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "view": "toggle-graphic",
+          "sling:resourceType": "eaton/components/product/product-detail-tabs",
+          "content-tab-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:mixinTypes": [
+              "cq:LiveRelationship"
+            ],
+            "sling:resourceType": "wcm/foundation/components/parsys",
+            "product_detail_card": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "cq:LiveRelationship"
+              ],
+              "sling:resourceType": "eaton/components/product/product-detail-card"
+            },
+            "family_inherited_par": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "cq:LiveRelationship"
+              ],
+              "sling:resourceType": "eaton/components/product/family-inherited-parsys",
+              "familyInherited": {
+                "jcr:primaryType": "nt:unstructured",
+                "cq:isManuallyCreated": true,
+                "sling:resourceType": "wcm/foundation/components/parsys",
+                "related_products_pdh": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "cq:isManuallyCreated": true,
+                  "sling:resourceType": "eaton/components/product/related-products-pdh"
+                }
+              }
+            },
+            "product_support": {
+              "jcr:primaryType": "nt:unstructured",
+              "cq:isManuallyCreated": true,
+              "sling:resourceType": "eaton/components/product/product-support"
+            }
+          },
+          "content-tab-2": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:mixinTypes": [
+              "cq:LiveRelationship"
+            ],
+            "sling:resourceType": "wcm/foundation/components/parsys",
+            "product_specificatio": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "cq:LiveRelationship"
+              ],
+              "sling:resourceType": "eaton/components/product/product-specifications"
+            }
+          },
+          "content-tab-3": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:mixinTypes": [
+              "cq:LiveRelationship"
+            ],
+            "sling:resourceType": "wcm/foundation/components/parsys",
+            "topic_link_with_icon": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "cq:LiveRelationship"
+              ],
+              "sling:resourceType": "eaton/components/product/topic-link-with-icon-pdh"
+            },
+            "resource_list": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "cq:LiveRelationship"
+              ],
+              "view": "view-pdh",
+              "sling:resourceType": "eaton/components/product/resource-list"
+            },
+            "product_support": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "cq:LiveRelationship"
+              ],
+              "sling:resourceType": "eaton/components/product/product-support"
+            }
+          },
+          "content": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:mixinTypes": [
+              "cq:LiveRelationship"
+            ],
+            "sling:resourceType": "wcm/foundation/components/parsys",
+            "title": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:mixinTypes": [
+                "cq:LiveRelationship"
+              ],
+              "jcr:title": "404 - Catalog number does not exist",
+              "type": "h1",
+              "view": "default",
+              "toggleInnerGrid": "true",
+              "sling:resourceType": "eaton/components/general/title"
+            }
+          }
+        },
+        "how_to_buy": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "sling:resourceType": "eaton/components/product/how-to-buy"
+        },
+        "upsell_products": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "view": "upsell-products",
+          "sling:resourceType": "eaton/components/product/upsell-products"
+        }
+      }
+    }
+  }
+}

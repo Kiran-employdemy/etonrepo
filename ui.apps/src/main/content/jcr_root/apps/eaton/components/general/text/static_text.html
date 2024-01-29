@@ -1,0 +1,24 @@
+<!--/*
+
+  Load Component Views:
+
+	Author may select one of the following views
+	- default
+	- statement
+
+*/-->
+
+<sly data-sly-use.data="com.eaton.platform.core.models.TextModel">
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Text: ${currentNode.name}</div>
+</sly>
+
+<sly data-sly-test="${ data.view == 'default' }">
+  <sly data-sly-include="views/view-default.html"></sly>
+</sly>
+
+<sly data-sly-test="${ data.view == 'statement' }">
+  <sly data-sly-include="views/view-statement.html"></sly>
+</sly>
+</sly>

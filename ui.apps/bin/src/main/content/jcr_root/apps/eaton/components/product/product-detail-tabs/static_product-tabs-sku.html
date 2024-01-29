@@ -1,0 +1,19 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Product tabs SKU</div>
+</sly>
+
+<sly data-sly-use.viewData="com.eaton.platform.core.models.productdetailstabs.ProductDetailsTabsModel">
+
+  <sly data-sly-test="${ properties.view == 'links-navigation' }">
+    <sly data-sly-use.tpl="eaton/components/shared/templates/module-product-tab.html">
+      <sly data-sly-call="${ tpl.data @ data=viewData.productDetailsTabsBean }"></sly>
+    </sly>
+  </sly>
+
+  <sly data-sly-test="${ properties.view == 'toggle-graphic' }">
+    <sly data-sly-use.tpl="eaton/components/shared/templates/module-product-tab.html">
+      <sly data-sly-call="${ tpl.data @ data=viewData.productDetailsTabsBean }"></sly>
+    </sly>
+  </sly>
+
+</sly>

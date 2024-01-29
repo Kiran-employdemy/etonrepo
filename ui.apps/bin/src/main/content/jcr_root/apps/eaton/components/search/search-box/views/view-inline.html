@@ -1,0 +1,33 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.SearchSlingModel">
+  <div class="eaton-search eaton-search--inline">
+    <!--/* If Header */-->
+    <p class="eaton-search--inline__header b-eyebrow-small">${data.searchModel.transSearchHeader}</p>
+    <!--/* If Subheader */-->
+    <p data-sly-test="${data.searchModel.transSubhead}" class="eaton-search--inline__subheader">${data.searchModel.transSubhead}</p>
+
+    <!--/* Search Form */-->
+    <form class="eaton-search__form eaton-search--inline__form"
+          action="${data.searchModel.searchResutlsPath}"
+          autocomplete="off"
+          target="${data.searchModel.isExternal  ? '_blank' : '_self'}">
+      <div class="form-group">
+        <label for="mega-menu-search-inline" class="sr-only">${data.searchModel.transSearchHeader}</label>
+          <textarea rows="1" 
+		  name="search-term" 
+		  class="form-control eaton-search--inline__form-input" id="mega-menu-search-inline" 
+		  placeholder="${data.searchModel.transFieldAid}"
+           required="required"></textarea>
+
+          <div data-sly-test="${data.searchModel.isExternal}" class="eaton-search--inline__form-external">
+            <span class="sr-only">Submit form in new Tab</span>
+            <i class="icon icon-link-external" aria-hidden="true"></i>
+          </div>
+
+          <button type="submit" class="button--reset eaton-search__submit eaton-search--inline__form-submit">
+            <span class="sr-only">${data.searchModel.searchIcon}</span>
+            <i class="icon icon-search" aria-hidden="true"></i>
+          </button>
+      </div>
+    </form>
+  </div>
+</sly>

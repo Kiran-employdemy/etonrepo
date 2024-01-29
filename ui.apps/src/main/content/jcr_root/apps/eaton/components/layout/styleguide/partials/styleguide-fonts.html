@@ -1,0 +1,40 @@
+<!--/*
+  StyleGuide: Typography
+*/-->
+<template data-sly-template.section="${ @ data }">
+
+  <div class="sg-section" id="sg-fonts">
+    <h2>Fonts</h2>
+    <br /><br />
+    <table class="sg-table b-body-copy-small">
+      <thead>
+        <tr class="b-body-copy-small">
+          <td width="30%">Name</td>
+          <td width="70%">Chararacters</td>
+        </tr>
+      </thead>
+      <tbody data-sly-list="${ data.fonts }">
+        <tr>
+          <td>${ item.name }</td>
+          <td class="sg-fonts__sample" style="${ item.cssStyle @ context='styleString' };">
+            ABCDEFGHIJKLMNOPQRSTUVWXYZ <br />
+            abcdefghijklmnopqrstuvwxyz <br />
+            123456789 !@#$%^&*()
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="sg-divider" />
+
+    <style>
+
+      .sg-fonts__sample {
+        font-size: 2.4rem;
+        line-height: 1.2;
+      }
+
+    </style>
+  </div>
+
+</template>

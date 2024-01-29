@@ -1,0 +1,202 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Fri Apr 06 2018 15:27:56 GMT+0530",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": ["mix:versionable"],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Global Prime (EN-US)",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "6492f5d4-54cd-45bd-abb3-577b845814f7",
+    "cq:template": "/conf/eaton/settings/wcm/templates/home-page",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:lastModifiedBy": "c3042862",
+    "jcr:language": "en_us",
+    "jcr:predecessors": ["61bc600a-32d5-41f3-9962-04cbb6015cc1"],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Fri Apr 06 2018 15:27:56 GMT+0530",
+    "primary-sub-category-tag@TypeHint": "String[]",
+    "cq:lastReplicated": "Mon Jun 04 2018 18:33:46 GMT+0530",
+    "cq:lastModified": "Tue May 15 2018 03:15:37 GMT-0400",
+    "view": "generic",
+    "cq:cloudserviceconfigs": ["/etc/cloudservices/socialshare/social-share", "/etc/cloudservices/eloquaconfig/production-eloqua-configuration", "/etc/cloudservices/siteconfig/en_us", "/etc/cloudservices/brightcoveconfig/us-en", "/etc/cloudservices/chatconfig/chat-configuration"],
+    "overlay-path": "/content/eaton/language-masters/en-us/megamenu-reference-folder",
+    "jcr:description": "Diversified power management company and global technology leader in electrical systems for power quality, distribution and control; hydraulics components, systems and services for industrial and mobile equipment; aerospace fuel, hydraulics and pneumatic systems for commercial and military use; and truck and automotive drivetrain and powertrain systems for performance, fuel economy and safety.\r\nWelcome",
+    "jcr:baseVersion": "61bc600a-32d5-41f3-9962-04cbb6015cc1",
+    "jcr:isCheckedOut": true,
+    "page-type": "sub-category",
+    "switchSubCategoryToPIM": "false",
+    "pageTitle": "Home",
+    "jcr:lastModified": "Tue May 15 2018 03:13:06 GMT-0400",
+    "jcr:uuid": "13ce0281-85b8-4ed2-b703-e3ffdf3291d0",
+    "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "switchTaxonomyAttributesToPIM": "false",
+    "cq:allowedTemplates": ["/apps/eaton/templates/eaton-redirect-template", "/apps/eaton/templates/eaton-reference-template", "/conf/eaton/settings/wcm/templates/primary-page", "/conf/eaton/settings/wcm/templates/site-map", "/conf/eaton/settings/wcm/templates/search-results-page", "/conf/eaton/settings/wcm/templates/category-with-cards", "/conf/eaton/settings/wcm/templates/eaton-product-selector-results-", "/conf/eaton/settings/wcm/templates/vg-product-selector-template"],
+    "cq:lastModifiedBy": "c3042862",
+    "navTitle": "Home"
+  },
+  "products": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": ["rep:AccessControllable"],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:27:56 GMT+0530",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": ["mix:versionable"],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Products",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "5db4f877-83ad-4455-a259-56f929dc2e12",
+      "cq:template": "/conf/eaton/settings/wcm/templates/primary-page",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:predecessors": ["80579657-074b-4a16-a45a-26b488d0dd04"],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Fri Apr 06 2018 15:27:56 GMT+0530",
+      "primary-sub-category-tag@TypeHint": "String[]",
+      "cq:lastReplicated": "Mon Jun 04 2018 18:33:47 GMT+0530",
+      "cq:lastModified": "Fri Jun 08 2018 18:47:08 GMT+0530",
+      "view": "generic",
+      "jcr:description": "Eaton produces a broad range of products and services, from fuel-efficient systems, to power chain management tools and components that safely guide commercial aircraft. Eaton is always looking for new ways to increase the value of the products and services we offer our customers.",
+      "jcr:baseVersion": "80579657-074b-4a16-a45a-26b488d0dd04",
+      "jcr:isCheckedOut": true,
+      "page-type": "select",
+      "jcr:lastModified": "Wed Dec 13 2017 14:07:55 GMT-0500",
+      "jcr:uuid": "46833c9d-0c64-4945-bb8e-abe0ff96ed06",
+      "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "cq:allowedTemplates": ["/conf/eaton/settings/wcm/templates/article-page", "/conf/eaton/settings/wcm/templates/primary-page", "/conf/eaton/settings/wcm/templates/generic-page", "/conf/eaton/settings/wcm/templates/category-with-cards", "/conf/eaton/settings/wcm/templates/category-page"],
+      "cq:lastModifiedBy": "admin"
+    }
+  },
+  "services": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": ["rep:AccessControllable"],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:06 GMT+0530"
+  },
+  "markets": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": ["rep:AccessControllable"],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:07 GMT+0530"
+  },
+  "support": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": ["rep:AccessControllable"],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:11 GMT+0530"
+  },
+  "company": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": ["rep:AccessControllable"],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:12 GMT+0530"
+  },
+  "megamenu-reference-folder": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": ["rep:AccessControllable"],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:26 GMT+0530"
+  },
+  "catalog": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": ["rep:AccessControllable"],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:26 GMT+0530"
+  },
+  "skuPage": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": ["rep:AccessControllable"],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:35 GMT+0530"
+  },
+  "sitemap": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": ["rep:AccessControllable"],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:35 GMT+0530"
+  },
+  "product-family-site-map": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": ["rep:AccessControllable"],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:35 GMT+0530"
+  },
+  "search-results": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": ["rep:AccessControllable"],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:35 GMT+0530"
+  },
+  "site-search": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": ["rep:AccessControllable"],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:35 GMT+0530"
+  },
+  "price-list-generator": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": ["rep:AccessControllable"],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:35 GMT+0530"
+  },
+  "sitemap-full": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:35 GMT+0530"
+  },
+  "sign-in": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:mixinTypes": ["rep:AccessControllable"],
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:35 GMT+0530"
+  },
+  "404": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:35 GMT+0530"
+  },
+  "kat": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Apr 06 2018 15:28:35 GMT+0530"
+  },
+  "clutch-page": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Apr 19 2018 18:46:16 GMT+0530"
+  },
+  "torque-page": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Apr 19 2018 18:46:16 GMT+0530"
+  },
+  "clutch-results-page": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Apr 19 2018 18:46:16 GMT+0530"
+  },
+  "torque-results-page": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Apr 19 2018 18:46:16 GMT+0530"
+  },
+  "clutchPage": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu May 31 2018 18:06:46 GMT+0530"
+  },
+  "test-iframe": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Mon Jun 11 2018 10:22:50 GMT+0530"
+  },
+  "test-srp": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Tue Jun 12 2018 16:40:47 GMT+0530"
+  }
+}

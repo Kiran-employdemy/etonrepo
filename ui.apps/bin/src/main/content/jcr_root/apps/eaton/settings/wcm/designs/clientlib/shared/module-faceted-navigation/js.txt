@@ -1,0 +1,8 @@
+#base=js
+
+global-facet-search.js
+active-filter.js
+active-filters.js
+filter.js
+filters.js
+module-faceted-navigation.js

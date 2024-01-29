@@ -1,0 +1,22 @@
+<div data-sly-test="${ wcmmode.edit }" class="alert alert-warning">Recommended Products</div>
+<sly data-sly-use.gridData="com.eaton.platform.core.models.RecommendedProductsModel"></sly>
+
+<sly data-sly-test="${ wcmmode.edit || gridData.exceedLimit }">
+    <div  data-sly-test="${ wcmmode.edit }" class="alert alert-warning">Too many results message</div>
+    <div  data-sly-resource="${'errorpar' @ resourceType='wcm/foundation/components/responsivegrid'}"></div>
+</sly>
+
+<sly data-sly-test="${ wcmmode.edit || gridData.noResults }">
+    <div data-sly-test="${ wcmmode.edit }" class="alert alert-warning">No results message</div>
+    <div  data-sly-resource="${'noResultsPar' @ resourceType='wcm/foundation/components/responsivegrid'}"></div>
+</sly>
+
+<div class="results-list">
+    <div class="results-list__content product-card-container">
+        <sly data-sly-test="${ wcmmode.edit || (!gridData.exceedLimit && !gridData.noResults) }" data-sly-list="${ gridData.familyModuleBeanList }">
+            <sly data-sly-use.tpl="views/recommended-card-sku-item.html">
+                <sly data-sly-call="${ tpl.item @ results=gridData, itemData=item }"></sly>
+            </sly>
+        </sly>
+    </div>
+</div>

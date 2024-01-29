@@ -1,0 +1,51 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.SearchSlingModel">
+	<div class="eaton-search eaton-search--default">
+		<div class="container">
+			<div class="row">
+				<!--/* Search Form */-->
+				<div id="site-search"
+					  class="col-xs-12 eaton-search__form eaton-search--default__form"
+					  autocomplete="off"
+					  target=""
+					>
+					<div class="form-group">
+						<label for="site-search-box" class="sr-only">${data.searchModel.transSearchHeader}</label>
+
+						<sly data-sly-test="${data.isSearchTermPresent}">
+                  <textarea rows="1" name="search-term" id="adv-site-search-box"
+							class="form-control eaton-search--default__form-input eaton-search-textarea"
+							placeholder="${data.searchTerm}"
+							required="required">${data.searchTerm}</textarea>
+						</sly>
+
+						<sly data-sly-test="${!data.isSearchTermPresent}">
+                  <textarea rows="1" name="search-term" id="adv-site-search-box"
+							class="form-control eaton-search--default__form-input eaton-search-textarea"
+							placeholder="${data.searchModel.transFieldAid}"
+							required="required"></textarea>
+						</sly>
+
+						<div
+								class="eaton-search--default__form-mobile-label u-visible-mobile hidden-xs hidden-sm">
+							<span> ${data.isSearchTermPresent == true ? data.searchTerm : data.searchModel.transFieldAid}</span>
+						</div>
+						<div data-sly-test="false"
+							 class="eaton-search--default__form-external">
+							<span class="sr-only">Submit form in new Tab</span> <i
+								class="icon icon-link-external adv-icon" aria-hidden="true"></i>
+						</div>
+						<button type="submit"
+								class="button--reset eaton-search__submit eaton-search--default__form-submit">
+							<span class="sr-only">${data.searchModel.submitLabel}</span> <i
+								class="icon icon-search adv-icon-search" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div class="eaton-search--default__results">
+						<ul class="eaton-search--default__result-list">
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</sly>

@@ -1,0 +1,19 @@
+<sly data-sly-test="${ wcmmode.edit }">
+<div class="alert alert-warning">Chat</div>
+</sly>
+
+<sly
+	data-sly-use.chatConfig="com.eaton.platform.core.models.ChatConfigModel"></sly>
+
+<!--/* Live chat CTA */-->
+<div class="eaton-product-live-chat pull-right">
+	<a data-sly-test="${ chatConfig.showComponent }" href="#live-chat"
+		aria-label="${chatConfig.chatBean.onlinecontent}"
+        data-urltochat="${chatConfig.chatBean.urltochat @ context='uri'}"
+        data-requestUri="${chatConfig.chatBean.urltoagent @ context='uri'}/${chatConfig.chatBean.entrypointid @ context='scriptString'}"
+		id="live-chat"> <i class="icon icon-livechat"
+		aria-hidden="true"></i><span>${chatConfig.chatBean.onlinecontent}</span>
+	</a>
+</div>
+
+

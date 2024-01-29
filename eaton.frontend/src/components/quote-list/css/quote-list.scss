@@ -1,0 +1,186 @@
+//-----------------------------------
+// M-22: Quote
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+.quote-list {
+
+  &__component {
+    background: var(--quote-list-component, $color__primary-blue);
+    margin-bottom: 0;
+  }
+
+  &__image {
+    height: 62vw;
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__icon {
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 100%;
+
+    .icon {
+      color: $color__white;
+      display: block;
+      font-size: rem($base__font-size * 8);
+    }
+
+    .icon-quote-dark::before {
+      background: var(--quote-list-component, $color__primary-blue);
+      line-height: $base__line-height * (0.5 / 1.4);
+    }
+  }
+
+  &__text-container {
+    color: $color__white;
+    padding: rem($spacing__md) rem($spacing__sm) rem($spacing__sm);
+    text-align: left;
+
+    [dir='rtl'] & {
+      text-align: right;
+    }
+  }
+
+  &__quote {
+    font-size: rem($base__font-size * 1.8);
+    font-style: italic;
+    line-height: $base__line-height * (1.5 / 1.4);
+    padding-bottom: rem($spacing__sm);
+  }
+
+  &__author {
+    font-size: rem($base__font-size * 1.6);
+    font-style: italic;
+    line-height: $base__line-height * (1.5 / 1.4);
+
+    .author {
+      font-weight: bold;
+    }
+  }
+
+  @include media-desktop-and-up {
+
+    &__component {
+      align-items: center;
+      display: flex;
+      margin-bottom: rem($spacing__sm / 6);
+      width: 100%;
+    }
+
+    &__image {
+      display: inline-block;
+      height: 484px;
+      order: 1;
+      position: relative;
+      width: 484px;
+    }
+
+    &__icon {
+      left: 100%;
+      margin: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &__text-container {
+      order: 2;
+      width: calc(100% - 484px);
+    }
+
+    &__quote {
+      font-size: rem($base__font-size * 2.4);
+    }
+
+    &__author {
+      font-size: rem($base__font-size * 2.0);
+    }
+
+
+    // Image Aligned Left
+    //--------------
+    &__left {
+      display: flex;
+      margin-left: 0;
+
+      [dir='rtl'] & {
+        margin-right: 0;
+      }
+    }
+
+    &__left &__image {
+      order: 2;
+    }
+
+    &__left &__icon {
+      left: 0;
+      transform: translate(-50%, -50%);
+
+      [dir='rtl'] & {
+        left: 100%;
+      }
+    }
+
+    &__right &__icon {
+
+      [dir='rtl'] & {
+        left: 0;
+      }
+    }
+
+    &__left &__text-container {
+      order: 1;
+      padding: 0 rem($spacing__sm * 2.5) 0 rem($spacing__sm);
+
+      [dir='rtl'] & {
+        padding: 0 rem($spacing__sm) 0 rem($spacing__sm * 2.5);
+      }
+    }
+
+    // Image Aligned Right
+    //--------------
+    &__right &__text-container {
+      padding: 0 rem($spacing__sm) 0 rem($spacing__sm * 2.5);
+      text-align: left;
+
+      [dir='rtl'] & {
+        padding: 0 rem($spacing__sm * 2.5) 0 rem($spacing__sm);
+        text-align: right;
+      }
+    }
+  }
+
+  @include media-desktop-large {
+
+    &__component {
+      width: calc(1140px + ((100% - 1140px) / 2));
+    }
+
+    &__text-container {
+      width: calc(1140px - 484px);
+    }
+
+    &__right {
+      margin-left: calc((100% - 1140px) / 2);
+
+      [dir='rtl'] & {
+        margin-right: calc((100% - 1140px) / 2);
+      }
+    }
+
+    &__left {
+      justify-content: flex-end;
+      margin-right: calc((100% - 1140px) / 2);
+
+      [dir='rtl'] & {
+        margin-left: calc((100% - 1140px) / 2);
+      }
+    }
+  }
+}

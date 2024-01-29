@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/libs/settings/wcm/designs/default"
+        cq:lastModified="{Date}2022-03-18T10:27:46.799-05:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Eaton DAM Update Metadata"
+        sling:resourceType="cq/workflow/components/pages/model">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <process
+                jcr:created="{Date}2021-06-15T07:43:55.995-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-15T07:47:02.248-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Rights Restricted Process"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.eaton.platform.core.workflows.RestrictedRightsProcess"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process>
+            <or
+                jcr:created="{Date}2021-06-15T07:44:11.026-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-15T07:54:30.369-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Does this asset have rights restricted?"
+                sling:resourceType="cq/workflow/components/model/or"
+                branches="2"
+                branchName1="Yes Branch"
+                branchName2="No Branch"
+                branchOrder="[0,1]"
+                default1="true"
+                orSplit="true"
+                script2="function check() {&#xd;&#xa;return true;&#xd;&#xa;}"
+                scriptPath1="/apps/workflow/scripts/eatonscripts/restrictedRightsDecider.ecma">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <noopprocess
+                        jcr:created="{Date}2021-06-15T07:44:27.509-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="A no operation process"
+                        jcr:lastModified="{Date}2021-06-15T07:54:43.228-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Yes"
+                        sling:resourceType="cq/workflow/components/workflow/noopprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="/libs/workflow/scripts/noop.ecma"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </noopprocess>
+                    <process
+                        jcr:created="{Date}2021-06-15T07:44:46.524-05:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-06-15T08:22:19.210-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Set Rights Restricted to 'Yes'"
+                        sling:resourceType="cq/workflow/components/model/process">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.eaton.platform.core.workflows.NormalizeAssetNodeProperties"
+                            PROCESS_ARGS="&quot;yes&quot;::jcr:content/metadata/xmp:eaton-rights-restricted"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </process>
+                </_x0031_>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <noopprocess
+                        jcr:created="{Date}2021-06-15T07:44:30.385-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="A no operation process"
+                        jcr:lastModified="{Date}2021-06-15T07:54:51.413-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="No"
+                        sling:resourceType="cq/workflow/components/workflow/noopprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="/libs/workflow/scripts/noop.ecma"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </noopprocess>
+                    <process
+                        jcr:created="{Date}2021-06-15T07:44:49.333-05:00"
+                        jcr:createdBy="admin"
+                        jcr:lastModified="{Date}2021-06-15T08:23:17.594-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Set Rights Restricted to 'No'"
+                        sling:resourceType="cq/workflow/components/model/process">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="com.eaton.platform.core.workflows.NormalizeAssetNodeProperties"
+                            PROCESS_ARGS="&quot;no&quot;::jcr:content/metadata/xmp:eaton-rights-restricted"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </process>
+                </_x0032_>
+            </or>
+            <process_1506644560
+                jcr:created="{Date}2021-06-15T07:44:54.040-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-15T07:51:00.725-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Update CQ Name"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.eaton.platform.core.workflows.UpdateCQNameProcess"
+                    PROCESS_ARGS="xmp:eaton-file-name,xmp:eaton-imported-by,xmp:eaton-modified-by"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process_1506644560>
+            <process_242137786
+                jcr:created="{Date}2021-07-01T08:58:27.577-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-07-01T08:58:55.468-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Sync cq:tags Process"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.eaton.platform.core.workflows.SyncTagsToCqTagsProcess"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process_242137786>
+            <process_1219463765
+                jcr:created="{Date}2021-06-15T07:44:57.024-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2021-06-15T08:25:23.356-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Republish Asset If Published"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.eaton.platform.core.workflows.RepublishIfPublished"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process_1219463765>
+            <container
+                jcr:created="{Date}2022-03-18T10:25:20.693-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-03-18T10:25:33.343-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Eaton EPS Assets"
+                sling:resourceType="cq/workflow/components/model/container">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    CONTAINER="/var/workflow/models/eaton-dam/dam/eaton-eps-assets"/>
+            </container>
+        </flow>
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+    </jcr:content>
+</jcr:root>

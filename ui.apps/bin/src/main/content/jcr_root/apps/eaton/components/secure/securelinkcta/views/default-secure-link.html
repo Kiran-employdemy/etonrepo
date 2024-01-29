@@ -1,0 +1,9 @@
+<sly data-sly-use.secure="com.eaton.platform.core.models.secure.SecureLinkModel">
+	<a  href="${secure.link @context='html'}"
+		target="${properties.newWindow ? '_blank' : '_self'}"
+		data-test="${properties.isUnderlined}"
+		class="link-list-vertical__list-link securelinkcta__link ${properties.isUnderlined ? 'securelinkcta__underlined' : ''}"
+		role="button">
+		<span class="link-list-vertical__list-text external"><bdi><span class="securelinkcta__label">${properties.label}</span><i data-sly-test="${properties.newWindow}" class="link-list-vertical__external-icon icon icon-link-external securelinkcta__icon" aria-hidden="true"></i></bdi></span>
+	</a>
+</sly>

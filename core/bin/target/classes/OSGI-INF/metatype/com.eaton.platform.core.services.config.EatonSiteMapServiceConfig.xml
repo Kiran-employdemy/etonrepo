@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.EatonSiteMapServiceConfig">
+  <OCD id="com.eaton.platform.core.services.config.EatonSiteMapServiceConfig" name="Eaton SiteMap Service" description="">
+    <AD id="externalizer.domain" type="String" name="Externalizer Domain" description="Must correspond to a configuration of the Externalizer component." default="publish"/>
+    <AD id="changefreq.properties" type="String" cardinality="2147483647" name="Change Frequency Properties" description="The set of JCR property names which will contain the change frequency value." default=""/>
+    <AD id="priority.properties" type="String" cardinality="2147483647" name="Priority Properties" description="The set of JCR property names which will contain the priority value." default=""/>
+    <AD id="pageType" type="String" name="Page Type" default="sub-category"/>
+    <AD id="resourceType" type="String" name="Resource Type for Site map" description="Resource type for Filtering" default="eaton/components/structure/eaton-edit-template-page"/>
+    <AD id="descendantPagePath" type="String" name="Resource Type for Site map" description="Descendant Page path" default="/content/eaton/"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.impl.EatonSiteMapServiceImpl">
+    <Object ocdref="com.eaton.platform.core.services.config.EatonSiteMapServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

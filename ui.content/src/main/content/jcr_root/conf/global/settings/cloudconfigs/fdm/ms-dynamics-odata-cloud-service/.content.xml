@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2018-01-29T07:02:40.895Z"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2019-03-01T14:33:36.520-05:00"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:lastModified="{Date}2018-01-29T07:02:40.882Z"
+        jcr:lastModifiedBy="admin"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Microsoft Dynamics OData Cloud Service"
+        jcr:uuid="e4886e41-5211-4b56-8ecc-5fdace0854c3"
+        sling:resourceType="fd/fdm/gui/components/admin/fdmcloudservice/rest"
+        access_token_uri="https://login.windows.net/common/oauth2/token"
+        authenticationType="OAuth 2.0"
+        authorization_scope="1"
+        dataSourceType="ODATA_REST"
+        location="header"
+        name="ms-dynamics-odata-cloud-service"
+        oAuthUrl="https://login.windows.net/common/oauth2/authorize"
+        refresh_token_uri="https://login.windows.net/common/oauth2/token"
+        selectAuthentication="OAuth 2.0"
+        selectHeader="Authorization Bearer"/>
+</jcr:root>

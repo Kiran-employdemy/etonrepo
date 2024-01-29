@@ -1,0 +1,519 @@
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.secondary-content-accordion {
+  &__header {
+    position: relative;
+
+    &--title {
+      color: var(--grey-primary-brand-color, $color__primary-gray1);
+      display: block;
+      margin-bottom: 0;
+
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: none;
+      }
+
+      h2 {
+        font-size: rem($base__font-size * 2.6); //2.6rem
+
+        @include media-desktop-and-up {
+          font-size: rem($base__font-size * 2.8);
+        }
+      }
+
+      @include media-mobile-only {
+        max-width: 75vw;
+      }
+    }
+  }
+
+  &__panel {
+    border-bottom: 3px solid $color__secondary-gray5;
+    border-top: 0;
+    box-shadow: none;
+    padding: 0;
+    cursor: pointer;
+
+    &:first-child {
+      @include media-tablet-and-up {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .panel {
+    border-radius: 0;
+    margin-top: ($spacing__sm / 6); //5px
+  }
+
+  &__column {
+    list-style-type: none;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    @include media-tablet-and-up {
+      flex-direction: row;
+    }
+
+    //EAT-3003: 3D Model iframe styles
+    .iframe-download-container {
+      width: 100%;
+
+      &__iframe {
+        display: block;
+        overflow: hidden;
+        margin-bottom: ($spacing__sm * 0.93333334);
+        position: relative;
+        width: 100%; // stylelint-disable no-eol-whitespace
+
+        iframe {
+          border: 0;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+      }
+
+      &__iframe::before {
+        // stylelint-disable selector-pseudo-element-colon-notation
+        content: "";
+        display: block;
+        padding-top: 100%;
+      }
+    }
+  }
+
+  &__icons {
+    color: var(--link-brand-color, $color__primary-blue);
+    font-size: rem($base__font-size * 2.2); //2.2rem
+    position: absolute;
+    right: 0;
+
+    [dir='rtl'] & {
+      left: 0;
+      right: auto;
+    }
+  }
+
+  //-----------------------------------
+  // Mobile: 0-991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__header {
+      padding: ($spacing__sm * 0.5) 0; // 15px EATON-635: Mobile - Header should be vertically centered
+    }
+
+    .panel {
+      margin-top: 0;
+    }
+
+    // EATON-635: Mobile - Toggle Header and "+/-" need to be vertically centered
+    // NOTE: Selector with Higher specificity as the one used by bootstrap.css. Required in order to override the default values.
+    &.panel-group .panel+.panel {
+      margin-top: 0; // Overrides Bootstrap's default margin in order to center the Plus-Sign icon vertically
+    }
+
+    &__icons {
+      bottom: auto;
+      position: absolute;
+      top: ($spacing__sm); //30px
+      transform: translateY(-50%);
+    }
+
+  }
+
+  //-----------------------------------
+  // Desktop: > 992px and up
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__header {
+      padding: ($spacing__sm / 2) ($spacing__sm * 1.3333334) ($spacing__sm * 0.6666667) 0; //15px 40px 20px
+
+      [dir='rtl'] & {
+        padding-left: ($spacing__sm * 1.3333334); //40px
+        padding-right: 0;
+      }
+    }
+
+    &__icons {
+      top: ($spacing__sm * 0.6666667); //20px
+    }
+  }
+}
+
+//-----------------------------------
+// Resources Links
+//-----------------------------------
+
+.resource-list {
+  margin-bottom: ($spacing__sm * 1.3333334); //40px
+
+  // Tablet and Desktop: > 768px
+  @include media-tablet-and-up {
+    &__download-links {
+      display: flex;
+      flex-flow: row wrap;
+      margin-bottom: 0;
+      width: 100%;
+    }
+
+    &__download-item {
+      flex-grow: 1;
+      padding: 0 0 ($spacing__sm / 3) ($spacing__sm * 1.3333334); //0px 0 10px 40px
+      position: relative;
+      text-decoration: none;
+      width: 100%;
+
+      [dir='rtl'] & {
+        padding-left: 0;
+        padding-right: ($spacing__sm * 1.3333334); //40px
+      }
+    }
+
+    &__button {
+      margin-top: ($spacing__sm / 6); //5px
+      margin-bottom: ($spacing__sm / 1.5); //20px
+    }
+
+    &__disclaimer {
+      color: $color__primary-gray1;
+      display: block;
+      font-size: rem($base__font-size * 1.8); //1.8rem;
+      margin-top: $spacing__sm; //30px
+    }
+  }
+
+  .icon-download {
+    color: var(--link-brand-color, $color__primary-blue);
+    font-size: rem($base__font-size * 2); //2rem
+    left: 0;
+    position: absolute;
+    top: 0;
+
+    @include media-tablet-and-up {
+      top: ($spacing__sm / 10);
+    }
+
+    [dir='rtl'] & {
+      left: auto;
+      right: 0;
+    }
+  }
+
+  .resource-list-module__name {
+    .icon-link-external {
+      color: var(--link-brand-color, $color__primary-blue);
+    }
+
+    .icon {
+      margin-left: ($spacing__sm / 3); //10px
+      vertical-align: middle;
+    }
+  }
+
+  &__title-link {
+    display: inline;
+    font-size: rem($base__font-size * 1.8); //1.8rem
+
+    @include media-desktop-and-up {
+      font-size: rem($base__font-size * 2);
+    }
+  }
+
+  &__badge {
+    background-color: $color__accent-orange;
+    bottom: 4px;
+    color: $color__white;
+    display: inline-block;
+    font-size: rem($base__font-size * 1.6); //1.6rem
+    height: ($spacing__sm * 0.8); //24px
+    line-height: $base__line-height * (1.5 / 1.4); //24px
+    left: 4px;
+    margin: 0 ($spacing__sm / 3); //10px
+    padding: 0 ($spacing__sm / 3); //10px
+    position: relative;
+
+    [dir='rtl'] & {
+      left: auto;
+      right: 4px;
+    }
+  }
+
+
+  &__description,
+  &__download-size {
+    display: block;
+    font-size: rem($base__font-size * 1.6);
+    line-height: $base__line-height * (1.25 / 1.4);
+    margin-top: rem($spacing__sm * .1666666667); //5px
+
+    .icon {
+      font-size: 1.8rem;
+    }
+
+    @include media-desktop-and-up {
+      font-size: rem($base__font-size * 1.8);
+    }
+  }
+
+  &__download-size {
+    margin-bottom: rem($spacing__sm * .2333333333); //7px
+    margin-top: rem($spacing__sm * .2666666667); //8px
+  }
+
+  &__download-document {
+    .icon {
+      font-size: rem($base__font-size * 1.8);
+      margin-right: rem($spacing__sm * .1);
+
+      &-secure-lock {
+        color: $color__accent-orange;
+      }
+    }
+  }
+
+  //-----------------------------------
+  // Custom view in Resource List
+  //-----------------------------------
+  .popup-content {
+    display: block;
+    color: #005EB8;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    font-size: 2rem;
+  }
+
+  .resource-thumbnail-div {
+    float: left;
+    margin-right: 15px;
+    padding: 5px 0;
+    width: 89px;
+    text-align: center;
+  }
+
+  .resource-thumbnail-img {
+    max-width: 89px;
+  }
+
+  .resource-big-description {
+    max-height: 288px;
+    overflow: auto;
+  }
+
+  .custom-resource-popup {
+    position: fixed;
+    max-width: 900px;
+    margin: auto;
+    top: 15vh;
+    right: 15vw;
+    left: 15vw;
+    z-index: 999;
+    background: #fff;
+    box-shadow: 0 0 5px #0005;
+    padding: 45px;
+    border: 1px solid #0005;
+    display: block;
+    max-height: 90vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .resource-big-image {
+    max-width: 319px;
+    padding: 15px;
+    max-height: 319px;
+    opacity: 0;
+  }
+
+  .resource-big-div {
+    max-width: 319px;
+    max-height: 319px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  .resource-big-popup-link {
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 15px;
+    border: 2px solid #005EB8;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #005EB8;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #fff;
+      background-color: #005EB8;
+    }
+  }
+
+  .resource-big-close-span {
+    position: absolute;
+    top: 0;
+    left: 95%;
+    color: #005EB8;
+    padding: 10px 15px;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #005fb8e7;
+    }
+  }
+
+  .float-left {
+    float: left;
+  }
+
+  //-----------------------------------
+  // Mobile: 0px to 767px
+  //-----------------------------------
+  @include media-mobile-only {
+    &__download-links {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__download-item {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 0 ($spacing__sm / 6) ($spacing__sm * 1.3333334); // 0px 0 5px 40px
+      position: relative;
+      text-decoration: none;
+
+      [dir='rtl'] & {
+        padding-left: 0;
+        padding-right: ($spacing__sm * 1.3333334); //40px
+      }
+    }
+
+    &__button {
+      margin-bottom: ($spacing__sm / 2); //15px
+    }
+
+    &__disclaimer {
+      color: $color__primary-gray1;
+      display: block;
+      font-size: rem($base__font-size * 1.4); //1.4rem
+      margin-top: ($spacing__sm / 1.5); //20px
+    }
+
+    .resource-big-image {
+      width: 100%;
+      padding: 15px;
+    }
+
+    .resource-big-close-span {
+      left: 85%;
+    }
+
+    .resource-thumbnail-div {
+      width: 100%;
+      text-align: left;
+    }
+
+    .custom-resource-popup {
+      padding: 30px 15px;
+      top: 10vh;
+    }
+
+  }
+
+  //-----------------------------------
+  // 0px to 767px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    .module-anchor-links {
+      display: none;
+    }
+  }
+
+  //-----------------------------------
+  // >Tablet: 768px to 991px
+  //-----------------------------------
+  @include media-tablet-only {
+    &__download-links {
+      margin-right: 4%;
+    }
+
+    .icon-download {
+      font-size: rem($base__font-size * 2.5); //2.5rem
+    }
+
+    .resource-big-image {
+      width: 100%;
+      padding: 15px;
+    }
+
+  }
+}
+
+// TODO: Move to shared styles
+/* stylelint-disable */
+.loader {
+  visibility: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  align-content: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+
+  &__loader-circle {
+    border-top: 1.1em solid rgba(0, 0, 0, 0.2);
+    border-right: 1.1em solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1.1em solid rgba(0, 0, 0, 0.2);
+    border-left: 1.1em solid $color__primary-gray1;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: 0 auto;
+  }
+
+  &__loader-circle,
+  &__loader-circle:after {
+    border-radius: 50%;
+    width: 10em;
+    height: 10em;
+  }
+}
+
+.loader-active {
+  visibility: visible !important;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

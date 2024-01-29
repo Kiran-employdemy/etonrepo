@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.maintenance.CopyCqTagsField" immediate="true">
+  <property name="granite.maintenance.isStoppable" type="String" value="true"/>
+  <property name="granite.maintenance.title" type="String" value="Eaton - Copy cq:tags field"/>
+  <property name="granite.maintenance.isConservative" type="String" value="false"/>
+  <property name="job.topics" type="String" value="com/adobe/granite/maintenance/job/CopyCqTagsField"/>
+  <property name="granite.maintenance.schedule" type="String" value="daily"/>
+  <property name="granite.maintenance.name" type="String" value="com.eaton.platform.core.maintenance.CopyCqTagsField"/>
+  <service>
+    <provide interface="org.apache.sling.event.jobs.consumer.JobExecutor"/>
+  </service>
+  <reference name="resourceResolverFactory" interface="org.apache.sling.api.resource.ResourceResolverFactory" field="resourceResolverFactory"/>
+  <implementation class="com.eaton.platform.core.maintenance.CopyCqTagsField"/>
+</scr:component>

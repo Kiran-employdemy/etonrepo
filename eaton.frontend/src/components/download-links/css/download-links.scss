@@ -1,0 +1,167 @@
+//-----------------------------------
+// Component 4.5: Header - Mega Menu
+// Link List - View - Download List
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.download-links {
+
+  &__component {
+    &.container {
+      margin-top: rem($spacing__sm * 1.5); // Visually 60px spacing
+      margin-bottom: rem($spacing__sm * 0.83333334);
+    }
+  }
+
+  &__links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  &__headline {
+    font-size: rem($base__font-size * 2.4);
+    line-height: $base__line-height * (1.25 / 1.4);
+    margin-bottom: rem($spacing__sm * 0.6666667);
+    padding: 0;
+    text-transform: uppercase;
+
+    .dark-theme & {
+      color: $color__white;
+    }
+  }
+
+  &__item {
+    display: block;
+    flex-wrap: wrap;
+    margin-bottom: rem($spacing__sm * 0.6666667);
+    text-decoration: none;
+
+    i {
+      float: left;
+      font-size: rem($base__font-size * 1.6);
+      margin-left: 0;
+      margin-right: rem($spacing__sm / 3);
+      margin-top: rem($spacing__sm * 0.13333334);
+
+      [dir='rtl'] & {
+        float: right;
+        margin-left: rem($spacing__sm / 3);
+        margin-right: 0;
+      }
+    }
+
+    .dark-theme & {
+      color: $color__white;
+    }
+
+    .icon-download {
+      color: var(--link-brand-color, $color__primary-blue);
+      font-size: rem($base__font-size * 1.8);
+
+      .dark-theme & {
+        color: $color__white;
+      }
+    }
+  }
+
+  &__document {
+    display: block;
+    padding-left: rem($spacing__sm * 0.93333334);
+    padding-right: 0;
+
+    [dir='rtl'] & {
+      padding-left: 0;
+      padding-right: rem($spacing__sm * 0.93333334);
+    }
+  }
+
+  &__description,
+  &__title,
+  &__size {
+    display: block;
+    line-height: $base__line-height * (1.25 / 1.4);
+
+    .dark-theme & {
+      color: $color__white;
+    }
+  }
+
+  &__title {
+    font-size: rem($base__font-size * 2);
+    margin-bottom: rem($spacing__sm / 6);
+  }
+
+  &__description {
+    font-size: rem($base__font-size * 1.8);
+  }
+
+  &__size {
+    font-size: rem($base__font-size * 1.6);
+    margin-bottom: rem($spacing__sm / 6);
+  }
+
+  &__SHA,
+  &__warning {
+    word-break: break-all;
+  }
+}
+
+.download-list {
+  &__download-item {
+    flex-grow: 1;
+    padding: 0 0 20px 40.0px;
+    position: relative;
+    text-decoration: none;
+    width: 100%;
+
+    .icon-download {
+      color: var(--link-brand-color, $color__primary-blue);
+      font-size: rem($base__font-size * 2);
+      position: absolute;
+      left: 0px;
+      top: 4px;
+    }
+  }
+
+  &__download-links {
+    padding: 5px;
+  }
+
+  &__description {
+    font-size: rem($base__font-size * 1.8);
+  }
+
+  &__download-size {
+    font-size: rem($base__font-size * 1.8);
+  }
+
+  &__SHA {
+    word-break: break-all;
+  }
+}
+
+
+@include media-mobile-only {
+
+  /* stylelint-disable */
+  .download_list {
+    margin: 5%;
+  }
+
+  /* stylelint-enable */
+}
+
+
+@include media-desktop-and-up {
+
+  /* stylelint-disable */
+  .download_list {
+    margin: 2%;
+  }
+
+  /* stylelint-enable */
+}

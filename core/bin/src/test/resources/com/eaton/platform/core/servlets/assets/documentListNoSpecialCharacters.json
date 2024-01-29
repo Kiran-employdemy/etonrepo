@@ -1,0 +1,7 @@
+{
+  "documentLinks" : [
+    "/path/to/asset/without/special-characters1/asset1.jpg",
+    "/path/to/asset/without/special-characters2/asset2.jpg",
+    "/path/to/asset/without/special-characters3/asset3.jpg"
+  ]
+}

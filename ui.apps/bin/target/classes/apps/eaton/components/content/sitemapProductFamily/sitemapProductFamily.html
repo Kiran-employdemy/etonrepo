@@ -1,0 +1,35 @@
+
+<sly data-sly-test="${ wcmmode.edit }">
+<div class="alert alert-warning">Product Family Sitemap</div>
+</sly>
+<sly data-sly-use.primaryNav="com.eaton.platform.core.models.SitemapProductFamilyModel">
+
+<div class="eaton-sitemap">
+	<sly data-sly-list.primarynavbean="${ primaryNav.primaryNavList}">
+	<div class="container">
+
+		<div class="eaton-sitemap__wrapper">		
+			<div class="separator"></div>
+			<div class="eaton-sitemap__wrapper">
+				<div>				
+					<div class="eaton-sitemap__wrapper">
+						<div>							
+							<div class="eaton-sitemap__wrapper">
+								<div class="row">
+									<div class="col-xs-12 col-md-4">
+										<a class="eaton-sitemap__levelfive"
+											href="${primarynavbean.linkPath}"
+											title="${primarynavbean.linkTitle}">${primarynavbean.linkTitle}</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</sly>
+
+</div>
+</sly>

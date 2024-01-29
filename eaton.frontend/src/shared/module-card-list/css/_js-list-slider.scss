@@ -1,0 +1,73 @@
+//-----------------------------------
+// M-33: Shared Styles for the Carousel
+//-----------------------------------
+
+.js-list-slider {
+
+  position: relative;
+
+  &__slides {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+
+    .slick-track { display: flex; }
+  }
+
+  &__arrows {
+    color: var(--color__iron-30);
+    // NOTE: !important is required due to inline styles added by the JS Library
+    display: none !important; // stylelint-disable-line declaration-no-important
+    position: absolute;
+    top: 44%;
+    transform: translateY(-50%);
+
+    .icon { font-size: rem($base__font-size * 3.6); }
+  }
+
+  &__prev-arrow { left: rem($spacing__md * .7); }
+
+  &__next-arrow { right: rem($spacing__md * .7); }
+
+  @include media-mobile-only {
+    &__slides {
+      &.slick-initialized {
+        flex-direction: column;
+      }
+
+      .slick-slide { height: auto; }
+    }
+  }
+
+
+  @include media-tablet-only {
+    &__slides {
+      flex-direction: column;
+
+      .slick-track { flex-direction: column; }
+    }
+  }
+
+  @include media-desktop-and-up {
+    &__slides {
+      flex-direction: row;
+
+      &.slick-initialized { flex-direction: column; }
+
+      .slick-track {
+        flex-direction: row;
+        flex-wrap: nowrap;
+      }
+
+      .slick-slide { height: auto; }
+
+    }
+
+    &:hover &__arrows {
+      // NOTE: !important is required due to inline styles added by the JS Library
+      display: block !important; // stylelint-disable-line declaration-no-important
+    }
+
+  }
+
+}

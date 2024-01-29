@@ -1,0 +1,145 @@
+<link rel="shortcut icon" href="/libs/granite/core/content/login/favicon.ico">
+<title>Language Master Catalog Report</title>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientLib.all @ categories='coralui3,coralui2,granite.ui.coral.foundation,granite.ui.shell,eaton-report.app'}" data-sly-unwrap/>
+    <coral-shell>
+        <coral-shell-header class="coral--dark coral-Shell-header">
+            <coral-shell-header-home data-globalnav-navigator-main-href="/mnt/overlay/granite/ui/content/shell/globalnav.html?consoleId=cq-projects" class="coral-Shell-header-home" role="heading" aria-level="2">
+                <a is="coral-shell-homeanchor" icon="adobeExperienceManagerColor" href="#" class="coral-Shell-homeAnchor" role="heading" aria-level="2">
+                    <coral-icon class="coral-Icon coral-Icon--sizeM coral-Icon--adobeExperienceManagerColor" icon="adobeExperienceManagerColor" size="M" role="img" aria-label="adobe experience manager color"></coral-icon>
+                    <coral-shell-homeanchor-label class="coral-Shell-homeAnchor-label">Adobe Experience Manager</coral-shell-homeanchor-label>
+                </a>
+            </coral-shell-header-home>
+            <coral-shell-header-actions class="coral-Shell-header-actions">
+                <coral-shell-menubar class="coral-Shell-menubar">
+                    <coral-shell-menubar-item class="foundation-toggleable-control coral-Shell-menubar-item" title="Help" data-foundation-toggleable-control-src="/mnt/overlay/granite/ui/content/shell/help.html" icon="helpCircle">
+                    </coral-shell-menubar-item>
+                    <coral-shell-menubar-item class="foundation-toggleable-control coral-Shell-menubar-item" title="Solutions" data-foundation-toggleable-control-src="/mnt/overlay/granite/ui/content/shell/solutionswitcher.html" icon="apps">
+                    </coral-shell-menubar-item>
+                    <coral-shell-menubar-item title="Notifications" icon="bell" class="granite-shell-badge coral-Shell-menubar-item" data-granite-shell-badge-src="/mnt/overlay/granite/ui/content/shell/header/actions/pulse.data.json" data-granite-shell-badge-console="/notifications.html{?ref}">
+                    </coral-shell-menubar-item>
+                    <coral-shell-menubar-item class="foundation-toggleable-control coral-Shell-menubar-item" title="User" data-foundation-toggleable-control-src="/mnt/overlay/granite/ui/content/shell/userproperties.html" icon="user">
+                    </coral-shell-menubar-item>
+
+                </coral-shell-menubar>
+            </coral-shell-header-actions>
+            <coral-shell-header-content class="coral-Shell-header-content"></coral-shell-header-content>
+        </coral-shell-header>
+
+
+        <coral-shell-content role="main" class="coral-Shell-content">
+            <coral-wizardview class="coral-WizardView" id="startProcessWizard">
+                <coral-steplist coral-wizardview-steplist="" interaction="on" class="coral-StepList" __vent-id__="2" role="tablist" aria-multiselectable="false">
+                    <coral-step selected class="coral-Step" role="tab" id="coral-id-1">
+                        <coral-step-label class="eaton coral-Step-label">Provide Inputs</coral-step-label>
+                    </coral-step>
+                    <coral-step class="coral-Step" role="tab" id="coral-id-3">
+                        <coral-step-label class="eaton coral-Step-label ">Output Report</coral-step-label>
+                    </coral-step>
+                </coral-steplist>
+                <coral-panelstack coral-wizardview-panelstack="" class="coral-PanelStack" role="presentation">
+                    <coral-panel class="coral-Well coral-Panel" selected="" role="tabpanel">
+                        <coral-panel-content>
+                            <coral-shell-content role="main" id="processListing">
+                                <div id="granite-shell-content" class="foundation-layout-panel">
+                                    <div class="foundation-layout-panel-bodywrapper">
+                                        <div class="foundation-layout-panel-body">
+                                            <div class="foundation-layout-panel-content">
+                                                <div id="mcp-workspace">
+                                                    <form class="coral-Form coral-Form--aligned u-columnLarge" id="catalog-report-form" resource-path="${resource.path}">
+                                                        <div class="importer-heading">
+                                                            <h3 class="coral-Form-fieldset-legend" id="processName">Language Master Catalog Report</h3>
+                                                        </div>
+                                                        <section class="coral-Form-fieldset">
+                                                            <div class="coral-Form-fieldwrapper">
+                                                                <label class="coral-Form-fieldlabel">Root path *</label>
+                                                                <span class="coral-Form-field coral-PathBrowser is-above coral--dark" data-init="pathbrowser" data-root-path="/" data-option-loader="granite.ui.pathBrowser.pages.folder" data-picker-src="/libs/wcm/core/content/common/pathbrowser/column.html/?predicate=hierarchyNotFile" data-crumb-root="" data-picker-multiselect="false" data-root-path-valid-selection="true">
+                                                                <span class="coral-InputGroup coral-InputGroup--block">
+                                                                    <input class="coral-InputGroup-input js-coral-pathbrowser-input coral-Textfield coral--dark" type="text" name="baseFolder" id="baseFolder" autocomplete="off" is="coral-textfield" value="/content/" placeholder="Root path" aria-required="true" data-foundation-validation="" data-validation="" aria-owns="coral-3" aria-haspopup="true" aria-expanded="false" aria-invalid="false" required>
+                                                                    <span class="coral-InputGroup-button">
+                                                                        <button class="js-coral-pathbrowser-button coral-Button coral-Button--square" type="button" title="Browse" is="coral-button" icon="folderSearch" iconsize="S" size="M"><coral-icon class="coral-Icon coral-Icon--folderSearch" icon="folderSearch" size="S"></coral-icon><coral-button-label class="coral-Button-label"></coral-button-label></button>
+                                                                    </span>
+                                                                </span>
+                                                                </span>
+                                                                <coral-icon class="coral-Form-fieldinfo coral-Icon eaton coral-Icon--infoCircle coral-Icon--sizeS" icon="infoCircle" size="S" role="img" aria-label="info circle"></coral-icon>
+                                                                <coral-tooltip target="_prev" placement="left" class="coral3-Tooltip coral3-Tooltip--info coral3-Tooltip--arrowLeft" aria-hidden="true" variant="info" tabindex="-1" role="tooltip" style="z-index: 10020; max-width: 808.797px; left: 435.797px; top: 177.5px; display: none;">
+                                                                    <coral-tooltip-content>
+                                                                        Choose any Language Master path
+                                                                </coral-tooltip-content>
+                                                                </coral-tooltip>
+                                                            </div>
+
+                                                            <div class="coral-Form-fieldwrapper properties">
+                                                                <label class="coral-Form-fieldlabel">Select Column</label>
+                                                                <ul class="foundation-nestedcheckboxlist" data-foundation-nestedcheckboxlist-disconnected="false">
+                                                                    <li class="foundation-nestedcheckboxlist-item">
+                                                                        <coral-checkbox class="property coral-Form-field coral3-Checkbox" name="properties[]" value="Translated By" data-foundation-validation="" data-validation="" aria-disabled="false" aria-required="false" aria-invalid="false" aria-readonly="false" checked>
+                                                                            <input type="checkbox" handle="input" class=" coral3-Checkbox-input" id="coral-id-11" value="published" name="properties[]">
+                                                                            <span class=" coral3-Checkbox-checkmark" handle="checkbox"></span>
+                                                                            <label class=" coral3-Checkbox-description" handle="labelWrapper" for="coral-id-11">
+                                                                                <coral-checkbox-label>Translated By</coral-checkbox-label>
+                                                                            </label>
+                                                                        </coral-checkbox>
+                                                                    </li>
+                                                                    <li class="foundation-nestedcheckboxlist-item">
+                                                                    <coral-checkbox class="property coral-Form-field coral3-Checkbox" name="properties[]" value="Translation Source Path" data-foundation-validation="" data-validation="" aria-disabled="false" aria-required="false" aria-invalid="false" aria-readonly="false" checked>
+                                                                        <input type="checkbox" handle="input" class=" coral3-Checkbox-input" id="coral-id-12" value="modified" name="properties[]">
+                                                                        <span class=" coral3-Checkbox-checkmark" handle="checkbox"></span>
+                                                                        <label class=" coral3-Checkbox-description" handle="labelWrapper" for="coral-id-12">
+                                                                            <coral-checkbox-label>Translation Source Path</coral-checkbox-label>
+                                                                        </label>
+                                                                    </coral-checkbox>
+                                                                    </li>
+                                                                    <li class="foundation-nestedcheckboxlist-item">
+                                                                        <coral-checkbox class="property coral-Form-field coral3-Checkbox" name="properties[]" value="Translation Target Path" data-foundation-validation="" data-validation="" aria-disabled="false" aria-required="false" aria-invalid="false" aria-readonly="false" checked>
+                                                                            <input type="checkbox" handle="input" class=" coral3-Checkbox-input" id="coral-id-13" value="published" name="properties[]">
+                                                                            <span class=" coral3-Checkbox-checkmark" handle="checkbox"></span>
+                                                                            <label class=" coral3-Checkbox-description" handle="labelWrapper" for="coral-id-13">
+                                                                                <coral-checkbox-label>Translation Target Path</coral-checkbox-label>
+                                                                            </label>
+                                                                        </coral-checkbox>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+
+                                                        </section>
+                                                        <button is="coral-button" class="coral-Form--aligned" id="reset" variant="primary" coral-wizardview-previous="" size="M" onclick="javascript:ScriptRunner.reset()">
+                                                            <coral-button-label>Clear All</coral-button-label>
+                                                        </button>
+                                                        <button type="button" id="startButton" is="coral-button" class="coral-Form--aligned" variant="primary" size="M" onclick="javascript:ScriptRunner.processDefinitionSelected()">
+                                                            <coral-button-label>Generate Report</coral-button-label>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </coral-shell-content>
+                        </coral-panel-content>
+                    </coral-panel>
+                    <coral-panel class="coral-Well coral-Panel" role="tabpanel">
+                        <coral-panel-content>
+                            <div class="logs">
+                                <div class="total-message" id="total-message" style="display: none;">
+                                </div>
+                                <h3 class="success-header">Excel Downloaded Successfully</h3>
+                            </div>
+                            <div class="back-button">
+                                <button is="coral-button" variant="primary" id="previous-button" coral-wizardview-previous="" size="M" onclick="javascript:ScriptRunner.reset()">
+                                    <coral-button-label>Previous</coral-button-label>
+                                </button>
+                            </div>
+                            <coral-wait id="wait" size="L">
+                            </coral-wait>
+                        </coral-panel-content>
+                    </coral-panel>
+                </coral-panelstack>
+            </coral-wizardview>
+        </coral-shell-content>
+
+
+
+    </coral-shell>
+</sly>

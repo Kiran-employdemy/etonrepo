@@ -1,0 +1,35 @@
+<sly data-sly-use.tileBlockLinkModel="com.eaton.platform.core.models.tileblocklinks.TileBlockLinksModel">
+
+  <div class="tile-links__component tile-links--with-bg-color container">
+    <div class="tile-links__content">
+
+        <div class="row">
+            <div class="col-sm-12 tile-links__title">
+
+
+                <div class="tile-links__title__heading">${properties.iconTileTitle}</div>
+                <p class="tile-links__title__description">${properties.iconTileDescription}
+                </p>
+            </div>
+        </div>
+
+      <div
+        data-sly-list.tile="${tileBlockLinkModel.tileLinks}"
+        class="tile-links__row row" >
+
+         <!--/* Without BG Image */-->
+		<h2 class="tile-links__title col-xs-12 col-md-3 tile-links__element ${tile.tileLinkIcon ? 'tile-links--with-icon' : 'tile-links--without-icon'}">
+            <a class="tile-links__link u-absolute-fill"
+               href="${ tile.tileBlockLinkPath }"
+               target="${ tile.tileBlockLinkOpenNewWindow }">
+               <img data-sly-test="${tile.tileLinkIcon }"
+               class="tile-links__icon lazyload"
+               data-src="${ tile.tileLinkIcon }"
+               alt="${ tile.tileBlockLinksImageAltText }"/>
+               <span class="tile-links__text text-hypens"><bdi>${tile.tileBlockLinkTitle}</bdi></span></a>
+        </h2>
+      </div>
+    </div>
+  </div>
+
+</sly>

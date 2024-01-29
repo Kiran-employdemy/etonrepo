@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Configuration Page where AddThis publish Id is configured"
+    jcr:primaryType="cq:Template"
+    jcr:title="Social Share Configuration"
+    allowedPaths="[/etc/cloudservices/socialshare(/.*)?]"
+    ranking="{Long}101">
+    <jcr:content
+		cq:cloudservicename="socialshare"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="/apps/eaton/components/structure/socialshareconfigpage"/>
+</jcr:root>

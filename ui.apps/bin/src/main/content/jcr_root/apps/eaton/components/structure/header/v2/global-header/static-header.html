@@ -1,0 +1,23 @@
+<sly data-sly-use.headerModel="com.eaton.platform.core.models.HeaderModel">
+    <div class="header-wrapper ${wcmmode.edit ? 'is-edit-mode': ''} ${headerModel.isMicroSitePage && headerModel.secondLogoAuthored ? 'second-logo-authored' : ''} ${headerModel.isMicroSitePage ? 'microsite': ''}">
+
+       <div class="header-utility-nav"></div>
+        <div class="eaton-header">
+            <div class="header-primary-nav header-primary-nav__sku-global">
+                <div class="container">
+                    <div class="row">
+                        <div class="header-primary-nav__logo_container">
+                            <div class="header-primary-nav__logo">
+                                <sly data-sly-resource="${'header-logo' @ resourceType='/apps/eaton/components/structure/logo'}"></sly>
+                            </div>
+                            <div class="header-primary-nav__logo--secondary" data-sly-test="${headerModel.isMicroSitePage}">
+                                <sly data-sly-resource="${'header-logo-secondary' @ resourceType='/apps/eaton/components/structure/logo'}"></sly>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</sly>
+

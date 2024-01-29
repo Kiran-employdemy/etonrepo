@@ -1,0 +1,141 @@
+<template data-sly-template.module="${ @ data }">
+  <div class="module-media-gallery"
+  data-i18n='{ "closeOverlay": "${ "Close" @ i18n }" }'>
+    <div class="container">
+      <div class="row">
+
+        <!--*/ Gallery - Title & Description */-->
+        <div class="module-media-gallery__header col-xs-12" data-sly-test="${ data.galleryHeadline || data.galleryDesc }">
+          <h3 data-sly-test="${data.galleryHeadline}" class="module-media-gallery__headline b-heading-h3">${data.galleryHeadline}</h3>
+          <p data-sly-test="${data.galleryDesc}" class="module-media-gallery__description b-body-copy">${data.galleryDesc}</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--*/ Slide Container */-->
+        <div class="col-xs-12 col-md-10 col-md-offset-1 module-media-gallery__slide-container">
+          <div>
+            <!--*/ Slide List - Preview */-->
+            <div class="module-media-gallery__slide-list" data-sly-list="${data.listTypeArray}">
+
+              <!--*/ Slide Item - Preview */-->
+              <div class="module-media-gallery__slide-item" data-slide-type="${isVideo == true ? 'image' : 'video'}">
+
+                <!--*/ Slide Item - Image */-->
+                <div class="module-media-gallery__slide-preview embed-responsive embed-responsive-16by9">
+                  <div class="module-media-gallery__image-wrapper embed-responsive-item">
+                  <img 
+                            class="module-media-gallery__image"
+                            alt="${item.altText}"
+                     data-lazy="${ item.imgPathPreview }" 
+                                  data-zoom-url="${  item.imgPathZoom }"/>
+                  </div>
+
+                  <!--*/ Slide Item - Utility - Zoom & Download */-->
+                  <a href="${ item.imgPathDownload }" download class="module-media-gallery__download module-media-gallery__slide-utility u-visible-mobile">
+                    <span class="sr-only">${ 'Download' @ i18n }</span>
+                    <i class="icon icon-download" aria-hidden="true"></i>
+                  </a>
+
+                      <button class="module-media-gallery__zoom module-media-gallery__slide-utility button--reset u-visible-mobile">
+                    <span class="sr-only">${ 'Zoom' @ i18n }</span>
+                    <i class="icon icon-search-plus" aria-hidden="true"></i>
+                  </button>
+                </div>
+
+                <!--*/ Slide Item - Title & Description */-->
+                <!--<div class="module-media-gallery__slide-info" data-sly-test="${item.title || item.description}">
+                    <h4 data-sly-test="${item.title}" class="module-media-gallery__slide-title b-heading-h5">${item.title}</h4>
+                    <p data-sly-test="${item.description}" class="module-media-gallery__slide-text b-body-copy">${item.description}</p>
+                </div> -->
+            </div>
+          </div>
+
+          <!--*/ Slide Preview Arrows */--> 
+
+          <sly data-sly-test="${data.listTypeArray.size > 1}"> 
+            <div class="module-media-gallery__slide-arrows-container embed-responsive-16by9">
+              <button class="module-media-gallery__prev-arrow module-media-gallery__arrows button--reset">
+                <span class="sr-only">${ 'Previous' @ i18n }</span>
+                <i class="icon icon-chevron-left" aria-hidden="true"></i>
+              </button>
+
+              <button class="module-media-gallery__next-arrow module-media-gallery__arrows button--reset">
+                <span class="sr-only">${ 'Next' @ i18n }</span>
+                <i class="icon icon-chevron-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </sly>
+
+            <div data-sly-test="${data.listTypeArray.size > 0}" class="module-media-gallery__slide-utility--desktop u-visible-desktop">
+              <!--*/ Download button Desktop */-->
+              <a href="${ item.imgPathDownload }" download
+                 class="module-media-gallery__download
+                        module-media-gallery__slide-utility">
+                <span class="sr-only">${ 'Download' @ i18n }</span>
+                <i class="icon icon-download" aria-hidden="true"></i>
+              </a>
+
+              <!--*/ zoom button Desktop */-->
+              <button class="module-media-gallery__zoom
+                             module-media-gallery__zoom--desktop
+                             module-media-gallery__slide-utility
+                             button--reset">
+                <span class="sr-only">${ 'Zoom' @ i18n }</span>
+                <i class="icon icon-search-plus" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+
+        <!--*/ Thumbnail Container */-->
+        <div class="module-media-gallery__thumbnail-container" data-sly-test="${data.listTypeArray.size >1}">
+
+          <!--*/ Thumbnail List */-->
+          <ul class="module-media-gallery__thumbnail-list" data-sly-list="${data.listTypeArray}">
+            <!--*/ Thumbnail Item - Preview */-->
+            <li class="module-media-gallery__thumbnail-item"
+              data-thumbnail-type="${listTypeArray.isVideo == true ? 'image' : 'video'}"> 
+
+              <!--*/ Thumbnail Item - Image */--> 
+              <button class="module-media-gallery__thumbnail-aspect-ratio embed-responsive embed-responsive-16by9">
+                <div class="module-media-gallery__thumbnail-image-wrapper embed-responsive-item">
+                  <img src="${item.imgPathThumbnail}" alt="${item.altText}" />
+                </div>
+              </button> 
+            </li> 
+          </ul>
+
+          <!--*/ Thumbnail Arrows */-->  
+          <sly data-sly-test="${data.listTypeArray.size > 1}"> 
+              <button class="module-media-gallery__prev-arrow module-media-gallery__arrows button--reset">
+                <span class="sr-only">${ 'Previous' @ i18n }</span>
+                <i class="icon icon-chevron-left" aria-hidden="true"></i>
+              </button>
+
+              <button class="module-media-gallery__next-arrow module-media-gallery__arrows button--reset">
+                <span class="sr-only">${ 'Next' @ i18n }</span>
+                <i class="icon icon-chevron-right" aria-hidden="true"></i>
+              </button>
+          </sly> 
+        </div>
+
+          <!--*/ Descriptions Container */-->
+          <div class="module-media-gallery__slide-list__description" data-sly-list="${data.listTypeArray}">
+
+            <!--*/ Slide Item - Preview */-->
+            <div class="module-media-gallery__slide-item" data-slide-type="${isVideo == true ? 'image' : 'video'}">
+                <!--*/ Slide Item - Title & Description */-->
+                <div class="module-media-gallery__slide-info b-body-copy-small" data-sly-test="${item.title || item.description}">
+                  <b data-sly-test="${item.title}">${item.title}</b>
+                  <span data-sly-test="${item.description}">${item.description}</span>
+                  <!-- <h4 data-sly-test="${item.title}" class="module-media-gallery__slide-title b-heading-h5">${item.title}</h4>
+                  <p data-sly-test="${item.text}" class="module-media-gallery__slide-text b-body-copy">${item.text}</p> -->
+                </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

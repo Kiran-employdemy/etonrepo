@@ -1,0 +1,13 @@
+@import "../../../global/css/_config/sass";
+
+@include media-mobile-and-tablet {
+  .responsive-control.hide-mobile {
+    display: none;
+  }
+}
+
+@include media-desktop-and-up {
+  .responsive-control.hide-desktop {
+    display: none;
+  }
+}

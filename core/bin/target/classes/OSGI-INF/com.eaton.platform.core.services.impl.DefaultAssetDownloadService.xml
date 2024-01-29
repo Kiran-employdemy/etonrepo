@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.DefaultAssetDownloadService" immediate="true" activate="activate" modified="activate">
+  <property name="getMaxAllowedRedirects" type="Integer" value="1"/>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="getPrefix" type="String" value="_"/>
+  <property name="process.label" type="String" value=" DefaultAssetDownloadService"/>
+  <property name="getDownloadFileTimeout" type="Integer" value="60"/>
+  <property name="getMaxAllowedDownloadPackageSize" type="Long" value="104857600"/>
+  <property name="service.description" type="String" value=" DefaultAssetDownloadService"/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.AssetDownloadService"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="formsService" interface="com.eaton.platform.core.services.FormsService" field="formsService"/>
+  <implementation class="com.eaton.platform.core.services.impl.DefaultAssetDownloadService"/>
+</scr:component>

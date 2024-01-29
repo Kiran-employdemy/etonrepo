@@ -1,0 +1,17 @@
+{
+  "response" : {
+    "status" : "Success",
+    "statusDetails" : {
+      "messages" : [ "N=0 Nr=AND(P_AssetTag:eaton_country_north-america_us,P_AssetTag:eaton_language_en-us,OR(P_dc_format:application/vnd.openxmlformats-officedocument.wordprocessingml.document,P_dc_format:image/png,P_dc_format:image/jpeg,P_dc_format:image/gif,P_dc_format:image/tiff,P_dc_format:application/pdf,P_dc_format:application/vnd.ms-powerpoint,P_dc_format:application/vnd.ms-excel,P_dc_format:application/zip,P_dc_format:text/html,P_dc_format:application/postscript,P_dc_format:application/eps,P_dc_format:application/x-eps,P_dc_format:image/eps,P_dc_format:image/x-eps,P_dc_format:application/msword,P_dc_format:application/vnd.openxmlformats-officedocument.presentationml.presentation,P_dc_format:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,P_dc_format:application/vnd.openxmlformats-officedocument.wordprocessingml.document,P_dc_format:application/octet-stream,P_dc_format:application/vnd.ms-excel.sheet.macroenabled.12,P_dc_format:video/mp4,P_dc_format:application/x-7z-compressed,P_dc_format:image/vnd.dwg),NOT(OR(P_Page_Priority:Exclude from search,P_Page_Priority:exclude-from-search)))" ]
+    },
+    "didYouMean" : null,
+    "binning" : {
+      "binningSet" : null
+    },
+    "searchResults" : {
+      "totalCount" : 0,
+      "document" : [ ]
+    },
+    "request" : null
+  }
+}

@@ -1,0 +1,59 @@
+//-----------------------------------
+// Component: Title - View: With Eyebrow and Byline
+//-----------------------------------
+h2.eaton-title__eyebrow-and-byline {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.eaton-title {
+
+  &--eyebrow-and-byline {
+    margin-top: $spacing__sm;
+  }
+
+  &__eyebrow-and-byline {
+    // TO DO: possibly remove this once microsites brand tool has been implemented.
+    // If global font overrides are desired once microsites brand tool is implement, it should be handled in _mixins-typography.scss
+    @include font-family__primary-medium(--header-font-medium);
+  }
+
+  &__line {
+    border-top: 4px solid var(--primary-brand-color, $color__primary-blue);
+    width: 60px;
+    display: block;
+    margin: 20px 0 25px;
+  }
+
+  &__eyebrow {
+    margin-bottom: 15px;
+    display: block;
+
+    i {
+      font-weight: normal;
+      font-size: 1.2rem;
+      margin-right: 5px;
+    }
+  }
+
+  .dark-theme & {
+    &__headline,
+    &__eyebrow,
+    &__byline {
+      color: $color__white;
+    }
+
+    &__line {
+      border-color: $color__white;
+    }
+  }
+
+  @include media-desktop-and-up {
+
+    &__eyebrow {
+      i {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}

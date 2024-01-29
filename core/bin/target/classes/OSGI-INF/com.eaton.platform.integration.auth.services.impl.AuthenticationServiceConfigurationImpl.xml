@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.auth.services.impl.AuthenticationServiceConfigurationImpl" immediate="true" activate="activate" modified="activate">
+  <property name="oktaRetryAttempts" type="Integer" value="3"/>
+  <property name="maxHostConnections" type="Integer" value="100"/>
+  <property name="securityCookieTTL" type="Integer" value="1800"/>
+  <property name="process.label" type="String" value=" AuthenticationServiceConfiguration"/>
+  <property name="userLookupPassword" type="String" value="devRESTap1s836@portal"/>
+  <property name="oktaidpDiscoveryFlag" type="String" value="true"/>
+  <property name="orderCenterSSOLink" type="String" value=""/>
+  <property name="oktaKeyURI" type="String" value="https://eaton.oktapreview.com/oauth2/default/v1/keys"/>
+  <property name="oktaJwtExpirationLeeway" type="Integer" value="180"/>
+  <property name="service.description" type="String" value=" Authentication - OKTA Service Configuration"/>
+  <property name="oktaRegistrationFlag" type="String" value="false"/>
+  <property name="oktaLoginURI" type="String" value=""/>
+  <property name="defaultPostAuthRedirectURI" type="String" value="http://localhost:4502/content/eaton/us/en-us/secure/dashboard.html"/>
+  <property name="tokenEndpoint" type="String" value="https://id-qa.eaton.com/oauth2/auswm0hll1dz7SaUw0h7/v1/token"/>
+  <property name="userProfileCacheTTL" type="Integer" value="1800"/>
+  <property name="ssoCookieDomain" type="String" value="etn.com"/>
+  <property name="securityCookieDomain" type="String" value=""/>
+  <property name="myeatonOktaSamlURI" type="String" value=""/>
+  <property name="userLookupUsername" type="String" value="PAA_D3V#128!"/>
+  <property name="oktaClientID" type="String" value="0oav6hov1qfjQhdpM0h7"/>
+  <property name="maxConnections" type="Integer" value="100"/>
+  <property name="oktaClientSecret" type="String" value="4H1gY7two8XMTO8KKKourCOLL2VKbC9wXyLWC49B"/>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="bidManagerSSOLink" type="String" value=""/>
+  <property name="defaultPostSignOutRedirectURI" type="String" value="http://localhost:4502/content/eaton/us/en-us.html"/>
+  <property name="trackingLookupEndpoint" type="String" value="http://portalapps-dev2.tcc.etn.com:8888/portal-access-api/audit/v1/download/tracking"/>
+  <property name="oktaPasswordLessAuthFlag" type="String" value="true"/>
+  <property name="oktaidpDiscoveryValue" type="String" value=""/>
+  <property name="oktaConnectionTimeout" type="Integer" value="30"/>
+  <property name="oktaEndpointRoot" type="String" value="https://eaton.oktapreview.com"/>
+  <property name="oktaIssuer" type="String" value="https://id-qa.eaton.com/oauth2/auswm0hll1dz7SaUw0h7"/>
+  <property name="myeatonNsRole" type="String" value=""/>
+  <property name="maxCacheSize" type="Integer" value="1000"/>
+  <property name="devPortalOktaLoginURI" type="String" value=""/>
+  <property name="securityCookieId" type="String" value="etn-login"/>
+  <property name="oktaRedirectURI" type="String" value="http://localhost:4502/eaton/authorization"/>
+  <property name="bidManagerAppRole" type="String" value=""/>
+  <property name="oktaWidgetLoginURI" type="String" value=""/>
+  <property name="oktaAudience" type="String" value="api://default"/>
+  <property name="orderCenterAppRole" type="String" value=""/>
+  <property name="myEatonApplicationAttr" type="String" value=""/>
+  <property name="oktaRememberMeFlag" type="String" value=""/>
+  <property name="oktaWidgetVersion" type="String" value="5.1.5"/>
+  <property name="userLookupEndpoint" type="String" value="http://portalapps-dev2.tcc.etn.com:8888/portal-access-api/user-management/v1/users"/>
+  <service>
+    <provide interface="com.eaton.platform.integration.auth.services.AuthenticationServiceConfiguration"/>
+  </service>
+  <implementation class="com.eaton.platform.integration.auth.services.impl.AuthenticationServiceConfigurationImpl"/>
+</scr:component>

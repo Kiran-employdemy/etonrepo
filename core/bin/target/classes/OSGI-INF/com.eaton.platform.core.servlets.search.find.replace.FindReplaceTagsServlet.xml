@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.search.find.replace.FindReplaceTagsServlet" immediate="true">
+  <property name="sling.servlet.extensions" type="String" value="json"/>
+  <property name="sling.servlet.resourceTypes" type="String" value="eaton/components/search/find-replace"/>
+  <property name="sling.servlet.methods" type="String">GET
+POST</property>
+  <property name="sling.servlet.selectors" type="String" value="tags"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="tagsFacade" interface="com.eaton.platform.core.services.search.find.replace.tags.FindReplaceTagsFacade" field="tagsFacade"/>
+  <reference name="tagsModificationRequestModel2BeanConverter" interface="com.eaton.platform.core.services.converter.search.find.replace.TagsModificationRequestModel2BeanConverter" field="tagsModificationRequestModel2BeanConverter"/>
+  <reference name="tagsSearchRequestModel2BeanConverter" interface="com.eaton.platform.core.services.converter.search.find.replace.TagsSearchRequestModel2BeanConverter" field="tagsSearchRequestModel2BeanConverter"/>
+  <implementation class="com.eaton.platform.core.servlets.search.find.replace.FindReplaceTagsServlet"/>
+</scr:component>

@@ -1,0 +1,92 @@
+{
+  "businessUnits": [
+    "ELECTRICAL/AMER",
+    "ELECTRICAL/APAC",
+    "ELECTRICAL/EMEA"
+  ],
+  "productCategories": [
+    "ACTUATION GEAR SYSTEMS",
+    "ENGINE BUILD-UP SOLUTIONS",
+    "ENGINE FUEL SYSTEM",
+    "ENGINE OIL SYSTEM"
+  ],
+  "applicationAccessTags": [
+    "ALL_USERS",
+    "AUTH_CUSTOMER",
+    "AUTH_STATIC"
+  ],
+  "accountTypeTags": [
+    "eaton-secure:accounttype/distributor"
+  ],
+  "appAccessTags": [
+    "eaton-secure:application-access/order-center",
+    "eaton-secure:application-access/bid-manager"
+  ],
+  "localeTags": [
+    "eaton:country/north-america/us",
+    "eaton:country/north-america"
+  ],
+  "partnerProgramAndTierLevelTags": [
+    "eaton-secure:partner-programme-type/electrical-wholesaler-programme"
+  ],
+  "givenName": "TEST1",
+  "accountTypes": [
+    "DISTRIBUTOR"
+  ],
+  "productCategoriesTags": [
+    "eaton-secure:product-category/aerospace/actuation-gear-systems",
+    "eaton-secure:product-category/aerospace/engine-build-up-solutions"
+  ],
+  "id": "SITTEST1@EXAMPLE.COM",
+  "businessUnitTags": [
+    "eaton-secure:business-group/electrical-amer",
+    "eaton-secure:business-group/electrical-apac"
+  ],
+  "email": "SITTEST1@EXAMPLE.COM",
+  "userProfile": {
+    "businessUnits": [
+      "ELECTRICAL/AMER",
+      "ELECTRICAL/APAC",
+      "ELECTRICAL/EMEA"
+    ],
+    "productCategories": [
+      "ACTUATION GEAR SYSTEMS",
+      "ENGINE BUILD-UP SOLUTIONS",
+      "ENGINE FUEL SYSTEM",
+      "ENGINE OIL SYSTEM"
+    ],
+    "applicationAccessTags": [
+      "ALL_USERS",
+      "AUTH_CUSTOMER",
+      "AUTH_STATIC"
+    ],
+    "localeTags": [
+      "eaton:country/north-america/us",
+      "eaton:country/north-america"
+    ],
+    "partnerProgramAndTierLevelTags": [
+      "eaton-secure:partner-programme-type/electrical-wholesaler-programme"
+    ],
+    "accountTypeTags": [
+      "eaton-secure:accounttype/distributor"
+    ],
+    "appAccessTags": [
+      "eaton-secure:application-access/order-center",
+      "eaton-secure:application-access/bid-manager"
+    ],
+    "givenName": "TEST1",
+    "accountTypes": [
+      "DISTRIBUTOR"
+    ],
+    "productCategoriesTags": [
+      "eaton-secure:product-category/aerospace/actuation-gear-systems",
+      "eaton-secure:product-category/aerospace/engine-build-up-solutions"
+    ],
+    "id": "SITTEST1@EXAMPLE.COM",
+    "businessUnitTags": [
+      "eaton-secure:business-group/electrical-amer",
+      "eaton-secure:business-group/electrical-apac"
+    ],
+    "email": "SITTEST1@EXAMPLE.COM"
+  }
+}

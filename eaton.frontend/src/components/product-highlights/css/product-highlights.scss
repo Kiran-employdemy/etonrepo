@@ -1,0 +1,116 @@
+//-----------------------------------
+// IconList Component: No Image Highlights
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.product-highlights {
+
+  &__component {
+    margin: $spacing__md 0;
+    background: $color__secondary-gray6;
+  }
+
+  &__item {
+    color: var(--grey-primary-brand-color, $color__primary-gray2);
+  }
+
+  &__content {
+    text-align: center;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--grey-primary-brand-color, $color__primary-gray1);
+  }
+
+  &__text {
+    @include font-family__primary-medium(--header-font-medium);
+    color: var(--grey-primary-brand-color, $color__primary-gray1);
+    line-height: $base__line-height * (1.25 / 1.4);
+    word-wrap: break-word;
+  }
+
+  &__symbol {
+    position: relative;
+  }
+
+  //-----------------------------------
+  // Media-Query: Mobile
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    &__component {
+      padding: $spacing__md 0;
+    }
+
+    &__item {
+      margin-bottom: 45px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__title {
+      margin-bottom: 5px; // Visually account for 15px gap between title and text
+    }
+
+    &__text {
+      font-size: rem($base__font-size * 3);
+    }
+
+    &__symbol {
+      font-size: 3rem;
+      top: -15px;
+    }
+  }
+
+  //-----------------------------------
+  // Media-Query: Desktop
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    &__component {
+      padding: ($spacing__sm * 2) 0;
+    }
+
+    .eaton-grid-control & {
+      padding: $spacing__sm 0;
+    }
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+
+      .eaton-grid-control & {
+        display: block;
+      }
+    }
+
+    &__item {
+      .eaton-grid-control & {
+        margin-bottom: 40px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__text {
+      font-size: rem($base__font-size * 3); // EATON-732 - Wordwrap causes letters to display on their own line - Reduce the font size by 10pt when viewport width is above 992.
+    }
+
+    &__symbol {
+      font-size: 4rem;
+      top: -15px;
+    }
+
+    &__title {
+      margin-bottom: ($spacing__sm / 2);
+    }
+  }
+}

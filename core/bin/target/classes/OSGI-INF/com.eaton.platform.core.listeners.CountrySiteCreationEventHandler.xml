@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.listeners.CountrySiteCreationEventHandler" immediate="true">
+  <property name="event.topics" type="String" value="com/day/cq/wcm/core/page"/>
+  <property name="event.filter(&amp;((path" type="String" value="/content/eaton/*/*/jcr:content)(path=/content/eaton-cummins/*/*/jcr:content)(path=/content/greenswitching/*/*/jcr:content)(path=/content/phoenixtec/*/*/jcr:content))(path=/content/login/*/*/jcr:content))"/>
+  <property name="service.description" type="String" value=" Demo to listen on changes in the resource tree"/>
+  <service>
+    <provide interface="org.osgi.service.event.EventHandler"/>
+  </service>
+  <reference name="jobManager" interface="org.apache.sling.event.jobs.JobManager" field="jobManager"/>
+  <reference name="slingSettingsService" interface="org.apache.sling.settings.SlingSettingsService" field="slingSettingsService"/>
+  <implementation class="com.eaton.platform.core.listeners.CountrySiteCreationEventHandler"/>
+</scr:component>

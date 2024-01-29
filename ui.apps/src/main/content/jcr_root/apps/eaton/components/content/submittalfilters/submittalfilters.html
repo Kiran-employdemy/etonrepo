@@ -1,0 +1,28 @@
+<sly data-sly-use.filters="com.eaton.platform.core.models.submittalbuilder.SubmittalFilters">
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Submittal Filters</div>
+</sly>
+
+<div class="submittal-builder__filters ${wcmmode.edit ? 'is-author-mode' : 'col-md-3 overlay hidden-xs'}"
+     data-facet-search-disabled="${filters.facetSearchDisabled ? 'true' : 'false'}"
+	 data-facet-value-count="${filters.facetValueCount}"
+     data-is-edit-mode="${wcmmode.edit ? 'true' : ''}"
+     data-title="${'Filters.Title' @ i18n}"
+     data-mobile-dialog-title="${'Filters.Title' @ i18n}"
+     data-close-text="${'Filters.Close' @ i18n}"
+     data-clear-all-filters-text="${'Filters.ClearAllFilters' @ i18n}"
+     data-clear-filters-text="${'Filters.ClearFilters' @ i18n}"
+     data-clear-selection-text="${'Filters.ClearSelection' @ i18n}"
+     data-view-more-text="${'Filters.ViewMore' @ i18n}"
+     data-view-less-text="${'Filters.ViewLess' @ i18n}"
+     data-facet-search-label="${'GlobalFacetSearch.SearchLabel' @i18n}"
+     data-facet-search-placeholder="${'GlobalFacetSearch.Placeholder' @i18n}"
+     data-no-suggestions-text="${'GlobalFacetSearch.NoSugestions' @i18n}"
+     data-in-text="${'GlobalFacetSearch.In' @i18n}"
+     data-facet-group-search-label="${'GroupFacetSearch.Label' @i18n}"
+     data-facet-group-search-placeholder="${'GroupFacetSearch.Placeholder' @i18n}"
+     data-facet-group-search-no-suggestions-text="${'GroupFacetSearch.NoSuggestionsText' @i18n}"
+     data-results-plural-text="${'Search.Results' @ i18n}"
+     data-results-singular-text="${'Search.Result' @ i18n}"
+     data-of-text="${'Global.Of' @ i18n}"></div>

@@ -1,0 +1,27 @@
+//-----------------------------------
+// Component Secure Link CTA
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, etc...)
+@import "../../../global/css/_config/sass";
+
+.securelinkcta {
+  .securelinkcta {
+    &__link {
+      display: block;
+    }
+
+    &__icon {
+      font-size: 1.8rem;
+
+      &::before {
+        margin-left: 1.5rem;
+        margin-right: 0;
+      }
+    }
+
+    &__underlined {
+      border-bottom: 1px solid $color__secondary-gray4;
+    }
+  }
+}

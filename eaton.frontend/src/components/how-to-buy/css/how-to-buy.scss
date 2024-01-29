@@ -1,0 +1,133 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-how-to-buy {
+  margin: 60px 0;
+  padding-top: 60px;
+  overflow: hidden;
+  background: $color__secondary-gray6;
+
+  &__icon {
+    color: $color__accent-orange;
+    max-width: 60px;
+    display: inline-block;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__text-wrapper {
+    width: calc(100% - 90px);
+    display: inline-block;
+    float: right;
+
+    [dir='rtl'] & {
+      float: left;
+    }
+  }
+
+  &__element {
+    margin-bottom: 30px;
+  }
+}
+
+@include media-desktop-and-up {
+  .eaton-how-to-buy {
+    padding-top: 60px;
+
+    &__icon {
+      max-width: 70px;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    &__text-wrapper {
+      width: calc(100% - 100px);
+    }
+
+    &__element {
+      margin-bottom: 60px;
+    }
+
+    .container {
+      margin: 0 auto;
+      /* stylelint-disable value-no-vendor-prefix, property-no-vendor-prefix  */
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+
+      .col-md-3 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 24%;
+        -ms-flex: 0 0 24%;
+        flex: 0 0 24%;
+        padding: 0;
+      }
+
+      .col-md-9 {
+        -webkit-box-flex: 0;
+        -webkit-flex: 0 0 75%;
+        -ms-flex: 0 0 75%;
+        flex: 0 0 75%;
+        padding: 0;
+
+        .col-md-6 {
+          -webkit-box-flex: 0;
+          -webkit-flex: 0 0 49%;
+          -ms-flex: 0 0 49%;
+          flex: 0 0 49%;
+
+          &:nth-child(2n) {
+            padding-left: 60px;
+            padding-right: 0;
+          }
+
+          &:nth-child(2n+1) {
+            padding-left: 30px;
+          }
+        }
+
+        .row {
+          margin: 0;
+          display: -webkit-box;
+          display: -webkit-flex;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+          -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+          flex-direction: row;
+        }
+      }
+
+    }
+  }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .eaton-how-to-buy .container .col-md-9 .col-md-6 {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 41%;
+    -ms-flex: 0 0 41%;
+    flex: 0 0 41%;
+  }
+}
+/* stylelint-enable value-no-vendor-prefix, property-no-vendor-prefix  */

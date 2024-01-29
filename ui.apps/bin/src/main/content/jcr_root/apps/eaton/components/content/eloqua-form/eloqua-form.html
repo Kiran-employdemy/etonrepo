@@ -1,0 +1,101 @@
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}">
+   <div class="alert alert-warning">Eloqua Form: ${currentNode.name}</div>
+</sly>
+<sly data-sly-use.eloquaHelper="com.eaton.platform.core.models.eloquaform.EloquaFormSlingModel">
+
+<div id="eloquaRuleData" data-eloqua-rules="${eloquaHelper.rulesConfigJSON}"></div>
+<sly data-sly-test="${eloquaHelper.invalidHTML}">
+   <sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}">
+      <sly data-sly-test="${eloquaHelper.eloquaCompModel.toggleInnerGrid == 'true'}">
+      	<div class="container eloqua_form">
+      		<div id="eloqua_form">
+	        	${eloquaHelper.formHTML @ context='unsafe'}
+	      	</div>
+      	</div>
+      </sly>
+	  <sly data-sly-test="${!eloquaHelper.eloquaCompModel.toggleInnerGrid}">
+         <div class="eloqua_form">
+           <div id="eloqua_form">
+          	${eloquaHelper.formHTML @ context='unsafe'}
+           </div>
+         </div>
+      </sly>
+   </sly>
+</sly>
+<sly data-sly-test="${eloquaHelper.validHTML}">
+	<sly data-sly-test="${eloquaHelper.eloquaCompModel.toggleInnerGrid == 'true'}">
+    	<div class="container eloqua_form">
+            <div id="eloqua_form">
+                 ${eloquaHelper.formHTML @ context='unsafe'}
+            </div>
+        </div>
+   	</sly>
+    <sly data-sly-test="${!eloquaHelper.eloquaCompModel.toggleInnerGrid}">
+	  <div class="eloqua_form">
+     	<div id="eloqua_form">
+      		 ${eloquaHelper.formHTML @ context='unsafe'}
+   		</div>
+	  </div>
+   	</sly>
+</sly>
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}" data-sly-test="${eloquaHelper.eloquaCompModel.addCaptcha}">
+   <div id="recaptcha-err-msg" style="display: none">${eloquaHelper.reCAPTCHAErrMsg}</div>
+</sly>
+<sly data-sly-test="${eloquaHelper.eloquaCompModel.formId}">
+   <!-- Declare variables from EloquaFormSlingModel -->
+   <script type="text/javascript">
+      var formValues = [];
+      var eloquaFormNames = [];
+      var EloquaSiteID = "${eloquaHelper.eloquaSiteId @ context="scriptString"}"; // The Site ID of your Eloqua Instance
+      var LookupIdVisitor = "${eloquaHelper.lookupIdVisitor @ context="scriptString"}"; // LOOKUP A:  The ID of your Visitor Web Data Lookup
+      var LookupIdPrimary = "${eloquaHelper.lookupIdPrimary @ context="scriptString"}"; // LOOKUP B:  The ID of your Contact/Datacard/Prospect/Company Web Data Lookup
+      var VisitorUniqueField = "${eloquaHelper.visitorUniqueField @ context="scriptString"}"; // Unique field's HTML Name from LOOKUP A (usually V_Email_Address)
+      var PrimaryUniqueField = "${eloquaHelper.primaryUniqueField @ context="scriptString"}"; // Unique field's HTML Name from LOOKUP B (usually C_EmailAddress)
+      var EloquaFormID = "${eloquaHelper.eloquaCompModel.formId @ context="scriptString"}"; // The ID of your Eloqua Form
+      var CookieTrackingURL = "${eloquaHelper.cookieTrackingURL @ context="scriptString"}"; // Cookie Tracking URL
+      var reCaptchaSiteKey = "${eloquaHelper.reCaptchaSiteKey @ context="scriptString"}"; // Google ReCAPTCHA site key
+      var reCaptchaSiteLang = "${eloquaHelper.reCAPTCHALang @ context="scriptString"}"; // Google ReCAPTCHA Language
+	  var formName = "${eloquaHelper.formName @ context="scriptString"}"; // Eloqua Form Name
+
+	  this['tag_country_'+EloquaFormID] = "${eloquaHelper.eloquaCompModel.tag_country @ context="scriptString"}";
+	  this['tag_market_'+EloquaFormID] = "${eloquaHelper.eloquaCompModel.tag_market @ context="scriptString"}";
+	  this['tag_topic_'+EloquaFormID] = "${eloquaHelper.eloquaCompModel.tag_topic @ context="scriptString"}";
+	  this['tag_location_'+EloquaFormID] = "${eloquaHelper.eloquaCompModel.tag_location @ context="scriptString"}";
+	  this['tag_stage_'+EloquaFormID] = "${eloquaHelper.eloquaCompModel.tag_stage @ context="scriptString"}";
+	  this['tag_business_group_'+EloquaFormID] = "${eloquaHelper.eloquaCompModel.tag_businessGrp @ context="scriptString"}";
+	  this['tag_asset_'+EloquaFormID] = "${eloquaHelper.eloquaCompModel.tag_asset @ context="scriptString"}";
+	  this['tag_percolateAssetID_'+EloquaFormID] = "${eloquaHelper.eloquaCompModel.tag_percolateAssetId @ context="scriptString"}";
+	  this['tag_product_'+EloquaFormID] = "${eloquaHelper.eloquaCompModel.tag_product @ context="scriptString"}";
+	  this['tag_cta_'+EloquaFormID] = "${eloquaHelper.eloquaCompModel.tag_cta @ context="scriptString"}";
+	  this['tag_page_'+EloquaFormID] = "${eloquaHelper.tag_page @ context="scriptString"}";
+	  this['tag_page_query_parameters_'+EloquaFormID] = (new URL(document.location)).searchParams.toString();
+	  this['tag_sku_'+EloquaFormID] = "${eloquaHelper.skuId @ context="scriptString"}";
+	  this['tag_pagetitle_'+EloquaFormID] = "${currentPage.title @ context="scriptString"}";
+	  this['tag_Routing_'+EloquaFormID] = "${eloquaHelper.formRoutingTags @ context="scriptString"}";
+	  this['prepopulationEnabled_'+EloquaFormID] = "${eloquaHelper.prepopulationEnabled @ context="scriptString"}";
+
+	  if(typeof formValues !== "undefined"){
+			formValues.push(EloquaFormID);
+	  }
+
+	  if(typeof eloquaFormNames !== "undefined"){
+			eloquaFormNames.push(formName);
+	  }
+   </script>
+
+   <sly data-sly-test="${eloquaHelper.eloquaCompModel.addCaptcha}">
+       <script>
+            const onloadRecaptchaCallback = () => {
+                grecaptcha.render( 
+                    $('.g-recaptcha').attr('id'), {
+                    sitekey: reCaptchaSiteKey, 
+                    hl: reCaptchaSiteLang 
+                });
+            };
+       </script>
+	<sly data-sly-test.countryLang="${eloquaHelper.reCAPTCHALang}-${eloquaHelper.reCAPTCHACountry}"></sly>
+	<sly data-sly-test.country = "${eloquaHelper.reCAPTCHALang == 'zh' ? countryLang : eloquaHelper.reCAPTCHALang}"></sly>
+	<script async src="https://www.google.com/recaptcha/api.js?hl=${country}&onload=onloadRecaptchaCallback"></script>
+    </sly>
+</sly>
+</sly>

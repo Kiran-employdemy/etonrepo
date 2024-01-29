@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.listeners.ReferenceCheckEventHandler" immediate="true">
+  <property name="service.description" type="String" value=" Demo to listen on changes in the resource tree"/>
+  <property name="event.topics" type="String">com/day/cq/wcm/core/page
+com/day/cq/dam</property>
+  <service>
+    <provide interface="org.osgi.service.event.EventHandler"/>
+  </service>
+  <reference name="jobManager" interface="org.apache.sling.event.jobs.JobManager" field="jobManager"/>
+  <reference name="referenceService" interface="com.eaton.platform.core.services.ReferenceService" field="referenceService"/>
+  <implementation class="com.eaton.platform.core.listeners.ReferenceCheckEventHandler"/>
+</scr:component>

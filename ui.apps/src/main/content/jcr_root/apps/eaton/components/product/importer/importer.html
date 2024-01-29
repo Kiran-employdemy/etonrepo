@@ -1,0 +1,159 @@
+<link rel="shortcut icon" href="/libs/granite/core/content/login/favicon.ico">
+<title>Eaton Products | Import Products</title>
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientLib.all @ categories='coralui3,coralui2,granite.ui.coral.foundation,granite.ui.shell,eaton-importer.app'}" data-sly-unwrap/>
+    <coral-shell>
+        <coral-shell-header class="coral--dark coral-Shell-header">
+            <coral-shell-header-home data-globalnav-navigator-main-href="/mnt/overlay/granite/ui/content/shell/globalnav.html?consoleId=cq-projects" class="coral-Shell-header-home" role="heading" aria-level="2">
+                <a is="coral-shell-homeanchor" icon="adobeExperienceManagerColor" href="#" class="coral-Shell-homeAnchor" role="heading" aria-level="2">
+                    <coral-icon class="coral-Icon coral-Icon--sizeM coral-Icon--adobeExperienceManagerColor" icon="adobeExperienceManagerColor" size="M" role="img" aria-label="adobe experience manager color"></coral-icon>
+                    <coral-shell-homeanchor-label class="coral-Shell-homeAnchor-label">Adobe Experience Manager</coral-shell-homeanchor-label>
+                </a>
+            </coral-shell-header-home>
+            <coral-shell-header-actions class="coral-Shell-header-actions">
+                <coral-shell-menubar class="coral-Shell-menubar">
+                    <coral-shell-menubar-item class="foundation-toggleable-control coral-Shell-menubar-item" title="Help" data-foundation-toggleable-control-src="/mnt/overlay/granite/ui/content/shell/help.html" icon="helpCircle">
+                    </coral-shell-menubar-item>
+                    <coral-shell-menubar-item class="foundation-toggleable-control coral-Shell-menubar-item" title="Solutions" data-foundation-toggleable-control-src="/mnt/overlay/granite/ui/content/shell/solutionswitcher.html" icon="apps">
+                    </coral-shell-menubar-item>
+                    <coral-shell-menubar-item title="Notifications" icon="bell" class="granite-shell-badge coral-Shell-menubar-item" data-granite-shell-badge-src="/mnt/overlay/granite/ui/content/shell/header/actions/pulse.data.json" data-granite-shell-badge-console="/notifications.html{?ref}">
+                    </coral-shell-menubar-item>
+                    <coral-shell-menubar-item class="foundation-toggleable-control coral-Shell-menubar-item" title="User" data-foundation-toggleable-control-src="/mnt/overlay/granite/ui/content/shell/userproperties.html" icon="user">
+                    </coral-shell-menubar-item>
+
+                </coral-shell-menubar>
+            </coral-shell-header-actions>
+            <coral-shell-header-content class="coral-Shell-header-content"></coral-shell-header-content>
+        </coral-shell-header>
+
+
+        <coral-shell-content role="main" class="coral-Shell-content">
+            <coral-wizardview class="coral-WizardView" id="startProcessWizard">
+                <coral-steplist coral-wizardview-steplist="" interaction="on" class="coral-StepList" __vent-id__="2" role="tablist" aria-multiselectable="false">
+                    <coral-step selected class="coral-Step" role="tab" id="coral-id-1">
+                        <coral-step-label class="eaton coral-Step-label">Provide Inputs</coral-step-label>
+                    </coral-step>
+                    <coral-step class="coral-Step" role="tab" id="coral-id-3">
+                        <coral-step-label class="eaton coral-Step-label ">Output Logs</coral-step-label>
+                    </coral-step>
+                </coral-steplist>
+                <coral-panelstack coral-wizardview-panelstack="" class="coral-PanelStack" role="presentation">
+                    <coral-panel class="coral-Well coral-Panel" selected="" role="tabpanel">
+                        <coral-panel-content>
+                            <coral-shell-content role="main" id="processListing">
+                                <div id="granite-shell-content" class="foundation-layout-panel">
+                                    <div class="foundation-layout-panel-bodywrapper">
+                                        <div class="foundation-layout-panel-body">
+                                            <div class="foundation-layout-panel-content">
+                                                <div id="mcp-workspace">
+                                                    <form class="coral-Form coral-Form--aligned u-columnLarge" id="product-importer-form" resource-path="${resource.path}">
+                                                        <div class="importer-heading">
+                                                            <h3 class="coral-Form-fieldset-legend" id="processName">Product Importer</h3>
+                                                        </div>
+                                                        <section class="coral-Form-fieldset">
+                                                            <div class="coral-Form-fieldwrapper">
+                                                                <label class="coral-Form-fieldlabel">Excel File *</label>
+                                                                <coral-fileupload class="coral-Form-field coral3-FileUpload is-required" name="excelFile" id="excelFile" placeholder="" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" required="" data-foundation-validation="" data-validation="" aria-disabled="false" aria-invalid="false" aria-readonly="false" aria-required="true">
+                                                                    <button type="button" is="coral-button" coral-fileupload-select="" coral-fileupload-dropzone="" class="coral--dark coral-Button is-required" size="M">
+                                                                        <coral-button-label class="coral-Button-label">Upload Excel File</coral-button-label>
+                                                                    </button>
+                                                                    <input handle="input" class=" coral3-FileUpload-input is-unselectable" tabindex="-1" name="excelFile" type="file" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" aria-invalid="false" required="" style="top: 175px; left: 154px; width: 140px; height: 38px;">
+                                                                    <object style="display: block; position: absolute; top: 0; left: 0; height: 100%; width: 100%; overflow: hidden; pointer-events: none; z-index: -100; opacity:0;" tabindex="-1" type="text/html" data="about:blank"></object>
+                                                                </coral-fileupload>
+                                                                <coral-icon class="coral-Form-fieldinfo coral-Icon eaton coral-Icon--infoCircle coral-Icon--sizeS" icon="infoCircle" size="S" role="img" aria-label="info circle"></coral-icon>
+                                                                <coral-tooltip target="_prev" placement="left" class="coral3-Tooltip coral3-Tooltip--info" aria-hidden="true" variant="info" tabindex="-1" role="tooltip" style="display: none;">
+                                                                    <coral-tooltip-content>
+                                                                        Provide the .xlsx file that defines the Eaton Products taxonomy
+                                                                    </coral-tooltip-content>
+                                                                </coral-tooltip>
+                                                            </div>
+
+                                                            <div class="coral-Form-fieldwrapper">
+                                                                <label class="coral-Form-fieldlabel">Products path *</label>
+                                                                <span class="coral-Form-field coral-PathBrowser is-above coral--dark" data-init="pathbrowser" data-root-path="/" data-option-loader="granite.ui.pathBrowser.pages.folder" data-picker-src="/libs/wcm/core/content/common/pathbrowser/column.html/?predicate=hierarchyNotFile" data-crumb-root="" data-picker-multiselect="false" data-root-path-valid-selection="true">
+                                                                <span class="coral-InputGroup coral-InputGroup--block">
+                                                                    <input class="coral-InputGroup-input js-coral-pathbrowser-input coral-Textfield coral--dark" type="text" name="baseFolder" id="baseFolder" autocomplete="off" is="coral-textfield" value="/var/commerce/products/eaton" placeholder="Product base path" aria-required="true" data-foundation-validation="" data-validation="" aria-owns="coral-3" aria-haspopup="true" aria-expanded="false" aria-invalid="false" required>
+                                                                    <span class="coral-InputGroup-button">
+                                                                        <button class="js-coral-pathbrowser-button coral-Button coral-Button--square" type="button" title="Browse" is="coral-button" icon="folderSearch" iconsize="S" size="M"><coral-icon class="coral-Icon coral-Icon--folderSearch" icon="folderSearch" size="S"></coral-icon><coral-button-label class="coral-Button-label"></coral-button-label></button>
+                                                                    </span>
+                                                                </span>
+                                                                </span>
+                                                                <coral-icon class="coral-Form-fieldinfo coral-Icon eaton coral-Icon--infoCircle coral-Icon--sizeS" icon="infoCircle" size="S" role="img" aria-label="info circle"></coral-icon>
+                                                                <coral-tooltip target="_prev" placement="left" class="coral3-Tooltip coral3-Tooltip--info coral3-Tooltip--arrowLeft" aria-hidden="true" variant="info" tabindex="-1" role="tooltip" style="z-index: 10020; max-width: 808.797px; left: 435.797px; top: 177.5px; display: none;">
+                                                                    <coral-tooltip-content>
+                                                                        Choose product(Collection) path
+                                                                </coral-tooltip-content>
+                                                                </coral-tooltip>
+                                                            </div>
+
+                                                        </section>
+                                                        <button is="coral-button" class="coral-Form--aligned" id="reset" variant="primary" coral-wizardview-previous="" size="M" onclick="javascript:ScriptRunner.reset()">
+                                                            <coral-button-label>Clear All</coral-button-label>
+                                                        </button>
+                                                        <button type="submit" id="startButton" is="coral-button" class="coral-Form--aligned" variant="primary" size="M" onclick="javascript:ScriptRunner.processDefinitionSelected()">
+                                                            <coral-button-label>Import Products</coral-button-label>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </coral-shell-content>
+                        </coral-panel-content>
+                    </coral-panel>
+                    <coral-panel class="coral-Well coral-Panel" role="tabpanel">
+                        <coral-panel-content>
+                            <div class="back-button">
+                                <button is="coral-button" variant="primary" id="previous-button" coral-wizardview-previous="" size="M" onclick="javascript:ScriptRunner.reset()">
+                                    <coral-button-label>Previous</coral-button-label>
+                                </button>
+                            </div>
+                            <div class="logs">
+                                <div class="total-message" id="total-message" style="display: none;">
+                                </div>
+                                <coral-accordion variant="large" id="failure-logs-accordion" style="display: none;">
+                                    <coral-accordion-item selected>
+                                        <coral-accordion-item-label>
+                                            <h3 class="head-message">Error Logs</h3>
+                                        </coral-accordion-item-label>
+                                        <coral-accordion-item-content>
+                                            <coral-panel-content id="failure-logs-console">
+                                                <div id="failure-logs-messages">
+                                                </div>
+                                            </coral-panel-content>
+                                        </coral-accordion-item-content>
+                                    </coral-accordion-item>
+                                </coral-accordion>
+
+                                <coral-accordion variant="large" id="sucess-logs-accordion" style="display: none;">
+                                    <coral-accordion-item selected>
+                                        <coral-accordion-item-label>
+                                            <h3 class="head-message">Success Logs</h3>
+
+                                        </coral-accordion-item-label>
+                                        <coral-accordion-item-content>
+                                            <coral-panel-content id="sucess-logs-console">
+
+                                                <div id="success-logs-messages">
+
+                                                </div>
+                                            </coral-panel-content>
+
+                                        </coral-accordion-item-content>
+                                    </coral-accordion-item>
+                                </coral-accordion>
+                            </div>
+                            <coral-wait id="wait" size="L">
+                            </coral-wait>
+                        </coral-panel-content>
+                    </coral-panel>
+                </coral-panelstack>
+            </coral-wizardview>
+        </coral-shell-content>
+
+
+
+    </coral-shell>
+</sly>

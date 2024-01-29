@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Panel"
+    title="VarnishSix">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <domain
+            jcr:primaryType="cq:Widget"
+            defaultValue="DEV_US"
+            fieldLabel="Varnish Domain"
+            name="./varnishSixDomain"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <DEV
+                    jcr:primaryType="nt:unstructured"
+                    text="DEV_US"
+                    value="9 |varnish-dev1.tcc.etn.com |EATON_QA"/>
+                <SIT
+                    jcr:primaryType="nt:unstructured"
+                    text="SIT_US"
+                    value="11 |varnish-sit1.tcc.etn.com |EATON_QA"/>
+                <QAUS
+                    jcr:primaryType="nt:unstructured"
+                    text="QA_US"
+                    value="12 |varnish-qa1.etn.com,varnish-qa2.etn.com |EATON_QA"/>
+                <QACN
+                    jcr:primaryType="nt:unstructured"
+                    text="QA_CHINA"
+                    value="14 |aem-cn-qa-varnish01.tcc.etn.com |EATON_QA"/>
+                <PRODUS
+                    jcr:primaryType="nt:unstructured"
+                    text="PROD_US"
+                    value="13 |varnish-prod1.etn.com,varnish-prod2.etn.com |EATON_PROD"/>
+                <PRODCN
+                    jcr:primaryType="nt:unstructured"
+                    text="PROD_CHINA"
+                    value="15 |aem-cn-prod-varnish01.etn.com,aem-cn-prod-varnish02.etn.com |EATON_PROD"/>
+            </options>
+        </domain>
+        <action
+            jcr:primaryType="cq:Widget"
+            defaultValue="remove"
+            fieldDescription="&quot;Remove&quot; deletes the content from Varnish caches. The next time an Varnish server receives a request for the content, it will retrieve the current version from the origin server. "
+            fieldLabel="Action"
+            name="./vanishAction"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <remove
+                    jcr:primaryType="nt:unstructured"
+                    text="remove"
+                    value="remove"/>
+            </options>
+        </action>
+        <excludePaths
+            jcr:primaryType="cq:Widget"
+            fieldLabel="Exclude Paths"
+            name="./excludePaths"
+            xtype="multifield">
+            <fieldConfig
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Design"
+                name="./excludePath"
+                rootPath="/var/commerce/pdh"
+                xtype="pathfield"/>
+        </excludePaths>
+    </items>
+</jcr:root>

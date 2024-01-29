@@ -1,0 +1,25 @@
+<template id="confirmationDialogTpl">
+	<div id="confirmationDialogWrapper">
+		<div id="confirmationDialogContent">
+			<p id="confirmationDialogText"></p>
+			<p>
+				<coral-checkbox id="replicateModified" class="coral-Form-field coral3-Checkbox">
+					<input type="checkbox" handle="input" class=" coral3-Checkbox-input" id="replicateModifiedIn" />
+					<span class=" coral3-Checkbox-checkmark" handle="checkbox"></span>
+					<label class=" coral3-Checkbox-description" handle="labelWrapper" for="replicateModifiedIn">
+						<coral-checkbox-label>Replicate modified content</coral-checkbox-label>
+					</label>
+				</coral-checkbox>
+			</p>
+			<p>
+				<coral-checkbox id="createBackup" class="coral-Form-field coral3-Checkbox">
+					<input type="checkbox" handle="input" class=" coral3-Checkbox-input" id="createBackupIn" />
+					<span class=" coral3-Checkbox-checkmark" handle="checkbox"></span>
+					<label class=" coral3-Checkbox-description" handle="labelWrapper" for="createBackupIn">
+						<coral-checkbox-label>Create backup</coral-checkbox-label>
+					</label>
+				</coral-checkbox>
+			</p>		
+		</div>
+	</div>
+</template>

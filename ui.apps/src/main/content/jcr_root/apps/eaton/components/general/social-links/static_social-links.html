@@ -1,0 +1,42 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Social Links</div>
+</sly>
+
+
+<sly data-sly-use.data="com.eaton.platform.core.models.sociallink.SocialListModel">
+
+  <div class="eaton-social-links">
+
+    <!--/* If Eyebrow */-->
+    <sly data-sly-test="${data.header}">
+      <h4 class="eaton-social-links__eyebrow b-eyebrow-small">${data.header}</h4>
+    </sly>
+
+    <!--/* List Links */-->
+    <ul
+      data-sly-list="${ data.links }"
+      class="eaton-social-links__list"
+    >
+      <li class="eaton-social-links__list-item">
+        <a href="${ item.path }"
+          class="eaton-social-links__list-link"
+          target="_blank"
+        >
+          <img
+            data-src="${ item.imagePath }"
+            class="eaton-social-links__list-icon lazyload"
+            alt="" />
+        </a>
+      </li>
+    </ul>
+
+    <div data-sly-test="${ data.viewAllText }" class="eaton-social-links__cta">
+      <a href="${ data.viewAllLinkPath }"
+        aria-label="${ data.viewAllText }"
+        class="eaton-social-links__page-link b-body-copy-small"
+        target="${ data.newWindow }"><span class="eaton-social-links__page-link-text"><bdi>${ data.viewAllText }</bdi></span><i class="eaton-social-links__page-link-icon icon icon-chevron-right" aria-hidden="true"></i></a>
+    </div>
+
+  </div>
+
+</sly>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.EatonServiceConfig">
+  <OCD id="com.eaton.platform.core.services.config.EatonServiceConfig" name="EatonConfigServiceImpl" description="">
+    <AD id="countryselector.folder.path" type="String" name="Country Selector Folder Path" default=""/>
+    <AD id="priceList.folder.path" type="String" name="PriceList Folder Path" default=""/>
+    <AD id="excel.file.path" type="String" name="Excel file Path" default=""/>
+    <AD id="excel.file.archive.path" type="String" name="Excel archieve file Path" default=""/>
+    <AD id="json.file.archive.path" type="String" name="JSON archieve file path" default=""/>
+    <AD id="json.file.path" type="String" name="JSON file Path" default=""/>
+    <AD id="json.root.element" type="String" name="root Element" default=""/>
+    <AD id="json.file.name" type="String" name="Json File Name" default="skupricelist"/>
+    <AD id="skupagename" type="String" name="sku page Path" default=""/>
+    <AD id="lov.icon.list.path" type="String" cardinality="2147483647" name="LOV Icon List path" description="Icon LOVs List Path" default=""/>
+    <AD id="linklist.dropdown.option" type="String" cardinality="2147483647" name="Link List View Option" description="This defines text and value of view as dropdown option" default=""/>
+    <AD id="dynamic.dropdown.config" type="String" cardinality="2147483647" name="Dynamic Dropdown list path" description="Dymanic Dropdown List Path" default=""/>
+    <AD id="icon.list.symbol" type="String" cardinality="2147483647" name="IconList Symbols" description="IconList Symbols" default=""/>
+    <AD id="number.of.days.publish" type="String" name="Number Of Days To Publish" description="Number Of Days To Publish" default=""/>
+    <AD id="middle.tab.config" type="String" cardinality="2147483647" name="Middle Tab list path" description="Middle Tab list path" default=""/>
+    <AD id="iconlist.proofpoint.symbols" type="String" cardinality="2147483647" name="iconlist.proofpoint.symbols" default=""/>
+    <AD id="resource.listing.drawings.file.extensions.list" type="String" name="resource.listing.drawings.file.extensions.list" description="Enter the list separated by comma(,)" default=""/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.impl.EatonConfigServiceImpl">
+    <Object ocdref="com.eaton.platform.core.services.config.EatonServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.varnish.services.impl.VarnishCacheClearImpl" immediate="true">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="service.description" type="String" value=" =VarnishCacheClearImpl"/>
+  <property name="process.label" type="String" value=" VarnishCacheClearImpl"/>
+  <service>
+    <provide interface="com.eaton.platform.integration.varnish.services.VarnishCacheClearService"/>
+  </service>
+  <reference name="agentManager" interface="com.day.cq.replication.AgentManager" field="agentManager"/>
+  <implementation class="com.eaton.platform.integration.varnish.services.impl.VarnishCacheClearImpl"/>
+</scr:component>

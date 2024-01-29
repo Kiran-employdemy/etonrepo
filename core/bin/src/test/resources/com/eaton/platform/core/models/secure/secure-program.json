@@ -1,0 +1,557 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Feb 28 2023 21:52:20 GMT-0500",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "cq:LiveRelationship",
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Programs | MyEaton",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "454a8333-a3fa-456c-9e78-33ed7ff68f93",
+    "cq:template": "/conf/eaton/settings/wcm/templates/secure",
+    "cq:lastReplicatedBy": "c9944930",
+    "priority": "0.5",
+    "cq:lastRolledout": "Mon Feb 06 2023 02:04:59 GMT-0500",
+    "msmcomponent": "/content/eaton/us/en-us/secure/programs/jcr:content/root/responsivegrid/product_grid",
+    "percolate-content-id": "1399024396916700896",
+    "jcr:predecessors": [
+      "97f86cf0-f5ce-4322-a0b3-8af127fb0b0d"
+    ],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Tue Feb 28 2023 21:52:20 GMT-0500",
+    "excludeCountries": "false",
+    "cq:lastReplicated": "Mon Feb 06 2023 02:06:24 GMT-0500",
+    "cq:lastModified": "Mon Feb 06 2023 02:04:59 GMT-0500",
+    "view": "generic",
+    "hideInHtml": "false",
+    "meta-robot-tags": "index,follow",
+    "jcr:baseVersion": "97f86cf0-f5ce-4322-a0b3-8af127fb0b0d",
+    "jcr:isCheckedOut": true,
+    "primary-sub-category-tag": [
+      "eaton:myeaton-taxonomy/myeaton-programs"
+    ],
+    "hideInXml": "false",
+    "page-type": "sub-category",
+    "pageTitle": "Programs",
+    "jcr:uuid": "450801f7-079a-4b68-bf13-ddb7f83ff932",
+    "sling:resourceType": "eaton/components/structure/eaton-secure-template-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "page-intent": "Directory Page",
+    "textIsRich": "true",
+    "securePage": "true",
+    "cq:lastRolledoutBy": "c9944930",
+    "cq:lastModifiedBy": "c9944930",
+    "changefrequency": "weekly",
+    "navTitle": "Programs",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:LiveRelationship"
+      ],
+      "jcr:lastModifiedBy": "e9814292",
+      "cq:lastRolledout": "Mon Feb 06 2023 02:04:59 GMT-0500",
+      "jcr:lastModified": "Mon Feb 06 2023 02:04:59 GMT-0500",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "cq:lastRolledoutBy": "c9944930",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:LiveRelationship"
+        ],
+        "jcr:createdBy": "e9814292",
+        "jcr:lastModifiedBy": "e9814292",
+        "cq:lastRolledout": "Mon Feb 06 2023 02:04:59 GMT-0500",
+        "jcr:created": "Fri Jun 11 2021 13:28:31 GMT-0400",
+        "jcr:lastModified": "Mon Feb 06 2023 02:04:59 GMT-0500",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "cq:lastRolledoutBy": "c9944930"
+      }
+    }
+  },
+  "emea-wholesaler": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Mar 03 2023 15:52:03 GMT-0500",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "cq:LiveRelationship"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "EMEA Wholesaler programme",
+      "cq:template": "/conf/eaton/settings/wcm/templates/secure",
+      "priority": "0.5",
+      "partnerProgrammeType": [
+        "eaton-secure:partner-programme-type/control-panel-builder-program"
+      ],
+      "cq:lastRolledout": "Fri Dec 16 2022 13:02:52 GMT-0500",
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Fri Mar 03 2023 15:52:03 GMT-0500",
+      "excludeCountries": "false",
+      "cq:lastModified": "Fri Dec 16 2022 13:02:52 GMT-0500",
+      "view": "generic",
+      "meta-robot-tags": "index,follow",
+      "businessGroup": [
+        "eaton-secure:business-group/electrical-amer"
+      ],
+      "primary-sub-category-tag": [
+        "eaton:resources/marketing-resources/brochures",
+        "order-center:store-id/SAPUNI_0000097969_1216_10_10"
+      ],
+      "page-type": "generic-page",
+      "accountType": [
+        "eaton-secure:accounttype/agent"
+      ],
+      "oktaGroups": [
+        "eaton-secure/okta-group/revenera_pq_system-administrator"
+      ],
+      "cq:conf": "/conf/eaton",
+      "sling:resourceType": "eaton/components/structure/eaton-secure-template-page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "textIsRich": "true",
+      "securePage": "true",
+      "cq:lastRolledoutBy": "c3060052",
+      "tierLevel": [
+        "eaton-secure:tier-level/qualified"
+      ],
+      "cq:lastModifiedBy": "c3060052",
+      "changefrequency": "weekly",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:LiveRelationship"
+        ],
+        "jcr:lastModifiedBy": "e9814292",
+        "cq:lastRolledout": "Fri Dec 16 2022 13:02:52 GMT-0500",
+        "jcr:lastModified": "Fri Dec 16 2022 13:02:52 GMT-0500",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "cq:lastRolledoutBy": "c3060052"
+      }
+    }
+  },
+  "eaton-stock-advantage--esa--program": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Tue Feb 28 2023 21:52:20 GMT-0500",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "cq:LiveRelationship",
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Eaton Stock Advantage (ESA) program",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "44f066bf-eec5-45bd-975c-885ed7b4247c",
+      "cq:template": "/conf/eaton/settings/wcm/templates/secure",
+      "cq:lastReplicatedBy": "e0067088",
+      "priority": "0.5",
+      "cq:lastRolledout": "Fri Oct 08 2021 20:06:26 GMT-0400",
+      "jcr:predecessors": [
+        "7333d02e-c718-49fc-a001-1b0af2f324bd"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Tue Feb 28 2023 21:52:20 GMT-0500",
+      "excludeCountries": "false",
+      "cq:lastReplicated": "Wed Jul 13 2022 17:37:36 GMT-0400",
+      "cq:lastModified": "Fri Oct 08 2021 20:06:26 GMT-0400",
+      "view": "generic",
+      "meta-robot-tags": "index,follow",
+      "jcr:baseVersion": "7333d02e-c718-49fc-a001-1b0af2f324bd",
+      "businessGroup": [
+        "eaton-secure:business-group/electrical-amer"
+      ],
+      "productCategories": [
+        "eaton-secure:product-category/electrical/circuit-breakers",
+        "eaton-secure:product-category/electrical/commercial-distribution-equipment",
+        "eaton-secure:product-category/electrical/control-and-automation",
+        "eaton-secure:product-category/electrical/control-assemblies",
+        "eaton-secure:product-category/electrical/life-safety-and-mass-notification",
+        "eaton-secure:product-category/electrical/metering-and-power-monitoring",
+        "eaton-secure:product-category/electrical/residential",
+        "eaton-secure:product-category/electrical/surge-protection-and-power-factor-correction",
+        "eaton-secure:product-category/electrical/switchgear-and-power-assemblies"
+      ],
+      "jcr:isCheckedOut": true,
+      "page-type": "generic-page",
+      "accountType": [
+        "eaton-secure:accounttype/agent",
+        "eaton-secure:accounttype/distributor",
+        "eaton-secure:accounttype/eaton-employee"
+      ],
+      "cq:tags": [
+        "eaton:myeaton-taxonomy/myeaton-programs"
+      ],
+      "jcr:uuid": "f5afe893-9512-48e5-aa42-f6be75ec8c3f",
+      "sling:resourceType": "eaton/components/structure/eaton-secure-template-page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "countries": [
+        "eaton:country/north-america/us"
+      ],
+      "securePage": "true",
+      "cq:lastRolledoutBy": "e0059909",
+      "teaser-image-path": "/content/dam/eaton/eaton-own-or-royalty-free-purchased-images/card-images/eaton-stock-advantage.jpg",
+      "cq:lastModifiedBy": "e0059909",
+      "changefrequency": "weekly",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:LiveRelationship"
+        ],
+        "jcr:lastModifiedBy": "e9814292",
+        "cq:lastRolledout": "Fri Oct 08 2021 20:06:26 GMT-0400",
+        "jcr:lastModified": "Fri Oct 08 2021 20:06:26 GMT-0400",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "cq:lastRolledoutBy": "e0059909"
+      }
+    }
+  },
+  "eaton-distributor-advantage-program--edap-": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Tue Feb 28 2023 21:52:20 GMT-0500",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "cq:LiveRelationship",
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Eaton's Distributor Advantage Program (EDAP) - Overview",
+      "partnerProgramAndTierLevel": [
+        "eaton-secure:partner-programme-type/electrical-installer-programme/authorized"
+      ],
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "24612da3-cf3f-45d5-8a12-fd700b037dc8",
+      "cq:template": "/conf/eaton/settings/wcm/templates/secure",
+      "cq:lastReplicatedBy": "e0067088",
+      "priority": "0.5",
+      "cq:lastRolledout": "Thu Oct 07 2021 14:57:46 GMT-0400",
+      "applicationAccess": [
+        "eaton-secure:application-access/electrical-installer-premium",
+        "eaton-secure:application-access/electrical-installer-registered",
+        "eaton-secure:application-access/eas-demand-response"
+      ],
+      "jcr:predecessors": [
+        "9ded0746-20e9-47e2-a938-185b417d0958"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Tue Feb 28 2023 21:52:20 GMT-0500",
+      "excludeCountries": "false",
+      "cq:lastReplicated": "Wed Jul 13 2022 17:37:36 GMT-0400",
+      "cq:lastModified": "Thu Oct 07 2021 14:57:46 GMT-0400",
+      "view": "generic",
+      "meta-robot-tags": "index,follow",
+      "jcr:baseVersion": "9ded0746-20e9-47e2-a938-185b417d0958",
+      "businessGroup": [
+        "eaton-secure:business-group/electrical-amer"
+      ],
+      "productCategories": [
+        "eaton-secure:product-category/electrical/b-line-series-support-systems",
+        "eaton-secure:product-category/electrical/backup-power-protection-ups-and-rack-infrastructure",
+        "eaton-secure:product-category/electrical/bussmann-series-circuit-protection",
+        "eaton-secure:product-category/electrical/circuit-breakers",
+        "eaton-secure:product-category/electrical/commercial-distribution-equipment",
+        "eaton-secure:product-category/electrical/control-and-automation",
+        "eaton-secure:product-category/electrical/control-assemblies",
+        "eaton-secure:product-category/electrical/cooper-power-series-solutions",
+        "eaton-secure:product-category/electrical/crouse-hinds-series-harsh-and-hazardous",
+        "eaton-secure:product-category/electrical/electronics",
+        "eaton-secure:product-category/electrical/energy-automation-solutions",
+        "eaton-secure:product-category/electrical/engineering-services",
+        "eaton-secure:product-category/electrical/life-safety-and-mass-notification",
+        "eaton-secure:product-category/electrical/metering-and-power-monitoring",
+        "eaton-secure:product-category/electrical/residential",
+        "eaton-secure:product-category/electrical/surge-protection-and-power-factor-correction",
+        "eaton-secure:product-category/electrical/switchgear-and-power-assemblies",
+        "eaton-secure:product-category/electrical/wiring-devices"
+      ],
+      "jcr:isCheckedOut": true,
+      "page-type": "generic-page",
+      "accountType": [
+        "eaton-secure:accounttype/distributor",
+        "eaton-secure:accounttype/eaton-employee"
+      ],
+      "cq:conf": "/conf/eaton",
+      "cq:tags": [
+        "eaton:myeaton-taxonomy/myeaton-programs",
+        "eaton:myeaton-taxonomy/myeaton-channel-marketing"
+      ],
+      "jcr:uuid": "3a4555ff-5d2f-4dcb-aaa5-2fe2e305d519",
+      "sling:resourceType": "eaton/components/structure/eaton-secure-template-page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "countries": [
+        "eaton:country/north-america/us",
+        "eaton:country/north-america/ca"
+      ],
+      "securePage": "true",
+      "cq:lastRolledoutBy": "e0059909",
+      "teaser-image-path": "/content/dam/eaton/eaton-own-or-royalty-free-purchased-images/card-images/eatons-distributor-advantage-program.jpg",
+      "cq:lastModifiedBy": "e0059909",
+      "changefrequency": "weekly",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:LiveRelationship"
+        ],
+        "jcr:lastModifiedBy": "e9814292",
+        "cq:lastRolledout": "Thu Oct 07 2021 14:57:46 GMT-0400",
+        "jcr:lastModified": "Thu Oct 07 2021 14:57:46 GMT-0400",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "cq:lastRolledoutBy": "e0059909"
+      }
+    }
+  },
+  "federal-stimulus-funding": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Tue Feb 28 2023 21:52:20 GMT-0500",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Federal stimulus funding",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "c398fdb0-ac84-4c06-a6d9-707f88b73a4a",
+      "cq:template": "/conf/eaton/settings/wcm/templates/secure",
+      "cq:lastReplicatedBy": "e0067088",
+      "priority": "0.5",
+      "applicationAccess": [],
+      "jcr:predecessors": [
+        "13f46d12-afd8-40cb-831d-fba421c96b04"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Tue Feb 28 2023 21:52:20 GMT-0500",
+      "excludeCountries": "false",
+      "cq:lastReplicated": "Wed Jul 13 2022 17:37:36 GMT-0400",
+      "cq:lastModified": "Fri Oct 08 2021 11:45:05 GMT-0400",
+      "view": "generic",
+      "meta-robot-tags": "index,follow",
+      "jcr:baseVersion": "13f46d12-afd8-40cb-831d-fba421c96b04",
+      "businessGroup": [],
+      "productCategories": [],
+      "jcr:isCheckedOut": true,
+      "page-type": "generic-page",
+      "accountType": [],
+      "cq:conf": "/conf/eaton",
+      "cq:tags": [
+        "eaton:myeaton-taxonomy/myeaton-programs"
+      ],
+      "jcr:uuid": "f5340f71-4989-4e1b-aeda-83182c10021b",
+      "sling:resourceType": "eaton/components/structure/eaton-secure-template-page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "countries": [],
+      "securePage": true,
+      "teaser-image-path": "/content/dam/eaton/eaton-own-or-royalty-free-purchased-images/card-images/federal-stimulus.png",
+      "cq:lastModifiedBy": "e0059909",
+      "changefrequency": "weekly",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "e9814292",
+        "jcr:lastModified": "Fri Jun 11 2021 13:28:51 GMT-0400",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      }
+    }
+  },
+  "power-of-authenticity": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Tue Feb 28 2023 21:52:20 GMT-0500",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Power of Authenticity",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "7549887e-648e-48e3-835f-202bd20bf9e3",
+      "cq:template": "/conf/eaton/settings/wcm/templates/secure",
+      "cq:lastReplicatedBy": "e0067088",
+      "priority": "0.5",
+      "jcr:predecessors": [
+        "e5c180bc-529d-4b35-818d-f0c92ba40e0f"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Tue Feb 28 2023 21:52:20 GMT-0500",
+      "excludeCountries": "true",
+      "cq:lastReplicated": "Wed Jul 13 2022 17:37:36 GMT-0400",
+      "cq:lastModified": "Fri Oct 08 2021 11:52:58 GMT-0400",
+      "view": "generic",
+      "meta-robot-tags": "index,follow",
+      "jcr:baseVersion": "e5c180bc-529d-4b35-818d-f0c92ba40e0f",
+      "businessGroup": [
+        "eaton-secure:business-group/electrical-emea"
+      ],
+      "partnerProgramAndTierLevel": [
+        "eaton-secure:partner-programme-type/electrical-installer-programme/premium"
+      ],
+      "productCategories": [
+        "eaton-secure:product-category/aerospace/engine-build-up-solutions",
+        "eaton-secure:product-category/aerospace/engine-oil-system"
+      ],
+      "jcr:isCheckedOut": true,
+      "page-type": "generic-page",
+      "accountType": [
+        "eaton-secure:accounttype/contractor",
+        "eaton-secure:accounttype/eaton-employee"
+      ],
+      "cq:conf": "/conf/eaton",
+      "cq:tags": [
+        "eaton:myeaton-taxonomy/myeaton-programs"
+      ],
+      "jcr:uuid": "39664f65-d546-4e30-ba9f-04eb8073c048",
+      "sling:resourceType": "eaton/components/structure/eaton-secure-template-page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "countries": [
+        "eaton:country/europe/gb",
+        "eaton:country/europe"
+      ],
+      "securePage": "true",
+      "teaser-image-path": "/content/dam/eaton/eaton-own-or-royalty-free-purchased-images/card-images/power-of-authenticity.jpg",
+      "cq:lastModifiedBy": "e0063964",
+      "changefrequency": "weekly",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "e9814292",
+        "jcr:lastModified": "Fri Jun 11 2021 13:28:51 GMT-0400",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      }
+    }
+  },
+  "test-manufacturer": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Tue Feb 28 2023 21:52:20 GMT-0500",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "test manufacturer",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "b9d583fc-3886-4e8b-8238-ccac2c118889",
+      "cq:template": "/conf/eaton/settings/wcm/templates/secure",
+      "cq:lastReplicatedBy": "e0067088",
+      "priority": "0.5",
+      "partnerProgrammeType": [
+        "eaton-secure:partner-programme-type/electrical-wholesaler-programme"
+      ],
+      "jcr:predecessors": [
+        "0c02464e-1f57-4f00-939f-345b5f9a62af"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Tue Feb 28 2023 21:52:20 GMT-0500",
+      "excludeCountries": "false",
+      "cq:lastReplicated": "Wed Jul 13 2022 17:37:36 GMT-0400",
+      "cq:lastModified": "Tue Apr 12 2022 09:34:22 GMT-0400",
+      "view": "generic",
+      "meta-robot-tags": "index,follow",
+      "jcr:baseVersion": "0c02464e-1f57-4f00-939f-345b5f9a62af",
+      "jcr:isCheckedOut": true,
+      "page-type": "generic-page",
+      "cq:conf": "/conf/eaton",
+      "jcr:uuid": "a6ce808d-61e9-4346-b0bb-38cf9139b2cf",
+      "sling:resourceType": "eaton/components/structure/eaton-secure-template-page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "textIsRich": "true",
+      "securePage": "true",
+      "tierLevel": [
+        "eaton-secure:tier-level/authorized"
+      ],
+      "cq:lastModifiedBy": "c3056014",
+      "changefrequency": "weekly",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "e9814292",
+        "jcr:lastModified": "Fri Jun 11 2021 13:28:51 GMT-0400",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      }
+    }
+  },
+  "test-control-panel-builder": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Tue Feb 28 2023 21:52:21 GMT-0500",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:mixinTypes": [
+        "mix:versionable"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "test control panel builder",
+      "cq:lastReplicationAction": "Activate",
+      "jcr:versionHistory": "ec9d997c-224f-465a-b96e-0def49a655ae",
+      "cq:template": "/conf/eaton/settings/wcm/templates/secure",
+      "cq:lastReplicatedBy": "e0067088",
+      "priority": "0.5",
+      "jcr:predecessors": [
+        "2865dbc9-28ad-4833-91cf-18e7f19805c9"
+      ],
+      "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+      "jcr:created": "Tue Feb 28 2023 21:52:21 GMT-0500",
+      "excludeCountries": "false",
+      "cq:lastReplicated": "Wed Jul 13 2022 17:37:36 GMT-0400",
+      "cq:lastModified": "Tue Apr 12 2022 07:23:33 GMT-0400",
+      "view": "generic",
+      "meta-robot-tags": "index,follow",
+      "jcr:baseVersion": "2865dbc9-28ad-4833-91cf-18e7f19805c9",
+      "jcr:isCheckedOut": true,
+      "page-type": "generic-page",
+      "cq:conf": "/conf/eaton",
+      "jcr:uuid": "3dc1c737-0027-44af-bbb4-46d3a87c0c81",
+      "sling:resourceType": "eaton/components/structure/eaton-secure-template-page",
+      "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+      "textIsRich": "true",
+      "securePage": "true",
+      "tierLevel": [
+        "eaton-secure:tier-level/premium"
+      ],
+      "cq:lastModifiedBy": "e0673499",
+      "changefrequency": "weekly",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "e9814292",
+        "jcr:lastModified": "Fri Jun 11 2021 13:28:51 GMT-0400",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      }
+    }
+  },
+  "test_programs": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Fri Mar 03 2023 15:52:04 GMT-0500",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:createdBy": "admin",
+      "jcr:title": "test_programs",
+      "cq:template": "/conf/eaton/settings/wcm/templates/secure",
+      "priority": "0.5",
+      "jcr:created": "Fri Mar 03 2023 15:52:04 GMT-0500",
+      "cq:lastModified": "Mon Dec 12 2022 03:00:28 GMT-0500",
+      "view": "generic",
+      "meta-robot-tags": "index,follow",
+      "page-type": "generic-page",
+      "sling:resourceType": "eaton/components/structure/eaton-secure-template-page",
+      "securePage": "true",
+      "cq:lastModifiedBy": "c9944930",
+      "changefrequency": "weekly",
+      "oktaGroups": [
+        "eaton-secure:okta-group/revenera_pq_product-manager"
+      ],
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:lastModifiedBy": "e9814292",
+        "jcr:lastModified": "Fri Jun 11 2021 13:28:51 GMT-0400",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid"
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+//-----------------------------------
+// EATON-119: Product Detail Card
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+.sku-card {
+
+  &__component {
+    margin-bottom: 60px;
+  }
+
+  &__related-products {
+    margin: 60px 0;
+  }
+
+  &__related-products-header {
+    padding-left: 15px;
+    margin-bottom: 25px;
+  }
+
+  &__related-products-title {
+    margin-bottom: 0;
+  }
+
+  &__related-products-description {
+    margin-top: 5px;
+  }
+
+  // Module Media Gallery Overrides
+  //--------------
+  .module-media-gallery {
+
+    // EATON-658 Reduce the visual spacing between the product-card component and the media gallery.
+    margin-top: 30px;
+  }
+
+}

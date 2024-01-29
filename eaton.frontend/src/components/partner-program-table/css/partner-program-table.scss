@@ -1,0 +1,34 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.partner-program-table {
+
+  .eaton-custom-table {
+
+    margin: 0 10%;
+
+    table {
+
+      table-layout: fixed;
+
+      th {
+        background-color: $color__secondary-gray6;
+        text-transform: capitalize;
+      }
+      // stylelint-disable-next-line selector-max-compound-selectors
+      tbody tr {
+        // stylelint-disable-next-line selector-max-compound-selectors
+        &:nth-child(odd) {
+          background-color: $color__white;
+        }
+        // stylelint-disable-next-line selector-max-compound-selectors
+        &:nth-child(even) {
+          background-color: $color__secondary-gray6;
+        }
+
+      }
+
+    }
+  }
+
+}

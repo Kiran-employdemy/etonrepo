@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<renditionmap>
+    <mapelement>
+        <mimetype>image/png</mimetype>
+        <rendition output="AEMSITE">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="PDF">original</rendition>
+        <rendition output="HTML5">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="EPUB">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="CUSTOM">cq5dam.web.1280.1280.jpeg</rendition>
+    </mapelement>
+    <mapelement>
+        <mimetype>image/gif</mimetype>
+        <rendition output="AEMSITE">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="PDF">original</rendition>
+        <rendition output="HTML5">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="EPUB">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="CUSTOM">cq5dam.web.1280.1280.jpeg</rendition>
+    </mapelement>
+    <mapelement>
+        <mimetype>image/tiff</mimetype>
+        <rendition output="AEMSITE">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="PDF">original</rendition>
+        <rendition output="HTML5">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="EPUB">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="CUSTOM">cq5dam.web.1280.1280.jpeg</rendition>
+    </mapelement>
+    <mapelement>
+        <mimetype>image/x-tiff</mimetype>
+        <rendition output="AEMSITE">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="PDF">original</rendition>
+        <rendition output="HTML5">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="EPUB">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="CUSTOM">cq5dam.web.1280.1280.jpeg</rendition>
+    </mapelement>
+    <mapelement>
+        <mimetype>image/jpeg</mimetype>
+        <rendition output="AEMSITE">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="PDF">original</rendition>
+        <rendition output="HTML5">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="EPUB">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="CUSTOM">cq5dam.web.1280.1280.jpeg</rendition>
+    </mapelement>
+    <mapelement>
+        <mimetype>image/pjpeg</mimetype>
+        <rendition output="AEMSITE">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="PDF">original</rendition>
+        <rendition output="HTML5">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="EPUB">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="CUSTOM">cq5dam.web.1280.1280.jpeg</rendition>
+    </mapelement>
+    <mapelement>
+        <mimetype>image/bmp</mimetype>
+        <rendition output="AEMSITE">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="PDF">original</rendition>
+        <rendition output="HTML5">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="EPUB">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="CUSTOM">cq5dam.web.1280.1280.jpeg</rendition>
+    </mapelement>
+    <mapelement>
+        <mimetype>image/x-windows-bmp</mimetype>
+        <rendition output="AEMSITE">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="PDF">original</rendition>
+        <rendition output="HTML5">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="EPUB">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="CUSTOM">cq5dam.web.1280.1280.jpeg</rendition>
+    </mapelement>
+    <mapelement>
+        <mimetype>application/octet-stream</mimetype>
+        <rendition output="AEMSITE">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="PDF">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="HTML5">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="EPUB">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="CUSTOM">cq5dam.web.1280.1280.jpeg</rendition>
+    </mapelement>
+    <mapelement>
+        <mimetype>application/postscript</mimetype>
+        <rendition output="AEMSITE">cq5dam.thumbnail.319.319.png</rendition>
+        <rendition output="PDF">original</rendition>
+        <rendition output="HTML5">original</rendition>
+        <rendition output="EPUB">original</rendition>
+        <rendition output="CUSTOM">original</rendition>
+    </mapelement>
+    <mapelement>
+        <mimetype>application/pdf</mimetype>
+        <rendition output="AEMSITE">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="PDF">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="HTML5">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="EPUB">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="CUSTOM">cq5dam.web.1280.1280.jpeg</rendition>
+    </mapelement>
+	<mapelement>
+        <mimetype>image/svg+xml</mimetype>
+        <rendition output="AEMSITE">original</rendition>
+        <rendition output="PDF">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="HTML5">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="EPUB">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="CUSTOM">cq5dam.web.1280.1280.jpeg</rendition>
+        <rendition output="EXPORTDITAMAP">original</rendition>
+    </mapelement>
+</renditionmap>

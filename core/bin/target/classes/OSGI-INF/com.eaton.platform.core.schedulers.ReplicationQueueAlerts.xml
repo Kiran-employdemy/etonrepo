@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.schedulers.ReplicationQueueAlerts" immediate="true" activate="activate">
+  <property name="emailDL" type="String" value=""/>
+  <property name="schdulerName" type="String" value="Replication Queue Scheduler"/>
+  <property name="enabled" type="Boolean" value="false"/>
+  <service>
+    <provide interface="java.lang.Runnable"/>
+  </service>
+  <reference name="agentMgr" interface="com.day.cq.replication.AgentManager" field="agentMgr"/>
+  <reference name="emailService" interface="com.adobe.acs.commons.email.EmailService" field="emailService"/>
+  <reference name="replicator" interface="com.day.cq.replication.Replicator" field="replicator"/>
+  <reference name="scheduler" interface="org.apache.sling.commons.scheduler.Scheduler" field="scheduler"/>
+  <reference name="slingSettingsService" interface="org.apache.sling.settings.SlingSettingsService" field="slingSettingsService"/>
+  <implementation class="com.eaton.platform.core.schedulers.ReplicationQueueAlerts"/>
+</scr:component>

@@ -1,0 +1,398 @@
+//-----------------------------------
+// Guided Product Selector Component
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+// Import adaptive form styles (originally located within basicTheme.css)
+@import "../../../global/css/base/eaton-adaptive-forms";
+
+/* stylelint-disable selector-max-id, declaration-no-important, selector-class-pattern  */
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 0;
+  padding-top: 0;
+  width: 100%;
+
+  @include media-desktop-and-up {
+    flex-direction: row;
+  }
+
+  .guidedproductselection {
+    margin-bottom: rem($spacing__sm * 0.5); //15px
+    width: 100%;
+
+    @include media-desktop-and-up {
+      margin-left: rem($spacing__sm * 0.25); //0.75px
+      margin-right: rem($spacing__sm * 0.25); //0.75px
+      width: calc(33.3333% - 15px);
+    }
+
+    .guideFieldNode {
+      border: 0 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  }
+}
+
+.card {
+  border: rem($spacing__sm * 0.03333) solid $color__primary-gray3; //1px
+
+  &__header {
+    display: flex;
+    flex-direction: row;
+    background-color: $color__primary-blue;
+    align-items: center;
+    padding-top: rem($spacing__sm * 0.33333); //10px
+    padding-bottom: rem($spacing__sm * 0.33333); //10px
+
+    &__radio {
+
+      &__container {
+        display: flex;
+        flex-direction: column;
+        width: rem($spacing__sm * 1.33333); //40px
+        padding-left: rem($spacing__sm * 0.166667); //5px
+        padding-right: rem($spacing__sm * 0.166667); //5px
+
+        &.nopreference {
+          flex-direction: row;
+          width: auto;
+          padding-left: 4%;
+          padding-right: 4%;
+
+          @media screen and (min-width: 600px) and (max-width: 767px) {
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+          }
+
+          @include media-tablet-only {
+            padding-left: 0;
+            padding-right: 0;
+          }
+
+          @include media-desktop-and-up {
+            padding-left: 0.5%;
+            padding-right: 0.5%;
+          }
+
+          .eaton-title__headline {
+            color: $color__primary-gray1 !important;
+          }
+        }
+      }
+
+      &__wrapper {
+        position: relative;
+      }
+
+      &__content {
+        margin-left: rem($spacing__sm * -0.16666); //-5px
+        position: relative;
+      }
+
+      &__pretext {
+        padding-left: rem($spacing__sm * 0.7); //21px;
+        color: $color__black;
+
+        [dir='rtl'] & {
+          padding-right: rem($spacing__sm * .85); //25px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          font-family: var(--secondary-font);
+          line-height: $base__line-height * 1.071; //1.5
+
+          @include media-desktop-and-up {
+            font-size: rem($base__font-size * 2.4); //24px
+          }
+        }
+      }
+
+      &__btn {
+        background: $color__primary-blue;
+        border-radius: 50%;
+        border: rem($spacing__sm * 0.066667) solid $color__white; //2px
+        height: rem($spacing__sm * 0.8); //24px
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: rem($spacing__sm * 0.8); //24px
+
+        .nopreference & {
+          background: $color__white;
+          border: rem($spacing__sm * 0.066667) solid $color__black; //2px
+          left: 0%;
+        }
+      }
+
+      // stylelint-disable no-duplicate-selectors
+      &__btn-inner {
+        background: $color__white;
+        border-radius: 50%;
+        border: rem($spacing__sm * 0.233333) solid $color__white; //7px
+        height: rem($spacing__sm * 0.166667); //5px
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: rem($spacing__sm * 0.166667); //5px
+
+        .nopreference & {
+          background: $color__white;
+          border: rem($spacing__sm * 0.233333) solid $color__primary-gray2; //2px
+          left: 0%;
+        }
+      }
+    }
+
+    &__title {
+      color: $color__white;
+      font-family: var(--secondary-font);
+      font-size: rem($base__font-size * 2); //20px
+      font-weight: bold;
+      margin: 0;
+
+      &__container {
+        flex: 6;
+      }
+    }
+
+    &__info-icon {
+      color: $color__white;
+      height: rem($spacing__sm * 1.33333); //40px
+      width: rem($spacing__sm * 1.33333); //40px
+
+      @include media-desktop-and-up {
+        height: rem($spacing__sm * 0.8); //24px
+        width: rem($spacing__sm * 0.8); //24px
+      }
+
+      &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: rem($spacing__sm * 1.866667); //65px
+
+        @include media-desktop-and-up {
+          width: rem($spacing__sm * 1.33333); //40px
+        }
+      }
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: rem($spacing__sm * 0.66667) rem($spacing__sm * 1.33333) 0 rem($spacing__sm * 1.33333); //20px 40px 0 40px
+
+    &__title {
+      color: $color__black;
+      font-family: var(--secondary-font);
+      font-weight: bold;
+      margin: 0 0 rem($spacing__sm * 0.5) 0; //0 0 15px 0
+    }
+
+    .eaton-title__headline {
+      margin-top: 0 !important;
+      margin-bottom: rem($spacing__sm * 0.66667) !important; //20px
+      font-size: rem($base__font-size * 2.4) !important; //24px
+    }
+
+    &__img {
+      background-color: $color__primary-gray3;
+      margin-bottom: rem($spacing__sm * 0.5); //15px
+      padding-bottom: 56.25%;
+      width: 100%;
+    }
+
+    img {
+      height: auto !important;
+      margin: 0 0 rem($spacing__sm * 0.66667) 0 !important; //0 0 20px 0
+      max-width: 100% !important;
+    }
+
+    &__copy {
+      color: $color__black;
+      font-family: var(--secondary-font);
+      margin: 0;
+    }
+
+    p {
+      margin-bottom: rem($spacing__sm * 0.66667) !important; //20px
+      margin-top: 0 !important;
+      font-size: rem($base__font-size * 1.8) !important; //18px
+    }
+
+    .form-parsys {
+      height: 100%;
+      max-width: 100%;
+
+      &.cq-Editable-dom--container {
+        display: inline-block;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.aem-AuthorLayer-Edit .flex-control .newpar {
+  // Note: To prevent for parsys alignment issue
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.guideFieldLabel label,
+.dropDownList select {
+  font-size: 1em;
+}
+
+.card__header__radio__btn-inner {
+  display: none;
+}
+
+.selected .card__header__radio__btn-inner {
+  display: block;
+}
+
+.button-medium {
+  font-size: 100%;
+  border: 2px solid #005cbc;
+  border-radius: 0 !important;
+  background: none !important;
+  border-style: solid !important;
+  display: inline-block !important;
+  font-weight: bold !important;
+  max-width: 600px !important;
+  padding: 15px 15px !important;
+  color: #005eb8 !important;
+  border-color: #005eb8 !important;
+  text-align: center !important;
+  min-width: 200px;
+
+  &:hover {
+    color: #fff !important;
+    background: #005eb8 !important;
+    text-decoration: none;
+    border-radius: 0 !important;
+  }
+
+  &.submit,
+  &.reset {
+    margin-left: 10px;
+  }
+}
+
+.ctabutton {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+@include media-mobile-only {
+
+  .button-medium {
+
+    &.submit,
+    &.reset {
+      margin-left: 12px;
+    }
+  }
+}
+
+.tooltipmodal {
+  .modal-dialog {
+    min-width: 288px;
+    max-width: 650px;
+    width: auto;
+
+    @include media-mobile-only {
+      width: 320px;
+    }
+  }
+
+  &__body.modal-body {
+    padding: 4rem;
+  }
+
+  &__close {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 44px;
+    height: 44px;
+    z-index: 9999;
+    font-size: 20px;
+    line-height: 38px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    /*Expected the font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;*/
+    font-family: var(--font-secondary-basrhas);
+    text-decoration: none;
+  }
+
+  &__title {
+    h2 {
+      font-size: 2.8rem;
+      line-height: 1.5;
+      margin: 0 1rem 0 0;
+    }
+  }
+
+  &__image {
+    margin: 2rem 0;
+  }
+
+  &__links a {
+    display: block;
+    margin-top: .3rem;
+  }
+
+  @include media-mobile-only {
+    &__body.modal-body {
+      padding: 2rem;
+    }
+
+    &__title {
+      h2 {
+        font-size: 2.6rem;
+        line-height: 1.5;
+        margin: 0 1rem 0 0;
+      }
+    }
+
+    &__image {
+      margin: 1rem 0;
+    }
+  }
+}
+
+.card__header__title__container {
+  position: relative;
+}
+
+.tooltip-info {
+  position: absolute;
+  right: 4px;
+  top: 3px;
+  cursor: pointer;
+
+  img {
+    width: 25px;
+  }
+}

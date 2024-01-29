@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.webtools.servlets.BackshellServlet" immediate="true">
+  <property name="sling.servlet.extensions" type="String" value="json"/>
+  <property name="sling.servlet.resourceTypes" type="String" value="eaton/components/web-tools/backshell"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="webtoolsService" interface="com.eaton.platform.core.webtools.services.WebtoolsServiceConfiguration" field="webtoolsService"/>
+  <implementation class="com.eaton.platform.core.webtools.servlets.BackshellServlet"/>
+</scr:component>

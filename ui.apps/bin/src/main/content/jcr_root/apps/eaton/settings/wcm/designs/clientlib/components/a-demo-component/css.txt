@@ -1,0 +1,3 @@
+#base=css
+
+# a-demo-component.css

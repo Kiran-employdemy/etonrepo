@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          supportscredentials="{Boolean}true"
+        exposedheaders="[]"
+        supportedmethods="[GET,HEAD,POST]"
+        alloworigin="[https://eaton-qa.tcc.etn.com.cn]"
+        maxage="{Long}1800"
+        alloworiginregexp="[]"
+        allowedpaths="[.*]"
+        supportedheaders="[Origin,Accept,X-Requested-With,Content-Type,Access-Control-Request-Method,Access-Control-Request-Headers]"/>

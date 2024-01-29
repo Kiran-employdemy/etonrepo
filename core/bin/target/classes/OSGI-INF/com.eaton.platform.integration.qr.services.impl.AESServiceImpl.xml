@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.qr.services.impl.AESServiceImpl" immediate="true" activate="activate" modified="activate">
+  <property name="iv.parameter" type="String" value=""/>
+  <property name="algo.padding" type="String" value=""/>
+  <property name="key" type="String" value=""/>
+  <property name="algorithm" type="String" value=""/>
+  <service>
+    <provide interface="com.eaton.platform.integration.qr.services.AESService"/>
+  </service>
+  <implementation class="com.eaton.platform.integration.qr.services.impl.AESServiceImpl"/>
+</scr:component>

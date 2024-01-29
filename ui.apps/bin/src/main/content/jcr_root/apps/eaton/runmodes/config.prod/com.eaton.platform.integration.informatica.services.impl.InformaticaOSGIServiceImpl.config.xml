@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          input.attribute.file.path="/opt/aem/import/informatica/attributes/input/"
+          input.family.file.path="/opt/aem/import/informatica/product-family/input/"
+          archive.family.file.path="/opt/aem/import/informatica/product-family/archive/"
+          process.label="InformaticaOSGIServiceImpl"
+          family.file.name="Product_Family.xml"
+          taxattr.file.name="PDH_Taxonomy_Attr_en_US.xml"
+          failed.attribute.file.path="/opt/aem/import/informatica/attributes/failed/"
+          family.notification.emailIds="[ManojSShukla\@eaton.com,ranjitnethi\@eaton.com,SumeetGupta\@eaton.com,SaraKDwyer\@eaton.com,AnvirMkolkur\@eaton.com,RutujaSBhandari\@eaton.com,PalepuVSatyanand\@eaton.com,VijayalakshmiSankarlal\@eaton.com,GregMCampbell\@eaton.com]"
+          attribute.notification.emailIds="[ManojSShukla\@eaton.com,ranjitnethi\@eaton.com,SumeetGupta\@eaton.com,SaraKDwyer\@eaton.com,AnvirMkolkur\@eaton.com,RutujaSBhandari\@eaton.com,PalepuVSatyanand\@eaton.com,VijayalakshmiSankarlal\@eaton.com,GregMCampbell\@eaton.com]"
+        failed.family.file.path="/opt/aem/import/informatica/product-family/failed/"
+        family.languages="[en_US,fr_FR,cs_CZ,de_DE,es_ES,fr_CA,hu_HU,it_IT,ja_JP,nl_NL,no_NO,pl_PL,sv_SE,tr_TR,ru_RU,zh_CN,zh_TW,ro_RO,pt_BR,da_DK,es_US]"
+        archive.attribute.file.path="/opt/aem/import/informatica/attributes/archive/"
+        globalattr.file.name="PDH_GLOBAL_ATTR_en_US.xml"
+        />

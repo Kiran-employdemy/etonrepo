@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Panel"
+    title="Varnish">
+    <items jcr:primaryType="cq:WidgetCollection">
+        <domain
+            jcr:primaryType="cq:Widget"
+            defaultValue="DEV (US)"
+            fieldLabel="Varnish Domain"
+            name="./varnishDomain"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <DEV
+                    jcr:primaryType="nt:unstructured"
+                    text="DEV (US)"
+                    value="5790cbb9e4b0ceb2a0bd4337-DEV_US"/>
+                <SIT
+                    jcr:primaryType="nt:unstructured"
+                    text="SIT (US)"
+                    value="594d27a8e4b0c50585c0b1fa-SIT_US"/>
+                <QAUS
+                        jcr:primaryType="nt:unstructured"
+                        text="QA (US)"
+                        value="57226f63e4b0673aa0b5ba4f-QA_US"/>
+                <QACN
+                        jcr:primaryType="nt:unstructured"
+                        text="QA (CN)"
+                        value="611b7dd6e4b08480edfedbc8-QA_CN"/>        
+                <PRODUS
+                        jcr:primaryType="nt:unstructured"
+                        text="PROD (US)"
+                        value="57c43e4fe4b067f3512a7a60-PROD_US"/>
+                <PRODCN
+                        jcr:primaryType="nt:unstructured"
+                        text="PROD (CN)"
+                        value="6138808ce4b08480ee03188b-PROD_CN"/>          
+            </options>
+        </domain>
+        <action
+            jcr:primaryType="cq:Widget"
+            defaultValue="remove"
+            fieldLabel="Action"
+            fieldDescription="&quot;Remove&quot; deletes the content from Varnish caches. The next time an Varnish server receives a request for the content, it will retrieve the current version from the origin server. "
+            name="./vanishAction"
+            type="select"
+            xtype="selection">
+            <options jcr:primaryType="cq:WidgetCollection">
+                <remove
+                    jcr:primaryType="nt:unstructured"
+                    text="remove"
+                    value="remove"/>
+            </options>
+        </action>
+        <excludePaths
+                jcr:primaryType="cq:Widget"
+                fieldLabel="Exclude Paths"
+                name="./excludePaths"
+                xtype="multifield">
+            <fieldConfig
+                    jcr:primaryType="cq:Widget"
+                    fieldLabel="Design"
+                    name="./excludePath"
+                    rootPath="/var/commerce/pdh"
+                    xtype="pathfield"/>
+        </excludePaths>
+    </items>
+</jcr:root>

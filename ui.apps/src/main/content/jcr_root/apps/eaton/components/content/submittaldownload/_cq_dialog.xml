@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Submittal Download"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <section
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Submittal Download"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Title"
+                                fieldDescription="The title that the user will see in the download package section of submittal builder."
+                                name="./title"/>
+                            <preferredoptiontext
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                fieldLabel="Preferred Option Text"
+                                fieldDescription="This text will appear in the package download section for user to select the preferred download option"
+                                name="./preferredOptionText"/>
+                            <sendemailtext
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="'Send Email' Text"
+                                fieldDescription="This text will appear for the send email button in the email section"
+                                name="./sendEmailText"/>
+                            <expirationtext
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Expiration Text"
+                                fieldDescription="This text will appear in the package download section as link expiration information"
+                                name="./expirationText"/>
+                            <filesizelimittext
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="File Size Limit Text"
+                                fieldDescription="This text will appear in the package download section as file size limit information"
+                                name="./fileSizeLimitText"/>
+                            <thankyoudownloadmessage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Thank You Message - Package Has Been Downloaded"
+                                fieldDescription="This text will appear in the package download successful section"
+                                name="./thankYouDownloadMessage"/>
+                            <thankyouemailmessage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Thank You Message - Email Has Been Sent"
+                                fieldDescription="This text will appear in the email sent successful section"
+                                name="./thankYouEmailMessage"/>
+                            <invalidEmailMessage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Invalid Email Message"
+                                fieldDescription="This text will appear in email section if user enters wrong email ID"
+                                name="./invalidEmailMessage"/>
+                            <eatonCommunicationsMessage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Eaton Communications Message"
+                                fieldDescription="This text will appear in the email sent successful section for user to recieve Eaton communication"
+                                name="./eatonCommunicationsMessage"/>
+                            <eatonCommunicationsPage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                fieldLabel="Eaton Communications Page"
+                                fieldDescription="User will be redirected to page configured for Eaton communication"
+                                name="./eatonCommunicationsPage"/>
+                            <assetRequiredMessage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Asset Required Message"
+                                fieldDescription="This text will appear when the user has not selected minimum assets"
+                                name="./assetRequiredMessage"/>
+                            <maxSizeExceededMessage
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Max File Size Exceeded Message"
+                                fieldDescription="This text will appear when the package size has reached maximum limit"
+                                name="./maxSizeExceededMessage"/>
+                            <fileNamePrefix
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Filename Prefix"
+                                fieldDescription="This text will appear as the prefix of downloaded filename"
+                                name="./fileNamePrefix"/>
+                            <mergeAssetsFileName
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Merge Assets File Name"
+                                fieldDescription="This text will appear as the downloaded filename when unzipped"
+                                name="./mergeAssetsFileName"/>
+                            <emailTemplatePath
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Email Template Path"
+                                fieldDescription="Email template path needs to be configured"
+                                name="./emailTemplatePath"/>
+                            <senderEmailAddress
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Sender Email Address"
+                                fieldDescription="This text will appear as sender address in email"
+                                name="./senderEmailAddress"/>
+                            <senderName
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Sender Name"
+                                fieldDescription="This text will appear as sender name in email"
+                                name="./senderName"/>
+                            <emailSubject
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldLabel="Email Subject"
+                                fieldDescription="This text will appear as email subject in email"
+                                name="./emailSubject"/>
+                            <emailErrorPage
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                    fieldLabel="Email Error Page"
+                                    name="./emailErrorPage"
+                                    fieldDescription="User will redirected to page configured for email error"
+                                    required="true"/>
+                            <emailNewsLetterLink
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldLabel="Email News Letter Link"
+                                    fieldDescription="This text will appear as news letter link in email"
+                                    name="./emailNewsLetterLink"/>
+                            <emailSubmittalBuilderToolLink
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldLabel="Email Submittal Tool Link"
+                                    fieldDescription="This text will appear as submittal tool link in email"
+                                    name="./emailSubmittalBuilderToolLink"/>
+                            <emailContactUsLink
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldLabel="Email Contact Us Link"
+                                    fieldDescription="This text will appear as contact us link in email"
+                                    name="./emailContactUsLink"/>
+                            <emailWhereToBuyLink
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldLabel="Email Where To Buy Link"
+                                    fieldDescription="This text will appear as where to buy link in email"
+                                    name="./emailWhereToBuyLink"/>
+                            <i18nNotes
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/text"
+                                text="This component uses the following i18n values: 'Close', 'download', 'email', 'Yes', 'No', and 'size'."/>
+                        </items>
+                    </column>
+                </items>
+            </section>
+        </items>
+    </content>
+</jcr:root>

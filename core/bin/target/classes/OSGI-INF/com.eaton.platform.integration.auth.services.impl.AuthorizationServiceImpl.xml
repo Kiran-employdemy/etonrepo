@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.auth.services.impl.AuthorizationServiceImpl" immediate="true" activate="activate" modified="activate">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="service.description" type="String" value=" Authorization Service for Secure Implementation"/>
+  <property name="process.label" type="String" value=" AuthorizationService"/>
+  <service>
+    <provide interface="com.eaton.platform.integration.auth.services.AuthorizationService"/>
+  </service>
+  <reference name="countryLangCodeConfigService" interface="com.eaton.platform.core.services.CountryLangCodeConfigService" field="countryLangCodeConfigService"/>
+  <reference name="slingSettingsService" interface="org.apache.sling.settings.SlingSettingsService" field="slingSettingsService"/>
+  <implementation class="com.eaton.platform.integration.auth.services.impl.AuthorizationServiceImpl"/>
+</scr:component>

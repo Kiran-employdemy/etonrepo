@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.SmartCropServiceConfig">
+  <OCD id="com.eaton.platform.core.services.config.SmartCropServiceConfig" name="SmartCropServiceConfigImpl" description="">
+    <AD id="smart.crop.title" type="String" name="Smart Crop Title" default=""/>
+    <AD id="smart.crop.url.suffix" type="String" name="Smart Crop Url Suffix" default=""/>
+  </OCD>
+  <Designate factoryPid="com.eaton.platform.core.services.impl.SmartCropServiceConfigImpl">
+    <Object ocdref="com.eaton.platform.core.services.config.SmartCropServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

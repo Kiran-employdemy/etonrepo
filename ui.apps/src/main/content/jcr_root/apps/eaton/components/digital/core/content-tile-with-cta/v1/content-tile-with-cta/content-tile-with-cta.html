@@ -1,0 +1,38 @@
+<sly data-sly-test="${ wcmmode.edit }">
+	<div class="alert alert-warning">Content Tile with CTA:
+		${currentNode.name}</div>
+</sly>
+<sly data-sly-use.data="com.eaton.platform.core.models.digital.v1.ContentTileWithCTAModel">
+
+	<div class="content-tile-with-cta-wrapper">
+		<!-- Start: Rendition Image Component -->
+
+		<div class="content-tile-with-cta-wrapper__image-wrapper">
+			<sly
+				data-sly-test.useDynamicRendition="${ data.desktopDynamicRenditionUrl != null && data.mobileDynamicRenditionUrl != null }" />
+			<sly
+				data-sly-use.tpl="${ useDynamicRendition ? 'eaton/components/shared/templates/dynamic-rendition-background.html' : 'eaton/components/shared/templates/rendition-background.html'}">
+				<sly data-sly-call="${ tpl.module @ data=data }"></sly>
+			</sly>
+		</div>
+
+		<div class="content-tile-with-cta-wrapper__text-wrapper">
+			<!--/* If the current items has a Link/Url */-->
+			<span class="content-tile-with-cta-wrapper__text-wrapper-title"> ${data.title} </span>
+
+
+			<div class="content-tile-with-cta-wrapper__text-wrapper-body-copy">
+				${data.description @ context='html'}</div>
+		</div>
+
+		<div class="row content-tile-with-cta-wrapper__button-wrapper" data-sly-list.link="${data.links}">
+			<div class="col-md-6 ${data.singleCtaAlign == 'center' ? 'col-md-offset-3' : ''} ${data.singleCtaAlign == 'right' ? 'col-md-offset-6' : ''} col-xs-12">
+				<a href="${link.ctaLinkPath @context='text'}" target="${link.newWindow }" rel="${ link.rel }"
+					class="b-button content-tile-with-cta-wrapper__button-wrapper-tile_button ${link.cssClass}"
+				   data-source-tracking="${link.enableSourceTracking}"
+					role="button"> ${link.ctaLinkTitle}</a>
+			</div>
+		</div>
+	</div>
+
+</sly>

@@ -1,0 +1,50 @@
+//-----------------------------------
+// Component: Column Control
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+// Base Styles
+.eaton-grid-control {
+  margin: rem(($spacing__md) - 48) 0;
+  position: relative;
+
+  //-----------------------------------
+  // Theme colors
+  //-----------------------------------
+  &--theme-white {
+    background: $color__white;
+  }
+
+  &--theme-primary-branding-color {
+    background: var(--primary-brand-color, $color__primary-blue);
+    margin: 0;
+    padding: rem($spacing__md) 0;
+  }
+
+  &--theme-grey {
+    background: $color__secondary-gray6;
+    margin: 0;
+    padding: rem($spacing__md) 0;
+  }
+
+  &__column--defaultPadding {
+    margin-bottom: rem($spacing__md);
+    margin-top: 0px;
+  }
+
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__column {
+      margin-bottom: rem($spacing__sm); // EATON-814: Mobile - 2 and 3 column components - Too much vertical spacing between columns in mobile. Reduce to 30px
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+

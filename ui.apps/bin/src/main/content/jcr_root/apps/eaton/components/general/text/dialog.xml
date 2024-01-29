@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Component Properties - Classic UI"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <view
+                        jcr:primaryType="cq:Widget"
+                        allowBlank="false"
+                        defaultValue="default"
+                        fieldDescription="Determine which variation of component to view"
+                        fieldLabel="View"
+                        fieldSubLabel=""
+                        name="./view"
+                        type="select"
+                        xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <default
+                                jcr:primaryType="nt:unstructured"
+                                text="Default View"
+                                value="default"/>
+                            <statement
+                                jcr:primaryType="nt:unstructured"
+                                text="Statement View"
+                                value="statement"/>
+                        </options>
+                    </view>
+                    <toggleInnerGrid
+                        jcr:primaryType="cq:Widget"
+                        fieldDescription=""
+                        fieldLabel="Enable Inner Grid"
+                        inputValue="true"
+                        name="./toggleInnerGrid"
+                        type="checkbox"
+                        xtype="selection"/>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>

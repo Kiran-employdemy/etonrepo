@@ -1,0 +1,32 @@
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+
+.pricelist {
+  margin: 10px 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    background: $color__secondary-gray6;
+
+    a {
+      font-family: var(--font-primary-bold-v1);
+      font-size: 1.6rem;
+      padding: 10px;
+      display: block;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &:nth-child(2n) {
+      background: $color__white;
+    }
+  }
+}
+
+.nofiles {
+  margin: 10px 0;
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          jcr:description="Term and condition component"
+          jcr:primaryType="cq:Component"
+          jcr:title="Terms and Conditions"
+          sling:resourceSuperType="eaton/components/general/core/term-condition/v1/term-condition"
+          componentGroup="Eaton terms &amp; conditions"/>

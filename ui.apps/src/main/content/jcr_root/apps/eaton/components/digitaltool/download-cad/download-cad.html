@@ -1,0 +1,95 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Download cad: ${currentNode.name}</div>
+</sly>
+<sly data-sly-use.data="com.eaton.platform.integration.cad.models.DownloadCadDataModel">
+<div class="container download-cad-container">
+    <div class="row download-cad-filter-wrapper">
+
+        <!--/* M-62: Faceted Navigation */-->
+            <div class="col-xs-12 col-md-3">   
+              <span  class="title">${'cadFormatSelection' @i18n}</span>       
+              <div class="faceted-navigation__filter-container " id="filters-div-holder" data-view-more-caption="${'viewMoreText' @i18n}" data-view-less-caption="${'viewLessText' @i18n}">
+                <!-- Div content coming from download-card.js file-->
+              </div>
+            </div>
+
+            <!--/* Results List */-->
+            <div class="col-xs-12 col-md-9">
+                <div class="articleTextArea row">   
+                    <div class="col-xs-12 col-md-7">
+                        <span for="article" class="title">${'enterArticleNumbers' @i18n}</span>
+                        <div class="bg-light">
+                            <textarea name="article" id="cadArticleTA" rows="6" class="cad-download-textarea"></textarea>
+                        </div>
+                        <div class="error-response-message ">
+                          <p id="show-err-msg" class="cad-error-message error-message d-none " 
+                              data-no-filter-err-msg="${'selectFormatMsg' @i18n}"  
+                              data-no-input-err-msg="${'enterArticleNoMsg' @i18n}" 
+                              data-no-filter-input-err-msg="${'articleAndFormatSelectionMsg' @i18n}" 
+                              data-no-data-err-msg="${'cadDataNotFoundMsg' @i18n}" 
+                              data-max-filtertype-error="${'cadMaxFiltertypeErrMsg' @i18n}" 
+                              data-max-article-err-msg="${'cadMaxArticleErrMsg' @i18n}"  
+                          >
+
+                          </p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-5">
+                        <a rel="nofollow" target="_self" id="generate-cad-btn" class="generate-cad-btn b-button b-button__primary b-button__primary" role="button" tabindex="0">
+                          ${data.buttonTitle}
+                          </a>
+                    </div>
+                </div>
+                
+                <div class="cad-result-div d-none">
+                  <div class="taget">
+                    
+                      <div class="zip-link">
+                          <p clsas="download-link-text d-none">
+                              ${'requestedCADModelsNotAvailable' @i18n}
+                          </p>
+                          <div class="reponse-message d-none"> 
+                            <p id="not-included-err-msg" class="cad-error-message">
+                              ${'cadDataNotFoundInResult' @i18n} : 
+                              <span class="response-msg-value"></span>                        
+                            </p>                            
+                          </div>
+                          <h3 id="zip-link-name-url"></h3>
+                      </div>
+                      
+
+                  </div>
+                  <div class="result-table d-none">
+                    <table class="table table-responsive result-table-tag">
+                      <thead>
+                        <tr>
+                          <th scope="col" >${'cadArticleNo' @i18n}</th>
+                          <th scope="col">${'cadName' @i18n}</th>
+                          <th scope="col">${'cadPartNo' @i18n}</th>
+                          <th scope="col">${'cadFileName' @i18n}</th>
+                        </tr>
+                      </thead>
+                      <tbody id="cad-download-result-row">
+                        
+                      </tbody>
+                    </table>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+
+              <!-- <p class="eaton-topic-link__description b-body-copy"> ${data.articleNumbers} </p> -->
+              <div id="filter-data-to-render" data-sly-list.formatList="${data.formatList}" class="d-none" data-actual="${formatList}" >${formatList}</div>
+              <div class="loader-model d-none">
+                <div class="loader-model__popup">
+                  <h1>${'cadLoaderModelTitle' @i18n}</h1>
+                  <p>
+                    ${'cadLoaderModelBody' @i18n}
+                  </p>
+                </div>
+              </div>
+            </div>  
+          </div>
+
+</sly>
+

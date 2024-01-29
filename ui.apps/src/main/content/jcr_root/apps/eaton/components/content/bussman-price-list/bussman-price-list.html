@@ -1,0 +1,19 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">${'Bussmann price list' @ i18n}</div>
+</sly>
+<sly data-sly-use.data="com.eaton.platform.core.models.BussmanPriceListModel">
+
+  <div class="eaton-text-default">
+    <div class="container">
+      <div class="bussman-price-box">
+        <ul class="pricelist" data-sly-list.priceList="${data.bussmanPriceList}">
+          <li><a href="${priceList.urlOfFile}" target="_self">${priceList.nameOfFile}</a></li>
+        </ul>
+        <div data-sly-test="${!data.bussmanPriceList}">
+          <p class="nofiles"> ${properties.bussmannPriceFile}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</sly>

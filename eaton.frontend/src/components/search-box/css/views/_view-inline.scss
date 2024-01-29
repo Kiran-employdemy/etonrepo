@@ -1,0 +1,50 @@
+//-----------------------------------
+// SearchBox Component: Inline View
+//-----------------------------------
+
+.eaton-search--inline {
+  &__header {
+    text-transform: uppercase;
+  }
+
+  &__header,
+  &__subheader,
+  &__form {
+    margin-bottom: $spacing__sm;
+  }
+
+  .form-group {
+    display: flex;
+    background: $color__white;
+  }
+
+  .icon {
+    font-size: rem($base__font-size * 1.8);
+    top: 2px;
+    position: relative;
+  }
+
+  &__form-input { // Styles for Form Elements
+    background: $color__white;
+    font-size: rem($base__font-size * 1.6);
+    padding: rem($spacing__sm * .335);
+  }
+
+  &__form-external { // Styles for Form Elements
+    border-right: 1px solid $color__primary-gray3;
+    padding-right: ($spacing__sm / 2);
+    color: var(--primary-brand-color, $color__primary-blue);
+    align-self: center;
+  }
+
+  &__form-submit { // Styles for Form Elements
+    color: var(--primary-brand-color, $color__primary-blue);
+    padding: rem($spacing__sm * .335) rem($spacing__sm * .668);
+  }
+
+  .dark-theme & {
+    &__header {
+      color: $color__white;
+    }
+  }
+}

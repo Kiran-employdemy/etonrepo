@@ -1,0 +1,57 @@
+<sly data-sly-use.headerModel="com.eaton.platform.core.models.HeaderModel">
+  <div  data-sly-test="${!headerModel.isMicroSitePage}">
+    <div data-sly-resource="${'securedatalayer' @resourceType='eaton/components/structure/securedatalayer'}"></div>
+  </div>
+  <div class="header-wrapper ${wcmmode.edit ? 'is-edit-mode': ''} ${headerModel.isMicroSitePage && headerModel.secondLogoAuthored ? 'second-logo-authored' : ''} ${headerModel.isMicroSitePage ? 'microsite': ''}">
+
+    <div data-sly-unwrap="${!wcmmode.edit}" data-sly-test="${! headerModel.disableFullPageDrawer}">
+      <sly data-sly-resource="${'full-page-drawer' @ resourceType='eaton/components/structure/full-page-drawer' , wcmmode=headerModel.editMode}"></sly>
+    </div>
+    <div class="eaton-header">
+      <div class="header-primary-nav">
+        <div class="container">
+          <div class="row">
+            <div class="header-primary-nav__logo_container">
+              <div class="header-primary-nav__logo">
+                <sly data-sly-resource="${'header-logo' @ resourceType='/apps/eaton/components/structure/logo', wcmmode=headerModel.editMode}"></sly>
+              </div>
+              <div class="header-primary-nav__logo--secondary" data-sly-test="${headerModel.isMicroSitePage}">
+                <sly data-sly-resource="${'header-logo-secondary' @ resourceType='/apps/eaton/components/structure/logo', wcmmode=headerModel.editMode}"></sly>
+              </div>
+            </div>
+            <div class="header-primary-nav__container">
+              <div class="header-primary-nav__menu">
+                <sly data-sly-resource="${'primary-nav' @ resourceType='/apps/eaton/components/structure/primary-navigation',  wcmmode=headerModel.editMode}"></sly>
+              </div>
+              <!--TO DO - cta button need to be added-->
+              <div class="microsite__cta" data-sly-test="${headerModel.isMicroSitePage && headerModel.microSiteHeaderOption == 'cta'}">
+                <sly data-sly-resource="${'cta-button-comp' @ resourceType='/apps/eaton/components/general/ctabutton',  wcmmode=headerModel.editMode}"></sly>
+              </div>
+              <!--/* Search & Mobile Hamburger Menu  */-->
+              <div class="header-primary-nav__links ${(headerModel.isMicroSitePage && headerModel.microSiteHeaderOption != 'search') ? 'microsite__links' : ''}">
+                <button class="button--reset header-primary-nav__open-search ${headerModel.isMicroSitePage ? 'microsite__search' : ''}" data-sly-test="${!headerModel.isMicroSitePage || (headerModel.isMicroSitePage && headerModel.microSiteHeaderOption == 'search')}">
+                  <span class="sr-only">Search</span>
+                  <i class="icon icon-search" aria-hidden="true"></i>
+                  <i class="icon icon-close" aria-hidden="true"></i>
+                </button>
+                <button class="button--reset header-primary-nav__toggle-mobile-menu ${(headerModel.isMicroSitePage && headerModel.microSiteHeaderOption == 'none') ? 'microsite__toggle-mobile-menu' : ''}">
+                  <span class="sr-only">Toggle Mobile Menu</span>
+                  <i class="icon icon-hamburger" aria-hidden="true"></i>
+                  <i class="icon icon-close" aria-hidden="true"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-sly-unwrap="${!wcmmode.edit}">
+        <div class="header-search dark-theme ${(wcmmode.edit && headerModel.homePage) ? 'search-box-edit-mode' : ''} " data-sly-test="${!headerModel.isMicroSitePage || (headerModel.isMicroSitePage && headerModel.microSiteHeaderOption == 'search')}">
+          <sly data-sly-resource="${'search-comp' @ resourceType='eaton/components/search/search-box',  wcmmode=headerModel.editMode}"></sly>
+        </div>
+      </div>
+      <div data-sly-unwrap="${!wcmmode.edit}">
+        <sly data-sly-include="${'mega-menu-reference.jsp' @ wcmmode='disabled'}"></sly>
+      </div>
+    </div>
+  </div>
+</sly>

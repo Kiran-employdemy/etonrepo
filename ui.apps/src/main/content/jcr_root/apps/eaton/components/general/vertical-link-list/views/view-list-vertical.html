@@ -1,0 +1,65 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.verticallinklist.VerticalLinkListModel">
+  <div class="link-list-vertical__component ${ data.enableInnerGrid ? 'container' : '' } link-list-vertical__alignment--${ data.linksAlignment }">
+
+    <!--/* If Eyebrow */-->
+    <div data-sly-test="${ data.verticalHeaderTitle }"
+      class="link-list-vertical__heading link-list-vertical__eyebrow b-eyebrow-large">${ data.verticalHeaderTitle }</div>
+
+    <!--/* List Links */-->
+    <ul data-sly-list="${ data.listTypeArray }"
+      class="link-list-vertical__list">
+      <li class="link-list-vertical__list-item link-list-vertical__list-item__content b-body-copy">
+        <i data-sly-test="${item.isSecure}" class="icon icon-secure-lock" aria-hidden="true"></i>
+        <a data-sly-test="${!item.isExternal && !item.isAssetLink}" href="${item.pagePath @context='html'}"
+          aria-label="Go to ${ item.headline }"
+          class="link-list-vertical__list-link"
+          target="${item.newWindow}"
+           data-source-tracking="${item.enableSourceTracking}"
+           rel="nofollow"
+          >
+          <span class="link-list-vertical__list-text"><bdi><i class="link-list-vertical__external-icon icon" aria-hidden="true"></i>${ item.headline }</bdi></span></a>
+
+        <a data-sly-test="${item.isExternal}" 
+		  href="${item.pagePath @context='html'}"
+          aria-label="Go to ${ item.headline }"
+          class="link-list-vertical__list-link"
+          target="${ item.newWindow}"
+           data-source-tracking="${item.enableSourceTracking}"
+           rel="nofollow"
+          >
+            <span class="link-list-vertical__list-text external"><bdi><i data-sly-test="${item.newWindow}" class="link-list-vertical__external-icon icon icon-link-external" aria-hidden="true"></i>${ item.headline }</bdi></span>
+        </a>
+
+        <a data-sly-test="${item.isAssetLink}" href="${item.pagePath @context='html'}"
+          data-analytics-event="${item.analyticsEventDTM}"
+          data-analytics-name="${item.assetFormatNameDTM}"
+          data-analytics-assetId="${item.assetUUID}"
+          data-analytics-assetTitle="${item.assetTitleDTM}"
+          aria-label="Go to ${ item.headline }"
+          class="link-list-vertical__list-link"
+           data-source-tracking="${item.enableSourceTracking}"
+           target="${item.newWindow}"
+          data-sly-attribute.download="${ item.pagePath}"
+          rel="nofollow">
+
+          <span data-sly-test="${item.isAssetLink}" class="link-list-vertical__list-text download">
+            <i data-sly-test="${ item.isAssetLink && item.headline }"
+              class="link-list-vertical__external-icon icon icon-download"
+              aria-hidden="true"></i>${ item.headline }</span>
+
+          <!--/* "Arrow-Right" icon should be displayed only when used over dark-themes (eg: Header & Footer) */-->
+          <i data-sly-test="${ !item.isAssetLink }"
+            class="link-list-vertical__list-icon icon icon-chevron-right u-hide"
+            aria-hidden="true"></i>
+        </a>
+
+        <div class="link-list-vertical__download-text"
+          data-sly-test="${ item.isAssetLink && item.headline }">
+            <p>(${item.assetSize})</p>
+            <p class="link-list-vertical__download-text--description">${item.description}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</sly>

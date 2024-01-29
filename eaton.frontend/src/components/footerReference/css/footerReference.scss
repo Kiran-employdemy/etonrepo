@@ -1,0 +1,199 @@
+//-----------------------------------
+// Component M-7: Global Footer
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.footer-top {
+  background: var(--footer-top-background-color, $color__primary-gray2);
+
+  &__link-list {
+    margin-bottom: rem($spacing__md);
+
+    .xf-content-height {
+      margin: 0;
+    }
+  }
+}
+
+.footer-bottom {
+  background: var(--footer-bottom-background-color, $color__primary-gray1);
+
+  // Over Dark Background: Make all text elements white
+  .dark-theme & {
+    color: $color__white;
+
+    .b-body-copy,
+    .b-body-copy-small,
+    a,
+    a:hover,
+    a:focus {
+      color: $color__white;
+    }
+  }
+}
+
+.back-to-top {
+  background-color: $color__white;
+  bottom: 6rem;
+  box-shadow: 1px 1px 7px 0px rgba(0, 0, 0, .15);
+  cursor: pointer;
+  display: none;
+  height: 5.8rem;
+  position: fixed;
+  right: 3rem;
+  width: 5.8rem;
+  z-index: 2;
+
+  @include media-mobile-only {
+    bottom: 3rem;
+  }
+
+  &.visible {
+    display: block;
+  }
+
+  .icon {
+    color: var(--link-brand-color, $color__primary-blue);
+    display: block;
+    font-size: rem($base__font-size * 3);
+    height: 100%;
+    line-height: ($base__line-height * 1.628);
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@include media-mobile-and-tablet {
+
+  .footer-top {
+    padding: rem($spacing__sm) 0 rem($spacing__md);
+
+    &__logo {
+      margin-bottom: rem($spacing__sm * .668);
+    }
+
+    &__content {
+      margin-bottom: rem($spacing__md * .75);
+
+      .eaton-text-default {
+        &__content {
+          font-size: rem($base__font-size * 1.4);
+          line-height: $base__line-height * 1.0714285714;
+        }
+      }
+    }
+
+    &__link-list {
+      &:last-child {
+        margin-bottom: rem($spacing__md * .75);
+      }
+    }
+
+    .link-list-vertical__heading {
+      line-height: $base__line-height * .8928571429;
+      margin-bottom: rem($spacing__sm * .333333);
+    }
+
+    &__social-links {
+      .eaton-social-links__eyebrow {
+        font-size: rem($base__font-size * 1.4);
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: rem($spacing__md * .75) 0;
+
+    &__copyright {
+      line-height: ($base__line-height * (1.1666 / 1.4));
+      margin-top: rem($spacing__sm * .668);
+    }
+  }
+}
+
+@include media-mobile-only {
+  .eaton-text-default {
+    &__content {
+      font-size: rem($base__font-size * 1.4);
+      line-height: ($base__line-height * (1.5 / 1.4));
+    }
+  }
+}
+
+@include media-desktop-and-up {
+
+  .footer-top {
+    padding: rem($spacing__md) 0;
+
+    &__logo {
+      margin-bottom: rem($spacing__sm * .333333);
+    }
+
+    &__link-list {
+      margin-top: rem($spacing__sm * .666666);
+    }
+
+    &_content {
+      .eaton-text-default__content {
+        font-size: rem($base__font-size * 1.6);
+        font-weight: normal;
+        line-height: $base__line-height * 1.0714285714;
+      }
+    }
+  }
+
+  .footer-bottom {
+    padding: rem($spacing__md * .75) 0;
+
+    &__link-list {
+      float: left;
+      width: 68%; // EATON-536: Link List and Copyright Alignment [ALM-107]
+    }
+
+    &__copyright {
+      float: right;
+      line-height: ($base__line-height * ((1.4 / 1.2) / 1.4));
+    }
+  }
+}
+
+html[dir="rtl"] {
+
+  @include media-desktop-and-up {
+    .footer-topdescription {
+      display: flex;
+    }
+
+    .footer-bottom {
+      &__rtl_list {
+        display: flex;
+      }
+    }
+  }
+
+  .link-list-horizontal__list-item {
+    padding-left: rem($spacing__sm * .4);
+    padding-right: 0;
+
+    &::after {
+      left: 0;
+      right: auto;
+    }
+  }
+
+  .link-list-vertical__list {
+    &-text {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .icon-chevron-right {
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+}

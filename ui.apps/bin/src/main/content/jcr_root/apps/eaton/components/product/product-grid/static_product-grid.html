@@ -1,0 +1,221 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Product Grid </div>
+</sly>
+<sly data-sly-use.gridData="com.eaton.platform.core.models.productgrid.ProductGridModel">
+
+<sly data-sly-use.data="${ '../data/product-grid-data.js' @testdata=properties.testdata }">
+  <sly data-sly-test="${gridData.pdhFlag}">
+  <!--/* It Adds a custom class to the grid container based on the Type of results */-->
+  <div class="product-grid-results ${
+     gridData.pageType == 'product-family'
+      ? 'product-grid-results--sku'
+      : 'product-grid-results--subcategory'
+    }">
+    <div class="container">
+
+      <!--/* Results Header */-->
+      <div class="row">
+        <div class="col-xs-12">
+          <sly data-sly-use.tpl="../../shared/templates/module-faceted-navigation/faceted-navigation-header.html">
+            <sly data-sly-call="${ tpl.module @ data=gridData }"></sly>
+          </sly>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <!--/* M-62: Faceted Navigation */-->
+        <div class="col-xs-12 col-md-3">
+          <div id="product-grid__filters"
+               data-filter-list="${gridData.facetGroupListJson}"
+               data-property-list="${gridData.facetGroupOrderingJson}"
+               data-hide-from-active='["Product_Type"]'
+               data-facet-search-disabled="${gridData.hideGlobalFacetSearch}"
+			   data-facet-value-count="${gridData.facetValueCount}"
+               data-is-edit-mode="${wcmmode.edit ? 'true' : ''}"
+               data-title="${'Filters.Title' @ i18n}"
+               data-mobile-dialog-title="${'Filters.Title' @ i18n}"
+               data-close-text="${'Filters.Close' @ i18n}"
+               data-clear-all-filters-text="${'Filters.ClearAllFilters' @ i18n}"
+               data-clear-filters-text="${'Filters.ClearFilters' @ i18n}"
+               data-clear-selection-text="${'Filters.ClearSelection' @ i18n}"
+               data-view-more-text="${'Filters.ViewMore' @ i18n}"
+               data-view-less-text="${'Filters.ViewLess' @ i18n}"
+               data-results-plural-text="${'Search.Results' @ i18n}"
+               data-results-singular-text="${'Search.Result' @ i18n}"
+               data-facet-search-label="${'GlobalFacetSearch.SearchLabel' @i18n}"
+               data-facet-search-placeholder="${'GlobalFacetSearch.Placeholder' @i18n}"
+               data-no-suggestions-text="${'GlobalFacetSearch.NoSugestions' @i18n}"
+               data-in-text="${'GlobalFacetSearch.In' @i18n}"
+               data-of-text="${'Global.Of' @ i18n}"
+               data-facet-group-search-label="${'GroupFacetSearch.Label' @i18n}"
+               data-facet-group-search-placeholder="${'GroupFacetSearch.Placeholder' @i18n}"
+               data-facet-group-search-no-suggestions-text="${'GroupFacetSearch.NoSuggestionsText' @i18n}"></div>
+
+        </div>
+
+        <!--/* Results List */-->
+        <div class="col-xs-12 col-md-9">
+
+          <!--/* View: Card-SKU */-->
+          <sly data-sly-test.isViewSKU="${  gridData.pageType == 'product-family' }">
+            <sly data-sly-use.tpl="views/product-card-sku.html">
+              <sly data-sly-call="${ tpl.view @ data=gridData, results=gridData }"></sly>
+            </sly>
+          </sly>
+
+          <!--/* View: Card-Subcategory */-->
+          <sly data-sly-test="${  gridData.pageType == 'sub-category' }">
+            <sly data-sly-use.tpl="views/product-card-subcategory.html">
+              <sly data-sly-call="${ tpl.view @ data=gridData, results=gridData }"></sly>
+            </sly>
+          </sly>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</sly>
+</sly>
+
+<div class="container comparision-result hide">
+  <div class="row">
+    <div class="col-xs-12 col-md-12 comparision_table_result">
+      <div class="comparision_table-go-back">
+        <a class="comparision__table-go-back-label">${'comparisionGoBack' @i18n}</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container comparision-loader">
+  <div class="row">
+    <div class="col-xs-12 col-md-12">
+		<div class="product-specifications comparision-loader-container">
+			<div class="loader loader-product__compare loader-active hide">
+				<div class="loader__loader-circle"></div>
+			</div>
+		</div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="comp_table" role="dialog">
+  <div class="modal-dialog modal-center">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-popup" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h4 class="modal-heading">${ gridData.productCardSubcategoryBean.minErrorHeading }</h4>
+        <p class="modal-part">${ gridData.productCardSubcategoryBean.minErrorDescription }</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="b-button b-button__tertiary b-button__tertiary--light" data-dismiss="modal">${ gridData.productCardSubcategoryBean.minErrorCancel }</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="modal fade" id="no_data-popup" role="dialog">
+  <div class="modal-dialog modal-center">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-popup" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h4 class="modal-heading">Something went wrong</h4>
+        <p class="modal-part">Sorry, we can't get that information right now.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="b-button b-button__tertiary b-button__tertiary--light" data-dismiss="modal">Ok</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="compare__DTtool" class="hide"></div>
+<div class="compare-product-list"></div>
+<div class="container">
+	<div class="final-result-comparision table-responsive">
+    <table id="header-fixed"></table>
+		<table class="table final-result-table table-striped" id="tableheadComp">
+			<thead id="heading"></thead>
+
+            <script id="comparison-result-table-heading" type="text/mustache">
+              <tr>
+                <th class="hide--mob-td comparision_table-heading-checkbox comparision_table-th">
+                  <label class="comparision_table-heading-label highlight-differences">
+                    <input type="checkbox" class="comparision_table-checkbox comparision_table-checkbox-both" id="table__checkbox">
+                    {{showHighLightIDVar}}
+                  </label>
+                  <br/>
+                  <label class="comparision_table-heading-label show-only-differences">
+                    <input type="checkbox" class="comparision_table-checkbox-both comparision_table-checkbox-diff" id="table__checkbox">
+                    {{showDiffIDVar}}
+                  </label>
+                  <br/>
+                  <label class="comparision_table-heading-label hide-blank-features">
+                    <input type="checkbox" class="comparision_table-checkbox-both comparision_table-checkbox-incomprbl" id="table__checkbox">
+                    {{hideIncompAttr}}
+                  </label>
+                </th>
+                {{#compareResultItems}}
+                  <th class="comparision-data heading-prd-cmp comparision_table-data comparision_table-th" data-col="{{col}}">
+                    <p><i class="icon close popup_close icon-close"></i></p>
+                    <a class="product-sku-url" target="_blank" href="{{url}}">
+                      <p class="comparision_table-image">
+                        <img class="comparision_table-image__table" src="{{image}}">
+                      </p>
+                      <p class="header_align">{{catalogNumber}}</p>
+                    </a>
+                  </th>
+                {{/compareResultItems}}
+            </script>
+
+            <tbody id="prdComp"></tbody>
+
+            <script id="comparison-result-table-body" type="text/mustache">
+              <tr class="comparision_table-row" id="product-name">
+                <td class="attribute-key  comparision-data comparision_table-data mob-td text-capitalize">{{productNameRowTitle}}</td>
+                {{#compareResultItems}}
+                  <td class="attribute-key-value  comparision-data comparision_table-data mob-td ">{{productName}}</td>
+                {{/compareResultItems}}
+              </tr>
+              <tr class="comparision_table-row" id="catalog-number">
+                <td class="attribute-key  comparision-data comparision_table-data mob-td text-capitalize">{{catalogNumberRowTitle}}</td>
+                {{#compareResultItems}}
+                  <td class="attribute-key-value  comparision-data comparision_table-data mob-td ">{{catalogNumber}}</td>
+                {{/compareResultItems}}
+              </tr>
+
+                {{#allUniqueCategories}}
+                  <tr class="category-row product-category-title-row" data-cat="{{tempCatId}}">
+                    <td class="comparision-data comparision_table-data comparision_table-pdh mob-td " colspan="{{catRowColspan}}">{{tempCatName}}</td>
+                  </tr>
+
+                  {{#allSubcategories}}
+                    <tr data-cat="{{tempCatId}}" data-key="{{dataIDKey}}" class="attribute-row comparision_table-row" id="prdComp{{rowId}}">
+                      <td class="attribute-key  comparision-data comparision_table-data mob-td ">{{dataLabelKey}}</td>
+                      {{#productValues}}
+                        <td data-key="{{dataLabelKey}}" class="attribute-key-value comparision-data comparision_table-data mob-td ">{{{dataValue}}}</td>
+                      {{/productValues}}
+                  {{/allSubcategories}}
+                    </tr>
+
+                {{/allUniqueCategories}}
+            </script>
+
+        </table>
+	</div>
+</div>
+<div id="showHighLightId" class="hide">${ gridData.productCardSubcategoryBean.highlightDifferences }</div>
+<div id="showDiffId" class="hide">${ gridData.productCardSubcategoryBean.showOnlyDifferences }</div>
+<div id="hideIncompAttrId" class="hide">${ gridData.productCardSubcategoryBean.hideBlankFeatures }</div>
+</sly>

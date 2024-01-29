@@ -1,0 +1,56 @@
+<template data-sly-template.module="${ @ data }"> <!--/* If the Image has alignment options add a generic class */-->
+<sly
+	data-sly-test.classIsAlignmentEnabled="${
+    data.alignmentDesktop || data.alignmentMobile ? 'rendition-bg--alignment ' : ''
+  }" />
+
+
+
+<!--/*
+    Define a specific CSS Class based on the Alignment options for a DESKTOP Breakpoint
+  */--> <sly
+	data-sly-test.classAlignmentDesktop="${
+    data.alignmentDesktop == 'left-top'      ? 'desktop-left-top ' : '' }${
+    data.alignmentDesktop == 'left-center'   ? 'desktop-left-center ' : '' }${
+    data.alignmentDesktop == 'left-bottom'   ? 'desktop-left-bottom ' : '' }${
+    data.alignmentDesktop == 'center-top'    ? 'desktop-center-top ' : '' }${
+    data.alignmentDesktop == 'center-center' ? 'desktop-center-center ' : '' }${
+    data.alignmentDesktop == 'center-bottom' ? 'desktop-center-bottom ' : '' }${
+    data.alignmentDesktop == 'right-top'     ? 'desktop-right-top ' : '' }${
+    data.alignmentDesktop == 'right-center'  ? 'desktop-right-center ' : '' }${
+    data.alignmentDesktop == 'right-bottom'  ? 'desktop-right-bottom ' : '' }" />
+
+
+<!--/*
+    Define a specific CSS Class based on the Alignment options for a MOBILE Breakpoint
+  */--> <sly
+	data-sly-test.classAlignmentMobile="${
+    data.alignmentMobile == 'left-top'       ? 'mobile-left-top ' : '' }${
+    data.alignmentMobile == 'left-center'    ? 'mobile-left-center ' : '' }${
+    data.alignmentMobile == 'left-bottom'    ? 'mobile-left-bottom ' : '' }${
+    data.alignmentMobile == 'center-top'     ? 'mobile-center-top ' : '' }${
+    data.alignmentMobile == 'center-center'  ? 'mobile-center-center ' : '' }${
+    data.alignmentMobile == 'center-bottom'  ? 'mobile-center-bottom ' : '' }${
+    data.alignmentMobile == 'right-top'      ? 'mobile-right-top ' : '' }${
+    data.alignmentMobile == 'right-center'   ? 'mobile-right-center ' : '' }${
+    data.alignmentMobile == 'right-bottom'   ? 'mobile-right-bottom ' : '' }" />
+
+<sly
+	data-sly-test.tabletDynamicMediaUrlNew="${
+    data.tabletDynamicRenditionUrl ? data.tabletDynamicRenditionUrl : data.mobileDynamicRenditionUrl
+  }" />
+
+<div
+	class="rendition-bg ${
+      classIsAlignmentEnabled }${
+      classAlignmentDesktop }${
+      classAlignmentMobile
+    }"
+  role="img"
+  aria-label="${ data.alttxt || data.landingHeroImageAltText || data.imageAltText || data.altTxt || data.heroImageAltText || data.altText || data.tileBlockLinksImageAltText || data.linkImageAltText }" 
+	data-src="${ data.mobileDynamicRenditionUrl }" 
+	data-mobile-rendition="${ data.mobileDynamicRenditionUrl }"
+	data-tablet-rendition="${ tabletDynamicMediaUrlNew }"
+	data-desktop-rendition="${ data.desktopDynamicRenditionUrl }"></div>
+
+</template>

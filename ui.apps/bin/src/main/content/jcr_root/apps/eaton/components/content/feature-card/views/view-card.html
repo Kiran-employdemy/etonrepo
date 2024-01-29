@@ -1,0 +1,21 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.FeatureCardInfoModel">
+
+    <div class="card">
+        <a href="${ data.cardLinkPath }" 
+		class="card__cta u-absolute-fill" target="${ data.cardLinkOpenNewWindow }">
+            <span class="sr-only">${ data.cardHeader }</span>
+        </a>
+
+        <div class="card__image-wrapper">
+            <!-- Start: Rendition Image Component -->
+             <sly data-sly-use.tpl="eaton/components/shared/templates/rendition-image.html">
+                    <sly data-sly-call="${ tpl.module @ data=data }"></sly>
+             </sly>
+            <!-- End: Rendition Image Component -->
+
+        </div>
+
+        <div class="card__eyebrow b-eyebrow-small text-uppercase">${ data.cardEyebrow }</div>
+        <div class="card__title b-heading-h5">${ data.cardLinkTitle }</div>
+    </div>
+</sly>

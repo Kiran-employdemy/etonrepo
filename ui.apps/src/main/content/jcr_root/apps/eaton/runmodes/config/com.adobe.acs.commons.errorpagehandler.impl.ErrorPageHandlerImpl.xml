@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          enabled="{Boolean}true"
+          vanity.dispatch.enabled="{Boolean}true"
+          serve-authenticated-from-cache="{Boolean}true"
+          ttl="{Long}300"
+          error-page.system-path="/content/eaton/us/en-us/404"
+          error-page.fallback-name="500"
+          paths="[/content/eaton/:/content/eaton/us/en-us,/content/eaton/us/:/content/eaton/us/en-us,/content/eaton/us/en-us/:/content/eaton/us/en-us,/content/eaton/fr/:/content/eaton/fr/fr-fr,/content/eaton/fr/fr-fr/:/content/eaton/fr/fr-fr,/content/eaton/fr/en-gb/:/content/eaton/fr/en-gb,/content/dam/eaton:/content/eaton/us/en-us]"/>

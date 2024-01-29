@@ -1,0 +1,180 @@
+//-----------------------------------
+// Styleguide - Rich Text Elements
+//-----------------------------------
+
+.eaton-text-default .rich-text-container {
+
+  @include body-copy;
+
+  @include font-family__secondary(--secondary-font);
+  font-size: rem($base__font-size * 2.4);
+  line-height: $base__line-height * (3.8 / 1.4);
+  margin-bottom: rem($spacing__sm * 0.5);
+  margin-top: rem($spacing__sm * 0.5);
+
+
+  // wysiwyng classes
+  span.b-eyebrow-large {
+    display: block;
+    padding-bottom: rem($spacing__sm * 0.666666);
+  }
+
+  // stylelint-disable selector-max-compound-selectors
+  b,
+  strong {
+    font-weight: bold;
+  }
+
+  h3 {
+    @include font-family__secondary(--secondary-font);
+    font-size: rem($base__font-size * 2.4);
+    font-weight: bold;
+  }
+
+  i,
+  em {
+    font-style: italic;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  p {
+    @include body-copy;
+    @include font-family__secondary(--secondary-font);
+    margin: 0 0 rem($spacing__sm * 0.6) 0;
+  }
+
+  // Unordered lists
+  //--------------
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li {
+      @include body-copy;
+      padding: 0 0 rem($spacing__sm * 0.5) rem($spacing__sm);
+      position: relative;
+
+      &::before {
+        @include square(10px); // Width & Height
+        background-color: var(--primary-brand-color, --primary-brand-color);
+        border-radius: 50%;
+        content: '';
+        left: 0;
+        position: absolute;
+        top: 7px;
+      }
+
+      @include media-mobile-and-tablet {
+        padding: 0 0 rem($spacing__sm * 0.5) rem($spacing__sm * 0.5);
+
+        &::before {
+          @include square(5px); // Width & Height
+          left: 1px;
+          top: 6px;
+        }
+      }
+    }
+  }
+
+  // Over DARK-Background
+  //--------------
+  .dark-theme & {
+
+    color: var(--color__white);
+
+    a,
+    a:visited {
+      color: var(--color__white);
+      text-decoration: underline;
+    }
+
+    // Headings
+    //--------------
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--color__white);
+    }
+
+    // Add Ordered Lists below.
+    //--------------
+   
+    // Unordered lists
+    //--------------
+    ul {
+      li {
+        &::before {
+          background-color: var(--color__white);
+        }
+      }
+    }
+
+
+  }
+
+  [dir='rtl'] .dark-theme & {
+    // Unordered lists
+    //--------------
+    ul {
+      li {
+        &::before {
+          background-color: var(--color__white);
+        }
+      }
+    }
+  }
+
+  @include media-mobile-and-tablet {
+    @include body-copy-small;
+  }
+}
+
+[dir='rtl'] .eaton-text-default .rich-text-container {
+  ul {
+    li {
+      @include body-copy;
+      padding: 0 rem($spacing__sm) rem($spacing__sm * 0.5) 0;
+      position: relative;
+
+      &::before {
+        @include square(10px); // Width & Height
+        background-color: var(--primary-brand-color, --primary-brand-color);
+        border-radius: 50%;
+        content: '';
+        right: 0;
+        position: absolute;
+        top: 0.6em;
+      }
+      @include media-mobile-and-tablet {
+        padding: 0 rem($spacing__sm * 0.5) rem($spacing__sm * 0.5) 0;
+
+        &::before {
+          @include square(5px); // Width & Height
+          right: 1px;
+          top: rem($spacing__sm * 0.333333);
+        }
+      }
+    }
+  }
+}
+
+@include media-desktop-and-up {
+  .eaton-text-default .rich-text-container {
+    h3 {
+      @include font-family__secondary(--secondary-font);
+      font-size: rem($base__font-size * 1.8);
+      font-weight: bold;
+      line-height: 2.4rem;
+      margin-bottom: rem($spacing__sm * 0.5);
+      padding: 0;
+      margin-top: 2rem;
+    }
+  }
+}
+
+

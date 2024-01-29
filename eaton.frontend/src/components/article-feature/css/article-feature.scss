@@ -1,0 +1,72 @@
+//-----------------------------------
+// M-56: Article Feature
+//-----------------------------------
+
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.article-feature {
+
+  &__component {
+    @include font-family__primary(--header-font);
+    margin: rem($spacing__md) 0;
+  }
+
+  &__title {
+    font-size: rem($base__font-size * 2.2);
+    line-height: $base__line-height * (1.5 / 1.4);
+    margin-top: rem($spacing__sm);
+  }
+
+  &__link {
+    // color: var(--primary-brand-color);
+    font-size: rem($base__font-size * 3.6);
+    line-height: $base__line-height * (1.25 / 1.4);
+    margin-bottom: rem($spacing__sm / 6);
+    margin-top: rem($spacing__sm / 6);
+
+    a:hover,
+    a:active,
+    a:visited,
+    a:focus {
+      color: var(--link-brand-color);
+      text-decoration: none;
+    }
+  }
+
+  &__date {
+    color: var(--color__lunar-40); // EATON-691 Author and Date font should be grey-3 in color
+    font-style: italic;
+    font-size: rem($base__font-size * 1.4);
+    line-height: $base__line-height * (1.5 / 1.4);
+    margin-bottom: rem($spacing__sm / 2);
+  }
+
+  &__body {
+    font-size: rem($base__font-size * 1.8);
+    line-height: $base__line-height * (1.5 / 1.4);
+  }
+}
+
+@include media-mobile-and-tablet {
+  .article-feature {
+    &__component {
+      margin: rem($spacing__sm * 1.5) 0;
+    }
+
+    &__title {
+      font-size: rem($base__font-size * 1.8);
+    }
+
+    &__link {
+      font-size: rem($base__font-size * 3.2);
+      line-height: $base__line-height * (1.3125 / 1.4);
+      margin-bottom: rem($spacing__sm / 3);
+    }
+
+    &__body {
+      font-size: rem($base__font-size * 1.6);
+    }
+  }
+}

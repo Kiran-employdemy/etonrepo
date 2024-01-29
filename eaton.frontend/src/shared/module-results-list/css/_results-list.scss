@@ -1,0 +1,20 @@
+//-----------------------------------
+// M-60: Results List Container
+//-----------------------------------
+
+.results-list {
+  margin-bottom: rem($spacing__lg * .5);
+
+  &__disclaimer {
+    border-top: 3px solid var(--color__lunar-10);
+    padding: rem($spacing__sm * .666666) 0;
+  }
+
+  &__bottom {
+    margin-top: rem($spacing__md * 1.25);
+  }
+  @include media-desktop-and-up {
+    margin-bottom: rem($spacing__md);
+  }
+
+}

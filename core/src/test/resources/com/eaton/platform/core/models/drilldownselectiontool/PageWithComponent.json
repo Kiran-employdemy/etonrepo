@@ -1,0 +1,36 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:title": "drilldown-selection-tool-test",
+    "cq:template": "/conf/eaton/settings/wcm/templates/generic-page",
+    "product-grid-description": "<p>Test product grid description</p>\r\n",
+    "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "drilldown_selection_tool": {
+          "jcr:primaryType": "nt:unstructured",
+          "pageSize": "4",
+          "sling:resourceType": "eaton/components/content/drilldown-selection-tool",
+          "dropdowns": {
+            "jcr:primaryType": "nt:unstructured",
+            "item0": {
+              "jcr:primaryType": "nt:unstructured",
+              "label": "Select the type of support you're looking for",
+              "dropdownTagPath": "/content/cq:tags/eaton/support-taxonomy/category"
+            },
+            "item1": {
+              "jcr:primaryType": "nt:unstructured",
+              "label": "Select the type of product",
+              "dropdownTagPath": "/content/cq:tags/eaton/services/product-category"
+            }
+          }
+        }
+      }
+    }
+  }
+}

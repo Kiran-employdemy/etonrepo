@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.myeaton.services.impl.MyEatonUserRegistrationServiceImpl" immediate="true" activate="activate" modified="activate">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="service.description" type="String" value=" My Eaton - User Registration Service"/>
+  <property name="process.label" type="String" value=" MyEatonUserRegistrationServiceImpl"/>
+  <service>
+    <provide interface="com.eaton.platform.integration.myeaton.services.MyEatonUserRegistrationService"/>
+  </service>
+  <reference name="httpFactory" interface="org.apache.http.osgi.services.HttpClientBuilderFactory" field="httpFactory"/>
+  <reference name="serviceConfiguration" interface="com.eaton.platform.integration.myeaton.services.MyEatonServiceConfiguration" field="serviceConfiguration"/>
+  <implementation class="com.eaton.platform.integration.myeaton.services.impl.MyEatonUserRegistrationServiceImpl"/>
+</scr:component>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Upsell Products Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <herotext
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Component Properties"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <view
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                    fieldLabel="Content Type"
+                                    name="./view">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <upsell
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Upsell Products"
+                                            value="up-sell"/>
+                                    <crossell
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Crosssell Products"
+                                            value="cross-sell"/>
+                                </items>
+                            </view>
+                            <viewType
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                    fieldLabel="View Type"
+                                    name="./viewType"
+                                    vertical="{Boolean}false">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <Carousel
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Carousel"
+                                            checked="{Boolean}true"
+                                            value="Carousel"/>
+                                    <Grid
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Grid"
+                                            value="Grid"/>
+                                </items>
+                            </viewType>
+                        </items>
+                    </column>
+                </items>
+            </herotext>
+        </items>
+    </content>
+</jcr:root>

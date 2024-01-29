@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    servletresolver.cacheSize="1000"
+    servletresolver.defaultExtensions="[html]"
+    servletresolver.paths="[/bin/,/libs/,/apps/,/system/,/index.servlet,/login.servlet,/services/,/ecom/,/ecomlib/,/eaton/]"
+    servletresolver.scriptUser=""
+    servletresolver.servletRoot="-1"/>

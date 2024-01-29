@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title=""
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <accordion
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                <items jcr:primaryType="nt:unstructured">
+                    <basic
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Basic"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <placeholder
+                                jcr:primaryType="nt:unstructured"
+                                sling:hideResource="{Boolean}true"/>
+                            <validateExpMessage
+                                jcr:primaryType="nt:unstructured"
+                                sling:hideResource="{Boolean}true"/>
+                            <type
+                                jcr:primaryType="nt:unstructured"
+                                sling:orderBefore="css"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Button Type"
+                                fieldDescription="If 'Skip to results' is selected then the value '%XX%' in the title field will be replaced by the number of results for the given user selections. This link will also be hidden if there are too many results for the recommended products component to display."
+                                name="./type"
+                                required="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <v1
+                                        jcr:primaryType="nt:unstructured"
+                                        selected="{Boolean}true"
+                                        text="Skip to results"
+                                        value="skipResult"/>
+                                    <v2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Link"
+                                        value="link"/>
+                                    <v3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Button Link"
+                                        value="buttonLink"/>
+                                </items>
+                            </type>
+                            <link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldLabel="Link"
+                                fieldDescription="If 'Link' is selected in the button type field, this is the page that the user will be sent to."
+                                name="./buttonLink"
+                                required="{Boolean}false"/>
+                        </items>
+                    </basic>
+                    <help
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Help Content"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"/>
+                    <patterns
+                        jcr:primaryType="nt:unstructured"
+                        sling:hideResource="{Boolean}true"/>
+                </items>
+            </accordion>
+        </items>
+    </content>
+</jcr:root>

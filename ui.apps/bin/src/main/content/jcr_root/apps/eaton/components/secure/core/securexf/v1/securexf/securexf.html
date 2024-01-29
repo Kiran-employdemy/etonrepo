@@ -1,0 +1,7 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Eaton :: Secure Experience Fragment :: Everything will render when this component is in author mode</div>
+</sly>
+<sly data-sly-use.model="com.eaton.platform.core.models.secure.SecureXFModel" />
+<sly data-sly-test="${wcmmode.edit || model.authorized }">
+    <sly data-sly-include="experience-fragment.html"/>
+</sly>

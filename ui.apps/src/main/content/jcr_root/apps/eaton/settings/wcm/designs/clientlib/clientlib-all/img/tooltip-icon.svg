@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tooltip_icon">
+            <g id="Group">
+                <circle id="Oval" stroke="#FFFFFF" stroke-width="2" cx="12" cy="12" r="11"></circle>
+                <text id="i" font-family="Arial-BoldMT, Arial" font-size="18" font-weight="bold" fill="#FFFFFF">
+                    <tspan x="9.49951172" y="18">i</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

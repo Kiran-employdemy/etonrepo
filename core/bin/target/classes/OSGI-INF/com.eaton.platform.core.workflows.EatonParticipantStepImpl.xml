@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.workflows.EatonParticipantStepImpl" immediate="true">
+  <property name="chooser.label" type="String" value="Eaton Dynamic Participant Choose"/>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="service.description" type="String" value=" Eaton Implementation of dynamic participant chooser."/>
+  <service>
+    <provide interface="com.adobe.granite.workflow.exec.ParticipantStepChooser"/>
+  </service>
+  <implementation class="com.eaton.platform.core.workflows.EatonParticipantStepImpl"/>
+</scr:component>

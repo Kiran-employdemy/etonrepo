@@ -1,0 +1,16 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.TextModel">
+
+  <div class="eaton-text-default">
+
+    <!--/* If Grid Enabled */-->
+    <div data-sly-test="${ data.toggleInnerGrid }" class="container">
+      <div class="eaton-text-default__content rich-text-container overlapping__anchor">${ data.text @ context = 'html' }</div>
+    </div>
+
+    <!--/* If Grid NOT-Enabled */-->
+    <div data-sly-test="${ !data.toggleInnerGrid }"
+      class="eaton-text-default__content rich-text-container" >${ data.text @ context = 'html' }</div>
+
+  </div>
+
+</sly>

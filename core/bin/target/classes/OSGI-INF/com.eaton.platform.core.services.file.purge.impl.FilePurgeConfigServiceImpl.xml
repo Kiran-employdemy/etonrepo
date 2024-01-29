@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.file.purge.impl.FilePurgeConfigServiceImpl" configuration-policy="require" immediate="true" activate="activate" modified="activate">
+  <property name="path" type="String" value=""/>
+  <property name="unit" type="String" value="DAY"/>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="maxAge" type="Integer" value="0"/>
+  <property name="process.label" type="String" value=" FilePurgeConfigServiceImpl"/>
+  <property name="service.description" type="String" value=" File Purge Config Service"/>
+  <property name="enabled" type="Boolean" value="true"/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.file.purge.FilePurgeConfigService"/>
+  </service>
+  <implementation class="com.eaton.platform.core.services.file.purge.impl.FilePurgeConfigServiceImpl"/>
+</scr:component>

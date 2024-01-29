@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    enabled="{Boolean}true"
+    overrides='[[/content/eaton]com.adobe.cq.wcm.core.components.internal.services.pdfviewer.PdfViewerCaConfig/clientId="2b4bd718bf244d8ab7a62db5eadd9296",[/content/eaton-cummins]com.adobe.cq.wcm.core.components.internal.services.pdfviewer.PdfViewerCaConfig/clientId="678ff7d107884b4fb716a141e40e5683",[/content/greenswitching]com.adobe.cq.wcm.core.components.internal.services.pdfviewer.PdfViewerCaConfig/clientId="af063b6a101a4f7eaf993b83fd6fdcc4",[/content/login]com.adobe.cq.wcm.core.components.internal.services.pdfviewer.PdfViewerCaConfig/clientId="616af53f19104e34bb4fa025c36fd34a",[/content/phoenixtec]com.adobe.cq.wcm.core.components.internal.services.pdfviewer.PdfViewerCaConfig/clientId="89b381e3917d4b8e834b1b54ee8b3d00"]'/>

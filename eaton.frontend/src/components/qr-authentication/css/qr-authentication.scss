@@ -1,0 +1,257 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-qr-authenticated {
+  padding: $spacing__sm;
+
+  img {
+    width: 14px;
+    margin-left: $spacing__margin;
+  }
+
+  &--desc {
+    font-style: italic;
+    margin-top: 1rem;
+  }
+
+  @include media-mobile-only {
+    &__label {
+      display: block;
+    }
+
+  }
+
+}
+
+.authenticate {
+  padding: $spacing__sm;
+  font-size: 1.6rem;
+
+  &__serial-no {
+    padding-bottom: $spacing__sm;
+  }
+
+  &__reset {
+    margin-left: 35px;
+  }
+
+}
+
+.grey__bg-area {
+  background-color: $color__secondary-gray6;
+  position: relative;
+}
+
+.authentication__code {
+
+  &-label,
+  &-label--qr {
+    margin: 0 0 6px 0;
+    padding: 0;
+    display: block;
+    font-weight: bold;
+    text-align: left;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: $color__black;
+    vertical-align: baseline;
+    border-radius: .25em;
+    text-indent: 0;
+  }
+
+  &-input {
+    margin-bottom: $spacing__sm;
+
+    input {
+      width: 112px;
+      border: 1px solid $color__primary-gray1;
+      height: auto;
+      line-height: 1.4;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      box-sizing: border-box;
+      text-transform: uppercase;
+    }
+
+    &--qr {
+      margin-bottom: $spacing__sm;
+
+      input {
+        width: 225px;
+        border: 1px solid $color__primary-gray1;
+        height: auto;
+        line-height: 1.4;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        box-sizing: border-box;
+        text-transform: uppercase;
+      }
+
+      ::placeholder {
+        font-size: 12px;
+      }
+    }
+  }
+
+  &-error {
+    color: $color__primary-red;
+    font-size: 1.4rem;
+    font-style: italic;
+    font-weight: normal;
+    display: block;
+
+    a {
+      text-decoration: underline;
+      color: $color__primary-red;
+    }
+  }
+
+  &-btn {
+    margin-bottom: $spacing__sm;
+    margin-top: 1.5rem;
+  }
+}
+
+.report-cta {
+  font-weight: bold;
+  margin-top: $spacing__sm;
+}
+
+.report-issue {
+  padding: $spacing__sm;
+
+  &__success {
+    padding-top: 30px;
+  }
+
+  &__title {
+    font-size: 2.4rem;
+    line-height: 1.25;
+    margin-bottom: $spacing__sm;
+  }
+
+  &__form {
+    margin-bottom: $spacing__sm;
+
+    &--group {
+      margin-bottom: $spacing__sm;
+
+      label {
+        margin: 0 0 6px 0;
+        padding: 0;
+        display: block;
+        font-weight: bold;
+        text-align: left;
+        font-size: 1.5rem;
+        line-height: 1;
+        color: #000;
+        white-space: nowrap;
+        border-radius: .25em;
+        text-indent: 0;
+      }
+
+      input {
+        width: 100%;
+        border: 1px solid $color__primary-gray1;
+        height: auto;
+        line-height: 1.4;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        box-sizing: border-box;
+      }
+
+      &__email__required {
+        color: $color__primary-red;
+      }
+
+      textarea {
+        resize: none;
+        height: 10rem;
+        border: 1px solid $color__primary-gray1;
+        width: 100%;
+        line-height: 1.4;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        box-sizing: border-box;
+
+      }
+    }
+
+  }
+
+  &--close {
+    position: absolute;
+    right: 1rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+@include media-mobile-and-tablet {
+  .report-cta {
+    display: block;
+    text-align: center;
+  }
+
+}
+
+.show__captcha {
+  display: contents;
+  transform: none !important; /* stylelint-disable-line declaration-no-important */
+}
+
+@include media-mobile-only {
+  .report-issue__success {
+    padding-bottom: 30px;
+  }
+
+  .qr__authentication {
+    margin: 0px 15px;
+  }
+
+  .authenticate {
+    padding: 0px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 1.6rem;
+  }
+
+  .report-issue {
+    padding: 0px;
+  }
+}
+
+.panel-group.authenticate__accordian {
+  margin-bottom: -26px;
+}
+
+.serial__number {
+  text-transform: uppercase;
+}
+
+@include media-desktop-and-up {
+  .container.qr__authentication {
+    padding: 0px;
+  }
+
+  .report-issue--close {
+    position: absolute;
+    right: 3.3rem;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+}
+
+.icon-auth-icon {
+  background-image: url("../../../clientlib-all/resources/images/ic_small_Authenticate_Shield6402.png");
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 32px;
+  background-position: center;
+  top: 23px;
+}

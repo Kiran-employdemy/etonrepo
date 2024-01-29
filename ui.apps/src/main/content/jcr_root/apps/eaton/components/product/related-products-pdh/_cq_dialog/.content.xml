@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+        xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0" jcr:primaryType="sling:Folder" jcr:title="Related Product Families"
+        sling:resourceType="cq/gui/components/authoring/dialog"
+        helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/container"
+            class="cq-dialog-content-page">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    size="L">
+                <items jcr:primaryType="nt:unstructured">
+                    <tab1
+                            granite:rel="aem-assets-metadata-form-tab"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Basic"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            listOrder="0">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                tabid="f84cc8d6-60ab-474e-bdf8-a0b7a434f289"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <col1
+                                    granite:rel="aem-assets-metadata-form-column"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    listOrder="0">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <header
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                            fieldLabel="Header"
+                                            name="./header">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <RelatedProducts
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Related products"
+                                                    value="RelatedProducts"/>
+                                            <CrossSellTitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Designed to work together"
+                                                    value="Cross Sell Title"/>
+                                            <MoreEatonSolutions
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="More Eaton solutions"
+                                                    value="MoreEatonSolutions"/>
+                                            <YouMayAlsoBeInterestedIn
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="You may also be interested in…"
+                                                    value="YouMayAlsoBeInterestedIn"/>
+                                        </items>
+                                    </header>
+                                    <productsDescription
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textarea"
+                                            fieldDescription="Product Description "
+                                            fieldLabel="Description"
+                                            name="./productsDescription"/>
+                                    <marketingDescription
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                            name="./showMarketingDescription"
+                                            text="Show Marketing Description"
+                                            value="true"/>
+                                    <viewAllProductsLinkLabel
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                            fieldLabel="View All Products Link Label"
+                                            fieldDescription="Default value to be: View all new product launches"
+                                            name="./viewAllProductsLinkLabel"/>
+                                    <viewAllProductsLink
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                            fieldLabel="View All Products Link"
+                                            name="./viewAllProductsLink"/>
+                                    <enableReadMoreLink
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            granite:class="read-more-checkbox-show-hide"
+                                            name="./enableReadMoreLink"
+                                            text="Enable Read More Link"
+                                            value="true"/>
+                                </items>
+                            </col1>
+                        </items>
+                    </tab1>
+                    <tab2
+                            granite:rel="aem-assets-metadata-form-tab"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Listing"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            listOrder="0">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                tabid="f84cc8d6-60ab-474e-bdf8-a0b7a434f289"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <col1
+                                    granite:rel="aem-assets-metadata-form-column"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    listOrder="0">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <listType
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            class="cq-dialog-dropdown-showhide"
+                                            cq-dialog-dropdown-showhide-target=".related-products-hide-show"
+                                            fieldLabel="List Type *"
+                                            name="./listType"
+                                            required="true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <child-pages
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Child Page"
+                                                    value="child-pages"/>
+                                            <tags
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Tags"
+                                                    value="tags"/>
+                                            <fixed-list
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Fixed List"
+                                                    value="fixed-list"/>
+                                        </items>
+                                    </listType>
+                                    <parentPage
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                            class="hide related-products-hide-show"
+                                            fieldLabel="Parent Page"
+                                            name="./parentPage"
+                                            showhidetargetvalue="child-pages,tags"/>
+                                    <tags
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="cq/gui/components/common/tagspicker"
+                                            class="hide related-products-hide-show"
+                                            fieldLabel="Tags *"
+                                            name="./tags"
+                                            required="true"
+                                            showhidetargetvalue="tags"/>
+                                    <tagsType
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            class="hide related-products-hide-show"
+                                            fieldLabel="Tags Type *"
+                                            name="./tagsType"
+                                            required="true"
+                                            showhidetargetvalue="tags">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <any
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Any"
+                                                    value="any"/>
+                                            <all
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="All"
+                                                    value="all"/>
+                                        </items>
+                                    </tagsType>
+                                    <timeToLive
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/numberfield"
+                                            class="hide related-products-hide-show"
+                                            defaultValue="0"
+                                            fieldDescription="Value configured on this field checks for each link from the results are with in the range. Ex : 10 mean publication-date + 10 Days"
+                                            fieldLabel="Product Lifespan"
+                                            min="{Long}0"
+                                            name="./productTimeToLive"
+                                            showhidetargetvalue="tags"/>
+                                    <openNewWindow
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                            class="hide related-products-hide-show"
+                                            name="./openNewWindow"
+                                            showhidetargetvalue="child-pages,tags"
+                                            text="Open in New Window (Parent, Tags)"
+                                            value="true"/>
+                                    <fixedLinks
+                                            granite:class="hide related-products-hide-show"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                            composite="{Boolean}true"
+                                            fieldLabel="Fixed Links">
+                                        <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                showhidetargetvalue="fixed-list"/>
+                                        <field
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                name="./fixedLinks">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <linkPath
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                                                fieldLabel="Link Path *"
+                                                                name="./fixedLinkPath"
+                                                                required="true"/>
+                                                        <newWindowFixed
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                name="./fixedLinkOpenNewWindow"
+                                                                text="Open Link in New Window"
+                                                                value="true"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </fixedLinks>
+                                    <sortBy
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                            class="hide related-products-hide-show"
+                                            fieldDescription="This field stores the value of sort field. There are four options: Publication Date, Title, Created Date, Last Modified and Template. This field is applicable when List Type selected is “Child Page” or “Tags”"
+                                            fieldLabel="Sort By *"
+                                            name="./sortBy"
+                                            required="true"
+                                            showhidetargetvalue="child-pages,tags">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <publication-date
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Publication Date"
+                                                    value="pub-date"/>
+                                            <title
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Title"
+                                                    value="title"/>
+                                            <created-date
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Created Date"
+                                                    value="created-date"/>
+                                            <last-modified
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Last Modified "
+                                                    value="last-modified-date"/>
+                                            <template
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Template"
+                                                    value="template"/>
+                                        </items>
+                                    </sortBy>
+                                    <maxLimitToDisplay
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                            class="hide related-products-hide-show"
+                                            defaultValue="40"
+                                            fieldDescription="This field stores the value for no of results field. This field is applicable when List Type selected is “Child Page” or “Tags”"
+                                            fieldLabel="Maximum number of links to Display"
+                                            min="{Long}0"
+                                            name="./maxLimitToDisplay"
+                                            showhidetargetvalue="child-pages,tags"/>
+                                    <desktopTrans
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            fieldLabel="Desktop Image Transformation *"
+                                            name="./desktopTrans"
+                                            required="true">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/ecom/content/imageTransform"
+                                                addNone="{Boolean}true"
+                                                selector="desktop"/>
+                                    </desktopTrans>
+                                    <mobileTrans
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/foundation/form/select"
+                                            fieldLabel="Mobile Image Transformation *"
+                                            name="./mobileTrans"
+                                            required="true">
+                                        <datasource
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/ecom/content/imageTransform"
+                                                addNone="{Boolean}true"
+                                                selector="mobile"/>
+                                    </mobileTrans>
+                                </items>
+                            </col1>
+                        </items>
+                    </tab2>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

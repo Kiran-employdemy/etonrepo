@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:WorkflowLauncher"
+    condition=""
+    conditions="[\0]"
+    description="This launcher will execute Eaton Manual Clean Cloud Config workflow to clear the empty cq:cloudserviceconfigs property whenever a page is created"
+    disabledFeatures="[]"
+    enabled="{Boolean}true"
+    eventType="{Long}1"
+    excludeList=""
+    features="[]"
+    glob="/content/eaton"
+    nodetype="cq:Page"
+    runModes="author"
+    workflow="/conf/global/settings/workflow/models/eaton-workflows/eaton-manual-clean-cloud-config/jcr:content/model"/>

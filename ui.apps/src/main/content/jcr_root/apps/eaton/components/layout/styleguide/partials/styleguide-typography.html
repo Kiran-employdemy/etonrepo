@@ -1,0 +1,163 @@
+<!--/*
+  StyleGuide: Typography
+*/-->
+<template data-sly-template.section="${ @ data }">
+
+  <div class="sg-section" id="sg-typography">
+    <h2>Typography</h2>
+    <br /><br />
+    <h3 class="b-heading-h5">Headings</h3>
+    <table class="sg-table b-body-copy-small">
+      <thead>
+        <tr class="b-body-copy-small">
+          <td width="20%">StyleName</td>
+          <td width="40%">Mobile (0 to 991px)</td>
+          <td width="40%">Desktop (> 992px)</td>
+        </tr>
+      </thead>
+      <tbody data-sly-list.style="${ data.styles.headings }">
+        <tr>
+          <td>${ style.name }</td>
+          <td>
+            <div class="sg-${ style.id }-mobile sg-typography-style u-flex u-flex-align-center">
+              ${ style.name} example mobile
+            </div>
+            <div class="sg-caption">
+              font-family: ${ style.mobile.fontFamily }<br />
+              font-size: ${ style.mobile.fontSize }<br />
+              font-weight: ${ style.mobile.fontWeight }<br />
+              line-height: ${ style.mobile.lineHeight }<br />
+            </div>
+          </td>
+          <td>
+            <div class="sg-${ style.id }-desktop sg-typography-style u-flex u-flex-align-center">
+              ${ style.name} example desktop
+            </div>
+            <div class="sg-caption">
+              font-family: ${ style.desktop.fontFamily }<br />
+              font-size: ${ style.desktop.fontSize }<br />
+              font-weight: ${ style.desktop.fontWeight }<br />
+              line-height: ${ style.desktop.lineHeight }<br />
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+    <br /><br />
+    <h3 class="b-heading-h5">BodyCopy <small> / and other text Styles</small></h3>
+    <ul>
+      <li>Body - <strong>Base font-size:</strong> <code> 1.6rem</code></li>
+      <li>Body - <strong>Base font-family:</strong> <code>Arial</code></li>
+      <li>Body - <strong>Base font-weight:</strong> <code>normal</code></li>
+      <li>Body - <strong>Base line-height:</strong> <code>1.4</code></li>
+    </ul>
+    <hr />
+    <p class="b-body-copy"><strong>Example:</strong> <code>body-copy</code> Power Management Company Eaton has upgraded its wiring accessories offering for residential and commercial buildings with the launch of a switched socket with USB ports. The <strong>PREMERA and COPA 2-gang</strong> switched sockets have two USB ports to provide a convenient and safe charging solution for tablets, mobile phones and other electronic devices. <a href="#">This is a Link element.</a> <em>This sentence uses italic font.</em></p>
+    <hr />
+    <p class="b-body-copy-small"><strong>Example:</strong> <code>body-copy-small</code> Power Management Company Eaton has upgraded its wiring accessories offering for residential and commercial buildings with the launch of a switched socket with USB ports. The <strong>PREMERA and COPA 2-gang</strong> switched sockets have two USB ports to provide a convenient and safe charging solution for tablets, mobile phones and other electronic devices. <a href="#">This is a Link element.</a> <em>This sentence uses italic font.</em></p>
+    <hr />
+    <p class="b-hero-description"><strong>Example:</strong> <code>hero-description</code> Power Management Company Eaton has upgraded its wiring accessories offering for residential and commercial buildings with the launch of a switched socket with USB ports. The <strong>PREMERA and COPA 2-gang</strong> switched sockets have two USB ports to provide a convenient and safe charging solution for tablets, mobile phones and other electronic devices. <a href="#">This is a Link element.</a> <em>This sentence uses italic font.</em></p>
+    <hr />
+
+    <table class="sg-table b-body-copy-small">
+      <thead>
+        <tr class="b-body-copy-small">
+          <td width="20%">StyleName</td>
+          <td width="40%">Mobile (0 to 991px)</td>
+          <td width="40%">Desktop (> 992px)</td>
+        </tr>
+      </thead>
+      <tbody data-sly-list.style="${ data.styles.bodyStyles }">
+        <tr>
+          <td>${ style.name }</td>
+          <td>
+            <div class="sg-${ style.id }-mobile sg-typography-style u-flex u-flex-align-center">
+
+              <!--/* If Style is "Eyebrow" example text should be Uppercase */-->
+              <span data-sly-unwrap="${ !(style.id == 'eyebrow-large' || style.id == 'eyebrow-small') }"
+                class="${ (style.id == 'eyebrow-large' || style.id == 'eyebrow-small') ? 'text-uppercase' : '' }"
+              >${ style.name} example mobile
+              </span>
+            </div>
+            <div class="sg-caption">
+              font-family: ${ style.mobile.fontFamily }<br />
+              font-size: ${ style.mobile.fontSize }<br />
+              font-weight: ${ style.mobile.fontWeight }<br />
+              line-height: ${ style.mobile.lineHeight }<br />
+            </div>
+          </td>
+          <td>
+            <div class="sg-${ style.id }-desktop sg-typography-style u-flex u-flex-align-center">
+
+              <!--/* If Style is "Eyebrow" example text should be Uppercase */-->
+              <span data-sly-unwrap="${ !(style.id == 'eyebrow-large' || style.id == 'eyebrow-small') }"
+                class="${ (style.id == 'eyebrow-large' || style.id == 'eyebrow-small') ? 'text-uppercase' : '' }"
+              >${ style.name} example desktop
+              </span>
+            </div>
+            <div class="sg-caption">
+              font-family: ${ style.desktop.fontFamily }<br />
+              font-size: ${ style.desktop.fontSize }<br />
+              font-weight: ${ style.desktop.fontWeight }<br />
+              line-height: ${ style.desktop.lineHeight }<br />
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr class="sg-divider" />
+
+    <style>
+
+      .sg-typography-style {
+        border-bottom: 1px solid #EEE;
+        min-height: 90px;
+        margin-bottom: 0.25em;
+        padding-bottom: 0.25em;
+      }
+
+      /*------------------------------------*
+      * Headings
+      *-------------------------------------*/
+      <sly data-sly-list.style="${ data.styles.headings }">
+      .sg-${ style.id }-mobile {
+        font-family: ${ style.mobile.fontFamily @ context='unsafe' };
+        font-size: ${ style.mobile.fontSize };
+        font-weight: ${ style.mobile.fontWeight };
+        line-height: ${ style.mobile.lineHeight };
+      }
+
+      .sg-${ style.id }-desktop {
+        font-family: ${ style.desktop.fontFamily @ context='unsafe' };
+        font-size: ${ style.desktop.fontSize };
+        font-weight: ${ style.desktop.fontWeight };
+        line-height: ${ style.desktop.lineHeight };
+      }
+      </sly>
+
+      /*------------------------------------*
+      * Body Copy
+      *-------------------------------------*/
+      <sly data-sly-list.style="${ data.styles.bodyStyles }">
+      .sg-${ style.id }-mobile {
+        font-family: ${ style.mobile.fontFamily @ context='unsafe' };
+        font-size: ${ style.mobile.fontSize };
+        font-weight: ${ style.mobile.fontWeight };
+        line-height: ${ style.mobile.lineHeight };
+      }
+
+      .sg-${ style.id }-desktop {
+        font-family: ${ style.desktop.fontFamily @ context='unsafe' };
+        font-size: ${ style.desktop.fontSize };
+        font-weight: ${ style.desktop.fontWeight };
+        line-height: ${ style.desktop.lineHeight };
+      }
+      </sly>
+    </style>
+  </div>
+
+</template>

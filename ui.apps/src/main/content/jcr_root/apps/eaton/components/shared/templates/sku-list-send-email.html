@@ -1,0 +1,24 @@
+<template data-sly-template.module="${ @ data }">
+        <sly data-sly-use.viewData="com.eaton.platform.core.models.digitaltool.DatasheetDispatchModel"></sly>
+
+    <!--<sly data-sly-use.chatConfig="com.eaton.platform.core.models.ChatConfigModel"></sly>
+
+    <sly data-sly-test="${data.noMatchFound == true }">
+      <sly data-sly-resource="${'content' @ resourceType='wcm/foundation/components/responsivegrid'}"></sly>
+    </sly>-->
+
+<div class="mail-box">
+  <p>${'Datasheet.EnterEmail' @i18n }</p>
+  <input type="text" id="txtEmail" placeholder="${'Datasheet.Email' @i18n }">
+   <p class="email-error"></p>
+   <p class="email-success"></p>
+  <button type="button" class="b-button b-button__tertiary b-button__tertiary--light"
+  data-dismiss="modal">${'Datasheet.Cancel' @i18n }</button>
+  <button id="MailButton" class="b-button b-button__tertiary b-button__tertiary--light">${'Datasheet.Send' @i18n }</button>
+</div>
+
+
+
+    <!--button id="send-mail" >Send Email
+        @i18n}</button-->
+</template>

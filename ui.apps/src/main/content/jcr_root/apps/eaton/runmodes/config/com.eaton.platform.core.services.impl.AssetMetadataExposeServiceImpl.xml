@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          includeAssetProperties="[dc:title,cq:tags,jcr:lastModified,dc:description,dc:format,dc:subject,dam:size,assetPublicationDate,trackDownload,xmp:eaton-image-resolution,xmp:eaton-sha,xmp:eaton-eccn,product-taxonomy-extended,xmp:eaton-percolate-asset-id,xmp:eaton-eaton-brand,xmp:eaton-myeaton-taxonomy]"
+          includeSecureAssetProperties="[secureAsset,accountType,productCategories,applicationAccess,countries,xmp:eaton-tier-level,xmp:eaton-partner-program-type,xmp:eaton-partner-program-and-tier-level]"/>

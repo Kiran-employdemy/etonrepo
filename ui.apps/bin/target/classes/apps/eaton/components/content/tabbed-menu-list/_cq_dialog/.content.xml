@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Tabbed Menu List"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <fieldset
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/fieldset">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <uniqueID
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                        fieldDescription="component requires a unique identifier (ID) when this component exists multiple times in the same page."
+                                        fieldLabel="Unique ID"
+                                        name="./name"/>
+                                    <list-type
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        class="cq-dialog-dropdown-showhide"
+                                        cq-dialog-dropdown-showhide-target=".list-type-show-hide"
+                                        fieldLabel="List Type *"
+                                        name="./listType"
+                                        required="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <child-pages
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Child Page"
+                                                value="child-pages"/>
+                                            <tags
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Tags"
+                                                value="tags"/>
+                                            <fixed-list
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Fixed List"
+                                                value="fixed-list"/>
+                                        </items>
+                                    </list-type>
+                                    <parentPage
+                                            granite:class="hide list-type-show-hide"
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                            fieldDescription="This field stores the value of parent page path. This field is applicable when List Type selected is “Child Page” and “Tags”"
+                                            fieldLabel="Parent Page"
+                                            name="./parentPage"
+                                            required="{Boolean}true">
+                                        <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                showhidetargetvalue="child-pages,tags"/>
+                                    </parentPage>
+                                    <tags
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="cq/gui/components/common/tagspicker"
+                                        class="hide list-type-show-hide"
+                                        fieldDescription="This field stores the value of tags field. This field is applicable when List Type selected is “Tags”."
+                                        fieldLabel="Tags *"
+                                        name="./tags"
+                                        required="true"
+                                        showhidetargetvalue="tags"/>
+                                    <sort
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/select"
+                                        class="hide list-type-show-hide"
+                                        fieldDescription="This field stores the value of sort field. There are four options: Publication Date, Title, Created Date, Last Modified and Template. This field is applicable when List Type selected is “Child Page” or “Tags”"
+                                        fieldLabel="Sort *"
+                                        name="./sort"
+                                        required="true"
+                                        showhidetargetvalue="tags,child-pages">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <publication-date
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Publication Date"
+                                                value="pub-date"/>
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Title"
+                                                value="title"/>
+                                            <created-date
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Created Date"
+                                                value="created-date"/>
+                                            <last-modified
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Last Modified Date"
+                                                value="last-modified-date"/>
+                                            <template
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Template"
+                                                value="template"/>
+                                        </items>
+                                    </sort>
+                                    <newWindow
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                        class="hide list-type-show-hide"
+                                        fieldDescription="This field indicates if the url would open in new window or not. "
+                                        name="./newWindow"
+                                        showhidetargetvalue="tags,child-pages"
+                                        text="Open in New Window"
+                                        value="true"/>
+                                    <fixedLinks
+                                        granite:class="hide list-type-show-hide"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                        composite="{Boolean}true"
+                                        fieldDescription="This field stores the various attributes of fixed link object. This field is applicable when List Type selected is “Fixed”"
+                                        fieldLabel="Fixed Links">
+                                        <granite:data
+                                                jcr:primaryType="nt:unstructured"
+                                                showhidetargetvalue="fixed-list"/>
+                                        <field
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            name="./fixedLinks">
+                                            <layout
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <column
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <linkPath
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                                            fieldDescription="This field stores the path for Article page. This field is applicable when List Type selected is “Fixed”"
+                                                            fieldLabel="Link Path *"
+                                                            name="./linkPath"
+                                                            required="true"/>
+                                                        <newWindowFixed
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                            fieldDescription="This field stores the value for newWindow field. This field is applicable when List Type selected is “Fixed”"
+                                                            name="./newWindowFixed"
+                                                            text="Open in New Window"
+                                                            value="true"/>
+                                                    </items>
+                                                </column>
+                                            </items>
+                                        </field>
+                                    </fixedLinks>
+                                </items>
+                            </column>
+                        </items>
+                    </fieldset>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

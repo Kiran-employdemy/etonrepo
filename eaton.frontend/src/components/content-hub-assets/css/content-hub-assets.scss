@@ -1,0 +1,240 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.content-hub-assets__card-list {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+
+  &-results {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: $spacing__sm;
+
+    &-item {
+      @include media-mobile-only {
+        flex: 0 0 1;
+        margin-bottom: $spacing__sm;
+      }
+
+      @include media-tablet-only {
+        flex: 0 0 50%;
+        margin-bottom: $spacing__sm;
+      }
+
+      @include media-desktop-and-up {
+        flex: 0 0 33%;
+        margin-bottom: $spacing__sm;
+      }
+
+      &__card {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        border: 1px solid $color__secondary-gray7;
+        position: relative;
+        padding-bottom: 40px;
+
+        &--image {
+          position: relative;
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 100%;
+          height: 144px;
+
+          @include media-mobile-only {
+            width: 100%;
+            height: 192px;
+          }
+
+          @include media-tablet-only {
+            width: 100%;
+            height: 192px;
+          }
+
+          &::before {
+            display: block;
+          }
+
+          &.no__image {
+            background-color: $color__primary-blue;
+          }
+        }
+
+        &--content {
+          padding: 0px 2rem;
+          margin: 1.5rem 0 3rem 0;
+
+          &__eyebrowTitle {
+            font-size: 1.6rem;
+            line-height: 1.25;
+            font-weight: bold;
+            color: $color__primary-gray1;
+            padding-right: 0;
+            margin-bottom: 1.5rem;
+/* stylelint-disable */
+            @include media-mobile-only {
+              font-size: 1.4rem;
+              line-height: 1.25;
+              font-weight: bold;
+              padding-right: 0;
+            }
+
+            @include media-tablet-only {
+              font-size: 1.4rem;
+              line-height: 1.25;
+              font-weight: bold;
+              padding-right: 0;
+            }
+          }
+/* stylelint-enable */
+          &__heading {
+            color: $color__primary-blue;
+            margin-bottom: 1.6rem;
+            font-size: 1.8rem;
+            line-height: 1.25;
+/* stylelint-disable */
+            @include media-mobile-only {
+              font-size: 1.6rem;
+              line-height: 1.25;
+              margin-bottom: 3rem;
+            }
+
+            @include media-tablet-only {
+              font-size: 1.6rem;
+              line-height: 1.25;
+              margin-bottom: 3rem;
+			}
+/* stylelint-enable */
+          }
+        }
+
+        &--download {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          padding: 0 2rem;
+          position: absolute;
+          bottom: 10px;
+          width: 100%;
+          font-size: 1.2rem;
+
+          .icon-download {
+            color: $color__primary-blue;
+            font-size: 1.8rem;
+          }
+
+          &__type {
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+/* stylelint-disable */
+            .assettype {
+              text-transform: uppercase;
+            }
+
+            span {
+              text-transform: capitalize;
+			}
+/* stylelint-enable */
+          }
+        }
+      }
+    }
+
+    &__link {
+      z-index: 1;
+    }
+  }
+
+  &-results-without__filters {
+    .without-filter {
+      height: 192px;
+    }
+  }
+}
+
+.content__hub-assets-btn {
+  margin-top: $spacing__sm;
+  margin-bottom: $spacing__md;
+
+  .load {
+    width: 97%;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    position: relative;
+  }
+}
+
+// navigation level
+
+.faceted-navigation__facet-value-label {
+  &__content-check {
+    border-bottom: 1px solid $color__primary-gray3;
+    display: table;
+    font-size: rem($base__font-size * 1.6);
+    font-weight: normal;
+    height: rem($grid__xs * .1333333333); // Firefox does not honor min-height on display: table elements
+    line-height: $base__line-height * (1.5 / 1.4);
+    margin-bottom: 0;
+    margin-top: 0;
+    min-height: rem($grid__xs * .1333333333);
+    overflow: visible;
+    padding: rem($spacing__sm * .1) rem($spacing__sm * .1666666667);
+    text-align: left;
+    white-space: normal;
+    width: 100%;
+
+    [dir='rtl'] & {
+      text-align: right;
+    }
+
+    @include media-desktop-and-up {
+      background: $color__secondary-gray6;
+      border-bottom: 0;
+      font-size: rem($base__font-size * 1.4);
+      height: rem($grid__xs * .09166666667); // Firefox does not honor min-height on display: table elements
+      line-height: $base__line-height * (1.125 / 1.4);
+      min-height: rem($grid__xs * .09166666667);
+      padding: rem($spacing__sm * .2) rem($spacing__sm * .3333333);
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $color__secondary-gray5;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.faceted-navigation {
+  &__list-item {
+    &.hidelist {
+      display: none;
+    }
+  }
+}
+
+/* stylelint-disable-next-line no-duplicate-selectors */
+.faceted-navigation {
+  &__view-more-less-container {
+    &.content-hub-assets {
+      display: none;
+    }
+  }
+}
+
+/* stylelint-disable no-duplicate-selectors */
+.faceted-navigation {
+  &__view-more-less-container {
+    &.content-hub-assets {
+      /* stylelint-enable no-duplicate-selectors */
+      &.show {
+        display: block;
+      }
+
+    }
+  }
+}

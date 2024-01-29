@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.bullseye.servlets.BullseyeSearchServlet" immediate="true">
+  <property name="sling.servlet.extensions" type="String">json
+csv</property>
+  <property name="sling.servlet.resourceTypes" type="String" value="eaton/components/content/map"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="bullseyeService" interface="com.eaton.platform.integration.bullseye.services.BullseyeService" field="bullseyeService"/>
+  <implementation class="com.eaton.platform.integration.bullseye.servlets.BullseyeSearchServlet"/>
+</scr:component>

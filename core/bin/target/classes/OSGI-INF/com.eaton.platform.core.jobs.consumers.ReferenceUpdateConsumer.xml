@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.jobs.consumers.ReferenceUpdateConsumer" immediate="true">
+  <property name="job.topics" type="String" value="eaton/sling/job/referenceUpdate"/>
+  <service>
+    <provide interface="org.apache.sling.event.jobs.consumer.JobConsumer"/>
+  </service>
+  <reference name="referenceService" interface="com.eaton.platform.core.services.ReferenceService" field="referenceService"/>
+  <implementation class="com.eaton.platform.core.jobs.consumers.ReferenceUpdateConsumer"/>
+</scr:component>

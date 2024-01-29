@@ -1,0 +1,31 @@
+<sly data-sly-use.titleModel="com.eaton.platform.core.models.TitleModel">
+
+  <div class="eaton-title eaton-title--map">
+
+    <div class="container">
+
+      <!--/*
+        NOTE: "titleModel.style" should have a value of "h1, h2, h3, h4, h5, or h6"
+        This option allows the author to select the HTML tag for SEO purposes / Semantics
+        The appearance of the title should always be the same regardless of the HTML Tag
+      */-->
+
+      <sly data-sly-test=${!titleModel.title}>
+        <h1 class="eaton-title__headline">${titleModel.currentPageTitle}</h1>
+      </sly>
+
+      <sly data-sly-test=${titleModel.title}>
+
+        <sly data-sly-test=${titleModel.type}>
+          <div data-sly-element="${titleModel.type}" class="eaton-title__headline">${ titleModel.title @ context='html'}</div>
+        </sly>
+
+        <sly data-sly-test=${!titleModel.type}>
+          <h2 class="eaton-title__headline">${ titleModel.title @ context='html'}</h2>
+        </sly>
+
+      </sly>
+
+    </div>
+  </div>
+</sly>

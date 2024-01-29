@@ -1,0 +1,11 @@
+	<sly data-sly-test="${pageProperties['component-type']=='header'}">
+  	 <sly data-sly-resource="${'headerReference' @ resourceType='eaton/components/structure/headerReference'}"> </sly>
+	</sly>
+
+	<sly data-sly-test="${pageProperties['component-type']=='footer'}">
+  	 <sly data-sly-resource="${'footer' @ resourceType='eaton/components/structure/footerReference'}"> </sly>
+	</sly>
+	
+	<sly data-sly-test="${pageProperties['component-type']=='megamenu'}">
+  	 	 <sly data-sly-resource="${'menuoverlay' @ resourceType='eaton/components/layout/mega-menu'}"> </sly>
+	</sly>

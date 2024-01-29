@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.auth.services.impl.AuthenticationServiceImpl" immediate="true" activate="activate" modified="activate">
+  <service>
+    <provide interface="com.eaton.platform.integration.auth.services.AuthenticationService"/>
+  </service>
+  <reference name="authenticationServiceConfiguration" interface="com.eaton.platform.integration.auth.services.AuthenticationServiceConfiguration" field="authenticationServiceConfiguration"/>
+  <reference name="httpFactory" interface="org.apache.http.osgi.services.HttpClientBuilderFactory" field="httpFactory"/>
+  <reference name="jwtVerificationService" interface="com.eaton.platform.integration.auth.services.JwtVerificationService" field="jwtVerificationService"/>
+  <reference name="profileService" interface="com.eaton.platform.integration.auth.services.UserProfileService" field="profileService"/>
+  <implementation class="com.eaton.platform.integration.auth.services.impl.AuthenticationServiceImpl"/>
+</scr:component>

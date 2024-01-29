@@ -1,0 +1,30 @@
+//-----------------------------------
+// @font-face Definitions
+//-----------------------------------
+
+@font-face {
+  font-family: 'Eaton';
+  src: url('../../clientlib-all/resources/fonts/EatonRegular.woff2') format('woff2');
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'EatonMedium';
+  src: url('../../clientlib-all/resources/fonts/EatonMedium.woff2') format('woff2');
+  font-display: optional;
+}
+
+@font-face {
+  font-family: 'EatonBold';
+  src: url('../../clientlib-all/resources/fonts/EatonBold.woff2') format('woff2');
+  font-display: optional;
+}
+
+
+// NOTE: This Custom version of 'Arial' font was disabled
+// due to issues in Google Chrome not rendering "Bold" fonts.
+//--------------
+// @font-face {
+//   font-family: 'Arial';
+//   src: local('Arial'), url('fonts/Arial.woff') format('woff');
+// }

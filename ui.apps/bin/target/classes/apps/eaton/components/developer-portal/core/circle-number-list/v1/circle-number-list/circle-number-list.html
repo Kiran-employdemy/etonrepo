@@ -1,0 +1,16 @@
+<div data-sly-test="${wcmmode.edit}" class="alert alert-warning">Circle Number List: ${currentNode.name}</div>
+
+<sly data-sly-use.option="com.eaton.platform.core.models.CircleNumberList">
+    <div class="container">
+        <ol class="circle-number-list" data-sly-list.optionItem="${option.items}">
+            <li>
+                <div class="circle-number-list_title" data-sly-test.heading=${optionItem.heading}>
+                    ${heading @ context = 'html'}
+                </div>
+                <div data-sly-test.body=${optionItem.body}>
+                    ${body @ context = 'html'}
+                </div>
+            </li>
+        </ol>
+    </div>
+</sly>

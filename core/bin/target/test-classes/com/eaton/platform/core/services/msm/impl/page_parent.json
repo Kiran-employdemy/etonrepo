@@ -1,0 +1,53 @@
+{
+	"jcr:primaryType": "cq:Page",
+	"jcr:createdBy": "admin",
+	"jcr:created": "2023-07-20T12:58:26.660+02:00",
+	"jcr:content": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:mixinTypes": [
+			"cq:LiveRelationship",
+			"cq:PropertyLiveSyncCancelled",
+			"mix:versionable"
+		],
+		"jcr:createdBy": "admin",
+		"jcr:title": "eMobility",
+		"cq:propertyInheritanceCancelled": [
+			"cq:redirectTarget"
+		],
+		"cq:lastReplicationAction": "Activate",
+		"publication-date": "Fri May 25 2018 11:58:00 GMT-0500",
+		"jcr:versionHistory": "4d0a089b-04c6-4a45-97c4-8b84e6c59dbb",
+		"cq:template": "/apps/eaton/templates/eaton-redirect-template",
+		"cq:lastReplicatedBy": "c9943863",
+		"jcr:lastModifiedBy": "admin",
+		"priority": "0.0",
+		"cq:lastRolledout": "Mon Jun 05 2023 11:11:54 GMT-0400",
+		"jcr:predecessors": [
+			"28862c51-9d87-4dc2-995c-4c2ea659e42f"
+		],
+		"cq:redirectTarget": "/content/eaton/de/de-de/products/emobility",
+		"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+		"jcr:created": "Thu Jul 20 2023 12:58:26 GMT+0200",
+		"primary-sub-category-tag@TypeHint": "String[]",
+		"cq:lastReplicated": "Sat Apr 01 2023 08:12:49 GMT-0400",
+		"cq:lastModified": "Mon Jun 05 2023 11:11:54 GMT-0400",
+		"publication-date@TypeHint": "Date",
+		"view": "generic",
+		"meta-robot-tags": "index,follow",
+		"jcr:baseVersion": "28862c51-9d87-4dc2-995c-4c2ea659e42f",
+		"jcr:isCheckedOut": true,
+		"page-type": "sub-category",
+		"cq:tags": [
+			"eaton:eaton-brand/industry/vehicle"
+		],
+		"jcr:lastModified": "Fri Aug 24 2018 17:09:11 GMT-0400",
+		"jcr:uuid": "389c6be0-e614-42b8-a8df-a8ce1c789d81",
+		"sling:resourceType": "/apps/eaton/components/structure/eaton-folder-page-component",
+		"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+		"cq:allowedTemplates": "/conf/eaton/settings/wcm/templates/product-family-page",
+		"textIsRich": "true",
+		"cq:lastRolledoutBy": "e0677841",
+		"cq:lastModifiedBy": "e0677841",
+		"changefrequency": "always"
+	}
+}

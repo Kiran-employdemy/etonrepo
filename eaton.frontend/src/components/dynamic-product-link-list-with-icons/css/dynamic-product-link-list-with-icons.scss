@@ -1,0 +1,115 @@
+//-----------------------------------
+// Component How to Buy
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.dynamic-product-link-list {
+
+  background: $color__secondary-gray6;
+  margin: $spacing__md 0;
+  overflow: hidden;
+  padding-top: $spacing__md;
+
+  &__icon {
+    color: $color__accent-orange;
+    max-width: $spacing__md;
+    display: inline-block;
+
+    img {
+      width: $spacing__md;
+      height: $spacing__md;
+    }
+  }
+
+  &__text-wrapper {
+    width: calc(100% - 90px);
+    display: inline-block;
+    float: right;
+  }
+
+  &__element {
+    margin-bottom: $spacing__md / 2;
+  }
+
+
+  @include media-desktop-and-up {
+
+    padding-top: $spacing__md;
+
+    &__icon {
+      max-width: 70px;
+
+      img {
+        width: 70px;
+        height: 70px;
+      }
+
+    }
+
+    &__text-wrapper {
+      width: calc(100% - 100px);
+    }
+
+    &__element {
+      margin-bottom: $spacing__md;
+    }
+
+    .container {
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+
+      .col-md-3 {
+        flex: 0 0 24%;
+        padding: 0;
+      }
+
+      .col-md-9 {
+        flex: 0 0 75%;
+        padding: 0;
+
+        .col-md-6 {
+          flex: 0 0 49%;
+
+          &:nth-child(2n) {
+            padding-left: 60px;
+            padding-right: 0;
+          }
+
+          &:nth-child(2n+1) {
+            padding-left: 30px;
+          }
+        }
+
+        .row {
+          margin: 0;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+        }
+      }
+    }
+  }
+}
+
+
+//-----------------------------------
+// IE11 Adjustments
+//-----------------------------------
+/*! IE11 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .dynamic-product-link-list {
+    .container {
+      .col-md-9 {
+
+        .col-md-6 {
+          flex: 0 0 41%;
+        }
+      }
+
+    }
+  }
+}

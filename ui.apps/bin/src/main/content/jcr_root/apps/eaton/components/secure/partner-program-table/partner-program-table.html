@@ -1,0 +1,25 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Partner Program Table: ${currentNode.name}</div>
+    <div class="wcm-edit-mode partner-program-table"></div>
+</sly>
+
+<div class="table-flex">
+    <div class="container">
+        <div class="eaton-custom-table">
+            <h3 data-sly-test="${ properties.title }"
+                class="module-table__head b-eyebrow-large">${ properties.title }</h3>
+
+            <table class="table partner-program-table table-responsive table-bordered"
+                   data-resource="${ resource.path }">
+                <thead>
+                    <tr>
+                        <th>${'partnerProgramType' @ i18n}</th>
+                        <th>${'partnerProgramTierLevel' @ i18n}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

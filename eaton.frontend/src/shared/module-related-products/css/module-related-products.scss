@@ -1,0 +1,142 @@
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+.module-related-products {
+  position: relative;
+
+  &__wrapper {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding: 0 15px;
+  }
+
+  &__header {
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+
+  &__headline {
+    margin-bottom: 5px;
+    display: inline-block;
+  }
+
+  &__slides {
+    padding: 0;
+
+    [dir='rtl'] & {
+      direction: ltr;
+      text-align: right;
+    }
+
+    .slides {
+      position: relative;
+
+    }
+
+    a {
+      z-index: 10;
+    }
+  }
+
+  &__card {
+    background-color: var(--color__lunar-10);
+    border: 1px solid var(--color__lunar-10);
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 15px;
+  }
+
+  &__info {
+    padding: 0 26px;
+
+    @include media-tablet-and-up {
+      padding: 0 30px;
+    }
+
+    [dir='rtl'] & {
+      direction: rtl;
+    }
+
+  }
+
+  &__title {
+    padding-top: 30px;
+    margin-bottom: 10px;
+
+    [dir='rtl'] & {
+      padding-right: 0px;
+    }
+  }
+
+  &__arrows {
+    position: absolute;
+    top: 22%;
+    color: var(--color__iron-30);
+    display: none !important; // stylelint-disable-line declaration-no-important
+
+    .icon {
+      font-size: 37px;
+
+      [dir='rtl'] &::before {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  &__prev-arrow {
+    left: 42px;
+  }
+
+  &__next-arrow {
+    right: 42px;
+  }
+
+  .slick-active button {
+    background-color: var(--primary-brand-color);
+  }
+
+  &__new-product-headline {
+    display: inline-block;
+  }
+
+  &__view-all {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  &-read_more {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  &__new-launch-product {
+    border-bottom: 2px solid var(--color__lunar-10);
+    border-top: 2px solid var(--color__lunar-10);
+    padding-bottom: 5px;
+    padding-right: 15px;
+    padding-top: 20px;
+  }
+
+  //-----------------------------------
+  // > 1200px
+  //-----------------------------------
+  @include media-desktop-and-up {
+    &__wrapper {
+      padding: 0;
+    }
+  }
+
+
+  @include media-desktop-large {
+    &:hover &__arrows {
+      display: block !important; // stylelint-disable-line declaration-no-important
+    }
+  }
+}
+
+.new-product {
+  padding-top: 20px;
+}
+
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+  jcr:primaryType="sling:OsgiConfig"
+  arincComponentEndpoint="/arinc/components"
+  arincPackagesEndpoint="/arinc/packages"
+  backshellMetadataEndpoint="/backshell/metadata"
+  backshellPartbuildEndpoint="/backshell/partBuild"
+  webtoolsBaseEndpointRoot="https://eaton-product-configurator-eaton-com-services-dev.apps.prod.openshift.tcc.etn.com/eaton-utilities/v1/products"
+  maxConnections="100"
+  maxHostConnections="100"
+  webtoolsPassword="eaton"
+  webtoolsUsername="user"
+/>

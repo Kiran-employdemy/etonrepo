@@ -1,0 +1,366 @@
+{
+  "componentDefinitions": [
+    {
+      "componentId": 324,
+      "componentPosition": 1,
+      "relationComponents": [],
+      "partGroup": 0,
+      "showList": 1,
+      "componentTypeId": 38,
+      "componentDisplayName": "Gasket Option",
+      "partBuildPosition": 3,
+      "useValueForPartNumberBuild": false,
+      "optionItems": [
+        {
+          "valueId": 8233,
+          "value": "NG",
+          "valueDisplay": "Complete Assembly",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8234,
+          "value": "RFIG",
+          "valueDisplay": "RFI Gasket Only",
+          "groupValue": [],
+          "specialPrefix": "",
+          "partId": 0
+        }
+      ]
+    },
+    {
+      "componentId": 355,
+      "componentPosition": 2,
+      "relationComponents": [
+        324
+      ],
+      "partGroup": 0,
+      "showList": 1,
+      "componentTypeId": 51,
+      "componentDisplayName": "Entry Diameter (in inches)",
+      "partBuildPosition": 1,
+      "useValueForPartNumberBuild": true,
+      "optionItems": [
+        {
+          "valueId": 8235,
+          "value": "04",
+          "valueDisplay": "0.250",
+          "groupValue": [
+            "NG"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 8236,
+          "value": "06",
+          "valueDisplay": "0.375",
+          "groupValue": [
+            "NG"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 8237,
+          "value": "08",
+          "valueDisplay": "0.500",
+          "groupValue": [
+            "NG"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 8238,
+          "value": "10",
+          "valueDisplay": "0.625",
+          "groupValue": [
+            "NG"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 8239,
+          "value": "12",
+          "valueDisplay": "0.750",
+          "groupValue": [
+            "NG"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        }
+      ]
+    },
+    {
+      "componentId": 356,
+      "componentPosition": 3,
+      "relationComponents": [],
+      "partGroup": 0,
+      "showList": 1,
+      "componentTypeId": 52,
+      "componentDisplayName": "Sunband Option",
+      "partBuildPosition": 4,
+      "useValueForPartNumberBuild": true,
+      "optionItems": [
+        {
+          "valueId": 8240,
+          "value": "1",
+          "valueDisplay": "No Sunband",
+          "groupValue": [
+            "NG"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        },
+        {
+          "valueId": 8241,
+          "value": "2",
+          "valueDisplay": "Sunband Supplied Loose",
+          "groupValue": [
+            "NG"
+          ],
+          "specialPrefix": "",
+          "partId": 0
+        }
+      ]
+    },
+    {
+      "componentId": 357,
+      "componentPosition": 4,
+      "relationComponents": [],
+      "partGroup": 0,
+      "showList": 1,
+      "componentTypeId": 41,
+      "componentDisplayName": "Plating Code",
+      "partBuildPosition": 2,
+      "useValueForPartNumberBuild": true,
+      "optionItems": [
+        {
+          "valueId": 8242,
+          "value": "004",
+          "valueDisplay": "Cadmium Plate, Olive Drab, Per QQ-P-416 Type II, Class 3",
+          "groupValue": [
+            "NG"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 8243,
+          "value": "012",
+          "valueDisplay": "Electroless Nickel Per Mil-C-26074, Class 3 Or 4, Grade B",
+          "groupValue": [
+            "NG"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        },
+        {
+          "valueId": 8244,
+          "value": "034",
+          "valueDisplay": "Cadmium Plate, Olive Drab, Per Mil-C-85049, Over Electroless Nickel",
+          "groupValue": [
+            "NG"
+          ],
+          "specialPrefix": "-",
+          "partId": 0
+        }
+      ]
+    }
+  ],
+  "productRightHandMetadataDefinitions": [
+    {
+      "label": "A &#177.020 DIA ",
+      "componentId": 355,
+      "componentTypeId": 161,
+      "displayLevel": 1,
+      "isDimension": 1,
+      "metaDataValues": [
+        {
+          "dimensionValue": "04",
+          "value": "0.250"
+        },
+        {
+          "dimensionValue": "06",
+          "value": ".375"
+        },
+        {
+          "dimensionValue": "08",
+          "value": ".500"
+        },
+        {
+          "dimensionValue": "10",
+          "value": ".625"
+        },
+        {
+          "dimensionValue": "12",
+          "value": ".750"
+        }
+      ]
+    },
+    {
+      "label": "B &#177.031 DIA",
+      "componentId": 355,
+      "componentTypeId": 162,
+      "displayLevel": 1,
+      "isDimension": 1,
+      "metaDataValues": [
+        {
+          "dimensionValue": "04",
+          "value": ".375"
+        },
+        {
+          "dimensionValue": "06",
+          "value": ".500"
+        },
+        {
+          "dimensionValue": "08",
+          "value": ".625"
+        },
+        {
+          "dimensionValue": "10",
+          "value": ".750"
+        },
+        {
+          "dimensionValue": "12",
+          "value": ".875"
+        }
+      ]
+    },
+    {
+      "label": "C MAX. DIA",
+      "componentId": 355,
+      "componentTypeId": 163,
+      "displayLevel": 1,
+      "isDimension": 1,
+      "metaDataValues": [
+        {
+          "dimensionValue": "04",
+          "value": ".425"
+        },
+        {
+          "dimensionValue": "06",
+          "value": ".550"
+        },
+        {
+          "dimensionValue": "08",
+          "value": ".675"
+        },
+        {
+          "dimensionValue": "10",
+          "value": ".800"
+        },
+        {
+          "dimensionValue": "12",
+          "value": ".925"
+        }
+      ]
+    },
+    {
+      "label": "Plating Code",
+      "componentId": 357,
+      "componentTypeId": 41,
+      "displayLevel": 1,
+      "isDimension": 1,
+      "metaDataValues": [
+        {
+          "dimensionValue": "004",
+          "value": "004"
+        },
+        {
+          "dimensionValue": "012",
+          "value": "012"
+        },
+        {
+          "dimensionValue": "034",
+          "value": "034"
+        }
+      ]
+    },
+    {
+      "label": "Finish",
+      "componentId": 357,
+      "componentTypeId": 4,
+      "displayLevel": 1,
+      "isDimension": 1,
+      "metaDataValues": [
+        {
+          "dimensionValue": "004",
+          "value": "Cadmium Plate, Olive Drab, Per QQ-P-416 Type II, Class 3"
+        },
+        {
+          "dimensionValue": "012",
+          "value": "Electroless Nickel Per Mil-C-26074, Class 3 Or 4, Grade B"
+        },
+        {
+          "dimensionValue": "034",
+          "value": "Cadmium Plate, Olive Drab, Per Mil-C-85049, Over Electroless Nickel"
+        }
+      ]
+    }
+  ],
+  "productLeftHandMetadataDefinitions": [
+    {
+      "componentTypeId": 20,
+      "label": "Entry Size",
+      "componentId": 355,
+      "suffixDescription": "",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 0,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": true,
+      "displayLevel": 1
+    },
+    {
+      "componentTypeId": 73,
+      "label": "Plating Value",
+      "componentId": 357,
+      "suffixDescription": "",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 0,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": false,
+      "displayLevel": 1
+    },
+    {
+      "componentTypeId": 38,
+      "label": "Gasket Option",
+      "componentId": 324,
+      "suffixDescription": "",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 1,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": true,
+      "displayLevel": 1
+    },
+    {
+      "componentTypeId": 52,
+      "label": "Sunband Option",
+      "componentId": 356,
+      "suffixDescription": "",
+      "prefixDescription": "",
+      "useDisplayTextForMetadata": 1,
+      "useValueAndTextForMetaData": 0,
+      "useForPartDesc": true,
+      "displayLevel": 1
+    }
+  ],
+  "partNotes": [
+    {
+      "messageCode": 1,
+      "message": "Assembly identified per MIL-STD-130."
+    },
+    {
+      "messageCode": 2,
+      "message": "Machined outlet configuration may be supplied in lieu of cast outlet at manufacturers option."
+    },
+    {
+      "messageCode": 3,
+      "message": "Mates To: AMP, AM, AMD, AD, ADS, AA, and Arinc Series Connectors"
+    }
+  ],
+  "errorConditions": []
+}

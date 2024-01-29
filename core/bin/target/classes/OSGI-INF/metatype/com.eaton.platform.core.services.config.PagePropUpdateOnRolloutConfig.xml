@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.PagePropUpdateOnRolloutConfig">
+  <OCD id="com.eaton.platform.core.services.config.PagePropUpdateOnRolloutConfig" name="RolloutPagePropertiesLiveActionFactory" description="">
+    <AD id="ROLLOUT.PAGE.PROPERTIES.LIST" type="String" cardinality="2147483647" name="Rollout Page Properties" description="List of page properties to be updated on rollout :: Use &lt;Name to be displayed to authors&gt;|&lt;name of the page-property used&gt;" default="Tags|cq:tags,Hide-in-navigation|hideInNav,On-Time|onTime,Off-Time|offTime,Redirect|cq:redirectTarget,Design|cq:designPath,Alias|sling:alias,Cloud-Configuration|cq:conf,Allowed-Templates|cq:allowedTemplates,Authentication-Required|cq:authenticationRequired,Login-Path|cq:loginPath,Page-Type|page-type,Publication-Date|publication-date,Teaser-Image-Path|teaser-image-path,Overlay-Path|overlay-path,Page-Change-Frequency|changefrequency,Priority|priority,Meta-Robot-Tags|meta-robot-tags,View|view,Percolate-Content-Id|percolate-content-id,Form-Routing|form_routing_tag/cq:tags,Pim-Page-Path|pimPagePath,Product-Selector-PIMs|pimPagePaths,Primary-Sub-Category-Tag|primary-sub-category-tag,Primary-Sub-Category|primarySubCategory,Social-Media|socialMedia,Variant-Path|variantPath,Context-Hub-Path|cq:contextHubPath,Context-Hub-Segments-Path|cq:contextHubSegmentsPath,Target-Ambits|cq:target-ambits,Closed-User-Groups|closedUserGroup,Permissions|permissions"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.impl.CustomRolloutConfigImpl">
+    <Object ocdref="com.eaton.platform.core.services.config.PagePropUpdateOnRolloutConfig"/>
+  </Designate>
+</metatype:MetaData>

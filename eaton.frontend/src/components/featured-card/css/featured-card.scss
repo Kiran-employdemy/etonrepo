@@ -1,0 +1,10 @@
+//-----------------------------------
+// Featured Card
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+// Import SubViews
+@import "views/view-card";
+@import "views/view-single-feature";

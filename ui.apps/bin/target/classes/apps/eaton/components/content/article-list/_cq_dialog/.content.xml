@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" 
+xmlns:coral="http://www.adobe.com/coral/ns/coral/1.0"
+xmlns:granite="http://www.adobe.com/jcr/granite/1.0" 
+xmlns:cq="http://www.day.com/jcr/cq/1.0" 
+xmlns:jcr="http://www.jcp.org/jcr/1.0" 
+xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Article List"
+    categories="[cq.authoring.dialog]"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly"
+    extraClientlibs="[cq.authoring.dialog,cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties,project.configurations.configconsole]"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <articlelist
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Article List Component Properties"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        granite:class="article-list-box"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <view
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                granite:class="cq-dialog-dropdown-showhide"
+                                granite:id="feature-drop"
+                                fieldDescription="This field stores the value for List view."
+                                fieldLabel="View"
+                                name="./view"
+                                required="true">
+
+                                <items jcr:primaryType="nt:unstructured">
+                                    <feature
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Feature"
+                                        value="feature"/>
+                                    <no-feature
+                                        jcr:primaryType="nt:unstructured"
+                                        text="No Feature"
+                                        value="no-feature"/>
+                                </items>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-dialog-dropdown-showhide-target=".image-hide-show"/>
+                            </view>
+                            <cardsHeader
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="This field stores the value for list type for article list"
+                                fieldLabel=" Header"
+                                name="./cardsHeader"/>
+                            <cardsDescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                fieldDescription="This field stores the value of description of article list"
+                                fieldLabel="Description"
+                                name="./cardsDescription"/>
+                            <listType
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                granite:class="cq-dialog-dropdown-showhide"
+                                fieldDescription="This field stores the value for list type for article list. There are four options: Child page, Tags, Fixed List, and Manual."
+                                fieldLabel="List Type"
+                                name="./listType"
+                                granite:id="manual-drop"
+                                required="true">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-dialog-dropdown-showhide-target=".list-type-hide-show"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <child-pages
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Child Page"
+                                        value="child-pages"/>
+                                    <tags
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Tags"
+                                        value="tags"/>
+                                    <fixed-list
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Fixed List"
+                                        value="fixed-list"/>
+                                    <manual-list
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Manual List"
+                                        value="manual-list"/>
+                                </items>
+                            </listType>
+                            <parentPage
+                                granite:class="list-type-hide-show"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                fieldDescription="This field stores the value of parent page path. This field is applicable when List Type selected is “Child Page”."
+                                fieldLabel="Parent Page"
+                                name="./parentPage"
+                                required="true">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="child-pages"/>
+                            </parentPage>
+                            <tags
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                granite:class="list-type-hide-show"
+                                fieldDescription="This field stores the value of tags field. This field is applicable when List Type selected is “Tags”."
+                                fieldLabel="Tags"
+                                name="./tags"
+                                multiple="true"
+                                required="true">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="tags"/>
+                            </tags>
+                            <tagsType
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                granite:class="list-type-hide-show"
+                                fieldDescription="This field contains “Any” or “All”. This field is applicable when List Type selected is “Tags”."
+                                fieldLabel="Tags Type"
+                                name="./tagsType"
+                                required="true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <any
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Any"
+                                        value="any"/>
+                                    <all
+                                        jcr:primaryType="nt:unstructured"
+                                        text="All"
+                                        value="all"/>
+                                </items>
+                                 <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="tags"/>
+                            </tagsType>
+                            <openNewWindow
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                granite:class="list-type-hide-show"
+                                fieldDescription="This field indicates if the url would open in new window or not. This is applicable for list type is child page and Tags"
+                                name="./openNewWindow"
+                                text="Open in New Window (Parent, Tags)"
+                                uncheckedValue="{Boolean}false"
+                                defaultChecked="{Boolean}flase"
+                                value="{Boolean}true">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="child-pages,tags"/>
+                            </openNewWindow>
+
+                            <fixedLinks
+                                granite:class="list-type-hide-show"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldDescription="This field stores the various attributes of fixed link object. This field is applicable when List Type selected is “Fixed”"
+                                fieldLabel="Fixed Links">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="fixed-list"/>
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/fieldset"
+                                    name="./fixedLinks">
+                                    <layout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <linkPath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                                    fieldDescription="This field stores the path for Article page. This field is applicable when List Type selected is “Fixed”"
+                                                    fieldLabel=" Link Path *"
+                                                    name="./fixedLinkPath"
+                                                    required="true"/>
+                                                <newWindowFixed
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldDescription="This field stores the value for newWindow field. This field is applicable when List Type selected is “Fixed”"
+                                                    name="./fixedLinkOpenNewWindow"
+                                                    text=" Open Link in New Window"
+                                                    value="true"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </fixedLinks>
+                            <imageManualLinkList
+                                granite:class=" image-hide-show list-type-hide-show feature-list"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldDescription="This field stores the various attributes of manual link object. This field is applicable when List Type selected is “Manual” &amp; Feature"
+                                fieldLabel=" Feature Manual Link List">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="feature,manual-list"/>
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./imageManualLinkList">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <manualLinkImage
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                    allowUpload="{Boolean}false"
+                                                    autoStart="{Boolean}false"
+                                                    class="cq-droptarget"
+                                                    fieldDescription="This field stores the path for image of the page. This field is applicable when List Type selected is “Manual” and view as feature"
+                                                    fieldLabel="Image Path"
+                                                    fileNameParameter="./fileName"
+                                                    fileReferenceParameter="./manualLinkImage"
+                                                    mimeTypes="[image]"
+                                                    multiple="{Boolean}false"
+                                                    name="./imageName"
+                                                    title="Upload Image Asset"
+                                                    uploadUrl="${suffix.path}"
+                                                    useHTML5="{Boolean}true"/>
+                                                <manualLinkImageAltText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="List image Alt text."
+                                                    fieldLabel=" Image Alt Text"
+                                                    name="./manualLinkImageAltText"/>
+                                                <manualLinkEyebrow
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="This field stores the path for eybrow of the page. This field is applicable when List Type selected is “Manual” &amp; feature"
+                                                    fieldLabel="Eyebrow *"
+                                                    name="./manualLinkEyebrow"
+                                                    required="true"/>
+                                                <manualLinkTitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="This field stores the path for Link Title of the page. This field is applicable when List Type selected is “Manual” &amp; feature"
+                                                    fieldLabel="Link Title *"
+                                                    name="./manualLinkTitle"
+                                                    required="true"/>
+                                                <manualLinkPath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                                    fieldDescription="This field stores the path for Page path of the page. This field is applicable when List Type selected is “Manual” &amp; feature"
+                                                    fieldLabel="Link Path *"
+                                                    name="./manualLinkPath"
+                                                    required="true"/>
+                                                <manualLinkOpenNewWindow
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldDescription="This field indicates if the url would open in new window or not. Manual &amp; feature"
+                                                    name="./manualLinkOpenNewWindow"
+                                                    text="Open in New Window"
+                                                    value="true"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </imageManualLinkList>
+                            <noImageManualLinkList
+                                granite:class="image-hide-show list-type-hide-show no-feature-list" 
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldDescription="This field stores the various attributes of manual link object. This field is applicable when List Type selected is “Manual” &amp; no feature"
+                                fieldLabel="No Feature Manual Link List">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./noImageManualLinkList">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <manualLinkEyebrow
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="This field stores the path for eybrow of the page. This field is applicable when List Type selected is “Manual” &amp; feature"
+                                                    fieldLabel=" Eyebrow *"
+                                                    name="./manualLinkEyebrow"
+                                                    required="true"/>
+                                                <manualLinkTitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="This field stores the path for Link Title of the page. This field is applicable when List Type selected is “Manual” &amp; feature"
+                                                    fieldLabel="Link Title *"
+                                                    name="./manualLinkTitle"
+                                                    required="true"/>
+                                                <manualLinkPath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                                    fieldDescription="This field stores the path for Page path of the page. This field is applicable when List Type selected is “Manual” &amp; feature"
+                                                    fieldLabel=" Link Path *"
+                                                    name="./manualLinkPath"
+                                                    required="true"/>
+                                                <manualLinkOpenNewWindow
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldDescription="This field indicates if the url would open in new window or not. Manual &amp; feature"
+                                                    name="./manualLinkOpenNewWindow"
+                                                    text="Open in New Window"
+                                                    value="true"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="no-feature,manual-list"/>
+                            </noImageManualLinkList>
+                            <sortBy
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                granite:class="list-type-hide-show"
+                                fieldDescription="This field stores the value of sort field. There are four options: Publication Date, Title, Created Date, Last Modified and Template. This field is applicable when List Type selected is “Child Page” or “Tags”"
+                                fieldLabel="Sort By"
+                                name="./sortBy"
+                                required="true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <publication-date
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Publication Date"
+                                        value="pub-date"/>
+                                    <title
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Title"
+                                        value="title"/>
+                                    <created-date
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Created Date"
+                                        value="created-date"/>
+                                    <last-modified
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Last Modified "
+                                        value="last-modified-date"/>
+                                    <template
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Template"
+                                        value="template"/>
+                                </items>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                   showhidetargetvalue="child-pages,tags"/>
+                            </sortBy>
+                            <maxLimitToDisplay
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                value="6"
+                                min="0"
+                                max="100"
+                                refreshOnChange="true"
+                                granite:class="list-type-hide-show"
+                                fieldDescription="This field stores the value for no of results field. This field is applicable when List Type selected is “Child Page” or “Tags”"
+                                fieldLabel="Maximum number of links to Display"
+                                name="./maxLimitToDisplay">
+                                 <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                   showhidetargetvalue="tags,child-pages"/>
+                            </maxLimitToDisplay>  
+                            <desktopTrans
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Desktop Image Transformation"
+                                name="./desktopTrans"
+                                required="true">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/ecom/content/imageTransform"
+                                    addNone="{Boolean}true"
+                                    selector="desktop"/>
+                            </desktopTrans>
+                            <mobileTrans
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Mobile Image Transformation"
+                                name="./mobileTrans"
+                                required="true">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/ecom/content/imageTransform"
+                                    addNone="{Boolean}true"
+                                    selector="mobile"/>
+                            </mobileTrans>
+                        </items>
+                    </column>
+                </items>
+            </articlelist>
+        </items>
+    </content>
+</jcr:root>
+

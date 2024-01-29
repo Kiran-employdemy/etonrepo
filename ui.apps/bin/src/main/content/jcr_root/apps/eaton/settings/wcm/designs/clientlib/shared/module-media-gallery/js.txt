@@ -1,0 +1,4 @@
+#base=js
+
+module-media-gallery.js
+module-media-gallery-zoom.js

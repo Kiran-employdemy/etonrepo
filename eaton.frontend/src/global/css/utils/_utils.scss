@@ -1,0 +1,360 @@
+// Layout Utils
+//--------------
+.u-is-fixed {
+  position: fixed;
+}
+
+.u-overlay-mask {
+  background-color: var(--color__white);
+  opacity: .8;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+}
+
+.u-absolute-fill {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.u-is-center-aligned {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.u-no-margin {
+  margin: 0;
+}
+
+.u-no-padding {
+  padding: 0;
+}
+
+.u-float-left {
+  float: left;
+}
+
+.u-float-right {
+  float: right;
+}
+
+.u-clearfix {
+  @include clearfix();
+}
+
+.u-list-inline {
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+// Text Utils
+//--------------
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-left {
+  text-align: left;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.u-text-uppercase {
+  text-transform: uppercase;
+}
+
+.u-visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+
+// Visibility
+//--------------
+.u-hide {
+  display: none;
+}
+
+.u-show {
+  display: block;
+}
+
+.u-inline {
+  display: inline;
+}
+
+.u-inline-block {
+  display: inline-block;
+}
+
+.u-hidden {
+  visibility: hidden;
+}
+
+.u-visible {
+  visibility: visible;
+}
+
+// Visible only from 0 to 991px | Hidden if >992px
+.u-visible-mobile {
+  display: block;
+
+  @include media-desktop-and-up {
+    display: none;
+  }
+}
+
+// Visible > 992px
+.u-visible-desktop {
+  display: none;
+
+  @include media-desktop-and-up {
+    display: block;
+  }
+}
+
+// Error Panes 
+// ---------------
+
+.u-error {
+  background: var(--color__berry-40);
+  color: var(--color__white);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 15px 20px;
+  position: relative;
+  margin: rem($spacing__sm) 0;
+  display: none;
+
+  &-close {
+    display: inline;
+    position: absolute;
+    right: 15px;
+  }
+
+  /* stylelint-disable-next-line scss/selector-no-redundant-nesting-selector */
+  & .error-copy {
+    margin-left: 10px;
+    vertical-align: super;
+  }
+
+  /* stylelint-disable-next-line scss/selector-no-redundant-nesting-selector */
+  & .icon-close {
+    font-size: 15px;
+    vertical-align: middle;
+  }
+}
+
+.u-success {
+  background: var(--color__ivy-40);
+  color: var(--color__white);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 15px 20px;
+  position: relative;
+  margin: rem($spacing__sm) 0;
+  display: none;
+
+  &-close {
+    display: inline;
+    position: absolute;
+    right: 15px;
+  }
+
+  /* stylelint-disable-next-line scss/selector-no-redundant-nesting-selector */
+  & .success-copy {
+    margin-left: 10px;
+    vertical-align: super;
+  }
+
+  /* stylelint-disable-next-line scss/selector-no-redundant-nesting-selector */
+  & .icon-close {
+    font-size: 15px;
+    vertical-align: middle;
+  }
+}
+
+// Checkbox
+// ---------------
+
+/*
+* Usage
+*   <div class='check-box-wrapper'>
+      <label class='eaton-checkbox-custom'> LABEL
+        <input type='checkbox' checked='checked'>
+        <span class='checkmark'></span>
+      </label>
+    /div>
+*/
+/* stylelint-disable property-no-empty-source */
+.check-box-wrapper {
+  position: inherit;
+
+  .eaton-checkbox-custom {
+    font-family: var(--secondary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: -1rem;
+    cursor: pointer;
+    /* stylelint-disable property-no-vendor-prefix */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    /* stylelint-enable property-no-vendor-prefix */
+    user-select: none;
+  }
+
+  /* Hide the browser's default checkbox */
+  .eaton-checkbox-custom input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: var(--color__white);
+    border: 1px solid var(--link-brand-color, --primary-brand-color);
+  }
+
+  /* When the checkbox is checked, add a blue background */
+  .eaton-checkbox-custom input:checked~.checkmark {
+    background: var(--primary-brand-color);
+    border: 0;
+  }
+
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the checkmark when checked */
+  .eaton-checkbox-custom input:checked~.checkmark::after {
+    display: block;
+  }
+
+  /* Style the checkmark/indicator */
+  .eaton-checkbox-custom .checkmark::after {
+    top: 50%;
+    width: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--color__white);
+    content: '\EA2F';
+    font-family: "eaton-glyphicon";
+    font-size: 1rem;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    ;
+  }
+}
+
+// Radio button
+// ---------------
+
+/*
+* Usage
+*  <div class='radio-wrapper' id='x'>
+*     <input type='radio' name='x' id='y'>
+*     <label for='y'> LABEL </label>
+*  <div>
+*/
+
+.radio-wrapper {
+
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+  }
+
+  [type="radio"]:checked+label,
+  [type="radio"]:not(:checked)+label {
+    position: relative;
+    padding-left: 28px;
+    cursor: pointer;
+    line-height: 20px;
+    display: inline-block;
+  }
+
+  [type="radio"]:checked+label::before,
+  [type="radio"]:not(:checked)+label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 1px solid var(--primary-brand-color);
+    border-radius: 100%;
+    background: var(--color__white);
+  }
+
+  [type="radio"]:checked+label::after,
+  [type="radio"]:not(:checked)+label::after {
+    content: '';
+    width: 1.2rem;
+    height: 1.2rem;
+    background: var(--primary-brand-color);
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    border-radius: 100%;
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+
+  [type="radio"]:not(:checked)+label::after {
+    opacity: 0;
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  [type="radio"]:checked+label::after {
+    opacity: 1;
+    /* stylelint-disable-next-line property-no-vendor-prefix */
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+/* stylelint-enable property-no-empty-source */

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          cq:showOnCreate="{Boolean}false"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Secure"
+          sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+    <items jcr:primaryType="nt:unstructured">
+        <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/include"
+                    path="/mnt/overlay/wcm/foundation/components/basicpage/v1/basicpage/tabs/advanced/items/column/items/section1/items/alias">
+                <section
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                    <items jcr:primaryType="nt:unstructured">
+                        <secure-page
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                                name="./securePage"
+                                text="Make this page secure"
+                                value="true"/>
+                        <account-type
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                cq-msm-lockable="accountType"
+                                fieldLabel="Account Type"
+                                multiple="{Boolean}true"
+                                rootPath="/eaton-secure/accounttype"
+                                name="./accountType">
+                            <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="accountType"/>
+                        </account-type>
+                        <product-category
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                cq-msm-lockable="productCategories"
+                                fieldLabel="Product Categories"
+                                multiple="{Boolean}true"
+                                rootPath="/eaton-secure/product-category"
+                                name="./productCategories">
+                            <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="productCategories"/>
+                        </product-category>
+                        <application-access
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                cq-msm-lockable="applicationAccess"
+                                fieldLabel="Application Access"
+                                multiple="{Boolean}true"
+                                rootPath="/eaton-secure/application-access"
+                                name="./applicationAccess">
+                            <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="applicationAccess"/>
+                        </application-access>
+                        <country
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                cq-msm-lockable="countries"
+                                fieldLabel="Countries"
+                                multiple="{Boolean}true"
+                                rootPath="/eaton/country"
+                                name="./countries">
+                            <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="countries"/>
+                        </country>
+						<excludeCountries
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                            cq-msm-lockable="excludeCountries"
+                            name="./excludeCountries"
+                            text="Exclude Eaton embargoed and sanctioned countries"
+                            uncheckedValue="false"
+                            value="true"/>
+                        <partnerProgramAndTierLevel
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                cq-msm-lockable="partnerProgramAndTierLevel"
+                                fieldLabel="Partner Program and Tier level type"
+                                multiple="{Boolean}true"
+                                name="./partnerProgramAndTierLevel"
+                                rootPath="/eaton-secure/partner-programme-type">
+                            <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="partnerProgramAndTierLevel"/>
+                        </partnerProgramAndTierLevel>
+                        <okta-groups
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                                cq-msm-lockable="oktaGroups"
+                                fieldLabel="Okta Groups"
+                                fieldDescription="Tag this field to limit access to those tagged okta groups"
+                                multiple="{Boolean}true"
+                                rootPath="/eaton-secure/okta-group"
+                                name="./oktaGroups">
+                            <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-msm-lockable="oktaGroups"/>
+                        </okta-groups>
+                    </items>
+                </section>
+            </items>
+        </column>
+    </items>
+    <granite:rendercondition
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="eaton/authoring/hidetab"
+            allowedTemplates="[/conf/eaton/settings/wcm/templates/category-page,/conf/eaton/settings/wcm/templates/category-with-cards,/conf/eaton/settings/wcm/templates/product-family-page,/conf/eaton/settings/wcm/templates/secure-generic-page,/conf/eaton/settings/wcm/templates/secure,/conf/eaton/settings/wcm/templates/myeaton-l1-dashboard,/conf/eaton/settings/wcm/templates/eaton-ccms-dita-page,/conf/eaton/settings/wcm/templates/eaton--ccms-landing-page,/conf/eaton_ecommerce/settings/wcm/templates/ecommerce-general-template,/conf/developer_portal/settings/wcm/templates/developer-portal,/conf/eaton/settings/wcm/templates/software-delivery]"/>
+</jcr:root>

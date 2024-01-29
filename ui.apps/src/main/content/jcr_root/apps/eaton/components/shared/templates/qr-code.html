@@ -1,0 +1,202 @@
+<template data-sly-template.data="${ @ data }">
+    <sly data-sly-use.qrCodeAuthorableDialog="com.eaton.platform.integration.qr.models.QRCodeManualFlowModel"></sly>
+    <sly data-sly-test="${qrCodeAuthorableDialog.captchaRequiredCheckbox}" >
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </sly>
+        <sly data-sly-test="${data.qrErrorCode}">
+		 <div class="container" id="serial__verified">
+        <div class="grey__bg-area">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="eaton-qr-authenticated hide automatic_success_message">
+                            <div> <span class="eaton-qr-authenticated__label eaton-qr-authenticated__success">${ qrCodeAuthorableDialog.serialNumberVerifiedText } : ${data.qrSerialNumber}</span></div>
+                            </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+        </sly>
+		<div class="container">
+		<div class="grey__bg-area">
+        <div class="hide" id="correctAuthentication">
+            <div class="row">
+                            <div class="col-md-12">
+                                <div class="eaton-qr-authenticated serial_number_verified">
+                                    <div><span class="eaton-qr-authenticated__label">${ qrCodeAuthorableDialog.serialNumberVerifiedText } :</span><span id="serial_verified_number"></span></div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </div>
+					</div>
+                </div>
+				<div class="container">
+				<div class="grey__bg-area">
+                    <div class="hide" id="correctAuthCodeMessage">
+                        <div class="row">
+							<div class="col-md-12">
+								<div class="eaton-qr-authenticated">
+									<div><span class="eaton-qr-authenticated__success"><span class="eaton-qr-authenticated__label">${ qrCodeAuthorableDialog.authenticatedText }</span> <span id="serial_auth_verified"></span><sly data-sly-test="${data.qrErrorCode}">${data.qrSerialNumber}</sly></span><img src="${qrCodeAuthorableDialog.checkIconQrCodePath}" alt=""><br>${ qrCodeAuthorableDialog.authCodeVerifiedText }</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				</div>
+
+    <sly data-sly-test="${data.isQrCodeDisplay}" >
+         <div class="container">
+        <div class="row">
+            <!--/* M-45: Table */-->
+            <div class="col-xs-12">
+                <div class="panel-group secondary-content-accordion authenticate__accordian"
+                     role="tablist" aria-multiselectable="true" data-captcha-required="${qrCodeAuthorableDialog.captchaRequiredCheckbox}" data-serial-auth-flag="${data.serialAuthFlagPresent}" data-qr-validation-flag="${data.qrValidationFlag}">
+					
+                    <div class="panel secondary-content-accordion__panel sku-resource-print">
+                        
+                            <div class="panel-heading secondary-content-accordion__header" role="tab"
+                                 id="authenticate">
+                                <div href="#collapse-authenticate" aria-expanded="true"
+                                   aria-controls="collapse-authenticate"
+                                   class="secondary-content-accordion__header--title"
+                                   data-toggle="collapse" data-parent="secondary-content-accordion">
+                                    <i class="secondary-content-accordion__icons icon icon-sign-plus"></i>
+                                    <h2 class="secondary-content-accordion__header--title">
+                                            ${ qrCodeAuthorableDialog.authenticateProductText }
+                                    </h2>
+                                </div>
+    
+                            </div>
+                        </div>
+                        <div id="collapse-authenticate" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="${data.resourceGroupName}" >
+                            <div class="secondary-content-accordion__body grey__bg-area">    
+                                <div class="container qr__authentication">
+                                    <div class="row">
+                                        <div class="col-md-6 col-xs-12 authenticate">
+                                            <div class="authentication__code" id="authenticateflag">
+                                                <div class="authentication__code-label--qr">
+                                                        ${ qrCodeAuthorableDialog.enterSerialNumberText }
+                                                </div>
+                                                <div class="authentication__code-input--qr">
+                                                    <input type="text" name="authentication_code" id="authentication_code" placeholder="${ qrCodeAuthorableDialog.serialNumberPlaceholder }" maxlength="17">
+                                                    <span class="authentication__code-error hide" id="illegalSpecialChar">
+                                                            ${ qrCodeAuthorableDialog.specialCharacterSerialError }
+                                                    </span>
+                                                    <span class="authentication__code-error hide" id="invalidLength">
+                                                            ${ qrCodeAuthorableDialog.invalidSerialLength }
+                                                    </span>
+                                                    <span class="authentication__code-error hide" id="invalidSerialErrorMsg">
+                                                            ${ qrCodeAuthorableDialog.invalidSerialErrorMessage } <a href="javascript:reportIssueFunction()">${ qrCodeAuthorableDialog.reportIssueText }</a> ${ qrCodeAuthorableDialog.furtherAssistenceText }
+                                                    </span>
+    
+                                                        <span class="authentication__code-error hide" id="SerialCatalogMismatch">
+                                                            ${ qrCodeAuthorableDialog.serialCatalogMismatchErrorMessage }
+                                                         </span> 
+                                                     <span class="authentication__code-error hide" id="SerialCatalogMismatchMessage">
+                                                             ${ qrCodeAuthorableDialog.clickText } <a href="javascript:void(0);" id="serialNumCatalogMatch">${ qrCodeAuthorableDialog.hereText }</a> ${ qrCodeAuthorableDialog.serialCatalogMismatchClickHereMessage }
+                                                         </span>  
+    
+                                 <span class="authentication__code-error hide" id="suspectSerialMessage">
+                                                       ${ qrCodeAuthorableDialog.suspectSerialErrorMessage } <a href="javascript:reportIssueFunction()">${ qrCodeAuthorableDialog.reportIssueText }</a> ${ qrCodeAuthorableDialog.furtherAssistenceText }.
+                                                    </span>
+    
+                                                </div>
+    
+                                                <div class="authentication__code-btn">
+													<a role="button" data-toggle="collapse" data-parent="secondary-content-accordion" href="#collapse-authenticate" aria-expanded="true" aria-controls="collapse-authenticate"></a>
+                                                    <button type="button" id="serialNumberSubmitButton" class="feature-block__cta b-button b-button__primary b-button__primary--light" role="button" onclick="serialNumberauth()"> ${ qrCodeAuthorableDialog.serialNumberSubmitButtonText }</button>
+    
+                                                </div>
+    
+                                            </div>
+                                            <div class="hide" id="main__authcode">
+                                            <div class="authenticate__serial-no">
+                                                <b>${ qrCodeAuthorableDialog.serialNumberText }</b><br>
+												<sly data-sly-test="${data.qrValidationFlag}">
+													<span id="qr_serial_number">${data.qrSerialNumber}</span>
+                                                </sly>
+                                                <span id="serial__num" class="serial__number"></span>
+                                                <a href="javascript:void(0);" class="authenticate__reset" id="resetSerialNumber" onclick="return false;">${ qrCodeAuthorableDialog.resetButttonText }</a>
+    
+                                            </div>
+    
+                                            <div class="authentication__code" id="authentication_code_check">
+                                                <div class="authentication__code-label">
+                                                    ${ qrCodeAuthorableDialog.authCodeText }
+                                                </div>
+                                                <div class="authentication__code-input">
+                                                    <input type="text" name="authCodeText" id="authCodeText" maxlength=6/> 
+													<span class="authentication__code-error hide" id="other_issue">
+                                                        ${ qrCodeAuthorableDialog.suspectAuthCodeErrorMessage } <a href="javascript:reportIssueFunction()">${ qrCodeAuthorableDialog.reportIssueText }</a> ${ qrCodeAuthorableDialog.furtherAssistenceText } 
+                                                    </span>  
+                                                    <span class="authentication__code-error hide" id="authentication_number_wrong">
+                                                         ${ qrCodeAuthorableDialog.authCodeMismatchErrorMessage } <a href="javascript:reportIssueFunction()">${ qrCodeAuthorableDialog.reportIssueText }</a> ${ qrCodeAuthorableDialog.furtherAssistenceText } 
+                                                    </span> 
+                                                    <span class="authentication__code-error hide" id="serial_number_wrong">
+                                                         ${ qrCodeAuthorableDialog.authCodeWrongErrorMessage } <a href="javascript:reportIssueFunction()">${ qrCodeAuthorableDialog.reportIssueText }</a> ${ qrCodeAuthorableDialog.furtherAssistenceText } 
+                                                    </span>
+                                                    <span class="authentication__code-error hide" id="auth_blank">
+                                                         ${ qrCodeAuthorableDialog.blankAuthError } <a href="javascript:reportIssueFunction()">${ qrCodeAuthorableDialog.reportIssueText }</a> ${ qrCodeAuthorableDialog.furtherAssistenceText } 
+                                                    </span>
+                                                </div>
+                                                <sly data-sly-test="${qrCodeAuthorableDialog.captchaRequiredCheckbox}" >
+                                                <div class="g-recaptcha show__captcha" data-sitekey=${qrCodeAuthorableDialog.reCaptchaSiteKey}></div>
+                                                </sly>
+                                                <span class="authentication__code-error hide" id="recaptcha_error"> ${ qrCodeAuthorableDialog.reCaptchaError }</span>           
+                                                <div class="authentication__code-btn">
+                                                    <button id="authCodeCheck" class="feature-block__cta b-button b-button__primary b-button__primary--light" role="button">${ qrCodeAuthorableDialog.authenticateButtonText }</button>
+                                                </div>       
+                                                <a href="javascript:void(0);" class="report-cta" id="report-issue" onclick="reportIssueFunction()">${ qrCodeAuthorableDialog.reportIssueCtaText }</a>
+                                            </div>
+                                            </div>
+                                            </div>
+
+                                            <form method="javascript:void(0);" id="form-id">
+                                    <div class="col-md-6 col-xs-12 report-issue hide" id="report-form">
+									<a href="javascript:void(0);" class="report-issue--close">x</a>
+                                        <div class="report-issue__title">
+                                            ${ qrCodeAuthorableDialog.reportIssueTitletext }
+                                        </div>
+                                         <div class="report-issue__form">
+                                            <div class="report-issue__form--group">
+                                                <label for="fullname" >${ qrCodeAuthorableDialog.fullNameText }</label>
+                                                <input type="text" id="fullname" name="rep-fullname">
+                                            </div>
+                                            <div class="report-issue__form--group">
+                                                <label for="email" >${ qrCodeAuthorableDialog.emailText }<span class="report-issue__form--group__email__required">*</span></label>
+                                                <input type="email" id="email" name="rep-email" id="email_text">
+                                                <span class="report-issue__form--group__email__required email__mandatory hide" id="emailmandatory">${ qrCodeAuthorableDialog.emailIdMandatoryErrorMessage }</span>
+                                                
+                                            </div>
+                                            <div class="report-issue__form--group">
+                                                <label for="comments" >${ qrCodeAuthorableDialog.commentsText }</label>
+                                                <textarea id="comments" maxlength="200"></textarea>
+                                            </div>
+                                            <div><input type="hidden" id="repIssueEmail" value="${ data.repEmailFlag }"></div>
+                                             <div><input type="hidden" id="eventId" value=""></div>
+                                        </div>
+                                        <div class="authentication__code-btn">
+                                            <button type="button" id="repIssueSubmitBtn" class="feature-block__cta b-button b-button__primary b-button__primary--light" role="button" >${ qrCodeAuthorableDialog.reportIssueButtonText }</button>
+                                        </div>
+                                    </div>
+									<div class="report-issue__success hide" id="success__message">
+									 <div class="col-md-6 col-xs-12 report-issue--success hide" id= "report-close">
+                                        <a href="javascript:void(0);" class="report-issue--close">x</a><br>
+                                        </div>
+                                                <b>${ qrCodeAuthorableDialog.reportIssueSubmitMessageText }</b>
+                                        </div>
+                                    </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+    </sly>
+    </template>

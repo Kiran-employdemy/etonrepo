@@ -1,0 +1,12 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.digital.v1.impl.ContentTileSliderModel">
+    <center class="container">
+        <h4 class="content-tile-slider__header">${data.TitleText}</h4>
+        <p class="content-tile-slider__subheader">${data.Subtitle}</p>
+    </center>
+    <div class="related-products--cross-sell module-related-products__wrapper container">
+        <sly data-sly-use.tpl="module-content-tile-slider.html">
+            <sly data-sly-call="${ tpl.module @data=data }"></sly>
+        </sly>
+    </div>
+</sly>
+

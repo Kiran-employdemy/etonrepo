@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="cq:Dialog"
+          jcr:title="Bullseye Configuration"
+          height="{Long}650"
+          warnIfModified="{Boolean}false"
+          width="{Long}900"
+          xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Site_x0020_Configuration
+                    jcr:primaryType="cq:Panel"
+                    title="Bullseye Configuration"
+                    xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+
+                    <clientId
+                            jcr:primaryType="cq:Widget"
+                            name="./clientId"
+                            fieldLabel="Client ID"
+                            xtype="textfield">
+                    </clientId>
+                    <apiKey
+                            jcr:primaryType="cq:Widget"
+                            name="./apiKey"
+                            fieldLabel="API Key"
+                            xtype="textfield">
+                    </apiKey>
+                    <mappingVendor
+                            jcr:primaryType="cq:Widget"
+                            name="./mappingVendor"
+                            defaultValue="google"
+                            fieldLabel="Mapping Vendor"
+                            type="select"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <google
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Google"
+                                    value="google"/>
+                            <mapbox
+                                    jcr:primaryType="nt:unstructured"
+                                    text="MapBox"
+                                    value="mapbox"/>
+                        </options>
+                    </mappingVendor>
+                    <mappingApiKey
+                            jcr:primaryType="cq:Widget"
+                            name="./mappingApiKey"
+                            fieldLabel="Mapping API Key"
+                            xtype="textfield">
+                    </mappingApiKey>
+                    <pageSize
+                            jcr:primaryType="cq:Widget"
+                            name="./pageSize"
+                            fieldLabel="Page Size"
+                            xtype="numberfield">
+                    </pageSize>
+                    <defaultRadius
+                            jcr:primaryType="cq:Widget"
+                            name="./defaultRadius"
+                            fieldLabel="Default Radius"
+                            xtype="textfield">
+                    </defaultRadius>
+                    <defaultDistanceUnit
+                            jcr:primaryType="cq:Widget"
+                            defaultValue="miles"
+                            fieldDescription=""
+                            fieldLabel="Default Distance Unit"
+                            fieldSubLabel=""
+                            name="./defaultDistanceUnit"
+                            type="select"
+                            xtype="selection">
+                        <options jcr:primaryType="cq:WidgetCollection">
+                            <miles
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Miles"
+                                    value="miles"/>
+                            <kilometers
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Kilometer"
+                                    value="kilometers"/>
+                        </options>
+                    </defaultDistanceUnit>
+                    <distance
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Distances"
+                            name="./distances"
+                            xtype="multifield">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                border="{Boolean}true"
+                                hideLabel="{Boolean}true"
+                                layout="form"
+                                padding="10px"
+                                width="1000"
+                                xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <text
+                                    jcr:primaryType="cq:Widget"
+                                    dName="distance"
+                                    fieldLabel="Distance"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </distance>
+                    <defaultMarker
+                            jcr:primaryType="cq:Widget"
+                            name="./defaultMapMarker"
+                            fieldLabel="Default Map Marker"
+                            xtype="pathfield">
+                    </defaultMarker>
+                    <preFilters
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Filters"
+                        name="./prefilters"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <categoryGroupSelection
+                                    jcr:primaryType="cq:Widget"
+                                    fieldLabel="Select Field"
+                                    dName="groupId"
+                                    options="/eaton/bullseye/bullsEyeServiceValidation.bullseyeconfig.json"
+                                    type="select"
+                                    xtype="selection">
+                                    <listeners
+                                            jcr:primaryType="nt:unstructured"
+                                            selectionchanged="function(el,val,check){
+                                                                $.ajax({
+                                                                    url: '/eaton/bullseye/bullsEyeSpecificCategories.json?groupId='+val,
+                                                                    success: function(result){
+                                                                        el.findParentByType('multi-field-panel').items.items[1].setOptions(result);
+                                                                        el.findParentByType('multi-field-panel').items.items[1].setValue('');
+                                                                    }
+                                                                });
+                                                              }"
+                                            afterlayout="function(el,val,check){
+                                                            afterLayoutEventTrigger(el);
+                                                            $.ajax({
+                                                                url: '/eaton/bullseye/bullsEyeSpecificCategories.json?groupId='+el.getValue(),
+                                                                success: function(result){
+                                                                    el.findParentByType('multi-field-panel').items.items[1].setOptions(result);
+                                                                }
+                                                            });
+                                                         }"/>
+                                </categoryGroupSelection>
+                                <categorySelection
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Select Category"
+                                        dName="categoryId"
+                                        type="select"
+                                        width="{Long}300"
+                                        xtype="selection"/>
+                                <icon
+                                        jcr:primaryType="cq:Widget"
+                                        dName="icon"
+                                        fieldLabel="Icon path"
+                                        width="{Long}300"
+                                        xtype="pathfield"
+                                        hidden="true"/>
+                            </items>
+                        </fieldConfig>
+                    </preFilters>
+                    <mapMarker
+                            jcr:primaryType="cq:Widget"
+                            fieldLabel="Map Marker"
+                            name="./markers"
+                            xtype="multifield">
+                        <fieldConfig
+                                jcr:primaryType="cq:Widget"
+                                border="{Boolean}true"
+                                hideLabel="{Boolean}true"
+                                layout="form"
+                                padding="10px"
+                                width="1000"
+                                xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <categoryGroupSelection
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Select Category Group"
+                                        dName="groupId"
+                                        options="/eaton/bullseye/bullsEyeServiceValidation.bullseyeconfig.json"
+                                        type="select"
+                                        xtype="selection">
+                                    <listeners
+                                            jcr:primaryType="nt:unstructured"
+                                            selectionchanged="function(el,val,check){
+                                                                $.ajax({
+                                                                    url: '/eaton/bullseye/bullsEyeSpecificCategories.json?groupId='+val,
+                                                                    success: function(result){
+                                                                        el.findParentByType('multi-field-panel').items.items[1].setOptions(result);
+                                                                        el.findParentByType('multi-field-panel').items.items[1].setValue('');
+                                                                    }
+                                                                });
+                                                              }"
+                                            afterlayout="function(el,val,check){
+                                                            afterLayoutEventTrigger(el);
+                                                            $.ajax({
+                                                                url: '/eaton/bullseye/bullsEyeSpecificCategories.json?groupId='+el.getValue(),
+                                                                success: function(result){
+                                                                    el.findParentByType('multi-field-panel').items.items[1].setOptions(result);
+                                                                }
+                                                            });
+                                                         }"/>
+                                </categoryGroupSelection>
+                                <categorySelection
+                                        jcr:primaryType="cq:Widget"
+                                        fieldLabel="Select Category"
+                                        dName="categoryId"
+                                        type="select"
+                                        width="{Long}300"
+                                        xtype="selection"/>
+                                <icon
+                                        jcr:primaryType="cq:Widget"
+                                        dName="icon"
+                                        fieldLabel="Icon path"
+                                        width="{Long}300"
+                                        xtype="pathfield"/>
+                            </items>
+                        </fieldConfig>
+                    </mapMarker>
+                </items>
+            </Site_x0020_Configuration>
+        </items>
+    </items>
+</jcr:root>

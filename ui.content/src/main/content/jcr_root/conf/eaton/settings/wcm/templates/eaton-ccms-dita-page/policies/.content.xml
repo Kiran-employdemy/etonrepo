@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2022-04-26T11:27:38.579+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2022-04-13T02:54:53.704-04:00"
+        cq:lastReplicatedBy="c9947055"
+        cq:lastReplicationAction="Activate"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[cq:ReplicationStatus,mix:versionable]"
+        jcr:primaryType="nt:unstructured"
+        jcr:uuid="81cbb5a4-2e63-4a36-8ce4-8b0b42c38c50"
+        sling:resourceType="wcm/core/components/policies/mappings">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/core/components/policies/mapping">
+            <contentnode
+                cq:policy="wcm/foundation/components/responsivegrid/policy_4384933923700"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/core/components/policies/mapping"/>
+        </root>
+        <contentnode
+            cq:policy="wcm/foundation/components/responsivegrid/policy_1649172694937"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/core/components/policies/mapping"/>
+    </jcr:content>
+</jcr:root>

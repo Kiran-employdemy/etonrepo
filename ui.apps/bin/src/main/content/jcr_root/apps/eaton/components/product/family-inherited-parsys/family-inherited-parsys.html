@@ -1,0 +1,12 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Inherited Parsys</div>
+</sly>
+<sly data-sly-use.data="com.eaton.platform.core.models.FamilyInheritedParsysModel">
+
+    <sly data-sly-test="${data.path != null && data.path != 'family'}">
+        <sly data-sly-resource="${ data.path @ wcmmode='disabled'}"></sly>
+    </sly>
+    <sly data-sly-test="${data.path == 'family'}">
+        <div data-sly-resource="${'familyInherited' @ resourceType='wcm/foundation/components/responsivegrid'}"></div>
+    </sly>
+</sly>

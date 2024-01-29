@@ -1,0 +1,58 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.alert-row {
+  border-radius: 0.4rem;
+  opacity: 1;
+  display: flex;
+}
+
+.alert-component {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.icon-alert-component {
+  color: var(--color__white);
+}
+
+.icon-container {
+  background: var(--primary-brand-color) 0% 0% no-repeat padding-box;
+  border-radius: 0.4rem 0 0 0.4rem;
+  opacity: 1;
+  padding: 1rem 1rem 1rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include media-mobile-only {
+    background: var(--primary-brand-color) 0% 0% no-repeat padding-box;
+    border-radius: 0.4rem 0 0 0.4rem;
+    opacity: 1;
+    padding: 2rem 1rem 1rem 1rem;
+    display: flex;
+    align-items: start;
+  }
+}
+
+.description-container {
+  text-align: left;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  font-size: rem($base__font-size * 1.4);
+  line-height: 1.8rem;
+  letter-spacing: 0.014rem;
+  color: var(--primary-brand-color);
+  padding: 1.6rem;
+  border: 0.2rem solid var(--primary-brand-color);
+  background: var(--color__eaton-50-transparent-90) 0% 0% no-repeat padding-box;
+}
+
+.heading-text {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: bold;
+  font-size: rem($base__font-size * 1.4);
+  line-height: 1.8rem;
+}

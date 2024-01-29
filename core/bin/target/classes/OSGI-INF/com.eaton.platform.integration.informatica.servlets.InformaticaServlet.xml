@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.integration.informatica.servlets.InformaticaServlet" immediate="true">
+  <property name="sling.servlet.paths" type="String" value="/eaton/InformaticaBatch"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="informaticaOSGIService" interface="com.eaton.platform.integration.informatica.services.InformaticaOSGIService" field="informaticaOSGIService"/>
+  <reference name="informaticaService" interface="com.eaton.platform.integration.informatica.services.InformaticaService" field="informaticaService"/>
+  <implementation class="com.eaton.platform.integration.informatica.servlets.InformaticaServlet"/>
+</scr:component>

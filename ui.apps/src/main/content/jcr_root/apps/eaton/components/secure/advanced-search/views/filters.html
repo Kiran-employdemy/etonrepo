@@ -1,0 +1,181 @@
+
+<template data-sly-template.module="${ @ data }">
+    <div id="search-results__filters"
+         data-hide-from-active='["contentType"]'
+         data-is-edit-mode="${wcmmode.edit ? 'true' : ''}"
+         data-title="${'Filters.Title' @ i18n}"
+         data-mobile-dialog-title="${'Filters.Title' @ i18n}"
+         data-close-text="${'Filters.Close' @ i18n}"
+         data-clear-all-filters-text="${'Filters.ClearAllFilters' @ i18n}"
+         data-clear-filters-text="${'Filters.ClearFilters' @ i18n}"
+         data-clear-selection-text="${'Filters.ClearSelection' @ i18n}"
+         data-view-more-text="${'Filters.ViewMore' @ i18n}"
+         data-view-less-text="${'Filters.ViewLess' @ i18n}"
+         data-results-plural-text="${'Search.Results' @ i18n}"
+         data-results-singular-text="${'Search.Result' @ i18n}"
+         data-facet-search-label="${'GlobalFacetSearch.SearchLabel' @i18n}"
+         data-facet-search-placeholder="${'GlobalFacetSearch.Placeholder' @i18n}"
+         data-no-suggestions-text="${'GlobalFacetSearch.NoSugestions' @i18n}"
+         data-in-text="${'GlobalFacetSearch.In' @i18n}"
+         data-of-text="${'Global.Of' @ i18n}"
+         data-facet-group-search-label="${'GroupFacetSearch.Label' @i18n}"
+         data-facet-group-search-placeholder="${'GroupFacetSearch.Placeholder' @i18n}"
+         data-facet-group-search-no-suggestions-text="${'GroupFacetSearch.NoSuggestionsText' @i18n}">
+        <div class="eaton-form faceted-navigation faceted-navigation__filters">
+            <h3 class="faceted-navigation__title">${'Filters.Title' @ i18n}</h3>
+            <!--/* Facets Search Box Start -->
+            <!--<div class="global-filter-search__container" data-global-facet-search-label="${'GlobalFacetSearch.SearchLabel' @i18n}" data-global-facet-search-placeholder="${'GlobalFacetSearch.Placeholder' @i18n}" data-global-facet-search-in-text="in" data-global-facet-search-no-suggestions-text="No suggestions" data-global-facet-search-filter-components="" data-ref="0.08470332352905152">
+                <label class="global-filter-search__label">${'GlobalFacetSearch.SearchLabel' @i18n}</label>
+                <input type="text" class="global-filter-search__input" placeholder="${'GlobalFacetSearch.Placeholder' @i18n}">
+                <ul class="global-filter-search__suggestions hidden"></ul>
+                <div class="global-filter-search__suggestions no-suggestions-container hidden">
+                    <div class="global-filter-search__suggestion global-filter-search__suggestion__no-suggestions__message">
+                        ${'GlobalFacetSearch.NoSugestions' @i18n}
+                        <span class="global-filter-search__suggestion__suggested-term"></span>
+                    </div>
+                </div>
+            </div>-->
+            <!--/* Facets Search Box End */-->
+
+            <div class="mobile-header">
+                <span>${'Filters.Title' @ i18n}</span>
+                <button data-toggle-modal-facet="" aria-label="Close" class="close-facets-mobile button--reset">
+                    <span class="sr-only">Close Filters</span>
+                    <i class="icon icon-close icon-close-filter" aria-hidden="true"></i>
+                </button>
+            </div>
+            <hr class="faceted-navigation__hr eaton-advanced-search-mreset">
+            <div class="cross-reference__active-filters bullseye-map-active__filters faceted-navigation__active-filters__container faceted-navigation__active-filters__container--mobile  eaton-advanced-search-mreset" data-active-filter-values="%5B%5D" data-result-count="undefined" data-results-text="Result" data-of-text="of" data-clear-all-filters-text="Clear all filters" data-clear-filters-text="Clear filters" data-clear-selection-text="Clear selection" data-ref="0.9407220479717402">
+                <div class="hidden">
+                    <div class="hidden"></div>
+                    <a href="#" rel="nofollow" class="faceted-navigation__action-link faceted-navigation__action-link--clear-filters faceted-navigation__action-link--clear-filters--mobile hidden">
+                        ${data.facetedHeaderNavigationResultBean.clearFilters}
+                    </a>
+                </div>
+            </div>
+
+            <!--/*  Date filter Start */-->
+            <sly data-sly-test="${data.enableDateRange}">
+                <div class="adv-date-filter-section ${ data.closeMobileAccordions ? 'close-accordion-mobile' : '' }">
+                    <button class="faceted-navigation__header button--reset" data-toggle="collapse" data-target="#date-type" aria-expanded="true" aria-controls="content-type">
+                        ${data.dateRangeText}
+                        <i class="icon icon-sign-minus" aria-hidden="true"></i>
+                        <i class="icon icon-sign-plus faceted-navigation__icon-sign-plus" aria-hidden="true"></i>
+
+                    </button>
+                    <div class="collapse in faceted-navigation__list__date-picker" id="date-type">
+                        <div class="faceted-navigation__facet-value-label">
+                            <a class="has-url">
+                                <div class="faceted-navigation__list__field">
+                                    <label class="faceted-navigation__list__date col-sm-3">${data.fromText}:</label>
+                                    <input type="text" class="faceted-navigation__list__date-input col-sm-8 start-date" placeholder="DD-MM-YYYY" required>
+                                    <span class="input-group-addon calender_icon"><i class="glyphicon glyphicon-calendar icon_cal"></i></span>
+                                    <div class="date-error" id="date-error">Enter a Valid Date</div>
+                                </div>
+                                <div class="faceted-navigation__list__field">
+                                    <label class="faceted-navigation__list__date col-sm-3">${data.toText}:</label>
+                                    <input placeholder="DD-MM-YYYY"  type="text" class="faceted-navigation__list__date-input col-sm-8 end-date"/>
+                                    <span class="input-group-addon calender_icon"><i class="glyphicon glyphicon-calendar icon_cal"></i></span>
+                                </div>
+                            </a>
+                        </div>
+                        <a rel="nofollow" role="button" class="faceted-navigation-header__action-link faceted-navigation-header__action-link--apply apply-date"><u>${data.facetedHeaderNavigationResultBean.apply}</u></a>
+                        <a rel="nofollow" role="button" class="faceted-navigation-header__action-link faceted-navigation-header__action-link--apply reset-date"><u>Reset</u></a>
+                    </div>
+                    <hr class="faceted-navigation__hr eaton-advanced-search-mreset">
+                </div>
+            </sly>
+            <!--/*  Date filter End */-->
+            <!--/*  Dynamic filter Start */-->
+
+            <div class="faceted-navigation__filter-container ${ data.closeMobileAccordions ? 'close-accordion-mobile' : '' }"
+                 data-clear-selection-text="Clear selection"
+                 data-view-more-text="View more"
+                 data-view-less-text="View less"
+                 data-facet-group-search-label="Search within these results"
+                 data-facet-group-search-placeholder="Enter a value"
+                 data-facet-group-search-no-suggestions-text="No results based on search terms"
+                 data-ref="0.6021941790490317">
+                <div class="faceted-navigation__facet-group  ">
+                    <div>
+                        <div class="faceted-navigation__list__search__container hidden">
+                            <label class="faceted-navigation__list__search__label">${'GlobalFacetSearch.SearchLabel' @i18n}</label>
+                            <input type="text" class="faceted-navigation__list__search__input " placeholder="${'GlobalFacetSearch.Placeholder' @i18n}">
+                            <div class="faceted-navigation__list__search__suggestions faceted-navigation__list__search__no-suggestions__container hidden">
+                                <div class="faceted-navigation__list__search__suggestion faceted-navigation__list__search__suggestion__no-suggestions__message">
+                                    ${'GroupFacetSearch.NoSuggestionsText' @i18n}
+                                    <span class="faceted-navigation__list__search__suggestion__suggested-term">
+                  </span>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" rel="nofollow" role="button" class="faceted-navigation-header__action-link faceted-navigation-header__action-link--clear-filters faceted-navigation-header__action-link--clear-filters--sidebar hidden">
+                            ${'Filters.ClearSelection' @ i18n}
+                        </a>
+                        <div class="advanced-search__filter" id="filter-list">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/*  Dynamic filter End */-->
+        </div>
+    </div>
+
+
+    <!--/*  Dynamic filter template */-->
+    <script id="mustache-advanced-search-filter" type="text/mustache">
+
+	{{#facetGroupList}}
+    <div class="faceted-navigation__filter-container">
+        <div class="faceted-navigation__facet-group {{gridFacet}}">
+            <button class="faceted-navigation__header button--reset" data-toggle="collapse" data-target="#{{facetGroupId}}" aria-expanded="true" aria-controls="{{facetGroupId}}">
+                {{facetGroupLabel}}
+                    <i class="icon icon-sign-minus" aria-hidden="true"></i>
+                    <i class="icon icon-sign-plus faceted-navigation__icon-sign-plus" aria-hidden="true"></i>
+            </button>
+            <div id="{{facetGroupId}}" class="collapse in">
+                <label class="faceted-navigation__list__search__label {{facetSearchEnabled}}">{{searchLabel}}</label>
+                <input type="text" data-searchbox-for="{{facetGroupId}}" class="auto-search faceted-navigation__list__search__input {{facetSearchEnabled}}" placeholder="{{searchPlaceHolder}}">
+                <div class="auto-suggest-div">
+                    <div class="ul-auto-suggest" id="custom-{{facetGroupId}}">
+                        {{#facetValueList}}
+                        <div class="li-div hide" data-filter-title="{{facetValueLabel}}">
+                            <div class="classCustomList faceted-navigation__list-item ">
+                                    <div class="faceted-navigation__facet-value">
+                                    <label class="global-filter-search__suggestion">
+                                        <a rel="nofollow" role="link" class="has-url" id={{facetValueId}}>
+                                        <input data-analytics-event="submittal-builder-facet" data-analytics-name="checkbox : {{facetValueId}}" data-analytics-state="off" data-single-facet-enabled="true" type="{{singleFacetEnabled}}" class="input filter-selected input--small hide" value="{{facetValueId}}" name="{{facetGroupId}}" data-title="{{facetValueLabel}}" data-id="{{facetValueId}}" id="facet-{{facetValueId}}" {{facetSelected}}>
+                                        <span class="inner"><bdi>{{facetValueLabel}}{{^facetSelected}} ({{facetValueDocs}}){{/facetSelected}}</bdi></span>
+                                        </a>
+                                    </label>
+                                    </div>
+                                </div>
+                        </div>
+                    {{/facetValueList}}
+                    </div>
+                </div>
+                <ul class="faceted-navigation__list faceted-navigation__list--unfiltered" id="facet-{{facetGroupId}}">
+                {{#facetValueList}}
+                    <li class="faceted-navigation__list-item ">
+                            <div class="faceted-navigation__facet-value">
+                              <label class="faceted-navigation__facet-value-label">
+                                <a rel="nofollow" role="link" class="has-url actual-filter-item {{facetSelected}}" id={{facetValueId}}>
+                                  <input data-analytics-event="submittal-builder-facet" data-analytics-name="checkbox : {{facetValueId}}" data-analytics-state="off" data-single-facet-enabled="true" type="{{singleFacetEnabled}}" class="input filter-selected input--small" value="{{facetValueId}}" name="{{facetGroupId}}" data-title="{{facetValueLabel}}" data-id="{{facetValueId}}" id="facet-{{facetValueId}}" {{facetSelected}}>
+                                  <span class="inner"><bdi>{{facetValueLabel}}{{^facetSelected}} ({{facetValueDocs}}){{/facetSelected}}</bdi></span>
+                                </a>
+                              </label>
+                            </div>
+                    </li>
+                {{/facetValueList}}
+                <div class="button-view-more-less">
+                    <button class="button--reset faceted-navigation__view-more-values">View more <span class="faceted-navigation__view-more-values__count"><bdi>{{}}</bdi></span></button>
+                     <button class="button--reset faceted-navigation__view-less-values">View less</button>
+                </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {{/facetGroupList}}
+<hr class="faceted-navigation__hr">
+</script>
+</template>

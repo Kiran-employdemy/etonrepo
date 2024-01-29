@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Home Page Hero"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Carousel">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <herotext
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Home Page Hero Properties"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <landing-heroLinks
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldDescription="Click 'Add' to add more Home Page Hero"
+                                fieldLabel="Home Page Hero List"
+                                required="true">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./landingHero">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                            class="multifield-border">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <imagePath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                    allowUpload="{Boolean}false"
+                                                    autoStart="{Boolean}false"
+                                                    class="cq-droptarget"
+                                                    fieldDescription="This field stores the bg image of HomePage Hero Component."
+                                                    fieldLabel="Image Path"
+                                                    fileNameParameter="./fileName"
+                                                    fileReferenceParameter="./imagePath"
+                                                    mimeTypes="[image]"
+                                                    multiple="{Boolean}false"
+                                                    name="./imageName"
+                                                    title="Upload Image Asset"
+                                                    uploadUrl="${suffix.path}"
+                                                    useHTML5="{Boolean}true"/>
+                                                <imageAltText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Home Page Hero image Alt text. "
+                                                    fieldLabel="Image Alt Text"
+                                                    name="./imageAltText"/>
+                                                <alignmentDesktop
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="Options will align the image using the selected alignment."
+                                                    fieldLabel="Desktop Image Alignment"
+                                                    name="./alignmentDesktop">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <left-top
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Left Top"
+                                                            value="left-top"/>
+                                                        <left-center
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Left Center"
+                                                            value="left-center"/>
+                                                        <left-bottom
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Left Bottom"
+                                                            value="left-bottom"/>
+                                                        <center-top
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Center Top"
+                                                            value="center-top"/>
+                                                        <center-center
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Center Center"
+                                                            value="center-center"/>
+                                                        <center-bottom
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Center Bottom"
+                                                            value="center-bottom"/>
+                                                        <right-top
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Right Top"
+                                                            value="right-top"/>
+                                                        <right-center
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Right Center"
+                                                            value="right-center"/>
+                                                        <right-bottom
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Right Bottom"
+                                                            value="right-bottom"/>
+                                                    </items>
+                                                </alignmentDesktop>
+                                                <alignmentMobile
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="Options will align the image using the selected alignment."
+                                                    fieldLabel="Mobile Image Alignment"
+                                                    name="./alignmentMobile">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <left-top
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Left Top"
+                                                            value="left-top"/>
+                                                        <left-center
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Left Center"
+                                                            value="left-center"/>
+                                                        <left-bottom
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Left Bottom"
+                                                            value="left-bottom"/>
+                                                        <center-top
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Center Top"
+                                                            value="center-top"/>
+                                                        <center-center
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Center Center"
+                                                            value="center-center"/>
+                                                        <center-bottom
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Center Bottom"
+                                                            value="center-bottom"/>
+                                                        <right-top
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Right Top"
+                                                            value="right-top"/>
+                                                        <right-center
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Right Center"
+                                                            value="right-center"/>
+                                                        <right-bottom
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Right Bottom"
+                                                            value="right-bottom"/>
+                                                    </items>
+                                                </alignmentMobile>
+                                                <titleText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                                    fieldDescription="Click Enter to create a new paragraph p, Click on MAJ+Ctrl+Enter to break the line "
+                                                    fieldLabel="Header"
+                                                    name="./titleText"
+                                                    useFixedInlineToolbar="{Boolean}true">
+                                                    <uiSettings jcr:primaryType="nt:unstructured">
+                                                        <cui jcr:primaryType="nt:unstructured">
+                                                            <inline
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    toolbar="[format]">
+                                                            </inline>
+                                                            <dialogFullScreen
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    toolbar="[format]"/>
+                                                        </cui>
+                                                    </uiSettings>
+                                                </titleText>
+                                                <description
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                    fieldDescription="Description of the Home Page Hero."
+                                                    fieldLabel="Description"
+                                                    name="./description"/>
+                                                <linkTitle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="This field stores the value for Title field."
+                                                    fieldLabel="Link Title"
+                                                    name="./linkTitle"/>
+                                                <linkDestination
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                                                    fieldDescription="This field stores the value for Link Destination field. "
+                                                    fieldLabel="Link Destination"
+                                                    name="./linkDestination"/>
+                                                <newWindow
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    fieldDescription="This field stores the value for newWindow field."
+                                                    name="./newWindow"
+                                                    text="Open Link in New Window"
+                                                    value="true"/>
+                                                <desktopDynam
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                    name="./desktopDynam"
+                                                    value=":homepage-hero-desktop"/>
+                                                <mobileDynam
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                    name="./mobileDynam"
+                                                    value=":homepage-hero-mobile"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </landing-heroLinks>                                                
+                        </items>
+                    </column>
+                </items>
+            </herotext>
+        </items>
+    </content>
+</jcr:root>

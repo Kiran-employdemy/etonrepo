@@ -1,0 +1,27 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.articlefeature.ArticleFeatureModel">
+
+  <!--/* Container */-->
+  <div class="article-feature__component">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+		 <div data-sly-test="${data.desktopTransformedUrl || data.mobileTransformedUrl}" class="article-feature__image">
+            <!-- Start: Rendition Image Component -->
+            <sly data-sly-use.tpl="eaton/components/shared/templates/rendition-image.html">
+              <sly data-sly-call="${ tpl.module @ data=data}"></sly>
+            </sly>
+            <!-- End: Rendition Image Component -->
+         	</div>	
+          <div data-sly-test="${data.articleEyebrow}" class="article-feature__title b-eyebrow-large">${data.articleEyebrow}</div> 
+          <div data-sly-test="${data.articleTitle}" class="article-feature__link b-heading-h4">
+		    <a href="${data.articleLinkPath}" target="${data.articleLinkOpenNewWindow}">${data.articleTitle}</a>
+          </div>
+          <div data-sly-test="${data.articleByline || data.articlePubDate}" class="article-feature__date b-body-copy-small"><b data-sly-test="${data.articleByline}">${data.articleByline @context='html'}<b data-sly-test="${data.articlePubDate}">,</b></b>
+            <sly data-sly-test="${data.articlePubDate}">${data.articlePubDate}</sly>
+		  </div>
+          <div data-sly-test="${data.articleDesc}" class="article-feature__body b-body-copy">${data.articleDesc}</div> 
+        </div>
+      </div>
+    </div>
+  </div>
+</sly>

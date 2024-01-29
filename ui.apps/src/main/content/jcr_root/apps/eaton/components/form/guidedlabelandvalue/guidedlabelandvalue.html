@@ -1,0 +1,50 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ ADOBE CONFIDENTIAL
+  ~ ___________________
+  ~ Copyright 2015 Adobe Systems Incorporated
+  ~ All Rights Reserved.
+  ~
+  ~ NOTICE:  All information contained herein is, and remains
+  ~ the property of Adobe Systems Incorporated and its suppliers,
+  ~ if any.  The intellectual and technical concepts contained
+  ~ herein are proprietary to Adobe Systems Incorporated and its
+  ~ suppliers and are protected by all applicable intellectual property
+  ~ laws, including trade secret and copyright laws.
+  ~ Dissemination of this information or reproduction of this material
+  ~ is strictly forbidden unless prior written permission is obtained
+  ~ from Adobe Systems Incorporated.
+  */-->
+
+
+<sly data-sly-use.secureFormModel="com.eaton.platform.integration.forms.models.SecureLabelAndValueModel">
+    <sly data-sly-test="${wcmmode.edit || wcmmode.preview}">
+        <div class="alert alert-warning">Eaton -  Label And Value</div>
+        <label class="col-sm-4 control-label">${properties.jcr:title}:</label>
+    </sly>
+
+    <sly data-sly-test="${!wcmmode.edit}">
+        <sly data-sly-test="${properties.multiValued}">
+            <div class="form-group" data-sly-test="${secureFormModel.value}">
+                <label class="col-sm-12 control-label custom-label">${properties.jcr:title}:</label>
+                <div class="col-sm-12" >
+                <sly data-sly-test="${properties.multiValued == 'commaseparated'}">
+                        <p class="form-control-static">${secureFormModel.value}</p>
+                </sly>
+                <sly data-sly-test="${properties.multiValued == 'list'}">
+                    <sly data-sly-use.values="${'guidedlabelandvalue.js' @ options=secureFormModel.value}" data-sly-list="${values.options}">
+                        <p class="form-control-static">${item}</p>
+                    </sly>
+                </sly>
+                </div>
+            </div>
+        </sly>
+        <sly data-sly-test="${!properties.multiValued}">
+            <div class="form-group" data-sly-test="${properties.jcr:title}">
+                <label class="col-sm-5 control-label">${properties.jcr:title}:</label>
+                <div class="col-sm-7" data-sly-test="${secureFormModel.value}">
+                    <p class="form-control-static">${secureFormModel.value}</p>
+                </div>
+            </div>
+        </sly>
+    </sly>
+</sly>

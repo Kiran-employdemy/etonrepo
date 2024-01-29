@@ -1,0 +1,257 @@
+{
+	"jcr:primaryType": "cq:Page",
+	"jcr:createdBy": "admin",
+	"jcr:created": "Thu Jul 20 2023 12:58:27 GMT+0200",
+	"jcr:content": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:mixinTypes": [
+			"mix:versionable"
+		],
+		"jcr:createdBy": "admin",
+		"jcr:title": "Solid state flashers",
+		"cq:lastReplicationAction": "Activate",
+		"jcr:versionHistory": "b9467842-558d-4d5a-a0a2-511f6e9f4f33",
+		"pimPagePath": "/var/commerce/products/eaton/en_us/aem20200213001950",
+		"cq:template": "/conf/eaton/settings/wcm/templates/product-family-page",
+		"cq:lastReplicatedBy": "e0677841",
+		"jcr:lastModifiedBy": "c3037550",
+		"priority": "0.0",
+		"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+		"primarySubCategory": "/content/eaton/de/de-de/products/emobility/low-voltage-power-management",
+		"jcr:predecessors": [
+			"2d0dfcd1-1972-405f-9189-3da28b2b0ddb"
+		],
+		"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+		"jcr:created": "Thu Jul 20 2023 12:58:27 GMT+0200",
+		"cq:lastReplicated": "Mon Jun 05 2023 11:20:53 GMT-0400",
+		"cq:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+		"view": "generic",
+		"jcr:baseVersion": "2d0dfcd1-1972-405f-9189-3da28b2b0ddb",
+		"jcr:isCheckedOut": true,
+		"primary-sub-category-tag": [
+			"eaton:product-taxonomy/emobility/low-voltage-power-management/solid-state-flashers"
+		],
+		"page-type": "product-family",
+		"cq:tags": [
+			"eaton:search-tabs/page-type/product-family",
+			"eaton:search-tabs/content-type/product"
+		],
+		"jcr:lastModified": "Tue Oct 24 2017 12:59:35 GMT-0400",
+		"jcr:uuid": "45e97de9-deb8-4b86-8df0-475daa0c7ad5",
+		"sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+		"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+		"cq:lastRolledoutBy": "e0677841",
+		"cq:lastModifiedBy": "e0677841",
+		"changefrequency": "always",
+		"root": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:lastModifiedBy": "e0063964",
+			"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+			"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+			"sling:resourceType": "wcm/foundation/components/responsivegrid",
+			"cq:lastRolledoutBy": "e0677841",
+			"header": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:createdBy": "c3037550",
+				"jcr:lastModifiedBy": "c3037550",
+				"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+				"jcr:created": "Thu Oct 05 2017 10:36:06 GMT-0400",
+				"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+				"sling:resourceType": "eaton/components/structure/header",
+				"cq:lastRolledoutBy": "e0677841"
+			},
+			"responsivegrid": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:createdBy": "e0063964",
+				"jcr:lastModifiedBy": "e0063964",
+				"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+				"jcr:created": "Thu Oct 05 2017 12:44:25 GMT-0400",
+				"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+				"sling:resourceType": "wcm/foundation/components/responsivegrid",
+				"cq:lastRolledoutBy": "e0677841",
+				"cq:responsive": {
+					"jcr:primaryType": "nt:unstructured",
+					"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+					"cq:lastRolledoutBy": "e0677841"
+				},
+				"product_tabs": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "c3037550",
+					"jcr:lastModifiedBy": "c3037550",
+					"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+					"jcr:created": "Thu Oct 05 2017 13:59:59 GMT-0400",
+					"view": "links-navigation",
+					"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+					"sling:resourceType": "eaton/components/product/product-tabs",
+					"cq:lastRolledoutBy": "e0677841",
+					"content-tab-1": {
+						"jcr:primaryType": "nt:unstructured",
+						"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+						"sling:resourceType": "wcm/foundation/components/parsys",
+						"cq:lastRolledoutBy": "e0677841",
+						"product_family_card": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "c3037550",
+							"jcr:lastModifiedBy": "c3037550",
+							"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"jcr:created": "Thu Oct 05 2017 14:00:32 GMT-0400",
+							"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"sling:resourceType": "eaton/components/product/product-family-card",
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"divider_copy_copy_co": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "e5253857",
+							"jcr:lastModifiedBy": "e5253857",
+							"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"jcr:created": "Thu Jan 16 2020 11:30:42 GMT-0500",
+							"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"sling:resourceType": "eaton/components/general/divider",
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"product_features": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "c3037550",
+							"jcr:lastModifiedBy": "c3037550",
+							"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"jcr:created": "Thu Oct 05 2017 14:03:23 GMT-0400",
+							"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"sling:resourceType": "eaton/components/product/product-features",
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"family_inherited_par": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "e0087282",
+							"jcr:lastModifiedBy": "e0087282",
+							"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"jcr:created": "Fri Feb 02 2018 21:07:38 GMT-0500",
+							"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"sling:resourceType": "eaton/components/product/family-inherited-parsys",
+							"cq:lastRolledoutBy": "e0677841"
+						}
+					},
+					"content-tab-2": {
+						"jcr:primaryType": "nt:unstructured",
+						"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+						"sling:resourceType": "wcm/foundation/components/parsys",
+						"cq:lastRolledoutBy": "e0677841",
+						"table": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "e5253857",
+							"tableData": "<table cellpadding=\"2\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr><td><b>Model</b></td>\n<td><b>Operating Voltage (V)</b></td>\n<td><b>Current (A)</b></td>\n<td><b>Description</b></td>\n</tr><tr><td>1421</td>\n<td>12</td>\n<td>25</td>\n<td>Solid-state two-wire hazard / turn signal flasher, meets SAE J1690</td>\n</tr></tbody></table>\n",
+							"jcr:lastModifiedBy": "e5253857",
+							"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"jcr:created": "Thu Feb 13 2020 05:37:32 GMT-0500",
+							"title": "More Flash For Less",
+							"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"toggleInnerGrid": "true",
+							"sling:resourceType": "eaton/components/general/table",
+							"textIsRich": "true",
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"table_1834743838": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "e5253857",
+							"tableData": "<table cellpadding=\"2\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr><td><b>Model</b></td>\n<td><b>Operating Voltage (V)</b></td>\n<td><b>Current (A)</b></td>\n<td><b>Description</b></td>\n</tr><tr><td>1415</td>\n<td>12</td>\n<td>25</td>\n<td>Solid-state two-wire hazard / turn signal flasher</td>\n</tr><tr><td>1417</td>\n<td>12</td>\n<td>38</td>\n<td>Solid-state two-wire hazard / turn signal flasher</td>\n</tr><tr><td>1419</td>\n<td>12</td>\n<td>25</td>\n<td>Solid-state three-wire remote mount hazard / turn signal flasher</td>\n</tr><tr><td>1419S</td>\n<td>12</td>\n<td>25</td>\n<td>Solid-state three-wire flasher with audible tone</td>\n</tr><tr><td>1425</td>\n<td>24</td>\n<td>25</td>\n<td>Solid-state two-wire hazard / turn signal flasher</td>\n</tr><tr><td>1425MB</td>\n<td>24</td>\n<td>25</td>\n<td>Solid-state two-wire hazard / turn signal flasher with mounting bracket</td>\n</tr></tbody></table>\n",
+							"jcr:lastModifiedBy": "e5253857",
+							"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"jcr:created": "Thu Feb 13 2020 05:39:52 GMT-0500",
+							"title": "Truck, Bus & Commercial",
+							"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"toggleInnerGrid": "true",
+							"sling:resourceType": "eaton/components/general/table",
+							"textIsRich": "true",
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"table_1732807392": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "e5253857",
+							"tableData": "<table cellpadding=\"2\" cellspacing=\"0\" width=\"100%\">\n<tbody><tr><td><b>Model</b></td>\n<td><b>Operating Voltage (V)</b></td>\n<td><b>Current (A)</b></td>\n<td><b>Description</b></td>\n</tr><tr><td>1410</td>\n<td>12 or 24</td>\n<td>12.6</td>\n<td>Solid-state two-wire remote mount hazard / turn signal flasher</td>\n</tr><tr><td>1412</td>\n<td>12 or 24</td>\n<td>12.6</td>\n<td>Solid-state with Deutsch 3-pin connector</td>\n</tr></tbody></table>\n",
+							"jcr:lastModifiedBy": "e5253857",
+							"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"jcr:created": "Thu Feb 13 2020 05:42:13 GMT-0500",
+							"title": "Heavy-Duty Off-Highway",
+							"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"toggleInnerGrid": "true",
+							"sling:resourceType": "eaton/components/general/table",
+							"textIsRich": "true",
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"product_grid": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "c3037550",
+							"hidePriceDisc": "true",
+							"jcr:lastModifiedBy": "e0067621",
+							"defaultSortingDirection": "asc",
+							"subCategoryHideShow": "false",
+							"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"jcr:created": "Thu Oct 05 2017 14:03:50 GMT-0400",
+							"view": "productFamily",
+							"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"sling:resourceType": "eaton/components/product/product-grid",
+							"cq:lastRolledoutBy": "e0677841"
+						}
+					},
+					"content-tab-3": {
+						"jcr:primaryType": "nt:unstructured",
+						"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+						"sling:resourceType": "wcm/foundation/components/parsys",
+						"cq:lastRolledoutBy": "e0677841",
+						"topic_link_with_icon": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "e0063964",
+							"jcr:lastModifiedBy": "e0063964",
+							"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"jcr:created": "Tue Oct 24 2017 14:44:50 GMT-0400",
+							"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"sling:resourceType": "eaton/components/product/topic-link-with-icon-pdh",
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"resource_list": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "c3037550",
+							"jcr:lastModifiedBy": "e0063964",
+							"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"jcr:created": "Thu Oct 05 2017 14:04:46 GMT-0400",
+							"view": "view-tags",
+							"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"sling:resourceType": "eaton/components/product/resource-list",
+							"damPath": "/content/dam/eaton",
+							"cq:lastRolledoutBy": "e0677841"
+						},
+						"product_support": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "c3037550",
+							"jcr:lastModifiedBy": "c3037550",
+							"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"jcr:created": "Thu Oct 05 2017 14:04:57 GMT-0400",
+							"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+							"sling:resourceType": "eaton/components/product/product-support",
+							"cq:lastRolledoutBy": "e0677841"
+						}
+					}
+				},
+				"how_to_buy": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "e0063964",
+					"jcr:lastModifiedBy": "e0063964",
+					"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+					"jcr:created": "Thu Oct 05 2017 13:17:49 GMT-0400",
+					"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+					"sling:resourceType": "eaton/components/product/how-to-buy",
+					"cq:lastRolledoutBy": "e0677841"
+				}
+			},
+			"footer": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:createdBy": "c3037550",
+				"jcr:lastModifiedBy": "c3037550",
+				"cq:lastRolledout": "Mon Jun 05 2023 11:12:13 GMT-0400",
+				"jcr:created": "Thu Oct 05 2017 10:36:20 GMT-0400",
+				"jcr:lastModified": "Mon Jun 05 2023 11:12:13 GMT-0400",
+				"sling:resourceType": "eaton/components/structure/footer",
+				"cq:lastRolledoutBy": "e0677841"
+			}
+		}
+	}
+}

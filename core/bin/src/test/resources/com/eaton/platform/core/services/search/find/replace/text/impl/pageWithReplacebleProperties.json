@@ -1,0 +1,205 @@
+{
+	"jcr:primaryType": "cq:Page",
+	"jcr:createdBy": "admin",
+	"jcr:created": "Wed Oct 04 2023 17:05:41 GMT+0200",
+	"jcr:content": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:mixinTypes": [
+			"mix:versionable"
+		],
+		"jcr:createdBy": "admin",
+		"jcr:title": "Some title",
+		"jcr:versionHistory": "26ae1a50-f1c6-43cc-9231-a9b8a57a02a6",
+		"cq:template": "/conf/eaton/settings/wcm/templates/product-family-page",
+		"jcr:lastModifiedBy": "c3037550",
+		"priority": "0.5",
+		"jcr:predecessors": [
+			"ef86e60f-d2ef-4d1f-807f-de8f79351b33"
+		],
+		"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+		"jcr:created": "Wed Oct 04 2023 17:05:41 GMT+0200",
+		"excludeCountries": "false",
+		"cq:lastModified": "Mon Oct 09 2023 10:43:34 GMT+0200",
+		"view": "generic",
+		"hideInHtml": "false",
+		"meta-robot-tags": "index,follow",
+		"jcr:description": "Sample Product Eaton",
+		"jcr:baseVersion": "ef86e60f-d2ef-4d1f-807f-de8f79351b33",
+		"jcr:isCheckedOut": true,
+		"hideInXml": "false",
+		"page-type": "product-family",
+		"accountType": [
+			"eaton-secure:accounttype/agent",
+			"eaton-secure:accounttype/fleet",
+			"eaton-secure:accounttype/installer"
+		],
+		"cq:tags": [
+			"eaton:search-tabs/page-type/product-family",
+			"eaton:search-tabs/content-type/product"
+		],
+		"jcr:lastModified": "Tue Oct 24 2017 12:59:35 GMT-0400",
+		"jcr:text": [
+			"FirstMulti",
+			"SecondMulti"
+		],
+		"jcr:uuid": "822359e0-166e-4371-ac53-660a02920bca",
+		"sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+		"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+		"countries": [
+			"eaton:country/north-america/us",
+			"eaton:country/north-america/ca"
+		],
+		"textIsRich": "true",
+		"cq:lastModifiedBy": "admin",
+		"changefrequency": "weekly",
+		"navTitle": "Navigation Title",
+		"root": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:lastModifiedBy": "e0063964",
+			"jcr:lastModified": "Thu Oct 05 2017 13:11:18 GMT-0400",
+			"sling:resourceType": "wcm/foundation/components/responsivegrid",
+			"header": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:createdBy": "c3037550",
+				"jcr:lastModifiedBy": "c3037550",
+				"jcr:created": "Thu Oct 05 2017 10:36:06 GMT-0400",
+				"jcr:lastModified": "Thu Oct 05 2017 10:54:00 GMT-0400",
+				"sling:resourceType": "eaton/components/structure/header"
+			},
+			"responsivegrid": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:createdBy": "e0063964",
+				"jcr:lastModifiedBy": "e0063964",
+				"jcr:created": "Thu Oct 05 2017 12:44:25 GMT-0400",
+				"jcr:lastModified": "Thu Oct 05 2017 13:15:53 GMT-0400",
+				"sling:resourceType": "wcm/foundation/components/responsivegrid",
+				"cq:responsive": {
+					"jcr:primaryType": "nt:unstructured"
+				},
+				"product_tabs": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "c3037550",
+					"jcr:lastModifiedBy": "c3037550",
+					"jcr:created": "Thu Oct 05 2017 13:59:59 GMT-0400",
+					"view": "links-navigation",
+					"jcr:lastModified": "Thu Oct 05 2017 14:00:06 GMT-0400",
+					"sling:resourceType": "eaton/components/product/product-tabs",
+					"content-tab-1": {
+						"jcr:primaryType": "nt:unstructured",
+						"sling:resourceType": "wcm/foundation/components/parsys",
+						"product_family_card": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "c3037550",
+							"jcr:lastModifiedBy": "c3037550",
+							"jcr:created": "Thu Oct 05 2017 14:00:32 GMT-0400",
+							"jcr:lastModified": "Thu Oct 05 2017 14:00:32 GMT-0400",
+							"sling:resourceType": "eaton/components/product/product-family-card"
+						},
+						"product_highlights": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "c3037550",
+							"jcr:lastModifiedBy": "c3037550",
+							"jcr:created": "Thu Oct 05 2017 14:03:05 GMT-0400",
+							"jcr:lastModified": "Thu Oct 05 2017 14:03:05 GMT-0400",
+							"sling:resourceType": "eaton/components/content/product-highlights"
+						},
+						"product_features": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "c3037550",
+							"jcr:lastModifiedBy": "c3037550",
+							"jcr:created": "Thu Oct 05 2017 14:03:23 GMT-0400",
+							"jcr:lastModified": "Thu Oct 05 2017 14:03:23 GMT-0400",
+							"sling:resourceType": "eaton/components/product/product-features"
+						},
+						"feature_block": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "c3037550",
+							"jcr:lastModifiedBy": "c3037550",
+							"jcr:created": "Thu Oct 05 2017 14:03:38 GMT-0400",
+							"jcr:lastModified": "Thu Oct 05 2017 14:03:38 GMT-0400",
+							"sling:resourceType": "eaton/components/content/feature-block"
+						},
+						"family_inherited_par": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "e0087282",
+							"jcr:lastModifiedBy": "e0087282",
+							"jcr:created": "Fri Feb 02 2018 21:07:38 GMT-0500",
+							"jcr:lastModified": "Fri Feb 02 2018 21:07:38 GMT-0500",
+							"sling:resourceType": "eaton/components/product/family-inherited-parsys"
+						}
+					},
+					"content-tab-2": {
+						"jcr:primaryType": "nt:unstructured",
+						"sling:resourceType": "wcm/foundation/components/parsys",
+						"product_grid": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "c3037550",
+							"hidePriceDisc": "true",
+							"jcr:lastModifiedBy": "e0067621",
+							"defaultSortingDirection": "asc",
+							"subCategoryHideShow": "false",
+							"jcr:created": "Thu Oct 05 2017 14:03:50 GMT-0400",
+							"view": "productFamily",
+							"jcr:lastModified": "Fri Mar 15 2019 20:44:26 GMT-0400",
+							"sling:resourceType": "eaton/components/product/product-grid",
+							"tags": [
+								"eaton:product-taxonomy/electrical-circuit-protection/circuit-breakers/ch-circuit-breakers",
+								"eaton:product-taxonomy/electrical-circuit-protection/circuit-breakers/br-circuit-breakers",
+								"eaton:country/north-america/us",
+								"eaton:country/north-america/ca"
+							]
+						}
+					},
+					"content-tab-3": {
+						"jcr:primaryType": "nt:unstructured",
+						"sling:resourceType": "wcm/foundation/components/parsys",
+						"topic_link_with_icon": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "e0063964",
+							"jcr:lastModifiedBy": "e0063964",
+							"jcr:created": "Tue Oct 24 2017 14:44:50 GMT-0400",
+							"jcr:lastModified": "Tue Oct 24 2017 14:44:50 GMT-0400",
+							"sling:resourceType": "eaton/components/product/topic-link-with-icon-pdh"
+						},
+						"resource_list": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "c3037550",
+							"jcr:lastModifiedBy": "e0063964",
+							"jcr:created": "Thu Oct 05 2017 14:04:46 GMT-0400",
+							"view": "view-tags",
+							"jcr:lastModified": "Thu Jan 18 2018 11:35:12 GMT-0500",
+							"sling:resourceType": "eaton/components/product/resource-list",
+							"damPath": "/content/dam/eaton"
+						},
+						"product_support": {
+							"jcr:primaryType": "nt:unstructured",
+							"jcr:createdBy": "c3037550",
+							"jcr:lastModifiedBy": "c3037550",
+							"jcr:created": "Thu Oct 05 2017 14:04:57 GMT-0400",
+							"jcr:lastModified": "Thu Oct 05 2017 14:04:57 GMT-0400",
+							"sling:resourceType": "eaton/components/product/product-support"
+						}
+					}
+				},
+				"how_to_buy": {
+					"jcr:primaryType": "nt:unstructured",
+					"jcr:createdBy": "e0063964",
+					"jcr:lastModifiedBy": "e0063964",
+					"jcr:created": "Thu Oct 05 2017 13:17:49 GMT-0400",
+					"text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam blandit metus quis fermentum facilisis.",
+					"jcr:lastModified": "Thu Oct 05 2017 13:17:49 GMT-0400",
+					"sling:resourceType": "eaton/components/product/how-to-buy",
+					"topicLinkDesc": "Donec sagittis lorem lacinia felis congue pulvinar."
+				}
+			},
+			"footer": {
+				"jcr:primaryType": "nt:unstructured",
+				"jcr:createdBy": "c3037550",
+				"jcr:lastModifiedBy": "c3037550",
+				"jcr:created": "Thu Oct 05 2017 10:36:20 GMT-0400",
+				"jcr:lastModified": "Thu Oct 05 2017 10:54:05 GMT-0400",
+				"sling:resourceType": "eaton/components/structure/footer"
+			}
+		}
+	}
+}

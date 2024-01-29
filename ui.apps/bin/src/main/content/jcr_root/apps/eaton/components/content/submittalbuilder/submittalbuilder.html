@@ -1,0 +1,30 @@
+<sly data-sly-use.builder="com.eaton.platform.core.models.submittalbuilder.SubmittalBuilder">
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Submittal Builder</div>
+</sly>
+
+<div class="submittal-builder"
+     data-submittal-scope="${builder.submittalScopeJson}"
+     data-submittal-attributes="${builder.submittalAttributesJson}"
+     data-filters="${builder.filterJson}"
+     data-results="${builder.resultJson}"
+     data-total-count="${builder.totalCount}"
+     data-result-servlet-url="${builder.resultServletUrl}"
+     data-download-servlet-url="${builder.downloadServletUrl}"
+     data-email-servlet-url="${builder.emailServletUrl}"
+     data-results-plural-text="${'Results' @i18n}"
+     data-results-singular-text="${'Result' @i18n}"
+     data-documents-plural-text="${'Documents' @i18n}"
+     data-documents-singular-text="${'Document' @i18n}">
+  <div data-sly-unwrap="${wcmmode.edit ? false : true}" data-sly-resource="${'submittalintro' @ resourceType='eaton/components/content/submittalintro'}"></div>
+  <div class="container">
+    <div data-sly-unwrap="${wcmmode.edit ? false : true}" data-sly-resource="${'submittalfilters' @ resourceType='eaton/components/content/submittalfilters'}"></div>
+    <div data-sly-unwrap="${wcmmode.edit ? false : true}" data-sly-resource="${'submittalresults' @ resourceType='eaton/components/content/submittalresults'}"></div>
+    <div class="submittal-builder__welcome-message ${ wcmmode.edit ? 'is-edit-mode' : ''}">
+      <div data-sly-unwrap="${wcmmode.edit ? false : true}" data-sly-resource="${'welcometitle' @ resourceType='eaton/components/general/title'}"></div>
+      <div data-sly-unwrap="${wcmmode.edit ? false : true}" data-sly-resource="${'welcometext' @ resourceType='eaton/components/general/text'}"></div>
+    </div>
+    <div data-sly-unwrap="${wcmmode.edit ? false : true}" data-sly-resource="${'submittaldownload' @ resourceType='eaton/components/content/submittaldownload'}"></div>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.vanity.impl.VanityDataStoreImpl" immediate="true">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="service.description" type="String" value=" VanityDataStoreImpl"/>
+  <property name="process.label" type="String" value=" VanityDataStoreImpl"/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.vanity.VanityDataStoreService"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="eatonVanityConfigService" interface="com.eaton.platform.core.services.vanity.EatonVanityConfigService" field="eatonVanityConfigService"/>
+  <reference name="externalizer" interface="com.day.cq.commons.Externalizer" field="externalizer"/>
+  <implementation class="com.eaton.platform.core.services.vanity.impl.VanityDataStoreImpl"/>
+</scr:component>

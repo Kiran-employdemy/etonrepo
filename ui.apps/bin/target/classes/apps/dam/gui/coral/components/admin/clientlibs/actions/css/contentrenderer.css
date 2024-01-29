@@ -1,0 +1,35 @@
+coral-Card-Property.status.approved coral-Icon
+{
+    color: #B3DA8A;
+}
+
+coral-Card-Property.status.rejected coral-Icon, coral-Card-Property.expirystatus coral-Icon
+{
+    color: #FA7D73;
+}
+
+coral-Card-Property.status.pending coral-Icon
+{
+    color: #F5B041;
+}
+
+coral-Card-Property.status.expired coral-Icon
+{
+    color: #17202A;
+}
+
+coral-Card-Property.status.retouched coral-Icon
+{
+    color: #2980B9;
+}
+
+.coral-Card-propertyList > coral-Card-Property.rating
+{
+    float: right;
+}
+
+/* EQS-53 Rights Restricted Flag */
+coral-Card-Property.eaton-rights-restricted coral-Icon
+{
+    color: #FA7D73;
+}

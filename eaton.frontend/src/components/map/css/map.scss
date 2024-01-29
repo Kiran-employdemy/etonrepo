@@ -1,0 +1,23 @@
+//-----------------------------------
+// Component: Map
+//-----------------------------------
+
+/* stylelint-disable */
+
+@import "../../../global/css/_config/sass";
+
+
+// Import Sub Views
+@import "views/map-landing";
+@import "views/map-primary";
+@import "views/map-card";
+@import "views/map-info-card";
+
+.gm-style-iw-c {
+  border-radius: 0px !important;
+}
+
+.map_active_filter {
+  margin-top: 1.5rem;
+}
+

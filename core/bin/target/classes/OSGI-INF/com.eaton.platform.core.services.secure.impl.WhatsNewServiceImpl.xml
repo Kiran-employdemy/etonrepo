@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.secure.impl.WhatsNewServiceImpl" immediate="true">
+  <service>
+    <provide interface="com.eaton.platform.core.services.secure.WhatsNewService"/>
+  </service>
+  <reference name="authenticationService" interface="com.eaton.platform.integration.auth.services.AuthenticationService" field="authenticationService"/>
+  <reference name="authenticationServiceConfig" interface="com.eaton.platform.integration.auth.services.AuthenticationServiceConfiguration" field="authenticationServiceConfig"/>
+  <reference name="authorizationService" interface="com.eaton.platform.integration.auth.services.AuthorizationService" field="authorizationService"/>
+  <reference name="endecaAdvancedSearchService" interface="com.eaton.platform.integration.endeca.services.EndecaAdvancedSearchService" field="endecaAdvancedSearchService"/>
+  <implementation class="com.eaton.platform.core.services.secure.impl.WhatsNewServiceImpl"/>
+</scr:component>

@@ -1,0 +1,57 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~ ADOBE CONFIDENTIAL
+~ ___________________
+~ Copyright 2015 Adobe Systems Incorporated
+~ All Rights Reserved.
+~
+~ NOTICE:  All information contained herein is, and remains
+~ the property of Adobe Systems Incorporated and its suppliers,
+~ if any.  The intellectual and technical concepts contained
+~ herein are proprietary to Adobe Systems Incorporated and its
+~ suppliers and are protected by all applicable intellectual property
+~ laws, including trade secret and copyright laws.
+~ Dissemination of this information or reproduction of this material
+~ is strictly forbidden unless prior written permission is obtained
+~ from Adobe Systems Incorporated.
+*/-->
+<sly data-sly-use.afinit="af_init.js"></sly>
+<head data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+  <sly data-sly-include="head.html"/>
+  <sly data-sly-include="head-libs.html"/>
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+  <sly data-sly-test="${afinit.creatorTool}">
+    <meta name="generator" content="${afinit.creatorTool}"/>
+  </sly>
+  <meta data-sly-call="${clientLib.css @categories='guide.core.common'}" data-sly-unwrap />
+  <style type="text/css" data-sly-use.brandColorSelectionData="com.eaton.platform.core.models.brandingselectortool.BrandColorSelectionConfigModel" data-sly-test="${brandColorSelectionData.isBrandColorSelectionConfigPresent}">
+    :root {
+      --primary-brand-color: #${brandColorSelectionData.primaryBrandingColor @context='styleToken'};
+      --utility-nav-background-color: #${brandColorSelectionData.primaryBrandingColor @context='styleToken'};
+      --feature-overlay-color: #${brandColorSelectionData.primaryBrandingColor @context='styleToken'};
+      --navigation-active-border-color: #${brandColorSelectionData.primaryBrandingColor @context='styleToken'};
+      --secondary-brand-color: #${brandColorSelectionData.accentColorOne @context='styleToken'};
+      --grey-secondary-brand-color: #${brandColorSelectionData.accentColorTwo @context='styleToken'};
+      --navigation-search-icon-color: #${brandColorSelectionData.linkColor @context='styleToken'};
+      --link-brand-color: #${brandColorSelectionData.linkColor @context='styleToken'};
+    }
+  </style>
+  <style type="text/css" data-sly-use.brandFontSelectionData="com.eaton.platform.core.models.brandingselectortool.BrandFontSelectionModel" data-sly-test="${brandFontSelectionData.isBrandFontSelectionConfigPresent}">
+
+    :root {
+      --primary-custom-brand-font: '${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFont @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontFallbackFont @context='styleString'}', sans-serif;
+      --primary-custom-brand-font-medium: '${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontMedium @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontMediumFallbackFont @context='styleString'}', sans-serif;
+      --primary-custom-brand-font-bold: '${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontBold @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontBoldFallbackFont @context='styleString'}', sans-serif;
+      --header-font: '${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFont @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontFallbackFont @context='styleString'}', sans-serif;
+      --header-font-medium: '${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontMedium @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontMediumFallbackFont @context='styleString'}', sans-serif;
+      --header-font-bold: '${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontBold @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontBoldFallbackFont @context='styleString'}', sans-serif;
+      --sitemap-font: '${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFont @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.primaryBrandFontFallbackFont @context='styleString'}', sans-serif;
+      --primary-nav-font: '${brandFontSelectionData.brandFontSelectionConfigObj.bodyFont @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.bodyFontFallbackFont @context='styleString'}', sans-serif;
+      --secondary-font: '${brandFontSelectionData.brandFontSelectionConfigObj.bodyFont @context='styleString'}','${brandFontSelectionData.brandFontSelectionConfigObj.bodyFontFallbackFont @context='styleString'}', sans-serif;
+    }
+  </style>
+</head>
+<body data-sly-use.body="body.js" class="page ${body.cssClasses}  ${currentPage.template.name}">
+  <sly data-sly-include="body.html"/>
+  <sly data-sly-include="foot-libs.html"/>
+</body>

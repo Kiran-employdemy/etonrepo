@@ -1,0 +1,50 @@
+<!--/*
+  StyleGuide: Colors
+*/-->
+<template data-sly-template.section="${ @ data }">
+
+  <div class="sg-section sg-colors b-body-copy" id="sg-colors">
+    <h2>Color Palette</h2>
+    <p>The digital color palette is based on Eaton brand colors. Brand colors should always be converted to web safe hexadecimal values and should meet Web Content
+Accessibility Guidelines (WCAG) 2.0. The definitions below are mapped to global elements across the system and should be used unless otherwise noted at the
+module level.</p>
+
+    <br />
+    <table class="sg-table b-body-copy-small">
+      <thead>
+        <tr>
+          <td width="15%">Color Sample</td>
+          <td width="25%">Name</td>
+          <td width="15%">Color Code</td>
+          <td width="45%">SCSS Variable Name</td>
+        </tr>
+      </thead>
+      <tbody>
+        <sly data-sly-list="${ data }">
+          <tr>
+            <td width="50"> <div class="sg-colors__sample" style="background-color: ${ item.colorCode @ context='styleString' }"></div> </td>
+            <td>${ item.name }</td>
+            <td><pre>${ item.colorCode }</pre></td>
+            <td><code>${ item.sassVariable }</code></td>
+
+          </tr>
+        </sly>
+      </tbody>
+    </table>
+
+
+    <hr class="sg-divider" />
+
+
+    <style>
+
+      .sg-colors__sample {
+        width: 48px;
+        height: 48px;
+        border: 1px solid #DDD;
+      }
+
+    </style>
+  </div>
+
+</template>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.CountryLangCodeConfigServiceConfig">
+  <OCD id="com.eaton.platform.core.services.config.CountryLangCodeConfigServiceConfig" name="Country Language Code Configuraton " description="Country Language Code Configuraton">
+    <AD id="MAX.CACHE.SIZE" type="Integer" name="Max Cache Size" description="The maximum amount of responses to cache before invalidating the oldest entries." default="1000"/>
+    <AD id="MAX.CACHE.DURATION" type="Integer" name="Max Cache Duration" description="Seconds that a cached response will stay valid." default="60"/>
+    <AD id="X.DEFAULT.HREF.LANG.CODE" type="String" cardinality="2147483647" name="X-default hrefLangCode config for different domains" description="Enter x-default hrefLangCode with respective repository path (no spaces) : Repository path | HrefLangCode" default="/content/eaton|us/en-us,/content/login|us/en-us,/content/eaton-cummins|us/en-us,/content/greenswitching|gb/en-gb,/content/phoenixtec|us/en-us"/>
+    <AD id="exclude.country.code.list" type="String" cardinality="2147483647" name="Exclude secure country list" description="Enter country code which should be excluded for secure pages/assets" default="IR,SY,CU,SD,KP"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.impl.CountryLangCodeConfigServiceImpl">
+    <Object ocdref="com.eaton.platform.core.services.config.CountryLangCodeConfigServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

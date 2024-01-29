@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.CrossReferenceSearchServlet" immediate="true">
+  <property name="sling.servlet.extensions" type="String" value="json"/>
+  <property name="sling.servlet.resourceTypes" type="String" value="eaton/components/product/cross-reference"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <property name="sling.servlet.selectors" type="String" value="crossreference"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="configService" interface="com.eaton.platform.core.services.EatonConfigService" field="configService"/>
+  <reference name="endecaRequestService" interface="com.eaton.platform.core.services.EndecaRequestService" field="endecaRequestService"/>
+  <reference name="endecaService" interface="com.eaton.platform.integration.endeca.services.EndecaService" field="endecaService"/>
+  <implementation class="com.eaton.platform.core.servlets.CrossReferenceSearchServlet"/>
+</scr:component>

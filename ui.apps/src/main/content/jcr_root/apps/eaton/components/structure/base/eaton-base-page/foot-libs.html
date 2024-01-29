@@ -1,0 +1,72 @@
+<!--/*
+    Copyright 2015 Adobe Systems Incorporated
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+*/-->
+
+<!--/* Include the site client libraries (loading only the JS in the footer, CSS was loaded in the header) */-->
+<sly data-sly-use.wcmInit="/libs/wcm/foundation/components/page/initwcm.js"
+     data-sly-use.clientLib="${'/libs/granite/sightly/templates/clientlib.html'}">
+<sly data-sly-test.templateCategories="${wcmInit.templateCategories.length > 0}"
+     data-sly-call="${clientLib.js @ categories=wcmInit.templateCategories}" />
+
+<sly data-sly-include="customfooterlibs.html" />
+
+<sly data-sly-use.cookies="${'com.eaton.platform.core.models.CookieStatusModel'}">
+
+<!--/*
+    Clientlibs that use cookies should be inside div#footer-cookie-client-libs to ensure it is only loaded if cookies have been accepted.
+    If cookies have been declined, div#footer-cookie-client-libs does not render at all
+*/-->
+<div id="footer-cookie-client-libs" data-sly-test="${!cookies.declined}">
+    <sly data-sly-test="${!cookies.accepted}">
+        <script>
+            window.onload = function () {
+            const footerCookieClientLibs = document.getElementById('footer-cookie-client-libs');
+
+            footerCookieClientLibs.parentElement.removeChild(footerCookieClientLibs);
+
+            $(document).on( App.global.constants.EVENTS.HEADER.COOKIE_SET, function() {
+                if($.cookie('eatoncookies') === 'true') {
+                    document.body.appendChild(footerCookieClientLibs);
+                }
+            });
+        }
+        </script>
+    </sly>
+    <!--/*
+        These instances of contexthub and NanoRep are only loaded when cookies are initially accepted.
+        Subsequent page loads will use the header versions.
+    */-->
+    <sly data-sly-use.salesforceKnowledgeSearchService="com.eaton.platform.integration.salesforce.services.SalesforceKnowledgeSearchService">
+        <sly data-sly-test="${ !salesforceKnowledgeSearchService.isGlobalEnabled }">
+            <sly data-sly-test="${! inheritedPageProperties.disableNanoRep}">
+                <sly data-sly-test="${nanoRepchatConfig.showComponent && !cookies.accepted}">
+                    <sly data-sly-resource="${'nanorep-chat' @ resourceType='/apps/eaton/components/content/nanorep-chat'}"></sly>
+                </sly>
+            </sly>
+        </sly>
+    </sly>
+</div>
+
+<script>
+    // if IE11, use the css-vars-ponyfill to add css variable support
+    window.addEventListener('load', function(event) {
+        if (typeof cssVars !== "undefined") {
+            cssVars();
+        }
+    });
+</script>
+
+<!--/* Include Adobe Dynamic Tag Management libraries for the footer */-->
+<sly data-sly-resource="${@ resourceType='cq/cloudserviceconfigs/components/servicecomponents'}" data-sly-unwrap/>

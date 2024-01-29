@@ -1,0 +1,53 @@
+<!--/*
+  M-37 - Product Card: Subcategory Item
+
+  -
+  NOTE: If the HTML structure of this file changes, please also Update the file:
+  `/eaton.frontend/src/components/product-grid/js/product-grid.js`
+  Since that files contains a Javascript Template that is used when more results are loaded with AJAX
+
+*/-->
+<template data-sly-template.item="${ @ results, itemData }">
+
+  <div class="product-card-subcategory">
+
+    <!--/* Active Area / Link */-->
+    <a href="${ itemData.url }" data-analytics-event="model-result"
+      target="${ itemData.contentItem.link.target }"
+      class="product-card-subcategory__link">
+      <span class="sr-only">${ results.productCardSubcategoryBean.goTo } ${ itemData.productName }</span>
+    </a>
+
+    <!--/* Card Content */-->
+    <div class="product-card-subcategory__image-wrapper">
+      <!-- Start: Rendition Image Component -->
+      <sly data-sly-use.tpl="../../shared/templates/rendition-image.html">
+        <sly data-sly-call="${ tpl.module @ data=itemData.productImageBean }"></sly>
+      </sly>
+      <!-- End: Rendition Image Component -->
+      <sly data-sly-test="${itemData.productStatus == 'Discontinued'}">
+		<div class="module-product-detail-card__badge-discontinued">${'productStatus' @i18n}</div>
+      </sly>
+	  <sly data-sly-test="${itemData.newBadgeVisible}">
+		<div class="module-product-detail-card__badge-new">${ 'ResourceList.NewBadge' @ i18n }</div>
+      </sly>
+    </div>
+
+    <div class="product-card-subcategory__content-wrapper">
+       <sly data-sly-test="${results.subCategoryHideShow}">
+      <div class="product-card-subcategory__subcategory b-eyebrow-small">${ itemData.subCategoryName }</div>
+      </sly>
+      <h2 class="product-card-subcategory__name"><sly data-sly-test="${itemData.secure}">
+        <i class="icon icon-secure-lock" aria-hidden="true"></i></sly>
+        ${ itemData.productName }
+      </h2>
+       <sly data-sly-test="${results.IsSubCategoryView}">
+       		<sly data-sly-test="${!results.HideProductDescription}">
+         		${ itemData.productGridDescription @context='html'}
+      		</sly>
+       </sly>
+    </div>
+
+  </div>
+
+</template>

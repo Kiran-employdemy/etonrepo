@@ -1,0 +1,20 @@
+<!-- /*
+  * Eaton
+  * Copyright (C) 2020 Eaton. All Rights Reserved
+  */ -->
+<sly data-sly-test="${ wcmmode.edit && !properties.text }">
+  <div class="alert alert-warning">Thank You Text</div>
+</sly>
+
+<div data-sly-test="${ properties.toggleInnerGrid }" class="container">
+  <div class="thank-you-parse eaton-text-default__content rich-text-container overlapping__anchor" id="confirmationtext">${ properties.confirmationtext @ context = 'html' }</div>
+  <div class="thank-you-parse eaton-text-default__content rich-text-container overlapping__anchor" id="noconfirmationtext">${ properties.noconfirmationtext @ context = 'html' }</div>
+  <div class="thank-you-parse eaton-text-default__content rich-text-container overlapping__anchor" id="failuretext">${ properties.failuretext @ context = 'html' }</div>
+</div>
+
+<div data-sly-test="${ !properties.toggleInnerGrid }"
+     class="thank-you-parse eaton-text-default__content rich-text-container" id="confirmationtext">${ properties.confirmationtext @ context = 'html' }</div>
+<div data-sly-test="${ !properties.toggleInnerGrid }"
+     class="thank-you-parse eaton-text-default__content rich-text-container" id="noconfirmationtext">${ properties.noconfirmationtext @ context = 'html' }</div>
+<div data-sly-test="${ !properties.toggleInnerGrid }"
+     class="thank-you-parse eaton-text-default__content rich-text-container" id="failuretext">${ properties.failuretext @ context = 'html' }</div>

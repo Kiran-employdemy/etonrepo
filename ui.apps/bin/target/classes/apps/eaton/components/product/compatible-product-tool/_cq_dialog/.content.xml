@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Compatibility product Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[product.grid.dialog]"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container"
+        class="product-grid-dialog">
+        <items jcr:primaryType="nt:unstructured">
+            <herotext
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/section"
+                rel="cq-siteadmin-admin-properties-tabs">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                    margin="{Boolean}false"
+                    type="nav"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Component Properties - Touch UI"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <items jcr:primaryType="nt:unstructured">
+                            <componentValue
+                                jcr:primaryType="nt:unstructured"
+                                granite:class="cq-dialog-dropdown-showhide"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Select the component type"
+                                name="./componentValue"
+                                required="true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <dimmerView
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Dimmer view"
+                                        value="dimmerView"/>
+                                    <ledView
+                                        jcr:primaryType="nt:unstructured"
+                                        text="LED view"
+                                        value="ledView"/>
+                                </items>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-dialog-dropdown-showhide-target=".led-bulbs-showhide-target"/>
+                            </componentValue>
+                            <defaultsearchTerm
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Configure a default search term. This term is used as a default/ fallback value to fetch data from Endeca. This is required for dialog to display the available attributes"
+                                fieldLabel="Default search Term"
+                                name="./defaultSearchTerm"/>
+                            <lampManufacturerLabel
+                                jcr:primaryType="nt:unstructured"
+                                granite:class="led-bulbs-showhide-target"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Lamp manufacturer label"
+                                name="./lampManufacturerLabel">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="ledView"/>
+                            </lampManufacturerLabel>
+                            <lampModelNumber
+                                jcr:primaryType="nt:unstructured"
+                                granite:class="led-bulbs-showhide-target"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Lamp model number"
+                                name="./lampModelNumber">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="ledView"/>
+                            </lampModelNumber>
+                            <feature-list
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="ledView"
+                                granite:class="led-bulbs-showhide-target"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldDescription="Click 'Add' to add more Quotes"
+                                fieldLabel="Attribute list">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="ledView"/>
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./attributeList">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <attributeLabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Configure this field to give a label to the attribute"
+                                                    fieldLabel="Attribute label"
+                                                    name="./attributeLabel"/>
+                                                <attributeValue
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                    fieldLabel="Attribute value( From endeca)"
+                                                    name="./attributeVaue"
+                                                    required="true">
+                                                    <datasource
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="/apps/eaton/components/product/compatible-product-tool/datasources/attributes.html"
+                                                        addNone="{Boolean}true"
+                                                        selector="desktop"/>
+                                                </attributeValue>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </feature-list>
+                        </items>
+                    </column>
+                    <facet
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Facet Group and Value List"
+                        sling:resourceType="granite/ui/components/foundation/section">
+                        <items jcr:primaryType="nt:unstructured">
+                            <feature-list
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldDescription="Click 'Add' to add more Quotes"
+                                fieldLabel="Attribute list">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./filterList">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <attributeLabel
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Configure this field to give a label to the attribute"
+                                                    fieldLabel="Filter Attribute label"
+                                                    name="./filterAttributeLabel"/>
+                                                <attributeValue
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/select"
+                                                    fieldLabel="Filter Attribute value( From endeca)"
+                                                    name="./filterAttributeVaue"
+                                                    required="true">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <D_TST_EXT_Lamp_Manufacturer
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="D_TST_EXT_Lamp_Manufacturer"
+                                                            value="D_TST_EXT_Lamp_Manufacturer"/>
+                                                        <D_TST_Ext_Model_Number
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="D_TST_Ext_Model_Number"
+                                                            value="D_TST_Ext_Model_Number"/>
+                                                        <D_TST_LED_Rating
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="D_TST_LED_Rating"
+                                                            value="D_TST_LED_Rating"/>
+                                                        <D_TST_LED_Compatible_Score
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="D_TST_LED_Compatible_Score"
+                                                            value="D_TST_LED_Compatible_Score"/>
+                                                        <D_TST_Ext_Type
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="D_TST_Ext_Type"
+                                                            value="D_TST_Ext_Type"/>
+                                                        <D_TST_EXT_Base
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="D_TST_EXT_Base"
+                                                            value="D_TST_EXT_Base"/>
+                                                        <D_TST_EXT_Wattage
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="D_TST_EXT_Wattage"
+                                                            value="D_TST_EXT_Wattage"/>
+                                                        <D_TST_EXT_Lamp_Voltage
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="D_TST_EXT_EquivalentIncandescent_wattage"
+                                                            value="D_TST_EXT_EquivalentIncandescent_wattage"/>
+                                                        <D_TST_EXT_EquivalentIncandescent_wattage
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="D_TST_Ext_Type"
+                                                            value="D_TST_Ext_Type"/>
+                                                        <D_TST_EXT_Lamp_Lumen_Output
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="D_TST_EXT_Lamp_Lumen_Output"
+                                                            value="D_TST_EXT_Lamp_Lumen_Output"/>
+                                                        <D_TST_EXT_Color_Temperature
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="D_TST_EXT_Color_Temperature"
+                                                            value="D_TST_EXT_Color_Temperature"/>
+                                                        <Product_Type
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Product_Type"
+                                                            value="Product_Type"/>
+                                                        <Color
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Color"
+                                                            value="Color"/>
+                                                        <Connection_Type
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Connection_Type"
+                                                            value="Connection_Type"/>
+                                                        <Number_Of_Poles
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Number_Of_Poles"
+                                                            value="Number_Of_Poles"/>
+                                                        <Voltage_Rating
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Voltage_Rating"
+                                                            value="Voltage_Rating"/>
+                                                        <Status
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Status"
+                                                            value="Status"/>
+                                                    </items>
+                                                </attributeValue>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </feature-list>
+                        </items>
+                    </facet>
+                </items>
+            </herotext>
+        </items>
+    </content>
+</jcr:root>

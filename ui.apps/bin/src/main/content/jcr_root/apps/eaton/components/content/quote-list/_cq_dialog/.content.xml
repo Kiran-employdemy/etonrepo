@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Quote List"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="en/cq/current/wcm/default_components.html#Carousel">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <quotelist
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Quote List Properties"
+                sling:resourceType="granite/ui/components/foundation/section">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <quote-links
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                composite="{Boolean}true"
+                                fieldDescription="Click 'Add' to add more Quotes"
+                                fieldLabel="Quote List">
+                                <field
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                    name="./quoteListResource">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <column
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <imagePath
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                    allowUpload="{Boolean}false"
+                                                    autoStart="{Boolean}false"
+                                                    class="cq-droptarget"
+                                                    fieldDescription="This field stores the bg image of Quote List Component."
+                                                    fieldLabel="Image Path *"
+                                                    fileNameParameter="./fileName"
+                                                    fileReferenceParameter="./imagePath"
+                                                    mimeTypes="[image]"
+                                                    multiple="{Boolean}false"
+                                                    name="./imageName"
+                                                    required="true"
+                                                    title="Upload Image Asset"
+                                                    uploadUrl="${suffix.path}"
+                                                    useHTML5="{Boolean}true"/>
+                                                <imageAltText
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="Quote image Alt text. "
+                                                    fieldLabel="Image Alt Text"
+                                                    name="./imageAltText"/>
+                                                <quoteAlignmentDesktop
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="Options will align the image using the selected alignment."
+                                                    fieldLabel="Desktop Image Alignment"
+                                                    name="./quoteAlignmentDesktop">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <left-top
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Left Top"
+                                                            value="left-top"/>
+                                                        <left-center
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Left Center"
+                                                            value="left-center"/>
+                                                        <left-bottom
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Left Bottom"
+                                                            value="left-bottom"/>
+                                                        <center-top
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Center Top"
+                                                            value="center-top"/>
+                                                        <center-center
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Center Center"
+                                                            value="center-center"/>
+                                                        <center-bottom
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Center Bottom"
+                                                            value="center-bottom"/>
+                                                        <right-top
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Right Top"
+                                                            value="right-top"/>
+                                                        <right-center
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Right Center"
+                                                            value="right-center"/>
+                                                        <right-bottom
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Right Bottom"
+                                                            value="right-bottom"/>
+                                                    </items>
+                                                </quoteAlignmentDesktop>
+                                                <quoteAlignmentMobile
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                    fieldDescription="Options will align the image using the selected alignment."
+                                                    fieldLabel="Mobile Image Alignment"
+                                                    name="./quoteAlignmentMobile">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <left-top
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Left Top"
+                                                            value="left-top"/>
+                                                        <left-center
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Left Center"
+                                                            value="left-center"/>
+                                                        <left-bottom
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Left Bottom"
+                                                            value="left-bottom"/>
+                                                        <center-top
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Center Top"
+                                                            value="center-top"/>
+                                                        <center-center
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Center Center"
+                                                            value="center-center"/>
+                                                        <center-bottom
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Center Bottom"
+                                                            value="center-bottom"/>
+                                                        <right-top
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Right Top"
+                                                            value="right-top"/>
+                                                        <right-center
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Right Center"
+                                                            value="right-center"/>
+                                                        <right-bottom
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Right Bottom"
+                                                            value="right-bottom"/>
+                                                    </items>
+                                                </quoteAlignmentMobile>
+                                                <description
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                    fieldDescription="Description of Quote"
+                                                    fieldLabel="Description *"
+                                                    name="./description"
+                                                    required="true"/>
+                                                <quoteAuthor
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="This field stores the Quote Author Name"
+                                                    fieldLabel=" Author *"
+                                                    name="./author"
+                                                    required="true"/>
+                                                <authorRole
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldDescription="This field stores the quote author role."
+                                                    fieldLabel=" Author Role *"
+                                                    name="./authorDesignation"
+                                                    required="true"/>
+                                            </items>
+                                        </column>
+                                    </items>
+                                </field>
+                            </quote-links>
+                            <desktopTrans
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="All values should drive from the configuration"
+                                fieldLabel="Desktop Image *"
+                                name="./desktopTrans"
+                                required="true">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/ecom/content/imageTransform"
+                                    addNone="{Boolean}true"
+                                    selector="desktop"/>
+                            </desktopTrans>
+                            <mobileTrans
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/select"
+                                fieldDescription="All values should drive from the configuration"
+                                fieldLabel="Mobile Image *"
+                                name="./mobileTrans"
+                                required="true">
+                                <datasource
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="/ecom/content/imageTransform"
+                                    addNone="{Boolean}true"
+                                    selector="mobile"/>
+                            </mobileTrans>
+                        </items>
+                    </column>
+                </items>
+            </quotelist>
+        </items>
+    </content>
+</jcr:root>

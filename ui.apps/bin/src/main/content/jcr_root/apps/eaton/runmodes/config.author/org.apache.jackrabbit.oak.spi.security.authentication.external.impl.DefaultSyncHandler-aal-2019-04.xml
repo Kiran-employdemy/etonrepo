@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="sling:OsgiConfig"
+    group.pathPrefix=""
+    user.dynamicMembership="{Boolean}false"
+    group.expirationTime="1d"
+    user.membershipExpTime="15m"
+    user.pathPrefix="ims"
+    user.propertyMapping="[oauth/oauthid-=profile/id,profile/app-=access_token,profile/sling:resourceType=&quot;cq/security/components/profile&quot;,profile/id=profile/id,profile/name=profile/name,profile/familyName=profile/familyName,profile/givenName=profile/givenName,profile/countryCode=profile/countryCode,profile/mrktPermEmail=profile/mrktPermEmail,profile/emailVerified=profile/emailVerified,profile/phoneNumber=profile/phoneNumber,profile/email=profile/email,profile/utcOffset=profile/utcOffset,profile/mrktPerm=profile/mrktPerm,profile/displayName=profile/displayName,profile/orgs=profile/orgs]"
+    handler.name="ims"
+    enableRFC7613UsercaseMappedProfile="{Boolean}false"
+    user.autoMembership="[]"
+    user.expirationTime="15m"
+    group.propertyMapping="[]"
+    group.autoMembership="[]"
+    user.disableMissing="{Boolean}true"
+    user.membershipNestingDepth="{Long}1"
+/>

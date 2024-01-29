@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.PimImporterServlet" immediate="true">
+  <property name="sling.servlet.extensions" type="String" value="json"/>
+  <property name="sling.servlet.resourceTypes" type="String" value="eaton/components/product/importer"/>
+  <property name="sling.servlet.methods" type="String" value="POST"/>
+  <property name="sling.servlet.selectors" type="String" value="upload"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="pimImporterService" interface="com.eaton.platform.core.services.PimImporterService" field="pimImporterService"/>
+  <implementation class="com.eaton.platform.core.servlets.PimImporterServlet"/>
+</scr:component>

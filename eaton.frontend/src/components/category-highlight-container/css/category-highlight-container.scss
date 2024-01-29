@@ -1,0 +1,70 @@
+//-----------------------------------
+// M-49 Category Highlight - Container Component
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+.category-highlight-container {
+
+  &__component {
+    margin: 0 0 rem($spacing__md * .75) 0;
+
+    @include media-desktop-and-up {
+      margin-bottom: rem($spacing__md);
+    }
+  }
+
+  .home-page-hero__text {
+    display: block;
+    font-size: rem($base__font-size * 1.6);
+
+    @include media-desktop-and-up {
+      font-size: rem($base__font-size * 1.8);
+    }
+  }
+
+  // EATON-598 - Override Margins when the List component is nested inside the Category Highlight Module
+  .category-highlight-article__component {
+    margin-top: 0;
+  }
+
+  &__bottom {
+    margin-top: rem(-$spacing__lg);
+  }
+
+
+  @include media-tablet-only {
+    &__bottom {
+      margin-top: rem(-$spacing__lg * 1.111111);
+    }
+  }
+
+  @include media-desktop-and-up {
+    &__bottom {
+      margin-top: rem(-$spacing__xl * 1.25);
+    }
+  }
+
+}
+
+
+
+//-----------------------------------
+// AEM Author Mode Styles
+//-----------------------------------
+
+// stylelint-disable selector-class-pattern
+.aem-AuthorLayer-Edit,
+.cq-wcm-edit {
+
+  // stylelint-enable
+  .category-highlight-container {
+
+    &__bottom {
+      margin-top: 0;
+    }
+
+  }
+}

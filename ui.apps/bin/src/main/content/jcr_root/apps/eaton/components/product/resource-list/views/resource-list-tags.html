@@ -1,0 +1,198 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Resource List</div>
+</sly>
+
+<sly data-sly-use.viewData="com.eaton.platform.core.models.resourcelist.ResourceListTagsModel">
+    <div class="${viewData.enableBulkDownload ? 'container bde-activated' : 'container'}">
+        <sly data-sly-test="${viewData.enableBulkDownload}">
+            <div id="assets-bulkdownload-email-div"
+                 data-sly-resource="${ 'asset-bulk-download-email' @ resourceType='/apps/eaton/components/general/asset-bulk-download-email' }">
+            </div>
+        </sly>
+        <div class="row">
+            <!--/* M-45: Table */-->
+            <div class="col-xs-12">
+                <div data-sly-list="${ viewData.documentGroupList }" class="panel-group secondary-content-accordion"
+                    role="tablist" aria-multiselectable="true">
+                    <sly data-sly-test="${ item.resourceListTagsBean}">
+                        <div class="panel secondary-content-accordion__panel">
+                            <div class="panel-heading secondary-content-accordion__header" role="tab"
+                                id="${item.anchorId}">
+                                <div href="#collapse-${itemList.index}" aria-expanded="true"
+                                    aria-controls="collapse-${itemList.index}"
+                                    class="secondary-content-accordion__header--title" data-toggle="collapse"
+                                    data-parent="secondary-content-accordion">
+                                    <i class="secondary-content-accordion__icons icon icon-sign-plus"></i>
+                                    <h2 class="secondary-content-accordion__header--title"> ${item.groupName} </h2>
+                                </div>
+                            </div>
+                            <div id="collapse-${itemList.index}" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="${ item.anchorId }">
+                                <div class="secondary-content-accordion__body">
+                                    <ul data-sly-list.document="${ item.resourceListTagsBean}"
+                                        class="resource-list__download-links secondary-content-accordion__column">
+                                        <li class="resource-list__download-item secondary-content-accordion__download-icon"
+                                            data-rendition-140x100="${document.rendition140x100}"
+                                            data-rendition-319x319="${document.rendition319x319}"
+                                            data-rendition-big-image="${document.bigImage}">
+                                            <sly data-sly-test="${document.isDrawingType}">
+                                                <div class="resource-list__download-document-custom row">
+                                                    <div class="resource-thumbnail-div  col-sm-12 col-md-2"
+                                                        data-sly-test="${document.isDrawingType}">
+                                                        <img src="${document.rendition140x100}" alt="thumbnail"
+                                                            class="resource-thumbnail-img" />
+                                                    </div>
+                                                    <div class="resource-text-details  col-sm-12 col-md-10">
+                                                        <div class="custom-resource-list__title">
+                                                            <span data-href="${document.rendition319x319}"
+                                                                data-title="${ document.assetTitle}"
+                                                                data-desc="${document.assetDescription}"
+                                                                aria-label="Download ${document.assetFileType} for ${ document.assetTitle }"
+                                                                class="popup-content resource-list__title-link b-heading-h5"
+                                                                name="${ item.anchorId }">
+                                                                <sly data-sly-test="${viewData.enableBulkDownload}">
+                                                                    <input type="checkbox" title="${document.assetTitle}" class="advanced-search__select advanced-search_track" name="toDownload" data-size="${document.assetFileSize}" id="${item.anchorId}-${documentList.index}" data-url="${document.assetLink}"  track-download="${document.trackDownload}"  asset-type="${document.assetFileType}"/>
+                                                                </sly>
+                                                                <sly data-sly-test="${!document.isExternal}">
+                                                                    <i data-sly-test="${!document.assetFileSize && document.isSecure}"
+                                                                        class="icon icon-secure-lock"
+                                                                        aria-hidden="true"></i>
+                                                                </sly>${ document.assetTitle }
+                                                                <span data-sly-test="${document.newAsset == 'updated'}"
+                                                                    class="secondary-content-accordion__badge resource-list__badge">${
+                                                                    'ResourceList.UpdatedBadge' @ i18n }</span>
+                                                                <span data-sly-test="${document.newAsset == 'new'}"
+                                                                    class="secondary-content-accordion__badge resource-list__badge">${
+                                                                    'ResourceList.NewBadge' @ i18n }</span>
+                                                            </span>
+                                                        </div>
+                                                        <sly data-sly-test="${document.assetDescription}">
+                                                            <div class="custom-resource-list__description">
+                                                                ${document.assetDescription}
+                                                            </div>
+                                                        </sly>
+
+                                                        <sly data-sly-test="${document.assetFileSize}">
+                                                            <div class="b-body-copy-small resource-list__download-size resource-list__secure-icon ">
+                                                                <i data-sly-test="${document.isSecure}"
+                                                                    class="icon icon-secure-lock"
+                                                                    aria-hidden="true"></i>
+                                                            </div>
+                                                        </sly>
+                                                        <sly data-sly-test="${document.shaHash}">
+                                                            <div class="b-body-copy-small download-links__SHA">
+                                                                ${'sha256' @ i18n} : ${document.shaHash}
+                                                            </div>
+                                                        </sly>
+                                                        <sly data-sly-test="${document.eccn}">
+                                                            <div class="b-body-copy-small download-links__warning">
+                                                                ${'eccnWarning' @ i18n} ${document.eccn}
+                                                            </div>
+                                                        </sly>
+                                                    </div>
+                                                </div>
+                                            </sly>
+                                            <sly data-sly-test="${!document.isDrawingType}">
+                                                <div class="resource-list__download-document">
+                                                    <div class="resource-list__title">
+                                                        <sly data-sly-test="${viewData.enableBulkDownload}">
+                                                            <input type="checkbox" title="${document.assetTitle}" class="advanced-search__select advanced-search_track" name="toDownload" data-size="${document.assetFileSize}" id="${item.anchorId}-${documentList.index}" data-url="${document.assetLink}"  track-download="${document.trackDownload}"  asset-type="${document.assetFileType}"/>
+                                                        </sly>
+                                                        <a href="${document.assetLink}"
+                                                            aria-label="Download ${document.assetFileType} for ${ document.assetTitle }"
+                                                            target="_blank" filename="${document.eatonFileName}"
+                                                            data-track-download="${document.trackDownload}"
+                                                            class="resource-list__title-link b-heading-h5 track_download"
+                                                            name="${ item.anchorId }">
+                                                            <sly data-sly-test="${!document.isExternal}">
+                                                                <i class="icon icon-download" aria-hidden="true"></i>
+                                                                <i data-sly-test="${!document.assetFileSize && document.isSecure}"
+                                                                    class="icon icon-secure-lock"
+                                                                    aria-hidden="true"></i>
+                                                            </sly>${document.assetTitle}
+                                                        </a>
+                                                        <sly data-sly-test="${document.isExternal}">
+                                                            <i class="icon icon-link-external" aria-hidden="true"></i>
+                                                        </sly>
+                                                        <span data-sly-test="${document.newAsset == 'updated'}"
+                                                            class="secondary-content-accordion__badge resource-list__badge">${
+                                                            'ResourceList.UpdatedBadge' @ i18n }</span>
+                                                        <span data-sly-test="${document.newAsset == 'new'}"
+                                                            class="secondary-content-accordion__badge resource-list__badge">${
+                                                            'ResourceList.NewBadge' @ i18n }</span>
+                                                    </div>
+                                                    <sly data-sly-test="${document.assetDescription}">
+                                                        <div class="b-body-copy-small resource-list__description">
+                                                            ${document.assetDescription}
+                                                        </div>
+                                                    </sly>
+                                                    <sly data-sly-test="${document.assetFileSize}">
+                                                        <div class="b-body-copy-small resource-list__download-size"><i
+                                                                data-sly-test="${document.isSecure}"
+                                                                class="icon icon-secure-lock" aria-hidden="true"></i>
+                                                            (${document.assetFileSize}<sly
+                                                                data-sly-test="${document.assetPublicationDate}">,
+                                                                ${document.assetPublicationDate}</sly>)</div>
+                                                    </sly>
+                                                    <sly data-sly-test="${document.shaHash}">
+                                                        <div class="b-body-copy-small download-links__SHA">
+                                                            ${'sha256' @ i18n} : ${document.shaHash}
+                                                        </div>
+                                                    </sly>
+                                                    <sly data-sly-test="${document.eccn}">
+                                                        <div class="b-body-copy-small download-links__warning">
+                                                            ${'eccnWarning' @ i18n} ${document.eccn}
+                                                        </div>
+                                                    </sly>
+                                                </div>
+                                            </sly>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </sly>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bulk-download adv-bulk-download" id="bulkDownload" data-sly-test="${viewData.enableBulkDownload}"
+         data-cache-duration="${viewData.downloadCacheDuration}" data-zip-size-limit="${viewData.maxAllowedDownloadSize}"
+         data-file-name-prefix="${viewData.fileNamePrefix}">
+        <a rel="nofollow" role="button" id="bulkDownload-link" class="hidden"> <i class="icon icon-download" aria-hidden="true"></i>
+            ${viewData.bulkDownloadText}
+            <span id="selecteddownload"></span></a>
+    </div>
+    <div id="maxlimit-exceed" class=" submittal-builder__modal overlay hidden" data-title="Download">
+        <div class=" submittal-builder__modal__inner-content">
+            <h3 class="submittal-builder__modal__header">${ viewData.bulkDownloadText}</h3>
+            <button aria-label="Close" class="button--reset submittal-builder__modal__close">
+                <span class="sr-only">Close Download</span>
+                <i id="maxlimit-close" class="icon icon-close" aria-hidden="true"></i>
+            </button>
+
+            <div class="eaton-form submittal-builder__download__form ">
+                <p class="submittal-builder__download__preferred-option">${ viewData.downloadLimitExceededText}</p>
+            </div>
+        </div>
+    </div>
+</sly>
+<div class="custom-resource-popup hide addthis-animated fadeIn">
+    <div class="">
+        <div class="row">
+            <span class="resource-big-close resource-big-close-span">X</span>
+            <div class="col-xs-12 col-sm-12 col-md-5">
+                <div class="resource-big-div text-center">
+                    <img src="" class="resource-big-image" />
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-7">
+                <div class="resource-big-title b-heading-h5"></div>
+                <div class="resource-big-description"></div>
+                <div class="resource-big-secure"></div>
+                <a href="#" class="resource-big-popup-link resource-big-downloadlink" download>Download</a>
+                <span class="resource-big-popup-link resource-big-close">Close</span>
+            </div>
+        </div>
+    </div>
+</div>

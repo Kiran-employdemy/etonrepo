@@ -1,0 +1,3 @@
+#base=js
+
+view-no-image.js

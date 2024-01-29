@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.ReCaptchaServiceConfig">
+  <OCD id="com.eaton.platform.core.services.config.ReCaptchaServiceConfig" name="ReCaptchaServiceImpl" description="">
+    <AD id="validationUrl" type="String" name="Google ReCAPTCHA Validation URL" description="The URL that validates Google ReCAPTCHA." default="https://www.google.com/recaptcha/api/siteverify"/>
+    <AD id="maxConnections" type="Integer" name="Max Connections" description="Defines the maximum number of connections allowed overall. This value only applies to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+    <AD id="maxHostConnections" type="Integer" name="Max Host Connections" description="Defines the maximum number of connections allowed per host configuration. These values only apply to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.impl.ReCaptchaServiceImpl">
+    <Object ocdref="com.eaton.platform.core.services.config.ReCaptchaServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

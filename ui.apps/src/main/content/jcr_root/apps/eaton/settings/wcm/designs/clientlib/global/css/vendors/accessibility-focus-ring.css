@@ -1,0 +1,11 @@
+/*
+ * Based on the proposed CSS :focus-ring pseudo-selector,
+ * this prototype adds a focus-ring class to the focused element,
+ * in situations in which the :focus-ring pseudo-selector should match.
+ *
+ * INFO: https://github.com/WICG/focus-ring
+ */
+
+.focus-ring-enabled :focus:not(.focus-ring) {
+  outline-width: 0;
+}

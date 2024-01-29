@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="37.347527mm"
+   height="43.391666mm"
+   viewBox="0 0 37.347527 43.391666"
+   version="1.1"
+   id="svg3569"
+   inkscape:version="1.0.1 (c497b03c, 2020-09-10)"
+   sodipodi:docname="secure-lock.svg">
+  <defs
+     id="defs3563" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.35"
+     inkscape:cx="24.863715"
+     inkscape:cy="476.28571"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1252"
+     inkscape:window-height="943"
+     inkscape:window-x="68"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata3566">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-3.2488563,-3.2505953)">
+    <path
+       d="m 23.967847,30.899553 v 6.148211 H 19.873508 V 30.899905 C 19.151372,30.30759 18.69135,29.408714 18.69135,28.401886 c 0,-1.783644 1.44533,-3.229681 3.228975,-3.229681 1.78435,0 3.230386,1.446037 3.230386,3.229681 0,1.006475 -0.460375,1.905353 -1.182864,2.497667 M 8.1612873,21.156183 H 35.68536 v 21.21782 H 8.1612873 Z M 21.929144,7.8758643 c 4.987925,0 8.664574,3.7479107 8.972549,9.0110027 H 12.955889 c 0.308328,-5.263092 3.984978,-9.0110027 8.973255,-9.0110027 M 40.596381,16.886867 H 35.534373 C 35.202056,9.0636673 29.46483,3.2505953 21.929144,3.2505953 c -7.536391,0 -13.2736157,5.813072 -13.6055787,13.6362717 H 3.2488563 V 46.642262 H 40.596381 Z"
+       style="fill:#231f20;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.352777"
+       id="path2198" />
+  </g>
+</svg>

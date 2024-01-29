@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.workflows.EatonContentRolloutReviewNotificationOffloadingProcess" immediate="true" activate="activate">
+  <property name="service.description" type="String" value=" Eaton Content Rollout Review Notification Offloading process workflow"/>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="externalizer.domain" type="String" value="author"/>
+  <service>
+    <provide interface="com.adobe.granite.workflow.exec.WorkflowProcess"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="configAdmin" interface="org.osgi.service.cm.ConfigurationAdmin" field="configAdmin"/>
+  <reference name="externalizer" interface="com.day.cq.commons.Externalizer" field="externalizer"/>
+  <reference name="liveRelationshipManager" interface="com.day.cq.wcm.msm.api.LiveRelationshipManager" field="liveRelationshipManager"/>
+  <implementation class="com.eaton.platform.core.workflows.EatonContentRolloutReviewNotificationOffloadingProcess"/>
+</scr:component>

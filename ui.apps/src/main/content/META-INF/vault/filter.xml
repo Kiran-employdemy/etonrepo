@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/eaton/clientlibs"/>
+    <!-- Inorder to allow the i18n translations under Webtools folder the parent /eaton/components is provided with mode=update -->
+    <filter root="/apps/eaton/components/web-tools" mode="update"/>
+    <filter root="/apps/eaton/components" mode="replace">
+        <exclude pattern="/apps/eaton/components/web-tools(/.*)?" />
+    </filter>
+    <filter root="/apps/eaton/widgets"/>
+    <!-- <filter root="/apps/eaton/i18n/en-us"/> -->
+    <filter root="/apps/install"/>
+    <filter root="/apps/tools/components"/>
+    <filter root="/apps/eaton/runmodes"/>
+    <filter root="/apps/eaton/install"/>
+    <filter root="/apps/eaton/oak-index"/>
+    <filter root="/apps/eaton/templates"/>
+    <filter root="/apps/eaton/authoring"/>
+    <filter root="/apps/eatonScaffolding"/>
+    <filter root="/apps/cq/tagging/gui/components"/>
+    <!--<filter root="/apps/cq/gui/components/authoring"/>-->
+    <filter root="/apps/cq/workflow/components/model/step"/>
+    <filter root="/etc/designs/eaton"/>
+    <filter root="/etc/designs/eaton-cummins"/>
+	<filter root="/etc/clientlibs/fd/themes/themeLibrary/basicTheme" mode="merge"/>
+    <filter root="/apps/workflow/scripts/eatonscripts"/>
+    <filter root="/etc/groovyconsole/scripts/eaton"/>
+    <filter root="/apps/sling/servlet/errorhandler/404.jsp" />
+    <filter root="/apps/sling/servlet/errorhandler/default.jsp" />
+    <filter root="/etc/designs/ace" />
+    <filter root="/etc/vanity"/>
+    <filter root="/etc/notification" mode="merge"/>
+    <filter root="/apps/eaton/settings/wcm/designs/email_template/assetDownloadEmailTemplate.html" />
+    <filter root="/apps/eaton/settings/wcm/designs" />
+	<filter root="/apps/commerce/gui/components" />
+    <filter root="/apps/commerce/gui/content" />
+    <!-- mapping configuration-->
+    <filter root="/etc/map.dev.publish" />
+    <filter root="/etc/map.sit.publish" />
+    <filter root="/etc/map.qa.publish" />
+    <filter root="/etc/map.prod.publish" />
+    <filter root="/etc/importers/product-importer" />
+    <filter root="/etc/reports/catalog-report" />
+	<filter root="/etc/reports/find-and-replace" />
+    <filter root="/etc/reports/assetreferenced-pagereport" />
+    <filter root="/apps/cq/core/content/nav/tools/eaton-tools"/>
+    <filter root="/apps/cq/tagging/gui/content"/>
+    <filter root="/apps/granite/ui/references/components/coral/references"/>
+    <filter root="/apps/granite/omnisearch"/>
+    <filter root="/apps/granite"/>
+    <filter root="/apps/granite/ui/components/shell/omnisearch/searchresults"/>
+    <filter root="/apps/granite/ui/components/coral/foundation/form/multifield"/>
+    <filter root="/apps/wcm/core"/>
+    <filter root="/apps/wcm/core/resources"/>
+    <filter root="/apps/wcm/core/content/editor" mode="merge"/>
+    <filter root="/apps/wcm/core/content/sites"  mode="merge"/>
+    <filter root="/apps/dam/gui/content/assets" mode="update"/>
+    <filter root="/apps/wcm/msm"/>
+    <filter root="/apps/dam/gui/coral/components/admin/clientlibs/actions"/>
+    <filter root="/apps/dam/gui/coral/components/admin/contentrenderer/card/asset"/>
+    <filter root="/apps/dam/gui/coral/components/admin/contentrenderer/card/common"/>
+    <filter root="/apps/dam/gui/coral/components/admin/contentrenderer/row/common"/>
+    <filter root="/apps/dam/cfm"/>
+    <filter root="/apps/eaton/pimcontent"/>
+    <filter root="/apps/fd/fm/gui/components/admin/creationwizard/searchdata"/>
+    <filter root="/apps/fd/fm/gui/content/forms"/>
+    <filter root="/apps/fd/af/components/actions/eatonguidebutton"/>
+    <filter root="/apps/fd/af/layouts/panel/eatonwizard"/>
+    <filter root="/apps/fd/fm/af/components"/>
+    <!-- custom rollout configuration-->
+    <filter root="/apps/msm/eaton"/>
+    <!-- metadata and search schema  -->
+    <filter root="/apps/dam/options/predicates/eaton-aspect-ratio"/>
+    <filter root="/apps/dam/options/predicates/eaton-photo-orientation"/>
+    <filter root="/apps/dam/options/predicates/eaton-image-rights"/>
+    <filter root="/apps/dam/options/predicates/eaton-itar-compliance"/>
+    <filter root="/apps/dam/options/predicates/eaton-metadata-review"/>
+    <filter root="/apps/dam/options/predicates/eaton-rights-restricted"/>
+    <filter root="/apps/dam/options/predicates/eaton-sales-enablement"/>
+    <filter root="/apps/dam/options/predicates/lastReplicationAction"/>
+    <filter root="/apps/dam/options/predicates/secureAsset"/>
+    <filter root="/apps/dam/options/predicates/status"/>
+    <filter root="/apps/dam/gui/coral/components/admin/customsearch/searchpredicates/checkedoptionspredicate"/>
+    <filter root="/apps/dam/gui/coral/components/admin/customsearch/searchpredicates/durationrangepredicate"/>
+    <filter root="/apps/granite/ui/components/coral/foundation/form/durationfield"/>
+    <filter root="/apps/granite/ui/components/coral/foundation/form/filesizefield"/>
+    <filter root="/apps/eaton/clientlibs/metadataeditor"/>
+    <!-- workflow configurations-->
+    <filter root="/var/workflow/models/eaton-dam/dam"/>
+    <filter root="/var/workflow/models/eaton-ccms-update-pdf-metadata"/>
+    <filter root="/var/workflow/models/eaton-ccms-page-metadata-update"/>
+    <filter root="/apps/eaton/clientlibs/showHideDialog"/>
+    <filter root="/apps/eaton/datasource/renewDecision"/>
+    <!-- coral components -->
+    <filter root="/apps/dam/gui/components/admin/renderconditions/scene7"/>
+    <filter root="/apps/dam/gui/coral/components/admin/clientlibs/actions"/>
+    <filter root="/apps/dam/gui/coral/components/admin/contentrenderer/card/asset"/>
+    <filter root="/apps/dam/gui/coral/components/admin/contentrenderer/card/common"/>
+    <filter root="/apps/dam/gui/coral/components/admin/contentrenderer/row/common"/>
+    <!-- Asset Link -->
+    <filter root="/apps/granite/core/components/login"/>
+    <!-- Eaton CCMS -->
+    <filter root="/apps/eaton_ccms"/>
+    <filter root="/var/dxml/folderprofiles/76b07b1f-721a-70d8-6749-d9cdac049bf7" mode="merge" />
+    <filter root="/apps/eaton_ccms/runmodes" mode="merge"/>
+	<filter root="/apps/fmdita" mode="update"/>
+    <!-- ACS Commons Reports Configuration -->
+    <filter root="/var/acs-commons/reports/countries-list-report" mode="merge"/>
+    <filter root="/var/acs-commons/reports/published-pages-report" mode="merge"/>
+    <filter root="/var/acs-commons/reports/reference-by-keyword-or-path-report" mode="merge"/>
+</workspaceFilter>

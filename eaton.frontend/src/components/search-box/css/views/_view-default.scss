@@ -1,0 +1,360 @@
+//-------------------------------------------------
+// SearchBox Component: Primary Nav View (Default)
+//-------------------------------------------------
+
+.eaton-search--default {
+
+  padding: $spacing__sm 0;
+  // TO DO: remove this once microsites brand tool has been implemented. Override should be handled in _variables-colors.scss
+  background: var(--search-box-background-color, $color__primary-blue);
+
+  #site-search{
+    @include media-desktop-and-up {
+      width: 96%;
+    }
+  }
+
+  textarea {
+    padding-top: rem($spacing__sm * .468);
+    height: auto ;
+ 
+    @media (min-width: 768px) and (max-width: 1199px) {
+      height: 80x;
+    }
+    
+  }
+
+  .form-group {
+    display: flex;
+    border-bottom: 1px solid $color__white;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .icon-search {
+    top: 2px;
+    position: relative;
+  }
+
+  &__form {
+
+    @include media-desktop-and-up {
+      width: 96% ;
+    }
+
+  }
+
+  &__form-input { // Styles for Form Elements
+    color: $color__white;
+    background: transparent;
+    padding: 0;
+    resize: none;
+
+    &:focus {
+      //-----------------------------------
+      // Selector styles - Form Placeholder
+      //-----------------------------------
+
+      // stylelint-disable selector-no-vendor-prefix
+      &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+        color: transparent;
+      }
+
+      &::-moz-placeholder { /* Firefox 19+ */
+        color: transparent;
+      }
+
+      &:-ms-input-placeholder { /* IE 10+ */
+        color: transparent;
+      }
+
+      &:-moz-placeholder { /* Firefox 18- */
+        color: transparent;
+      }
+      // stylelint-enable
+
+      ~ .eaton-search--default__form-mobile-label {
+        display: none;
+      }
+    }
+  }
+
+  &__form-mobile-label {
+    display: none;
+  }
+
+  &__form-external {
+    color: $color__white;
+    align-self: center;
+    border-right: 1px solid $color__white;
+    padding-right: rem($spacing__sm * .668);
+
+    @include media-mobile-only {
+      padding-right: rem($spacing__sm * .5);
+    }
+
+    [dir='rtl'] & {
+      border-left: 1px solid $color__white;
+      border-right: 0;
+      padding-left: rem($spacing__sm * .667);
+      padding-right: 0;
+
+      @include media-mobile-only {
+        padding-left: rem($spacing__sm * .5);
+      }
+    }
+
+  }
+
+  &__form-submit { // Styles for Form Elements
+    color: $color__white;
+    background: transparent;
+    padding: rem($spacing__sm * .335) rem($spacing__sm * .668) rem($spacing__sm * .335) rem($spacing__sm * .468);
+
+  }
+
+  &__results {
+    padding: rem($spacing__sm) 0 rem($spacing__sm * .2);
+    display: none;
+
+    &.active {
+      display: block;
+    }
+  }
+
+  &__result-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+
+  &__result-item {
+    a {
+      display: block;
+      padding: rem($spacing__sm * .333333) 0;
+      color: $color__white;
+
+      &:hover,
+      &:focus {
+        color: $color__white;
+      }
+    }
+  }
+
+  &__highlight-text {
+    font-weight: bold;
+  }
+
+  .dark-theme & {
+    background: var(--grey-primary-brand-color, $color__primary-gray1);
+  }
+
+  //-----------------------------------
+  // Selector styles - Form Placeholder
+  //-----------------------------------
+
+  // stylelint-disable selector-no-vendor-prefix
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: $color__white;
+  }
+
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $color__white;
+  }
+
+  :-ms-input-placeholder { /* IE 10+ */
+    color: $color__white;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+    color: $color__white;
+  }
+  // stylelint-enable
+
+
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-portrait {
+    .eaton-search--default__form-input {
+      &:valid + .eaton-search--default__form-mobile-label {
+        display: none;
+      }
+    }
+
+    &__form-mobile-label {
+      position: absolute;
+      width: 100%;
+      padding-right: rem($spacing__md * .534);
+      color: $color__white;
+      pointer-events: none;
+      line-height: normal;
+      left: 0;
+      top: 0;
+      display: table;
+      height: 46px;
+      font-size: rem($base__font-size * 2.0);
+
+
+
+      &.u-visible-mobile {
+        padding-top: rem($spacing__sm * .335);
+        padding-right: rem($spacing__md * .667);
+
+        &.with-external {
+          padding-right: rem($spacing__lg * .889);
+        }
+      }
+
+      span {
+        display: table-cell;
+        text-align: left;
+        vertical-align: middle;
+      }
+    }
+
+    //-----------------------------------
+    // Selector styles - Form Placeholder
+    //-----------------------------------
+
+    // stylelint-disable selector-no-vendor-prefix
+    ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      color: $color__white;
+    }
+
+    ::-moz-placeholder { /* Firefox 19+ */
+      color: $color__white;
+    }
+
+    :-ms-input-placeholder { /* IE 10+ */
+      color: $color__white;
+    }
+
+    :-moz-placeholder { /* Firefox 18- */
+      color: $color__white;
+    }
+    // stylelint-enable
+  }
+
+  //-----------------------------------
+  // Mobile Breakpoint
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    &__form-input {
+      font-size: rem($base__font-size * 1.8);
+      padding-right: 0;
+    }
+
+    &__form-submit {
+      padding-right: 0;
+
+      [dir='rtl'] & {
+        padding-left: 0;
+        padding-right: rem($spacing__sm * .467);
+
+      }
+    }
+
+    .icon-search {
+      font-size: rem($base__font-size * 2.5);
+    }
+
+    .search-open & {
+      height: 15%;
+      overflow-y: auto;
+    }
+
+
+  }
+
+  @include media-tablet-and-up {
+    &__form-input {
+      font-size: rem($base__font-size * 2.6);
+    }
+  }
+
+  @include media-mobile-only {
+    &__form-input {
+      font-size: rem($base__font-size * 2);
+    }
+  }
+
+  //-----------------------------------
+  // Desktop Breakpoint
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    .icon-search {
+      font-size: rem($base__font-size * 2.1);
+      left: 10px;
+      top: 8px;
+
+      .header-fixed & {
+        left: 0;
+      }
+    }
+
+    &__form-submit {
+      padding: rem($spacing__sm * .335) rem($spacing__sm * .268) rem($spacing__sm * .335) rem($spacing__sm * .468); // EATON-711: Search Icon should align with beginning of right gutter.
+
+      .header-fixed & {
+        padding-right: 0;
+      }
+
+      [dir='rtl'] & {
+        padding: rem($spacing__sm * .33) rem($spacing__sm * .467) rem($spacing__sm * .33) rem($spacing__sm * .267);
+
+        .header-fixed & {
+          padding-left: 0;
+          padding-right: rem($spacing__sm * .667);
+        }
+      }
+
+    }
+
+    &__result-item {
+      line-height: $base__line-height * 1.3571428571;
+    }
+  }
+}
+
+.mega-menu__col .eaton-search {
+  textarea.form-control {
+    font-size: rem($base__font-size * 1.6);
+    padding: rem($spacing__sm * .368) 0 rem($spacing__sm * .335) rem($spacing__sm * .335);
+    color: #999;
+
+    @media (min-width: 768px) and (max-width: 1199px) {
+      height: 67px;
+    }
+
+    @media (min-width: 1200px) {
+      height: auto;
+    }
+  }
+
+  .eaton-search--default__form-input {
+    font-size: rem($base__font-size * 1.6);
+  }
+
+  .eaton-search--inline__form-submit {
+    padding: rem($spacing__sm * .335) rem($spacing__sm * .668) rem($spacing__sm * .335) rem($spacing__sm * .268);
+  }
+}
+
+html[dir="rtl"] {
+  .eaton-search--default {
+    &__form-mobile-label {
+      @include media-mobile-portrait {
+        display: block;
+      }
+    }
+  }
+}
+@include media-desktop-and-up {
+  .header-search {
+    .eaton-search--default {
+      display: none;
+    }
+  }
+}

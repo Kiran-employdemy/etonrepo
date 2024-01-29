@@ -1,0 +1,78 @@
+//-----------------------------------
+// Component: Title - View: Default
+//-----------------------------------
+.eaton-title {
+
+  margin: 0;
+
+  &__eyebrow {
+    [dir='rtl'] & {
+      padding-right: 0;
+    }
+
+    i {
+      [dir='rtl'] & {
+        padding-left: rem($spacing__sm / 6);
+        padding-right: 0;
+
+        &::before {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  &__headline {
+    // TO DO: possibly remove this once microsites brand tool has been implemented.
+    // If global font overrides are desired once microsites brand tool is implement, it should be handled in _mixins-typography.scss
+    @include font-family__primary-medium(--header-font-medium);
+    margin-bottom: 0;
+  }
+
+  &__byline {
+
+    // Body-Copy-Small-Deviation Override
+    color: $color__primary-gray3;
+    @include font-family__secondary;
+    font-size: 15px;
+    font-style: italic;
+  }
+
+  // When the inner-grid is active for the component, add padding for the headline
+  &--inset &__headline {
+    padding-top: $spacing__md;
+  }
+
+  // Adds an underlined border
+  &--underlined {
+    padding-bottom: rem($spacing__md / 3);
+    border-bottom: rem($spacing__sm / 6) solid $color__secondary-gray5;
+  }
+
+  //-----------------------------------
+  // Media-Query: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    // Body-Copy-Small-Deviation Override
+    &__byline {
+      font-size: 20px;
+    }
+
+  }
+
+}
+
+.eaton-product-tabs {
+
+  &__page-utility {
+
+    // Chaining with id to get more precedence compare to other selector.
+    /* stylelint-disable selector-max-id, selector-no-qualifying-type */
+    a#live-chat:target {
+      top: 0px;
+    }
+
+  }
+
+}

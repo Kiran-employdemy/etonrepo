@@ -1,0 +1,215 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:mixinTypes": [
+    "rep:AccessControllable"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:created": "Tue Feb 28 2023 21:48:37 GMT-0500",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:lockable",
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "SKU Page",
+    "cq:lastReplicationAction": "Deactivate",
+    "jcr:versionHistory": "79eea223-3d50-400b-947d-be11e1f90051",
+    "cq:template": "/conf/eaton/settings/wcm/templates/sku-page1",
+    "cq:lastReplicatedBy": "e0067621",
+    "jcr:lastModifiedBy": "e9808678",
+    "priority": "0.8",
+    "msmcomponent": "/content/eaton/language-masters/en-us/skuPage/jcr:content/root/responsivegrid/product_detail_tabs/content/title",
+    "jcr:predecessors": [
+      "189cdf0d-74a2-405f-a2d8-dbed992a6323"
+    ],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Tue Feb 28 2023 21:48:37 GMT-0500",
+    "primary-sub-category-tag@TypeHint": "String[]",
+    "cq:lastReplicated": "Mon May 27 2019 16:28:42 GMT-0400",
+    "cq:lastModified": "Wed Jul 05 2023 06:29:29 GMT-0400",
+    "view": "generic",
+    "hideInHtml": "false",
+    "meta-robot-tags": "index,follow",
+    "jcr:baseVersion": "189cdf0d-74a2-405f-a2d8-dbed992a6323",
+    "jcr:isCheckedOut": true,
+    "hideInNav": "true",
+    "hideInXml": "false",
+    "page-type": "product-sku",
+    "switchSubCategoryToPIM": "false",
+    "jcr:lastModified": "Tue Dec 11 2018 14:23:07 GMT-0500",
+    "taxonomyAttribute": [
+      "Circuit Breaker Type"
+    ],
+    "jcr:uuid": "df325fb2-25ed-4f5c-8220-2e9e9c532819",
+    "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "switchTaxonomyAttributesToPIM": "true",
+    "taxonomyAttributeGrpName": [
+      "Electrical Input"
+    ],
+    "textIsRich": "true",
+    "cq:lastModifiedBy": "e0671903",
+    "changefrequency": "daily",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "c3037550",
+        "jcr:lastModifiedBy": "c3037550",
+        "jcr:created": "Thu Oct 05 2017 15:56:43 GMT-0400",
+        "jcr:lastModified": "Thu Oct 05 2017 16:10:47 GMT-0400",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "cq:responsive": {
+          "jcr:primaryType": "nt:unstructured"
+        },
+        "product_detail_tabs": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "c3037550",
+          "jcr:lastModifiedBy": "admin",
+          "jcr:created": "Thu Oct 05 2017 16:11:00 GMT-0400",
+          "view": "toggle-graphic",
+          "checkIconQrCodePath": "/content/dam/eaton/resources/icons/Confirmation Check.svg",
+          "jcr:lastModified": "Fri Dec 06 2019 23:38:08 GMT-0500",
+          "sling:resourceType": "eaton/components/product/single-sku-product-detail-tabs",
+          "single_sku_product_d": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:createdBy": "e0063964",
+            "jcr:lastModifiedBy": "e0063964",
+            "jcr:created": "Thu Dec 01 2022 15:24:30 GMT-0500",
+            "jcr:lastModified": "Thu Dec 01 2022 15:24:30 GMT-0500",
+            "sling:resourceType": "eaton/components/product/single-sku-product-detail-card"
+          },
+          "content-tab-1": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/parsys",
+            "product_detail_card": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:createdBy": "c3037550",
+              "jcr:lastModifiedBy": "c3037550",
+              "jcr:created": "Thu Oct 05 2017 16:13:58 GMT-0400",
+              "jcr:lastModified": "Thu Oct 05 2017 16:13:58 GMT-0400",
+              "sling:resourceType": "eaton/components/product/single-sku-product-detail-card",
+              "upsell-products": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:lastModifiedBy": "e0511345",
+                "view": "upsell-products",
+                "jcr:lastModified": "Tue Aug 23 2022 14:52:57 GMT-0400",
+                "sling:resourceType": "eaton/components/product/upsell-products"
+              },
+              "freesample-button": {
+                "jcr:primaryType": "nt:unstructured",
+                "jcr:lastModifiedBy": "c9946525",
+                "authorizedsamplebutton": "Add a free sample to the cart",
+                "unauthorizedsamplebutton": "Add a free sample to the cart",
+                "jcr:lastModified": "Mon Jun 05 2023 07:41:31 GMT-0400",
+                "sling:resourceType": "eaton/components/content/freesample-button"
+              }
+            },
+            "family_inherited_par": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:createdBy": "e0087282",
+              "jcr:lastModifiedBy": "e0087282",
+              "jcr:created": "Fri Feb 02 2018 21:11:33 GMT-0500",
+              "jcr:lastModified": "Fri Feb 02 2018 21:11:33 GMT-0500",
+              "sling:resourceType": "eaton/components/product/family-inherited-parsys",
+              "familyInherited": {
+                "jcr:primaryType": "nt:unstructured",
+                "sling:resourceType": "wcm/foundation/components/responsivegrid"
+              }
+            },
+            "upsell_products": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:createdBy": "e0063964",
+              "jcr:lastModifiedBy": "e0063964",
+              "jcr:created": "Fri Nov 04 2022 10:29:58 GMT-0400",
+              "view": "cross-sell",
+              "jcr:lastModified": "Fri Nov 04 2022 10:30:07 GMT-0400",
+              "viewType": "Grid",
+              "sling:resourceType": "eaton/components/product/upsell-products"
+            },
+            "upsell_products_2419": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:createdBy": "e0063964",
+              "jcr:lastModifiedBy": "e0063964",
+              "jcr:created": "Fri Nov 04 2022 10:30:00 GMT-0400",
+              "view": "up-sell",
+              "jcr:lastModified": "Fri Nov 04 2022 10:30:16 GMT-0400",
+              "viewType": "Grid",
+              "sling:resourceType": "eaton/components/product/upsell-products"
+            },
+            "product_support": {
+              "jcr:primaryType": "nt:unstructured",
+              "sling:resourceType": "eaton/components/product/product-support"
+            }
+          },
+          "content-tab-2": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/parsys",
+            "product_specificatio": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:createdBy": "c3037550",
+              "jcr:lastModifiedBy": "c3037550",
+              "jcr:created": "Thu Oct 05 2017 16:14:09 GMT-0400",
+              "jcr:lastModified": "Thu Oct 05 2017 16:14:09 GMT-0400",
+              "sling:resourceType": "eaton/components/product/product-specifications"
+            }
+          },
+          "content-tab-3": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/parsys",
+            "topic_link_with_icon": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:createdBy": "e0063964",
+              "jcr:lastModifiedBy": "e0063964",
+              "jcr:created": "Mon Jan 29 2018 12:16:08 GMT-0500",
+              "jcr:lastModified": "Mon Jan 29 2018 12:16:08 GMT-0500",
+              "sling:resourceType": "eaton/components/product/topic-link-with-icon-pdh"
+            },
+            "resource_list": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:createdBy": "c3037550",
+              "jcr:lastModifiedBy": "c3037550",
+              "jcr:created": "Thu Oct 05 2017 16:17:06 GMT-0400",
+              "view": "view-pdh",
+              "jcr:lastModified": "Tue Nov 21 2017 06:21:51 GMT-0500",
+              "sling:resourceType": "eaton/components/product/resource-list"
+            }
+          },
+          "content": {
+            "jcr:primaryType": "nt:unstructured",
+            "sling:resourceType": "wcm/foundation/components/parsys",
+            "title": {
+              "jcr:primaryType": "nt:unstructured",
+              "jcr:createdBy": "e0063964",
+              "jcr:title": "404 - Catalog number does not exist or was recently discontinued",
+              "jcr:lastModifiedBy": "e0063964",
+              "jcr:created": "Fri Dec 15 2017 21:11:29 GMT-0500",
+              "toggleBottomDivider": "false",
+              "type": "h1",
+              "view": "default",
+              "jcr:lastModified": "Wed Jan 12 2022 11:52:04 GMT-0500",
+              "toggleInnerGrid": "true",
+              "sling:resourceType": "eaton/components/general/title"
+            }
+          }
+        },
+        "how_to_buy": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:createdBy": "c9910238",
+          "jcr:lastModifiedBy": "c9910238",
+          "jcr:created": "Thu Oct 05 2017 16:35:16 GMT-0400",
+          "jcr:lastModified": "Thu Oct 05 2017 16:35:16 GMT-0400",
+          "sling:resourceType": "eaton/components/product/how-to-buy"
+        }
+      }
+    },
+    "cq:BlueprintSyncConfig": {
+      "jcr:primaryType": "cq:BlueprintSyncConfig",
+      "cq:rolloutConfigs": [
+        "/libs/msm/wcm/rolloutconfigs/default"
+      ]
+    }
+  }
+}

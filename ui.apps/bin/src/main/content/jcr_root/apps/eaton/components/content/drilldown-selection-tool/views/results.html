@@ -1,0 +1,37 @@
+<div class="results-container">
+    <div class="results-title hide">
+        <span class="count"></span> ${'Results' @i18n}
+    </div>
+    <div class="results-list">
+    </div>
+    <script id="drilldown-selection-tool-page-results-mustache" type="text/mustache">
+        {{#resultsItemModelList}}
+            <div class="results-item col-md-3">
+                <a class="results-item__link"
+                    href="{{path}}"
+                    target="_blank">
+                    <img src="{{imagePath}}" />
+                    <p class="results-item__title">{{title}}</p>
+                </a>
+                <div class="results-item__description">
+                    {{{description}}}
+                </div>
+            </div>
+        {{/resultsItemModelList}}
+    </script>
+    <div class="results-footer" data-page-size="${properties.pageSize}">
+        <div class="results-footer__load-more hide">
+            <button class="b-button b-button__primary b-button__primary--light" role="button" data-load-more>
+                ${'loadMore' @ i18n}
+            </button>
+        </div>
+        <div class="alert alert-warning results-footer__message hide" role="alert">
+            <p>${'noAvailableOptions' @ i18n}</p>
+        </div>
+        <div class="alert alert-danger results-footer__error hide" role="alert">
+        </div>
+        <div class="results-footer__load-spinner hide"></div>
+    </div>
+
+
+</div>

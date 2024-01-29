@@ -1,0 +1,21 @@
+<sly data-sly-use.titleModel="com.eaton.platform.core.models.TitleModel">
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Title: ${currentNode.name}</div>
+</sly>
+
+<sly data-sly-test="${ properties.view == 'default' }">
+  <sly data-sly-include="views/view-default.html"></sly>
+</sly>
+
+<sly data-sly-test="${ properties.view == 'witheyebrowandbyline' }">
+  <sly data-sly-include="views/view-witheyebrowandbyline.html"></sly>
+</sly>
+
+<sly data-sly-test="${ properties.view == 'map' }">
+  <sly data-sly-include="views/view-map.html"></sly>
+</sly>
+
+<sly data-sly-test="${ properties.view == 'witheyebrow' }">
+  <sly data-sly-include="views/view-witheyebrow.html"></sly>
+</sly>

@@ -1,0 +1,53 @@
+ <sly data-sly-use.data="com.eaton.platform.core.models.HomePageHeroModel">
+  <div data-sly-test="${data.links}" class="home-page-hero__component home-page-hero">
+  <div class="home-page-hero__component">
+    <ul class="home-page-hero__slide-list" data-sly-list.slide="${ data.links }">
+
+
+      <li class="home-page-hero__slide-item image-mask">
+
+        <div data-sly-test="${ slide.imagePath }" class="home-page-hero__image">
+        <!--/* Start: Rendition Image Component */-->
+    <sly data-sly-test.useDynamicRendition="${ slide.desktopDynamicRenditionUrl != null && slide.mobileDynamicRenditionUrl != null }"/>
+    <sly data-sly-use.tpl="${ useDynamicRendition ? 'eaton/components/shared/templates/dynamic-rendition-background.html' : 'eaton/components/shared/templates/rendition-background.html'}">
+      <sly data-sly-call="${ tpl.module @ data=slide }"></sly>
+    </sly>
+          <!--/* End: Rendition Image Component */-->
+      </div>
+        <div class="home-page-hero__content">
+          <div class="container">
+            <div class="home-page-hero__caption">
+              <h2 class="b-heading-h1-hero home-page-hero__title">${ slide.titleText @ context='html'}</h2>
+               <div data-sly-test="${ properties.showSeparator }"
+					 class="home-page-hero__separator"></div>
+              <div class="home-page-hero__text b-hero-description">${ slide.description @ context = 'html'}</div>
+               <a data-sly-test="${ slide.linkTitle && slide.linkDestination }"
+                class="home-page-hero__cta b-button b-button__primary b-button__primary--dark"
+                href="${ slide.linkDestination }"
+                target="${ slide.newWindow }"
+                role="button">${ slide.linkTitle }</a>
+            </div>
+          </div>
+        </div>
+</li>
+    </ul>
+
+   <div class="home-page-hero__down-arrow">
+      <i class="icon icon-chevron-down" aria-hidden="true"></i>
+    </div>
+
+<sly data-sly-test="${data.links}" >
+<sly data-sly-test="${data.links.size > 1 }" >
+      <button class="home-page-hero__arrow--prev home-page-hero__arrow button--reset">
+        <i class="icon icon-chevron-left" aria-hidden="true"></i>
+        <span class="sr-only">${ 'Go to Previous Item' @i18n }</span>
+      </button>
+      <button class="home-page-hero__arrow--next home-page-hero__arrow button--reset">
+        <i class="icon icon-chevron-right" aria-hidden="true"></i>
+        <span class="sr-only">${ 'Go to Next Item' @i18n }</span>
+      </button>
+</sly>
+</sly>
+  </div>
+  </div>
+</sly>

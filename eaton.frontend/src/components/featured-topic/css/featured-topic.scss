@@ -1,0 +1,113 @@
+//-----------------------------------
+// Component M-22: Quote
+//-----------------------------------
+
+@import "../../../global/css/_config/sass";
+
+.eaton-featured-topic {
+  margin-bottom: rem($spacing__md * .75);
+  margin-top: rem($spacing__sm);
+
+  .glyphicon {
+    display: none;
+  }
+
+  &__text {
+    margin-bottom: rem($spacing__sm);
+
+    @include media-desktop-and-up {
+      margin-bottom: rem($spacing__md * .5);
+    }
+
+    .rich-text-container {
+      margin-top: rem($spacing__sm * .333333);
+
+      p {
+        font-size: rem($base__font-size * 1.6);
+        line-height: $base__line-height * (1.5 / 1.4);
+        margin-bottom: rem($spacing__sm * .5333333333);
+
+        @include media-desktop-and-up {
+          font-size: rem($base__font-size * 1.8);
+          margin-bottom: rem($spacing__sm * .6);
+        }
+      }
+    }
+
+    /* stylelint-disable declaration-no-important */
+    .container {
+      padding: 0 !important;
+      width: auto !important;
+    }
+    /* stylelint-enable declaration-no-important */
+  }
+
+  &__title {
+
+    @include media-desktop-and-up {
+      margin-bottom: 0;
+    }
+
+    .eaton-title__headline {
+      // TO DO: possibly remove this once microsites brand tool has been implemented.
+      // If global font overrides are desired once microsites brand tool is implement, it should be handled in _mixins-typography.scss
+      @include font-family__primary-bold(--header-font-bold);
+      font-size: rem($base__font-size * 3.2);
+      line-height: $base__line-height * (1.25 / 1.4);
+
+      @include media-desktop-and-up {
+        font-size: rem($base__font-size * 3.6);
+      }
+    }
+
+    /* stylelint-disable declaration-no-important */
+    .container {
+      padding: 0 !important;
+      width: auto !important;
+    }
+    /* stylelint-enable declaration-no-important */
+  }
+
+  &__list-right {
+    padding-bottom: rem($spacing__sm * .5333333);
+
+    @include media-desktop-and-up {
+      padding-left: rem($spacing__xl);
+    }
+  }
+
+  .link-list-vertical__eyebrow {
+    @include h4;
+    margin-bottom: rem($spacing__sm * .33);
+    text-transform: none;
+  }
+
+  .link-list-vertical__list-link {
+    @include h5-link-bold;
+    @include font-family__secondary(--secondary-font);
+    margin-bottom: rem($spacing__sm * .6);
+    padding: 0;
+
+    @include media-desktop-and-up {
+      margin-bottom: rem($spacing__sm * .8);
+    }
+  }
+
+  .link-list-vertical__list-text {
+    font-family: var(--secondary-font);
+    font-size: rem($base__font-size * 1.8);
+
+    @include media-desktop-and-up {
+      font-size: rem($base__font-size * 2.4);
+      line-height: $base__line-height * (1.5 / 1.4);
+    }
+  }
+
+  &__button-container {
+    margin-top: rem($spacing__sm);
+
+    @include media-desktop-and-up {
+      margin-top: rem($spacing__sm);
+    }
+  }
+}

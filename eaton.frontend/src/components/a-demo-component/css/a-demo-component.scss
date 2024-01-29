@@ -1,0 +1,26 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.a-demo-component {
+  background-color: $color__primary-gray1;
+
+  &__heading {
+    margin-bottom: 1em;
+
+  }
+
+  &__author {
+    color: $color__primary-blue;
+    @include font-family__secondary(--secondary-font);
+  }
+}
+@include media-mobile-and-tablet {
+  .a-demo-component {
+    width: 100%;
+  }
+}
+@include media-desktop-and-up {
+  .a-demo-component {
+    margin: 40px 0;
+  }
+}

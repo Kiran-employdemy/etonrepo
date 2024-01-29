@@ -1,0 +1,21 @@
+/*!
+* NOTE: This module is being used to override AEM-CoralUI3 clientlibs as per EATON Guideline.
+*/
+
+//-----------------------------------
+// Custom Coralui3
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+/* stylelint-disable, declaration-no-important  */
+
+.coral3-Checkbox {
+  width: auto !important;
+}
+
+.newhide.hide {
+  display: table !important;
+  width: 100%;
+}

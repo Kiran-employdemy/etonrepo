@@ -1,0 +1,166 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.upload-icon {
+  color: var(--utility-nav-background-color, #005EB8);
+  margin: 1rem;
+  font-size: 6rem;
+}
+/* stylelint-disable   */
+.afAccordionPanel {
+  padding-left: 1rem !important;
+    padding-bottom: 1rem !important;
+    padding-right: 1rem !important;
+    padding-top: 1rem !important;
+    border: 0px !important;
+    background: #FFF !important;
+}
+.accordion-navigators .active > .guideHeader > a, .accordion-navigators .active .guideHeader > a:hover {
+  color: #FFF;
+  border: 0px !important;
+  background: url(/content/dam/eaton/resources/accordian-icons/minus.png) 95% 50% / auto 2rem no-repeat,#005eb8 !important;
+}
+.accordion-navigators .guideHeader > a {
+  padding: 1.5rem 2rem !important;
+  font-size: 1.9rem !important;
+}
+.accordion-navigators .guideHeader > a {
+  border: 0px !important;
+  color: #FFF !important;
+  background: url(/content/dam/eaton/resources/accordian-icons/plus.png) 95% 50% / auto 2rem no-repeat,#005eb8 !important;
+  font-size: 1.9rem !important;
+}
+.accordion-navigators .guideHeader > a:hover {
+  color: #FFF !important;
+  background: url(/content/dam/eaton/resources/accordian-icons/plus.png) 95% 50% / auto 2rem no-repeat,#005eb8 !important;
+
+}
+.accordion-navigators[id$="_guide-item-container"] > [id$="_guide-item"] {
+  display: block;
+  margin: 5px 0px;
+}
+.aemformcontainer a:active, .aemformcontainer a:hover, .aemformcontainer a:visited, .aemformcontainer a:link {
+  margin-top: 0 !important;
+}
+
+
+  .guideFieldLabel label {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+  }
+
+  .upload-section {
+    width: 50% !important;
+    float: left;
+    margin: 0px auto;
+    position: relative;
+    border: 2px dashed var(--utility-nav-background-color, #005eb8) !important;
+    text-align: center;
+    padding: 2rem;
+    transform: translate(-50%, 0%);
+    left: 50%;
+
+    @include media-mobile-only {
+      width: 100% !important;
+    }
+  }
+
+  li.guide-fu-fileItem {
+    border: 1px dashed #CCC !important;
+    margin-top: .5rem;
+    padding: 1rem;
+    text-align: left;
+    float: left;
+    width: 100%;
+  }
+
+  span.guide-fu-fileName {
+    text-decoration: none;
+    cursor: pointer;
+    color: #8a8888;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 90%;
+    float: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+span.guide-fu-filePreview {
+  display: none !important;
+}
+ul.guide-fu-fileItemList {
+  margin-top: 2rem;
+}
+.button-medium {
+  background: #005cbc !important;
+  color: #FFF !important;
+}
+
+.upload_submit_button {
+  & button {
+    position: relative !important;
+    left: 64% !important;
+    border: 2px solid var(--utility-nav-background-color, #005eb8) !important;
+    border-radius: 0px !important;
+    background: var(--utility-nav-background-color, #005eb8) !important;
+    color: #FFF !important;
+    padding: 1rem 3rem !important;
+    margin-top: 3rem !important;
+    width: auto;
+  }
+}
+
+.guideGridFluidLayout2Container {
+  .panel {
+    box-shadow: none !important;
+  }
+}
+.aemformcontainer {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+
+  & a:active,
+  & a:hover,
+  & a:visited,
+  & a:link {
+    text-decoration: none;
+    background-color: #005eb8 !important ;
+    color: #FFF;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+  }
+}
+.panel {
+  label {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+}
+.upload-filebtn {
+  width: 100%;
+  float: left;
+  left: 64%;
+  position: relative;
+  margin-top: 10px;
+  .guide-file-upload-button {
+    border: 2px solid var(--utility-nav-background-color, #005eb8) !important;
+    border-radius: 0px !important;
+    background: var(--utility-nav-background-color, #005eb8) !important;
+    color: #FFF !important;
+    padding: 1rem 3rem !important;
+    margin-top: 3rem !important;
+  }
+}
+
+.file--upload-close {
+  button {
+    position: absolute;
+    top: 3px;
+    right: 0;
+  }
+}
+/* stylelint-enable   */

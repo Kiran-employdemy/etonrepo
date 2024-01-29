@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Teaser"
+    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+    <items jcr:primaryType="nt:unstructured">
+        <column
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <column
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                    <items jcr:primaryType="nt:unstructured">
+                        <page-type
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Page Type"
+                            cq:showOnCreate="{Boolean}true"
+                            required="{Boolean}true"
+                            name="./page-type">
+                            <items jcr:primaryType="nt:unstructured">
+                                <select
+                                    jcr:primaryType="nt:unstructured"
+                                    text="(Please Select)"
+                                    value=""/>
+                                <article-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Article Page"
+                                    value="article-page"/>
+                                <category-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Category Page"
+                                    value="category"/>
+                                <campaign-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Campaign Page"
+                                    value="campaign"/>
+                                <generic-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Generic Page"
+                                    value="generic-page"/>
+                                <home-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Home Page"
+                                    value="home-page"/>
+                                <press-release
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Press Release"
+                                    value="press-release"/>
+                                <primary-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary Page"
+                                    value="primary"/>
+                                <product-family-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Product Family Page"
+                                    value="product-family"/>
+                                <product-sku-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Product SKU Page"
+                                    value="product-sku"/>
+                                <global-product-sku-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Global Product SKU Page"
+                                    value="global-product-sku"/>
+                                <sitemap-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Sitemap Page"
+                                    value="sitemap-page"/>
+                                <site-search-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Site Search Page"
+                                    value="site-search"/>
+                                <sub-category-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Sub Category Page"
+                                    value="sub-category"/>
+                                <topic-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Topic Page"
+                                    value="topic-page"/>
+                                <xml-page
+                                    jcr:primaryType="nt:unstructured"
+                                    text="XML Documentation"
+                                    value="xml-documentation"/>
+                            </items>
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="page-type"/>
+                        </page-type>
+                        <hrefLangcode
+                                cq:showOnCreate="{Boolean}true"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Href Lang Code"
+                                name="./hrefLangCode">
+                            <granite:rendercondition
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="eaton/components/general/render-condition"/>
+                        </hrefLangcode>
+                        <teaser-title
+                            cq:hideOnEdit="{Boolean}false"
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            cq-msm-lockable="teaser-title"
+                            fieldLabel="Teaser Title"
+                            name="./teaser-title">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="teaser-title"/>
+                        </teaser-title>
+                        <publication-date
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            allowBulkEdit="{Boolean}true"
+                            cq-msm-lockable="publication-date"
+                            displayedFormat="MMMM DD, YYYY hh:mm a"
+                            displayTimezoneMessage="{Boolean}true"
+                            fieldLabel="Publication Date"
+                            name="./publication-date"
+                            type="datetime">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="publication-date"/>
+                        </publication-date>
+                        <publication-date_type
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                            allowBulkEdit="{Boolean}true"
+                            ignoreData="{Boolean}true"
+                            name="./publication-date@TypeHint"
+                            value="Date">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="publication-date@TypeHint"/>
+                        </publication-date_type>
+						<page-intent
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    allowBulkEdit="{Boolean}true"
+                                    cq-msm-lockable="page-intent"
+                                    fieldLabel="Page Intent"
+                                    name="./page-intent">
+                                   <items jcr:primaryType="nt:unstructured">
+		                                <select
+		                                    jcr:primaryType="nt:unstructured"
+		                                    text="(Please Select)"
+		                                    value=""/>
+		                                <campaign-landing
+		                                    jcr:primaryType="nt:unstructured"
+		                                    text="Campaign - Landing"
+		                                    value="Campaign - Landing"/>
+		                                <campaign-thankyou
+		                                    jcr:primaryType="nt:unstructured"
+		                                    text="Campaign - Thank You"
+		                                    value="Campaign - Thank You"/>
+		                                <campaign-engagement
+		                                    jcr:primaryType="nt:unstructured"
+		                                    text="Campaign - Engagement"
+		                                    value="Campaign - Engagement"/>
+		                                <thought-leadership
+		                                    jcr:primaryType="nt:unstructured"
+		                                    text="Thought Leadership"
+		                                    value="Thought Leadership"/>
+		                                <directory-page
+		                                    jcr:primaryType="nt:unstructured"
+		                                    text="Directory Page"
+		                                    value="Directory Page"/>
+		                                <engagement-page
+		                                    jcr:primaryType="nt:unstructured"
+		                                    text="Engagement Page"
+		                                    value="Engagement Page"/>
+		                                <conversion-page
+		                                    jcr:primaryType="nt:unstructured"
+		                                    text="Conversion Page"
+		                                    value="Conversion Page"/>
+		                              </items>
+                                    <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        cq-msm-lockable="page-intent"/>
+                         </page-intent>
+                        <eyebrow-title
+                            cq:hideOnEdit="{Boolean}false"
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            cq-msm-lockable="eyebrow-title"
+                            fieldLabel="Eyebrow Title"
+                            name="./eyebrow-title">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="eyebrow-title"/>
+                        </eyebrow-title>
+                        <teaser-image-path
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                            fieldDescription="Root path to dam folder"
+                            fieldLabel="Teaser Image Path"
+                            name="./teaser-image-path"
+                            rootPath="/content/dam">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="teaser-image-path"/>
+                        </teaser-image-path>
+                        <teaserByline
+                            cq:hideOnEdit="{Boolean}false"
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            cq-msm-lockable="teaserByline"
+                            fieldLabel="Teaser Byline"
+                            name="./teaserByline">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="teaserByline"/>
+                        </teaserByline>
+                        <teaser-description
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                            cq-msm-lockable="teaser-description"
+                            fieldLabel="Teaser Description"
+                            name="./teaser-description">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="teaser-description"/>
+                        </teaser-description>
+						<product-grid-description
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/libs/cq/gui/components/authoring/dialog/richtext"
+                                fieldLabel="Product grid description"
+                                name="./product-grid-description"
+                                useFixedInlineToolbar="{Boolean}true">
+                                <rtePlugins jcr:primaryType="nt:unstructured">
+                                    <format
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <justify
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <lists
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <paraformat
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <links
+                                        jcr:primaryType="nt:unstructured"
+                                        features="-"/>
+                                    <subsuperscript
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <table
+                                        jcr:primaryType="nt:unstructured"
+                                        features="[]">
+                                        <hiddenHeaderConfig
+                                            jcr:primaryType="nt:unstructured"
+                                            hiddenHeaderClassName="cq-wcm-foundation-aria-visuallyhidden"
+                                            hiddenHeaderEditingCSS="coral-RichText-hiddenHeader--editing"/>
+                                    </table>
+                                    <spellcheck
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                    <misctools
+                                        jcr:primaryType="nt:unstructured"
+                                        features="sourceedit">
+                                        <specialCharsConfig jcr:primaryType="nt:unstructured">
+                                            <chars jcr:primaryType="nt:unstructured">
+                                                <default_copyright
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;copy;"
+                                                    name="copyright"/>
+                                                <default_euro
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;euro;"
+                                                    name="euro"/>
+                                                <default_registered
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;reg;"
+                                                    name="registered"/>
+                                                <default_trademark
+                                                    jcr:primaryType="nt:unstructured"
+                                                    entity="&amp;trade;"
+                                                    name="trademark"/>
+                                            </chars>
+                                        </specialCharsConfig>
+                                    </misctools>
+                                    <experience-aem
+                                        jcr:primaryType="nt:unstructured"
+                                        features="*"/>
+                                </rtePlugins>
+                            </product-grid-description>
+                        <overlay-path
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                            cq-msm-lockable="overlay-path"
+                            fieldLabel="Overlay Path"
+                            name="./overlay-path"
+                            renderReadOnly="{Boolean}true">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="overlay-path"/>
+                        </overlay-path>
+                        <pimPagePath
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="commerce/gui/components/common/productfield"
+                            cq-msm-lockable="pimPagePath"
+                            fieldLabel="Pim Page Path"
+                            name="./pimPagePath">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="pimPagePath"/>
+                        </pimPagePath>
+                        <pimPagePaths
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                            cq-msm-lockable="pimPagePaths"
+                            fieldDescription=
+                                    "If the single Pim Page Path field is configured then this multi field will be ignored.
+                                    If this field is used and any components that rely on a link to a category with cards page then the first configured PIM node will be used for that purpose."
+                            fieldLabel="Product Selector PIM's"
+                            renderReadOnly="{Boolean}true">
+                            <field
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                name="./pimPagePaths"
+                                required="{Boolean}true"/>
+                        </pimPagePaths>
+                        <primary-sub-category-tag
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                            allowBulkEdit="{Boolean}true"
+                            allowCreate="{Boolean}true"
+                            cq-msm-lockable="primary-sub-category-tag"
+                            fieldLabel="Resource Tags"
+                            multiple="{Boolean}true"
+                            name="./primary-sub-category-tag"
+                            renderReadOnly="{Boolean}true">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="primary-sub-category-tag"/>
+                        </primary-sub-category-tag>
+                        <primary-sub-category
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="eaton/components/widgets/contextualpathbrowser"
+                            fieldDescription="If Primary Sub Category is not set, Category will not be populated in the data layer."
+                            fieldLabel="Primary Sub Category"
+                            name="./primarySubCategory">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="primarySubCategory"/>
+                        </primary-sub-category>
+                        <form-routing-tag
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                            allowBulkEdit="{Boolean}true"
+                            allowCreate="{Boolean}true"
+                            fieldDescription="This field select the tags for form routing."
+                            fieldLabel="Form Routing Tag"
+                            name="./form_routing_tag/cq:tags"
+                            renderReadOnly="{Boolean}true">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="form_routing_tag/cq:tags"/>
+                        </form-routing-tag>
+                        <view
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldDescription="This field stores the value for List view."
+                            fieldLabel="View"
+                            name="./view">
+                            <items jcr:primaryType="nt:unstructured">
+                                <generic
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Generic"
+                                    value="generic"/>
+                                <homePage
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Home"
+                                    value="home_page"/>
+                                <primaryLanding
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Primary Landing"
+                                    value="primary_landing"/>
+                                <article
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Article"
+                                    value="artical_page"/>
+                                <siteMap
+                                    jcr:primaryType="nt:unstructured"
+                                    text="SiteMap"
+                                    value="siteMap"/>
+                            </items>
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="view"/>
+                        </view>
+                        <sitemap-config
+                            cq:showOnCreate="{Boolean}false"
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Site map attributes"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                            <items jcr:primaryType="nt:unstructured">
+                                <hideinhtml
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        name="./hideInHtml"
+                                        fieldDescription="Includes all subpages"
+                                        renderReadOnly="{Boolean}true"
+                                        text="Hide in HTML sitemap"
+                                        value="{Boolean}true"
+                                        uncheckedValue="{Boolean}false">
+                                    <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="hideInHtml"/>
+                                </hideinhtml>
+                                <hideinxml
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        name="./hideInXml"
+                                        fieldDescription="Includes all subpages"
+                                        renderReadOnly="{Boolean}true"
+                                        text="Hide in XML sitemap"
+                                        value="{Boolean}true"
+                                        uncheckedValue="{Boolean}false">
+                                    <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-msm-lockable="hideInXml"/>
+                                </hideinxml>
+                                <changefrequency
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    allowBulkEdit="{Boolean}true"
+                                    cq-msm-lockable="changefrequency"
+                                    fieldLabel="Page change frequency"
+                                    name="./changefrequency"
+                                    value="daily">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <weekly
+                                            jcr:primaryType="nt:unstructured"
+                                            text="weekly"
+                                            value="weekly"/>
+                                        <always
+                                            jcr:primaryType="nt:unstructured"
+                                            text="always"
+                                            value="always"/>
+                                        <hourly
+                                            jcr:primaryType="nt:unstructured"
+                                            text="hourly"
+                                            value="hourly"/>
+                                        <daily
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="true"
+                                            text="daily"
+                                            value="daily"/>
+                                        <monthly
+                                            jcr:primaryType="nt:unstructured"
+                                            text="monthly"
+                                            value="monthly"/>
+                                        <yearly
+                                            jcr:primaryType="nt:unstructured"
+                                            text="yearly"
+                                            value="yearly"/>
+                                        <never
+                                            jcr:primaryType="nt:unstructured"
+                                            text="never"
+                                            value="never"/>
+                                    </items>
+                                    <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        cq-msm-lockable="changefrequency"/>
+                                </changefrequency>
+                                <priority
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    allowBulkEdit="{Boolean}true"
+                                    cq-msm-lockable="priority"
+                                    fieldLabel="Page priority"
+                                    name="./priority"
+                                    value="0.5">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <pointfive
+                                            jcr:primaryType="nt:unstructured"
+                                            selected="true"
+                                            text="0.5"
+                                            value="0.5"/>
+                                        <pointzero
+                                            jcr:primaryType="nt:unstructured"
+                                            text="0.0"
+                                            value="0.0"/>
+                                        <pointone
+                                            jcr:primaryType="nt:unstructured"
+                                            text="0.1"
+                                            value="0.1"/>
+                                        <pointtwo
+                                            jcr:primaryType="nt:unstructured"
+                                            text="0.2"
+                                            value="0.2"/>
+                                        <pointthree
+                                            jcr:primaryType="nt:unstructured"
+                                            text="0.3"
+                                            value="0.3"/>
+                                        <pointfour
+                                            jcr:primaryType="nt:unstructured"
+                                            text="0.4"
+                                            value="0.4"/>
+                                        <pointsix
+                                            jcr:primaryType="nt:unstructured"
+                                            text="0.6"
+                                            value="0.6"/>
+                                        <pointseven
+                                            jcr:primaryType="nt:unstructured"
+                                            text="0.7"
+                                            value="0.7"/>
+                                        <pointeight
+                                            jcr:primaryType="nt:unstructured"
+                                            text="0.8"
+                                            value="0.8"/>
+                                        <pointnine
+                                            jcr:primaryType="nt:unstructured"
+                                            text="0.9"
+                                            value="0.9"/>
+                                        <onepointzero
+                                            jcr:primaryType="nt:unstructured"
+                                            text="1.0"
+                                            value="1.0"/>
+                                    </items>
+                                    <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        cq-msm-lockable="priority"/>
+                                </priority>
+                                <meta-robot-tags
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    allowBulkEdit="{Boolean}true"
+                                    cq-msm-lockable="meta-robot-tags"
+                                    fieldLabel="Meta Robot Tags"
+                                    name="./meta-robot-tags">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <index-follow
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Index,Follow"
+                                            value="index,follow"/>
+                                        <index-nofollow
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Index,No Follow"
+                                            value="index,nofollow"/>
+                                        <noindex-nofollow
+                                            jcr:primaryType="nt:unstructured"
+                                            text="No Index,No Follow"
+                                            value="noindex,nofollow"/>
+                                        <noindex-follow
+                                            jcr:primaryType="nt:unstructured"
+                                            text="No Index, Follow"
+                                            value="noindex,follow"/>
+                                    </items>
+                                    <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        cq-msm-lockable="meta-robot-tags"/>
+                                </meta-robot-tags>
+                                <canonicalPages
+		                            jcr:primaryType="nt:unstructured"
+		                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+		                            fieldDescription="Canonical pages for this content tree"
+		                            fieldLabel="Canonical Pages"
+		                            name="./canonicalPages">
+		                            <granite:data
+		                                jcr:primaryType="nt:unstructured"
+		                                cq-msm-lockable="canonicalPages"/>
+                      		    </canonicalPages>
+                                <robot
+	                                jcr:primaryType="nt:unstructured"
+	                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+	                                allowBulkEdit="{Boolean}true"
+	                                cq-msm-lockable="meta-robot-tags"
+	                                name="./robot"
+	                                renderReadOnly="{Boolean}true"
+	                                text="Robot"
+	                                value="{Boolean}false">
+	                            <granite:data
+									jcr:primaryType="nt:unstructured"
+									cq-msm-lockable="meta-robot-tags"/>
+	                        	</robot>
+                            </items>
+                        </sitemap-config>
+                        <model-viewer
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldLabel="Model Viewers"
+                            multiple="{Boolean}false"
+                            name="./modelViewer">
+                            <datasource
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="/eaton/content/eatonmodelviewers"
+                                addNone="{Boolean}true"/>
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="modelViewer"/>
+                        </model-viewer>
+                        <errorpages
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                            fieldDescription="Error pages for this content tree"
+                            fieldLabel="Error Pages"
+                            name="./errorPages">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="errorPages"/>
+                        </errorpages>
+                        <disableNanoRep
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                            allowBulkEdit="{Boolean}true"
+                            cq-msm-lockable="disableNanoRep"
+                            name="./disableNanoRep"
+                            renderReadOnly="{Boolean}true"
+                            text="Disable Nano Rep Chat."
+                            value="true">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="disableNanoRep"/>
+                        </disableNanoRep>
+                        <percolate-content-id
+                            cq:hideOnEdit="{Boolean}false"
+                            cq:showOnCreate="{Boolean}true"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            cq-msm-lockable="percolate-content-id"
+                            fieldLabel="Percolate Content ID"
+                            name="./percolate-content-id"
+                            validation="txt-validate">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="percolate-content-id"
+                                pattern="number"/>
+                        </percolate-content-id>
+                    </items>
+                </column>
+            </items>
+        </column>
+    </items>
+</jcr:root>

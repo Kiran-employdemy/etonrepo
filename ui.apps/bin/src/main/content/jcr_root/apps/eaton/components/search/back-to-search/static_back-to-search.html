@@ -1,0 +1,7 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Back to search</div>
+</sly>
+
+<sly data-sly-test="!${wcmmode.edit}">
+  <sly data-sly-include="views/view-default.html"></sly>
+</sly>

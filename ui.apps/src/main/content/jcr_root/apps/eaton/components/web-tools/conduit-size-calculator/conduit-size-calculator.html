@@ -1,0 +1,132 @@
+<div class="conduit-size-calculator" id="calculator" data-calculation-text="${'Webtools.Calculator.Calculation' @i18n}" data-fill-rate-text="${'Webtools.Calculator.ErrorMessageFillRate' @i18n}"
+     data-no-wire-text="${'Webtools.Calculator.ErrorMessageNoWires' @i18n}" data-many-wire-text="${'Webtools.Calculator.ErrorMessageManyWires' @i18n}"
+     data-nonnumeric-text="${'Webtools.Calculator.NonNumericErrorMessage' @i18n}" data-empty-wire-text="${'Webtools.Calculator.EmptyWireFieldMessage' @i18n}"
+     data-error-failure-text="${'Webtools.Calculator.ErrorFailure' @i18n}" data-inches-text="${'Webtools.Calculator.Inches' @i18n}" >
+   <div class="container">
+      <div class="b-form">
+         <form action="/r" method="post" id="souriau-toolkit-counduit-size-calc-main-form" accept-charset="UTF-8">
+            <div class="w-table">
+               <table class="table-bordered tableWrapper-processed">
+                  <thead>
+                     <tr>
+                        <th>${'Webtools.Calculator.WireSizeText' @i18n}</th>
+                        <th>1st</th>
+                        <th>2nd</th>
+                        <th>3rd</th>
+                        <th>4th</th>
+                        <th>5th</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr class="odd">
+                        <td class="number">${'Webtools.Calculator.NoOfWires' @i18n}:</td>
+                        <td>
+                           <div class="form-item form-type-textfield form-item-rows-num-wires-one full-field">
+                              <input autocomplete="off" tabindex="1" type="text" id="edit-rows-num-wires-one" name="rows[numWires][one]" value="" size="3" maxlength="3" class="form-text customForms-processed">
+                           </div>
+                        </td>
+                        <td>
+                           <div class="form-item form-type-textfield form-item-rows-num-wires-two">
+                              <input autocomplete="off" tabindex="3" type="text" id="edit-rows-num-wires-two" name="rows[numWires][two]" value="" size="3" maxlength="3" class="form-text customForms-processed">
+                           </div>
+                        </td>
+                        <td>
+                           <div class="form-item form-type-textfield form-item-rows-num-wires-three">
+                              <input autocomplete="off" tabindex="5" type="text" id="edit-rows-num-wires-three" name="rows[numWires][three]" value="" size="3" maxlength="3" class="form-text customForms-processed">
+                           </div>
+                        </td>
+                        <td>
+                           <div class="form-item form-type-textfield form-item-rows-num-wires-four">
+                              <input autocomplete="off" tabindex="7" type="text" id="edit-rows-num-wires-four" name="rows[numWires][four]" value="" size="3" maxlength="3" class="form-text customForms-processed">
+                           </div>
+                        </td>
+                        <td>
+                           <div class="form-item form-type-textfield form-item-rows-num-wires-five">
+                              <input autocomplete="off" tabindex="9" type="text" id="edit-rows-num-wires-five" name="rows[numWires][five]" value="" size="3" maxlength="3" class="form-text customForms-processed">
+                           </div>
+                        </td>
+                     </tr>
+                     <tr class="even">
+                        <td class="size">${'Webtools.Calculator.Diameter' @i18n}:</td>
+                        <td>
+                           <div class="form-item form-type-textfield form-item-rows-wire-diameter-one full-field">
+                              <input autocomplete="off" tabindex="2" type="text" id="edit-rows-wire-diameter-one" name="rows[wireDiameter][one]" value="" size="4" maxlength="4" class="form-text customForms-processed">
+                           </div>
+                        </td>
+                        <td>
+                           <div class="form-item form-type-textfield form-item-rows-wire-diameter-two">
+                              <input autocomplete="off" tabindex="4" type="text" id="edit-rows-wire-diameter-two" name="rows[wireDiameter][two]" value="" size="4" maxlength="4" class="form-text customForms-processed">
+                           </div>
+                        </td>
+                        <td>
+                           <div class="form-item form-type-textfield form-item-rows-wire-diameter-three">
+                              <input autocomplete="off" tabindex="6" type="text" id="edit-rows-wire-diameter-three" name="rows[wireDiameter][three]" value="" size="4" maxlength="4" class="form-text customForms-processed">
+                           </div>
+                        </td>
+                        <td>
+                           <div class="form-item form-type-textfield form-item-rows-wire-diameter-four">
+                              <input autocomplete="off" tabindex="8" type="text" id="edit-rows-wire-diameter-four" name="rows[wireDiameter][four]" value="" size="4" maxlength="4" class="form-text customForms-processed">
+                           </div>
+                        </td>
+                        <td>
+                           <div class="form-item form-type-textfield form-item-rows-wire-diameter-five">
+                              <input autocomplete="off" tabindex="10" type="text" id="edit-rows-wire-diameter-five" name="rows[wireDiameter][five]" value="" size="4" maxlength="4" class="form-text customForms-processed">
+                           </div>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="wrapper calculator-wrapper" id="edit-wrapper">
+               <label for="edit-fill-rate">${'Webtools.Calculator.FillRate' @i18n} </label>
+               <div class="form-item form-type-select form-item-fill-rate clearfix">
+                  <select tabindex="11" id="edit-fill-rate" name="fillRate" class="form-select ajax-processed customForms-processed jcf-hidden">
+                     <option value="50">50%</option>
+                     <option value="60">60%</option>
+                     <option value="70">70%</option>
+                     <option value="80" selected="selected">80%</option>
+                     <option value="90">90%</option>
+                     <option value="98">98%</option>
+                  </select>
+               </div> 
+               <div class="description scroll-here">${'Webtools.Calculator.FillRateDescription' @i18n}</div>
+
+               <div class="u-error">
+                  <i class="icon icon-info" aria-hidden="true"></i>
+                  <p class="u-inline error-copy" id="error-banner"></p>
+                  <button class="button--reset u-error-close"><i class="icon icon-close" aria-hidden="true"></i></button>
+               </div>
+
+               <div class="u-success">
+                  <i class="icon icon-info" aria-hidden="true"></i>
+                  <p class="u-inline success-copy" id="success-banner"></p>
+                  <button class="button--reset u-success-close"><i class="icon icon-close" aria-hidden="true"></i></button>
+               </div>
+
+               <div class="form-actions form-block text-center">
+                  <div class="align-btn-center">
+                     <button type="submit" id="calculate" name="op" value="CALCULATE" class="b-button b-button__primary b-button__primary--primary-branding-color-reversedbtn b-button__primary b-button__primary--primary-branding-color-reversed">
+                        ${'Webtools.Calculator.CtaText' @i18n}
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </form>
+      </div>
+   </div>
+ </div>
+ 
+ <div class="eaton-topic-link eaton-topic-link--primary-branding-color">
+     <div class="container ">
+         <div class="row eaton-topic-link__row">
+             <div class="col-md-8">
+                <h3 class="eaton-topic-link__header b-heading-h3" id="calc-title">${'Webtools.Calculator.ConduitSize' @i18n}:</h3>
+                 <h3 class="eaton-topic-link__header b-heading-h3" id="calc-result">
+                 
+                 </h3>
+             </div>
+         </div>
+     </div>
+ </div>
+
+<div class="calculator-disclaimer"> ${properties.disclaimer @context='html'} </div>

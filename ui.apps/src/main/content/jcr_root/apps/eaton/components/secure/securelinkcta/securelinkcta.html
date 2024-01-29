@@ -1,0 +1,14 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">Secure Link</div>
+</sly>
+
+<sly data-sly-use.secure="com.eaton.platform.core.models.secure.SecureLinkModel">
+    <sly data-sly-test="${ (wcmmode.edit) || (!wcmmode.edit && secure.isAuthorised)}">
+        <sly data-sly-test="${!secure.isMegaNav}" >
+            <sly data-sly-include="views/default-secure-link.html"></sly>
+        </sly>
+        <sly data-sly-test="${secure.isMegaNav}" >
+            <sly data-sly-include="views/mega-menu-link.html"></sly>
+        </sly>
+    </sly>
+</sly>

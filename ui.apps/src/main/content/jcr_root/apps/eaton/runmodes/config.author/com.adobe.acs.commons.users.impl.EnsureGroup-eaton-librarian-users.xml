@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          principalName="eaton-librarian-users"
+          operation="add"
+          member-of="[eaton-power-users,tag-administrators,workflow-users]"
+          ensure-immediately="{Boolean}true"
+          aces="[type=allow;privileges=jcr:read\,jcr:versionManagement\,jcr:modifyProperties\,jcr:lockManagement\,jcr:nodeTypeManagement\,jcr:addChildNodes\,jcr:removeNode\,jcr:removeChildNodes\,crx:replicate;path=/content/cq:tags,
+type=allow;privileges=jcr:read;path=/libs/dam/gui/content/nav/tools/assets/metadata,
+type=allow;privileges=jcr:read\,jcr:versionManagement\,jcr:modifyProperties\,jcr:lockManagement\,jcr:nodeTypeManagement\,jcr:addChildNodes\,jcr:removeNode\,jcr:removeChildNodes;path=/conf/global/settings/dam/adminui-extension,
+type=deny;privileges=jcr:readAccessControl\,jcr:modifyAccessControl;path=/content/cq:tags,type=deny;privileges=jcr:read;path=/var/acs-commons,type=deny;privileges=jcr:read;path=/apps/cq/core/content/nav/tools/acs-commons]"/>

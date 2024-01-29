@@ -1,0 +1,31 @@
+<sly data-sly-test="${wcmmode.edit}">
+  <div class="alert alert-warning">${'Term and Condition CTA' @i18n }</div>
+</sly>
+<sly data-sly-use.model="com.eaton.platform.core.models.TermsAndConditionCTA" />
+<sly data-sly-test="${model.shouldRender || wcmmode.edit}" >
+  <div class="etn-tc__cta ${model.includedMargin ? 'container' : ''} clearfix" >
+    <div class="buttons pull-${model.alignment}">
+      <form action="${resource.path}.servlet" method="get">
+        <button type="button" data-toggle="modal" data-target="#cancelTcModal" id="cancelTc" class="b-button b-button__primary">${model.cancelText}</button>
+        <button type="submit" class="b-button b-button__tertiary b-button__tertiary--light">${model.acceptText}</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal fade custom-modal" id="cancelTcModal"  tabindex="-1" role="dialog" aria-labelledby="cancelTcModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          ${model.cancelModalText}
+        </div>
+        <div class="modal-footer">
+          <a href="/eaton/signout" class="b-button b-button__primary" id="cancelTcTerm" >${model.cancelText}</a>
+          <button data-dismiss="modal" class="b-button b-button__tertiary b-button__tertiary--light">${model.continueText} </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</sly>

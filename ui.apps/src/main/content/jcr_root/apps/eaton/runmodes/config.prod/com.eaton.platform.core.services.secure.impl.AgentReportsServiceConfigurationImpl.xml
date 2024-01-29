@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+		  jcr:primaryType="sling:OsgiConfig"
+		  userLookupUrl="http://shoputil.tcc.etn.com/public/v1/currentUser/login"
+		  userLookupAPIUsername="myeaton_ws"
+		  userLookupAPIPassword="Or34C5Nt@1$"
+		  userInfoAPIEndPointURL="http://shoputil.tcc.etn.com/public/v1/userInfo/"
+		  orgInfoAPIEndPointURL="http://shoputil.tcc.etn.com/public/v1/orgInfo/"
+		  dmAPIEndPointURL="http://dm-ws.tcc.etn.com/_dav/urm/idcplg"
+		  dmAPIUsername="ebs_reporting"
+		  dmAPIPassword="R3p0rt1ng"
+		  maxConnections="100"
+		  maxHostConnections="100"
+		  maxCacheSize="1000"
+		  accessTokenCacheTTL="1800"
+		  userInfoCacheTTL="1800"
+		  resultCount="1000"/>

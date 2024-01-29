@@ -1,0 +1,55 @@
+//-----------------------------------
+// Component: Content Fragments
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+// Import Subviews
+@import "views/contact-info";
+@import "views/contact-list"; // stylelint-disable no-missing-end-of-source-newline
+
+.contentfragment--contact {
+  .cmp-contentfragment__title, .cmp-contentfragment__element-title { // stylelint-disable selector-list-comma-newline-after
+    display: none;
+  }
+}
+
+.contentfragment, .contentfragmentlist {
+  @include body-copy;
+
+  @include font-family__secondary(--secondary-font);
+  margin-bottom: rem($spacing__sm * 0.5);
+
+  p {
+    margin: 0 0;
+    line-height: $base__line-height * (1.13);
+    font-size: rem($base__font-size * 1.6);
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  dd, dt {
+    margin-inline-start: 0px !important; // stylelint-disable-line declaration-no-important
+    line-height: $base__line-height * (1.13) !important; // stylelint-disable-line declaration-no-important
+  }
+
+  .cmp-contentfragment__element-value, .cmp-contentfragment__element-title {
+    margin: 0 auto !important; // stylelint-disable-line declaration-no-important
+  }
+}
+
+@include media-mobile-and-tablet {
+  .contentfragment, .contentfragmentlist {
+    p {
+      line-height: $base__line-height * (0.93);
+      font-size: rem($base__font-size * 1.2);
+    }
+
+    dd, dt {
+      line-height: $base__line-height * (0.93) !important; // stylelint-disable-line declaration-no-important
+    }
+  }
+}

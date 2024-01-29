@@ -1,0 +1,173 @@
+{
+	"jcr:primaryType": "dam:Asset",
+	"jcr:mixinTypes": [
+		"mix:referenceable"
+	],
+	"jcr:createdBy": "admin",
+	"jcr:created": "Wed Jun 28 2023 10:52:37 GMT+0200",
+	"jcr:uuid": "41427440-a787-4fe9-9fa8-4a6f6e35f0d6",
+	"jcr:content": {
+		"jcr:primaryType": "dam:AssetContent",
+		"jcr:mixinTypes": [
+			"cq:ReplicationStatus"
+		],
+		"cq:lastReplicationAction": "Activate",
+		"cq:lastReplicatedBy": "workflow-process-service",
+		"jcr:lastModifiedBy": "tag-validation-service",
+		"status": "Start uploading",
+		"cq:lastReplicated": "Mon Sep 11 2023 10:33:12 GMT+0200",
+		"dam:assetState": "processed",
+		"cq:name": "pexeva.zip",
+		"jcr:lastModified": "Mon Sep 11 2023 10:33:12 GMT+0200",
+		"renditions": {
+			"jcr:primaryType": "nt:folder",
+			"jcr:createdBy": "admin",
+			"jcr:created": "Wed Jun 28 2023 10:52:37 GMT+0200",
+			"cq5dam.thumbnail.48.48.png": {
+				"jcr:primaryType": "nt:file",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Wed Jun 28 2023 10:52:37 GMT+0200",
+				"jcr:content": {
+					"jcr:primaryType": "oak:Resource",
+					"jcr:lastModifiedBy": "workflow-process-service",
+					"jcr:mimeType": "image/png",
+					"jcr:lastModified": "Wed Jun 28 2023 10:52:37 GMT+0200",
+					":jcr:data": 379
+				}
+			},
+			"cq5dam.thumbnail.140.100.png": {
+				"jcr:primaryType": "nt:file",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Wed Jun 28 2023 10:52:37 GMT+0200",
+				"jcr:content": {
+					"jcr:primaryType": "oak:Resource",
+					"jcr:lastModifiedBy": "workflow-process-service",
+					"jcr:mimeType": "image/png",
+					"jcr:lastModified": "Wed Jun 28 2023 10:52:37 GMT+0200",
+					":jcr:data": 1031
+				}
+			},
+			"cq5dam.web.1280.1280.jpeg": {
+				"jcr:primaryType": "nt:file",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Wed Jun 28 2023 10:52:37 GMT+0200",
+				"jcr:content": {
+					"jcr:primaryType": "oak:Resource",
+					"jcr:lastModifiedBy": "workflow-process-service",
+					"jcr:mimeType": "image/jpeg",
+					"jcr:lastModified": "Wed Jun 28 2023 10:52:37 GMT+0200",
+					":jcr:data": 2109
+				}
+			},
+			"original": {
+				"jcr:primaryType": "nt:file",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Wed Jun 28 2023 10:52:37 GMT+0200",
+				"jcr:content": {
+					"jcr:primaryType": "oak:Resource",
+					"jcr:lastModifiedBy": "e0063964",
+					"jcr:mimeType": "application/zip",
+					"jcr:lastModified": "Wed Jun 28 2023 10:52:37 GMT+0200",
+					":jcr:data": 47128289
+				}
+			},
+			"cq5dam.thumbnail.319.319.png": {
+				"jcr:primaryType": "nt:file",
+				"jcr:createdBy": "admin",
+				"jcr:created": "Wed Jun 28 2023 10:52:37 GMT+0200",
+				"jcr:content": {
+					"jcr:primaryType": "oak:Resource",
+					"jcr:lastModifiedBy": "workflow-process-service",
+					"jcr:mimeType": "image/png",
+					"jcr:lastModified": "Wed Jun 28 2023 10:52:37 GMT+0200",
+					":jcr:data": 2059
+				}
+			}
+		},
+		"related": {
+			"jcr:primaryType": "nt:unstructured"
+		},
+		"metadata": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:mixinTypes": [
+				"cq:Taggable"
+			],
+			"xmp:eaton-file-name": "pexeva.zip",
+			"assetPublicationDate": "Wed Oct 06 2021 16:48:00 GMT+0200",
+			"xmp:eaton-rights-restricted": "no",
+			"trackDownload": "false",
+			"jcr:lastModifiedBy": "tag-validation-service",
+			"dam:extracted": "Wed Oct 06 2021 09:20:07 GMT-0400",
+			"dc:format": "application/zip",
+			"applicationAccess": [
+				"eaton-secure:application-access/eaton-distributor-advantage-program-edap"
+			],
+			"xmp:eaton-content-type": [
+				"eaton:resources/marketing-resources/brochures"
+			],
+			"xmp:eaton-myeaton-taxonomy": [
+				"eaton:myeaton-taxonomy/myeaton-channel-marketing/distributor-digipacks"
+			],
+			"excludeCountries": "true",
+			"xmp:eaton-country": [
+				"eaton:country/north-america/us"
+			],
+			"xmp:eaton-partner-program-type": [
+				"eaton-secure:partner-programme-type/it-channel-program"
+			],
+			"dam:scene7FileStatus": "NotSupported",
+			"dam:FileCount": 11,
+			"dam:Content": "Digital Image/PXEVA Email-High-Quality.jpg\nElevator Pitch and Overview/PXEVA - Overview-Pitch.docx\nPromotional Collateral/px-eva-pa150005en.pdf\nPXEVA DigiPack Checklist.pdf\nThought Leadership/building-energy-codes-driving-efficient-design-wp150001en.pdf\nVideo Content/EATON_PXEVA_HD.mp4\nWeb Banners/Copy of PXEVA-300x250px-MediumRectangle.jpg\nWeb Banners/Copy of PXEVA-320x50px-Mobile-Max-Quality.jpg\nWeb Banners/Copy of PXEVA-625x80px-Customsize1.jpg\nWeb Banners/Copy of PXEVA-728x90px-Leaderboard.jpg\nWeb Banners/Copy of PXEVA-970x250px-Billboard.jpg\n",
+			"xmp:eaton-tier-level": [
+				"eaton-secure:tier-level/authorized",
+				"eaton-secure:tier-level/premium",
+				"eaton-secure:tier-level/registered"
+			],
+			"dc:modified": "Wed Oct 06 2021 09:20:04 GMT-0400",
+			"businessGroup": [
+				"eaton-secure:business-group/electrical-emea"
+			],
+			"productCategories": [
+				"eaton-secure:product-category/electrical/circuit-breakers"
+			],
+			"xmp:eaton-imported-by": "e0063964",
+			"accountType": [
+				"eaton-secure:accounttype/distributor",
+				"eaton-secure:accounttype/agent",
+				"eaton-secure:accounttype/reseller"
+			],
+			"cq:tags": [
+				"eaton-secure:application-access/eaton-distributor-advantage-program-edap",
+				"eaton-secure:accounttype/agent",
+				"eaton:country/north-america/us",
+				"eaton-secure:partner-programme-type/it-channel-program/premium",
+				"eaton-secure:accounttype/reseller",
+				"eaton-secure:product-category/electrical/circuit-breakers",
+				"eaton-secure:accounttype/distributor",
+				"eaton:resources/marketing-resources/brochures",
+				"eaton-secure:business-group/electrical-emea",
+				"eaton-secure:partner-programme-type/it-channel-program/authorized",
+				"eaton-secure:partner-programme-type/it-channel-program/registered"
+			],
+			"jcr:lastModified": "Mon Sep 11 2023 10:33:12 GMT+0200",
+			"xmp:eaton-partner-program-and-tier-level": [
+				"eaton-secure:partner-programme-type/it-channel-program/registered",
+				"eaton-secure:partner-programme-type/it-channel-program/authorized",
+				"eaton-secure:partner-programme-type/it-channel-program/premium"
+			],
+			"xmp:CreateDate": "Wed Oct 06 2021 09:20:03 GMT-0400",
+			"countries": [
+				"eaton:country/europe/pl"
+			],
+			"secureAsset": "YES",
+			"dam:sha1": "a347124c68bb7454368ac171c36bc8756ecfe56b",
+			"dam:size": 47128289,
+			"xmp:eaton-metadata-review": "pending",
+			"dc:title": "pexeva",
+			"xmp:eaton-modified-by": "tag-validation-service",
+			"Iptc4xmpCore:CreatorContactInfo": {
+				"jcr:primaryType": "nt:unstructured"
+			}
+		}
+	}
+}

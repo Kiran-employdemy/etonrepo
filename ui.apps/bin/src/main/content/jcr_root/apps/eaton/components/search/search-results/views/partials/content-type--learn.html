@@ -1,0 +1,81 @@
+<!--/*
+  Search Result Module - Type: eCommerce Learn Page
+
+  -
+  NOTE: If the HTML structure of this file changes, please also Update the file:
+  `/eaton.frontend/src/components/search-results/js/search-results.js`
+  Since that files contains a Javascript Template that is used when more results are loaded with AJAX
+
+*/-->
+<template data-sly-template.item="${ @ data }">
+
+    <div class="results-list-submodule results-list-submodule--type-${ data.contentType }">
+
+        <!--/* Image */-->
+        <div class="results-list-submodule__image-wrapper b-body-copy-small">
+            <a href="${ data.url @ context='uri' }"
+               class="results-list-submodule__image-link"
+               target="${ data.urlTarget }"
+            >
+
+                <div class="rendition">
+                    <img
+                            class="rendition__image img-responsive"
+                            data-src="${ data.dsktopRendition }"
+                            data-mobile-rendition="${ data.mobileRendition }"
+                            data-tablet-rendition="${ data.dsktopRendition }"
+                            data-desktop-rendition="${ data.dsktopRendition }"
+                            alt="${data.title}"
+                    />
+                </div>
+                <!-- End: Rendition Image Component -->
+            </a>
+        </div>
+
+        <!--/* Content */-->
+        <div class="results-list-submodule__content-wrapper">
+            <sly data-sly-test="${data.status == 'Discontinued' || data.status == 'Inactive' || data.status == 'Retired'}">
+                <div class="results-list-submodule__badge-discontinued">${'Discontinued' @i18n}</div>
+            </sly>
+            <sly data-sly-test="${data.newBadgeVisible}">
+                <div class="results-list-submodule__badge-new">${ 'ResourceList.NewBadge' @ i18n }</div>
+            </sly>
+            <h4 class="results-list-submodule__name b-heading-h5">
+                <a href="${ data.url @ context='uri' }"
+                   target="${ data.urlTarget }"
+                   class="results-list-submodule__name-link"
+                   data-analytics-event="search-result"
+                >${ data.title @ context='html'}</a>
+            </h4>
+
+            <div class="results-list-submodule__description b-body-copy-small">${ data.description  @ context='html'}</div>
+
+            <div class="results-list-submodule__url b-body-copy-small">
+                <a href="${ data.url @ context='uri' }"
+                   target="${ data.urlTarget }"
+                   class="results-list-submodule__url-link"
+                   aria-label="${ 'Go to' @i18n } ${ data.url }"
+                ><i data-sly-test="${data.secure}" class="icon icon-secure-lock" aria-hidden="true"></i><span>${ data.completeUrl @ context='uri' }</span></a>
+            </div>
+
+            <ul
+                class="results-list-submodule__link-list b-body-copy-small u-list-inline">
+                <li class="results-list-submodule__link-item">
+                    <a class="results-list-submodule__link-item-link"
+                       href="${ data.url @ context='uri' }"
+                       target="${ data.urlTarget }"
+                       aria-label="${ 'Learn more' @i18n } "
+                    >${ 'Learn more' @i18n}</a>
+                </li>
+                <li class="results-list-submodule__link-item">
+                    <a class="results-list-submodule__link-item-link"
+                       href="${ data.buyPageReference @ context='uri' }"
+                       target="${ data.urlTarget }"
+                       aria-label="${ 'Buy now' @i18n }"
+                    >${ 'Buy now' @i18n}</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</template>

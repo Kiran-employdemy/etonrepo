@@ -1,0 +1,17 @@
+/*!
+* NOTE: This module is being used/shared by these AEM-Components: Card List, Category Highlight Article.
+*/
+
+//-----------------------------------
+// M-33: Related Item with images
+// M-49: Category Highlight
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+// Import sub-modules
+@import "js-list-slider";
+@import "card-featured";
+@import "card";

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+		  jcr:primaryType="sling:OsgiConfig"
+		  baseUrl="https://maps.googleapis.com"
+		  key="AIzaSyBE9jgy97Zhmn-s5vyOzwAj2jaCslurhlQ"
+		  responseCache=""
+		  responseCacheSize="1000"
+		  responseCacheDuration="24"
+		  responseTimeout="15"
+		  maxConnections="100"
+		  maxHostConnections="100"/>

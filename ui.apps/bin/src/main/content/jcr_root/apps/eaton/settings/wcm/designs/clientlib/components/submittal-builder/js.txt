@@ -1,0 +1,10 @@
+#base=js
+
+submittal-header.js
+submittal-builder.js
+submittal-intro.js
+submittal-package.js
+submittal-result.js
+submittal-results.js
+submittal-download.js
+submittal-init.js

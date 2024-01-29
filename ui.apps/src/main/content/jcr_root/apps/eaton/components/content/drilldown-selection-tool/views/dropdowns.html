@@ -1,0 +1,26 @@
+<sly data-sly-use.drilldownSelectionToolModel="com.eaton.platform.core.models.drilldownselectiontool.DrilldownSelectionToolModel">
+    <div class="dropdown-list" data-resource-path="${resource.path}">
+
+        <sly data-sly-list.dropdown="${drilldownSelectionToolModel.dropdowns}">
+            <div class="dropdown-list__dropdown">
+                <label hidden="${dropdownList.index != 0}" for="dropdown-${dropdownList.index}">${dropdown.label}</label>
+                <select hidden="${dropdownList.index != 0}"
+                        name="dropdown-${dropdownList.index}"
+                        id="dropdown-${dropdownList.index}"
+                        data-index="${dropdownList.index}"
+                        data-dropdown-tag-path="${dropdown.dropdownTagPath}">
+                    <option disabled selected>${'pleaseSelect' @i18n}</option>
+                </select>
+            </div>
+        </sly>
+
+        <script id="drilldown-selection-tool-next-dropdown-mustache" type="text/mustache">
+            {{#.}}
+                <option data-option-label="option-{{index}}"
+                        data-tag-path="{{tagPath}}"
+                        data-title="{{title}}">{{title}}</option>
+            {{/.}}
+          </script>
+
+    </div>
+</sly>

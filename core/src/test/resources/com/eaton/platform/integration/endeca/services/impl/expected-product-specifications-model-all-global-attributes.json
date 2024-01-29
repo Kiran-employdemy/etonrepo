@@ -1,0 +1,518 @@
+{
+  "skuSearchRecords": [
+    {
+      "attributeGroups": [
+        {
+          "attributeGroupName": "General specifications",
+          "attributeList": [
+            {
+              "attributeLabel": "Configurable Product",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "No"
+              }
+            },
+            {
+              "attributeLabel": "Bypass volume rule",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "No"
+              }
+            },
+            {
+              "attributeLabel": "Product Family Description",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "IS-VG-Eaton ELocker Differential"
+              }
+            },
+            {
+              "attributeLabel": "Catalog Number",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "14020-010"
+              }
+            },
+            {
+              "attributeLabel": "*Long Description",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "EATON ELOCKER® DIFFERENTIAL; DANA 60; 30 SPLINE; 4.10 AND DOWN"
+              }
+            },
+            {
+              "attributeLabel": "Collision Status",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "None"
+              }
+            },
+            {
+              "attributeLabel": "Global Catalog",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "14020-010"
+              }
+            },
+            {
+              "attributeLabel": "Brand",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Eaton"
+              }
+            },
+            {
+              "attributeLabel": "Sub Brand",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "None"
+              }
+            },
+            {
+              "attributeLabel": "Marketing Description",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "The Eaton ELocker is an electronic, selectable differential designed for drivers that need traction on-demand. At the flip of a dash switch, drivers can go from open to 100-percent locked. A second flip of the switch deactivates the unit to resume normal driving. The ELocker is the most reliable on-demand differential, featuring selectable operation and net-forged gears for added strength."
+              }
+            },
+            {
+              "attributeLabel": "Keywords",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Locker, Locking Differential, E-Locker, Elocker"
+              }
+            },
+            {
+              "attributeLabel": "Product Trade Name",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "ELocker"
+              }
+            },
+            {
+              "attributeLabel": "Product Type",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Differential"
+              }
+            },
+            {
+              "attributeLabel": "Sub Type",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "None"
+              }
+            },
+            {
+              "attributeLabel": "Product Name",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Eaton ELocker Differential"
+              }
+            },
+            {
+              "attributeLabel": "Feature",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Driver-selectable locking differential \u003cbr\u003e Performs open until needed \u003cbr\u003e Net-forged gears for added strength\n \u003cbr\u003e 100% locking differential \u003cbr\u003e Push button traction"
+              }
+            },
+            {
+              "attributeLabel": "Country Code",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Mexico"
+              }
+            },
+            {
+              "attributeLabel": "HTS",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "8708508900"
+              }
+            },
+            {
+              "attributeLabel": "Technical Support Contact",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "\u003cul\u003e\u003cli\u003eCustomer Service \u003c/li\u003e\u003cli\u003e +1 (800) 328-3850\u003c/li\u003e\u003c/ul\u003e \u003cbr\u003e \u003cul\u003e\u003cli\u003eCustomer Service \u003c/li\u003e\u003cli\u003e +1 (800) 328-3850\u003c/li\u003e\u003c/ul\u003e \u003cbr\u003e Eaton´s customer service center +55 19 3881 9787 ; out of Brazil +55 19 3881 9303 and +55 19 3881 9654"
+              }
+            },
+            {
+              "attributeLabel": "Technical Support Region",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "North America \u003cbr\u003e North America \u003cbr\u003e South America"
+              }
+            },
+            {
+              "attributeLabel": "Technical Support Country",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "United States of America \u003cbr\u003e Canada \u003cbr\u003e Brazil"
+              }
+            },
+            {
+              "attributeLabel": "Business",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Industrial - Global - Vehicle"
+              }
+            },
+            {
+              "attributeLabel": "Package Shape",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Rectangular"
+              }
+            },
+            {
+              "attributeLabel": "Package Height",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "11 in"
+              }
+            },
+            {
+              "attributeLabel": "Package Length",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "10.5 in"
+              }
+            },
+            {
+              "attributeLabel": "Package Width",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "10.5 in"
+              }
+            },
+            {
+              "attributeLabel": "Product Weight",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "44.5 lb"
+              }
+            },
+            {
+              "attributeLabel": "Package Weight",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "44.5 lb"
+              }
+            },
+            {
+              "attributeLabel": "Package Volume",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "1213 in³"
+              }
+            },
+            {
+              "attributeLabel": "*Public Consumption",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Yes"
+              }
+            },
+            {
+              "attributeLabel": "*Private Branded",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "No"
+              }
+            },
+            {
+              "attributeLabel": "*Serial Num Control",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Yes"
+              }
+            },
+            {
+              "attributeLabel": "*Product Risk Classification",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Runner"
+              }
+            },
+            {
+              "attributeLabel": "*Release For Sale Date",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "2017-01-09 00:00:00"
+              }
+            },
+            {
+              "attributeLabel": "*eShop Enabled",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Yes"
+              }
+            },
+            {
+              "attributeLabel": "ECode",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "DLF1"
+              }
+            },
+            {
+              "attributeLabel": "End Use Market Segment - Market Sub Segment",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Transportation"
+              }
+            },
+            {
+              "attributeLabel": "End Use Application - Application Sub segment",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Vehicles: On-Road"
+              }
+            },
+            {
+              "attributeLabel": "Platform - Group",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "VG"
+              }
+            },
+            {
+              "attributeLabel": "Platform - Name",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Aftermarket"
+              }
+            },
+            {
+              "attributeLabel": "Short Description",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "ELOCKER DIRECT ACTING DANA 60 - 4.10 DN"
+              }
+            },
+            {
+              "attributeLabel": "System Name",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "VEHICLE JDE - NA \u003cbr\u003e VEHICLE ORACLE - GLOBAL"
+              }
+            },
+            {
+              "attributeLabel": "Manufacturing Id",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Q14020-010 \u003cbr\u003e Q14020-010"
+              }
+            },
+            {
+              "attributeLabel": "ERP Status",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Active \u003cbr\u003e Active"
+              }
+            },
+            {
+              "attributeLabel": "Publish Mode",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Real-Time \u003cbr\u003e Real-Time"
+              }
+            },
+            {
+              "attributeLabel": "UniqID Enabled",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "No"
+              }
+            },
+            {
+              "attributeLabel": "Owner",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Industrial Vehicle AMER Electromagnetic (ELocker)"
+              }
+            },
+            {
+              "attributeLabel": "Marketing Languages",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "AMERICAN"
+              }
+            },
+            {
+              "attributeLabel": "Language Status",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Active"
+              }
+            },
+            {
+              "attributeLabel": "Countries",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Canada \u003cbr\u003e United States of America \u003cbr\u003e Mexico \u003cbr\u003e South Africa \u003cbr\u003e Germany \u003cbr\u003e Algeria \u003cbr\u003e Austria \u003cbr\u003e Finland \u003cbr\u003e Hungary \u003cbr\u003e Norway \u003cbr\u003e Belarus \u003cbr\u003e Belgium \u003cbr\u003e Croatia \u003cbr\u003e Czech Republic \u003cbr\u003e Egypt \u003cbr\u003e Estonia \u003cbr\u003e Ethiopia \u003cbr\u003e France \u003cbr\u003e Ireland \u003cbr\u003e Italy \u003cbr\u003e Luxembourg \u003cbr\u003e Netherlands \u003cbr\u003e Oman \u003cbr\u003e Poland \u003cbr\u003e Portugal \u003cbr\u003e Russian Federation \u003cbr\u003e Saudi Arabia \u003cbr\u003e Sweden \u003cbr\u003e Switzerland \u003cbr\u003e Turkey \u003cbr\u003e United Arab Emirates \u003cbr\u003e United Kingdom of Great Britain and Northern Ireland"
+              }
+            }
+          ]
+        },
+        {
+          "attributeGroupName": "Product Specifications",
+          "attributeList": [
+            {
+              "attributeLabel": "Differential type",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Locking"
+              }
+            },
+            {
+              "attributeLabel": "Gear spline tooth count",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "30 EA"
+              }
+            },
+            {
+              "attributeLabel": "Ring gear size",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "9.75 in"
+              }
+            },
+            {
+              "attributeLabel": "Axle shaft diameter",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "1.31 in"
+              }
+            },
+            {
+              "attributeLabel": "Vehicle usage",
+              "attributeValue": {
+                "attributeType": "others",
+                "cdata": "Off-Road: Rock Crawl \u003cbr\u003e On Road: Work Truck / Towing \u003cbr\u003e Off-Road: Work Truck / Towing \u003cbr\u003e Off-Road: Extreme Off-Road \u003cbr\u003e Off-Road: Light Trail / Sand Sports"
+              }
+            }
+          ]
+        }
+      ],
+      "attributeTables": [
+        {
+          "id": "XXPDH_VEHICLE_PRODUCT_SELECTOR",
+          "headline": "Differential Product Selector",
+          "headers": [
+            "Model year start",
+            "Model year end",
+            "Vehicle type (model)",
+            "Vehicle make",
+            "Axle description",
+            "Axle location"
+          ],
+          "rows": [
+            {
+              "id": 46432644,
+              "cells": {
+                "Model year start": "1966",
+                "Model year end": "1972",
+                "Vehicle type (model)": "Passenger Car",
+                "Vehicle make": "Chrysler, Dodge, Plymouth",
+                "Axle description": "Dana 60",
+                "Axle location": "Rear"
+              }
+            },
+            {
+              "id": 46432645,
+              "cells": {
+                "Model year start": "1994",
+                "Model year end": "1999",
+                "Vehicle type (model)": "Small, Half-Ton Truck, Wagon, Van",
+                "Vehicle make": "Chrysler, Dodge, Plymouth",
+                "Axle description": "Dana 60",
+                "Axle location": "Front"
+              }
+            },
+            {
+              "id": 46432646,
+              "cells": {
+                "Model year start": "1972",
+                "Model year end": "2002",
+                "Vehicle type (model)": "Small, Half-Ton Truck, Wagon, Van",
+                "Vehicle make": "Chrysler, Dodge, Plymouth",
+                "Axle description": "Dana 60",
+                "Axle location": "Rear"
+              }
+            },
+            {
+              "id": 46432647,
+              "cells": {
+                "Model year start": "1975",
+                "Model year end": "2002",
+                "Vehicle type (model)": "Three Quarter, One-Ton Truck, Wagon, Van, Cab and Chassis, Motor Home",
+                "Vehicle make": "Chrysler, Dodge, Plymouth",
+                "Axle description": "Dana 60, 60 HD, 60M",
+                "Axle location": "Rear"
+              }
+            },
+            {
+              "id": 46432648,
+              "cells": {
+                "Model year start": "1975",
+                "Model year end": "1984",
+                "Vehicle type (model)": "Three Quarter-Ton Truck, Van, SUV",
+                "Vehicle make": "Ford",
+                "Axle description": "Dana 60-3",
+                "Axle location": "Rear"
+              }
+            },
+            {
+              "id": 46432649,
+              "cells": {
+                "Model year start": "1974",
+                "Model year end": "1987",
+                "Vehicle type (model)": "Three Quarter-Ton Truck, Van, SUV",
+                "Vehicle make": "Ford",
+                "Axle description": "Dana 61-1",
+                "Axle location": "Rear"
+              }
+            },
+            {
+              "id": 46432650,
+              "cells": {
+                "Model year start": "1978",
+                "Model year end": "1979",
+                "Vehicle type (model)": "One-Ton Truck, Van, Wagon, Cab and Chassis",
+                "Vehicle make": "Ford",
+                "Axle description": "Dana 60 Snowplow Package",
+                "Axle location": "Rear"
+              }
+            },
+            {
+              "id": 46432651,
+              "cells": {
+                "Model year start": "0000",
+                "Model year end": "1974",
+                "Vehicle type (model)": "Three Quarter-Ton Truck",
+                "Vehicle make": "General Motors",
+                "Axle description": "Dana 60",
+                "Axle location": "Rear"
+              }
+            },
+            {
+              "id": 46432652,
+              "cells": {
+                "Model year start": "1974",
+                "Model year end": "1987",
+                "Vehicle type (model)": "Cherokee, Grand Cherokee, Liberty, Post Office Truck, Scrambler, Wagoneer, Wrangler",
+                "Vehicle make": "Jeep",
+                "Axle description": "Dana M60-3R",
+                "Axle location": "Rear"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+		  jcr:primaryType="sling:OsgiConfig"
+		  baseUrl="https://api-sit.eaton.com"
+		  key="yjr1xPtqswGCcIu6TbFTLhQ4j0Yb5xcf"
+		  secret="{String}{74400fe7dc69b41f6e5728ce85f940646fb13baa494325f1af7c07b3271c657d2aef4bad9e639681814da22a51e0b680}"
+		  freeSampleOrderKey="gVcmvpJHscMtTgQAPUMXNE7p3S410LVt"
+		  freeSampleOrderSecret="4ROGHVyosIdyJSVj"
+		  accessTokenCache=""
+		  accessTokenCacheSize="5"
+		  accessTokenCacheDuration="1380"
+		  responseCache=""
+		  responseCacheSize="1000"
+		  responseCacheDuration="24"
+		  responseTimeout="30"
+		  maxConnections="200"
+		  maxHostConnections="200"/>

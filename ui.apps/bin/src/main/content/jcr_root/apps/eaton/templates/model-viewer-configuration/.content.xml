@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:description="Configuration Page for PDH"
+    jcr:primaryType="cq:Template"
+    jcr:title="3D model Configuration Page"
+    allowedPaths="[/etc/cloudservices/model-viewer-cloud-config(/.*)?]"
+    ranking="{Long}106">
+    <jcr:content
+		cq:cloudservicename="3d-model-cloud-config"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="/apps/eaton/components/structure/3dmodelconfigpage"/>
+</jcr:root>

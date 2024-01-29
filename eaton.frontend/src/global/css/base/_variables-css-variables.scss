@@ -1,0 +1,166 @@
+// Import All sibling variable sass files
+@import "../_config/variables/variables-base";
+@import "../_config/variables/variables-colors";
+@import "../_config/variables/variables-typography";
+
+/**
+Note: this sass file creates the default CSS variables to match Eaton.com styling
+to prevent the CSS variables polyfill from logging warnings to the console in IE11.
+These variable values can then be overridden by microsites brand values.
+*/
+:root {
+  --primary-custom-brand-font: #{$font-family__primary}; // 'Eaton', Arial, sans-serif;
+  --primary-custom-brand-font-medium: #{$font-family__primary-medium}; //'EatonMedium', Arial, sans-serif
+  --primary-custom-brand-font-bold: #{$font-family__primary-bold}; //'EatonBold', Arial, sans-serif;
+
+  --font-family-eaton-primary: #{$font-family__eaton-primary}; // 'Eaton';
+  --header-font: #{$font-family__primary}; // 'Eaton', Arial, sans-serif;
+  --header-font-medium: #{$font-family__primary-medium}; //'EatonMedium', Arial, sans-serif
+  --header-font-bold: #{$font-family__primary-bold}; //'EatonBold', Arial, sans-serif;
+  --primary-nav-font: #{$font-family__primary}; // 'Eaton', Arial, sans-serif;
+  --sitemap-font: #{$font-family__primary}; // 'Eaton', Arial, sans-serif;
+  --secondary-font: #{$font-family__secondary}; //Arial, 'Arial', sans-serif;
+
+  --font-primary-v1: #{$font-family__primary-v1}; //'Eaton', 'Trebuchet MS', 'Lucida Grande', 'sans-serif';
+  --font-primary-v2: #{$font-family__primary-v2}; //'Eaton', 'Arial', 'HeisASC', 'sans-serif';
+  --font-primary-v3: #{$font-family__primary-v3}; //'Eaton', Arial, HeitASC, sans-serif;
+  --font-primary-bold-v1: #{$font-family__primary-bold-v1}; //'EatonBold', Arial, sans-serif
+  --font-primary-bold-v2: #{$font-family__primary-bold-v2}; //'EatonBold', 'Arial', 'HeisASC', 'sans-serif';  
+  --font-primary-medium-v1: #{$font-family__primary-medium-v1}; //'EatonMedium', 'Arial', 'HeisASC', 'sans-serif';
+  --font-primary-regular-v1: #{$font-family__primary-regular-v1}; //'eatonregular', 'Arial', 'sans-serif';
+  --font-primary-regular-v2: #{$font-family__primary-regular-v2}; //'eatonregular', 'Trebuchet MS', 'Lucida Grande', 'sans-serif';
+
+  --font-secondary-as: #{$font-family__secondary-as}; //'Arial', 'sans-serif';
+  --font-secondary-ahs-2: #{$font-family__secondary-ahs-2}; //'Arial', 'HeisASC', 'sans-serif';
+  --font-secondary-ahs: #{$font-family__secondary-ahs}; //'Arial', 'Helvetica', 'sans-serif';
+  --font-secondary-ahhs: #{$font-family__secondary-ahhs}; //'Arial', 'helvetica neue', 'helvetica', 'sans-serif';
+  --font-secondary-basrhas: #{$font-family__secondary-basrhas}; //'BlinkMacSystemFont', '-apple-system', 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+
+  --font-secondary-l: #{$font-family__secondary-l}; //'Lucida Grande';
+  --font-secondary-s: #{$font-family__secondary-s}; //'sans-serif';
+  --font-secondary-v: #{$font-family__secondary-v}; //'Verdana';
+  --font-secondary-m: #{$font-family__secondary-m}; //monospace, monospace;
+  --font-secondary-hha: #{$font-family__secondary-hha}; //'Helvetica Neue', 'Helvetica', 'Arial';
+  --font-secondary-js: #{$font-family__secondary-js}; //'Josefin Sans', 'sans-serif';
+  --font-secondary-llhas: #{$font-family__secondary-llhas}; //'Lucida Grande', 'Lucida Sans Unicode', 'Helvetica', 'Arial', 'sans-serif';
+  --font-secondary-mclm: #{$font-family__secondary-mclm}; //'Monaco', 'Consolas', 'Lucida Console', 'monospace';
+  --font-secondary-nhals: #{$font-family__secondary-nhals}; //'Neue Helvetica W01', 'Helvetica', 'Arial', 'Lucida Grande', 'sans-serif';
+  --font-secondary-ahas: #{$font-family__secondary-ahas}; // adobe-clean,Helvetica,Arial,sans-serif
+  --font-secondary-mmccm: #{$font-family__secondary-mmccm}; // Menlo, Monaco, Consolas, "Courier New", monospace
+
+  --primary-brand-color: #{$color__primary-blue};
+  --secondary-brand-color: #{$color__accent-aqua};
+  --link-brand-color: #{$color__primary-blue};
+  --grey-primary-brand-color: #{$color__primary-gray1};
+  --grey-secondary-brand-color: #{$color__primary-gray2};
+  --body-copy-color: #{$color__primary-gray1};
+  --search-box-background-color: #{$color__primary-gray1};
+  --section-navigation-background-color: #{$color__primary-gray1};
+  --section-navigation-divider-color: #{$color__primary-gray2};
+  --utility-nav-background-color: #{$color__primary-blue};
+  --navigation-active-border-color: #{$color__primary-blue};
+  --navigation-divider-color: #{rgba(red($color__secondary-gray5), green($color__secondary-gray5), blue($color__secondary-gray5), 0.5)};
+  --navigation-mega-menu-title-background-color: #{$color__primary-gray1};
+  --navigation-mega-menu-background-color: #{$color__primary-gray2};
+  --navigation-search-icon-color: #{$color__primary-blue};
+  --footer-top-background-color: #{$color__primary-gray2};
+
+
+  // Colors as per Eaton Brand Guideline.
+  --color__white: #{$color__white}; //#FFFFFF;
+  --color__black: #{$color__black}; //#000000;
+  --color__ink-95: #{$color__ink-95}; //#121619;
+  --color__iron-95: #{$color__iron-95}; //#202427;
+  --color__ink-80: #{$color__ink-80}; //#1F262B;
+  --color__iron-90: #{$color__iron-90}; //#292E32;
+  --color__ink-60: #{$color__ink-60}; //#29323A;
+  --color__lunar-95: #{$color__lunar-95}; //#35393D;
+  --color__lunar-90: #{$color__lunar-90}; //#444A4E;
+  --color__iron-60: #{$color__iron-60}; //#49525A;
+  --color__iron-50: #{$color__iron-50}; //#525D65;
+  --color__iron-40: #{$color__iron-40}; //#5B6770;
+  --color__lunar-70: #{$color__lunar-70}; //#727B83;
+  --color__lunar-60: #{$color__lunar-60}; //#7A838B;
+  --color__lunar-50: #{$color__lunar-50}; //#89949D;
+  --color__lunar-40: #{$color__lunar-40}; //#98A4AE;
+  --color__ink-30: #{$color__ink-30}; //#C0C3C6;
+  --color__iron-30: #{$color__iron-30}; //#CCD0D3;
+  --color__ink-20: #{$color__ink-20}; //#E0E2E4;
+  --color__iron-20: #{$color__iron-20}; //#E6E8EA;
+  --color__ink-10: #{$color__ink-10}; //#EBECED;
+  --color__iron-10: #{$color__iron-10}; //#EFF0F1;
+  --color__lunar-20: #{$color__lunar-20}; //#F0F1F3;
+  --color__lunar-10: #{$color__lunar-10}; //#F5F6F7;
+  --color__lunar-80: #{$color__lunar-80}; //#5B6268;
+  --color__berry-20: #{$color__berry-20}; //#F0DEE1;
+  --color__berry-30: #{$color__berry-30}; //#E1BAC0;
+  --color__ruby-50: #{$color__ruby-50}; //#BD232B;
+  --color__berry-90: #{$color__berry-90}; //#470F18;
+  --color__ruby-70: #{$color__ruby-70}; //#9E1D24;
+  --color__ruby-40: #{$color__ruby-40}; //#D22730;
+  --color__berry-80: #{$color__berry-80}; //#5E1420;
+  --color__ruby-30: #{$color__ruby-30}; //#F1BCBF;
+  --color__berry-40: #{$color__berry-40}; //#9D2235;
+  --color__ruby-80: #{$color__ruby-80}; //#7E171D;
+  --color__ruby-60: #{$color__ruby-60}; //#A81F26;
+  --color__berry-50: #{$color__berry-50}; //#8D1F30;
+  --color__fire-40: #{$color__fire-40}; //#F0B323;
+  --color__topaz-40: #{$color__topaz-40}; //#ED8B00;
+  --color__topaz-50: #{$color__topaz-50}; //#D57D00;
+  --color__fire-80: #{$color__fire-80}; //#906B15;
+  --color__fire-60: #{$color__fire-60}; //#C08F1C;
+  --color__sulfur-90: #{$color__sulfur-90}; //#6D6331;
+  --color__sulfur-80: #{$color__sulfur-80}; //#928541;
+  --color__sulfur-70: #{$color__sulfur-70}; //#B6A652;
+  --color__fire-30: #{$color__fire-30}; //#FAE7BB;
+  --color__amber-40: #{$color__amber-40}; //#FFC72C;
+  --color__sulfur-30: #{$color__sulfur-30}; //#FBF4D2;
+  --color__sulfur-20: #{$color__sulfur-20}; //#FDFAE9;
+  --color__pear-40: #{$color__pear-40}; //#B5BD00;
+  --color__ivy-50: #{$color__ivy-50}; //#447F24;
+  --color__moss-40: #{$color__moss-40}; //#B7CE95;
+  --color__moss-20: #{$color__moss-20}; //#F4F8EF;
+  --color__ivy-40: #{$color__ivy-40}; //#4C8D28;
+  --color__ivy-60: #{$color__ivy-60}; //#3D7120;
+  --color__ivy-30: #{$color__ivy-30}; //#C8DCBC;
+  --color__ivy-20: #{$color__ivy-20}; //#E4EEDF;
+  --color__sage-40: #{$color__sage-40}; //#A3B2A4;
+  --color__ivy-70: #{$color__ivy-70}; //#396A1E;
+  --color__sage-95: #{$color__sage-95}; //#393E39;
+  --color__sea-50: #{$color__sea-50}; //#00A098;
+  --color__sea-40: #{$color__sea-40}; //#00B2A9;
+  --color__sea-30: #{$color__sea-30}; //#B0E7E4;
+  --color__sky-90: #{$color__sky-90}; //#33505A;
+  --color__sky-80: #{$color__sky-80}; //#446B79;
+  --color__sky-40: #{$color__sky-40}; //#71B2C9;
+  --color__sky-50: #{$color__sky-50}; //#66A0B5;
+  --color__eaton-40: #{$color__eaton-40}; //#005EB8;
+  --color__eaton-30: #{$color__eaton-30}; //#B0CDE9;
+  --color__eaton-20: #{$color__eaton-20}; //#D9E7F4;
+  --color__eaton-50: #{$color__eaton-50}; //#0055A6;
+  --color__ink-40: #{$color__ink-40}; //#333F48;
+  --color__ocean-20: #{$color__ocean-20}; //#D9E1E8;
+  --color__ocean-90: #{$color__ocean-90}; //#00192D;
+  --color__ocean-40: #{$color__ocean-40}; //#003865;
+  --color__eaton-60: #{$color__eaton-60}; //#004B93;
+  --color__ocean-30: #{$color__ocean-30}; //#B0C1CF;
+  --color__eaton-80: #{$color__eaton-80}; //#00386E;
+  --color__eaton-70: #{$color__eaton-70}; //#00478A;
+  --color__eaton-10: #{$color__eaton-10}; //#E6EFF8;
+  --color__ink-90: #{$color__ink-90}; //#171C20;
+  --color__ocean-10: #{$color__ocean-10}; //#E6EBF0;
+  --color__berry-10: #{$color__berry-10}; //#F5E9EB;
+
+  --color__primary-blue: #{$color__primary-blue}; // #005eb8 - Eaton blue
+  --color__primary-blue-transparent: #{$color__primary-blue-transparent}; //#005eb8d9
+  --color__white-transparent-0: #{$color__white-transparent-0}; // #FFFFFF00;
+  --color__black-transparent-0: #{color__black-transparent-0}; //#00000000;
+  --color__black-transparent: #{$color__black-transparent}; //#000000d9
+  --color__black-transparent-50: #{$color__black-transparent-50}; //#00000080
+  --color__black-transparent-10: #{$color__black-transparent-10}; //#00000020
+  --color__black-transparent-20: #{$color__black-transparent-20}; //#00000033;
+  --color__eaton-50-transparent-90: #{$color__eaton-50-transparent-90}; //#005EB8d9
+  --color__white-transparent-90: #{$color__white-transparent-90};  //#ffffff03
+  --color__eaton-50-transparent-80: #{$color__eaton-50-transparent-80};  // #0055A6e7;
+
+}

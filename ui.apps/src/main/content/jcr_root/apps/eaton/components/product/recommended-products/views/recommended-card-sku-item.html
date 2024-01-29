@@ -1,0 +1,43 @@
+<template data-sly-template.item="${ @ results, itemData }">
+	<div class="product-card__wrapper">
+		<div class="product-card">
+			<div class="product-card__image">
+				<a href="${results.baseSKUPath}.${itemData.encodedCatalogNumber}.html">
+					<sly data-sly-test="${itemData.dsktopRendition}">
+						<div class="rendition">
+							<img class="rendition__image img-responsive" data-src="${ itemData.dsktopRendition}"
+								data-mobile-rendition="${ itemData.mobileRendition }"
+								data-tablet-rendition="${ itemData.dsktopRendition}"
+								data-desktop-rendition="${ itemData.dsktopRendition}" />
+						</div>
+					</sly>
+					<div data-sly-test="${!itemData.dsktopRendition}">
+						<sly data-sly-test="${results.siteResourceSlingModel}">
+							<div class="rendition">
+								<img class="rendition__image img-responsive" data-src="${results.siteResourceSlingModel.skuFallBackImage}"
+										data-mobile-rendition="${ results.siteResourceSlingModel.skuFallBackImage }"
+										data-tablet-rendition="${ results.siteResourceSlingModel.skuFallBackImage}"
+										data-desktop-rendition="${ results.siteResourceSlingModel.skuFallBackImage}" />
+							</div>
+						</sly>
+					</div>
+				</a>
+			</div>
+
+			<div class="product-card__content">
+				<h3 class="product-card__content__title">
+					<a href="${ results.baseSKUPath }.${itemData.encodedCatalogNumber}.html">${itemData.catalogNumber}</a>
+				</h3>
+
+				<div class="product-card__content__separator"></div>
+		
+				<div class="product-card__content__description">${itemData.longDesc}</div>
+			</div>	
+
+			<div class="product-card__cta">
+				<a href="${ results.baseSKUPath }.${itemData.encodedCatalogNumber}.html#Specifications">${results.specificationLabel}</a>
+				<a href="${ results.baseSKUPath }.${itemData.encodedCatalogNumber}.html#Resources">${results.resourceLabel}</a>
+			</div>
+		</div>
+	</div>
+</template>

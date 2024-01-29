@@ -1,0 +1,16 @@
+//-----------------------------------
+// Styleguide - HTML Lists (Ordered, unordered etc)
+//-----------------------------------
+
+.b-list {
+
+  &__item {
+    display: inline-block;
+    padding-bottom: 2rem;
+  }
+
+  &--no-bullets {
+    list-style-type: none;
+    padding-left: 0; //removing the bullets space
+  }
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+  jcr:primaryType="nt:unstructured"
+  jcr:title=""
+  sling:resourceType="cq/gui/components/authoring/dialog"
+  helppath="en/cq/current/wcm/&#xa;default_components.html#Carousel">
+    <content
+      jcr:primaryType="nt:unstructured"
+      sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <accordion
+              jcr:primaryType="nt:unstructured"
+              sling:resourceType="granite/ui/components/coral/foundation/accordion">
+                <items jcr:primaryType="nt:unstructured">
+                    <basic
+                      jcr:primaryType="nt:unstructured"
+                      jcr:title="Basic"
+                      sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <multiSelect
+                              jcr:primaryType="nt:unstructured"
+                              sling:orderBefore="guideGlobalLazyField"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                              name="./multiSelect"
+                              text="Allows multiple selection"
+                              value="true"/>
+                            <options
+                              jcr:primaryType="nt:unstructured"
+                              sling:orderBefore="placeholder"
+                              sling:resourceType="fd/af/authoring/components/granite/form/formsmultifield"
+                              fieldDescription="Enter values in {value}={text} format."
+                              fieldLabel="Items">
+                                <field
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                  name="./options"
+                                  required="{Boolean}false"/>
+                            </options>
+                            <defaultValue
+                              jcr:primaryType="nt:unstructured"
+                              sling:orderBefore="guideGlobalLazyField"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                              fieldDescription="Must be one of the options."
+                              fieldLabel="Default Value"
+                              name="./_value"/>
+                            <multiValuePath
+                              jcr:primaryType="nt:unstructured"
+                              sling:orderBefore="guideGlobalLazyField"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                              fieldLabel="Items Load Path"
+                              name="./optionsLoadPath"/>
+                            <dyanmicOptions
+                              jcr:primaryType="nt:unstructured"
+                              fieldLabel="Dynamic Options"
+                              sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                              composite="{Boolean}true">
+                                <field
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="granite/ui/components/coral/foundation/container"
+                                  name="./dynamicItems">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <name
+                                          jcr:primaryType="nt:unstructured"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                          fieldLabel="Option Name"
+                                          name="name"/>
+                                        <mapping
+                                          jcr:primaryType="nt:unstructured"
+                                          sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                          fieldLabel="Mapping"
+                                          composite="{Boolean}true">
+                                            <field
+                                              jcr:primaryType="nt:unstructured"
+                                              sling:resourceType="granite/ui/components/coral/foundation/container"
+                                              name="./mapping">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <name
+                                                      jcr:primaryType="nt:unstructured"
+                                                      sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                      fieldLabel="Item Name"
+                                                      name="name"/>
+                                                </items>
+                                            </field>
+                                        </mapping>
+                                    </items>
+                                </field>
+                            </dyanmicOptions>
+                        </items>
+                    </basic>
+                    <help
+                      jcr:primaryType="nt:unstructured"
+                      jcr:title="Help Content"
+                      sling:resourceType="granite/ui/components/coral/foundation/container"/>
+                    <patterns
+                      jcr:primaryType="nt:unstructured"
+                      sling:hideResource="{Boolean}true"/>
+                    <accessibility jcr:primaryType="nt:unstructured"/>
+                </items>
+            </accordion>
+        </items>
+    </content>
+</jcr:root>

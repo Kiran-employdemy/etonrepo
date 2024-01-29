@@ -1,0 +1,141 @@
+{
+  "jcr:primaryType": "cq:Page",
+  "jcr:createdBy": "admin",
+  "jcr:created": "Mon Jul 17 2023 09:57:53 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable",
+      "cq:LiveSync"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Eaton 5PX UPS | NA",
+    "jcr:versionHistory": "62c7172a-5091-4eb6-a0d9-595689039d9d",
+    "pimPagePath": "/var/commerce/products/eaton/en_us/_29291334",
+    "cq:template": "/conf/eaton/settings/wcm/templates/product-family-page",
+    "jcr:lastModifiedBy": "e0440641",
+    "priority": "0.0",
+    "cq:lastRolledout": "Tue Jul 18 2023 10:51:36 GMT-0400",
+    "primarySubCategory": "/content/eaton/us/en-us/products/backup-power-ups-surge-it-power-distribution/backup-power-ups",
+    "jcr:predecessors": [
+      "53b79b19-d2bf-40e7-842a-5ebdad89fd2b"
+    ],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Thu Jul 27 2023 15:01:06 GMT-0400",
+    "excludeCountries": "false",
+    "primary-sub-category-tag@TypeHint": "String[]",
+    "cq:lastModified": "Tue Jul 18 2023 10:51:36 GMT-0400",
+    "view": "generic",
+    "meta-robot-tags": "index,follow",
+    "jcr:baseVersion": "53b79b19-d2bf-40e7-842a-5ebdad89fd2b",
+    "jcr:isCheckedOut": true,
+    "primary-sub-category-tag": [
+      "eaton:product-taxonomy/backup-power,-ups,-surge-&-it-power-distribution/backup-power-(ups)/eaton-5px"
+    ],
+    "page-type": "product-family",
+    "switchSubCategoryToPIM": "true",
+    "pageTitle": "5PX UPS (1000-3000 VA) Rack/Tower | Virtualization Ready | Eaton",
+    "cq:tags": [
+      "eaton:search-tabs/content-type/product",
+      "eaton:search-tabs/page-type/product-family",
+      "eaton:eaton-brand/industry/PQD-1p-ups"
+    ],
+    "jcr:lastModified": "Wed May 22 2019 15:35:49 GMT-0400",
+    "taxonomyAttribute": "VA_Rating",
+    "jcr:uuid": "f1fdc675-dc0a-4a49-8a6f-2b952a50142a",
+    "teaser-title": "Eaton 5PX UPS (1000-3000 VA)",
+    "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "switchTaxonomyAttributesToPIM": "true",
+    "taxonomyAttributeGrpName": [
+      "Group 1",
+      "Group 2"
+    ],
+    "cq:allowedTemplates": "/conf/eaton/settings/wcm/templates/generic-page",
+    "textIsRich": "true",
+    "cq:lastRolledoutBy": "admin",
+    "cq:lastModifiedBy": "admin",
+    "changefrequency": "always",
+    "navTitle": "5PX UPS",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "jcr:mixinTypes": [
+        "cq:LiveRelationship"
+      ],
+      "jcr:lastModifiedBy": "e0063964",
+      "cq:lastRolledout": "Tue Jul 18 2023 10:51:36 GMT-0400",
+      "jcr:lastModified": "Tue Jul 18 2023 10:51:36 GMT-0400",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "cq:lastRolledoutBy": "admin",
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:mixinTypes": [
+          "cq:LiveRelationship"
+        ],
+        "jcr:createdBy": "e0063964",
+        "jcr:lastModifiedBy": "e0063964",
+        "cq:lastRolledout": "Tue Jul 18 2023 10:51:36 GMT-0400",
+        "jcr:created": "Thu Oct 05 2017 12:44:25 GMT-0400",
+        "jcr:lastModified": "Tue Jul 18 2023 10:51:36 GMT-0400",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "cq:lastRolledoutBy": "admin",
+        "cq:responsive": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "cq:lastRolledout": "Tue Jul 18 2023 10:51:36 GMT-0400",
+          "cq:lastRolledoutBy": "admin"
+        },
+        "product_family_card": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "jcr:createdBy": "c3037550",
+          "jcr:lastModifiedBy": "c3037550",
+          "cq:lastRolledout": "Tue Jul 18 2023 10:51:36 GMT-0400",
+          "jcr:created": "Thu Oct 05 2017 14:00:32 GMT-0400",
+          "jcr:lastModified": "Tue Jul 18 2023 10:51:36 GMT-0400",
+          "sling:resourceType": "eaton/components/product/product-family-card-v2",
+          "cq:lastRolledoutBy": "admin"
+        },
+        "product_tabs": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "jcr:createdBy": "c3037550",
+          "jcr:lastModifiedBy": "c3037550",
+          "cq:lastRolledout": "Tue Jul 18 2023 10:51:36 GMT-0400",
+          "jcr:created": "Thu Oct 05 2017 13:59:59 GMT-0400",
+          "view": "links-navigation",
+          "jcr:lastModified": "Tue Jul 18 2023 10:51:36 GMT-0400",
+          "sling:resourceType": "eaton/components/product/product-tabs-v2",
+          "cq:lastRolledoutBy": "admin"
+        },
+        "how_to_buy": {
+          "jcr:primaryType": "nt:unstructured",
+          "jcr:mixinTypes": [
+            "cq:LiveRelationship"
+          ],
+          "jcr:createdBy": "e0063964",
+          "jcr:lastModifiedBy": "e0063964",
+          "cq:lastRolledout": "Tue Jul 18 2023 10:51:36 GMT-0400",
+          "jcr:created": "Thu Oct 05 2017 13:17:49 GMT-0400",
+          "jcr:lastModified": "Tue Jul 18 2023 10:51:36 GMT-0400",
+          "sling:resourceType": "eaton/components/product/how-to-buy",
+          "cq:lastRolledoutBy": "admin"
+        }
+      }
+    },
+    "cq:LiveSyncConfig": {
+      "jcr:primaryType": "cq:LiveCopy",
+      "cq:rolloutConfigs": [
+        "/libs/msm/wcm/rolloutconfigs/default"
+      ],
+      "cq:isDeep": true,
+      "cq:master": "/content/eaton/language-masters/en-us/catalog/backup-power-ups-surge-it-power-distribution/eaton-5px-ups"
+    }
+  }
+}

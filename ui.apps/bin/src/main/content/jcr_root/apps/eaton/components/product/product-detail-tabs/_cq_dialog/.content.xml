@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Product Tabs SKU Component"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <herotext
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Component Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <column
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <view
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="View"
+                                        name="./view">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <links-navigation
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Links Navigation"
+                                                value="links-navigation"/>
+                                            <toggle-graphic
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Toggle Graphic"
+                                                value="toggle-graphic"/>
+                                        </items>
+                                    </view>
+                                    <check-icon-qr-code-path
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Root path to dam folder"
+                                        fieldLabel="Check icon for QR code"
+                                        name="./checkIconQrCodePath"
+                                        rootPath="/content/dam"/>
+                                    <authenticatedText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="This field will store text for term Authenticated"
+                                        fieldLabel="Authenticated Text"
+                                        name="./authenticatedTextField"/>
+                                    <authenticatedDescription
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Text to be displayed once automatic authentication is successful"
+                                        fieldLabel="Authentication successful message"
+                                        name="./authenticatedDescriptionText"/>
+                                    <authenticate-product-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Text to be displayed for Authenticate Your Product Text"
+                                        fieldLabel="Authenticate Your Product Text"
+                                        name="./authenticateProductText"/>
+                                    <enter-serial-number-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter your 16-17 digit serial number text"
+                                        fieldLabel="Enter your 16-17 digit serial number text"
+                                        name="./enterSerialNumberText"/>
+                                    <serial-number-placeholder
+										jcr:primaryType="nt:unstructured"
+										sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+										fieldDescription="Enter placeholder for serial number"
+										fieldLabel="Enter the placeholder for serial number"
+										name="./serialNumberPlaceholder"/>
+									<serial-number-verified-text
+										jcr:primaryType="nt:unstructured"
+										sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+										fieldDescription="Enter the text for serial verification"
+										fieldLabel="Enter the text for serial verified message"
+										name="./serialNumberVerifiedText"/>
+                                    <specialCharacter-serial-error-message
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="This message is displayed when one enter special character in serial field"
+                                        fieldLabel="Enter message for special Character in Serial Number"
+                                        name="./specialCharacterSerialError"/>
+                                    <invalid-serial-length-error
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="This message will be shown in case of invalid length of serial number"
+                                        fieldLabel="Enter the message in case of invalid serial number length"
+                                        name="./invalidSerialLength"/>
+                                    <invalid-serial-error-message
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Invalid Serial Error Message Text"
+                                        fieldLabel="Invalid Serial Error Message"
+                                        name="./invalidSerialErrorMessage"/>
+                                    <suspect-serial-error-message
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter the message without &quot;report this issue for futher assistence&quot; message"
+                                        fieldLabel="Suspect Serial Error Message"
+                                        name="./suspectSerialErrorMessage"/>
+                                    <serial-catalog-mismatch-error-message
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter the text to be shown when serial number and catalog do not match"
+                                        fieldLabel="Enter Text to be shown when serial number and catalog mismatch"
+                                        name="./serialCatalogMismatchErrorMessage"/>
+                                    <serial-catalog-mismatch-click-here-message
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter the text without &quot;Click here&quot; message"
+                                        fieldLabel="Message for click here in case of serial and catalog mismatch"
+                                        name="./serialCatalogMismatchClickHereMessage"/>
+                                    <report-issue-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Report this issue Text"
+                                        fieldLabel="Report this issue Text"
+                                        name="./reportIssueText"/>
+                                    <report-issue-cta-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Report an issue cta text"
+                                        fieldLabel="Report an issue cta text"
+                                        name="./reportIssueCtaText"/>
+                                    <further-assistance-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Furthur assistance Text"
+                                        fieldLabel="Furthur assistance"
+                                        name="./furtherAssistenceText"/>
+                                    <serial-number-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Serial Number Text"
+                                        fieldLabel="Serial Number Text"
+                                        name="./serialNumberText"/>
+                                    <reset-button-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter the text for reset Button"
+                                        fieldLabel="Reset Button Text"
+                                        name="./resetButttonText"/>
+                                    <serial-number-submit-button-text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter the text for Serial number Submit button"
+                                        fieldLabel="Serial Number Submit Button Text"
+                                        name="./serialNumberSubmitButtonText"/>
+                                    <clickText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter the text for click"
+                                        fieldLabel="Enter the text for click"
+                                        name="./clickText"/>
+                                    <hereText
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Enter the text for here"
+                                        fieldLabel="Enter the text for here"
+                                        name="./hereText"/>
+                                </items>
+                            </column>
+                        </items>
+                    </herotext>
+                    <authenticationcode
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Authentication Code Check Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <auth-code-text
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Autherisation Code Text"
+                                                fieldLabel="Autherisation Code Text"
+                                                name="./authCodeText"/>
+                                            <authentication-button-text
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Authenticate Button Text"
+                                                fieldLabel="Authenticate Button Text"
+                                                name="./authenticateButtonText"/>
+                                            <suspect-authcode-error-message
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Suspect Authentication Code Error Text"
+                                                fieldLabel="Suspect Authentication Code Error Text"
+                                                name="./suspectAuthCodeErrorMessage"/>
+											<authentication-code-mismatch-error-message
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter authentication code mismatch error message"
+                                                fieldLabel="Enter authentication code mismatch error message"
+                                                name="./authCodeMismatchErrorMessage"/>
+											<blank-auth-error
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Blank Authentication Code Text"
+                                                fieldLabel="Enter Blank Authentication Code Text"
+                                                name="./blankAuthError"/>
+											<min-character-error
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter minimum character error text"
+                                                fieldLabel="Enter minimum character error text"
+                                                name="./authCodeWrongErrorMessage"/>
+											<auth-code-verified-text
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Authentication Code Verified Text"
+                                                fieldLabel="Enter Authentication Code Verified Text"
+                                                name="./authCodeVerifiedText"/>
+											<authenticated-text-for-authcode
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Authenticated Text for authcode"
+                                                fieldLabel="Enter Authenticated Text for authcode"
+                                                name="./authenticatedText"/>
+                                            <captcha-required-checkbox
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    checked="{Boolean}true"
+                                                    fieldDescription="Uncheck if captcha is not required"
+                                                    name="./captchaRequiredCheckbox"
+                                                    text="Checkbox for captcha is required"
+                                                    uncheckedValues="false"
+                                                    value="true"/>
+											<reCaptcha-Error
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter reCaptcha Error message"
+                                                fieldLabel="Enter reCaptcha Error message"
+                                                name="./reCaptchaError"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </authenticationcode>
+                    <reportissue
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Report Issue Form Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+											<reportissuetitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter text for Report Issue form title."
+                                                fieldLabel="Report Issue form title text"
+                                                name="./reportIssueTitletext"/>
+                                            <fullname
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter text for Fullname."
+                                                fieldLabel="Full Name text"
+                                                name="./fullNameText"/>
+                                            <email
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter text for Email."
+                                                fieldLabel="Email text"
+                                                name="./emailText"/>	
+                                            <comments
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter text for Comments."
+                                                fieldLabel="Comments text"
+                                                name="./commentsText"/>
+                                            <reportissuebtn
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter The text for Report Issue button."
+                                                fieldLabel="Report Issue button text"
+                                                name="./reportIssueButtonText"/>
+                                            <emailIdMandatoryErrorMessage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter error message text for invalid e-mail."
+                                                fieldLabel="Error message for invalid e-mail"
+                                                name="./emailIdMandatoryErrorMessage"/>	
+											<reportIssueSubmitMessageText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter text for report issue successful Message."
+                                                fieldLabel="Report issue successful Message"
+                                                name="./reportIssueSubmitMessageText"/>		
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </reportissue>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

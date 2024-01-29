@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.ContentHubImpl" immediate="true" activate="activate">
+  <service>
+    <provide interface="com.eaton.platform.core.services.ContentHubService"/>
+  </service>
+  <reference name="httpFactory" interface="org.apache.http.osgi.services.HttpClientBuilderFactory" field="httpFactory"/>
+  <implementation class="com.eaton.platform.core.services.impl.ContentHubImpl"/>
+</scr:component>

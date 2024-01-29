@@ -1,0 +1,130 @@
+//-----------------------------------
+// Component M-67 Responsive Table
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+$bem-selector: 'responsive-table';
+
+.#{$bem-selector} {
+
+  $border-color: $color__secondary-gray5;
+  // $border-color: #333; // This color is Used for Testing purposes
+
+  // NOTE: Selector With higher Hierarchy / Specificity
+  .#{$bem-selector}--visible-mobile,
+  .#{$bem-selector}--visible-desktop {
+    display: none;
+  }
+
+  &__group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  &__group-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__cell {
+    padding: .5rem;
+  }
+
+  &__title {
+    // TO DO: possibly remove this once microsites brand tool has been implemented.
+    // If global font overrides are desired once microsites brand tool is implement, it should be handled in _mixins-typography.scss
+    @include font-family__primary-medium(--header-font-medium);
+  }
+
+  //-----------------------------------
+  // MediaQuery: 0 to 991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+
+    margin: ($spacing__xl / 2) 0;
+
+    // Override Bootstrap's Grid in order to make the component "full-width"
+    &__content {
+      margin-left: (-$grid__gutter-width); // Negative Value
+      margin-right: (-$grid__gutter-width); // Negative Value
+    }
+
+    // NOTE: Selector With higher Hierarchy / Specificity
+    .#{$bem-selector}--visible-mobile {
+      display: flex;
+    }
+
+    &__group {
+      flex-direction: column;
+    }
+
+    &__group-item {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      border-bottom: 1px solid $border-color;
+    }
+
+    &__cell {
+      border-left: 1px solid $border-color;
+      flex: 1;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: ($spacing__md / 2);
+
+      &:first-child {
+        border-left: 0;
+      }
+    }
+
+    &__group-item:first-child &__cell {
+      margin-left: 50%;
+      font-weight: bold;
+    }
+
+  }
+
+
+
+  //-----------------------------------
+  // MediaQuery: >992px
+  //-----------------------------------
+  @include media-desktop-and-up {
+
+    margin: ($spacing__xl) 0;
+
+    // NOTE: Selector With higher Hierarchy / Specificity
+    .#{$bem-selector}--visible-desktop {
+      display: flex;
+    }
+
+    &__group:first-child,
+    &__group-item:first-child {
+      font-weight: bold;
+    }
+
+    &__group {
+      border-bottom: 1px solid $border-color;
+    }
+
+    &__group-item {
+      flex: 1;
+      border-left: 1px solid $border-color;
+
+      &:first-child {
+        border: 0;
+      }
+    }
+
+    &__group:first-child &__group-item {
+      border-left: 0;
+    }
+
+    &__cell {
+      padding: $spacing__sm;
+    }
+
+  }
+}

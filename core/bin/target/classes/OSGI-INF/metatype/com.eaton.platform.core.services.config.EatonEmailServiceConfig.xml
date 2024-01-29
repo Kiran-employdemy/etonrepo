@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.EatonEmailServiceConfig">
+  <OCD id="com.eaton.platform.core.services.config.EatonEmailServiceConfig" name="EatonEmailServiceImpl" description="">
+    <AD id="fromAddress" type="String" name="from Address" description="Sender Email Address" default="noreply-EATONcatalog@eaton.com"/>
+    <AD id="senderPreName" type="String" name="sender Name" description="Sender Name " default="Eaton.com"/>
+  </OCD>
+</metatype:MetaData>

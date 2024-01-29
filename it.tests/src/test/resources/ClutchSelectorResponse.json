@@ -1,0 +1,819 @@
+{
+  "response" : {
+    "status" : "Success",
+    "statusDetails" : {
+      "messages" : [ "Query=enePort=16700&amp;Nr=AND%28Language%3aen_US%2cCountry%3aUS%29&amp;Ns=Endeca.stratify%28collection%28%29%2frecord%5bP_Portfolio_Rating%3d%22Best%22%5d%2ccollection%28%29%2frecord%5bP_Portfolio_Rating%3d%22Better%22%5d%2ccollection%28%29%2frecord%5bP_Portfolio_Rating%3d%22Good%22%5d%2c*%29%7c%7cCatalog_number%7c0&amp;eneHost=endeca-qa.tcc.etn.com&amp;N=0" ]
+    },
+    "didYouMean" : null,
+    "binning" : {
+      "binningSet" : [ {
+        "label" : "Hydraulic Linkage",
+        "bsId" : "Hydraulic_Linkage",
+        "bin" : [ {
+          "label" : "No",
+          "ndocs" : 0,
+          "value" : "2078037518"
+        }, {
+          "label" : "Yes",
+          "ndocs" : 0,
+          "value" : "1348491994"
+        } ]
+      }, {
+        "label" : "Clutch Size",
+        "bsId" : "Clutch_Size",
+        "bin" : [ {
+          "label" : "14 IN",
+          "ndocs" : 0,
+          "value" : "2030454568"
+        }, {
+          "label" : "15.5 IN",
+          "ndocs" : 0,
+          "value" : "719990129"
+        }, {
+          "label" : "430 MM",
+          "ndocs" : 0,
+          "value" : "2342922981"
+        } ]
+      }, {
+        "label" : "Damper Spring Count",
+        "bsId" : "Damper_Spring_Count",
+        "bin" : [ {
+          "label" : "10 EA",
+          "ndocs" : 0,
+          "value" : "764070371"
+        }, {
+          "label" : "7 EA",
+          "ndocs" : 0,
+          "value" : "3156965535"
+        }, {
+          "label" : "8 EA",
+          "ndocs" : 0,
+          "value" : "226486150"
+        }, {
+          "label" : "9 EA",
+          "ndocs" : 0,
+          "value" : "46881408"
+        } ]
+      }, {
+        "label" : "Input Shaft Type",
+        "bsId" : "Input_Shaft_Type",
+        "bin" : [ {
+          "label" : "2.00\" - 10",
+          "ndocs" : 0,
+          "value" : "2963467517"
+        }, {
+          "label" : "2.00\"-14",
+          "ndocs" : 0,
+          "value" : "2665160314"
+        }, {
+          "label" : "46x50-24",
+          "ndocs" : 0,
+          "value" : "1620004099"
+        } ]
+      }, {
+        "label" : "Portfolio Rating",
+        "bsId" : "Portfolio_Rating",
+        "bin" : [ {
+          "label" : "Best",
+          "ndocs" : 0,
+          "value" : "1014241385"
+        }, {
+          "label" : "Better",
+          "ndocs" : 0,
+          "value" : "181931336"
+        }, {
+          "label" : "Good",
+          "ndocs" : 0,
+          "value" : "221135646"
+        } ]
+      }, {
+        "label" : "Pre-Damper",
+        "bsId" : "Pre_Damper",
+        "bin" : [ {
+          "label" : "No",
+          "ndocs" : 0,
+          "value" : "1554753054"
+        }, {
+          "label" : "Yes",
+          "ndocs" : 0,
+          "value" : "3614233653"
+        } ]
+      }, {
+        "label" : "Torque Rating",
+        "bsId" : "Torque_Capacity",
+        "bin" : [ {
+          "label" : "1150 FLB",
+          "ndocs" : 0,
+          "value" : "395747668"
+        }, {
+          "label" : "11954 N-m",
+          "ndocs" : 0,
+          "value" : "3838117403"
+        }, {
+          "label" : "134897 N-m",
+          "ndocs" : 0,
+          "value" : "3156799178"
+        }, {
+          "label" : "1400 FLB",
+          "ndocs" : 0,
+          "value" : "2118027019"
+        }, {
+          "label" : "141255 N-m",
+          "ndocs" : 0,
+          "value" : "3855743299"
+        }, {
+          "label" : "1650 FLB",
+          "ndocs" : 0,
+          "value" : "430879040"
+        }, {
+          "label" : "1850 FLB",
+          "ndocs" : 0,
+          "value" : "4080401199"
+        }, {
+          "label" : "1860 FLB",
+          "ndocs" : 0,
+          "value" : "1576680688"
+        }, {
+          "label" : "187744 N-m",
+          "ndocs" : 0,
+          "value" : "639240764"
+        }, {
+          "label" : "2050 FLB",
+          "ndocs" : 0,
+          "value" : "3474686820"
+        }, {
+          "label" : "2250 FLB",
+          "ndocs" : 0,
+          "value" : "1867165090"
+        }, {
+          "label" : "25502 N-m",
+          "ndocs" : 0,
+          "value" : "2781292642"
+        }, {
+          "label" : "5354 N-m",
+          "ndocs" : 0,
+          "value" : "1288457397"
+        }, {
+          "label" : "545011 N-m",
+          "ndocs" : 0,
+          "value" : "2208209482"
+        }, {
+          "label" : "670146 N-m",
+          "ndocs" : 0,
+          "value" : "3730821533"
+        }, {
+          "label" : "865916 N-m",
+          "ndocs" : 0,
+          "value" : "2670487793"
+        }, {
+          "label" : "879881 N-m",
+          "ndocs" : 0,
+          "value" : "3844309741"
+        }, {
+          "label" : "9188 N-m",
+          "ndocs" : 0,
+          "value" : "3703270072"
+        } ]
+      }, {
+        "label" : "Torsional Spring Rate",
+        "bsId" : "Torsional_Spring_Rate",
+        "bin" : [ {
+          "label" : "208 TRD",
+          "ndocs" : 0,
+          "value" : "2344152813"
+        }, {
+          "label" : "232 TRD",
+          "ndocs" : 0,
+          "value" : "3884050561"
+        }, {
+          "label" : "256 TRD",
+          "ndocs" : 0,
+          "value" : "73436424"
+        }, {
+          "label" : "308 TRD",
+          "ndocs" : 0,
+          "value" : "613943207"
+        }, {
+          "label" : "534 TRD",
+          "ndocs" : 0,
+          "value" : "2089071265"
+        } ]
+      } ]
+    },
+    "searchResults" : {
+      "totalCount" : 75,
+      "document" : [ {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "108034-82B"
+        }, {
+          "name" : "Clutch_Size",
+          "type" : "text",
+          "value" : "14 IN"
+        }, {
+          "name" : "Damper_Spring_Count",
+          "type" : "text",
+          "value" : "8 EA"
+        }, {
+          "name" : "Torque_Capacity",
+          "type" : "text",
+          "value" : "1150 FLB"
+        }, {
+          "name" : "Input_Shaft_Type",
+          "type" : "text",
+          "value" : "2.00\" - 10"
+        }, {
+          "name" : "Pre_Damper",
+          "type" : "text",
+          "value" : "No"
+        }, {
+          "name" : "Quality_Designation",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image1",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image2",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "Easy Pedal Advantage Manual Adjust, Torque Capacity: 1150 Ft. Lbs., Clutch Size: 14 Inch-"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Torque Capacity",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Clutch Size",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "122003-42A"
+        }, {
+          "name" : "Clutch_Size",
+          "type" : "text",
+          "value" : "15.5 IN"
+        }, {
+          "name" : "Damper_Spring_Count",
+          "type" : "text",
+          "value" : "7 EA"
+        }, {
+          "name" : "Torque_Capacity",
+          "type" : "text",
+          "value" : "2250 FLB"
+        }, {
+          "name" : "Input_Shaft_Type",
+          "type" : "text",
+          "value" : "2.00\"-14"
+        }, {
+          "name" : "Pre_Damper",
+          "type" : "text",
+          "value" : "No"
+        }, {
+          "name" : "Quality_Designation",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image1",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image2",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "INSTALLATION 2.000-14 SPLINE ECA"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Torque Capacity",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Clutch Size",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "308925-25"
+        }, {
+          "name" : "Clutch_Size",
+          "type" : "text",
+          "value" : "15.5 IN"
+        }, {
+          "name" : "Damper_Spring_Count",
+          "type" : "text",
+          "value" : "7 EA"
+        }, {
+          "name" : "Torque_Capacity",
+          "type" : "text",
+          "value" : "2050 FLB"
+        }, {
+          "name" : "Input_Shaft_Type",
+          "type" : "text",
+          "value" : "2.00\" - 10"
+        }, {
+          "name" : "Pre_Damper",
+          "type" : "text",
+          "value" : "No"
+        }, {
+          "name" : "Quality_Designation",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image1",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image2",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "Easy Pedal Advantage Manual Adjust , Torque Capacity: 2050 Ft. Lbs., Clutch Size: 15.5 Inch"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Torque Capacity",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Clutch Size",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "308925-51"
+        }, {
+          "name" : "Clutch_Size",
+          "type" : "text",
+          "value" : "15.5 IN"
+        }, {
+          "name" : "Damper_Spring_Count",
+          "type" : "text",
+          "value" : "9 EA"
+        }, {
+          "name" : "Torque_Capacity",
+          "type" : "text",
+          "value" : "1650 FLB"
+        }, {
+          "name" : "Input_Shaft_Type",
+          "type" : "text",
+          "value" : "2.00\" - 10"
+        }, {
+          "name" : "Pre_Damper",
+          "type" : "text",
+          "value" : "Yes"
+        }, {
+          "name" : "Quality_Designation",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image1",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image2",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "Easy Pedal Advantage Manual Adjust , Torque Capacity: 1650 Ft. Lbs., Clutch Size: 15.5 Inch"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Torque Capacity",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Clutch Size",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "309701-35"
+        }, {
+          "name" : "Clutch_Size",
+          "type" : "text",
+          "value" : "15.5 IN"
+        }, {
+          "name" : "Damper_Spring_Count",
+          "type" : "text",
+          "value" : "7 EA"
+        }, {
+          "name" : "Torque_Capacity",
+          "type" : "text",
+          "value" : "2050 FLB"
+        }, {
+          "name" : "Input_Shaft_Type",
+          "type" : "text",
+          "value" : "2.00\" - 10"
+        }, {
+          "name" : "Pre_Damper",
+          "type" : "text",
+          "value" : "Yes"
+        }, {
+          "name" : "Quality_Designation",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image1",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image2",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "Advantage Self Adjust, Torque Capacity: 2050 Ft. Lbs., Clutch Size: 15.5 Inch"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Torque Capacity",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Clutch Size",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "309701-51"
+        }, {
+          "name" : "Clutch_Size",
+          "type" : "text",
+          "value" : "15.5 IN"
+        }, {
+          "name" : "Damper_Spring_Count",
+          "type" : "text",
+          "value" : "9 EA"
+        }, {
+          "name" : "Torque_Capacity",
+          "type" : "text",
+          "value" : "1650 FLB"
+        }, {
+          "name" : "Input_Shaft_Type",
+          "type" : "text",
+          "value" : "2.00\" - 10"
+        }, {
+          "name" : "Pre_Damper",
+          "type" : "text",
+          "value" : "No"
+        }, {
+          "name" : "Quality_Designation",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image1",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image2",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "Advantage Self Adjust, Torque Capacity: 1650 Ft. Lbs., Clutch Size: 15.5 Inch"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Torque Capacity",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Clutch Size",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "309701-68"
+        }, {
+          "name" : "Clutch_Size",
+          "type" : "text",
+          "value" : "15.5 IN"
+        }, {
+          "name" : "Damper_Spring_Count",
+          "type" : "text",
+          "value" : "9 EA"
+        }, {
+          "name" : "Torque_Capacity",
+          "type" : "text",
+          "value" : "1850 FLB"
+        }, {
+          "name" : "Input_Shaft_Type",
+          "type" : "text",
+          "value" : "2.00\" - 10"
+        }, {
+          "name" : "Pre_Damper",
+          "type" : "text",
+          "value" : "No"
+        }, {
+          "name" : "Quality_Designation",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image1",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image2",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "Advantage Self Adjust, Torque Capacity: 1850 Ft. Lbs., Clutch Size: 15.5 Inch"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Torque Capacity",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Clutch Size",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "108391-81AM"
+        }, {
+          "name" : "Clutch_Size",
+          "type" : "text",
+          "value" : "15.5 IN"
+        }, {
+          "name" : "Damper_Spring_Count",
+          "type" : "text",
+          "value" : "8 EA"
+        }, {
+          "name" : "Torque_Capacity",
+          "type" : "text",
+          "value" : "1400 FLB"
+        }, {
+          "name" : "Input_Shaft_Type",
+          "type" : "text",
+          "value" : "2.00\" - 10"
+        }, {
+          "name" : "Pre_Damper",
+          "type" : "text",
+          "value" : "No"
+        }, {
+          "name" : "Quality_Designation",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image1",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image2",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "EverTough Manual Adjust, Torque Capacity: 1400 Ft. Lbs., Clutch Size: 15.5 Inch"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Torque Capacity",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Clutch Size",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "108391-74MO"
+        }, {
+          "name" : "Clutch_Size",
+          "type" : "text",
+          "value" : "15.5 IN"
+        }, {
+          "name" : "Damper_Spring_Count",
+          "type" : "text",
+          "value" : "10 EA"
+        }, {
+          "name" : "Torque_Capacity",
+          "type" : "text",
+          "value" : "1650 FLB"
+        }, {
+          "name" : "Input_Shaft_Type",
+          "type" : "text",
+          "value" : "2.00\" - 10"
+        }, {
+          "name" : "Pre_Damper",
+          "type" : "text",
+          "value" : "No"
+        }, {
+          "name" : "Quality_Designation",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image1",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image2",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "Reman Easy Pedal Manual Adjust, Torque Capacity: 1650 Ft. Lbs., Clutch Size: 15.5 Inch"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Torque Capacity",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Clutch Size",
+          "type" : "text",
+          "value" : ""
+        } ]
+      }, {
+        "content" : [ {
+          "name" : "product_name",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Catalog_number",
+          "type" : "text",
+          "value" : "109700-20MO"
+        }, {
+          "name" : "Clutch_Size",
+          "type" : "text",
+          "value" : "15.5 IN"
+        }, {
+          "name" : "Damper_Spring_Count",
+          "type" : "text",
+          "value" : "7 EA"
+        }, {
+          "name" : "Torque_Capacity",
+          "type" : "text",
+          "value" : "1860 FLB"
+        }, {
+          "name" : "Input_Shaft_Type",
+          "type" : "text",
+          "value" : "2.00\" - 10"
+        }, {
+          "name" : "Pre_Damper",
+          "type" : "text",
+          "value" : "No"
+        }, {
+          "name" : "Quality_Designation",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image1",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Image2",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Long_Desc",
+          "type" : "text",
+          "value" : "Reman Solo Self-Adjust, Torque Capacity: 1860 Ft. Lbs., Clutch Size: 15.5 Inch"
+        }, {
+          "name" : "Description",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Torque Capacity",
+          "type" : "text",
+          "value" : ""
+        }, {
+          "name" : "Clutch Size",
+          "type" : "text",
+          "value" : ""
+        } ]
+      } ]
+    },
+    "request" : {
+      "searchApplication" : "etnvgselclutch",
+      "searchApplicationKey" : "abc123",
+      "function" : "search",
+      "searchTerms" : "RESULT",
+      "language" : "en_US",
+      "startingRecordNumber" : 0,
+      "numberOfRecordsToReturn" : 10,
+      "filters" : [ {
+        "filterName" : "SortBy",
+        "filterValue" : [ "asc" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "Facets",
+        "filterValue" : [ "" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "ReturnFacetsFor",
+        "filterValue" : [ "Hydraulic_Linkage", "Clutch_Size", "Damper_Spring_Count", "Input_Shaft_Type", "Torque_Capacity", "Portfolio_Rating", "Torsional_Spring_Rate", "Pre_Damper" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "SKUCardParameters",
+        "filterValue" : [ "Description", "Torque Capacity", "Clutch Size" ],
+        "preferenceValue" : null
+      }, {
+        "filterName" : "Country",
+        "filterValue" : [ "US" ],
+        "preferenceValue" : null
+      } ],
+      "userName" : null
+    }
+  }
+}

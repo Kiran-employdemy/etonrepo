@@ -1,0 +1,131 @@
+//-----------------------------------
+// Component 4.2: Header - Mega Menu
+// List - View - Links
+//-----------------------------------
+.links-list {
+  display: flex;
+
+  &__col {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  &__link {
+    padding: ($spacing__sm / 3) 0; // Visually 30px Spacing between items
+    text-decoration: none;
+    display: block;
+
+    span {
+      color: $color__white;
+    }
+
+    i {
+      font-size: 1.4rem;
+    }
+
+    .dark-theme & {
+      color: $color__white;
+    }
+  }
+
+  //-----------------------------
+  // Mobile-Tablet Breakpoint
+  // ----------------------------
+  @include media-mobile-and-tablet {
+    flex-direction: column;
+
+    &__link {
+      display: flex;
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(238, 240, 242, 0.3);
+      align-items: center;
+      font-size: 1.5rem;
+
+      &::after {
+        color: $color__white;
+        position: relative;
+        content: "\EA07";
+        font-family: 'eaton-glyphicon';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.66667em;
+        display: inline-block;
+        text-decoration: none;
+        top: 0.5px;
+        vertical-align: middle;
+
+        @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          font-size: rem($base__font-size * 1.066);
+        }
+      }
+    }
+
+    &__text {
+      flex: 1;
+      margin-left: 0;
+      margin-right: ($spacing__sm / 2);
+
+      [dir='rtl'] & {
+        margin-left: ($spacing__sm / 2);
+        margin-right: 0;
+      }
+    }
+  }
+
+  //-----------------------------
+  // Desktop Breakpoint
+  // ----------------------------
+  @include media-desktop-and-up {
+    flex-wrap: nowrap;
+
+    &__col {
+      width: 100%;
+      margin: 0 ($spacing__sm / 2);
+      flex: 1;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+
+    &__link span {
+
+      &::after {
+        color: $color__white;
+        position: relative;
+        content: "\EA07";
+        font-family: 'eaton-glyphicon';
+        display: inline;
+        font-size: 0.66667em;
+        padding-left: rem($spacing__sm / 6);
+        padding-right: 0;
+        text-decoration: none;
+        top: 0;
+        vertical-align: middle;
+        white-space: nowrap;
+
+        @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          display: inline-block;
+          font-size: rem($base__font-size * 1.07);
+        }
+      }
+    }
+
+    // Remove additional spacing from the first link in the column
+    &__col &__item:first-child &__link {
+      padding-top: 0;
+    }
+
+  }
+}
+
+.mega-menu [data-target="mega-menu-secure"] .links-list__item {
+
+  margin-bottom: 1.6rem;
+
+  a {
+    display: inline;
+  }
+
+}

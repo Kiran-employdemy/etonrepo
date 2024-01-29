@@ -1,0 +1,12 @@
+<sly data-sly-test.author="${wcmmode.edit || wcmmode.design || wcmmode.layouting}">
+        <div class="alert alert-warning">Social Share</div>
+    </sly>
+
+    <sly data-sly-use.cookies="${'com.eaton.platform.core.models.CookieStatusModel'}">
+
+        <div class="eaton-product-share-cta pull-right">
+            <a href="#share" id="shareThisIcon" class="share-this-icon">
+            <i class="icon icon-share" aria-hidden="true"></i>
+            </a>
+        </div>
+    </sly>

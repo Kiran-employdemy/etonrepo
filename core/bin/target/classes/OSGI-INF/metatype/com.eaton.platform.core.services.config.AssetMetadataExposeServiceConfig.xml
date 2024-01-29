@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.services.config.AssetMetadataExposeServiceConfig">
+  <OCD id="com.eaton.platform.core.services.config.AssetMetadataExposeServiceConfig" name="AssetMetadataExposeServiceImpl" description="">
+    <AD id="middle.tab.config" type="String" cardinality="2147483647" name="includeAssetProperties" default=""/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.services.impl.AssetMetadataExposeServiceImpl">
+    <Object ocdref="com.eaton.platform.core.services.config.AssetMetadataExposeServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

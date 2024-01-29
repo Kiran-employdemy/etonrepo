@@ -1,0 +1,42 @@
+//-----------------------------------
+// AEM Author Mode Styles
+// Handles Style overrides when in wcmmode-edit
+//-----------------------------------
+
+.header-wrapper.is-edit-mode {
+  .full-page__country-selector {
+    max-height: 45px;
+  }
+}
+
+// stylelint-disable selector-class-pattern
+.aem-AuthorLayer-Edit,
+.cq-wcm-edit {
+
+  // stylelint-disable declaration-no-important
+  // EATON-737: Expected: In the AEM Author environment the mega menu and country selector should be collapsed in edit mode.
+
+  // .full-page,
+  // .mega-menu,
+  // .header-search {
+  //   position: relative !important;
+  //   visibility: visible !important;
+  //   opacity: 1 !important;
+  //   z-index: 999 !important;
+  //
+  //   &__content {
+  //     display: block !important;
+  //   }
+  // }
+  //
+  // .full-page {
+  //   transition: none;
+  //   max-height: 1000px !important;
+  // }
+  //
+  // .header-search {
+  //   transform: translateY(0) !important;
+  //   transition: none !important;
+  // }
+
+}

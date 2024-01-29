@@ -1,0 +1,9 @@
+
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Divider</div>
+</sly>
+<sly data-sly-use.dividerBean="com.eaton.platform.core.models.DividerModel">
+<div data-sly-test="${ dividerBean.componentType == 'divider'}" class="eaton-divider"></div>
+<div data-sly-test="${ dividerBean.componentType == 'divider-blue'}" class="eaton-blue-divider"></div>
+<div data-sly-test="${ dividerBean.componentType == 'spacer'}" class="eaton-spacer"></div>
+</sly>

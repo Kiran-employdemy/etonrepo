@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.ordercenter.config.OrderCenterConfig">
+  <OCD id="com.eaton.platform.integration.ordercenter.config.OrderCenterConfig" name="OrderCenterStoreIdServiceImpl" description="">
+    <AD id="orderCenterURL" type="String" name="Order Center URL" description="Order Center URL for API" default="http://shoputil.tcc.etn.com/public/v1/metaData/"/>
+    <AD id="orderCenterTagPath" type="String" name="Order Center Tag Path" description="The path under which order center tags are created" default="/content/cq:tags/order-center"/>
+    <AD id="enabled" type="Boolean" name="Enabled" description="Enable this service request." default="true"/>
+    <AD id="maxConnections" type="Integer" name="Max Connections" description="Defines the maximum number of connections allowed overall. This value only applies to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+    <AD id="maxHostConnections" type="Integer" name="Max Host Connections" description="Defines the maximum number of connections allowed per host configuration. These values only apply to the number of connections from a particular instance of HttpConnectionManager." default="100"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.ordercenter.services.impl.OrderCenterStoreIdServiceImpl">
+    <Object ocdref="com.eaton.platform.integration.ordercenter.config.OrderCenterConfig"/>
+  </Designate>
+</metatype:MetaData>

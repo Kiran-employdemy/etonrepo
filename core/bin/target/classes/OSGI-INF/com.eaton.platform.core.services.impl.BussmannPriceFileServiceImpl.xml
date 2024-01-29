@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.BussmannPriceFileServiceImpl" immediate="true" activate="activate" modified="activate">
+  <property name="bussmannUSfileURL" type="String" value="https://my.eaton.com/extranet/faces/oracle/webcenter/portalapp/pages/getFile.jspx?content_id=PCT_3633526"/>
+  <property name="bussmannEDIUSfileURL" type="String" value="https://my.eaton.com/extranet/faces/oracle/webcenter/portalapp/pages/getFile.jspx?content_id=PCT_3633529"/>
+  <property name="bussmannCANfileURL" type="String" value="https://my.eaton.com/extranet/faces/oracle/webcenter/portalapp/pages/getFile.jspx?content_id=PCT_3633527"/>
+  <property name="bussmannEDICANfileURL" type="String" value="https://my.eaton.com/extranet/faces/oracle/webcenter/portalapp/pages/getFile.jspx?content_id=PCT_3633524"/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.BussmannPriceFileService"/>
+  </service>
+  <implementation class="com.eaton.platform.core.services.impl.BussmannPriceFileServiceImpl"/>
+</scr:component>

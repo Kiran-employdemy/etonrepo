@@ -1,0 +1,13 @@
+<sly data-sly-use.contactList="com.eaton.platform.core.models.ContactList" />
+<sly data-sly-use.defaultTemplate="../../shared/templates/contact/default.html" />
+
+<sly data-sly-test="${wcmmode.edit}">
+  <div class="alert alert-warning">Contact List</div>
+</sly>
+
+<div data-sly-test="${contactList.hasHeading}" class="contact-list__heading">
+  ${contactList.heading}
+</div>
+<sly data-sly-list.person="${contactList.people}">
+  <div class="contact-list__person" data-sly-call="${ defaultTemplate.module @ person=person, showEmail=contactList.showEmail }"></div>
+</sly>

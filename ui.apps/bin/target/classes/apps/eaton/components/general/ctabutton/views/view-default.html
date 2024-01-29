@@ -1,0 +1,27 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.CTAModel">
+    <div data-sly-test="${data.label}" class="cta-default ${data.alignRight ? 'cta-align__right' : ''}">
+        <sly data-sly-test="${ data.color != 'primary-branding-blue-link' }">
+          <sly data-sly-test="${data.applyNoFollowTag == 'nofollow'}">
+            <a
+            href="${data.modal ? '#': data.link @context='html'}"
+            data-lookbook-overlay-href="${data.modal ? data.link : ''}"
+            target="${data.newWindow ? '_blank' : ''}"
+            rel="noindex,nofollow"
+            class="b-button b-button__primary b-button__primary--${data.color}"
+            data-source-tracking="${data.enableSourceTracking}"
+            role="button">${data.label}</a>
+          </sly>
+     
+          <sly data-sly-test="${data.applyNoFollowTag != 'nofollow'}">
+            <a
+            href="${data.modal ? '#': data.link @context='html'}"
+            data-lookbook-overlay-href="${data.modal ? data.link : '' @context='html'}"
+            target="${data.newWindow ? '_blank' : ''}"
+            class="b-button b-button__primary b-button__primary--${data.color}"
+            data-source-tracking="${data.enableSourceTracking}"
+            role="button">${data.label}
+            </a>
+          </sly>
+        </sly>
+    </div>
+</sly>

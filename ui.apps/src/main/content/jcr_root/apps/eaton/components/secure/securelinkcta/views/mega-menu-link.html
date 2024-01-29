@@ -1,0 +1,10 @@
+<sly data-sly-use.secure="com.eaton.platform.core.models.secure.SecureLinkModel">
+    <a  href="${secure.link @context='html'}"
+        target="${properties.newWindow ? '_blank' : '_self'}"
+        data-test="${properties.isUnderlined}"
+        aria-label="Go to ${properties.label}"
+        class="links-list__link b-body-copy-small ${properties.isUnderlined ? 'securelinkcta__underlined' : ''}"
+        rel="nofollow">
+        <span class="links-list__text"><bdi>${properties.label}<i data-sly-test="${properties.newWindow}" class="link-list-vertical__external-icon icon icon-link-external securelinkcta__icon" aria-hidden="true"></i></bdi></span>
+    </a>
+</sly>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Dialog"
+    jcr:title="Chat Configuration"
+    height="{Long}600"
+    warnIfModified="{Boolean}false"
+    width="{Long}800"
+    xtype="dialog">
+    <items jcr:primaryType="cq:TabPanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <Chat_x0020_Configuration
+                jcr:primaryType="cq:Panel"
+                title="Chat Configuration"
+                xtype="panel">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <chatviews
+                        jcr:primaryType="cq:Widget"
+                        fieldLabel="Chat Views"
+                        hideLabel="{Boolean}false"
+                        name="./chatviews"
+                        title="Chat Views"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="{Boolean}true"
+                            hideLabel="{Boolean}true"
+                            layout="form"
+                            padding="10px"
+                            width="1000"
+                            xtype="multi-field-panel">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <businessdivision
+                                    jcr:primaryType="cq:Widget"
+                                    dName="businessdivision"
+                                    fieldDescription="Name of the Business Division"
+                                    fieldLabel="Business Division"
+                                    width="{Long}300"
+                                    xtype="textfield"/>
+                                <urltochat
+                                    jcr:primaryType="cq:Widget"
+                                    dName="urltochat"
+                                    fieldDescription="URL to call required chat function"
+                                    fieldLabel="URL to chat function"
+                                    name="./urltochat"
+                                    xtype="textfield"/>
+                                <urltoagent
+                                    jcr:primaryType="cq:Widget"
+                                    dName="urltoagent"
+                                    fieldDescription="URL to check availability of agents"
+                                    fieldLabel="URL to agent availability"
+                                    name="./urltoagent"
+                                    xtype="textfield"/>
+                                <onlinecontent
+                                    jcr:primaryType="cq:Widget"
+                                    dName="onlinecontent"
+                                    fieldDescription="Online content to be displayed when agent are available "
+                                    fieldLabel="Online Content"
+                                    name="./onlinecontent"
+                                    xtype="textfield"/>
+                                <offlinecontent
+                                    jcr:primaryType="cq:Widget"
+                                    dName="offlinecontent"
+                                    fieldDescription="Offline content to be displayed when agent are not available "
+                                    fieldLabel="Offline Content"
+                                    name="./offlinecontent"
+                                    xtype="textfield"/>
+                                <entrypointid
+                                    jcr:primaryType="cq:Widget"
+                                    dName="entrypointid"
+                                    fieldDescription="entryPointID for corresponding chat view"
+                                    fieldLabel="entryPointID"
+                                    name="./entrypointid"
+                                    xtype="textfield"/>
+                                <aemtags
+                                    jcr:primaryType="cq:Widget"
+                                    cls="cq-propsdialog-tags"
+                                    dName="aemtags"
+                                    fieldDescription="AEM tags that would make given AEM page eligible for this Chat view"
+                                    fieldLabel="AEM Tags"
+                                    name="./aemtags"
+                                    xtype="tags"/>
+                                <errmsg
+                                    jcr:primaryType="cq:Widget"
+                                    dName="errorMsg"
+                                    fieldDescription="Message to be displayed to the user in case of invalid configuration values."
+                                    fieldLabel="Error Message"
+                                    name="./errorMsg"
+                                    xtype="textfield"/>
+                            </items>
+                        </fieldConfig>
+                    </chatviews>
+                </items>
+            </Chat_x0020_Configuration>
+        </items>
+    </items>
+</jcr:root>

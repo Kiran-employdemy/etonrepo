@@ -1,0 +1,50 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Featured Topic Container: ${currentNode.name}</div>
+</sly>
+
+<sly data-sly-use.data="com.eaton.platform.core.models.FeatureTopicContainerModel">
+
+<!--/* BEGIN M-28 Featured Topic Component */ -->
+  <div class="eaton-featured-topic container" >
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="eaton-featured-topic__title">
+          <!--/* Component: Title */-->
+          <sly data-sly-resource="${'featured-topic-title' @ resourceType='/apps/eaton/components/general/title'}"></sly>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="eaton-featured-topic__text">
+          <!--/* Component: Text */-->
+          <sly data-sly-resource="${'featured-topic-text' @ resourceType='/apps/eaton/components/general/text'}"></sly>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 eaton-featured-topic__list-left">
+        <div class="eaton-featured-topic__link-list">
+          <!--/* Component: LinkList */-->
+          <sly data-sly-resource="${'eaton-featured-topic-link-list-left' @ resourceType='/apps/eaton/components/general/vertical-link-list'}"></sly>
+        </div>
+      </div>
+
+      <div class="col-sm-6 eaton-featured-topic__list-right">
+        <div class="eaton-featured-topic__link-list">
+          <!--/* Component: LinkList */-->
+          <sly data-sly-resource="${'eaton-featured-topic-link-list-right' @ resourceType='/apps/eaton/components/general/vertical-link-list'}"></sly>
+        </div>
+      </div>
+    </div>
+
+    <div class="row eaton-featured-topic__button-container">
+      <div class="col-sm-12 u-text-center">
+        <!--/* Component: Cta button */-->
+        <sly data-sly-resource="${'eaton-featured-topic-text' @ resourceType='/apps/eaton/components/general/ctabutton'}"></sly>
+      </div>
+    </div>
+  </div>
+<!--/* END M-28 Featured Topic Component */ -->

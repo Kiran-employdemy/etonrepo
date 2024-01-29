@@ -1,0 +1,151 @@
+{
+  "productName": "ELocker locking differential",
+  "productFamilyAEMPath": "/content/eaton/us/en-us/catalog/differentials/eaton-elocker4-differential",
+  "showLongDescription": true,
+  "secondaryLinksList": [
+    {
+      "text": "About locking differentials",
+      "path": "/content/eaton/us/en-us/products/differentials-traction-control/locking-differentials.html",
+      "newWindow": "_self",
+      "secLinkSkuOnly": false
+    }
+  ],
+  "topicLinkWithIconList": [
+    {
+      "title": "",
+      "icon": "",
+      "link": "",
+      "description": "",
+      "newWindow": "_self"
+    },
+    {
+      "title": "",
+      "icon": "",
+      "link": "",
+      "description": "",
+      "newWindow": "_self"
+    },
+    {
+      "title": "",
+      "icon": "",
+      "link": "",
+      "description": "",
+      "newWindow": "_self"
+    }
+  ],
+  "howToBuyList": [
+    {
+      "title": "Locate a channel partner",
+      "dscription": "",
+      "icon": "/content/dam/eaton/resources/icons/topiclisticons/locator_orange_icon.png",
+      "link": "/content/eaton/us/en-us/products/differentials-traction-control/differential-distributors.html",
+      "openInNewWindow": "_self",
+      "dropdownIcon": "marker",
+      "hasClearfix": false,
+      "skuOnly": false,
+      "isSuffixEnabled": false,
+      "isModalEnabled": false,
+      "isSourceTrackingEnabled": false
+    },
+    {
+      "title": "Technical support",
+      "dscription": "\u003cp\u003eCustomer Service\u003cbr /\u003e\r\n+1 (800) 328-3850\u003c/p\u003e\r\n\u003cp\u003e \u003c/p\u003e\r\n",
+      "icon": "/content/dam/eaton/resources/icons/topiclisticons/information_orange_icon.png",
+      "link": "/content/eaton/us/en-us/products/vehicle-aftermarket/aftermarket-support.html",
+      "openInNewWindow": "_self",
+      "dropdownIcon": "info",
+      "hasClearfix": false,
+      "skuOnly": false,
+      "isSuffixEnabled": false,
+      "isModalEnabled": false,
+      "isSourceTrackingEnabled": false
+    },
+    {
+      "title": "Product selector",
+      "dscription": "\u003cp\u003eFind the right ELocker for your vehicle\u003cbr /\u003e\r\n\u003c/p\u003e\r\n",
+      "icon": "/content/dam/eaton/resources/icons/topiclisticons/calculator_orange_icon.png",
+      "link": "/content/eaton/us/en-us/products/differentials-traction-control/differential-selector.html",
+      "openInNewWindow": "_self",
+      "dropdownIcon": "tiles",
+      "hasClearfix": false,
+      "skuOnly": false,
+      "isSuffixEnabled": false,
+      "isModalEnabled": false,
+      "isSourceTrackingEnabled": false
+    },
+    {
+      "title": "I am a channel partner",
+      "dscription": "\u003cp\u003eChannel Partner Order Center\u003c/p\u003e\r\n",
+      "icon": "/content/dam/eaton/resources/icons/topiclisticons/relationship_orange_icon.png",
+      "link": "https://shop.eaton.com/store/externalLanding.jsp?partnum\u003d14020-010",
+      "openInNewWindow": "_blank",
+      "dropdownIcon": "user",
+      "hasClearfix": false,
+      "skuOnly": true,
+      "isSuffixEnabled": false,
+      "isModalEnabled": false,
+      "isSourceTrackingEnabled": false
+    }
+  ],
+  "productSupportBean": {
+    "supportLabel": "",
+    "supportInformation": ""
+  },
+  "primarySubCategory": "/content/eaton/us/en-us/products/differentials-traction-control/aftermarket-differentials",
+  "taxonomyAttributeGroupList": [
+    {
+      "groupName": "Product Specifications",
+      "attributeList": [
+        "Differential_Type",
+        "Gear_Spline_Tooth_Count",
+        "Ring_Gear_Size",
+        "Axle_Shaft_Diameter",
+        "Vehicle_Usage_Attr"
+      ]
+    },
+    {
+      "groupName": "Multi Row Attributes",
+      "attributeList": [
+        "Model_Year_Start",
+        "Model_Year_End",
+        "Model_Vehicle_Type",
+        "Model_Make",
+        "Model_Axle_Description",
+        "Model_Axle_Location"
+      ]
+    }
+  ],
+  "primaryCTALabel": "Contact Eaton",
+  "primaryCTAURL": "/content/eaton/us/en-us/forms/vehicle/contact-us-vehicle-group",
+  "primaryCTANewWindow": "_self",
+  "primaryCTAEnableSourceTracking": "false",
+  "pimTags": [
+    "/content/cq:tags/eaton/services/product-category/differentials-and-traction-control",
+    "/content/cq:tags/eaton/product-attributes/system/hybrid-electric",
+    "/content/cq:tags/eaton/product-taxonomy/differentials-traction-control/aftermarket-differentials",
+    "/content/cq:tags/eaton/product-attributes/intent/original-equipment",
+    "/content/cq:tags/eaton/product-attributes/application/work-truck-towing-off-road",
+    "/content/cq:tags/eaton/product-attributes/application/extreme-off-road",
+    "/content/cq:tags/eaton/product-attributes/intent/aftermarket",
+    "/content/cq:tags/eaton/supermarkets/markets/vehicles/aftermarket",
+    "/content/cq:tags/eaton/product-taxonomy/aftermarket/automotive-performance",
+    "/content/cq:tags/eaton/product-attributes/system/battery-electric",
+    "/content/cq:tags/eaton/country/north-america/us",
+    "/content/cq:tags/eaton/product-attributes/application/work-truck-towing-on-road",
+    "/content/cq:tags/eaton/product-taxonomy/differentials-traction-control",
+    "/content/cq:tags/eaton/product-taxonomy/differentials-traction-control/original-equipment",
+    "/content/cq:tags/eaton/supermarkets/vehicles-application/light-duty-truck",
+    "/content/cq:tags/eaton/product-attributes/system/internal-combustion",
+    "/content/cq:tags/eaton/product-attributes/application/light-trail-sand-sports",
+    "/content/cq:tags/eaton/language/en-us",
+    "/content/cq:tags/eaton/product-taxonomy/aftermarket/eaton-parts-online",
+    "/content/cq:tags/eaton/integrations/chat/vehicle",
+    "/content/cq:tags/eaton/eaton-brand/industry/vehicle",
+    "/content/cq:tags/eaton/product-attributes/product-type/locking-differential",
+    "/content/cq:tags/eaton/supermarkets/markets/vehicles",
+    "/content/cq:tags/eaton/product-attributes/application/rock-crawl"
+  ],
+  "isSuffixDisabled": "false",
+  "middleTabTitle": "Models",
+  "primaryProductTaxonomy": "eaton:product-taxonomy/differentials-traction-control/aftermarket-differentials"
+}

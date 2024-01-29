@@ -1,0 +1,30 @@
+<template data-sly-template.pathfield="${@ id, name, label, placeholder, cssClasses}">
+	<div class="coral-Form-fieldwrapper">
+		<label data-sly-test="${label}" class="coral-Form-fieldlabel" data-sly-attribute.for="${id}">${label}</label>
+		<foundation-autocomplete class="coral-Form-field find-replace-form-field ${cssClasses}" data-sly-attribute.id="${id}"
+			name="${name}" placeholder="${placeholder}"
+			pickersrc="/mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/picker.html?_charset_=utf-8&amp;path={value}&amp;root=%2fcontent&amp;filter=hierarchyNotFile&amp;selectionCount=single">
+			<div class="foundation-autocomplete-inputgroupwrapper">
+				<div class="coral-InputGroup" role="presentation">
+					<input is="coral-textfield" class="coral3-Textfield coral-InputGroup-input" autocomplete="off"
+						role="combobox" aria-invalid="false">
+					<span class="coral-InputGroup-button">
+						<button is="coral-button" class="coral3-Button coral3-Button--secondary" size="M"
+							variant="secondary" title="Open Selection Dialog" type="button"
+							aria-label="Open Selection Dialog">
+							<coral-icon class="coral3-Icon coral3-Icon--sizeS coral3-Icon--select" icon="select"
+								size="S" autoarialabel="on" role="img" aria-label="select"></coral-icon>
+							<coral-button-label></coral-button-label>
+						</button>
+					</span>
+				</div>
+			</div>
+			<coral-overlay foundation-autocomplete-suggestion="" class="foundation-picker-buttonlist coral3-Overlay"
+				data-foundation-picker-buttonlist-src="/mnt/overlay/granite/ui/content/coral/foundation/form/pathfield/suggestion{.offset,limit}.html?_charset_=utf-8&amp;root=%2fcontent&amp;filter=hierarchyNotFile{&amp;query}"
+				aria-hidden="true" style="display: none;"></coral-overlay>
+			<coral-taglist foundation-autocomplete-value="" class="coral3-TagList" role="grid" aria-live="off"
+				aria-atomic="false" aria-relevant="additions" aria-readonly="false" style="position: relative;">
+			</coral-taglist>
+		</foundation-autocomplete>
+	</div>
+</template>

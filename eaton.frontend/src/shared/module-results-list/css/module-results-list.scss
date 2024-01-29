@@ -1,0 +1,14 @@
+//-----------------------------------
+// Module - M-60: Results List
+//
+// NOTE: This module is being used by these AEM-Components:
+//  - Search Results (Views: Simple, Default)
+//  - Product Grid (Views: SKU, Family)
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, functions... etc)
+@import "../../../global/css/_config/sass";
+
+// Import SubModules
+@import "results-list";
+@import "results-list-submodules";

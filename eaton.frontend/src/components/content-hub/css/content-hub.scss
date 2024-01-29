@@ -1,0 +1,341 @@
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+.mrg-top {
+  margin-top: $spacing__sm;
+}
+
+.content-hub-results {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: $spacing__sm;
+}
+
+.content-hub__card-list {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+
+  &__link {
+    z-index: 1;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid $color__secondary-gray7;
+
+    &--image {
+      position: relative;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      &::before {
+        display: block;
+      }
+
+      &.no__image {
+        background-color: $color__primary-blue;
+      }
+    }
+
+    &--content {
+      padding: 0px 2rem;
+      margin: 1.5rem 0 3rem 0;
+
+      &__eyebrowTitle {
+        font-size: 1.6rem;
+        line-height: 1.25;
+        font-weight: bold;
+        color: $color__primary-gray1;
+      }
+
+      &__eyebrow {
+        font-size: 1.6rem;
+        line-height: 1.25;
+        font-weight: bold;
+        color: $color__primary-gray1;
+
+        &::after {
+          color: $color__black;
+          content: "\EA07";
+          display: inline;
+          font-family: 'eaton-glyphicon';
+          font-size: .66667em;
+          padding-left: .5rem;
+          padding-right: 0;
+          position: relative;
+          text-decoration: none;
+          top: -0.5px;
+          vertical-align: middle;
+        }
+      }
+
+      &__heading {
+        color: $color__primary-blue;
+        margin-bottom: 1.6rem;
+        word-break: break-word;
+        hyphens: auto;
+      }
+    }
+  }
+
+}
+
+.content__hub-btn {
+  margin-top: $spacing__sm;
+  margin-bottom: $spacing__md;
+
+  .load {
+    width: 97%;
+    left: 50%;
+    transform: translate(-50%, 0px);
+    position: relative;
+  }
+
+}
+
+.result-without__filters .b-eyebrow-small {
+  display: none;
+}
+
+.result-without__filters .content-hub__card-list__card--content__heading {
+  margin: 3.5rem 0 2.5rem 0;
+}
+
+.faceted-navigation__facet-value-label span.has-url {
+  border-bottom: 1px solid #98a4ae;
+  display: table;
+  font-size: 1.6rem;
+  font-weight: normal;
+  height: 6.4rem;
+  line-height: 1.5;
+  margin-bottom: 0;
+  margin-top: 0;
+  min-height: 6.4rem;
+  overflow: visible;
+  padding: .3rem .5rem;
+  text-align: left;
+  white-space: normal;
+  width: 100%;
+}
+
+@include media-mobile-only {
+  .result-without__filters .content-hub__card-list__card--image {
+    width: 100%;
+    height: 192px;
+  }
+
+  .content-hub__card-list {
+    &-item {
+      flex: 0 0 1;
+      margin-bottom: $spacing__sm;
+    }
+
+    &__card {
+      &--image {
+        width: 100%;
+        height: 192px;
+      }
+
+      &--content {
+        &__eyebrowTitle {
+          font-size: 1.4rem;
+          line-height: 1.25;
+          font-weight: bold;
+        }
+
+        &__eyebrow {
+          font-size: 1.4rem;
+          line-height: 1.25;
+          font-weight: bold;
+        }
+
+        &__heading {
+          font-size: 1.6rem;
+          line-height: 1.25;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+
+}
+
+@include media-tablet-only {
+  .result-without__filters .content-hub__card-list__card--image {
+    width: 100%;
+    height: 192px;
+  }
+
+  .content-hub__card-list {
+    &-item {
+      flex: 0 0 50%;
+      margin-bottom: $spacing__sm;
+    }
+
+    &__card {
+      &--image {
+        width: 100%;
+        height: 192px;
+      }
+
+      &--content {
+        &__eyebrowTitle {
+          font-size: 1.4rem;
+          line-height: 1.25;
+          font-weight: bold;
+        }
+
+        &__eyebrow {
+          font-size: 1.4rem;
+          line-height: 1.25;
+          font-weight: bold;
+        }
+
+        &__heading {
+          font-size: 1.6rem;
+          line-height: 1.25;
+          margin-bottom: 3rem;
+        }
+      }
+    }
+  }
+
+}
+
+@include media-desktop-and-up {
+  .result-without__filters .content-hub__card-list__card--image {
+    width: 100%;
+    height: 195px;
+  }
+
+  .content-hub__card-list {
+    &-item {
+      flex: 0 0 33%;
+      margin-bottom: $spacing__sm;
+    }
+
+    &__card {
+      &--image {
+        width: 100%;
+        height: 144px;
+      }
+
+      &--content {
+        &__eyebrowTitle {
+          font-size: 1.6rem;
+          line-height: 1.25;
+          font-weight: bold;
+          margin-bottom: 1.5rem;
+        }
+
+        &__eyebrow {
+          font-size: 1.6rem;
+          line-height: 1.25;
+          font-weight: bold;
+          margin-bottom: 1.5rem;
+
+        }
+
+        &__heading {
+          font-size: 1.8rem;
+          line-height: 1.25;
+        }
+      }
+    }
+  }
+
+}
+
+.faceted-navigation__facet-value-label {
+  &__content-check {
+    border-bottom: 1px solid $color__primary-gray3;
+    display: table;
+    font-size: rem($base__font-size * 1.6);
+    font-weight: normal;
+    height: rem($grid__xs * .1333333333); // Firefox does not honor min-height on display: table elements
+    line-height: $base__line-height * (1.5 / 1.4);
+    margin-bottom: 0;
+    margin-top: 0;
+    min-height: rem($grid__xs * .1333333333);
+    overflow: visible;
+    padding: rem($spacing__sm * .1) rem($spacing__sm * .1666666667);
+    text-align: left;
+    white-space: normal;
+    width: 100%;
+
+    [dir='rtl'] & {
+      text-align: right;
+    }
+
+    @include media-desktop-and-up {
+      background: $color__secondary-gray6;
+      border-bottom: 0;
+      font-size: rem($base__font-size * 1.4);
+      height: rem($grid__xs * .09166666667); // Firefox does not honor min-height on display: table elements
+      line-height: $base__line-height * (1.125 / 1.4);
+      min-height: rem($grid__xs * .09166666667);
+      padding: rem($spacing__sm * .2) rem($spacing__sm * .3333333);
+
+      &:hover,
+      &:active,
+      &:focus {
+        background: $color__secondary-gray5;
+        text-decoration: none;
+      }
+    }
+
+    /* stylelint-disable max-nesting-depth */
+    .faceted-navigation__facet-group--grid & {
+      @include media-desktop-and-up {
+        align-content: stretch;
+        align-self: stretch;
+        background-color: transparent;
+        color: var(--link-brand-color, $color__primary-blue);
+        display: flex;
+        flex-basis: 100%;
+        flex-direction: column;
+        height: 100%;
+        min-height: 0;
+        overflow: hidden;
+        padding: rem($spacing__sm * .1666666667);
+        text-align: center;
+
+        &:hover,
+        &:focus {
+          background-color: var(--link-brand-color, $color__primary-blue);
+          color: $color__white;
+          font-weight: normal;
+
+          &::after {
+            content: '';
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: 100%;
+          }
+        }
+
+        &:active {
+          background-color: rgba(red($color__primary-blue), green($color__primary-blue), blue($color__primary-blue), .85);
+          border: 0;
+          color: $color__white;
+        }
+      }
+    }
+
+    .faceted-navigation__facet-group--grid__has-checked-facet & {
+      @include media-desktop-and-up {
+        color: $color__primary-gray2;
+      }
+    }
+    /* stylelint-enable max-nesting-depth */
+  }
+}
+
+

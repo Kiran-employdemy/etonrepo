@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.PIMReferenceProvider" enabled="true" immediate="true">
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="service.description" type="String" value=" Provides PIM reference"/>
+  <property name="process.label" type="String" value=" PIMReferenceProvider"/>
+  <service>
+    <provide interface="com.day.cq.wcm.api.reference.ReferenceProvider"/>
+  </service>
+  <reference name="pageManagerFactory" interface="com.day.cq.wcm.api.PageManagerFactory" field="pageManagerFactory"/>
+  <implementation class="com.eaton.platform.core.services.impl.PIMReferenceProvider"/>
+</scr:component>

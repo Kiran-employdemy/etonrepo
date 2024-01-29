@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+		  access.token="akab-6xyajldthlukfru7-nqnpornelvonijew"
+		  base.url="https://www.eaton.com"
+		  client.secret="3WNnFNcXToxEDAfrq14cLBH7RqjEvvSZGGuPN0NTLGw\="
+		  client.token="akab-ue3z7mcjpxh2xfq6-ollme4xqg3vq3433"
+		  akamai.host="akab-z2mvxb46gck35oic-rqldw3ivl32ff4jk.purge.akamaiapis.net"
+		  transport.delay="2"/>

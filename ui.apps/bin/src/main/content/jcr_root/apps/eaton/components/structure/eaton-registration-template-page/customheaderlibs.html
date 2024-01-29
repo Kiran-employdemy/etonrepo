@@ -1,0 +1,120 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2016 Adobe Systems Incorporated
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+
+<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html" />
+<sly data-sly-call="${clientLib.css @ categories='etn-all'}" data-sly-unwrap/>
+<sly data-sly-call="${clientLib.js @ categories='etn-jquery'}" data-sly-unwrap/>
+<sly data-sly-call="${clientLib.css @ categories='etn-forms.user-registration'}"/>
+
+<sly data-sly-include="additionalclientlibs.html" />
+<sly data-sly-use.data="com.eaton.platform.core.helpers.MetaTagsHelper" />
+<sly data-sly-list.hreflangData="${data.hreflangValues}">
+  <link rel="alternate" hreflang="${hreflangData.googleCode}" href="${hreflangData.pageUrl}" />
+</sly>
+<sly data-sly-list.listData="${data.dimensionTagValues}">
+  <meta name="dim-${listData.keyLowerCase}-id" content="${listData.id}"/>
+  <meta name="dim-${listData.keyLowerCase}-label" content="${listData.label}"/>
+  <meta name="dim-${listData.keyLowerCase}-values" content="${listData.values}"/>
+</sly>
+<meta name="country" content="${data.metaTagGenericValuesModel.currentPageCountry}"/>
+<meta name="language" content="${data.metaTagGenericValuesModel.currentPageLanguage}"/>
+<sly data-sly-test="${data.metaTagGenericValuesModel.pagePublishDate}">
+    <meta name="publish-date" content="${data.metaTagGenericValuesModel.pagePublishDate}"/>
+</sly>
+<sly data-sly-test="${!data.metaTagGenericValuesModel.pagePublishDate}">
+    <meta name="publish-date" content=""/>
+</sly>
+<sly data-sly-test="${data.metaTagGenericValuesModel.authoredPageType == 'product-family'}">
+  <meta name="family-name" content="${data.metaTagGenericValuesModel.familyName}"/>
+  <meta name="page-url" content="${data.metaTagGenericValuesModel.familyPageUrl}"/>
+  <meta name="primary-image" content="${data.metaTagGenericValuesModel.primaryImage}"/>
+  <meta name="marketing-description" content="${data.metaTagGenericValuesModel.maeketingDesc}"/>
+  <meta name="features" content="${data.metaTagGenericValuesModel.coreFeature}"/>
+  <meta name="middle-tab-name" content="${data.metaTagGenericValuesModel.middleTabName}"/>
+  <meta name="middle-tab-url" content="${data.metaTagGenericValuesModel.middleTabUrl}"/>
+  <sly data-sly-test="${data.metaTagGenericValuesModel.contentType}">
+    <meta name="content-type" content="${data.metaTagGenericValuesModel.contentType}"/>
+  </sly>
+  <sly data-sly-test="${!data.metaTagGenericValuesModel.contentType}">
+    <meta name="content-type" content=""/>
+  </sly>
+  <sly data-sly-test="${data.metaTagGenericValuesModel.pageType}">
+    <meta name="page-type" content="${data.metaTagGenericValuesModel.pageType}"/>
+  </sly>
+  <sly data-sly-test="${!data.metaTagGenericValuesModel.pageType}">
+    <meta name="page-type" content=""/>
+  </sly>
+  <meta name="title" content="${data.metaTagGenericValuesModel.title}"/>
+  <sly data-sly-test="${data.metaTagGenericValuesModel.description}">
+    <meta name="description" content="${data.metaTagGenericValuesModel.description}"/>
+  </sly>
+  <sly data-sly-test="${!data.metaTagGenericValuesModel.description}">
+    <meta name="description" content=""/>
+  </sly>
+</sly>
+<sly data-sly-test="${!(data.metaTagGenericValuesModel.authoredPageType == 'product-family') && !(data.metaTagGenericValuesModel.authoredPageType == 'product-sku')}">
+  <meta name="title" content="${data.metaTagGenericValuesModel.familyName}"/>
+  <meta name="family-name" content="${data.metaTagGenericValuesModel.familyName}"/>
+  <meta name="page-url" content="${data.metaTagGenericValuesModel.familyPageUrl}"/>
+  <sly data-sly-test="${data.metaTagGenericValuesModel.primaryImage}">
+    <meta name="primary-image" content="${data.metaTagGenericValuesModel.primaryImage}"/>
+  </sly>
+  <sly data-sly-test="${data.metaTagGenericValuesModel.categoryName}"> 
+    <meta name="category-name" content="${data.metaTagGenericValuesModel.categoryName}"/>
+  </sly>
+  <sly data-sly-test="${data.metaTagGenericValuesModel.maeketingDesc}">
+    <meta name="description" content="${data.metaTagGenericValuesModel.maeketingDesc}"/>
+  </sly>
+  <sly data-sly-test="${!data.metaTagGenericValuesModel.maeketingDesc}">
+    <sly data-sly-test="${data.metaTagGenericValuesModel.description}">
+      <meta name="description" content="${data.metaTagGenericValuesModel.description}"/>
+    </sly>
+    <sly data-sly-test="${!data.metaTagGenericValuesModel.description}">
+      <meta name="description" content=""/>
+    </sly>
+  </sly>
+  <sly data-sly-test="${data.metaTagGenericValuesModel.contentType}">
+    <meta name="content-type" content="${data.metaTagGenericValuesModel.contentType}"/>
+  </sly>
+  <sly data-sly-test="${!data.metaTagGenericValuesModel.contentType}">
+    <meta name="content-type" content=""/>
+  </sly>
+  <sly data-sly-test="${data.metaTagGenericValuesModel.pageType}">
+    <meta name="page-type" content="${data.metaTagGenericValuesModel.pageType}"/>
+  </sly>
+  <sly data-sly-test="${!data.metaTagGenericValuesModel.pageType}">
+    <meta name="page-type" content=""/>
+  </sly>
+</sly>
+<sly data-sly-test="${data.metaTagGenericValuesModel.authoredPageType == 'product-sku'}">
+  <meta property="og:title" content="${data.metaTagGenericValuesModel.ogTitle}"/>
+  <meta property="og:description" content="${data.metaTagGenericValuesModel.ogDesc}"/>
+  <meta property="twitter:title" content="${data.metaTagGenericValuesModel.twitterTitle}"/>
+  <meta property="twitter:description" content="${data.metaTagGenericValuesModel.twitterDesc}"/>
+  <meta property="og:url" content="${data.metaTagGenericValuesModel.ogUrl}"/>
+  <meta property="twitter:url" content="${data.metaTagGenericValuesModel.twitterUrl}"/>
+  <meta property="og:type" content="${data.metaTagGenericValuesModel.ogType}"/>
+  <meta property="og:locale" content="${data.metaTagGenericValuesModel.ogLocale}"/>
+  <meta property="og:site_name" content="${data.metaTagGenericValuesModel.ogSitename}"/>
+  <meta property="twitter:site" content="${data.metaTagGenericValuesModel.twitterSitename}"/>
+  <meta property="og:image" content="${data.metaTagGenericValuesModel.ogImage}"/>
+  <meta property="twitter:image" content="${data.metaTagGenericValuesModel.twitterImage}"/>
+</sly>
+<sly data-sly-test="${data.metaTagGenericValuesModel.categoryId}">
+  <meta name="category-id" content="${data.metaTagGenericValuesModel.categoryId}"/>
+  <meta name="category-name" content="${data.metaTagGenericValuesModel.categoryName}"/>
+</sly>
+  <meta name="application-id" content="${data.metaTagGenericValuesModel.applicationId}"/>

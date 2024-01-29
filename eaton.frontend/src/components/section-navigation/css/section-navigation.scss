@@ -1,0 +1,101 @@
+//-----------------------------------
+// M-61: Section Navigation
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+
+.section-navigation {
+
+  $color-border: var(--grey-primary-brand-color, $color__primary-gray2);
+  // TO DO: remove this once microsites brand tool has been implemented. Override should be handled in _variables-colors.scss
+  $color-bg: var(--section-navigation-background-color, $color__primary-gray1);
+
+  background-color: $color-bg;
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-item {
+    // Empty selector for future reference
+  }
+
+  &__link-item {
+    @include font-family__secondary(--secondary-font);
+    color: $color__white;
+    font-weight: bold;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color__white;
+    }
+  }
+
+  //-----------------------------------
+  // Media-Query: Mobile
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    padding: rem($spacing__sm * 0.333333) 0;
+
+
+    &__list-item {
+      width: 100%;
+    }
+
+    &__link-item {
+      border-bottom: 1px solid $color-border;
+      display: block;
+      font-size: rem($base__font-size * 1.8);  // small link deviation
+      margin: 0;
+      padding: rem($spacing__sm * 0.666666) 0;
+    }
+
+    &__list-item:last-child &__link-item {
+      border-bottom: 0;
+    }
+
+  }
+
+
+  //-----------------------------------
+  // Media-Query: Tablet & Desktop
+  //-----------------------------------
+  @include media-desktop-and-up {
+    .container {
+      position: relative;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: relative;
+
+      &::after {
+        background-color: $color-bg;
+        bottom: 0;
+        content: '';
+        height: 1px;
+        left: 0;
+        position: absolute;
+        width: 100%;
+      }
+    }
+
+    &__link-item {
+      // EATON-678: Added border around the entire item (left/right) as per BA Feedback
+      border-bottom: 1px solid var(--section-navigation-divider-color, $color-border);
+      border-left: 1px solid var(--section-navigation-divider-color, $color-border);
+      border-right: 1px solid var(--section-navigation-divider-color, $color-border);
+      display: inline-block;
+      float: left;
+      padding: rem($spacing__sm * 0.666666) rem($spacing__sm);
+    }
+  }
+
+}

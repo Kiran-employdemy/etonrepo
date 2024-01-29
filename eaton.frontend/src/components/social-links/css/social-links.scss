@@ -1,0 +1,89 @@
+//-----------------------------------
+// Component Social Links
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.eaton-social-links {
+
+  &__eyebrow { margin-bottom: 18px; }
+
+  &__list {
+    font-size: 0; // Remove spacing between elements when using "display: inline-block"
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-item {
+    display: inline-block;
+    margin: 0 18px 16px 0; // EATON-751 FIX - Footer Social Links- No Vertical Space between rows when Icons wrap.
+  }
+
+
+  // Page Link
+  &__page-link {
+    font-size: 18px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      text-decoration: none !important; // stylelint-disable-line declaration-no-important
+
+      bdi {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__page-link-icon {
+    font-size: 0.66667em;
+    margin-left: rem($spacing__sm / 6);
+    margin-right: 0;
+
+    [dir='rtl'] & {
+      margin-left: 0;
+      margin-right: rem($spacing__sm / 6);
+    }
+
+    &::before {
+      display: inline;
+      position: relative;
+      top: rem($spacing__sm * -0.0666667);
+      vertical-align: middle;
+
+      [dir='rtl'] & {
+        content: '\EA06';
+      }
+    }
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      font-size: rem($base__font-size * 1.2);
+
+      &::before {
+        display: inline-block;
+        transform: rotate(0deg) !important; //stylelint-disable-line declaration-no-important
+      }
+    }
+  }
+
+
+  // Over DARK-Background
+  //--------------
+  .dark-theme & {
+
+    &__eyebrow { color: $color__white; }
+
+    &__page-link {
+      &,
+      &:hover,
+      &:active {
+        color: $color__white;
+      }
+    }
+
+  }
+
+
+}

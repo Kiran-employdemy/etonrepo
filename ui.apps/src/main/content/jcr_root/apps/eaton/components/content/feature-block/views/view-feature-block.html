@@ -1,0 +1,88 @@
+<!--/*
+  Module M-53: Feature Block
+*/-->
+
+<sly data-sly-use.data="com.eaton.platform.core.models.FeatureBlockModel">
+
+
+<!--/*
+  Conditional CSS Classes
+*/-->
+<!--/* CSS Class based on the layout of the component, eg:
+  if the Image Is aligned to the LEFT and Text/Content is aligned to the RIGHT
+  if the Image Is aligned to the RIGHT and Text/Content is aligned to the LEFT
+*/-->
+<sly data-sly-test.componentAlignment="${
+  data.imageAlignment == 'right'
+  ? 'feature-block--right'
+  : 'feature-block--left'
+}" />
+
+<!--/* CSS Class if the Feature Block has image or not */-->
+<sly data-sly-test.componentImage="${
+  data.imagePath != ''
+  ? 'feature-block--with-image'
+  : 'feature-block--without-image'
+}" />
+
+<!--/* CSS Class for the CTA Button based on the background-theme/background-color */-->
+<sly data-sly-test.ctaTheme="${
+  data.color == 'primary-branding-color'
+  ? 'b-button__primary--dark'
+  : 'b-button__primary--light'
+}" />
+
+
+<!--/* Component HTML Start  */-->
+<div class="feature-block__component ${ data.color == 'primary-branding-color' ? 'theme-primary-branding-color' : [data.color == 'theme-white' ? 'theme-white' : 'theme-light-gray']} ${ componentAlignment } ${ componentImage }">
+
+  <div
+    data-sly-test="${ data.imagePath}"
+    class="feature-block__image"
+  >
+    <!-- Start: Rendition Image Component -->
+    <sly data-sly-test.useDynamicRendition="${ data.desktopDynamicRenditionUrl != null && data.mobileDynamicRenditionUrl != null }"/>
+    <sly data-sly-use.tpl="${ useDynamicRendition ? 'eaton/components/shared/templates/dynamic-rendition-background.html' : 'eaton/components/shared/templates/rendition-background.html'}">
+      <sly data-sly-call="${ tpl.module @ data=data }"></sly>
+    </sly>
+    <!-- End: Rendition Image Component -->
+  </div>
+
+  <div class="feature-block__text-container">
+    <h2 class="feature-block__title">${data.header}</h2>
+    <div class="feature-block__description b-body-copy">
+
+      <!--/* Text Content */-->
+      <div class="feature-block__text">${data.description @ context = 'html' }</div>
+
+      <!--/* Links List */-->
+      <div
+        data-sly-test="${ data.featureBlockLists }"
+        class="feature-block__links-list b-body-copy">
+        <sly data-sly-list.link="${ data.featureBlockLists }">
+          <a class="feature-block__links-item"
+            href="${link.featureBlockLinkPath @context='html'}"
+            target="${ link.featureBlockLinkOpenNewWindow }"
+             data-source-tracking="${link.featureEnableSourceTracking}"
+          >${ link.featureBlockLinkText }</a>
+        </sly>
+      </div>
+
+    </div>
+
+    <!--/* CTA Button */-->
+    <div
+      data-sly-test="${ data.linkTitle }"
+      class="feature-block__cta-wrapper">
+      <a
+        href="${data.modal ? '#': data.link @context='html'}"
+        data-lookbook-overlay-href="${data.modal ? data.flatLink : '' @context='html'}"
+        target="${ data.newWindow }"
+        class="feature-block__cta b-button b-button__primary ${ ctaTheme }"
+        data-source-tracking="${data.enableSourceTracking}"
+        role="button"
+      >${data.linkTitle}</a>
+    </div>
+  </div>
+</div>
+</sly>

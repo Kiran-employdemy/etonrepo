@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.integration.auth.services.config.EatonVirtualAssistantConfig">
+  <OCD id="com.eaton.platform.integration.auth.services.config.EatonVirtualAssistantConfig" name="EatonVirtualAssistantConfiguration" description="">
+    <AD id="userIdCookieName" type="String" name="Name of user id cookie" description="Name for user id cookie" default="eatonUserIDFinal"/>
+    <AD id="userIdCookieDomain" type="String" name="Domain of user id cookie" description="Domain for user id cookie" default=""/>
+    <AD id="userIdCookieTTL" type="Integer" name="Time to live of user id cookie (seconds)" description="Time to live of user id cookie (seconds)" default="86400"/>
+    <AD id="vistaIdCookieName" type="String" name="Name of vista id cookie" description="Name for vista id cookie" default="eatonICCVistaUid"/>
+    <AD id="vistaIdCookieDomain" type="String" name="Domain of vista id cookie" description="Domain for vista id cookie" default=""/>
+    <AD id="vistaIdCookieTTL" type="Integer" name="Time to live of vista id cookie (seconds)" description="Time to live of vista id cookie (seconds)" default="86400"/>
+    <AD id="vistaIdJsonName" type="String" name="Json Name of vista id value" description="Json name of vista id value (this is within the vista id cookie json string)" default="eatonICCVistaUid"/>
+    <AD id="drcIdJsonName" type="String" name="Json Name of drc id value" description="Json name of drc id value (this is within the vista id cookie json string)" default="eatonDrcId"/>
+    <AD id="historyCookieName" type="String" name="Virtual assistant history cookie name" description="Cookie name of the virtual assistant history" default="bftoken"/>
+    <AD id="historyCookieDomain" type="String" name="Virtual assistant history domain name" description="Domain name of the virtual assistant history" default=""/>
+    <AD id="isIvSecurityCookieSet" type="Boolean" name="Virtual assistant iv security cookie" description="Should the iv security cookie be set for Eaton Virtual Assistant" default="true"/>
+    <AD id="ivSecurityCookieName" type="String" name="Virtual assistant iv security cookie cookie name" description="Cookie name of the virtual assistant iv security cookie" default="eatonCRVS"/>
+    <AD id="ivSecurityCookieDomain" type="String" name="Virtual assistant iv security cookie domain name" description="Domain name of the virtual assistant iv security cookie" default=""/>
+    <AD id="ivSecurityCookieTTL" type="Integer" name="Time to live of iv security cookie (seconds)" description="Time to live of iv security cookie (seconds)" default="86400"/>
+    <AD id="ivSecurityCookieValue" type="String" name="Virtual assistant iv security cookie value" description="Value of the virtual assistant iv security cookie" default="true"/>
+    <AD id="encryptionAlgorithm" type="String" name="Encryption Type" description="Type of encryption for user id cookies" default="DES"/>
+    <AD id="encryptionMode" type="String" name="Encryption Mode" description="Mode of encryption for user id cookies" default="DES/CBC/PKCS5Padding"/>
+    <AD id="encryptionKey" type="String" name="Encryption Key" description="Private key to encrypt virtual assistant cookies" default="ezf38swvhj6ui9on7lk5"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.integration.auth.services.impl.EatonVirtualAssistantConfigurationImpl">
+    <Object ocdref="com.eaton.platform.integration.auth.services.config.EatonVirtualAssistantConfig"/>
+  </Designate>
+</metatype:MetaData>

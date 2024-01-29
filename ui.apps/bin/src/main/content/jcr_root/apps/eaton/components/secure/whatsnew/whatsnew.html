@@ -1,0 +1,65 @@
+<sly data-sly-test="${ wcmmode.edit }">
+    <div class="alert alert-warning">What's New</div>
+</sly>
+
+<div class="whatsnew__title-container">
+
+    <div class="loader loader-active">
+        <div class="loader__loader-circle"></div>
+    </div>
+
+    <sly data-sly-resource="${'whatsnew-title' @ resourceType='/apps/eaton/components/general/title'}"></sly>
+</div>
+
+<div class="hidden">
+    <div id="label-last7days" data-label="${'last7days' @ i18n}">${'last7days' @ i18n}</div>
+    <div id="label-last14days" data-label="${'last14days' @ i18n}">${'last14days' @ i18n}</div>
+    <div id="label-last21days" data-label="${'last21days' @ i18n}">${'last21days' @ i18n}</div>
+    <div id="label-last30days" data-label="${'last30days' @ i18n}">${'last30days' @ i18n}</div>
+</div>
+
+<div id="whatsnew__accordion" class="accordion whatsnew__accordion"></div>
+<div class="hidden" id="whatnewresourcepath" value="${resource.path}">${resource.path}</div>
+<script id="mustache-whats-new" type="text/mustache">
+    <div class="panel-group" id="accordion-whatsnew" role="tablist" aria-multiselectable="true" data-default-closed="true">
+        {{#groups}}
+            {{#show}}
+                <div class="panel">
+                    <div class="panel__header" role="tab" id="heading-{{name}}-{{index}}">
+                        <a class="panel__header__title collapsed"
+                        role="button" data-toggle="collapse" href="#collapse-{{name}}-{{index}}"
+                        aria-expanded="true" aria-controls="collapse-{{name}}-{{index}}">
+                            <h2>{{label}}</h2>
+                            <i class="panel__header__icon"></i>
+                        </a>
+                    </div>
+                    <div id="collapse-{{name}}-{{index}}"
+                        class="panel-collapse collapse"
+                        role="tabpanel" aria-labelledby="heading-{{name}}-{{index}}">
+                        <div class="panel__body">
+                            <ul class="download-list__download-links secondary-content-accordion__column">
+                                {{#links}}
+                                    <li class="download-list__download-item secondary-content-accordion__download-icon">
+                                        <i class="icon icon-download" aria-hidden="true"></i>
+                                        <div class="download-list__download-document">
+                                            <div class="download-list__title">
+                                                <a href="{{assetPath}}"
+                                                    aria-label="{{assetTitle}}"
+                                                    target="_blank" class="download-list__title-link b-heading-h5">{{assetTitle}}</a>
+                                            </div>
+                                            {{#assetDescription}}<div class="b-body-copy-small download-list__description">
+                                                {{assetDescription}}
+                                            </div>{{/assetDescription}}
+                                            <div class="b-body-copy-small download-list__download-size">{{#isSecureAsset}}<i class="icon icon-secure-lock" aria-hidden="true"></i> {{/isSecureAsset}}({{assetSize}}, {{assetPubDate}})</div>
+                                        </div>
+                                    </li>
+                                {{/links}}
+                            </ul>
+                            <span class="panel__body__fix">spacer</span>
+                        </div>
+                    </div>
+                </div>
+            {{/show}}
+        {{/groups}}
+    </div>
+</script>

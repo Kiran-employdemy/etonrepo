@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          jcr:primaryType="sling:OsgiConfig"
+          cq.wcm.msm.action.excludednodetypes="[cq\:LiveSyncConfig,cq\:BlueprintSyncConfig,cq\:LiveSyncAction,cq\:meta]"
+        cq.wcm.msm.action.excludedparagraphitems="[cq:propertyInheritanceCancelled]"
+        cq.wcm.msm.impl.action.referencesupdate.prop_updateNested="{Boolean}true"
+        cq.wcm.msm.action.excludedprops="[jcr\:(?!(description)$)\.*,sling\:\.*,cq\:(?!(tags|redirectTarget|redirectPath|loginPath))\.*]"/>

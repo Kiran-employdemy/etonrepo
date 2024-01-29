@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.2.0" localization="OSGI-INF/l10n/com.eaton.platform.core.replication.FlushServicesConfigurationImpl$FlushServiceConfig">
+  <OCD id="com.eaton.platform.core.replication.FlushServicesConfigurationImpl$FlushServiceConfig" name="Com eaton platform core replication flush services configuration impl flush service config" description="Flush replication agents configuration">
+    <AD id="skipPathsRegexp" type="String" cardinality="2147483647" name="Skip paths regexp" default=".*/secure($|/.*)"/>
+  </OCD>
+  <Designate pid="com.eaton.platform.core.replication.FlushServicesConfigurationImpl">
+    <Object ocdref="com.eaton.platform.core.replication.FlushServicesConfigurationImpl$FlushServiceConfig"/>
+  </Designate>
+</metatype:MetaData>

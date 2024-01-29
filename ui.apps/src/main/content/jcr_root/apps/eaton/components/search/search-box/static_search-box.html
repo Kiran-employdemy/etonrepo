@@ -1,0 +1,27 @@
+<sly data-sly-test="${ wcmmode.edit }">
+  <div class="alert alert-warning">Search-Box: ${currentNode.name}</div>
+</sly>
+<sly data-sly-use.data="com.eaton.platform.core.models.SearchSlingModel" />
+
+<sly data-sly-test="${ data.searchModel.view == 'inline' }">
+  <sly data-sly-include="views/view-inline.html" data-sly-unwrap></sly>
+</sly>
+
+<sly data-sly-test="${ data.searchModel.view == 'default' }">
+  <sly data-sly-include="views/view-default.html" data-sly-unwrap></sly>
+</sly>
+
+<sly data-sly-test="${ data.searchModel.view == 'jibe' }">
+  <sly data-sly-include="views/view-jibe-search.html" data-sly-unwrap></sly>
+</sly>
+
+<sly data-sly-test="${ data.searchModel.view == 'map' }">
+  <sly data-sly-include="views/view-map-search.html" data-sly-unwrap></sly>
+</sly>
+
+<sly data-sly-test="${ data.searchModel.view == 'crossReference' }">
+  <sly data-sly-include="views/view-xref-search.html" data-sly-unwrap></sly>
+</sly>
+<sly data-sly-test="${ data.searchModel.view == 'advsearch' }">
+  <sly data-sly-include="views/view-adv-search.html" data-sly-unwrap></sly>
+</sly>

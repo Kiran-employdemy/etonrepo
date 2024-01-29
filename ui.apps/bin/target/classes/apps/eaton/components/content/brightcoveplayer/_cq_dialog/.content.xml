@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="BrightCove"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.authoring.dialog.multi]"
+    helpPath="https://www.adobe.com/go/aem6_2_docs_component_en#Text - Sightly">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <layout
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"
+            type="nav"/>
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <headLine
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldDescription="This field stores the value for Head Line Title"
+                        fieldLabel="Head Line"
+                        name="./headLine"/>
+                    <description
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textarea"
+                        fieldDescription="This field indicated about the short description of the Video"
+                        fieldLabel="Description"
+                        name="./description"/>
+                    <contentType
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        class="cq-dialog-dropdown-showhide"
+                        cq-dialog-dropdown-showhide-target=".hide-player-id"
+                        fieldDescription="Either a single player or playlist&#xd;&#xa;can be selected.&#xd;&#xa;&#xd;&#xa;"
+                        fieldLabel="In-page experience *"
+                        name="./contentType"
+                        required="true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <single-video
+                                jcr:primaryType="nt:unstructured"
+                                text="Single Video"
+                                value="video"/>
+                            <playlist
+                                jcr:primaryType="nt:unstructured"
+                                text="Playlist"
+                                value="playlist"/>
+                            <data-experience
+                                 jcr:primaryType="nt:unstructured"
+                                 text="Data Experience"
+                                 value="dataExperience"/>
+
+                        </items>
+                    </contentType>
+                    <contentID
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldDescription="Video Id/Playlist Id."
+                        fieldLabel="Content ID *"
+                        name="./contentId"
+                        required="true"/>
+                    <brightcovePlayerID
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/select"
+                        fieldLabel="Brightcove Player ID *"
+                        name="./brightcovePlayerID"
+                        showhidetargetvalue="playlist,video"
+                        class="hide-player-id"
+                        required="true">
+                        <datasource
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="/ecom/dropdown/bcplayeridlist"
+                            addNone="{Boolean}true"/>
+                    </brightcovePlayerID>
+                    <toggleInnerGrid
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
+                        defaultChecked="true"
+                        name="./toggleInnerGrid"
+                        text="Include Margin"
+                        value="true"/>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

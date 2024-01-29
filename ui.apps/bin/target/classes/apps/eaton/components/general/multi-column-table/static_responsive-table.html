@@ -1,0 +1,56 @@
+
+
+<sly data-sly-use.data="com.eaton.platform.core.models.multicolumn.MultiColumnModel">
+
+  <div class="responsive-table">
+    <div class="container">
+      <h2 class="responsive-table__title b-heading-h3">${ data.sectionTitle }</h2>
+
+      <div class="responsive-table__content">
+
+        <!--/* Table Header For Desktop Breakpoint Only */-->
+        <div class="responsive-table__group responsive-table--visible-desktop">
+
+          <!--/* Render First Empty Cell */-->
+          <div class="responsive-table__group-item">
+            <div class="responsive-table__cell"></div>
+          </div>
+
+          <!--/* Render All Table Headers */-->
+          <sly data-sly-list.tableHeader="${ data.columnHeaderList }">
+            <div class="responsive-table__group-item">
+              <div class="responsive-table__cell">${ tableHeader }</div>
+            </div>
+          </sly>
+        </div>
+
+
+
+ <sly data-sly-list.row="${ data.tableValuesList }">
+          <div class="responsive-table__group">
+
+            <!--/* Render Column #1 - Row Label */-->
+            <div class="responsive-table__group-item">
+              <div class="responsive-table__cell">${ row.attributeName }</div>
+            </div>
+
+            <!--/* Render All the Other Columns */-->
+            <sly data-sly-list.column="${ row.attributeValueList }">
+              <!--/*
+                NOTE: This component only supports 6 Columns MAX (The Label Column + Other 5 Columns)
+              */-->
+              <div class="responsive-table__group-item"
+                data-sly-test="${ columnList.count < 6 }">
+                <div class="responsive-table__cell responsive-table--visible-mobile">${ data.columnHeaderList[ columnList.index ] }</div>
+                <div class="responsive-table__cell">${ column @context = 'html' }</div>
+              </div>
+            </sly>
+
+          </div>
+        </sly>
+
+      </div>
+    </div>
+  </div>
+
+</sly>

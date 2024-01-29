@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.servlets.sitemap.SkusitemapServlet" immediate="true">
+  <property name="sling.servlet.extensions" type="String" value="xml"/>
+  <property name="sling.servlet.resourceTypes" type="String" value="eaton/components/structure/eaton-edit-template-page"/>
+  <property name="sling.servlet.methods" type="String" value="GET"/>
+  <property name="sling.servlet.selectors" type="String" value="skusitemap"/>
+  <service>
+    <provide interface="javax.servlet.Servlet"/>
+  </service>
+  <reference name="adminService" interface="com.eaton.platform.core.services.AdminService" field="adminService"/>
+  <reference name="configService" interface="com.eaton.platform.core.services.EatonConfigService" field="configService"/>
+  <reference name="countryLangCodeLastmodConfigService" interface="com.eaton.platform.core.services.CountryLangCodeLastmodConfigService" field="countryLangCodeLastmodConfigService"/>
+  <reference name="endecaRequestService" interface="com.eaton.platform.core.services.EndecaRequestService" field="endecaRequestService"/>
+  <reference name="endecaService" interface="com.eaton.platform.integration.endeca.services.EndecaService" field="endecaService"/>
+  <implementation class="com.eaton.platform.core.servlets.sitemap.SkusitemapServlet"/>
+</scr:component>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scr:component xmlns:scr="http://www.osgi.org/xmlns/scr/v1.3.0" name="com.eaton.platform.core.services.impl.EatonEmailServiceImpl" immediate="true" activate="activate" modified="activate">
+  <property name="fromAddress" type="String" value="noreply-EATONcatalog@eaton.com"/>
+  <property name="service.vendor" type="String" value=" Eaton"/>
+  <property name="service.description" type="String" value=" EatonEmailServiceImpl"/>
+  <property name="senderPreName" type="String" value="Eaton.com"/>
+  <property name="process.label" type="String" value=" EatonEmailServiceImpl"/>
+  <service>
+    <provide interface="com.eaton.platform.core.services.EatonEmailService"/>
+  </service>
+  <reference name="emailService" interface="com.adobe.acs.commons.email.EmailService" field="emailService"/>
+  <implementation class="com.eaton.platform.core.services.impl.EatonEmailServiceImpl"/>
+</scr:component>

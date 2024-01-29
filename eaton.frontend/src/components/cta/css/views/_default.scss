@@ -1,0 +1,14 @@
+//-----------------------------------
+// CTA Component - Default View
+//-----------------------------------
+.cta-default {
+
+  //-----------------------------------
+  // Media-Query: 0-991px
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    // EATON-407: CTA Should be centered in mobile
+    text-align: center;
+  }
+
+}

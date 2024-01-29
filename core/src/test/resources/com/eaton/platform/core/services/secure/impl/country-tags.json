@@ -1,0 +1,3967 @@
+{
+  "jcr:primaryType": "cq:Tag",
+  "jcr:mixinTypes": [
+    "cq:ReplicationStatus"
+  ],
+  "jcr:createdBy": "admin",
+  "jcr:title": "Country",
+  "cq:lastReplicationAction": "Activate",
+  "cq:lastReplicatedBy": "admin",
+  "jcr:lastModifiedBy": "e0063964",
+  "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+  "cq:lastReplicated": "Fri Jan 22 2021 00:52:56 GMT-0500",
+  "jcr:description": "",
+  "jcr:lastModified": "Fri Oct 13 2017 09:41:47 GMT-0400",
+  "sling:resourceType": "cq/tagging/components/tag",
+  "jcr:title.da_dk": "Land",
+  "jcr:title.de_de": "Land",
+  "jcr:title.en_gb": "Country",
+  "jcr:title.es_mx": "País",
+  "jcr:title.fi_fi": "Maa",
+  "jcr:title.fr_ca": "Pays",
+  "jcr:title.he_il": "מדינה",
+  "jcr:title.hu_hu": "Ország",
+  "jcr:title.it_it": "Paese",
+  "jcr:title.lt_lt": "Šalis",
+  "jcr:title.nl_nl": "Land",
+  "jcr:title.no_no": "Land",
+  "jcr:title.pl_pl": "Kraj",
+  "jcr:title.pt_br": "País",
+  "jcr:title.ro_ro": "Țara",
+  "jcr:title.ru_ru": "Страна",
+  "jcr:title.sv_se": "Land",
+  "jcr:title.tr_tr": "Ülke",
+  "jcr:title.uk_ua": "Країна",
+  "jcr:title.zh_cn": "国家/地区",
+  "north-america": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "North America",
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+    "cq:lastReplicated": "Fri Jan 22 2021 00:52:56 GMT-0500",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title.cs_cz": "Severní Amerika",
+    "jcr:title.da_dk": "Nordamerika",
+    "jcr:title.de_de": "Nordamerika",
+    "jcr:title.en_gb": "North America",
+    "jcr:title.es_mx": "América del Norte",
+    "jcr:title.et_ee": "Põhja-Ameerika",
+    "jcr:title.fi_fi": "Pohjois-Amerikka",
+    "jcr:title.fr_ca": "Amérique du Nord",
+    "jcr:title.he_il": "צפון אמריקה",
+    "jcr:title.hu_hu": "Észak-Amerika",
+    "jcr:title.it_it": "Nord America",
+    "jcr:title.lt_lt": "Šiaurės Amerika",
+    "jcr:title.nl_nl": "Noord-Amerika",
+    "jcr:title.no_no": "Nord-Amerika",
+    "jcr:title.pl_pl": "Ameryka Północna",
+    "jcr:title.pt_br": "América do Norte",
+    "jcr:title.ro_ro": "America de Nord",
+    "jcr:title.ru_ru": "Северная Америка",
+    "jcr:title.sv_se": "Nordamerika",
+    "jcr:title.tr_tr": "Kuzey Amerika",
+    "jcr:title.uk_ua": "Північна Америка",
+    "jcr:title.zh_cn": "北美",
+    "us": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "United States",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:52:56 GMT-0500",
+      "jcr:lastModified": "Mon Nov 13 2017 16:21:40 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "cq:backlinks": [
+        "/etc/tags/eaton/country/us"
+      ],
+      "jcr:title.cs_cz": "Spojené státy americké",
+      "jcr:title.da_dk": "USA",
+      "jcr:title.de_de": "Vereinigte Staaten",
+      "jcr:title.en_gb": "United States",
+      "jcr:title.es_mx": "Estados Unidos",
+      "jcr:title.et_ee": "Ameerika Ühendriigid",
+      "jcr:title.fi_fi": "Yhdysvallat",
+      "jcr:title.fr_ca": "États-Unis",
+      "jcr:title.he_il": "ארצות הברית",
+      "jcr:title.hu_hu": "USA",
+      "jcr:title.it_it": "Stati Uniti",
+      "jcr:title.lt_lt": "Jungtinės Amerikos Valstijos",
+      "jcr:title.nl_nl": "Verenigde Staten",
+      "jcr:title.no_no": "USA",
+      "jcr:title.pl_pl": "Stany Zjednoczone",
+      "jcr:title.pt_br": "Estados Unidos",
+      "jcr:title.ro_ro": "Statele Unite",
+      "jcr:title.ru_ru": "США",
+      "jcr:title.sv_se": "USA",
+      "jcr:title.tr_tr": "Birleşik Devletler",
+      "jcr:title.uk_ua": "Сполучені Штати",
+      "jcr:title.zh_cn": "美国"
+    },
+    "ca": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Canada",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:52:56 GMT-0500",
+      "jcr:description": "",
+      "jcr:lastModified": "Tue Mar 13 2018 12:43:34 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.da_dk": "Canada",
+      "jcr:title.de_de": "Kanada",
+      "jcr:title.es_mx": "Canadá",
+      "jcr:title.et_ee": "Kanada",
+      "jcr:title.fi_fi": "Kanada",
+      "jcr:title.fr_ca": "Canada",
+      "jcr:title.he_il": "קנדה",
+      "jcr:title.lt_lt": "Kanada",
+      "jcr:title.nl_nl": "Canada",
+      "jcr:title.no_no": "Canada",
+      "jcr:title.pl_pl": "Kanada",
+      "jcr:title.pt_br": "Canadá",
+      "jcr:title.ru_ru": "Канада",
+      "jcr:title.sv_se": "Kanada",
+      "jcr:title.uk_ua": "Канада"
+    }
+  },
+  "europe": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Europe",
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:lastModifiedBy": "e9814292",
+    "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+    "cq:lastReplicated": "Fri Jan 22 2021 00:52:56 GMT-0500",
+    "jcr:description": "",
+    "jcr:lastModified": "Thu Apr 05 2018 09:39:40 GMT-0400",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title.cs_cz": "Evropa",
+    "jcr:title.da_dk": "Europa",
+    "jcr:title.de_de": "Europa",
+    "jcr:title.en_gb": "Europe",
+    "jcr:title.es_mx": "Europa",
+    "jcr:title.et_ee": "Euroopa",
+    "jcr:title.fi_fi": "Eurooppa",
+    "jcr:title.fr_ca": "Europe",
+    "jcr:title.he_il": "אירופה",
+    "jcr:title.hu_hu": "Európa",
+    "jcr:title.it_it": "Europa",
+    "jcr:title.lt_lt": "Europa",
+    "jcr:title.nl_nl": "Europa",
+    "jcr:title.no_no": "Europa",
+    "jcr:title.pl_pl": "Europa",
+    "jcr:title.pt_br": "Europa",
+    "jcr:title.ro_ro": "Europa",
+    "jcr:title.ru_ru": "Европа",
+    "jcr:title.sv_se": "Europa",
+    "jcr:title.tr_tr": "Avrupa",
+    "jcr:title.uk_ua": "Європа",
+    "jcr:title.zh_cn": "欧洲",
+    "fr": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "France",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:00 GMT-0500",
+      "jcr:description": "",
+      "jcr:lastModified": "Mon Nov 13 2017 16:22:15 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.cs_cz": "Francie",
+      "jcr:title.da_dk": "Frankrig",
+      "jcr:title.de_de": "Frankreich",
+      "jcr:title.en_gb": "France",
+      "jcr:title.es_mx": "Francia",
+      "jcr:title.et_ee": "Prantsusmaa",
+      "jcr:title.fi_fi": "Ranska",
+      "jcr:title.fr_ca": "France",
+      "jcr:title.he_il": "צרפת",
+      "jcr:title.hu_hu": "Franciaország",
+      "jcr:title.it_it": "Francia",
+      "jcr:title.lt_lt": "Prancūzija",
+      "jcr:title.nl_nl": "Frankrijk",
+      "jcr:title.no_no": "Frankrike",
+      "jcr:title.pl_pl": "Francja",
+      "jcr:title.pt_br": "França",
+      "jcr:title.ro_ro": "Franța",
+      "jcr:title.ru_ru": "Франция",
+      "jcr:title.sv_se": "Frankrike",
+      "jcr:title.tr_tr": "Fransa",
+      "jcr:title.uk_ua": "Франція",
+      "jcr:title.zh_cn": "法国"
+    },
+    "de": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Germany",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:00 GMT-0500",
+      "jcr:description": "",
+      "jcr:lastModified": "Tue Mar 13 2018 12:39:42 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.da_dk": "Tyskland",
+      "jcr:title.de_de": "Deutschland",
+      "jcr:title.es_mx": "Alemania",
+      "jcr:title.et_ee": "Saksamaa",
+      "jcr:title.fi_fi": "Saksa",
+      "jcr:title.fr_ca": "Allemagne",
+      "jcr:title.he_il": "גרמניה",
+      "jcr:title.lt_lt": "Vokietija",
+      "jcr:title.nl_nl": "Duitsland",
+      "jcr:title.no_no": "Tyskland",
+      "jcr:title.pl_pl": "Niemcy",
+      "jcr:title.pt_br": "Alemanha",
+      "jcr:title.ru_ru": "Германия",
+      "jcr:title.sv_se": "Tyskland",
+      "jcr:title.uk_ua": "Німеччина"
+    },
+    "it": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Italy",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:00 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.da_dk": "Italien",
+      "jcr:title.de_de": "Italien",
+      "jcr:title.es_mx": "Italia",
+      "jcr:title.et_ee": "Itaalia",
+      "jcr:title.fi_fi": "Italia",
+      "jcr:title.fr_ca": "Italie",
+      "jcr:title.he_il": "איטליה",
+      "jcr:title.lt_lt": "Italija",
+      "jcr:title.nl_nl": "Italië",
+      "jcr:title.no_no": "Italia",
+      "jcr:title.pt_br": "Itália",
+      "jcr:title.sv_se": "Italien",
+      "jcr:title.uk_ua": "Італія"
+    },
+    "pt": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Portugal",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:00 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.da_dk": "Portugal",
+      "jcr:title.de_de": "Portugal",
+      "jcr:title.es_mx": "Portugal",
+      "jcr:title.et_ee": "Portugal",
+      "jcr:title.fi_fi": "Portugali",
+      "jcr:title.fr_ca": "Portugal",
+      "jcr:title.he_il": "פורטוגל",
+      "jcr:title.lt_lt": "Portugalija",
+      "jcr:title.nl_nl": "Portugal",
+      "jcr:title.no_no": "Portugal",
+      "jcr:title.pt_br": "Portugal",
+      "jcr:title.sv_se": "Portugal",
+      "jcr:title.uk_ua": "Португалія"
+    },
+    "ie": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ireland",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:00 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.da_dk": "Irland",
+      "jcr:title.de_de": "Irland",
+      "jcr:title.es_mx": "Irlanda",
+      "jcr:title.et_ee": "Iirimaa",
+      "jcr:title.fi_fi": "Irlanti",
+      "jcr:title.fr_ca": "Irlande",
+      "jcr:title.he_il": "אירלנד",
+      "jcr:title.lt_lt": "Airija",
+      "jcr:title.nl_nl": "Ierland",
+      "jcr:title.no_no": "Irland",
+      "jcr:title.pt_br": "Irlanda",
+      "jcr:title.sv_se": "Irland",
+      "jcr:title.uk_ua": "Ірландія"
+    },
+    "gb": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "United Kingdom of Great Britain and Northern Ireland",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:00 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.da_dk": "Storbritannien og Nordirland",
+      "jcr:title.de_de": "Vereinigtes Königreich von Großbritannien und Nordirland",
+      "jcr:title.es_mx": "Reino Unido de Gran Bretaña e Irlanda del Norte",
+      "jcr:title.et_ee": "Suurbritannia ja Põhja-Iiri Ühendkuningriik",
+      "jcr:title.fi_fi": "Ison-Britannian ja Pohjois-Irlannin Yhdistynyt kuningaskunta",
+      "jcr:title.fr_ca": "Royaume-Uni de Grande-Bretagne et d’Irlande du Nord",
+      "jcr:title.he_il": "בריטניה וצפון אירלנד",
+      "jcr:title.lt_lt": "Jungtinė Didžiosios Britanijos ir Šiaurės Airijos Karalystė",
+      "jcr:title.nl_nl": "Verenigd Koninkrijk van Groot-Brittannië en Noord-Ierland",
+      "jcr:title.no_no": "Storbritannia og Nord-Irland",
+      "jcr:title.pt_br": "Reino Unido da Grã-Bretanha e Irlanda do Norte",
+      "jcr:title.sv_se": "Förenade kungariket Storbritannien och Nordirland",
+      "jcr:title.uk_ua": "Об'єднане Королівство Великої Британії та Північної Ірландії"
+    },
+    "tr": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Turkey",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:00 GMT-0500",
+      "jcr:description": "",
+      "jcr:lastModified": "Thu Apr 05 2018 09:01:28 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.da_dk": "Tyrkiet",
+      "jcr:title.de_de": "Türkei",
+      "jcr:title.es_mx": "Turquía",
+      "jcr:title.et_ee": "Türgi",
+      "jcr:title.fi_fi": "Turkki",
+      "jcr:title.he_il": "טורקיה",
+      "jcr:title.lt_lt": "Turkija",
+      "jcr:title.no_no": "Tyrkia",
+      "jcr:title.pt_br": "Turquia",
+      "jcr:title.sv_se": "Turkiet",
+      "jcr:title.uk_ua": "Турецька"
+    },
+    "cz": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Czech Republic",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:00 GMT-0500",
+      "jcr:description": "",
+      "jcr:lastModified": "Thu Apr 05 2018 09:01:42 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.da_dk": "Tjekkiet",
+      "jcr:title.de_de": "Tschechische Republik",
+      "jcr:title.es_mx": "República Checa",
+      "jcr:title.et_ee": "Tšehhi Vabariik",
+      "jcr:title.fi_fi": "Tšekin tasavalta",
+      "jcr:title.he_il": "הרפובליקה הצ'כית",
+      "jcr:title.lt_lt": "Čekija",
+      "jcr:title.no_no": "Tsjekkia",
+      "jcr:title.pt_br": "República Tcheca",
+      "jcr:title.sv_se": "Tjeckien",
+      "jcr:title.uk_ua": "Чеська республіка"
+    },
+    "ro": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Romania",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:00 GMT-0500",
+      "jcr:description": "",
+      "jcr:lastModified": "Thu Apr 05 2018 09:01:55 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.da_dk": "Rumænien",
+      "jcr:title.de_de": "Rumänien",
+      "jcr:title.es_mx": "Rumania",
+      "jcr:title.et_ee": "Rumeenia",
+      "jcr:title.fi_fi": "Romania",
+      "jcr:title.he_il": "רומניה",
+      "jcr:title.lt_lt": "Rumunija",
+      "jcr:title.no_no": "Romania",
+      "jcr:title.pt_br": "Romênia",
+      "jcr:title.sv_se": "Rumänien",
+      "jcr:title.uk_ua": "Румунія"
+    },
+    "pl": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Poland",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:00 GMT-0500",
+      "jcr:description": "",
+      "jcr:lastModified": "Thu Apr 05 2018 09:02:09 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.da_dk": "Polen",
+      "jcr:title.de_de": "Polen",
+      "jcr:title.es_mx": "Polonia",
+      "jcr:title.et_ee": "Poola",
+      "jcr:title.fi_fi": "Puola",
+      "jcr:title.he_il": "פולין",
+      "jcr:title.lt_lt": "Lenkija",
+      "jcr:title.no_no": "Polen",
+      "jcr:title.pt_br": "Polônia",
+      "jcr:title.sv_se": "Polen",
+      "jcr:title.uk_ua": "Польща"
+    },
+    "hu": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Hungary",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:04 GMT-0500",
+      "jcr:description": "",
+      "jcr:lastModified": "Thu Apr 05 2018 09:02:21 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.da_dk": "Ungarn",
+      "jcr:title.de_de": "Ungarn",
+      "jcr:title.es_mx": "Hungría",
+      "jcr:title.et_ee": "Ungari",
+      "jcr:title.fi_fi": "Unkari",
+      "jcr:title.he_il": "הונגריה",
+      "jcr:title.lt_lt": "Vengrija",
+      "jcr:title.no_no": "Ungarn",
+      "jcr:title.pt_br": "Hungria",
+      "jcr:title.sv_se": "Ungern",
+      "jcr:title.uk_ua": "Угорщина"
+    },
+    "ua": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ukraine",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:04 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Ukraine",
+      "jcr:title.es_mx": "Ucrania",
+      "jcr:title.et_ee": "Ukraina",
+      "jcr:title.uk_ua": "Українська"
+    },
+    "at": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Austria",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:04 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Österreich"
+    },
+    "be": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Belgium",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:04 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Belgien"
+    },
+    "netherlands": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Netherlands - replaced by other",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Mon Apr 26 2021 09:50:14 GMT-0400",
+      "jcr:description": "Any assets or pages using this tag need to be updated.",
+      "jcr:lastModified": "Thu Apr 22 2021 09:59:28 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Niederlande"
+    },
+    "ru": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Russia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:04 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Russland"
+    },
+    "se": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Sweden",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:04 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Schweden"
+    },
+    "es": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Spain",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:04 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Spanien"
+    },
+    "no": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Norway",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:04 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Norwegen"
+    },
+    "ch": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Switzerland",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:04 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Schweiz"
+    },
+    "lt": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Lithuania",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:08 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Litauen"
+    },
+    "lu": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Luxembourg",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:08 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Luxemburg"
+    },
+    "by": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Belarus",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:08 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Weißrussland"
+    },
+    "bg": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Bulgaria",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:08 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Bulgarien"
+    },
+    "sk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Slovakia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:08 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Slowakei"
+    },
+    "dk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Denmark",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:08 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Dänemark"
+    },
+    "cr": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Croatia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:08 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Kroatien"
+    },
+    "gr": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Greece",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:08 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Griechenland"
+    },
+    "rs": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Serbia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:08 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Serbien"
+    },
+    "ee": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Estonia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:08 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Estland"
+    },
+    "lv": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Latvia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:12 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Lettland"
+    },
+    "fi": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Finland",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:12 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Finnland"
+    },
+    "il": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Israel",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:12 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Israel"
+    },
+    "al": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Albania",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:12 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Albanien"
+    },
+    "bk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Bosnia & Herzegovina",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e8001074",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:12 GMT-0500",
+      "jcr:description": "",
+      "jcr:lastModified": "Thu Oct 10 2019 05:29:59 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Bosnien {ut} Herzegowina"
+    },
+    "cy": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cyprus",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e8001074",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:12 GMT-0500",
+      "jcr:description": "",
+      "jcr:lastModified": "Thu Oct 10 2019 05:30:19 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Zypern"
+    },
+    "fo": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Faeroe Islands",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:12 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Färöer-Inseln"
+    },
+    "gi": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Gibraltar",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:12 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Gibraltar"
+    },
+    "gk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Guernsey",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:12 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Guernsey"
+    },
+    "ic": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Iceland",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:12 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Island"
+    },
+    "im": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Isle of Man",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:15 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Insel Man"
+    },
+    "mk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Macedonia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:15 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Mazedonien"
+    },
+    "mt": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Malta",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:15 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Malta"
+    },
+    "md": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Moldova",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:15 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Moldawien"
+    },
+    "me": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Montenegro",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:15 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Montenegro"
+    },
+    "si": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Slovenia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:15 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Slowenien"
+    },
+    "sj": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Svalbard and Jan Mayen Islands",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:15 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Svalbard und Jan Mayen Inseln"
+    },
+    "ls": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Liechtenstein",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:15 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Liechtenstein"
+    },
+    "vt": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Holy See",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:15 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Heiliger Stuhl"
+    },
+    "sm": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "San Marino",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:15 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "San Marino"
+    },
+    "am": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Armenia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:19 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Armenien"
+    },
+    "aj": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Azerbaijan",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:19 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Aserbaidschan"
+    },
+    "gg": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Georgia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:19 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Georgien"
+    },
+    "an": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Andorra",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:19 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Andorra"
+    },
+    "mn": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Monaco",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:19 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Monaco"
+    },
+    "nl": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Netherlands",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Mon Apr 26 2021 09:50:15 GMT-0400",
+      "jcr:description": "Use this an not the other tag",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "africa": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Africa",
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+    "cq:lastReplicated": "Fri Jan 22 2021 00:53:19 GMT-0500",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title.cs_cz": "Afrika",
+    "jcr:title.da_dk": "Afrika",
+    "jcr:title.de_de": "Afrika",
+    "jcr:title.en_gb": "Africa",
+    "jcr:title.es_mx": "África",
+    "jcr:title.et_ee": "Aafrika",
+    "jcr:title.fi_fi": "Afrikka",
+    "jcr:title.fr_ca": "Afrique",
+    "jcr:title.he_il": "אפריקה",
+    "jcr:title.hu_hu": "Afrika",
+    "jcr:title.it_it": "Africa",
+    "jcr:title.lt_lt": "Afrika",
+    "jcr:title.nl_nl": "Afrika",
+    "jcr:title.no_no": "Afrika",
+    "jcr:title.pl_pl": "Afryka",
+    "jcr:title.pt_br": "África",
+    "jcr:title.ro_ro": "Africa",
+    "jcr:title.ru_ru": "Африка",
+    "jcr:title.sv_se": "Afrika",
+    "jcr:title.tr_tr": "Afrika",
+    "jcr:title.uk_ua": "Африка",
+    "jcr:title.zh_cn": "非洲",
+    "ma": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Morocco",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:19 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.da_dk": "Marokko",
+      "jcr:title.de_de": "Marokko",
+      "jcr:title.es_mx": "Marruecos",
+      "jcr:title.et_ee": "Maroko",
+      "jcr:title.fi_fi": "Marokko",
+      "jcr:title.lt_lt": "Marokas",
+      "jcr:title.no_no": "Marokko",
+      "jcr:title.sv_se": "Marocko",
+      "jcr:title.uk_ua": "Марокко"
+    },
+    "ke": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Kenya",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:19 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Kenia"
+    },
+    "bw": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Botswana",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:19 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Botswana"
+    },
+    "eg": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Egypt",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:19 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Ägypten"
+    },
+    "et": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ethiopia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:23 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Äthiopien"
+    },
+    "zm": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Zambia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:23 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Sambia"
+    },
+    "tz": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Tanzania",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:23 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Tansania"
+    },
+    "ug": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Uganda",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:23 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Uganda"
+    },
+    "za": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "South Africa",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:23 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Südafrika"
+    },
+    "ng": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Nigeria",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:23 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Nigeria"
+    },
+    "na": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Namibia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:23 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Namibia"
+    },
+    "mu": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Mauritius",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:23 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Mauritius"
+    },
+    "mw": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Malawi",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:23 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Malawi"
+    },
+    "gh": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ghana",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:23 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Ghana"
+    },
+    "re": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Réunion",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:27 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Treffen"
+    },
+    "dz": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Algeria",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:27 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Algerien"
+    },
+    "cm": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cameroon",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:27 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Kamerun"
+    },
+    "ga": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Gabon",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:27 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Gabun"
+    },
+    "mg": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Madagascar",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:27 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Madagaskar"
+    },
+    "ne": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Niger",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:27 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Niger"
+    },
+    "dj": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Djibouti",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:27 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Dschibuti"
+    },
+    "rw": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Rwanda",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:27 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Ruanda"
+    },
+    "tn": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Tunisia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:27 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Tunesien"
+    },
+    "mz": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Mozambique",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:27 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Mosambik"
+    },
+    "sd": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Sudan",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:30 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Sudan"
+    },
+    "sz": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Swaziland",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:30 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Swasiland"
+    },
+    "zw": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Zimbabwe",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:30 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Simbabwe"
+    },
+    "ek": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Equatorial Guinea",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:30 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Äquatorialguinea"
+    },
+    "er": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Eritrea",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:30 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Eritrea"
+    },
+    "gm": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Gambia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:30 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Gambia"
+    },
+    "lt": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Lesotho",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:30 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Lesotho"
+    },
+    "li": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Liberia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:30 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Liberia"
+    },
+    "mr": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Mauritania",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:30 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Mauretanien"
+    },
+    "sh": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Saint Helena",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:30 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Heilige Helena"
+    },
+    "sl": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Sierra Leone",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:34 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Sierra Leone"
+    },
+    "so": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Somalia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:34 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Somalia"
+    },
+    "wi": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Western Sahara",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:34 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Westsahara"
+    },
+    "bn": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Benin",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:34 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Benin"
+    },
+    "uv": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Burkina Faso",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:34 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Burkina Faso"
+    },
+    "by": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Burundi",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:34 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Burundi"
+    },
+    "cf": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Congo - Brazzaville",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:34 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Kongo - Brazzaville"
+    },
+    "cg": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Congo - Kinshasa",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:34 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Kongo - Kinshasa"
+    },
+    "ct": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Central African Republic",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:34 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Zentralafrikanische Republik"
+    },
+    "cd": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Chad",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:34 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Tschad"
+    },
+    "cn": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Comoros",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:38 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Komoren"
+    },
+    "gv": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Guinea",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:38 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Guinea"
+    },
+    "iv": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ivory Coast",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:38 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Elfenbeinküste"
+    },
+    "ml": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Mali",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:38 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Mali"
+    },
+    "sg": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Senegal",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:38 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Senegal"
+    },
+    "to": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Togo",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:38 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Togo"
+    },
+    "cv": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cape Verde Island",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:38 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Kapverdische Insel"
+    },
+    "pu": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Guinea-Bissau",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:38 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Guinea-Bissau"
+    },
+    "tp": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Sao Tome Island",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:38 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Insel Sao Tome"
+    }
+  },
+  "asia": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Asia",
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+    "cq:lastReplicated": "Fri Jan 22 2021 00:53:38 GMT-0500",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title.cs_cz": "Asie",
+    "jcr:title.da_dk": "Asien",
+    "jcr:title.de_de": "Asien",
+    "jcr:title.en_gb": "Asia",
+    "jcr:title.es_mx": "Asia",
+    "jcr:title.et_ee": "Aasia",
+    "jcr:title.fi_fi": "Aasia",
+    "jcr:title.fr_ca": "Asie",
+    "jcr:title.he_il": "אסיה",
+    "jcr:title.hu_hu": "Ázsia",
+    "jcr:title.it_it": "Asia",
+    "jcr:title.lt_lt": "Azija",
+    "jcr:title.nl_nl": "Azië",
+    "jcr:title.no_no": "Asia",
+    "jcr:title.pl_pl": "Azja",
+    "jcr:title.pt_br": "Ásia",
+    "jcr:title.ro_ro": "Asia",
+    "jcr:title.ru_ru": "Азия",
+    "jcr:title.sv_se": "Asien",
+    "jcr:title.tr_tr": "Asya",
+    "jcr:title.uk_ua": "Азія",
+    "jcr:title.zh_cn": "亚洲",
+    "cn": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "China",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:41 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.da_dk": "Kina",
+      "jcr:title.de_de": "China",
+      "jcr:title.es_mx": "China",
+      "jcr:title.et_ee": "Hiina",
+      "jcr:title.fi_fi": "Kiina",
+      "jcr:title.fr_ca": "Chine",
+      "jcr:title.he_il": "סין",
+      "jcr:title.lt_lt": "Kinija",
+      "jcr:title.nl_nl": "China",
+      "jcr:title.no_no": "Kina",
+      "jcr:title.pt_br": "China",
+      "jcr:title.sv_se": "Kina",
+      "jcr:title.uk_ua": "Китай"
+    },
+    "tw": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Taiwan, Province of China",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:41 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.da_dk": "Taiwan, kinesisk provins",
+      "jcr:title.de_de": "Taiwan, Provinz von China",
+      "jcr:title.es_mx": "Taiwán, provincia de China",
+      "jcr:title.et_ee": "Taiwan, Hiina provints",
+      "jcr:title.fi_fi": "Taiwan, Kiinan maakunta",
+      "jcr:title.fr_ca": "Taïwan, Province de Chine",
+      "jcr:title.he_il": "טאיוואן, המחוז של סין",
+      "jcr:title.lt_lt": "Taivanas, Kinijos provincija",
+      "jcr:title.nl_nl": "Taiwan, provincie van China",
+      "jcr:title.no_no": "Taiwan, provins i Kina",
+      "jcr:title.pt_br": "Taiwan, Província da China",
+      "jcr:title.sv_se": "Taiwan, officiellt Republiken Kina",
+      "jcr:title.uk_ua": "Тайвань, провінція Китаю"
+    },
+    "bd": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Bangladesh",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:41 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:04:14 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Bangladesch"
+    },
+    "bt": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Bhutan",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:41 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:04:17 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Bhutan"
+    },
+    "bn": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Brunei Darussalam",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:41 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:04:20 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Brunei Darussalam"
+    },
+    "kh": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cambodia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:41 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:04:23 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Kambodscha"
+    },
+    "hk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Hong Kong",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:41 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:02 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Hongkong"
+    },
+    "in": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "India",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:41 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:04 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Indien"
+    },
+    "id": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Indonesia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:41 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:08 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Indonesien"
+    },
+    "jp": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Japan",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:41 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:11 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Japan"
+    },
+    "kp": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Korea (the Democratic People's Republic of)",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:45 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:19 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Korea (Demokratische Volksrepublik)"
+    },
+    "kr": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Korea (the Republic of)",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:45 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:21 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Korea (die Republik)"
+    },
+    "la": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Lao People's Democratic Republic",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:45 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:23 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Demokratische Volksrepublik Laos"
+    },
+    "mo": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Macao",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:45 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:26 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Macao"
+    },
+    "my": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Malaysia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:45 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:29 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Malaysia"
+    },
+    "mv": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Maldives",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:45 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:32 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Malediven"
+    },
+    "mn": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Mongolia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:45 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:35 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Mongolei"
+    },
+    "mm": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Myanmar",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:45 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:37 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Myanmar"
+    },
+    "np": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Nepal",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:45 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:39 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Nepal"
+    },
+    "pk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Pakistan",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:45 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:41 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Pakistan"
+    },
+    "ph": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Philippines",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:50 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:44 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Philippinen"
+    },
+    "sg": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Singapore",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:50 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:46 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Singapur"
+    },
+    "lk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Sri Lanka",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:50 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:48 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Sri Lanka"
+    },
+    "th": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Thailand",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:50 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:50 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Thailand"
+    },
+    "tl": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Timor-Leste",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:50 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:51 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Timor-Leste"
+    },
+    "vn": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Viet Nam",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:50 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:05:54 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Vietnam"
+    },
+    "kz": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Kazakhstan",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:50 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Kasachstan"
+    },
+    "kg": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Kyrgyzstan",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:50 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Kirgisistan"
+    },
+    "ti": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Tajikistan",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:50 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Tadschikistan"
+    },
+    "tx": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Turkmenistan",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:50 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Turkmenistan"
+    },
+    "uz": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Uzbekistan",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:53 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Usbekistan"
+    }
+  },
+  "latin-america": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Latin America",
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+    "cq:lastReplicated": "Fri Jan 22 2021 00:53:53 GMT-0500",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title.cs_cz": "Latinská Amerika",
+    "jcr:title.da_dk": "Latinamerika",
+    "jcr:title.de_de": "Lateinamerika",
+    "jcr:title.en_gb": "Latin America",
+    "jcr:title.es_mx": "América Latina",
+    "jcr:title.et_ee": "Ladina-Ameerika",
+    "jcr:title.fi_fi": "Latinalainen Amerikka",
+    "jcr:title.fr_ca": "Amérique latine",
+    "jcr:title.he_il": "אמריקה לטינית",
+    "jcr:title.hu_hu": "Latin Amerika",
+    "jcr:title.it_it": "America Latina",
+    "jcr:title.lt_lt": "Lotynų Amerika",
+    "jcr:title.nl_nl": "Latijns-Amerika",
+    "jcr:title.no_no": "Latin-Amerika",
+    "jcr:title.pl_pl": "Ameryka Łacińska",
+    "jcr:title.pt_br": "América Latina",
+    "jcr:title.ro_ro": "America Latină",
+    "jcr:title.ru_ru": "Латинская Америка",
+    "jcr:title.sv_se": "Latinamerika",
+    "jcr:title.tr_tr": "Latin Amerika",
+    "jcr:title.uk_ua": "Латинська Америка",
+    "jcr:title.zh_cn": "拉丁美洲",
+    "mx": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Mexico",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:02 GMT-0400",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.da_dk": "Mexico",
+      "jcr:title.de_de": "Mexiko",
+      "jcr:title.es_mx": "México",
+      "jcr:title.et_ee": "Mehhiko",
+      "jcr:title.fi_fi": "Meksiko",
+      "jcr:title.fr_ca": "Mexique",
+      "jcr:title.he_il": "מקסיקו",
+      "jcr:title.lt_lt": "Meksika",
+      "jcr:title.nl_nl": "Mexico",
+      "jcr:title.no_no": "Mexico",
+      "jcr:title.pt_br": "México",
+      "jcr:title.sv_se": "Mexiko",
+      "jcr:title.uk_ua": "Мексика"
+    },
+    "ai": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Anguilla",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:02 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ag": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Antigua and Barbuda",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:02 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "aw": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Aruba",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:03 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bs": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Bahamas",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:03 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bb": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Barbados",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:04 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bz": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Belize",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:04 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bm": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Bermuda",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:05 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bq": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Bonaire, Sint Eustatius and Saba",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:05 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ky": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cayman Islands",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:05 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cr": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Costa Rica",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:06 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cu": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cuba",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:06 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "cw": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Curaçao",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:07 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "dm": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Dominica",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:07 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "do": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Dominican Republic",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:08 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "sv": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "El Salvador",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:08 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "gd": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Grenada",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:08 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "gp": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Guadeloupe",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:09 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "gt": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Guatemala",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:09 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ht": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Haiti",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:10 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "hn": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Honduras",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:10 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "jm": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Jamaica",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:13 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "mq": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Martinique",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:13 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ms": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Montserrat",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:14 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "ni": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Nicaragua",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:14 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "pa": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Panama",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:15 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "pr": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Puerto Rico",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:15 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "bl": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Saint Barthélemy",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:16 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "kn": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Saint Kitts and Nevis",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:16 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "lc": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Saint Lucia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:17 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "mf": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Saint Martin (French part)",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:17 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "vc": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Saint Vincent and the Grenadines",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:18 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "sx": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Sint Maarten (Dutch part)",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:18 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "tt": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Trinidad and Tobago",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:19 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "tc": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Turks and Caicos Islands",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:19 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "vg": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Virgin Islands (British)",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:19 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    },
+    "vi": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Virgin Islands (U.S.)",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "e0063964",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Thu Apr 22 2021 10:26:20 GMT-0400",
+      "sling:resourceType": "cq/tagging/components/tag"
+    }
+  },
+  "middle-east": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Middle East",
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+    "cq:lastReplicated": "Fri Jan 22 2021 00:53:53 GMT-0500",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title.cs_cz": "Blízký Východ",
+    "jcr:title.da_dk": "Mellemøsten",
+    "jcr:title.de_de": "Naher Osten",
+    "jcr:title.en_gb": "Middle East",
+    "jcr:title.es_mx": "Medio Oriente",
+    "jcr:title.et_ee": "Lähis-Ida",
+    "jcr:title.fi_fi": "Lähi-itä",
+    "jcr:title.fr_ca": "Moyen-Orient",
+    "jcr:title.he_il": "המזרח התיכון",
+    "jcr:title.hu_hu": "Közel-Kelet",
+    "jcr:title.it_it": "Medio Oriente",
+    "jcr:title.lt_lt": "Artimieji Rytai",
+    "jcr:title.nl_nl": "Midden-Oosten",
+    "jcr:title.no_no": "Midtøsten",
+    "jcr:title.pl_pl": "Bliski Wschód",
+    "jcr:title.pt_br": "Oriente Médio",
+    "jcr:title.ro_ro": "Orientul Mijlociu",
+    "jcr:title.ru_ru": "Ближний Восток",
+    "jcr:title.sv_se": "Mellanöstern",
+    "jcr:title.tr_tr": "Orta Doğu",
+    "jcr:title.uk_ua": "Близький Схід",
+    "jcr:title.zh_cn": "中东",
+    "sa": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Saudi Arabia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:53 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Saudi-Arabien"
+    },
+    "ae": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "United Arab Emirates",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:53 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Vereinigte Arabische Emirate"
+    },
+    "bh": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Bahrain",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:53 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Bahrain"
+    },
+    "jo": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Jordan",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:53 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Jordanien"
+    },
+    "kw": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Kuwait",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:53 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Kuwait"
+    },
+    "lb": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Lebanon",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:53 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Libanon"
+    },
+    "om": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Oman",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:57 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Oman"
+    },
+    "qa": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Qatar",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:57 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Katar"
+    },
+    "ye": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Yemen",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:57 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Jemen"
+    }
+  },
+  "oceania": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Oceania",
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+    "cq:lastReplicated": "Fri Jan 22 2021 00:53:57 GMT-0500",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title.cs_cz": "Oceánie",
+    "jcr:title.da_dk": "Oceanien",
+    "jcr:title.de_de": "Ozeanien",
+    "jcr:title.en_gb": "Oceania",
+    "jcr:title.es_mx": "Oceanía",
+    "jcr:title.et_ee": "Okeaania",
+    "jcr:title.fi_fi": "Oseania",
+    "jcr:title.fr_ca": "Océanie",
+    "jcr:title.he_il": "איי האוקיינוס השקט",
+    "jcr:title.hu_hu": "Ausztrália és Óceánia",
+    "jcr:title.it_it": "Oceania",
+    "jcr:title.lt_lt": "Okeanija",
+    "jcr:title.nl_nl": "Oceanië",
+    "jcr:title.no_no": "Oseania",
+    "jcr:title.pl_pl": "Oceania",
+    "jcr:title.pt_br": "Oceania",
+    "jcr:title.ro_ro": "Oceania",
+    "jcr:title.ru_ru": "Океания",
+    "jcr:title.sv_se": "Oceanien",
+    "jcr:title.tr_tr": "Okyanusya",
+    "jcr:title.uk_ua": "Oceania",
+    "jcr:title.zh_cn": "大洋洲",
+    "au": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Australia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:57 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Australien"
+    },
+    "nz": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "New Zealand",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:57 GMT-0500",
+      "jcr:description": "",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Neuseeland"
+    },
+    "as": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "American Samoa",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:57 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:55:06 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Amerikanisch-Samoa"
+    },
+    "ck": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Cook Islands",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:57 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:55:39 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Cook-Inseln"
+    },
+    "fj": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Fiji",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:57 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:55:42 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Fidschi"
+    },
+    "pf": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "French Polynesia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:53:57 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:55:49 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Französisch-Polynesien"
+    },
+    "gu": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Guam",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:01 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:55:51 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Guam"
+    },
+    "ki": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Kiribati",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:01 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:55:54 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Kiribati"
+    },
+    "mh": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Marshall Islands",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:01 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:55:57 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Marshall-Inseln"
+    },
+    "fm": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Micronesia (Federated States of)",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:01 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:00 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Mikronesien (Föderierte Staaten von)"
+    },
+    "nr": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Nauru",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:01 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:10 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Nauru"
+    },
+    "nc": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "New Caledonia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:01 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:13 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Neukaledonien"
+    },
+    "nu": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Niue",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:01 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:16 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Niue"
+    },
+    "nf": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Norfolk Island",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:01 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:18 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Norfolkinsel"
+    },
+    "mp": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Northern Mariana Islands",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:01 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:21 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Nördliche Marianen-Inseln"
+    },
+    "pw": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Palau",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:01 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:24 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Palau"
+    },
+    "pg": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Papua New Guinea",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:05 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:27 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Papua-Neuguinea"
+    },
+    "pn": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Pitcairn",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:05 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:30 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Pitcairn"
+    },
+    "ws": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Samoa",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:05 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:32 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Samoa"
+    },
+    "sb": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Solomon Islands",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:05 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:35 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Salomon-Inseln"
+    },
+    "tk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Tokelau",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:05 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:37 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Tokelau"
+    },
+    "to": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Tonga",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:05 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:40 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Tonga"
+    },
+    "tv": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Tuvalu",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:05 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:44 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Tuvalu"
+    },
+    "vu": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Vanuatu",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:05 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:47 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Vanuatu"
+    },
+    "wf": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Wallis and Futuna",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:05 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 15:56:49 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Wallis und Futuna"
+    }
+  },
+  "south-america": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:mixinTypes": [
+      "cq:ReplicationStatus"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "South America",
+    "cq:lastReplicationAction": "Activate",
+    "cq:lastReplicatedBy": "admin",
+    "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+    "cq:lastReplicated": "Fri Jan 22 2021 00:54:05 GMT-0500",
+    "jcr:description": "",
+    "sling:resourceType": "cq/tagging/components/tag",
+    "jcr:title.cs_cz": "Jižní Amerika",
+    "jcr:title.da_dk": "Sydamerika",
+    "jcr:title.de_de": "Südamerika",
+    "jcr:title.en_gb": "South America",
+    "jcr:title.es_mx": "América del Sur",
+    "jcr:title.et_ee": "Lõuna-Ameerika",
+    "jcr:title.fi_fi": "Etelä-Amerikka",
+    "jcr:title.fr_ca": "Amérique du Sud",
+    "jcr:title.he_il": "דרום אמריקה",
+    "jcr:title.hu_hu": "Dél-Amerika",
+    "jcr:title.it_it": "Sud America",
+    "jcr:title.lt_lt": "Pietų Amerika",
+    "jcr:title.nl_nl": "Zuid-Amerika",
+    "jcr:title.no_no": "Sør-Amerika",
+    "jcr:title.pl_pl": "Ameryka Południowa",
+    "jcr:title.pt_br": "América do Sul",
+    "jcr:title.ro_ro": "America de Sud",
+    "jcr:title.ru_ru": "Южная Америка",
+    "jcr:title.sv_se": "Sydamerika",
+    "jcr:title.tr_tr": "Güney Amerika",
+    "jcr:title.uk_ua": "Південна Америка",
+    "jcr:title.zh_cn": "南美洲",
+    "ar": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Argentina",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:09 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:00:59 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Argentinien"
+    },
+    "br": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Brazil",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:09 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:01:05 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Brasilien"
+    },
+    "bo": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Bolivia (Plurinational State of)",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:09 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:01:06 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Bolivien (Plurinationaler Staat)"
+    },
+    "cl": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Chile",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:09 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:01:10 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Chile"
+    },
+    "co": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Colombia",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:09 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:01:12 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Kolumbien"
+    },
+    "ec": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Ecuador",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:09 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:01:14 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Ecuador"
+    },
+    "fk": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Falkland Islands [Malvinas]",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:09 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:01:17 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Falkland-Inseln [Malwinen]"
+    },
+    "gf": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "French Guiana",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:09 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:01:19 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Französisch-Guayana"
+    },
+    "gy": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Guyana",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:09 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:01:21 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Guyana"
+    },
+    "py": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Paraguay",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:09 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:01:24 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Paraguay"
+    },
+    "pe": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Peru",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:13 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:01:26 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Peru"
+    },
+    "sr": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Suriname",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:13 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:01:30 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Surinam"
+    },
+    "uy": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Uruguay",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:13 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:01:32 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Uruguay"
+    },
+    "ve": {
+      "jcr:primaryType": "cq:Tag",
+      "jcr:mixinTypes": [
+        "cq:ReplicationStatus"
+      ],
+      "jcr:createdBy": "admin",
+      "jcr:title": "Venezuela (Bolivarian Republic of)",
+      "cq:lastReplicationAction": "Activate",
+      "cq:lastReplicatedBy": "admin",
+      "jcr:lastModifiedBy": "e9814292",
+      "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+      "cq:lastReplicated": "Fri Jan 22 2021 00:54:13 GMT-0500",
+      "jcr:lastModified": "Tue Jan 22 2019 16:01:35 GMT-0500",
+      "sling:resourceType": "cq/tagging/components/tag",
+      "jcr:title.de_de": "Venezuela (Bolivarische Republik)"
+    }
+  },
+  "global": {
+    "jcr:primaryType": "cq:Tag",
+    "jcr:createdBy": "admin",
+    "jcr:title": "Global",
+    "jcr:created": "Tue Feb 28 2023 21:29:59 GMT-0500",
+    "jcr:description": "Used for assets that are intended to be displayed anywhere in the world.",
+    "sling:resourceType": "cq/tagging/components/tag"
+  }
+}

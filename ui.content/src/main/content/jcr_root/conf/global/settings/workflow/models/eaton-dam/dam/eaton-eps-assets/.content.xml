@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:designPath="/libs/settings/wcm/designs/default"
+        cq:lastModified="{Date}2022-03-18T11:11:57.166-05:00"
+        cq:lastModifiedBy="admin"
+        cq:template="/libs/cq/workflow/templates/model"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Eaton EPS Assets"
+        sling:resourceType="cq/workflow/components/pages/model">
+        <flow
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <process
+                jcr:created="{Date}2022-03-17T15:04:49.657-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-03-17T15:51:39.546-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Density Decider"
+                sling:resourceType="cq/workflow/components/model/process">
+                <metaData
+                    jcr:primaryType="nt:unstructured"
+                    PROCESS="com.eaton.platform.core.workflows.EPSDensityDecider"
+                    PROCESS_AUTO_ADVANCE="true"/>
+            </process>
+            <or
+                jcr:created="{Date}2022-03-17T14:52:59.759-05:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2022-03-17T16:23:22.646-05:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="1000 Density EPS, 300 Density EPS, or Skip EPS?"
+                sling:resourceType="cq/workflow/components/model/or"
+                branches="3"
+                branchName1="1000 Density EPS Branch"
+                branchName2="300 Density EPS Branch"
+                branchName3="Skip EPS Branch"
+                branchOrder="[0,1,2]"
+                default1="true"
+                orSplit="true"
+                script1="function check() {&#xd;&#xa;    var value = false;&#xd;&#xa;    var densityDecision = &quot;DENSITY_DECISION&quot;;&#xd;&#xa;    try {&#xd;&#xa;        log.debug(&quot;---------- Executing: Inline Ecma Script for 1000 Density EPS Branch ----------&quot;);&#xd;&#xa;        var metaData = workflowData.getMetaDataMap();&#xd;&#xa;        var mdIter = metaData.keySet().iterator();&#xd;&#xa;&#xd;&#xa;        while (mdIter.hasNext()) {&#xd;&#xa;            var key = mdIter.next();&#xd;&#xa;            log.debug(&quot;Key: &quot; + key + &quot;\\tValue: &quot; + metaData.get(key));&#xd;&#xa;        }//while&#xd;&#xa;&#xd;&#xa;        log.debug(&quot;-----&quot;);&#xd;&#xa;&#xd;&#xa;        if (metaData.get(densityDecision) == &quot;1000&quot;) {&#xd;&#xa;            log.debug(&quot;Value was set to 'true'&quot;);&#xd;&#xa;            value = true;&#xd;&#xa;        }//if&#xd;&#xa;&#xd;&#xa;        log.debug(&quot;-----&quot;);&#xd;&#xa;    }//try&#xd;&#xa;    catch (e) {&#xd;&#xa;        log.error(&quot;Error!\\n&quot; + e.message);&#xd;&#xa;    }//catch&#xd;&#xa;&#xd;&#xa;    if (value == true) {&#xd;&#xa;        log.debug(&quot;The asset should use the 1000 Density EPS branch.&quot;);&#xd;&#xa;    } else {&#xd;&#xa;        log.debug(&quot;The asset should not use the 1000 Density EPS branch.&quot;);&#xd;&#xa;    }&#xd;&#xa;    &#xd;&#xa;    log.debug(&quot;--------------------&quot;);&#xd;&#xa;    &#xd;&#xa;    return value;&#xd;&#xa;}"
+                script2="function check() {&#xd;&#xa;    var value = false;&#xd;&#xa;    var densityDecision = &quot;DENSITY_DECISION&quot;;&#xd;&#xa;    try {&#xd;&#xa;        log.debug(&quot;---------- Executing: Inline Ecma Script for 300 Density EPS Branch ----------&quot;);&#xd;&#xa;        var metaData = workflowData.getMetaDataMap();&#xd;&#xa;        var mdIter = metaData.keySet().iterator();&#xd;&#xa;&#xd;&#xa;        while (mdIter.hasNext()) {&#xd;&#xa;            var key = mdIter.next();&#xd;&#xa;            log.debug(&quot;Key: &quot; + key + &quot;\\tValue: &quot; + metaData.get(key));&#xd;&#xa;        }//while&#xd;&#xa;&#xd;&#xa;        log.debug(&quot;-----&quot;);&#xd;&#xa;&#xd;&#xa;        if (metaData.get(densityDecision) == &quot;300&quot;) {&#xd;&#xa;            log.debug(&quot;Value was set to 'true'&quot;);&#xd;&#xa;            value = true;&#xd;&#xa;        }//if&#xd;&#xa;&#xd;&#xa;        log.debug(&quot;-----&quot;);&#xd;&#xa;    }//try&#xd;&#xa;    catch (e) {&#xd;&#xa;        log.error(&quot;Error!\\n&quot; + e.message);&#xd;&#xa;    }//catch&#xd;&#xa;&#xd;&#xa;    if (value == true) {&#xd;&#xa;        log.debug(&quot;The asset should use the 300 Density EPS branch.&quot;);&#xd;&#xa;    } else {&#xd;&#xa;        log.debug(&quot;The asset should not use the 300 Density EPS branch.&quot;);&#xd;&#xa;    }&#xd;&#xa;    &#xd;&#xa;    log.debug(&quot;--------------------&quot;);&#xd;&#xa;    &#xd;&#xa;    return value;&#xd;&#xa;}"
+                script3="function check() {&#xd;&#xa;return true; }">
+                <_x0031_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <noopprocess
+                        jcr:created="{Date}2022-03-17T14:54:30.379-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="A no operation process"
+                        jcr:lastModified="{Date}2022-03-17T14:54:47.510-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="1000 Density EPS"
+                        sling:resourceType="cq/workflow/components/workflow/noopprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="/libs/workflow/scripts/noop.ecma"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </noopprocess>
+                    <commandlineprocess
+                        jcr:created="{Date}2022-03-17T14:55:14.183-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Generate renditions for eps files using image magick."
+                        jcr:lastModified="{Date}2022-03-18T11:10:16.854-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Generate 1000 Density Vector EPS Renditions"
+                        sling:resourceType="dam/components/workflow/commandlineprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            COMMANDS="[convert -density 1000x1000 -define jpeg:size=580x580 ${filename}[0] -colorspace CMYK -resize 580x580 -flatten cq5dam.thumbnail.580.580.jpg,convert -density 1000x1000 -define jpeg:size=2400x2400 ${filename}[0] -colorspace CMYK -resize 2400x2400 -gravity center -extent 2400x2400 -flatten cq5dam.thumbnail.2400.2400.jpg,convert -density 1000x1000 -define jpeg:size=300x300 ${filename}[0] -colorspace CMYK -resize 300x300 -flatten cq5dam.thumbnail.300.300.jpg,convert -density 1000x1000 -define jpeg:size=60x60 ${filename}[0] -colorspace CMYK -resize 60x60 -flatten cq5dam.thumbnail.60.60.jpg,convert -density 1000x1000 -define jpeg:size=25x25 ${filename}[0] -colorspace CMYK -resize 25x25 -flatten cq5dam.thumbnail.25.25.jpg,convert -density 1000x1000 -define jpeg:size=96x96 ${filename}[0] -colorspace CMYK -resize 96x96 -flatten cq5dam.thumbnail.96.96.jpg,convert -density 1000x1000 -define jpeg:size=600x600 ${filename}[0] -colorspace CMYK -resize 600x600 -flatten cq5dam.thumbnail.600.600.tif]"
+                            MIME_TYPES="[image/eps,image/x-eps,application/postscript,application/eps,application/x-eps]"
+                            PROCESS="com.day.cq.dam.core.process.CommandLineProcess"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </commandlineprocess>
+                </_x0031_>
+                <_x0032_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <noopprocess
+                        jcr:created="{Date}2022-03-17T14:54:32.297-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="A no operation process"
+                        jcr:lastModified="{Date}2022-03-17T14:54:55.881-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="300 Density EPS"
+                        sling:resourceType="cq/workflow/components/workflow/noopprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="/libs/workflow/scripts/noop.ecma"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </noopprocess>
+                    <commandlineprocess
+                        jcr:created="{Date}2022-03-17T14:55:16.200-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="Generate renditions for eps files using image magick."
+                        jcr:lastModified="{Date}2022-03-18T11:11:03.795-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Generate 300 Density Vector EPS Renditions"
+                        sling:resourceType="dam/components/workflow/commandlineprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            COMMANDS="[convert -density 300x300 -define jpeg:size=580x580 ${filename}[0] -colorspace CMYK -resize 580x580 -flatten cq5dam.thumbnail.580.580.jpg,convert -density 300x300 -define jpeg:size=2400x2400 ${filename}[0] -colorspace CMYK -resize 2400x2400 -gravity center -extent 2400x2400 -flatten cq5dam.thumbnail.2400.2400.jpg,convert -density 300x300 -define jpeg:size=300x300 ${filename}[0] -colorspace CMYK -resize 300x300 -flatten cq5dam.thumbnail.300.300.jpg,convert -density 300x300 -define jpeg:size=60x60 ${filename}[0] -colorspace CMYK -resize 60x60 -flatten cq5dam.thumbnail.60.60.jpg,convert -density 300x300 -define jpeg:size=25x25 ${filename}[0] -colorspace CMYK -resize 25x25 -flatten cq5dam.thumbnail.25.25.jpg,convert -density 300x300 -define jpeg:size=96x96 ${filename}[0] -colorspace CMYK -resize 96x96 -flatten cq5dam.thumbnail.96.96.jpg,convert -density 300x300 -define jpeg:size=600x600 ${filename}[0] -colorspace CMYK -resize 600x600 -flatten cq5dam.thumbnail.600.600.tif]"
+                            MIME_TYPES="[image/eps,image/x-eps,application/postscript,application/eps,application/x-eps]"
+                            PROCESS="com.day.cq.dam.core.process.CommandLineProcess"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </commandlineprocess>
+                </_x0032_>
+                <_x0033_
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/flow/components/parsys">
+                    <noopprocess
+                        jcr:created="{Date}2022-03-17T14:54:35.860-05:00"
+                        jcr:createdBy="admin"
+                        jcr:description="A no operation process"
+                        jcr:lastModified="{Date}2022-03-18T11:11:57.166-05:00"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Skip EPS Custom Renditions"
+                        sling:resourceType="cq/workflow/components/workflow/noopprocess">
+                        <metaData
+                            jcr:primaryType="nt:unstructured"
+                            PROCESS="/libs/workflow/scripts/noop.ecma"
+                            PROCESS_AUTO_ADVANCE="true"/>
+                    </noopprocess>
+                </_x0033_>
+            </or>
+        </flow>
+        <image jcr:primaryType="nt:unstructured">
+            <file/>
+        </image>
+    </jcr:content>
+</jcr:root>

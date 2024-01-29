@@ -1,0 +1,141 @@
+<template data-sly-template.module="${ @ data }">
+    <div class="faceted-navigation-header">
+        <div class="faceted-navigation-header__header-top faceted-navigation-header__mobile-view" data-sortable="true">
+            <div class="faceted-navigation-header__results-count">
+                <!--/* result count should be added based on the number of results*/-->
+                <span class="result-count" id="final-result"></span>
+                ${data.facetedHeaderNavigationResultBean.results}
+            </div>
+            <a rel="nofollow" target="_self" role="button" data-redirect-link=""
+                class="filterNone faceted-navigation-header__action-link faceted-navigation-header__action-link--clear-filters faceted-navigation-header__action-link--clear-filters--desktop">
+                ${ data.facetedHeaderNavigationResultBean.clearFilters }
+            </a>
+
+            <div class="result-view" id="btnContainer"
+                data-sly-test="${data.enableGridListView == 'true' && data.viewType == 'list'}">
+                <button class="btn" id="gridbtn"><img
+                        src="/etc.clientlibs/eaton/settings/wcm/designs/clientlib/clientlib-all/resources/images/grid-view-icon-grey.png">
+                    <p>${ data.gridViewText }</p>
+                </button>
+                <button class="btn" id="listbtn"><img
+                        src="/etc.clientlibs/eaton/settings/wcm/designs/clientlib/clientlib-all/resources/images/list-view-icon-blue.png">
+                    <p>${ data.listViewText }</p>
+                </button>
+            </div>
+            <div class="result-view" id="btnContainer"
+                data-sly-test="${data.enableGridListView == 'true' && data.viewType == 'grid'}">
+                <button class="btn" id="gridbtn"><img
+                        src="/etc.clientlibs/eaton/settings/wcm/designs/clientlib/clientlib-all/resources/images/grid-view-icon-blue.png">
+                    <p>${ data.gridViewText }</p>
+                </button>
+                <button class="btn" id="listbtn"><img
+                        src="/etc.clientlibs/eaton/settings/wcm/designs/clientlib/clientlib-all/resources/images/list-view-icon-grey.png">
+                    <p>${ data.listViewText }</p>
+                </button>
+            </div>
+
+
+            <div class="faceted-navigation-header__title doc-sort-title-mobile-view doc-sort">${ 'ProductGrid.sortBy' @
+                i18n} </div>
+            <div class="faceted-navigation-header__sort-options">
+                <div class="dropdown">
+                    <button id="dSortFacets" class="" type="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        <div class="faceted-navigation-header__default">
+                            <span class="faceted-navigation-header__default--option"
+                                data-default-sorting-title="${data.defaultSortingOption}"
+                                data-default-fallback="${ 'ProductGrid.sortBy' @ i18n}"><span
+                                    class="faceted-navigation-header__sort-link">${data.defaultSortingOption}</span></span>
+                            <i class="icon icon-chevron-down" aria-hidden="true"></i>
+                        </div>
+                    </button>
+                    <ul class="dropdown-menu " aria-labelledby="dSortFacets"
+                        data-sly-list="${ data.facetedHeaderNavigationResultBean.sortList }">
+                        <li>
+                            <a class="faceted-navigation-header__sort-link select-sorting" rel="nofollow"
+                                data-value="${item.value}"
+                                aria-label="${data.facetedHeaderNavigationResultBean.goTo} ${item.label}"
+                                id="${item.label}">
+                                ${item.label}
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <select class="native-select" data-sly-list="${ data.facetedHeaderNavigationResultBean.sortList }">
+                    <option value="${item.value}">${item.label}</option>
+                </select>
+            </div>
+        </div>
+
+        <!--/* Active filter values should be displayed here on select of each filter */-->
+        <div class="faceted-navigation-header__container">
+            <button id="secure-filter" data-toggle-modal-facet=""
+                class="open-facets-mobile b-button b-button__primary b-button__primary--light" role="button">${ '{0}' @
+                i18n, format=[ data.facetedHeaderNavigationResultBean.filters ] }</button>
+        </div>
+
+        <!--/* download limit exceeded popup start */-->
+        <div id="maxlimit-exceed" class=" submittal-builder__modal overlay hidden" data-title="Download">
+            <div class=" submittal-builder__modal__inner-content">
+                <h3 class="submittal-builder__modal__header">${ data.downloadText}</h3>
+                <button aria-label="Close" class="button--reset submittal-builder__modal__close">
+                    <span class="sr-only">Close Download</span>
+                    <i id="maxlimit-close" class="icon icon-close" aria-hidden="true"></i>
+                </button>
+
+                <div class="eaton-form submittal-builder__download__form ">
+                    <p class="submittal-builder__download__preferred-option">${ data.downloadLimitExceededText}</p>
+                </div>
+            </div>
+        </div>
+        <!--/* download limit exceeded popup start */-->
+
+        <!--/* Floating button start */-->
+        <div class="submittal-builder__floating-button__container">
+            <button data-analytics-name="document-search-floating-buttons-download" disabled
+                class="button--reset submittal-builder__floating-button submittal-builder__download-button floating-document-download"
+                style="display: none;">
+                <i class="icon icon-download submittal-builder__floating-button__icon" aria-hidden="true"></i>
+            </button>
+            <button data-analytics-name="document-search-view-package" disabled
+                class="button--reset submittal-builder__floating-button submittal-builder__preview-button floating-document-count"
+                style="display: none;">
+                <span class="submittal-builder__preview-button__document-count ">0</span>
+                <i class="icon icon-folder submittal-builder__floating-button__icon" aria-hidden="true"></i>
+            </button>
+            <button class="back-to-top button--reset" data-scroll-to="body">
+                <span class="sr-only">${ 'Back to top of the page' @ i18n }</span>
+                <i class="icon icon-chevron-up" aria-hidden="true"></i>
+            </button>
+        </div>
+        <!--/* Floating button end */-->
+
+        <!--/* Track download start*/-->
+        <div id="track-exceed" class="submittal-builder__modal overlay hide" data-title="Download">
+            <div class=" submittal-builder__modal__inner-content">
+                <h3 class="submittal-builder__modal__header">${'downloadTracking' @ i18n}</h3>
+
+                <div class="eaton-form submittal-builder__download__form ">
+                    <p class="submittal-builder__download__preferred-option">${'trackingCapability' @ i18n}</p>
+                </div>
+
+                <div class="eaton-form track-download">
+                    <div class="cta-default ">
+                        <a class="b-button b-button__primary b-button__primary--primary-branding-color-reversed track-download okay-track"
+                            role="button">${'okayButton' @ i18n}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/* Track download end* /-->
+
+    </div>
+
+    <div class="bulk-download adv-bulk-download" id="bulkDownload" data-sly-test="${data.enableBulkDownload == 'true'}"
+        data-cache-duration="${data.downloadCacheDuration}" data-zip-size-limit="${data.maxAllowedDownloadSize}"
+        data-file-name-prefix="${data.fileNamePrefix}">
+        <a rel="nofollow" role="button" id="bulkDownload-link"> <i class="icon icon-download" aria-hidden="true"></i>${
+            data.bulkDownloadText }
+            <span id="selecteddownload"></span></a>
+    </div>
+</template>

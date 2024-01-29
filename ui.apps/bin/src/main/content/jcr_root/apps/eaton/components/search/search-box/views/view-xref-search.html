@@ -1,0 +1,46 @@
+<sly data-sly-use.data="com.eaton.platform.core.models.SearchSlingModel">
+		<div class="eaton-search eaton-search--default eaton-search--xref">
+			 <div class="container">
+				 	<div class="loader">
+					 	<div class="loader__loader-circle"></div>
+				 	</div>
+					<div class="row">
+						 <!--/* Search Form */-->
+						 <form id="xref-search-form" class="col-xs-12 eaton-search__form eaton-search--default__form" 
+						 autocomplete="off"
+               			 target=""
+               			 onSubmit="event.preventDefault();">
+								<div class="form-group">
+									 <label for="xref-search-box" class="sr-only">${data.searchModel.transSearchHeader}</label>
+
+									 <sly data-sly-test="${data.isSearchTermPresent}">
+										 <textarea rows="1" name="search-term" id="xref-search-box"
+												class="form-control eaton-search--default__form-input"
+												placeholder="${data.searchTerm}"
+												required="true">${data.searchTerm}</textarea>
+									 </sly>
+
+									 <sly data-sly-test="${!data.isSearchTermPresent}">
+									 <textarea rows="1" name="search-term" id="xref-search-box"
+											class="form-control eaton-search--default__form-input"
+											placeholder="${data.searchModel.transFieldAid}"
+											required="required"></textarea>
+									 </sly>
+
+									 <!--/* Mobile Search Form */-->
+									 <div data-sly-test="false"
+											class="eaton-search--default__form-external">
+											<span class="sr-only">Submit form in new Tab</span> <i
+												 class="icon icon-link-external" aria-hidden="true"></i>
+									 </div>
+
+									 <button type="submit" class="button--reset eaton-search__submit eaton-search--default__form-submit xref-search">
+										 <span class="sr-only">${data.searchModel.submitLabel}</span> <i
+												 class="icon icon-search" aria-hidden="false"></i>
+									 </button>
+								</div>
+						 </form>
+					</div>
+			 </div>
+		</div>
+ </sly>

@@ -1,0 +1,55 @@
+<div class="modal fade prod-sold" id="prod-sold" role="dialog">
+  <div class="modal-dialog datasheet-dispatch__models-popup-innerdiv">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-popup" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+
+        <div class="bell-icon">
+          <span><img src='/content/dam/eaton/resources/icons/bell.png' class='datasheet_icon' alt=''></span>
+        </div>
+
+        <h2>${'ProductsNotTitle' @i18n}</h2>
+        <p>${'ProductsNotDiscp' @i18n}</p>
+        <p>${'PurchaseSept' @i18n}</p>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="b-button b-button__tertiary b-button__tertiary--light"
+          data-dismiss="modal">${'KeepMycart' @i18n}</button>
+        <button type="button" class="b-button b-button__primary b-button__primary--light" data-dismiss="modal"
+          id="newcart">${'CreateNewCart' @i18n}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- same product poup -->
+
+<div class="modal fade prod-sold" id="same-prod" role="dialog">
+  <div class="modal-dialog datasheet-dispatch__models-popup-innerdiv">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close close-popup" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+
+        <div class="bell-icon">
+          <span><img src='/content/dam/eaton/resources/icons/bell.png' class='datasheet_icon' alt=''></span>
+        </div>
+
+        <h2>${'itemAdded' @i18n}</h2>
+
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="b-button b-button__tertiary b-button__tertiary--light"
+          data-dismiss="modal">${'okayButton' @i18n}</button>
+      </div>
+    </div>
+  </div>
+</div>

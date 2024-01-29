@@ -1,0 +1,68 @@
+//-----------------------------------
+// What's New Component
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions etc...)
+@import "../../../global/css/_config/sass";
+
+.whatsnew {
+  .accordion {
+    margin-bottom: rem($spacing__sm);
+
+    .panel {
+      border-bottom: rem($base__font-size * 0.1) solid $color__secondary-gray4 !important; // stylelint-disable declaration-no-important
+      margin-bottom: 0;
+      padding: rem($spacing__sm * 0.5) 0;
+
+      &__header {
+        background-color: transparent;
+      }
+
+      &__header__icon {
+        color: $color__primary-blue;
+        font-size: rem($base__font-size * 1.4);
+      }
+
+      &__header__title {
+        color: $color__primary-gray1;
+
+        h2 {
+          font-size: rem($base__font-size * 2.2);
+        }
+      }
+
+      &__body {
+        padding: 0;
+
+        .download-list__download-links,
+        .download-list__download-item:last-child {
+          padding-bottom: 0;
+          margin-bottom: 0;
+        }
+      }
+
+      .download-list__description {
+        padding: rem($spacing__sm * 0.5) 0;
+      }
+
+      .icon-secure-lock {
+        color: $color__accent-orange;
+        font-size: rem($base__font-size * 1.8);
+        margin-right: rem($spacing__sm * .1);
+      }
+    }
+  }
+
+  .eaton-divider {
+    margin-bottom: 0;
+  }
+
+  &__title-container {
+    .loader {
+      &__loader-circle {
+        width: 2em;
+        height: 2em;
+      }
+    }
+  }
+}

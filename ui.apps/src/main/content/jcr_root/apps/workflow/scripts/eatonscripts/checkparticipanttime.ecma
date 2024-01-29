@@ -1,0 +1,33 @@
+
+function check() {
+var dueDate = workflowData.getMetaDataMap().get("absoluteTime", Packages.java.util.Date);
+log.info("************************************ "+dueDate);
+
+var currentDate = new Date();
+log.info("************************************currentDate "+currentDate);
+var strCurrentDate = currentDate.toString();
+    strCurrentDate = strCurrentDate.substring(0,strCurrentDate.lastIndexOf(":"));
+
+
+var splitDueDate = dueDate.toString().split(" ");
+
+    log.info("%%%%%SPLIT "+splitDueDate);
+    var hourseMin = splitDueDate[3];
+    hourseMin = hourseMin.substring(0,hourseMin.lastIndexOf(":"));
+    var strDueDate =  splitDueDate[0]+" "+splitDueDate[1]+" "+splitDueDate[2]+" "+splitDueDate[5]+" "+hourseMin;
+    var dueDateCompare = new Date(strDueDate);
+
+log.info("******** "+dueDateCompare +" &&&&&&&&&&&&&&&&&& "+new Date(strCurrentDate));
+
+if(new Date(strCurrentDate).getTime() === dueDateCompare.getTime()){
+    log.info("@@@@@@@@@@@@@@@@@ TRUE");
+return true;
+}else if(new Date(strCurrentDate).getTime() > dueDateCompare.getTime()){
+     log.info("****************** TRUE");
+return true;
+}else{
+     log.info("@@@@@@@@@@@@@@@@@ FALSE");
+return false;
+}
+}
+

@@ -1,0 +1,130 @@
+{
+  "jcr:primaryType":"cq:Page",
+  "jcr:createdBy":"admin",
+  "jcr:created":"Mon Apr 03 2023 09:40:28 GMT-0400",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:mixinTypes": [
+      "mix:versionable"
+    ],
+    "jcr:createdBy": "admin",
+    "jcr:title": "Wiring devices resource library",
+    "cq:lastReplicationAction": "Activate",
+    "jcr:versionHistory": "685f63bd-17c7-4aeb-b87d-90a649c61089",
+    "cq:template": "/conf/eaton/settings/wcm/templates/generic-page",
+    "cq:lastReplicatedBy": "e0063964",
+    "jcr:lastModifiedBy": "e0078808",
+    "priority": "0.0",
+    "msmcomponent": "/content/eaton/us/en-us/locate/electrical/library/jcr:content/root/responsivegrid/advanced_search_1048493118",
+    "jcr:predecessors": [
+      "6857bc1d-5240-4b16-90cd-e652245dde03"
+    ],
+    "cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+    "jcr:created": "Mon Apr 03 2023 09:40:28 GMT-0400",
+    "cq:lastReplicated": "Wed Dec 14 2022 08:45:55 GMT-0500",
+    "cq:lastModified": "Wed Dec 14 2022 08:45:47 GMT-0500",
+    "view": "generic",
+    "meta-robot-tags": "noindex,nofollow",
+    "jcr:baseVersion": "6857bc1d-5240-4b16-90cd-e652245dde03",
+    "jcr:isCheckedOut": true,
+    "primary-sub-category-tag": [
+      "eaton:eaton-brand/industry/RWDD-wiring-devices"
+    ],
+    "hideInNav": "true",
+    "page-type": "generic-page",
+    "jcr:lastModified": "Mon Oct 23 2017 19:29:19 GMT-0400",
+    "jcr:uuid": "eab870a1-05bd-4cf6-89a1-6c2bbc54feac",
+    "sling:resourceType": "eaton/components/structure/eaton-edit-template-page",
+    "cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+    "cq:allowedTemplates": [
+      "/conf/eaton/settings/wcm/templates/generic-page",
+      "/conf/eaton/settings/wcm/templates/article-page"
+    ],
+    "textIsRich": "true",
+    "cq:lastModifiedBy": "e0063964",
+    "changefrequency": "always",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "sling:resourceType": "wcm/foundation/components/responsivegrid",
+      "header": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "c3037550",
+        "jcr:lastModifiedBy": "c3037550",
+        "jcr:created": "Thu Oct 05 2017 10:36:06 GMT-0400",
+        "jcr:lastModified": "Thu Oct 05 2017 10:54:00 GMT-0400",
+        "sling:resourceType": "eaton/components/structure/header"
+      },
+      "responsivegrid": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "e0078808",
+        "jcr:lastModifiedBy": "e0078808",
+        "jcr:created": "Thu Oct 05 2017 10:47:13 GMT-0400",
+        "jcr:lastModified": "Thu Oct 05 2017 10:52:21 GMT-0400",
+        "sling:resourceType": "wcm/foundation/components/responsivegrid",
+        "cq:responsive": {
+          "jcr:primaryType":"nt:unstructured"
+        },
+        "category_hero": {
+          "jcr:primaryType": "nt:unstructured",
+          "titleText": "Wiring Devices resource library",
+          "jcr:createdBy": "e0063964",
+          "alignmentDesktop": "right-center",
+          "description": "This page is designed for quick access to our most commonly requested resources.",
+          "mobileTrans": "default-mobile",
+          "jcr:lastModifiedBy": "e0063964",
+          "imagePath": "/content/dam/eaton/products/wiring-devices-and-connectivity/wiring-devices/images/wd-resource-library.jpg",
+          "alignmentMobile": "right-center",
+          "jcr:created": "Mon Nov 25 2019 12:58:06 GMT-0500",
+          "imageAltText": "1068618392",
+          "jcr:lastModified": "Tue Nov 16 2021 09:02:06 GMT-0500",
+          "desktopTrans": "default-desktop",
+          "tabletTrans": "default-tablet",
+          "sling:resourceType": "eaton/components/content/category-hero",
+          "textIsRich": "true",
+          "categoryHeroHeaderType": "h1"
+        },
+        "advanced_search_1048493118": {
+          "newsId": "842808312",
+          "productsId": "1316679294",
+          "resourcesId": "968989543",
+          "statusDetails": {
+            "messages": [
+              "SortBy is missing"
+            ]
+          },
+          "servicesId": "850411755",
+          "facetsViewMoreOffset": 7,
+          "status": "fail",
+          "facets": {},
+          "search-box": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:lastModifiedBy": "e0063964",
+            "view": "advsearch",
+            "jcr:lastModified": "Thu Jul 07 2022 13:32:52 GMT-0400",
+            "sling:resourceType": "eaton/components/search/search-box",
+            "transFieldAid": "Search our library here"
+          },
+          "whitelistFacets": {
+            "jcr:primaryType":"nt:unstructured",
+            "item0": {
+              "jcr:primaryType":"nt:unstructured",
+              "facet":"eaton:resources/marketing-resources"
+            },
+            "item1": {
+              "jcr:primaryType":"nt:unstructured",
+              "facet":"eaton:resources/technical-resources"
+            }
+          }
+        }
+      },
+      "footer": {
+        "jcr:primaryType": "nt:unstructured",
+        "jcr:createdBy": "c3037550",
+        "jcr:lastModifiedBy": "c3037550",
+        "jcr:created": "Thu Oct 05 2017 10:36:20 GMT-0400",
+        "jcr:lastModified": "Thu Oct 05 2017 10:54:05 GMT-0400",
+        "sling:resourceType": "eaton/components/structure/footer"
+      }
+    }
+  }
+}

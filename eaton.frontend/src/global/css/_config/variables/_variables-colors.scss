@@ -1,0 +1,160 @@
+// EATON: Colors
+// Some color names are simplified to match the Toolkit
+//--------------
+
+$color__primary-blue: #005EB8; // Eaton-Blue
+
+// Primary Grays
+$color__primary-gray1: #333F48; //Gray1
+$color__primary-gray2: #5B6770; //Gray2
+$color__primary-gray3: #98A4AE; //Gray3
+
+
+// Secondary Grays
+$color__secondary-gray4: #CCD2D7; //Gray4
+$color__secondary-gray5: #EEF0F2; //Gray5
+$color__secondary-gray6: #F8F8F8; //Gray6
+$color__secondary-gray7: #d8d8d8; //Gray7
+
+$color__secondary-gray8: #808080; //Gray8
+$color__secondary-gray9: #717171; //Gray9
+$color__secondary-gray10: #C4C4C4; //Gray10
+$color__secondary-gray11: #B4BEC7; //Gray11
+$color__secondary-gray12: #DEE4E9; //Gray12
+$color__secondary-gray13: #12181C; //Gray13
+
+// Accent Colors
+$color__accent-darkblue: #003865; //Dark-Blue
+$color__accent-aqua: #00A298; //Aqua
+$color__accent-orange: #ED8B00; //Orange
+
+// System colors
+$color__black: #000;
+$color__white: #FFF;
+$color__green: #4C8C2B;
+$color__red: #9D2235;
+$color__error-red: #F00;
+
+
+// Social Links
+//--------------
+$color__social-facebook: #2C578F;
+$color__social-twitter: #0FA9D0;
+$color__social-googleplus: #D44A3A;
+$color__social-linked-in: #3699C6;
+$color__social-pinterest: #D02127;
+
+// Eaton-Cummins-red added for feature block field
+
+$color__primary-red: #DA291C;
+
+
+// Colors as per Eaton Brand Guideline.
+
+$color__ink-95: #121619;
+$color__iron-95: #202427;
+$color__ink-80: #1F262B;
+
+
+$color__iron-90: #292E32;
+$color__ink-60: #29323A;
+$color__lunar-95: #35393D;
+
+$color__lunar-90: #444A4E;
+$color__iron-60: #49525A;
+$color__iron-50: #525D65;
+
+$color__iron-40: #5B6770;
+$color__lunar-70: #727B83;
+$color__lunar-60: #7A838B;
+$color__lunar-50: #89949D;
+
+$color__lunar-40: #98A4AE;
+$color__ink-30: #C0C3C6;
+
+$color__iron-30: #CCD0D3;
+
+
+$color__ink-20: #E0E2E4;
+$color__iron-20: #E6E8EA;
+$color__ink-10: #EBECED;
+$color__iron-10: #EFF0F1;
+$color__lunar-20: #F0F1F3;
+$color__lunar-10: #F5F6F7;
+$color__lunar-80: #5B6268;
+$color__berry-20: #F0DEE1;
+$color__berry-30: #E1BAC0;
+$color__ruby-50: #BD232B;
+$color__berry-90: #470F18;
+$color__ruby-70: #9E1D24;
+$color__ruby-40: #D22730;
+$color__berry-80: #5E1420;
+$color__ruby-30: #F1BCBF;
+$color__berry-40: #9D2235;
+$color__ruby-80: #7E171D;
+$color__ruby-60: #A81F26;
+$color__berry-50: #8D1F30;
+$color__fire-40: #F0B323;
+$color__topaz-40: #ED8B00;
+$color__topaz-50: #D57D00;
+$color__fire-80: #906B15;
+$color__fire-60: #C08F1C;
+$color__sulfur-90: #6D6331;
+$color__sulfur-80: #928541;
+$color__sulfur-70: #B6A652;
+$color__fire-30: #FAE7BB;
+$color__amber-40: #FFC72C;
+$color__sulfur-30: #FBF4D2;
+
+$color__sulfur-20: #FDFAE9;
+$color__pear-40: #B5BD00;
+$color__ivy-50: #447F24;
+$color__moss-40: #B7CE95;
+
+$color__moss-20: #F4F8EF;
+$color__ivy-40: #4C8D28;
+
+$color__ivy-60: #3D7120;
+$color__ivy-30: #C8DCBC;
+$color__ivy-20: #E4EEDF;
+$color__sage-40: #A3B2A4;
+$color__ivy-70: #396A1E;
+
+$color__sage-95: #393E39;
+$color__sea-50: #00A098;
+$color__sea-40: #00B2A9;
+$color__sea-30: #B0E7E4;
+$color__sky-90: #33505A;
+$color__sky-80: #446B79;
+$color__sky-40: #71B2C9;
+$color__sky-50: #66A0B5;
+$color__eaton-40: #005EB8;
+
+$color__eaton-30: #B0CDE9;
+$color__eaton-20: #D9E7F4;
+$color__eaton-50: #0055A6;
+
+$color__ink-40: #333F48;
+$color__ocean-20: #D9E1E8;
+$color__ocean-90: #00192D;
+$color__ocean-40: #003865;
+$color__eaton-60: #004B93;
+$color__ocean-30: #B0C1CF;
+$color__eaton-80: #00386E;
+$color__eaton-70: #00478A;
+$color__eaton-10: #E6EFF8;
+$color__ink-90: #171C20;
+
+$color__ocean-10: #E6EBF0;
+$color__berry-10: #F5E9EB;
+
+$color__primary-blue-transparent: #005eb8d9;
+$color__white-transparent-0: #FFF0;
+$color__black-transparent-0: #0000;
+$color__black-transparent: #000000d9;
+$color__black-transparent-50: #00000080;
+$color__black-transparent-10: #00000020;
+$color__black-transparent-20: #00000033;
+$color__eaton-50-transparent-90: #005EB80d;
+$color__white-transparent-90: #ffffff03;
+$color__eaton-50-transparent-80: #0055A6e7;

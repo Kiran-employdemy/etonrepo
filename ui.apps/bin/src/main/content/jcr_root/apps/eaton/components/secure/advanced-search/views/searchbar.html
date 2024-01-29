@@ -1,0 +1,69 @@
+<div class="eaton-search eaton-search--default eaton-search--advanced">
+   <div class="container">
+      <div class="row">
+         <!--/* Search Form */-->
+         <form id="advanced-search"
+            class="col-xs-12 eaton-search--advanced__form"
+            autocomplete="off"
+            onsubmit="return false;">
+            <div class="form-group">
+               <label for="site-advanced-search-box" class="sr-only">Advanced Search</label>
+
+               <textarea rows="1" name="search-term" id="advanced-search-box"
+                  class="form-control eaton-search--default__form-input eaton-search--advanced__form-input"
+                  placeholder="Search by Keyword"
+                  required="required"></textarea>
+
+               <button type="submit"
+                  class="button--reset eaton-advanced-search__submit eaton-search--default__form-submit eaton-advanced-search--default__form-submit">
+                  <span class="sr-only">Submit</span> <i
+                     class="icon icon-search" aria-hidden="true"></i>
+               </button>
+            </div>
+
+            <div class="eaton-search--default__results advanced-search__typeahead-results" id="advanced-search-typeahead__results">
+               <ul class="advanced-search__typeahead-results-list" id="advanced-search-typeahead__results-list">
+                  <!--/* Result Links will be populated here via AJAX Request /* -->
+                  <li class="eaton-search--default__result-item b-body-copy">
+                     <a href=" target="_self"><i class="icon icon-secure-lock" aria-hidden="true"></i>Companion II 8.3, 17.2 and 23.0 kV 12 K - 40 K back-up current-limiting fuse certified <strong>test</strong> report </a>
+                  </li>
+                  <li class="eaton-search--default__result-item b-body-copy">
+                     <a href="https://www.eaton.com/us/en-us/site-search.searchTerm$Deadfront%20arresters%20certified%20test%20report.tabs$all.html" target="_self"><i class="icon icon-secure-lock" aria-hidden="true"></i>Deadfront arresters certified <strong>test</strong> report </a>
+                  </li>
+                  <li class="eaton-search--default__result-item b-body-copy">
+                     <a href="https://www.eaton.com/us/en-us/site-search.searchTerm$ELSP%208::3-23%20kV%20fuse%20certified%20test%20report.tabs$all.html" target="_self"> ELSP 8.3-23 kV fuse certified <strong>test</strong> report </a>
+                  </li>
+                  <li class="eaton-search--default__result-item b-body-copy">
+                     <a href="https://www.eaton.com/us/en-us/site-search.searchTerm$1::2kV%20to%202::5kV%203010%20ampere%20cast%20aluminum%20spade%20{}%20spade%20secondary%20low-voltage%20bushing%20test%20report.tabs$all.html" target="_self"> 1.2kV to 2.5kV 3010 ampere cast aluminum spade / spade secondary low-voltage bushing <strong>test</strong> report </a>
+                  </li>
+                  <li class="eaton-search--default__result-item b-body-copy">
+                     <a href="https://www.eaton.com/us/en-us/site-search.searchTerm$10%20kA%20class%202%20arresters%20certified%20test%20report.tabs$all.html" target="_self"> 10 kA class 2 arresters certified <strong>test</strong> report </a>
+                  </li>
+                  <li class="eaton-search--default__result-item b-body-copy">
+                     <a href="https://www.eaton.com/us/en-us/site-search.searchTerm$PXPM-SW-TEST.tabs$all.html" target="_self"> PXPM-SW-<strong>TEST</strong> </a>
+                  </li>
+                  <li class="eaton-search--default__result-item b-body-copy">
+                     <a href="https://www.eaton.com/us/en-us/site-search.searchTerm$PXPM-SW-TEST-10.tabs$all.html" target="_self"> PXPM-SW-<strong>TEST</strong>-10 </a>
+                  </li>
+                  <li class="eaton-search--default__result-item b-body-copy">
+                     <a href="https://www.eaton.com/us/en-us/site-search.searchTerm$PXPM-SW-TEST-120.tabs$all.html" target="_self"> PXPM-SW-<strong>TEST</strong>-120 </a>
+                  </li>
+                  <li class="eaton-search--default__result-item b-body-copy">
+                     <a href="https://www.eaton.com/us/en-us/site-search.searchTerm$PXPM-SW-TEST-30.tabs$all.html" target="_self"> PXPM-SW-<strong>TEST</strong>-30 </a>
+                  </li>
+                  <li class="eaton-search--default__result-item b-body-copy">
+                     <a href="https://www.eaton.com/us/en-us/site-search.searchTerm$TEST12.tabs$all.html" target="_self"> <strong>TEST</strong>12 </a>
+                  </li>
+               </ul>
+            </div>
+         </form>
+      </div>
+   </div>
+</div>
+
+<!-- TODO - UPDATE WITH CORRECT DATA -->
+<script id="mustache-advanced-search-typeahead" type="text/mustache">
+   <li class="eaton-search--default__result-item b-body-copy">
+      <a href="https://www.eaton.com/us/en-us/site-search.searchTerm$Companion%20II%208::3,%2017::2%20and%2023::0%20kV%2012%20K%20-%2040%20K%20back-up%20current-limiting%20fuse%20certified%20test%20report.tabs$all.html" target="_self"><i class="icon icon-secure-lock" aria-hidden="true"></i>Companion II 8.3, 17.2 and 23.0 kV 12 K - 40 K back-up current-limiting fuse certified <strong>test</strong> report </a>
+   </li>
+</script>

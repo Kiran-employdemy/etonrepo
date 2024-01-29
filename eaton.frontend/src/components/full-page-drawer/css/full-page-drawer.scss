@@ -1,0 +1,13 @@
+//-----------------------------------
+// Component: Full Page Drawer
+//-----------------------------------
+
+// Import All SASS config files (Variables, Mixins, Functions, Extends etc...)
+@import "../../../global/css/_config/sass";
+
+.full-page {
+  background: var(--grey-primary-brand-color, $color__primary-gray2);
+  color: $color__white;
+
+
+}

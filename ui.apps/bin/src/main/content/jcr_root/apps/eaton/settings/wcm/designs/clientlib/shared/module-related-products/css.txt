@@ -1,0 +1,3 @@
+#base=css
+
+module-related-products.css

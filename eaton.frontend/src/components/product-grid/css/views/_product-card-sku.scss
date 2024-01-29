@@ -1,0 +1,513 @@
+//------------------------------------------
+// Component M-36: Product Card Sku
+//------------------------------------------
+// NOTE: SASS is written "Mobile First" and there are media queries for Other Breakpoints
+
+.product-card-sku {
+  // Local Variables
+  //--------------
+  $color__image-border: $color__secondary-gray5;
+  $grid-container-padding-mobile: 30px;
+  $thumbnail-size-mobile: 54px;
+  $thumbnail-size-desktop: 148px;
+  $icon-arrow-right-size: 1rem;
+
+  position: relative;
+
+  // Styleguide Overrides
+  //--------------
+  &__name,
+  &__price,
+  &__name a {
+    color: $color__white;
+  }
+
+  &__name {
+    margin-bottom: 5px; // EATON-380: The padding between the Header and the Specification and Resource Links should be 20px
+  }
+
+  // Product Card - General Styles
+  //--------------
+  &__name,
+  &__link-item {
+
+    // Caret Icon
+    .icon {
+      font-size: 2rem;
+    }
+  }
+
+  &__image-link {
+    display: block;
+  }
+
+  &__image-wrapper {
+    position: absolute;
+    z-index: 2;
+  }
+
+  .rendition__image {
+    @include square($thumbnail-size-mobile); // Width & Height
+    border: 1px solid $color__image-border;
+    background-color: $color__white;
+    padding: 0.5rem;
+  }
+
+  &__links-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__attr-label {
+    margin-bottom: 2px; // EATON-625: Spacing between Attribute Label and Value should be 15px visually
+  }
+
+  //-----------------------------------
+  // Media-Query: Mobile & Tablet
+  //-----------------------------------
+  @include media-mobile-and-tablet {
+    // Overide Bootstrap's Container in order to make the component full-width (Mobile Only)
+    margin-left: ($grid-container-padding-mobile * -1); // Negative value
+    margin-right: ($grid-container-padding-mobile * -1); // Negative value
+
+    // Product Image
+    //--------------
+    &__image-wrapper {
+      left: $spacing__sm;
+      right: auto;
+      top: $spacing__sm * 0.6666667;
+
+      [dir="rtl"] & {
+        left: auto;
+        right: $spacing__sm;
+      }
+    }
+
+    // Product Header
+    //--------------
+    &__title-wrapper {
+      background-color: var(--primary-brand-color, $color__primary-blue);
+      min-height: 98px; // EATON-817: Mobile - Product family Page - SKU Grid - Image is misaligned when no price is displayed
+      position: relative;
+    }
+
+    &__name {
+      // Mobile should look like an H4
+      @include h4--mobile;
+
+      margin-bottom: 0;
+      padding-left: $grid-container-padding-mobile + $thumbnail-size-mobile + ($spacing__sm / 2);
+      padding-right: $grid-container-padding-mobile + 10px;
+      padding-top: 16px; // NOTE: Top-padding is reduced to compensate for Line-Height
+
+      [dir="rtl"] & {
+        padding-left: $grid-container-padding-mobile + 10px;
+        padding-right: $grid-container-padding-mobile + $thumbnail-size-mobile + ($spacing__sm / 2);
+      }
+
+      .icon {
+        @include square($icon-arrow-right-size);
+        // It centers the icon vertically
+        line-height: $icon-arrow-right-size;
+        position: absolute;
+        left: auto;
+        right: $grid-container-padding-mobile;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1rem;
+
+        [dir="rtl"] & {
+          left: $grid-container-padding-mobile;
+          right: auto;
+        }
+      }
+    }
+
+    &__price {
+      margin-top: 5px;
+      padding-bottom: 20px;
+      padding-left: $grid-container-padding-mobile + $thumbnail-size-mobile + ($spacing__sm / 2);
+      padding-right: 0;
+
+	  &__product-header {
+	  	padding-top: 2.5rem;
+	  	color: $color__white;
+	  	margin-top: 5px;
+      	padding-left: $grid-container-padding-mobile + $thumbnail-size-mobile + ($spacing__sm / 2);
+      	padding-right: 0;
+	   }
+
+      [dir="rtl"] & {
+        padding-left: 0;
+        padding-right: $grid-container-padding-mobile + $thumbnail-size-mobile + ($spacing__sm / 2);
+      }
+    }
+
+	&__price-list {
+      line-height: 1.4;
+
+	  &__model-number {
+	   font-size: 1.5rem;
+       font-weight: bold;
+   	   line-height: 1.4;
+	   margin-top: -8px;
+	 }
+
+	  &__lamp-manufacturer {
+	   line-height: 1.4;
+	 }
+  	}
+
+    // Product Links
+
+    &__link-item {
+      @include body-copy-small--mobile;
+
+      background-color: $color__secondary-gray6;
+      padding: 12px $grid-container-padding-mobile;
+
+      .icon {
+        font-size: 1rem;
+      }
+    }
+
+    &__link-item-link {
+      align-items: center;
+      display: flex;
+      font-size: 1rem;
+
+      &:hover {
+        color: $color__primary-blue;
+        text-decoration: none;
+      }
+
+      .link-label {
+        flex: 1;
+        font-size: 1.3rem;
+      }
+    }
+
+    // Text Content
+    //--------------
+    &__content {
+      padding: ($spacing__md / 2) $grid-container-padding-mobile;
+    }
+
+    // Product Attributes
+    //--------------
+    &__attrs-list {
+      padding-top: 16px; // Visually 30px bottom margin
+    }
+
+    &__attrs-list-item {
+      margin-bottom: 10px; // Visually 20px bottom margin
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &__attr-label {
+      margin-bottom: 4px;
+    }
+
+    // Product Description
+    //--------------
+    &__description {
+      @include body-copy--mobile;
+    }
+  }
+
+  //-----------------------------------
+  // Media-Query: Desktop & Desktop Large
+  //-----------------------------------
+  @include media-desktop-and-up {
+    $product-card-padding: 20px;
+
+    // Product Image
+    //--------------
+    &__image-wrapper {
+      left: $spacing__sm * 0.6666667;
+      right: auto;
+      top: $spacing__sm * 0.6666667;
+
+      [dir="rtl"] & {
+        left: auto;
+        right: $spacing__sm * 0.6666667;
+      }
+    }
+
+    .rendition__image {
+      @include square($thumbnail-size-desktop); // Width & Height
+      padding: 1rem;
+    }
+
+    // Product Header
+    //--------------
+    $padding-left: $thumbnail-size-desktop + 40px;
+
+    &__header {
+      background-color: var(--primary-brand-color, $color__primary-blue);
+      padding: ($spacing__sm * 0.6666667) ($spacing__md * 2) ($spacing__sm * 0.6666667) $padding-left;
+      position: relative;
+
+      [dir="rtl"] & {
+        padding: ($spacing__sm * 0.6666667) $padding-left (
+          $spacing__sm * 0.6666667) ($spacing__md * 2
+        );
+      }
+    }
+
+    &__name {
+      @include h5--desktop;
+
+      .icon {
+        font-size: 26px;
+        position: relative;
+        top: 0.5px; // Icon Vertical Alignment
+        vertical-align: middle;
+      }
+
+      .icon.icon-chevron-right {
+        font-size: 0.66667em;
+        padding-left: rem($spacing__sm / 6);
+        padding-right: 0;
+
+        /* stylelint-disable indentation */
+        [dir="rtl"] & {
+          padding-left: 0;
+          padding-right: rem($spacing__sm / 6);
+        }
+
+        @media screen and (-ms-high-contrast: none),
+        (-ms-high-contrast: active) {
+          display: inline-block;
+          font-size: rem($base__font-size * 1.2);
+          top: rem($spacing__sm * -0.0666667);
+        }
+        /* stylelint-enable indentation */
+      }
+    }
+
+    &__price {
+      position: absolute;
+      top: 50%;
+      right: $product-card-padding;
+      transform: translateY(-50%);
+
+	  &__product-header {
+	  	display: flex;
+      	justify-content: space-between;
+      	position: relative;
+      	padding-left: 1rem;
+      	width: 55.6rem;
+	  	color: $color__white;
+
+		 @include media-desktop-only {
+			width: 44rem;
+		}
+	  }
+    }
+
+	&__price-list {
+      line-height: 0.7;
+
+	  &__model-number {
+	    width: 50%;
+        text-align: left;
+	    font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 1.53846;
+	  }
+
+	  &__lamp-manufacturer {
+	    width: 50%;
+        text-align: right;
+	  }
+  	}
+
+    &__links-list {
+      align-items: center;
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    &__link-item {
+      @include body-copy-small--desktop;
+      position: relative;
+      margin-left: 0;
+      margin-right: $spacing__sm * 0.6666667;
+      padding-left: 0;
+      padding-right: $spacing__sm * 0.53333334;
+
+      [dir="rtl"] & {
+        margin-left: $spacing__sm * 0.6666667;
+        margin-right: 0;
+        padding-left: $spacing__sm * 0.53333334;
+        padding-right: 0;
+      }
+
+      &::after {
+        content: "";
+        background-color: $color__white;
+        height: 18px;
+        position: absolute;
+        left: auto;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+
+        [dir="rtl"] & {
+          left: 0;
+          right: auto;
+        }
+      }
+
+      &:last-child::after {
+        content: none;
+        display: none;
+      }
+    }
+
+    &__link-item-link {
+      .link-label {
+        color: $color__white;
+      }
+
+      &:hover {
+        color: $color__white;
+        text-decoration: underline;
+      }
+    }
+
+    // Product Content Wrapper
+    //--------------
+    &__content {
+      margin-top: $spacing__sm;
+      margin-bottom: $spacing__md;
+      padding-left: $padding-left;
+      padding-right: 0;
+
+      [dir="rtl"] & {
+        padding-left: 0;
+        padding-right: $padding-left;
+      }
+    }
+
+    &__attrs-list {
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: $spacing__sm;
+    }
+
+    &__attrs-list-item {
+      flex: 1;
+      padding-right: 20px;
+      word-wrap: break-word;
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+
+    &__description {
+      @include body-copy-small--desktop;
+    }
+  }
+
+  //------Compitable Product Tool--------
+  // product card sku item
+
+  &__price-list {
+    line-height: 0.7;
+  }
+
+  &__specs-content {
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding-left: 162px;
+
+    @include media-mobile-and-tablet {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding-left: 10px;
+    }
+  }
+
+  &__specs-column {
+    list-style-type: circle;
+    column-count: 2;
+    width: auto;
+
+    @include media-mobile-only {
+      column-count: 1;
+    }
+  }
+
+  &__specs-column-list {
+    font-weight: bold;
+    font-size: rem($base__font-size * 1.2);
+  }
+
+}
+
+// hide dropdown for Compitable Product Tool
+.compatible-product-tool {
+  .dropdown {
+    display: none;
+  }
+}
+
+.link-label-comparision {
+  font-size: 1.2rem;
+  font-weight: normal;
+  line-height: 1.33333;
+  color: #fff;
+
+  @include media-mobile-and-tablet {
+    color: #000;
+    font-size: 1.3rem;
+  }
+}
+
+.product-card-sku__links-list .product-card-sku__comp {
+  /* stylelint-disable declaration-no-important */
+  height: 16px !important;
+  width: 16px !important;
+  /* stylelint-enable declaration-no-important */
+  margin-right: 10px;
+  border: 1px solid #fff;
+
+  @include media-mobile-and-tablet {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin-left: 3rem;
+    /* stylelint-disable declaration-no-important */
+    height: 18px !important;
+    width: 18px !important;
+    /* stylelint-enable declaration-no-important */
+  }
+}
+
+.product-card-sku__links-list .product-card-sku__comp:checked {
+  /* stylelint-disable declaration-no-important */
+  height: 16px !important;
+  width: 16px !important;
+  /* stylelint-enable declaration-no-important */
+  margin-right: 10px;
+  border: 1px solid #fff;
+}
+
+.product-card-sku__links-list .product-card-sku__comp::after {
+  /* stylelint-disable-next-line declaration-no-important */
+  font-size: 11px !important;
+}
+
+// common class for dispaly none.
+/* stylelint-disable-next-line selector-class-pattern */
+.classDN {
+  display: none;
+  opacity: 0;
+}
